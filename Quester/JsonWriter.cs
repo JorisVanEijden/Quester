@@ -6,7 +6,7 @@ namespace Quester
 {
     internal static class JsonWriter
     {
-        public static void WriteStates(StreamWriter writer, Dictionary<short, State> states)
+        public static void WriteStates(TextWriter writer, Dictionary<short, State> states)
         {
             writer.WriteLine($"\"states: [{states.Count}]\": {{");
             for (short i = 0; i < states.Count; i++)
@@ -23,7 +23,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteMobs(StreamWriter writer, Dictionary<short, Mob> mobs)
+        public static void WriteMobs(TextWriter writer, Dictionary<short, Mob> mobs)
         {
             writer.WriteLine($"\"mobs: [{mobs.Count}]\": {{");
             for (short i = 0; i < mobs.Count; i++)
@@ -42,7 +42,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteTimers(StreamWriter writer, Dictionary<short, Timer> timers)
+        public static void WriteTimers(TextWriter writer, Dictionary<short, Timer> timers)
         {
             writer.WriteLine($"\"timers: [{timers.Count}]\": {{");
             for (short i = 0; i < timers.Count; i++)
@@ -67,7 +67,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteLocations(StreamWriter writer, Dictionary<short, Location> locations)
+        public static void WriteLocations(TextWriter writer, Dictionary<short, Location> locations)
         {
             writer.WriteLine($"\"locations: [{locations.Count}]\": {{");
             for (short i = 0; i < locations.Count; i++)
@@ -93,7 +93,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteNpcs(StreamWriter writer, Dictionary<short, Npc> npcs)
+        public static void WriteNpcs(TextWriter writer, Dictionary<short, Npc> npcs)
         {
             writer.WriteLine($"\"npcs: [{npcs.Count}]\": {{");
             for (short i = 0; i < npcs.Count; i++)
@@ -116,7 +116,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteItems(StreamWriter writer, Dictionary<short, Item> items)
+        public static void WriteItems(TextWriter writer, Dictionary<short, Item> items)
         {
             writer.WriteLine($"\"items: [{items.Count}]\": {{");
             for (short i = 0; i < items.Count; i++)
@@ -137,7 +137,7 @@ namespace Quester
             writer.WriteLine("}");
         }
 
-        public static void WriteOpcodes(StreamWriter writer, List<OpCode> opCodes)
+        public static void WriteOpcodes(TextWriter writer, List<OpCode> opCodes)
         {
             writer.WriteLine($"\"opCodes: [{opCodes.Count}]\": {{");
             for (var j = 0; j < opCodes.Count; j++)

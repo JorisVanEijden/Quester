@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using CommandLine;
 using CommandLine.Text;
@@ -31,6 +32,7 @@ namespace Quester
 
             ParseFile(file);
             var name = Path.GetFileNameWithoutExtension(file);
+            name = @"../../../docs/" + name;
             OutputHtml(name);
 
             return 0;
@@ -48,30 +50,37 @@ namespace Quester
 
         private static void OutputHtml(string name)
         {
-            var fileName = name + ".html";
-            File.Delete(fileName);
-            using (StreamWriter writer = new StreamWriter(File.Open(fileName, FileMode.OpenOrCreate)))
-            {
-                writer.Write(
-                    "<html><head><title>Daggerfall Quest Decompiler</title><link rel=\"stylesheet\" type=\"text/css\" href=\"JsonTreeBuilder.css\" /></head><body><div id=\"placeholder\" /></body></html><script type=\"text/javascript\" src= \"http://code.jquery.com/jquery-latest.min.js\"></script><script type=\"text/javascript\" src=\"JsonTreeBuilder.js\"></script><script type=\"text/javascript\">function getJson() {var json = ");
-                writer.WriteLine("{");
-                JsonWriter.WriteItems(writer, Quest.items);
-                writer.Write(",");
-                JsonWriter.WriteNpcs(writer, Quest.npcs);
-                writer.Write(",");
-                JsonWriter.WriteLocations(writer, Quest.locations);
-                writer.Write(",");
-                JsonWriter.WriteTimers(writer, Quest.timers);
-                writer.Write(",");
-                JsonWriter.WriteMobs(writer, Quest.mobs);
-                writer.Write(",");
-                JsonWriter.WriteOpcodes(writer, Quest.opCodes);
-                writer.Write(",");
-                JsonWriter.WriteStates(writer, Quest.states);
-                writer.WriteLine("}");
-                writer.Write(
-                    ";return json;}$(document).ready(function () {var treeBuilder = new JsonTreeBuilder();var tree = treeBuilder.build(getJson());$('div#placeholder').append(tree);});</script>");
-            }
+            TextWriter writer = new StringWriter();
+            WriteJson(writer);
+
+            var jsonFile = $"{name}.json";
+            File.Delete(jsonFile);
+            File.WriteAllText(jsonFile, writer.ToString());
+
+            string template = File.ReadAllText(@"html\\template.html");
+            string result = template.Replace("{{ json }}", writer.ToString());
+            var htmlFile = $"{name}.html";
+            File.Delete(htmlFile);
+            File.WriteAllText(htmlFile, result);
+        }
+
+        private static void WriteJson(TextWriter writer)
+        {
+            writer.WriteLine("{");
+            JsonWriter.WriteItems(writer, Quest.items);
+            writer.Write(",");
+            JsonWriter.WriteNpcs(writer, Quest.npcs);
+            writer.Write(",");
+            JsonWriter.WriteLocations(writer, Quest.locations);
+            writer.Write(",");
+            JsonWriter.WriteTimers(writer, Quest.timers);
+            writer.Write(",");
+            JsonWriter.WriteMobs(writer, Quest.mobs);
+            writer.Write(",");
+            JsonWriter.WriteOpcodes(writer, Quest.opCodes);
+            writer.Write(",");
+            JsonWriter.WriteStates(writer, Quest.states);
+            writer.WriteLine("}");
         }
 
         private static void ParseFile(string fileName)
