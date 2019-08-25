@@ -19,18 +19,20 @@ namespace Quester
 
         private static void Run(Options options)
         {
-            var file = options.FileName;
-            if (!File.Exists(file))
+            foreach (string file in options.FileNames)
             {
-                Console.Error.WriteLine("Please supply the path to a QBN file.");
-                return;
-            }
+                if (!File.Exists(file))
+                {
+                    Console.Error.WriteLine("Failed to open {0}", file);
+                    continue;
+                }
 
-            Quest = new Quest();
-            ParseFile(file);
-            var name = Path.GetFileNameWithoutExtension(file);
-            name = @"../../../docs/" + name;
-            OutputHtml(name);
+                var name = Path.GetFileNameWithoutExtension(file);
+                Quest = new Quest {name = name };
+                ParseFile(file);
+                name = @"../../../docs/" + name;
+                OutputHtml(name);
+            }
         }
 
         private static void OutputJson(string name)
@@ -95,16 +97,16 @@ namespace Quester
             }
         }
 
-        public class Options
+        private class Options
         {
-            [Value(0, MetaName = "fileName", Required = true, HelpText = "The path to a QBN file.")]
-            public string FileName { get; private set; }
+            [Value(0, MetaName = "fileName", Required = true, HelpText = "One or more paths to QBN files.")]
+            public IEnumerable<string> FileNames { get; private set; }
 
             [Usage(ApplicationAlias = "Quester")]
             public static IEnumerable<Example> Examples =>
                 new List<Example>
                 {
-                    new Example("Decompile QBN files.", new Options { FileName = @"Daggerfall\Arena2\S0000011.QBN" })
+                    new Example("Decompile QBN files.", new Options { FileNames = new[] { @"Daggerfall\Arena2\S0000011.QBN" } })
                 };
         }
     }
@@ -118,6 +120,7 @@ namespace Quester
         public Dictionary<short, Mob> mobs;
         public List<OpCode> opCodes;
         public Dictionary<short, State> states;
+        public string name;
     }
 
     internal class OpCode
@@ -136,7 +139,10 @@ namespace Quester
 
         private string GetCodeLine()
         {
-            var state = arguments[0].value < 0 ? string.Empty : arguments[0].ToString();
+            Argument stateArgument = arguments[0];
+            stateArgument.type = RecordType.State;
+            string state = stateArgument.value < 0 ? string.Empty : stateArgument.ToString();
+            arguments[0] = stateArgument;
             string line;
             switch (code)
             {
@@ -184,6 +190,11 @@ namespace Quester
                     return $" >> {code} ({arguments[1]}, {arguments[2]}): set {state}";
                 case Instruction.StartTimer:
                     return $" >> WhenTimerExpires ({arguments[1]}): set s_{arguments[1].value}";
+                case Instruction.CreateFoe:
+                    Argument mobArgument = arguments[1];
+                    mobArgument.type = RecordType.Mob;
+                    arguments[1] = mobArgument;
+                    return $"{state} => CreateFoe({mobArgument}, {arguments[2]}, {arguments[3]}%, {arguments[3]})";
             }
 
 
@@ -230,35 +241,44 @@ namespace Quester
             }
 
             var variable = string.Empty;
-            switch (type)
+            try
             {
-                case RecordType.Item:
-                    variable = Program.Quest.items[(short) value].variable;
-                    break;
-                case RecordType.Location:
-                    variable = Program.Quest.locations[(short) value].variable;
-                    break;
-                case RecordType.Mob:
-                    variable = Program.Quest.mobs[(short) value].variable;
-                    break;
-                case RecordType.Npc:
-                    variable = Program.Quest.npcs[(short) value].variable;
-                    break;
-                case RecordType.State:
-                    variable = "s_" + Program.Quest.states[(short) value].index;
-                    break;
-                case RecordType.Timer:
-                    variable = Program.Quest.timers[(short) value].variable;
-                    break;
-                case RecordType.Text:
-                    variable = $"\"{value}\"";
-                    break;
-                case RecordType.Value:
-                    variable = $"{value}";
-                    break;
-                default:
-                    variable = $"ERR:{type}={value}";
-                    break;
+                switch (type)
+                {
+                    case RecordType.Item:
+                        variable = Program.Quest.items[(short) value].variable;
+                        break;
+                    case RecordType.Location:
+                        variable = Program.Quest.locations[(short) value].variable;
+                        break;
+                    case RecordType.Mob:
+                        variable = Program.Quest.mobs[(short) value].variable;
+                        break;
+                    case RecordType.Npc:
+                        variable = Program.Quest.npcs[(short) value].variable;
+                        break;
+                    case RecordType.State:
+                        variable = "s_" + Program.Quest.states[(short) value].index;
+                        break;
+                    case RecordType.Timer:
+                        variable = Program.Quest.timers[(short) value].variable;
+                        break;
+                    case RecordType.Text:
+                        variable = $"\"{value}\"";
+                        break;
+                    case RecordType.Value:
+                        variable = $"{value}";
+                        break;
+                    default:
+                        variable = $"ERR:{type}={value}";
+                        Console.Error.WriteLine($"{Program.Quest.name}: ERROR: {type}={value}");
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"{Program.Quest.name}: ERROR: {type}={value}");
+                throw;
             }
 
             return (not ? "! " : "") + variable;
@@ -368,7 +388,28 @@ namespace Quester
 
         public override string ToString()
         {
-            var name = itemId == 0xffff ? category.ToString() : ItemMapper.ItemMap[category][itemId];
+            if (rewardType == RewardType.Gold || rewardType == RewardType.Unknown)
+            {
+                return (category == ItemCategory.Random) ? $"Random gold" : $"{itemId} - {category} gold";
+            }
+
+            if (!ItemMapper.ItemMap.ContainsKey(category))
+            {
+                Console.Error.WriteLine("{0}: Failed to find item category {1} in item map", Program.Quest.name, category);
+                return "ERROR";
+            }
+
+            string name;
+            try
+            {
+                name = itemId == 0xffff ? category.ToString() : ItemMapper.ItemMap[category][itemId];
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"{Program.Quest.name}: no {itemId} in {category}");
+                throw;
+            }
+
             var item = $"{variable}: {rewardType} {category} {name}";
             if (textRecordId1 > 0)
                 item += $" [{textRecordId1}]";

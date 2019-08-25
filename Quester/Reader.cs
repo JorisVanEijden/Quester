@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -237,7 +238,7 @@ namespace Quester
                     argument.value = reader.ReadInt32();
                     argument.unknown1 = reader.ReadInt32();
                 }
-                if (argument.index == 0x12345678)
+                if (argument.index == 0x12345678 || argument.index == 0x1234567)
                 {
                     argument.type = RecordType.Value;
                     argument.index = 0;

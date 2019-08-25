@@ -71,6 +71,6 @@ namespace Quester
         PlaySound = 84,
         SetQuestor = 85,
         UnsetQuestor = 86,
-        Unknown87_DupOf9 = 87
+        SendFoe = 87
     }
 }
