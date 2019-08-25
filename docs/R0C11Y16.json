@@ -1,0 +1,658 @@
+{
+"items: [3]": {
+" 0: Random gold": {
+"variable": "i_reward",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_item1: Item QuestItems Telescope": {
+"variable": "i_item1",
+"rewardType": "Item",
+"category": "QuestItems",
+"itemId": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: i_item2: Artifact MiscellaneousIngredients1 Holy_relic": {
+"variable": "i_item2",
+"rewardType": "Artifact",
+"category": "MiscellaneousIngredients1",
+"itemId": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+}
+}
+,"npcs: [3]": {
+" 0: n_questgiver: Male ": {
+"variable": "n_questgiver",
+"gender": "Male",
+"facePictureIndex": 140,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_npc1: Female ": {
+"variable": "n_npc1",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65533,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: n_npc2: Female Clavicus_Vile": {
+"variable": "n_npc2",
+"gender": "Female",
+"facePictureIndex": 248,
+"factionType": 65533,
+"faction": "Clavicus_Vile",
+"factionRaw": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [2]": {
+" 0: t_1stparton: SameAs2": {
+"variable": "t_1stparton",
+"type": "SameAs2",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 6,
+"duration": 0,
+"started": 0,
+"flags": 257,
+"index": 0,
+},
+" 1: t_2ndparton: SameAs2": {
+"variable": "t_2ndparton",
+"type": "SameAs2",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 2,
+"link2": 6,
+"duration": 0,
+"started": 0,
+"flags": 257,
+"index": 1,
+}
+}
+,"mobs: [0]": {
+}
+,"opCodes: [20]": {
+" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: t_1stparton": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+" 1: s_3 => EnsureNpcLocation (n_npc2)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "4518580"
+},
+"2: n_npc2": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 2:  => EnsureNpcLocation (n_npc1)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "4518580"
+},
+"2: n_npc1": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 3:  => CreateLogEntry (1015, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: 1015": {
+"type": "Value",
+"value": "1015",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 4:  => PlaceItemOnCharacter (i_item1)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 5:  >> WhenGivingItemToNpc (i_item1, n_npc1): set s_3": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+},
+"2: n_npc1": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 6: s_3 => Say (1010)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+}
+},
+"messageId": 1010
+},
+" 7: s_3 => PlaceItemOnCharacter (i_item2)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "4518580"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 8:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+},
+"1: t_2ndparton": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+" 9: s_3 => CreateLogEntry (1016, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1493154929"
+},
+"1: 1016": {
+"type": "Value",
+"value": "1016",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+"10:  >> WhenGivingItemToNpc (i_item2, n_npc2): set s_0": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "4518580"
+},
+"2: n_npc2": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+"11: s_0 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-221773567"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1375731712"
+}
+},
+"messageId": -1
+},
+"12: s_0 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+}
+},
+"messageId": -1
+},
+"13:  >> When (s_6 and ! s_3): set s_5": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "-1493154929"
+},
+"1: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "4518580"
+},
+"2: ! s_3": {
+"type": "State",
+"value": "3",
+"not": "True",
+"index": "3",
+"unknown1": "2048"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-221773567"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1375731712"
+}
+},
+"messageId": -1
+},
+"14: s_7 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "-1493154929"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: -20": {
+"type": "Value",
+"value": "-20",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+"15: s_5 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "-1493154929"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: -20": {
+"type": "Value",
+"value": "-20",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+"16: s_7 => MakePermanent (i_item2)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "-1493154929"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+"17: s_6 => MakePermanent (i_item1)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "-1493154929"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+"18: s_5 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "-1493154929"
+}
+},
+"messageId": -1
+},
+"19: s_7 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "-1493154929"
+}
+},
+"messageId": -1
+}
+}
+,"states: [8]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_pchasitem1": {
+"variable": "s_pchasitem1",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_pchasitem2": {
+"variable": "s_pchasitem2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_00034642": {
+"variable": "s_00034642",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_000346c2": {
+"variable": "s_000346c2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_queston": {
+"variable": "s_queston",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_1stparton": {
+"variable": "s_1stparton",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_2ndparton": {
+"variable": "s_2ndparton",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+}
+}
+}

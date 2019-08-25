@@ -1,10 +1,10 @@
 {
 "items: [1]": {
-" 0: i_clothes: Artifact WomensClothing Plain_robes": {
-"variable": "i_clothes",
-"rewardType": "Artifact",
-"category": "WomensClothing",
-"itemId": 18,
+" 0: Random gold": {
+"variable": "i_gold",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
@@ -24,25 +24,25 @@
 "index": 0,
 "unknown1": 0
 },
-" 1: n_witch: Female The_Prostitutes": {
-"variable": "n_witch",
+" 1: n_warrior: Female ": {
+"variable": "n_warrior",
 "gender": "Female",
-"facePictureIndex": 1,
-"factionType": 65535,
-"faction": "The_Prostitutes",
-"factionRaw": 512,
+"facePictureIndex": 219,
+"factionType": 65531,
+"faction": "0",
+"factionRaw": 0,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
 "unknown1": 0
 },
-" 2: n_daedra: Female ": {
-"variable": "n_daedra",
+" 2: n_witch: Female Hermaeus_Mora": {
+"variable": "n_witch",
 "gender": "Female",
-"facePictureIndex": 105,
+"facePictureIndex": 218,
 "factionType": 65534,
-"faction": "0",
-"factionRaw": 0,
+"faction": "Hermaeus_Mora",
+"factionRaw": 8,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
@@ -50,12 +50,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown Prison": {
-"variable": "l_mondung",
+" 0: l_castle: OutOfTown House1": {
+"variable": "l_castle",
 "generalLocation": "OutOfTown",
-"locationType": 3,
-"LocationType": "Prison",
-"fineLocation": 1,
+"locationType": 17,
+"LocationType": "House1",
+"fineLocation": 0,
 "knownLocation": "None",
 "doorSelector": 0,
 "textRecordId1": 0,
@@ -81,8 +81,8 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_guard: 1 Warrior": {
-"variable": "m_guard",
+" 0: m_44000000: 1 Warrior": {
+"variable": "m_44000000",
 "type": "Warrior",
 "count": 1,
 "null1": 0,
@@ -90,43 +90,8 @@
 "index": 0,
 }
 }
-,"opCodes: [20]": {
-" 0:  => RemoveTopics (n_daedra)": {
-"opCode": 11,
-"argCount": 4,
-"arguments:": {
-"0: _": {
-"type": "State",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0"
-},
-"1: ": {
-"type": "Location",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0"
-},
-"2: n_daedra": {
-"type": "Npc",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0"
-},
-"3: ": {
-"type": "Item",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-" 1:  >> WhenTimerExpires (t_queston): set s_0": {
+,"opCodes: [16]": {
+" 0:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -147,28 +112,7 @@
 },
 "messageId": -1
 },
-" 2:  => AddLocationToMap (l_mondung)": {
-"opCode": 19,
-"argCount": 2,
-"arguments:": {
-"0: _": {
-"type": "State",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0"
-},
-"1: l_mondung": {
-"type": "Location",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-" 3:  => CreateLogEntry (1010, 0)": {
+" 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
@@ -196,8 +140,8 @@
 },
 "messageId": -1
 },
-" 4:  => PlaceItemOnCharacter (i_clothes)": {
-"opCode": 26,
+" 2:  => EnsureNpcLocation (l_castle)": {
+"opCode": 81,
 "argCount": 3,
 "arguments:": {
 "0: _": {
@@ -207,8 +151,8 @@
 "index": "255",
 "unknown1": "0"
 },
-"1: i_clothes": {
-"type": "Item",
+"1: l_castle": {
+"type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
@@ -224,8 +168,8 @@
 },
 "messageId": -1
 },
-" 5:  => PlaceNpcAt (n_witch, l_mondung)": {
-"opCode": 30,
+" 3:  >> WhenAtLocation (l_castle): set s_5": {
+"opCode": 43,
 "argCount": 3,
 "arguments:": {
 "0: _": {
@@ -235,14 +179,70 @@
 "index": "255",
 "unknown1": "0"
 },
-"1: n_witch": {
-"type": "Npc",
-"value": "1",
+"1: s_5": {
+"type": "State",
+"value": "5",
 "not": "False",
-"index": "1",
+"index": "5",
 "unknown1": "0"
 },
-"2: l_mondung": {
+"2: l_castle": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 4:  => DoneWithMob (m_44000000, _)": {
+"opCode": 68,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: m_44000000": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 5:  => PlaceMobAtLocation (m_44000000, l_castle)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: m_44000000": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: l_castle": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -266,211 +266,22 @@
 },
 "messageId": -1
 },
-" 7:  >> WhenGivingItemToNpc (i_clothes, n_witch): set s_1": {
-"opCode": 1,
-"argCount": 3,
-"arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-},
-"1: i_clothes": {
-"type": "Item",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-},
-"2: n_witch": {
-"type": "Npc",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-" 8: s_1 => CreateFoe(m_guard, 2, 50%, 50)": {
-"opCode": 9,
-"argCount": 5,
-"arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-},
-"1: m_guard": {
-"type": "Mob",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-},
-"2: 2": {
-"type": "Value",
-"value": "2",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-},
-"3: 50": {
-"type": "Value",
-"value": "50",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-},
-"4: 30": {
-"type": "Value",
-"value": "30",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-}
-},
-"messageId": 1012
-},
-" 9: s_1 => HideNpc (n_witch)": {
-"opCode": 46,
-"argCount": 2,
-"arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-},
-"1: n_witch": {
-"type": "Npc",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-"10: s_1 => Say (1011)": {
-"opCode": 51,
-"argCount": 1,
-"arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-}
-},
-"messageId": 1011
-},
-"11: s_1 => StartNpcEscort (n_witch)": {
-"opCode": 55,
-"argCount": 2,
-"arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-},
-"1: n_witch": {
-"type": "Npc",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-"12: s_2 => TriggerOnClickNpc (n_qgiver)": {
-"opCode": 28,
-"argCount": 2,
-"arguments:": {
-"0: s_2": {
-"type": "State",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0"
-},
-"1: n_qgiver": {
-"type": "Npc",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-"13:  >> When (s_2 and ! s_1): set s_3": {
+" 7:  >> When (s_4 and s_3): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
-"type": "State",
-"value": "3",
-"not": "False",
-"index": "3",
-"unknown1": "0"
-},
-"1: s_2": {
-"type": "State",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0"
-},
-"2: ! s_1": {
+"0: s_1": {
 "type": "State",
 "value": "1",
-"not": "True",
+"not": "False",
 "index": "1",
 "unknown1": "0"
 },
-"3: ": {
+"1: s_4": {
 "type": "State",
-"value": "-2",
+"value": "4",
 "not": "False",
-"index": "254",
-"unknown1": "0"
-},
-"4: ": {
-"type": "State",
-"value": "-2",
-"not": "False",
-"index": "254",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-"14: s_3 => Unset (s_2, s_3)": {
-"opCode": 7,
-"argCount": 5,
-"arguments:": {
-"0: s_3": {
-"type": "State",
-"value": "3",
-"not": "False",
-"index": "3",
-"unknown1": "0"
-},
-"1: s_2": {
-"type": "State",
-"value": "2",
-"not": "False",
-"index": "2",
+"index": "4",
 "unknown1": "0"
 },
 "2: s_3": {
@@ -497,64 +308,22 @@
 },
 "messageId": -1
 },
-"15:  >> When (s_2 and s_1): set s_4": {
-"opCode": 52,
+" 8: s_1 => QuestSuccess (i_gold)": {
+"opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
-"type": "State",
-"value": "4",
-"not": "False",
-"index": "4",
-"unknown1": "0"
-},
-"1: s_2": {
-"type": "State",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0"
-},
-"2: s_1": {
+"0: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0"
 },
-"3: ": {
-"type": "State",
-"value": "-2",
-"not": "False",
-"index": "254",
-"unknown1": "0"
-},
-"4: ": {
-"type": "State",
-"value": "-2",
-"not": "False",
-"index": "254",
-"unknown1": "0"
-}
-},
-"messageId": -1
-},
-"16: s_4 => QuestSuccess ()": {
-"opCode": 4,
-"argCount": 5,
-"arguments:": {
-"0: s_4": {
-"type": "State",
-"value": "4",
-"not": "False",
-"index": "4",
-"unknown1": "0"
-},
-"1: ": {
+"1: i_gold": {
 "type": "Item",
-"value": "-1",
+"value": "0",
 "not": "False",
-"index": "255",
+"index": "0",
 "unknown1": "0"
 },
 "2: ": {
@@ -581,43 +350,71 @@
 },
 "messageId": -1
 },
-"17: s_4 => EndQuest ()": {
-"opCode": 6,
-"argCount": 1,
+" 9: s_1 => AdjustReputationWithNpc (n_witch, -5)": {
+"opCode": 61,
+"argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_1": {
 "type": "State",
-"value": "4",
+"value": "1",
 "not": "False",
-"index": "4",
+"index": "1",
+"unknown1": "0"
+},
+"1: n_witch": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"2: -5": {
+"type": "Value",
+"value": "-5",
+"not": "False",
+"index": "0",
 "unknown1": "0"
 }
 },
 "messageId": -1
 },
-"18:  >> When (s_0 and s_1): set s_5": {
-"opCode": 52,
-"argCount": 5,
+"10: s_1 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
 "arguments:": {
-"0: s_5": {
-"type": "State",
-"value": "5",
-"not": "False",
-"index": "5",
-"unknown1": "0"
-},
-"1: s_0": {
-"type": "State",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0"
-},
-"2: s_1": {
+"0: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"11:  >> When (s_4 and ! s_3): set s_2": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"2: ! s_3": {
+"type": "State",
+"value": "3",
+"not": "True",
+"index": "3",
 "unknown1": "0"
 },
 "3: ": {
@@ -637,9 +434,86 @@
 },
 "messageId": -1
 },
-"19: s_5 => Say (1013)": {
+"12: s_2 => Unset (s_4, s_2)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"2: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"13: s_3 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+}
+},
+"messageId": 1011
+},
+"14: s_4 => TriggerOnClickNpc (n_qgiver)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"15: s_5 >> WhenPlayerCasts (51): set s_3": {
+"opCode": 73,
+"argCount": 3,
 "arguments:": {
 "0: s_5": {
 "type": "State",
@@ -647,9 +521,23 @@
 "not": "False",
 "index": "5",
 "unknown1": "0"
+},
+"1: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+},
+"2: 51": {
+"type": "Value",
+"value": "51",
+"not": "False",
+"index": "0",
+"unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": -1
 }
 }
 ,"states: [6]": {
@@ -659,26 +547,26 @@
 "globalIndex": 0,
 "index": 0,
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_reward": {
+"variable": "s_reward",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1,
 },
-" 2: s_qgclicked": {
-"variable": "s_qgclicked",
+" 2: s_40000002": {
+"variable": "s_40000002",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2,
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_0000031a": {
+"variable": "s_0000031a",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3,
 },
-" 4: s_reward": {
-"variable": "s_reward",
+" 4: s_qgclicked": {
+"variable": "s_qgclicked",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4,

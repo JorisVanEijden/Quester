@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daggerfall Quest Decompiler</title>
+    <style>
+        html{font-family:"Lucida Console",Monaco,monospace}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}
+
+    </style>
+</head>
+<body>
+<div id="placeholder"></div>
+</body>
+</html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">function JsonTreeBuilder() {
+
+    this.build = function (jsonDoc) {
+        // build ul for the json
+        var tree = generateTree(jsonDoc);
+        // and make it expandable/collapsible
+        activateTree(tree);
+
+        // wrap with container and return
+        return $('<div id="jsonTree"/>').append(tree);
+    };
+
+    var generateTree = function (data) {
+        if (typeof (data) == 'object' && data != null) {
+            var ul = $('<ul>');
+            for (var i in data) {
+                var li = $('<li>');
+                ul.append(li.html(i).append(generateTree(data[i])));
+            }
+            return ul;
+        } else {
+            var v = (data == undefined) ? '[empty]' : data;
+            var textNode = document.createTextNode(' : ' + v);
+            return textNode;
+        }
+    };
+
+    var activateTree = function (tree) {
+        // find every ul that is child of li and make the li (the parent) expandable so it will be able to hide/show the ul (the content) by click
+        $('li > ul', tree).each(function () {
+            var innerUlContent = $(this);
+            var parent = innerUlContent.parent('li');
+            parent.addClass('expandable');
+            parent.click(function () {
+                $(this).toggleClass('expanded');
+                innerUlContent.slideToggle('fast');
+            });
+
+            // prevent li clicks to propagate upper than the container ul
+            innerUlContent.click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        // start with the tree collapsed.
+        $('ul', tree).hide();
+    };
+}
+
+
+</script>
+<script type="text/javascript">
+function getJson() {
+    var json = {
+"items: [6]": {
+" 0: i_000006c3: Artifact Flammable Parchment [1015]": {
+"variable": "i_000006c3",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1015,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_0001a7fc: Artifact Flammable Parchment [1011]": {
+"variable": "i_0001a7fc",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1011,
+"index": 1,
+"unknown1": 0
+},
+" 2: i_0003453c: Artifact Flammable Parchment [1012]": {
+"variable": "i_0003453c",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1012,
+"index": 2,
+"unknown1": 0
+},
+" 3: i_000065b3: Artifact Flammable Parchment [1016]": {
+"variable": "i_000065b3",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1016,
+"index": 3,
+"unknown1": 0
+},
+" 4: Random gold": {
+"variable": "i_dbgold",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 4,
+"unknown1": 0
+},
+" 5: Random gold": {
+"variable": "i_gold",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 5,
+"unknown1": 0
+}
+}
+,"npcs: [3]": {
+" 0: n_qgiver: Male ": {
+"variable": "n_qgiver",
+"gender": "Male",
+"facePictureIndex": 0,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_db: Male The_Dark_Brotherhood": {
+"variable": "n_db",
+"gender": "Male",
+"facePictureIndex": 78,
+"factionType": 65535,
+"faction": "The_Dark_Brotherhood",
+"factionRaw": 108,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: n_scholar: Female Sheogorath": {
+"variable": "n_scholar",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65534,
+"faction": "Sheogorath",
+"factionRaw": 9,
+"textRecordId1": 1017,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [3]": {
+" 0: t_queston: OneLink": {
+"variable": "t_queston",
+"type": "OneLink",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 2,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 273,
+"index": 0,
+},
+" 1: t_000096fc: Random": {
+"variable": "t_000096fc",
+"type": "Random",
+"minimum": "01:40:00",
+"maximum": "13:20:00",
+"link1": 2,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 1,
+},
+" 2: t_0004d53c: Random": {
+"variable": "t_0004d53c",
+"type": "Random",
+"minimum": "06:40:00",
+"maximum": "23:20:00",
+"link1": 2,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+}
+}
+,"mobs: [1]": {
+" 0: m_shaman: 1 OrcShaman": {
+"variable": "m_shaman",
+"type": "OrcShaman",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+}
+}
+,"opCodes: [38]": {
+" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 2:  => CheckNpcReputation (s_0, n_db, 10)": {
+"opCode": 37,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352"
+}
+},
+"messageId": -1
+},
+" 3: ! s_0 => RemoveTopics (n_db)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: ! s_0": {
+"type": "State",
+"value": "0",
+"not": "True",
+"index": "0",
+"unknown1": "100680946"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352"
+}
+},
+"messageId": -1
+},
+" 4:  => PickOneOf (s_3, s_3, s_4, s_4)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "1156761600"
+},
+"3: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "1997668352"
+},
+"4: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "18153472"
+}
+},
+"messageId": -1
+},
+" 5: s_0 => Unset (s_3)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946"
+},
+"1: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18153472"
+}
+},
+"messageId": -1
+},
+" 6:  >> WhenTimerExpires (t_000096fc): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946"
+},
+"1: t_000096fc": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 7:  >> WhenTimerExpires (t_0004d53c): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946"
+},
+"1: t_0004d53c": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 8: s_2 => PlaceItemOnPlayer (i_0001a7fc) [Msg 1022]": {
+"opCode": 76,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: i_0001a7fc": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": 1022
+},
+" 9: s_5 => PlaceItemOnPlayer (i_0003453c) [Msg 1022]": {
+"opCode": 76,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946"
+},
+"1: i_0003453c": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": 1022
+},
+"10:  >> WhenItemIsUsed (i_0003453c): set s_16": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "14"
+},
+"2: i_0003453c": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"11:  >> WhenItemIsUsed (i_0001a7fc): set s_15": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "14"
+},
+"2: i_0001a7fc": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"12: s_16 => CreateLogEntry (1020, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "100680946"
+},
+"1: 1020": {
+"type": "Value",
+"value": "1020",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"13: s_15 => CreateLogEntry (1021, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "100680946"
+},
+"1: 1021": {
+"type": "Value",
+"value": "1021",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"14: s_15 => AddTopics (n_db)": {
+"opCode": 10,
+"argCount": 4,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "100680946"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352"
+}
+},
+"messageId": -1
+},
+"15: s_16 => AddTopics (n_db)": {
+"opCode": 10,
+"argCount": 4,
+"arguments:": {
+"0: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "100680946"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352"
+}
+},
+"messageId": -1
+},
+"16: s_6 => TriggerOnClickNpc (n_scholar)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+},
+"1: n_scholar": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"17: s_6 => Say (1013)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+}
+},
+"messageId": 1013
+},
+"18: s_6 => PlaceItemOnCharacter (i_000006c3)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+},
+"1: i_000006c3": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"19:  >> WhenGivingItemToNpc (i_000006c3, n_db): set s_7": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: i_000006c3": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"20: s_7 => PromptYesNo (s_8, s_9, 1014)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "14"
+},
+"2: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "1156761600"
+},
+"3: 1014": {
+"type": "Value",
+"value": "1014",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352"
+}
+},
+"messageId": -1
+},
+"21: s_8 => AdjustReputationWithNpc (n_db, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"22: s_9 => PlaceItemOnCharacter (i_000006c3)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946"
+},
+"1: i_000006c3": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"23: s_8 => PickOneOf (s_10, s_11)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "14"
+},
+"2: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18153472"
+}
+},
+"messageId": -1
+},
+"24: s_10 => Say (1019)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946"
+}
+},
+"messageId": 1019
+},
+"25: s_11 => Say (1018)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946"
+}
+},
+"messageId": 1018
+},
+"26: s_11 => PlaceItemOnCharacter (i_dbgold)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946"
+},
+"1: i_dbgold": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"27: s_10 => PlaceItemOnCharacter (i_000065b3)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946"
+},
+"1: i_000065b3": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"28: s_10 => PlaceItemOnCharacter (i_dbgold)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946"
+},
+"1: i_dbgold": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"29: s_10 => MakePermanent (i_dbgold)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946"
+},
+"1: i_dbgold": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"30: s_11 => MakePermanent (i_dbgold)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946"
+},
+"1: i_dbgold": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"31:  >> WhenGivingItemToNpc (i_000065b3, n_qgiver): set s_13": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "100680946"
+},
+"1: i_000065b3": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"32:  >> WhenGivingItemToNpc (i_000006c3, n_qgiver): set s_12": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946"
+},
+"1: i_000006c3": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"33: s_14 >> When (s_13): set s_12": {
+"opCode": 53,
+"argCount": 5,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "100680946"
+},
+"1: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "14"
+},
+"2: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18153472"
+}
+},
+"messageId": -1
+},
+"34: s_14 => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "100680946"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "18153472"
+}
+},
+"messageId": -1
+},
+"35: s_1 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+}
+},
+"messageId": -1
+},
+"36: s_14 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "100680946"
+}
+},
+"messageId": -1
+},
+"37: s_11 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946"
+}
+},
+"messageId": -1
+}
+}
+,"states: [17]": {
+" 0: s_000064bf": {
+"variable": "s_000064bf",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_queston": {
+"variable": "s_queston",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_000096fc": {
+"variable": "s_000096fc",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_letter": {
+"variable": "s_letter",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_00006d3c": {
+"variable": "s_00006d3c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_0004d53c": {
+"variable": "s_0004d53c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_0001afc2": {
+"variable": "s_0001afc2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_00000d4b": {
+"variable": "s_00000d4b",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_00007276": {
+"variable": "s_00007276",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_nononono": {
+"variable": "s_nononono",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+},
+"10: s_000692b3": {
+"variable": "s_000692b3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10,
+},
+"11: s_001b42b3": {
+"variable": "s_001b42b3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11,
+},
+"12: s_000072cd": {
+"variable": "s_000072cd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12,
+},
+"13: s_000661cd": {
+"variable": "s_000661cd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13,
+},
+"14: s_reward": {
+"variable": "s_reward",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14,
+},
+"15: s_000359ba": {
+"variable": "s_000359ba",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15,
+},
+"16: s_0001aafa": {
+"variable": "s_0001aafa",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 16,
+}
+}
+}
+;
+    return json;
+}
+$(document).ready(function () {
+    var treeBuilder = new JsonTreeBuilder();
+    var tree = treeBuilder.build(getJson());
+    $('div#placeholder').append(tree);
+});
+</script>

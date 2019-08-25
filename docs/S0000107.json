@@ -1,0 +1,70 @@
+{
+"items: [0]": {
+}
+,"npcs: [1]": {
+" 0: n_00000c7f: Female Queen_Aubki": {
+"variable": "n_00000c7f",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65528,
+"faction": "Queen_Aubki",
+"factionRaw": 365,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [0]": {
+}
+,"mobs: [0]": {
+}
+,"opCodes: [2]": {
+" 0:  => AdjustReputationWithNpc (n_00000c7f, 8)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "335544370"
+},
+"1: n_00000c7f": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "16451"
+},
+"2: 8": {
+"type": "Value",
+"value": "8",
+"not": "False",
+"index": "0",
+"unknown1": "3276800"
+}
+},
+"messageId": -1
+},
+" 1:  => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "335544370"
+}
+},
+"messageId": -1
+}
+}
+,"states: [0]": {
+}
+}

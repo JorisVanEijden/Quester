@@ -1,0 +1,2115 @@
+{
+"items: [2]": {
+" 0: i_letter: Artifact Flammable Parchment [1040]": {
+"variable": "i_letter",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1040,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_reward: Artifact MagicItem MagicItem": {
+"variable": "i_reward",
+"rewardType": "Artifact",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+}
+}
+,"npcs: [2]": {
+" 0: n_rebel: Female Baltham_Greyman": {
+"variable": "n_rebel",
+"gender": "Female",
+"facePictureIndex": 1,
+"factionType": 65535,
+"faction": "Baltham_Greyman",
+"factionRaw": 376,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_questgiver: Male ": {
+"variable": "n_questgiver",
+"gender": "Male",
+"facePictureIndex": 0,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+}
+}
+,"locations: [2]": {
+" 0: l_0000d527: OutOfTown 499": {
+"variable": "l_0000d527",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "499",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 5375,
+},
+" 1: l_rebelhouse: OutOfTown House4": {
+"variable": "l_rebelhouse",
+"generalLocation": "OutOfTown",
+"locationType": 20,
+"LocationType": "House4",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 5375,
+}
+}
+,"timers: [5]": {
+" 0: t_qtime: OneLink": {
+"variable": "t_qtime",
+"type": "OneLink",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 17,
+"index": 0,
+},
+" 1: t_00001941: Random": {
+"variable": "t_00001941",
+"type": "Random",
+"minimum": "00:01:00",
+"maximum": "00:05:00",
+"link1": 1,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 1,
+},
+" 2: t_00001942: Random": {
+"variable": "t_00001942",
+"type": "Random",
+"minimum": "00:01:00",
+"maximum": "00:10:00",
+"link1": 1,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+},
+" 3: t_00001943: Random": {
+"variable": "t_00001943",
+"type": "Random",
+"minimum": "00:01:00",
+"maximum": "00:14:00",
+"link1": 1,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 3,
+},
+" 4: t_healer: Random": {
+"variable": "t_healer",
+"type": "Random",
+"minimum": "00:02:00",
+"maximum": "00:18:00",
+"link1": 1,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 4,
+}
+}
+,"mobs: [5]": {
+" 0: m_mage1: 1 Mage": {
+"variable": "m_mage1",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+},
+" 1: m_mage2: 1 Mage": {
+"variable": "m_mage2",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1,
+},
+" 2: m_mage3: 1 Mage": {
+"variable": "m_mage3",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2,
+},
+" 3: m_mage4: 1 Mage": {
+"variable": "m_mage4",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 3,
+},
+" 4: m_00000c73: 1 Mage": {
+"variable": "m_00000c73",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 4,
+}
+}
+,"opCodes: [65]": {
+" 0:  >> WhenTimerExpires (t_qtime): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: t_qtime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 1:  => PlaceNpcAt (n_rebel, l_rebelhouse)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: n_rebel": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_rebelhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 2:  => CreateLogEntry (1020, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: 1020": {
+"type": "Value",
+"value": "1020",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 3: s_2 => CreateLogEntry (1021, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: 1021": {
+"type": "Value",
+"value": "1021",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 4: s_1 => TriggerOnClickNpc (n_rebel)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "109228594"
+},
+"1: n_rebel": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 5: s_1 => PromptYesNo (s_2, s_3, 1030)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "109228594"
+},
+"1: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: 1030": {
+"type": "Value",
+"value": "1030",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+" 6: s_2 => Say (1031)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+}
+},
+"messageId": 1031
+},
+" 7: s_2 => PlaceItemOnCharacter (i_letter)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 8: s_3 => Say (1032)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+}
+},
+"messageId": 1032
+},
+" 9: s_1 => PlaceNpcAt (n_rebel, l_0000d527)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "109228594"
+},
+"1: n_rebel": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"10: s_3 => PlaceMobAtLocation (m_mage1, l_rebelhouse)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_rebelhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"11: s_3 => SetMobPowerLevel (m_mage1, 46)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 46": {
+"type": "Value",
+"value": "46",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"12:  >> WhenTimerExpires (t_00001941): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: t_00001941": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"13:  >> WhenTimerExpires (t_00001942): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_20": {
+"type": "State",
+"value": "20",
+"not": "False",
+"index": "20",
+"unknown1": "109228594"
+},
+"1: t_00001942": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"14:  >> WhenTimerExpires (t_00001943): set s_3": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: t_00001943": {
+"type": "Timer",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"15:  >> WhenTimerExpires (t_healer): set s_4": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: t_healer": {
+"type": "Timer",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"16: s_4 => PlaceMobAtLocation (m_mage1, l_0000d527) [Msg 1060]": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": 1060
+},
+"17: s_4 >> WhenAtLocation (l_rebelhouse): set s_19": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "109228594"
+},
+"1: s_19": {
+"type": "State",
+"value": "19",
+"not": "False",
+"index": "19",
+"unknown1": "14"
+},
+"2: l_rebelhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"18:  >> When (s_4 and ! s_19 and ! s_8): set s_20": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_20": {
+"type": "State",
+"value": "20",
+"not": "False",
+"index": "20",
+"unknown1": "109228594"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ! s_19": {
+"type": "State",
+"value": "19",
+"not": "True",
+"index": "19",
+"unknown1": "-1305294848"
+},
+"3: ! s_8": {
+"type": "State",
+"value": "8",
+"not": "True",
+"index": "8",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"19: s_20 => CreateFoe(m_mage2, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_20": {
+"type": "State",
+"value": "20",
+"not": "False",
+"index": "20",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"20: s_20 => SetMobPowerLevel (m_mage2, 46)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_20": {
+"type": "State",
+"value": "20",
+"not": "False",
+"index": "20",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 46": {
+"type": "Value",
+"value": "46",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"21: s_5 => PlaceMobAtLocation (m_mage2, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"22: s_5 => CreateFoe(m_mage3, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "25165824"
+}
+},
+"messageId": 1061
+},
+"23: s_6 => PlaceMobAtLocation (m_mage3, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"24: s_6 => CreateFoe(m_mage4, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: m_mage4": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "25165824"
+}
+},
+"messageId": 1062
+},
+"25: s_7 => PlaceMobAtLocation (m_mage4, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: m_mage4": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"26: s_7 => CreateFoe(m_00000c73, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: m_00000c73": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "25165824"
+}
+},
+"messageId": 1063
+},
+"27: s_8 => TriggerOnMobKills (m_mage1, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"28: s_8 => TriggerOnMobKills (m_mage2, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"29: s_8 => TriggerOnMobKills (m_mage3, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"30: s_8 => TriggerOnMobKills (m_mage4, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_mage4": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"31: s_8 => TriggerOnMobKills (m_00000c73, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_00000c73": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"32: s_9 >> When (s_2): set s_8": {
+"opCode": 53,
+"argCount": 5,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "14"
+},
+"2: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"33: s_9 => StopTimer (t_00001941)": {
+"opCode": 13,
+"argCount": 2,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: t_00001941": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"34: s_9 => StopTimer (t_00001942)": {
+"opCode": 13,
+"argCount": 2,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: t_00001942": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"35: s_9 => StopTimer (t_00001943)": {
+"opCode": 13,
+"argCount": 2,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: t_00001943": {
+"type": "Timer",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"36: s_9 => StopTimer (t_healer)": {
+"opCode": 13,
+"argCount": 2,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: t_healer": {
+"type": "Timer",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"37: s_10 => TriggerOnMobHurtByPlayer (m_mage1)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"38: s_10 => SetMobPowerLevel (m_mage1, 64)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 64": {
+"type": "Value",
+"value": "64",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"39: s_11 => TriggerOnMobHurtByPlayer (m_mage2)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"40: s_11 => SetMobPowerLevel (m_mage2, 64)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 64": {
+"type": "Value",
+"value": "64",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"41: s_12 => TriggerOnMobHurtByPlayer (m_mage3)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"42: s_12 => SetMobPowerLevel (m_mage3, 64)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 64": {
+"type": "Value",
+"value": "64",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"43: s_13 => TriggerOnMobHurtByPlayer (m_mage4)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: m_mage4": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"44: s_14 => TriggerOnMobHurtByPlayer (m_00000c73)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "109228594"
+},
+"1: m_00000c73": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"45: s_11 => PromptYesNo (s_2, s_3, 1050)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "109228594"
+},
+"1: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: 1050": {
+"type": "Value",
+"value": "1050",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+"46: s_12 => PromptYesNo (s_2, s_3, 1051)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "109228594"
+},
+"1: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: 1051": {
+"type": "Value",
+"value": "1051",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+"47: s_13 => PromptYesNo (s_2, s_3, 1052)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: 1052": {
+"type": "Value",
+"value": "1052",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+"48: s_14 => PromptYesNo (s_2, s_3, 1053)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "109228594"
+},
+"1: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: 1053": {
+"type": "Value",
+"value": "1053",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+"49: s_2 => PlaceMobAtLocation (m_mage1, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_mage1": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"50: s_2 => PlaceMobAtLocation (m_mage2, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_mage2": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"51: s_2 => PlaceMobAtLocation (m_mage3, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_mage3": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"52: s_2 => PlaceMobAtLocation (m_mage4, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_mage4": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"53: s_2 => PlaceMobAtLocation (m_00000c73, l_0000d527)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_00000c73": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"54: s_2 => StartQuest (502, 502)": {
+"opCode": 8,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: 502": {
+"type": "Value",
+"value": "502",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 502": {
+"type": "Value",
+"value": "502",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"55:  >> WhenGivingItemToNpc (i_letter, n_questgiver): set s_15": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "109228594"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_questgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"56: s_16 => TriggerOnClickNpc (n_questgiver)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "109228594"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"57:  >> When (s_16 and s_8): set s_17": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_17": {
+"type": "State",
+"value": "17",
+"not": "False",
+"index": "17",
+"unknown1": "109228594"
+},
+"1: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "14"
+},
+"2: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"58:  => Unset (s_16)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "14"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"59: s_15 => Say (1041)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "109228594"
+}
+},
+"messageId": 1041
+},
+"60: s_17 => Say (1042)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_17": {
+"type": "State",
+"value": "17",
+"not": "False",
+"index": "17",
+"unknown1": "109228594"
+}
+},
+"messageId": 1042
+},
+"61: s_18 >> When (s_17): set s_15": {
+"opCode": 53,
+"argCount": 5,
+"arguments:": {
+"0: s_18": {
+"type": "State",
+"value": "18",
+"not": "False",
+"index": "18",
+"unknown1": "109228594"
+},
+"1: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "14"
+},
+"2: s_17": {
+"type": "State",
+"value": "17",
+"not": "False",
+"index": "17",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"62: s_18 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_18": {
+"type": "State",
+"value": "18",
+"not": "False",
+"index": "18",
+"unknown1": "109228594"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "25165824"
+}
+},
+"messageId": -1
+},
+"63: s_0 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "109228594"
+}
+},
+"messageId": -1
+},
+"64: s_18 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_18": {
+"type": "State",
+"value": "18",
+"not": "False",
+"index": "18",
+"unknown1": "109228594"
+}
+},
+"messageId": -1
+}
+}
+,"states: [21]": {
+" 0: s_qtime": {
+"variable": "s_qtime",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_000199a6": {
+"variable": "s_000199a6",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_0000385c": {
+"variable": "s_0000385c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_00001afc": {
+"variable": "s_00001afc",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_00001941": {
+"variable": "s_00001941",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_00001942": {
+"variable": "s_00001942",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_00001943": {
+"variable": "s_00001943",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_healer": {
+"variable": "s_healer",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_0000d506": {
+"variable": "s_0000d506",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_0000de36": {
+"variable": "s_0000de36",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+},
+"10: s_000005fd": {
+"variable": "s_000005fd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10,
+},
+"11: s_000005fe": {
+"variable": "s_000005fe",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11,
+},
+"12: s_000005ff": {
+"variable": "s_000005ff",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12,
+},
+"13: s_00000600": {
+"variable": "s_00000600",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13,
+},
+"14: s_00000601": {
+"variable": "s_00000601",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14,
+},
+"15: s_0001a5bc": {
+"variable": "s_0001a5bc",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15,
+},
+"16: s_clickqgiver": {
+"variable": "s_clickqgiver",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 16,
+},
+"17: s_success": {
+"variable": "s_success",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 17,
+},
+"18: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 18,
+},
+"19: s_00001a69": {
+"variable": "s_00001a69",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 19,
+},
+"20: s_00003809": {
+"variable": "s_00003809",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 20,
+}
+}
+}

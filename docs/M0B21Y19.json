@@ -1,0 +1,1720 @@
+{
+"items: [4]": {
+" 0: i_note: Artifact Flammable Parchment [1030]": {
+"variable": "i_note",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1030,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_reward: Artifact MagicItem MagicItem": {
+"variable": "i_reward",
+"rewardType": "Artifact",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: i_0000060d: Artifact QuestItems Dead_body": {
+"variable": "i_0000060d",
+"rewardType": "Artifact",
+"category": "QuestItems",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+},
+" 3: i_letter: Artifact Flammable Parchment [1031]": {
+"variable": "i_letter",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1031,
+"index": 3,
+"unknown1": 0
+}
+}
+,"npcs: [4]": {
+" 0: n_victim: Female Mehrunes_Dagon": {
+"variable": "n_victim",
+"gender": "Female",
+"facePictureIndex": 5,
+"factionType": 65531,
+"faction": "Mehrunes_Dagon",
+"factionRaw": 2,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_questgiver: Male ": {
+"variable": "n_questgiver",
+"gender": "Male",
+"facePictureIndex": 0,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: n_daughter: Female People_of_Sentinel": {
+"variable": "n_daughter",
+"gender": "Female",
+"facePictureIndex": 3,
+"factionType": 65535,
+"faction": "People_of_Sentinel",
+"factionRaw": 523,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+},
+" 3: n_darkb: Female The_Dark_Brotherhood": {
+"variable": "n_darkb",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65535,
+"faction": "The_Dark_Brotherhood",
+"factionRaw": 108,
+"textRecordId1": 1015,
+"textRecordId2": 1016,
+"index": 3,
+"unknown1": 0
+}
+}
+,"locations: [4]": {
+" 0: l_victimhouse: InCurrentTown House4": {
+"variable": "l_victimhouse",
+"generalLocation": "InCurrentTown",
+"locationType": 20,
+"LocationType": "House4",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+},
+" 1: l_daughterhouse: OutOfTown House4": {
+"variable": "l_daughterhouse",
+"generalLocation": "OutOfTown",
+"locationType": 20,
+"LocationType": "House4",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+},
+" 2: l_safehouse: OutOfTown House3": {
+"variable": "l_safehouse",
+"generalLocation": "OutOfTown",
+"locationType": 19,
+"LocationType": "House3",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+},
+" 3: l_0000d527: OutOfTown 499": {
+"variable": "l_0000d527",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "499",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+}
+}
+,"timers: [3]": {
+" 0: t_qtime: TwoLinksPlus": {
+"variable": "t_qtime",
+"type": "TwoLinksPlus",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 3,
+"duration": 0,
+"started": 0,
+"flags": 513,
+"index": 0,
+},
+" 1: t_00035bd3: Random": {
+"variable": "t_00035bd3",
+"type": "Random",
+"minimum": "10.00:00:00",
+"maximum": "20.20:00:00",
+"link1": 0,
+"link2": 3,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 1,
+},
+" 2: t_00006ea3: TwoLinksPlus": {
+"variable": "t_00006ea3",
+"type": "TwoLinksPlus",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 2,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+}
+}
+,"mobs: [3]": {
+" 0: m_enemy: 1 Assassin": {
+"variable": "m_enemy",
+"type": "Assassin",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+},
+" 1: m_000019e8: 1 Nightblade": {
+"variable": "m_000019e8",
+"type": "Nightblade",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1,
+},
+" 2: m_00001922: 4 Assassin": {
+"variable": "m_00001922",
+"type": "Assassin",
+"count": 4,
+"null1": 0,
+"null2": 0,
+"index": 2,
+}
+}
+,"opCodes: [53]": {
+" 0:  >> WhenTimerExpires (t_qtime): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: t_qtime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 1:  => CreateLogEntry (1020, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: 1020": {
+"type": "Value",
+"value": "1020",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 2:  => RemoveTopics (l_daughterhouse, n_daughter)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: l_daughterhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+" 3:  => RemoveTopics (n_darkb)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: n_darkb": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+" 4:  => EnsureNpcLocation (l_victimhouse, n_victim)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: l_victimhouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_victim": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 5:  => PlaceNpcAt (n_victim, l_victimhouse)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: n_victim": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_victimhouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 6:  >> WhenAtLocation (l_victimhouse): set s_5": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14"
+},
+"2: l_victimhouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 7: s_5 => HideNpc (n_victim)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: n_victim": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 8: s_5 => PlaceItemAt (i_0000060d, l_victimhouse)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: i_0000060d": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: l_victimhouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+" 9: s_5 => PlaceItemAt (i_note, l_victimhouse)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: i_note": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_victimhouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"10: s_5 => CreateLogEntry (1021, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: 1021": {
+"type": "Value",
+"value": "1021",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"11: s_5 => CreateFoe(m_enemy, 2, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: m_enemy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"12: s_2 => TriggerOnMobHurtByPlayer (m_enemy)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+},
+"1: m_enemy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"13: s_2 => Say (1035)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "109228594"
+}
+},
+"messageId": 1035
+},
+"14: s_5 => AddRumor (1040)": {
+"opCode": 38,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "109228594"
+},
+"1: 1040": {
+"type": "Value",
+"value": "1040",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"15:  >> WhenItemIsUsed (i_note): set s_1": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "109228594"
+},
+"1: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: i_note": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"16: s_1 => AddTopics (n_darkb)": {
+"opCode": 10,
+"argCount": 4,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "109228594"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: n_darkb": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1223557120"
+}
+},
+"messageId": -1
+},
+"17: s_6 => TriggerOnClickNpc (n_darkb)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: n_darkb": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"18: s_6 => Say (1050)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+}
+},
+"messageId": 1050
+},
+"19: s_6 => HideNpc (n_darkb)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: n_darkb": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"20: s_6 => CreateFoe(m_000019e8, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: m_000019e8": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"21: s_6 => CreateFoe(m_enemy, 3, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "109228594"
+},
+"1: m_enemy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 3": {
+"type": "Value",
+"value": "3",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"22: s_7 => TriggerOnMobKills (m_000019e8, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: m_000019e8": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"23: s_7 => AddRumor (1041)": {
+"opCode": 38,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: 1041": {
+"type": "Value",
+"value": "1041",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"24: s_7 => AdjustReputationWithNpc (n_darkb, -15)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: n_darkb": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: -15": {
+"type": "Value",
+"value": "-15",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"25: s_7 => AdjustReputationWithNpc (n_daughter, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"26:  >> WhenTimerExpires (t_00035bd3): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "109228594"
+},
+"1: t_00035bd3": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"27:  >> WhenTimerExpires (t_00006ea3): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: t_00006ea3": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"28: s_3 => PlaceItemOnPlayer (i_letter) [Msg 1070]": {
+"opCode": 76,
+"argCount": 2,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": 1070
+},
+"29: s_3 >> WhenItemIsUsed (i_letter): set s_9": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "14"
+},
+"2: i_letter": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"30: s_9 => CreateLogEntry (1022, 2)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "109228594"
+},
+"1: 1022": {
+"type": "Value",
+"value": "1022",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"31: s_3 => EnsureNpcLocation (l_daughterhouse)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: l_daughterhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"32: s_3 => PlaceNpcAt (n_daughter, l_daughterhouse)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "109228594"
+},
+"1: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: l_daughterhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"33: s_8 => TriggerOnClickNpc (n_daughter)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"34: s_8 => Say (1051)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+}
+},
+"messageId": 1051
+},
+"35: s_8 => PlaceNpcAt (n_daughter, l_0000d527)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: l_0000d527": {
+"type": "Location",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"36: s_8 => StartNpcEscort (n_daughter)": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: n_daughter": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"37: s_8 => CreateFoe(m_00001922, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: m_00001922": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "-1223557120"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"38: s_11 => TriggerOnMobHurtByPlayer (m_00001922)": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "109228594"
+},
+"1: m_00001922": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"39: s_11 => Say (1036)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "109228594"
+}
+},
+"messageId": 1036
+},
+"40: s_8 >> WhenAtLocation (l_daughterhouse): set s_12": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "109228594"
+},
+"1: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "14"
+},
+"2: l_daughterhouse": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"41:  >> When (s_8 and ! s_12): set s_13": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "14"
+},
+"2: ! s_12": {
+"type": "State",
+"value": "12",
+"not": "True",
+"index": "12",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"42: s_13 => Say (1052)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+}
+},
+"messageId": 1052
+},
+"43: s_13 => CreateLogEntry (1023, 3)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: 1023": {
+"type": "Value",
+"value": "1023",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 3": {
+"type": "Value",
+"value": "3",
+"not": "False",
+"index": "0",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"44: s_13 => EnsureNpcLocation (l_safehouse)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: l_safehouse": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"45: s_13 >> WhenAtLocation (l_safehouse): set s_14": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "109228594"
+},
+"1: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "14"
+},
+"2: l_safehouse": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1305294848"
+}
+},
+"messageId": -1
+},
+"46: s_14 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "109228594"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"47:  >> When (s_4 and ! s_14): set s_15": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "109228594"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ! s_14": {
+"type": "State",
+"value": "14",
+"not": "True",
+"index": "14",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"48:  >> When (s_0 and ! s_7): set s_10": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "109228594"
+},
+"1: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ! s_7": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "-1305294848"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "-1223557120"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76218368"
+}
+},
+"messageId": -1
+},
+"49: s_15 => Say (1071)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "109228594"
+}
+},
+"messageId": 1071
+},
+"50: s_14 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "109228594"
+}
+},
+"messageId": -1
+},
+"51: s_10 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "109228594"
+}
+},
+"messageId": -1
+},
+"52: s_4 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "109228594"
+}
+},
+"messageId": -1
+}
+}
+,"states: [16]": {
+" 0: s_qtime": {
+"variable": "s_qtime",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_readnote": {
+"variable": "s_readnote",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_00006967": {
+"variable": "s_00006967",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_00035bd3": {
+"variable": "s_00035bd3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_00006ea3": {
+"variable": "s_00006ea3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_000d2bf7": {
+"variable": "s_000d2bf7",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_000198e8": {
+"variable": "s_000198e8",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_0000d448": {
+"variable": "s_0000d448",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_000cca9c": {
+"variable": "s_000cca9c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_readletter": {
+"variable": "s_readletter",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+},
+"10: s_0000e0ec": {
+"variable": "s_0000e0ec",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10,
+},
+"11: s_0000d2a2": {
+"variable": "s_0000d2a2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11,
+},
+"12: s_00006717": {
+"variable": "s_00006717",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12,
+},
+"13: s_000033c6": {
+"variable": "s_000033c6",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13,
+},
+"14: s_000342b7": {
+"variable": "s_000342b7",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14,
+},
+"15: s_00003237": {
+"variable": "s_00003237",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15,
+}
+}
+}

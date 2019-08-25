@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daggerfall Quest Decompiler</title>
+    <style>
+        html{font-family:"Lucida Console",Monaco,monospace}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}
+
+    </style>
+</head>
+<body>
+<div id="placeholder"></div>
+</body>
+</html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">function JsonTreeBuilder() {
+
+    this.build = function (jsonDoc) {
+        // build ul for the json
+        var tree = generateTree(jsonDoc);
+        // and make it expandable/collapsible
+        activateTree(tree);
+
+        // wrap with container and return
+        return $('<div id="jsonTree"/>').append(tree);
+    };
+
+    var generateTree = function (data) {
+        if (typeof (data) == 'object' && data != null) {
+            var ul = $('<ul>');
+            for (var i in data) {
+                var li = $('<li>');
+                ul.append(li.html(i).append(generateTree(data[i])));
+            }
+            return ul;
+        } else {
+            var v = (data == undefined) ? '[empty]' : data;
+            var textNode = document.createTextNode(' : ' + v);
+            return textNode;
+        }
+    };
+
+    var activateTree = function (tree) {
+        // find every ul that is child of li and make the li (the parent) expandable so it will be able to hide/show the ul (the content) by click
+        $('li > ul', tree).each(function () {
+            var innerUlContent = $(this);
+            var parent = innerUlContent.parent('li');
+            parent.addClass('expandable');
+            parent.click(function () {
+                $(this).toggleClass('expanded');
+                innerUlContent.slideToggle('fast');
+            });
+
+            // prevent li clicks to propagate upper than the container ul
+            innerUlContent.click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        // start with the tree collapsed.
+        $('ul', tree).hide();
+    };
+}
+
+
+</script>
+<script type="text/javascript">
+function getJson() {
+    var json = {
+"items: [1]": {
+" 0: Random gold": {
+"variable": "i_gold",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+}
+}
+,"npcs: [1]": {
+" 0: n_questgiver: Male ": {
+"variable": "n_questgiver",
+"gender": "Male",
+"facePictureIndex": 8,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_palace: OutOfTown Palace": {
+"variable": "l_palace",
+"generalLocation": "OutOfTown",
+"locationType": 16,
+"LocationType": "Palace",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 12543,
+}
+}
+,"timers: [5]": {
+" 0: t_traveltime: OneLink": {
+"variable": "t_traveltime",
+"type": "OneLink",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 17,
+"index": 0,
+},
+" 1: t_0000353d: Fixed": {
+"variable": "t_0000353d",
+"type": "Fixed",
+"minimum": "00:04:00",
+"maximum": "00:20:00",
+"link1": 0,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 1,
+},
+" 2: t_0000353e: Fixed": {
+"variable": "t_0000353e",
+"type": "Fixed",
+"minimum": "00:04:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+},
+" 3: t_0000353f: Fixed": {
+"variable": "t_0000353f",
+"type": "Fixed",
+"minimum": "00:04:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 3,
+},
+" 4: t_00003540: Fixed": {
+"variable": "t_00003540",
+"type": "Fixed",
+"minimum": "00:04:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 449,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 4,
+}
+}
+,"mobs: [1]": {
+" 0: m_imp: 1 Imp": {
+"variable": "m_imp",
+"type": "Imp",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+}
+}
+,"opCodes: [32]": {
+" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: t_traveltime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 2:  => PlaceMobAtLocation (m_imp, l_palace)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_palace": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 3:  => EnsureNpcLocation (l_palace)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: l_palace": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 4:  >> WhenAtLocation (l_palace): set s_1": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946"
+},
+"1: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: l_palace": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 5: s_1 => SetMobPowerLevel (m_imp, 6)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 6: s_1 => SetMobPowerLevel (m_imp, 17)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 17": {
+"type": "Value",
+"value": "17",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 7: s_1 => SetMobPowerLevel (m_imp, 24)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 24": {
+"type": "Value",
+"value": "24",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 8: s_1 => SetMobPowerLevel (m_imp, 22)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+" 9:  >> WhenTimerExpires (t_0000353d): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: t_0000353d": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"10: s_2 => SetMobPowerLevel (m_imp, 6)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"11: s_2 => SetMobPowerLevel (m_imp, 17)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 17": {
+"type": "Value",
+"value": "17",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"12: s_2 => SetMobPowerLevel (m_imp, 24)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 24": {
+"type": "Value",
+"value": "24",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"13: s_2 => SetMobPowerLevel (m_imp, 22)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"14:  >> WhenTimerExpires (t_0000353e): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946"
+},
+"1: t_0000353e": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"15: s_7 => SetMobPowerLevel (m_imp, 6)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"16: s_1 => SetMobPowerLevel (m_imp, 17)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 17": {
+"type": "Value",
+"value": "17",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"17: s_7 => SetMobPowerLevel (m_imp, 24)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 24": {
+"type": "Value",
+"value": "24",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"18: s_7 => SetMobPowerLevel (m_imp, 22)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"19:  >> WhenTimerExpires (t_0000353f): set s_3": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946"
+},
+"1: t_0000353f": {
+"type": "Timer",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"20: s_8 => SetMobPowerLevel (m_imp, 6)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"21: s_8 => SetMobPowerLevel (m_imp, 17)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 17": {
+"type": "Value",
+"value": "17",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"22: s_8 => SetMobPowerLevel (m_imp, 24)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 24": {
+"type": "Value",
+"value": "24",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"23: s_8 => SetMobPowerLevel (m_imp, 22)": {
+"opCode": 69,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"24: s_3 => TriggerOnMobKills (m_imp, 1)": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946"
+},
+"1: m_imp": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600"
+}
+},
+"messageId": -1
+},
+"25: s_4 => TriggerOnClickNpc (n_questgiver)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"26:  >> When (s_4 and ! s_3): set s_5": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ! s_3": {
+"type": "State",
+"value": "3",
+"not": "True",
+"index": "3",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "16842752"
+}
+},
+"messageId": -1
+},
+"27:  >> When (s_4 and s_3): set s_6": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "16842752"
+}
+},
+"messageId": -1
+},
+"28: s_5 => Unset (s_4, s_5)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "16842752"
+}
+},
+"messageId": -1
+},
+"29: s_6 => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "16842752"
+}
+},
+"messageId": -1
+},
+"30: s_6 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946"
+}
+},
+"messageId": -1
+},
+"31: s_0 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946"
+}
+},
+"messageId": -1
+}
+}
+,"states: [10]": {
+" 0: s_traveltime": {
+"variable": "s_traveltime",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_0000679f": {
+"variable": "s_0000679f",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_0000353d": {
+"variable": "s_0000353d",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_000034ba": {
+"variable": "s_000034ba",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_00006623": {
+"variable": "s_00006623",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_clearclick": {
+"variable": "s_clearclick",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_0000d194": {
+"variable": "s_0000d194",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_0000353e": {
+"variable": "s_0000353e",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_0000353f": {
+"variable": "s_0000353f",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_00003540": {
+"variable": "s_00003540",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+}
+}
+}
+;
+    return json;
+}
+$(document).ready(function () {
+    var treeBuilder = new JsonTreeBuilder();
+    var tree = treeBuilder.build(getJson());
+    $('div#placeholder').append(tree);
+});
+</script>

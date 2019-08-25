@@ -1,0 +1,1304 @@
+{
+"items: [6]": {
+" 0: i_item1: Artifact CreatureIngredients3 CreatureIngredients3": {
+"variable": "i_item1",
+"rewardType": "Artifact",
+"category": "CreatureIngredients3",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_item2: Artifact MiscellaneousIngredients2 MiscellaneousIngredients2": {
+"variable": "i_item2",
+"rewardType": "Artifact",
+"category": "MiscellaneousIngredients2",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: i_item3: Artifact CreatureIngredients1 CreatureIngredients1": {
+"variable": "i_item3",
+"rewardType": "Artifact",
+"category": "CreatureIngredients1",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+},
+" 3: i_reward1: Artifact Gems Malachite": {
+"variable": "i_reward1",
+"rewardType": "Artifact",
+"category": "Gems",
+"itemId": 6,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"unknown1": 0
+},
+" 4: i_reward2: Artifact Gems Turquoise": {
+"variable": "i_reward2",
+"rewardType": "Artifact",
+"category": "Gems",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 4,
+"unknown1": 0
+},
+" 5: i_reward3: Artifact Gems Jade": {
+"variable": "i_reward3",
+"rewardType": "Artifact",
+"category": "Gems",
+"itemId": 4,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 5,
+"unknown1": 0
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver: Male ": {
+"variable": "n_qgiver",
+"gender": "Male",
+"facePictureIndex": 0,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 1011,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+}
+}
+,"locations: [3]": {
+" 0: l_dungeon1: OutOfTown NaturalCave": {
+"variable": "l_dungeon1",
+"generalLocation": "OutOfTown",
+"locationType": 6,
+"LocationType": "NaturalCave",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 0,
+},
+" 1: l_dungeon2: OutOfTown SpiderNest": {
+"variable": "l_dungeon2",
+"generalLocation": "OutOfTown",
+"locationType": 12,
+"LocationType": "SpiderNest",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 0,
+},
+" 2: l_dungeon3: OutOfTown HarpyNest": {
+"variable": "l_dungeon3",
+"generalLocation": "OutOfTown",
+"locationType": 10,
+"LocationType": "HarpyNest",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 0,
+}
+}
+,"timers: [1]": {
+" 0: t_queston: TwoLinksPlus": {
+"variable": "t_queston",
+"type": "TwoLinksPlus",
+"minimum": "6.22:40:00",
+"maximum": "10.10:00:00",
+"link1": 0,
+"link2": 0,
+"duration": 0,
+"started": 0,
+"flags": 17,
+"index": 0,
+}
+}
+,"mobs: [6]": {
+" 0: m_44000000: 1 Gargoyle": {
+"variable": "m_44000000",
+"type": "Gargoyle",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+},
+" 1: m_wereboar: 1 Wereboar": {
+"variable": "m_wereboar",
+"type": "Wereboar",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1,
+},
+" 2: m_spriggan: 1 Spriggan": {
+"variable": "m_spriggan",
+"type": "Spriggan",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2,
+},
+" 3: m_mummy: 1 Mummy": {
+"variable": "m_mummy",
+"type": "Mummy",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 3,
+},
+" 4: m_zombie: 1 Zombie": {
+"variable": "m_zombie",
+"type": "Zombie",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 4,
+},
+" 5: m_skeleton: 1 SkeletalWarrior": {
+"variable": "m_skeleton",
+"type": "SkeletalWarrior",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 5,
+}
+}
+,"opCodes: [34]": {
+" 0:  => PlaceItemAt (i_item3, l_dungeon3)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"2: l_dungeon3": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 1:  => PlaceItemAt (i_item2, l_dungeon2)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 2:  => PlaceItemAt (i_item1, l_dungeon1)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 3:  >> WhenTimerExpires (t_queston): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 4:  => AddLocationToMap (l_dungeon3)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: l_dungeon3": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 5:  => AddLocationToMap (l_dungeon2)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 6:  => AddLocationToMap (l_dungeon1)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 7:  => CreateLogEntry (1015, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: 1015": {
+"type": "Value",
+"value": "1015",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 8:  >> WhenAtLocation (l_dungeon1): set s_10": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "0"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+" 9:  >> WhenAtLocation (l_dungeon2): set s_14": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+},
+"1: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "0"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"10:  >> WhenGivingItemToNpc (i_item1, n_qgiver): set s_0": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"11:  >> WhenGivingItemToNpc (i_item2, n_qgiver): set s_1": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"12:  >> WhenGivingItemToNpc (i_item3, n_qgiver): set s_2": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"13: s_3 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"14: s_4 => CreateFoe(m_zombie, 15, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"1: m_zombie": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"15: s_4 => PlaceMobAtLocation (m_zombie, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"1: m_zombie": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"16: s_5 => CreateFoe(m_mummy, 10, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"1: m_mummy": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"17: s_5 => PlaceMobAtLocation (m_mummy, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"1: m_mummy": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"18: s_6 => CreateFoe(m_skeleton, 12, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0"
+},
+"1: m_skeleton": {
+"type": "Mob",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"2: 12": {
+"type": "Value",
+"value": "12",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"19: s_6 => PlaceMobAtLocation (m_skeleton, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0"
+},
+"1: m_skeleton": {
+"type": "Mob",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"20: s_7 => CreateFoe(m_44000000, 10, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0"
+},
+"1: m_44000000": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"21: s_7 => PlaceMobAtLocation (m_44000000, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0"
+},
+"1: m_44000000": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"22: s_8 => CreateFoe(m_spriggan, 15, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "0"
+},
+"1: m_spriggan": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"23: s_8 => PlaceMobAtLocation (m_spriggan, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "0"
+},
+"1: m_spriggan": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"24: s_9 => CreateFoe(m_wereboar, 12, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0"
+},
+"1: m_wereboar": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"2: 12": {
+"type": "Value",
+"value": "12",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"25: s_9 => PlaceMobAtLocation (m_wereboar, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0"
+},
+"1: m_wereboar": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"26: s_10 => PickOneOf (s_4, s_5, s_6, s_4)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "0"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"2: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"3: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0"
+},
+"4: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"27: s_11 => TriggerOnItemFound (i_item1) [Msg 1021]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "0"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+}
+},
+"messageId": 1021
+},
+"28: s_12 => TriggerOnItemFound (i_item2) [Msg 1022]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "0"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+}
+},
+"messageId": 1022
+},
+"29: s_13 => TriggerOnItemFound (i_item3) [Msg 1023]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_13": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "0"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+}
+},
+"messageId": 1023
+},
+"30: s_14 => PickOneOf (s_7, s_8, s_9, s_7)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "0"
+},
+"1: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0"
+},
+"2: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "0"
+},
+"3: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0"
+},
+"4: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"31:  >> When (s_0 and s_1 and s_2): set s_15": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0"
+},
+"1: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0"
+},
+"2: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0"
+},
+"3: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"32: s_15 => QuestSuccess (i_reward1, i_reward2, i_reward3)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0"
+},
+"1: i_reward1": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0"
+},
+"2: i_reward2": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0"
+},
+"3: i_reward3": {
+"type": "Item",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0"
+}
+},
+"messageId": -1
+},
+"33: s_15 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0"
+}
+},
+"messageId": -1
+}
+}
+,"states: [16]": {
+" 0: s_pchasitem1": {
+"variable": "s_pchasitem1",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_pchasitem2": {
+"variable": "s_pchasitem2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_pchasitem3": {
+"variable": "s_pchasitem3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_queston": {
+"variable": "s_queston",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_a1": {
+"variable": "s_a1",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_a2": {
+"variable": "s_a2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_a3": {
+"variable": "s_a3",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_a4": {
+"variable": "s_a4",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_a5": {
+"variable": "s_a5",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_a6": {
+"variable": "s_a6",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+},
+"10: s_4000000a": {
+"variable": "s_4000000a",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10,
+},
+"11: s_00000c59": {
+"variable": "s_00000c59",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11,
+},
+"12: s_4000000c": {
+"variable": "s_4000000c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12,
+},
+"13: s_4000000d": {
+"variable": "s_4000000d",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13,
+},
+"14: s_4000000e": {
+"variable": "s_4000000e",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14,
+},
+"15: s_4000000f": {
+"variable": "s_4000000f",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15,
+}
+}
+}

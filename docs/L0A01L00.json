@@ -1,0 +1,1260 @@
+{
+"items: [4]": {
+" 0: i_letter: Artifact Flammable Parchment [1020]": {
+"variable": "i_letter",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1020,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_0000069d: Artifact Container Decanter": {
+"variable": "i_0000069d",
+"rewardType": "Artifact",
+"category": "Container",
+"itemId": 2,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: i_poison: Artifact CreatureIngredients1 Snake_venom": {
+"variable": "i_poison",
+"rewardType": "Artifact",
+"category": "CreatureIngredients1",
+"itemId": 7,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+},
+" 3: 1 - Container gold": {
+"variable": "i_gold",
+"rewardType": "Gold",
+"category": "Container",
+"itemId": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"unknown1": 0
+}
+}
+,"npcs: [3]": {
+" 0: n_darkbmember: Female The_Dark_Brotherhood": {
+"variable": "n_darkbmember",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65535,
+"faction": "The_Dark_Brotherhood",
+"factionRaw": 108,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_apothecary: Female ": {
+"variable": "n_apothecary",
+"gender": "Female",
+"facePictureIndex": 144,
+"factionType": 0,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+},
+" 2: n_npc: Female ": {
+"variable": "n_npc",
+"gender": "Female",
+"facePictureIndex": 1,
+"factionType": 17,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_mansion: OutOfTown House1": {
+"variable": "l_mansion",
+"generalLocation": "OutOfTown",
+"locationType": 17,
+"LocationType": "House1",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 12288,
+}
+}
+,"timers: [3]": {
+" 0: t_traveltime: TwoLinksPlus": {
+"variable": "t_traveltime",
+"type": "TwoLinksPlus",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 0,
+"link2": 0,
+"duration": 0,
+"started": 0,
+"flags": 513,
+"index": 0,
+},
+" 1: t_00034bd0: SameAs2": {
+"variable": "t_00034bd0",
+"type": "SameAs2",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 0,
+"duration": 0,
+"started": 0,
+"flags": 257,
+"index": 1,
+},
+" 2: t_delay: Fixed": {
+"variable": "t_delay",
+"type": "Fixed",
+"minimum": "01:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 0,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+}
+}
+,"mobs: [3]": {
+" 0: m_0000d11b: 2 Assassin": {
+"variable": "m_0000d11b",
+"type": "Assassin",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 0,
+},
+" 1: m_guards: 1 Spellsword": {
+"variable": "m_guards",
+"type": "Spellsword",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1,
+},
+" 2: m_00035ad5: 2 Nightblade": {
+"variable": "m_00035ad5",
+"type": "Nightblade",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 2,
+}
+}
+,"opCodes: [36]": {
+" 0:  >> WhenTimerExpires (t_00034bd0): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: t_00034bd0": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 1:  => PlaceItemOnCharacter (i_letter)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+" 2:  => Say (1011)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+}
+},
+"messageId": 1011
+},
+" 3:  => CreateLogEntry (1012, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: 1012": {
+"type": "Value",
+"value": "1012",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+" 4: s_2 => TriggerOnClickNpc (n_apothecary)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: n_apothecary": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 5: s_2 => PlaceItemOnCharacter (i_poison)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: i_poison": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+" 6: s_2 => PlaceItemAt (i_0000069d, l_mansion)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: i_0000069d": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: l_mansion": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+" 7:  >> WhenTimerExpires (t_traveltime): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: t_traveltime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 8: s_2 => Say (1015)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+}
+},
+"messageId": 1015
+},
+" 9: s_2 => AddTopics (l_mansion, n_darkbmember)": {
+"opCode": 10,
+"argCount": 4,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: l_mansion": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "662437888"
+}
+},
+"messageId": -1
+},
+"10: s_2 => CreateLogEntry (1010, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"11: s_4 => TriggerOnItemFound (i_0000069d)": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "92502434"
+},
+"1: i_0000069d": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"12: s_4 >> WhenPlayerHasItems (i_0000069d, i_poison): set s_3": {
+"opCode": 70,
+"argCount": 5,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "92502434"
+},
+"1: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: i_0000069d": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2040727552"
+},
+"3: i_poison": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"13: s_3 => PlaceItemOnMob (i_poison, m_0000d11b)": {
+"opCode": 39,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+},
+"1: i_poison": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: m_0000d11b": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"14: s_3 => Say (1019)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+}
+},
+"messageId": 1019
+},
+"15: s_11 => Unknown5_ItemLocation (i_0000069d, l_mansion)": {
+"opCode": 5,
+"argCount": 3,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "92502434"
+},
+"1: i_0000069d": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: l_mansion": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"16: s_11 => Unset (s_4)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "92502434"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "2040727552"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"17: s_4 => Unset (s_11)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "92502434"
+},
+"1: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "14"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "2040727552"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"18: s_2 >> WhenAtLocation (l_mansion): set s_8": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "14"
+},
+"2: l_mansion": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"19: s_8 => CreateFoe(m_guards, 3, 25%, 25)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_8": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "92502434"
+},
+"1: m_guards": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 3": {
+"type": "Value",
+"value": "3",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: 25": {
+"type": "Value",
+"value": "25",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+},
+"4: 3": {
+"type": "Value",
+"value": "3",
+"not": "False",
+"index": "0",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"20: s_5 => TriggerOnClickNpc (n_darkbmember)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "92502434"
+},
+"1: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"21:  >> When (s_11 and s_3 and s_5): set s_6": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "92502434"
+},
+"1: s_11": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "14"
+},
+"2: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "2040727552"
+},
+"3: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"22:  >> When (! s_11 and ! s_3 and s_5): set s_9": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+},
+"1: ! s_11": {
+"type": "State",
+"value": "11",
+"not": "True",
+"index": "11",
+"unknown1": "14"
+},
+"2: ! s_3": {
+"type": "State",
+"value": "3",
+"not": "True",
+"index": "3",
+"unknown1": "2040727552"
+},
+"3: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"23: s_9 => Say (1014)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+}
+},
+"messageId": 1014
+},
+"24: s_9 => CreateFoe(m_00035ad5, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+},
+"1: m_00035ad5": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"25: s_9 => CreateFoe(m_0000d11b, 1, 100%, 100)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+},
+"1: m_0000d11b": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"26: s_9 => AdjustReputationWithNpc (n_darkbmember, -100)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+},
+"1: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: -100": {
+"type": "Value",
+"value": "-100",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"27:  >> When (s_1 and ! s_2): set s_7": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: ! s_2": {
+"type": "State",
+"value": "2",
+"not": "True",
+"index": "2",
+"unknown1": "2040727552"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"28: s_0 => AdjustReputationWithNpc (n_darkbmember, -35)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+},
+"1: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: -35": {
+"type": "Value",
+"value": "-35",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"29: s_7 => AdjustReputationWithNpc (n_darkbmember, -25)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: -25": {
+"type": "Value",
+"value": "-25",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"30: s_9 => AdjustReputationWithNpc (n_darkbmember, -50)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_9": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "92502434"
+},
+"1: n_darkbmember": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: -50": {
+"type": "Value",
+"value": "-50",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"31: s_6 => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "92502434"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2040727552"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "42270720"
+}
+},
+"messageId": -1
+},
+"32:  >> WhenTimerExpires (t_delay): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "92502434"
+},
+"1: t_delay": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"33: s_7 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+}
+},
+"messageId": -1
+},
+"34: s_0 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+}
+},
+"messageId": -1
+},
+"35: s_12 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "92502434"
+}
+},
+"messageId": -1
+}
+}
+,"states: [13]": {
+" 0: s_traveltime": {
+"variable": "s_traveltime",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_00034bd0": {
+"variable": "s_00034bd0",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_0000d6d0": {
+"variable": "s_0000d6d0",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_0000c750": {
+"variable": "s_0000c750",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_000068dd": {
+"variable": "s_000068dd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_00066848": {
+"variable": "s_00066848",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_0000358a": {
+"variable": "s_0000358a",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_00003732": {
+"variable": "s_00003732",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+},
+" 8: s_0000d4c8": {
+"variable": "s_0000d4c8",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8,
+},
+" 9: s_00001bb2": {
+"variable": "s_00001bb2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9,
+},
+"10: s_0000dfbd": {
+"variable": "s_0000dfbd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10,
+},
+"11: s_000069fd": {
+"variable": "s_000069fd",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11,
+},
+"12: s_delay": {
+"variable": "s_delay",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12,
+}
+}
+}

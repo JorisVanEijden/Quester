@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daggerfall Quest Decompiler</title>
+    <style>
+        html{font-family:"Lucida Console",Monaco,monospace}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}
+
+    </style>
+</head>
+<body>
+<div id="placeholder"></div>
+</body>
+</html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">function JsonTreeBuilder() {
+
+    this.build = function (jsonDoc) {
+        // build ul for the json
+        var tree = generateTree(jsonDoc);
+        // and make it expandable/collapsible
+        activateTree(tree);
+
+        // wrap with container and return
+        return $('<div id="jsonTree"/>').append(tree);
+    };
+
+    var generateTree = function (data) {
+        if (typeof (data) == 'object' && data != null) {
+            var ul = $('<ul>');
+            for (var i in data) {
+                var li = $('<li>');
+                ul.append(li.html(i).append(generateTree(data[i])));
+            }
+            return ul;
+        } else {
+            var v = (data == undefined) ? '[empty]' : data;
+            var textNode = document.createTextNode(' : ' + v);
+            return textNode;
+        }
+    };
+
+    var activateTree = function (tree) {
+        // find every ul that is child of li and make the li (the parent) expandable so it will be able to hide/show the ul (the content) by click
+        $('li > ul', tree).each(function () {
+            var innerUlContent = $(this);
+            var parent = innerUlContent.parent('li');
+            parent.addClass('expandable');
+            parent.click(function () {
+                $(this).toggleClass('expanded');
+                innerUlContent.slideToggle('fast');
+            });
+
+            // prevent li clicks to propagate upper than the container ul
+            innerUlContent.click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        // start with the tree collapsed.
+        $('ul', tree).hide();
+    };
+}
+
+
+</script>
+<script type="text/javascript">
+function getJson() {
+    var json = {
+"items: [2]": {
+" 0: i_reward: Artifact Gems Gems": {
+"variable": "i_reward",
+"rewardType": "Artifact",
+"category": "Gems",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_magicitem: Item MagicItem MagicItem": {
+"variable": "i_magicitem",
+"rewardType": "Item",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+}
+}
+,"npcs: [2]": {
+" 0: n_questgiver: Male ": {
+"variable": "n_questgiver",
+"gender": "Male",
+"facePictureIndex": 112,
+"factionType": 21,
+"faction": "0",
+"factionRaw": 0,
+"textRecordId1": 1011,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_other: Female Boethiah": {
+"variable": "n_other",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65534,
+"faction": "Boethiah",
+"factionRaw": 10,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [1]": {
+" 0: t_1stparton: SameAs2": {
+"variable": "t_1stparton",
+"type": "SameAs2",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"link1": 1,
+"link2": 13,
+"duration": 0,
+"started": 0,
+"flags": 273,
+"index": 0,
+}
+}
+,"mobs: [0]": {
+}
+,"opCodes: [12]": {
+" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: t_1stparton": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+" 1:  => EnsureNpcLocation (n_other)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "4518580"
+},
+"2: n_other": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 2:  => CreateLogEntry (1025, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929"
+},
+"1: 1025": {
+"type": "Value",
+"value": "1025",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 3: s_1 => TakePlayerGold (s_7, 1000, n_other)": {
+"opCode": 71,
+"argCount": 4,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1493154929"
+},
+"1: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "4518580"
+},
+"2: 1000": {
+"type": "Value",
+"value": "1000",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+},
+"3: n_other": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-221773551"
+}
+},
+"messageId": -1
+},
+" 4: s_1 => Say (1010)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1493154929"
+}
+},
+"messageId": 1010
+},
+" 5: s_7 => Say (1020)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "-1493154929"
+}
+},
+"messageId": 1020
+},
+" 6: s_1 => PlaceItemOnCharacter (i_magicitem)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1493154929"
+},
+"1: i_magicitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 7:  >> WhenGivingItemToNpc (i_magicitem, n_questgiver): set s_0": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+},
+"1: i_magicitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+},
+"2: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048"
+}
+},
+"messageId": -1
+},
+" 8: s_0 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-221773551"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1375731712"
+}
+},
+"messageId": -1
+},
+" 9: s_4 => MakePermanent (i_magicitem)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "-1493154929"
+},
+"1: i_magicitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580"
+}
+},
+"messageId": -1
+},
+"10: s_0 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929"
+}
+},
+"messageId": -1
+},
+"11: s_4 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "-1493154929"
+}
+},
+"messageId": -1
+}
+}
+,"states: [8]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_pchasitem": {
+"variable": "s_pchasitem",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_npcclicked": {
+"variable": "s_npcclicked",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_qgclicked": {
+"variable": "s_qgclicked",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_1stparton": {
+"variable": "s_1stparton",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_2ndparton": {
+"variable": "s_2ndparton",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_queston": {
+"variable": "s_queston",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_0000dc82": {
+"variable": "s_0000dc82",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+}
+}
+}
+;
+    return json;
+}
+$(document).ready(function () {
+    var treeBuilder = new JsonTreeBuilder();
+    var tree = treeBuilder.build(getJson());
+    $('div#placeholder').append(tree);
+});
+</script>

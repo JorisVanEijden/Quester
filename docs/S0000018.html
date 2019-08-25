@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daggerfall Quest Decompiler</title>
+    <style>
+        html{font-family:"Lucida Console",Monaco,monospace}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}
+
+    </style>
+</head>
+<body>
+<div id="placeholder"></div>
+</body>
+</html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">function JsonTreeBuilder() {
+
+    this.build = function (jsonDoc) {
+        // build ul for the json
+        var tree = generateTree(jsonDoc);
+        // and make it expandable/collapsible
+        activateTree(tree);
+
+        // wrap with container and return
+        return $('<div id="jsonTree"/>').append(tree);
+    };
+
+    var generateTree = function (data) {
+        if (typeof (data) == 'object' && data != null) {
+            var ul = $('<ul>');
+            for (var i in data) {
+                var li = $('<li>');
+                ul.append(li.html(i).append(generateTree(data[i])));
+            }
+            return ul;
+        } else {
+            var v = (data == undefined) ? '[empty]' : data;
+            var textNode = document.createTextNode(' : ' + v);
+            return textNode;
+        }
+    };
+
+    var activateTree = function (tree) {
+        // find every ul that is child of li and make the li (the parent) expandable so it will be able to hide/show the ul (the content) by click
+        $('li > ul', tree).each(function () {
+            var innerUlContent = $(this);
+            var parent = innerUlContent.parent('li');
+            parent.addClass('expandable');
+            parent.click(function () {
+                $(this).toggleClass('expanded');
+                innerUlContent.slideToggle('fast');
+            });
+
+            // prevent li clicks to propagate upper than the container ul
+            innerUlContent.click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        // start with the tree collapsed.
+        $('ul', tree).hide();
+    };
+}
+
+
+</script>
+<script type="text/javascript">
+function getJson() {
+    var json = {
+"items: [2]": {
+" 0: i_spider: Artifact CreatureIngredients1 Lich_dust [1016]": {
+"variable": "i_spider",
+"rewardType": "Artifact",
+"category": "CreatureIngredients1",
+"itemId": 9,
+"textRecordId1": 0,
+"textRecordId2": 1016,
+"index": 0,
+"unknown1": 0
+},
+" 1: i_letter: Artifact Flammable Parchment [1020]": {
+"variable": "i_letter",
+"rewardType": "Artifact",
+"category": "Flammable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1020,
+"index": 1,
+"unknown1": 0
+}
+}
+,"npcs: [2]": {
+" 0: n_00001a11: Female Medora": {
+"variable": "n_00001a11",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65528,
+"faction": "Medora",
+"factionRaw": 363,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": 0
+},
+" 1: n_gortwog: Female Gortwog": {
+"variable": "n_gortwog",
+"gender": "Female",
+"facePictureIndex": 0,
+"factionType": 65528,
+"faction": "Gortwog",
+"factionRaw": 357,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": 0
+}
+}
+,"locations: [2]": {
+" 0: l_orsinium: Specific OrsiniumCastle": {
+"variable": "l_orsinium",
+"generalLocation": "Specific",
+"locationType": 2,
+"LocationType": "SpecificLocation",
+"fineLocation": 50015,
+"knownLocation": "OrsiniumCastle",
+"doorSelector": -1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+},
+" 1: l_crypt: OutOfTown Crypt": {
+"variable": "l_crypt",
+"generalLocation": "OutOfTown",
+"locationType": 0,
+"LocationType": "Crypt",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": 0,
+"objPtr": 0,
+"unknown1": 31744,
+}
+}
+,"timers: [3]": {
+" 0: t_delay: Fixed": {
+"variable": "t_delay",
+"type": "Fixed",
+"minimum": "00:02:00",
+"maximum": "00:00:00",
+"link1": -2130614785,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 0,
+},
+" 1: t_000018d8: Fixed": {
+"variable": "t_000018d8",
+"type": "Fixed",
+"minimum": "00:02:00",
+"maximum": "00:00:00",
+"link1": -2130614785,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 1,
+},
+" 2: t_00035fb2: Fixed": {
+"variable": "t_00035fb2",
+"type": "Fixed",
+"minimum": "30.00:00:00",
+"maximum": "00:00:00",
+"link1": -2130614785,
+"link2": 53,
+"duration": 0,
+"started": 0,
+"flags": 1,
+"index": 2,
+}
+}
+,"mobs: [1]": {
+" 0: m_mummy: 1 Mummy": {
+"variable": "m_mummy",
+"type": "Mummy",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0,
+}
+}
+,"opCodes: [28]": {
+" 0:  => RemoveTopics (i_letter)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2040727552"
+},
+"3: i_letter": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "662437888"
+}
+},
+"messageId": -1
+},
+" 1:  => RemoveTopics (i_spider)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2040727552"
+},
+"3: i_spider": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+}
+},
+"messageId": -1
+},
+" 2:  => AddLocationToMap (l_crypt)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: l_crypt": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 3:  >> WhenTimerExpires (t_00035fb2): set s_2": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "92502434"
+},
+"1: t_00035fb2": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 4: s_5 => TriggerOnPlayerLevel (10)": {
+"opCode": 77,
+"argCount": 2,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "92502434"
+},
+"1: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 5: s_5 => CheckNpcReputation (s_4, n_00001a11, 0)": {
+"opCode": 37,
+"argCount": 4,
+"arguments:": {
+"0: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "92502434"
+},
+"1: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14"
+},
+"2: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+}
+},
+"messageId": -1
+},
+" 6:  >> When (s_6 and s_4 and s_5): set s_7": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: s_6": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "14"
+},
+"2: s_4": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "2040727552"
+},
+"3: s_5": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "662437888"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18022400"
+}
+},
+"messageId": -1
+},
+" 7: ! s_7 => StopNpcConversation (n_gortwog)": {
+"opCode": 82,
+"argCount": 2,
+"arguments:": {
+"0: ! s_7": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: n_gortwog": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 8: ! s_7 => StopNpcConversation (n_00001a11)": {
+"opCode": 82,
+"argCount": 2,
+"arguments:": {
+"0: ! s_7": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+" 9: s_7 => StartNpcEscort (n_00001a11)": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"10:  >> WhenTimerExpires (t_delay): set s_0": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_7": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "92502434"
+},
+"1: t_delay": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"11: s_0 => Say (1015)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+}
+},
+"messageId": 1015
+},
+"12:  >> WhenTimerExpires (t_000018d8): set s_1": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+},
+"1: t_000018d8": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"13: s_1 => StopNpcEscort (n_00001a11)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "92502434"
+},
+"1: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"14: s_0 => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"15: s_0 => ShowLocationOnMap (l_orsinium, 26, 146892)": {
+"opCode": 27,
+"argCount": 4,
+"arguments:": {
+"0: s_0": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "92502434"
+},
+"1: l_orsinium": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 26": {
+"type": "Value",
+"value": "26",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+},
+"3: 146892": {
+"type": "Value",
+"value": "146892",
+"not": "False",
+"index": "0",
+"unknown1": "662437888"
+}
+},
+"messageId": -1
+},
+"16: s_2 => TriggerOnClickNpc (n_gortwog)": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: n_gortwog": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+}
+},
+"messageId": -1
+},
+"17: s_2 => Say (1000)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+}
+},
+"messageId": 1000
+},
+"18: s_2 => CreateLogEntry (1011, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: 1011": {
+"type": "Value",
+"value": "1011",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"19: s_2 => PlaceMobAtLocation (m_mummy, l_crypt)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: m_mummy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: l_crypt": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"20: s_2 => PlaceItemOnMob (i_letter, m_mummy)": {
+"opCode": 39,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: m_mummy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"21: s_2 => PlaceItemOnMob (i_spider, m_mummy)": {
+"opCode": 39,
+"argCount": 3,
+"arguments:": {
+"0: s_2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "92502434"
+},
+"1: i_spider": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: m_mummy": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"22:  >> WhenGivingItemToNpc (i_spider, n_00001a11): set s_3": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+},
+"1: i_spider": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"23: s_3 => Say (1030)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+}
+},
+"messageId": 1030
+},
+"24: s_3 => StartQuest (22, 22)": {
+"opCode": 8,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+},
+"1: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 22": {
+"type": "Value",
+"value": "22",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"25: s_3 => AdjustReputationWithNpc (n_gortwog, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+},
+"1: n_gortwog": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"26: s_3 => AdjustReputationWithNpc (n_00001a11, 15)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+},
+"1: n_00001a11": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "2040727552"
+}
+},
+"messageId": -1
+},
+"27: s_3 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "92502434"
+}
+},
+"messageId": -1
+}
+}
+,"states: [8]": {
+" 0: s_delay": {
+"variable": "s_delay",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0,
+},
+" 1: s_000018d8": {
+"variable": "s_000018d8",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1,
+},
+" 2: s_0000cc9c": {
+"variable": "s_0000cc9c",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2,
+},
+" 3: s_0001a6b4": {
+"variable": "s_0001a6b4",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3,
+},
+" 4: s_00069e7f": {
+"variable": "s_00069e7f",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4,
+},
+" 5: s_00038a82": {
+"variable": "s_00038a82",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5,
+},
+" 6: s_00035fb2": {
+"variable": "s_00035fb2",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6,
+},
+" 7: s_startquest": {
+"variable": "s_startquest",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7,
+}
+}
+}
+;
+    return json;
+}
+$(document).ready(function () {
+    var treeBuilder = new JsonTreeBuilder();
+    var tree = treeBuilder.build(getJson());
+    $('div#placeholder').append(tree);
+});
+</script>
