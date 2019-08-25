@@ -31,21 +31,11 @@ namespace Quester
                 Quest = new Quest {name = name };
                 ParseFile(file);
                 name = @"../../../docs/" + name;
-                OutputHtml(name);
+                OutputJson(name);
             }
         }
 
         private static void OutputJson(string name)
-        {
-            using (StreamWriter writer = new StreamWriter(File.Open(name + ".json", FileMode.OpenOrCreate)))
-            {
-                writer.WriteLine("{");
-                JsonWriter.WriteOpcodes(writer, Quest.opCodes);
-                writer.WriteLine("}");
-            }
-        }
-
-        private static void OutputHtml(string name)
         {
             TextWriter writer = new StringWriter();
             WriteJson(writer);
@@ -53,12 +43,6 @@ namespace Quester
             var jsonFile = $"{name}.json";
             File.Delete(jsonFile);
             File.WriteAllText(jsonFile, writer.ToString());
-
-            string template = File.ReadAllText(@"html\\template.html");
-            string result = template.Replace("{{ json }}", writer.ToString());
-            var htmlFile = $"{name}.html";
-            File.Delete(htmlFile);
-            File.WriteAllText(htmlFile, result);
         }
 
         private static void WriteJson(TextWriter writer)

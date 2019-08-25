@@ -16,7 +16,7 @@ namespace Quester
                 writer.WriteLine($"\"variable\": \"{state.variable}\",");
                 writer.WriteLine($"\"isGlobal\": {state.isGlobal.ToString().ToLower()},");
                 writer.WriteLine($"\"globalIndex\": {state.globalIndex},");
-                writer.WriteLine($"\"index\": {state.index},");
+                writer.WriteLine($"\"index\": {state.index}");
                 writer.WriteLine(i + 1 == states.Count ? "}" : "},");
             }
 
@@ -35,7 +35,7 @@ namespace Quester
                 writer.WriteLine($"\"count\": {mob.count},");
                 writer.WriteLine($"\"null1\": {mob.null1},");
                 writer.WriteLine($"\"null2\": {mob.null2},");
-                writer.WriteLine($"\"index\": {mob.index},");
+                writer.WriteLine($"\"index\": {mob.index}");
                 writer.WriteLine(i + 1 == mobs.Count ? "}" : "},");
             }
 
@@ -60,7 +60,7 @@ namespace Quester
                 writer.WriteLine($"\"duration\": {timer.duration},");
                 writer.WriteLine($"\"started\": {timer.started},");
                 writer.WriteLine($"\"flags\": {timer.flags},");
-                writer.WriteLine($"\"index\": {timer.index},");
+                writer.WriteLine($"\"index\": {timer.index}");
                 writer.WriteLine(i + 1 == timers.Count ? "}" : "},");
             }
 
@@ -86,7 +86,7 @@ namespace Quester
                 writer.WriteLine($"\"index\": {location.index},");
                 writer.WriteLine($"\"flags\": {location.flags},");
                 writer.WriteLine($"\"objPtr\": {location.objPtr},");
-                writer.WriteLine($"\"unknown1\": {location.unknown1},");
+                writer.WriteLine($"\"unknown1\": {location.unknown1}");
                 writer.WriteLine(i + 1 == locations.Count ? "}" : "},");
             }
 
