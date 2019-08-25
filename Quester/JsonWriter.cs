@@ -6,6 +6,44 @@ namespace Quester
 {
     internal static class JsonWriter
     {
+        public static void Write(TextWriter writer, Quest quest)
+        {
+            writer.WriteLine("{");
+            WriteInfo(writer, quest.Info);
+            writer.Write(",");
+            WriteItems(writer, quest.Items);
+            writer.Write(",");
+            WriteNpcs(writer, quest.Npcs);
+            writer.Write(",");
+            WriteLocations(writer, quest.Locations);
+            writer.Write(",");
+            WriteTimers(writer, quest.Timers);
+            writer.Write(",");
+            WriteMobs(writer, quest.Mobs);
+            writer.Write(",");
+            WriteOpCodes(writer, quest.OpCodes);
+            writer.Write(",");
+            WriteStates(writer, quest.States);
+            writer.WriteLine("}");
+        }
+
+        private static void WriteInfo(TextWriter writer, Info info)
+        {
+            writer.WriteLine($"\"quest info: \": {{");
+            writer.WriteLine($"\"name\": \"{info.Name}\",");
+            writer.WriteLine($"\"questType\": \"{info.QuestType}\",");
+            writer.WriteLine($"\"membership\": \"{info.Membership}\",");
+            writer.WriteLine($"\"reputation\": {info.Reputation},");
+            writer.WriteLine($"\"delivery\": \"{info.Delivery}\",");
+            writer.WriteLine($"\"childSafe\": {info.ChildSafe.ToString().ToLower()},");
+            writer.WriteLine($"\"questId\": {info.QuestId},");
+            writer.WriteLine($"\"faction\": \"{info.FactionId}\",");
+            writer.WriteLine($"\"resourceId\": {info.ResourceId},");
+            writer.WriteLine($"\"resourceFileName\": \"{info.ResourceFileName}\",");
+            writer.WriteLine($"\"hasDebugInfo\": {info.HasDebugInfo.ToString().ToLower()}");
+            writer.WriteLine("}");
+        }
+
         private static void WriteStates(TextWriter writer, IReadOnlyDictionary<short, State> states)
         {
             writer.WriteLine($"\"states: [{states.Count}]\": {{");
@@ -166,25 +204,6 @@ namespace Quester
                 writer.WriteLine(j + 1 == opCodes.Count ? "}" : "},");
             }
 
-            writer.WriteLine("}");
-        }
-
-        public static void Write(TextWriter writer, Quest quest)
-        {
-            writer.WriteLine("{");
-            WriteItems(writer, quest.Items);
-            writer.Write(",");
-            WriteNpcs(writer, quest.Npcs);
-            writer.Write(",");
-            WriteLocations(writer, quest.Locations);
-            writer.Write(",");
-            WriteTimers(writer, quest.Timers);
-            writer.Write(",");
-            WriteMobs(writer, quest.Mobs);
-            writer.Write(",");
-            WriteOpCodes(writer, quest.OpCodes);
-            writer.Write(",");
-            WriteStates(writer, quest.States);
             writer.WriteLine("}");
         }
     }

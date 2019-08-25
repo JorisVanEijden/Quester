@@ -27,7 +27,11 @@ namespace Quester
                 }
 
                 var name = Path.GetFileNameWithoutExtension(file);
-                Quest = new Quest {Name = name };
+                Quest = new Quest
+                {
+                    Info = new Info(),
+                    Name = name
+                };
                 ParseFile(file);
                 name = @"../../../docs/" + name;
                 OutputJson(name);
@@ -36,12 +40,11 @@ namespace Quester
 
         private static void OutputJson(string name)
         {
-            TextWriter writer = new StringWriter();
-            JsonWriter.Write(writer, Quest);
-
             var jsonFile = $"{name}.json";
-            File.Delete(jsonFile);
-            File.WriteAllText(jsonFile, writer.ToString());
+            using (StreamWriter writer = new StreamWriter(File.OpenWrite(jsonFile)))
+            {
+                JsonWriter.Write(writer, Quest);
+            }
         }
 
         private static void ParseFile(string fileName)
@@ -58,6 +61,11 @@ namespace Quester
                 Quest.Mobs = ReadMobSection(reader, header);
                 Quest.OpCodes = ReadOpCodeSection(reader, header);
                 Quest.States = ReadStateSection(reader, header);
+                Quest.Info.QuestId = header.QuestId;
+                Quest.Info.FactionId = (FactionId) header.FactionId;
+                Quest.Info.ResourceId = header.ResourceId;
+                Quest.Info.ResourceFileName = new string(header.ResourceFilename).Trim('\0');
+                Quest.Info.HasDebugInfo = header.HasDebugInfo != 0 ? true : false;
             }
         }
 
@@ -73,5 +81,20 @@ namespace Quester
                     new Example("Decompile QBN files.", new Options { FileNames = new[] { @"Daggerfall\Arena2\S0000011.QBN" } })
                 };
         }
+    }
+
+    internal struct Info
+    {
+        public string Name;
+        public string QuestType;
+        public Membership Membership;
+        public int Reputation;
+        public bool ChildSafe;
+        public Delivery Delivery;
+        public ushort QuestId;
+        public FactionId FactionId;
+        public ushort ResourceId;
+        public string ResourceFileName;
+        public bool HasDebugInfo;
     }
 }

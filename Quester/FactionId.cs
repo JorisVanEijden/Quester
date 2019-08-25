@@ -2,6 +2,7 @@ namespace Quester
 {
     public enum FactionId
     {
+        None = 0,
         Clavicus_Vile = 1,
         Mehrunes_Dagon = 2,
         Molag_Bal = 3,
