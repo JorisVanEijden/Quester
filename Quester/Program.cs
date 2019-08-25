@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using CommandLine;
 using CommandLine.Text;
@@ -11,31 +10,27 @@ namespace Quester
 {
     internal static class Program
     {
-        internal static Quest Quest  ;
+        internal static Quest Quest;
 
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
-            var result = Parser.Default.ParseArguments<Options>(args);
+            Parser.Default.ParseArguments<Options>(args).WithParsed(Run);
+        }
 
-            if (args.Length == 0)
-            {
-                Console.WriteLine("Please supply the path to a QBN file.");
-                return 1;
-            }
-
-            var file = args[0];
+        private static void Run(Options options)
+        {
+            var file = options.FileName;
             if (!File.Exists(file))
             {
-                Console.WriteLine("Please supply the path to a QBN file.");
-                return 1;
+                Console.Error.WriteLine("Please supply the path to a QBN file.");
+                return;
             }
 
+            Quest = new Quest();
             ParseFile(file);
             var name = Path.GetFileNameWithoutExtension(file);
             name = @"../../../docs/" + name;
             OutputHtml(name);
-
-            return 0;
         }
 
         private static void OutputJson(string name)
@@ -102,17 +97,14 @@ namespace Quester
 
         public class Options
         {
-            [Option('v', "verbose", Required = false, HelpText = "Set output to verbose messages.")]
-            public bool Verbose { get; set; }
-
-            [Value(0, MetaName = "fileName", HelpText = "The path to a QBN file.")]
-            public string fileName { get; set; }
+            [Value(0, MetaName = "fileName", Required = true, HelpText = "The path to a QBN file.")]
+            public string FileName { get; private set; }
 
             [Usage(ApplicationAlias = "Quester")]
             public static IEnumerable<Example> Examples =>
                 new List<Example>
                 {
-                    new Example("Decompile QBN files.", new Options { fileName = @"Daggerfall\Arena2\S0000011.QBN" })
+                    new Example("Decompile QBN files.", new Options { FileName = @"Daggerfall\Arena2\S0000011.QBN" })
                 };
         }
     }
