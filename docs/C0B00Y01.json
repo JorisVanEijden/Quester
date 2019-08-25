@@ -463,7 +463,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> WhenTimerExpires (t_40000004): set s_1": {
+" 5:  >> IfTimerExpires (t_40000004): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -486,7 +486,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenTimerExpires (t_4000000e): set s_3": {
+" 6:  >> IfTimerExpires (t_4000000e): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -509,7 +509,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenTimerExpires (t_queston): set s_0": {
+" 7:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -751,7 +751,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> WhenGivingItemToNpc (i_0001b5bc, n_qgiver): set s_1": {
+"16:  >> IfGivingItemToNpc (i_0001b5bc, n_qgiver): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -781,7 +781,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> WhenGivingItemToNpc (i_finger, n_qgiver): set s_1": {
+"17:  >> IfGivingItemToNpc (i_finger, n_qgiver): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -871,7 +871,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_3 => TriggerOnClickNpc (n_contact)": {
+"20:  >> IfNpcClicked (n_contact): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1051,7 +1051,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> WhenTimerExpires (t_40000006): set s_2": {
+"26:  >> IfTimerExpires (t_40000006): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1150,7 +1150,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30: s_7 => TriggerOnClickNpc (n_replace)": {
+"30:  >> IfNpcClicked (n_replace): set s_7": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1286,7 +1286,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"35: s_8 => TriggerOnClickNpc (n_lover)": {
+"35:  >> IfNpcClicked (n_lover): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1392,7 +1392,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"39:  >> WhenGivingItemToNpc (i_relartifact, n_lover): set s_10": {
+"39:  >> IfGivingItemToNpc (i_relartifact, n_lover): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1422,7 +1422,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40:  >> When (s_10 and not s_9): set s_11": {
+"40:  >> If (s_10 and not s_9): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1556,7 +1556,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"44:  >> When (s_10 and s_9): set s_12": {
+"44:  >> If (s_10 and s_9): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1616,7 +1616,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"46:  >> When (s_8 and not s_9): set s_13": {
+"46:  >> If (s_8 and not s_9): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1706,7 +1706,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"49:  >> WhenTimerExpires (t_40000010): set s_4": {
+"49:  >> IfTimerExpires (t_40000010): set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1752,7 +1752,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"51: s_15 => TriggerOnClickNpc (n_priest)": {
+"51:  >> IfNpcClicked (n_priest): set s_15": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1911,7 +1911,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"57: s_17 => TriggerOnItemFound (i_finger)": {
+"57:  >> IfItemFound (i_finger): set s_17": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2017,7 +2017,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"61: s_18 => TriggerOnClickNpc (n_prophet)": {
+"61:  >> IfNpcClicked (n_prophet): set s_18": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -2056,7 +2056,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"63:  >> WhenGivingItemToNpc (i_finger, n_prophet): set s_19": {
+"63:  >> IfGivingItemToNpc (i_finger, n_prophet): set s_19": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2102,7 +2102,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"65:  >> WhenGivingItemToNpc (i_0001b5bc, n_prophet): set s_20": {
+"65:  >> IfGivingItemToNpc (i_0001b5bc, n_prophet): set s_20": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2201,7 +2201,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"69:  >> WhenGivingItemToNpc (i_relartifact, n_prophet): set s_21": {
+"69:  >> IfGivingItemToNpc (i_relartifact, n_prophet): set s_21": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

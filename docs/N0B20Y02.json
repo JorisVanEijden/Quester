@@ -148,7 +148,7 @@
 }
 }
 ,"opCodes: [32]": {
-" 0:  >> WhenTimerExpires (t_0001bf33): set s_2": {
+" 0:  >> IfTimerExpires (t_0001bf33): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -171,7 +171,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-" 1:  >> WhenTimerExpires (t_oneday): set s_0": {
+" 1:  >> IfTimerExpires (t_oneday): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -284,7 +284,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-" 5:  >> When (not s_12 and not s_4): set s_5": {
+" 5:  >> If (not s_12 and not s_4): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -358,7 +358,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-" 7: s_4 => TriggerOnClickNpc (n_sleepingmage) [Msg 1012]": {
+" 7:  >> IfNpcClicked (n_sleepingmage): set s_4 [Msg 1012]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -517,7 +517,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"13: s_8 => TriggerOnMobHurtByPlayer (m_mage) [Msg 1013]": {
+"13:  >> IfMobHurtByPlayer (m_mage): set s_8 [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -540,7 +540,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"14: s_7 => TriggerOnMobKills (m_mage, 1)": {
+"14:  >> IfMobsKilled (m_mage, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -702,7 +702,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"18: s_10 => TriggerOnMobHurtByPlayer (m_00003543) [Msg 1014]": {
+"18:  >> IfMobHurtByPlayer (m_00003543): set s_10 [Msg 1014]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -725,7 +725,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"19: s_10 => TriggerOnMobHurtByPlayer (m_0000d11b) [Msg 1014]": {
+"19:  >> IfMobHurtByPlayer (m_0000d11b): set s_10 [Msg 1014]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -748,7 +748,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"20: s_10 => TriggerOnMobHurtByPlayer (m_00019bd1) [Msg 1030]": {
+"20:  >> IfMobHurtByPlayer (m_00019bd1): set s_10 [Msg 1030]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -771,7 +771,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"21:  >> WhenTimerExpires (t_00006cc3): set s_1": {
+"21:  >> IfTimerExpires (t_00006cc3): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -898,7 +898,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"25: s_2 => TriggerOnMobHurtByPlayer (m_0000d093) [Msg 1011]": {
+"25:  >> IfMobHurtByPlayer (m_0000d093): set s_2 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -921,7 +921,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"26: s_3 => TriggerOnMobKills (m_0000d093, 3)": {
+"26:  >> IfMobsKilled (m_0000d093, 3): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -951,7 +951,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"27:  >> When (s_3 and s_12 and not s_4): set s_6": {
+"27:  >> If (s_3 and s_12 and not s_4): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1039,7 +1039,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"29:  >> When (s_7 and s_9): set s_11": {
+"29:  >> If (s_7 and s_9): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

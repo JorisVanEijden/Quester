@@ -200,7 +200,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2:  >> WhenTimerExpires (t_0004dcfc): set s_0": {
+" 2:  >> IfTimerExpires (t_0004dcfc): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -223,7 +223,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3:  >> WhenTimerExpires (t_0009eb7c): set s_1": {
+" 3:  >> IfTimerExpires (t_0009eb7c): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -329,7 +329,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenTimerExpires (t_00009bae): set s_2": {
+" 7:  >> IfTimerExpires (t_00009bae): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -375,7 +375,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9:  >> WhenTimerExpires (t_0006b98d): set s_4": {
+" 9:  >> IfTimerExpires (t_0006b98d): set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -451,7 +451,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_3 => TriggerOnClickNpc (n_0000b04d)": {
+"12:  >> IfNpcClicked (n_0000b04d): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -474,7 +474,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> WhenTimerExpires (t_oneday): set s_3": {
+"13:  >> IfTimerExpires (t_oneday): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

@@ -124,7 +124,7 @@
 }
 }
 ,"opCodes: [22]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -223,7 +223,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4: s_1 => TriggerOnMobKills (m_duelist, 1)": {
+" 4:  >> IfMobsKilled (m_duelist, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -269,7 +269,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenGivingItemToNpc (i_00000d59, n_competitor): set s_2": {
+" 6:  >> IfGivingItemToNpc (i_00000d59, n_competitor): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -405,7 +405,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> WhenGivingItemToNpc (i_00000d59, n_lover): set s_3": {
+"11:  >> IfGivingItemToNpc (i_00000d59, n_lover): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -536,7 +536,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17: s_5 => TriggerOnClickNpc (n_qgiver)": {
+"17:  >> IfNpcClicked (n_qgiver): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -559,7 +559,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> When (s_5 and s_1): set s_6": {
+"18:  >> If (s_5 and s_1): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

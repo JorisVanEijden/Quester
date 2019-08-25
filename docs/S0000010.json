@@ -193,7 +193,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenGivingItemToNpc (i_reward, n_agentuk): set s_0": {
+" 1:  >> IfGivingItemToNpc (i_reward, n_agentuk): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -380,7 +380,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: s_1 => TriggerOnMobHurtByPlayer (m_44000000) [Msg 1010]": {
+" 7:  >> IfMobHurtByPlayer (m_44000000): set s_1 [Msg 1010]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -433,7 +433,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9:  >> WhenTimerExpires (t_itemindung): set s_2": {
+" 9:  >> IfTimerExpires (t_itemindung): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -652,7 +652,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> WhenTimerExpires (t_4000000a): set s_1": {
+"17:  >> IfTimerExpires (t_4000000a): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -758,7 +758,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_5 => TriggerOnClickNpc (n_agentuk)": {
+"21:  >> IfNpcClicked (n_agentuk): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -885,7 +885,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25: s_8 => TriggerOnPlayerLevel (8)": {
+"25:  >> IfPlayerHasLevel (8): set s_8": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -908,7 +908,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> When (s_7 and s_8): set s_9": {
+"26:  >> If (s_7 and s_8): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -952,7 +952,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> WhenTimerExpires (t_40000004): set s_0": {
+"27:  >> IfTimerExpires (t_40000004): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

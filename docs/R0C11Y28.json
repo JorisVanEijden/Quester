@@ -418,7 +418,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> WhenTimerExpires (t_witch): set s_2": {
+" 4:  >> IfTimerExpires (t_witch): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -441,7 +441,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 5:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -614,7 +614,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_0 => TriggerOnMobKills (m_murder, 1)": {
+"11:  >> IfMobsKilled (m_murder, 1): set s_0": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -644,7 +644,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"12:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -667,7 +667,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> When (s_2 and not s_13): set s_3": {
+"13:  >> If (s_2 and not s_13): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -884,7 +884,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_4 => TriggerOnClickNpc (n_vamp)": {
+"20:  >> IfNpcClicked (n_vamp): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -907,7 +907,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_5 => TriggerOnClickNpc (n_qgiver)": {
+"21:  >> IfNpcClicked (n_qgiver): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -930,7 +930,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> When (s_0 and s_5): set s_6": {
+"22:  >> If (s_0 and s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1078,7 +1078,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> When (s_17 and not s_0): set s_7": {
+"26:  >> If (s_17 and not s_0): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1152,7 +1152,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> When (s_4 and s_11): set s_8": {
+"28:  >> If (s_4 and s_11): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1279,7 +1279,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"32:  >> WhenGivingItemToNpc (i_41000003, n_vamp): set s_9": {
+"32:  >> IfGivingItemToNpc (i_41000003, n_vamp): set s_9": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1422,7 +1422,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"37: s_10 => TriggerOnClickNpc (n_contact)": {
+"37:  >> IfNpcClicked (n_contact): set s_10": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1625,7 +1625,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"44:  >> WhenTimeOfDayBetween (06:00:00, 18:00:00): set s_13": {
+"44:  >> IfTimeOfDayBetween (06:00:00, 18:00:00): set s_13": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -1655,7 +1655,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"45:  >> When (not s_13 and not s_0): set s_14": {
+"45:  >> If (not s_13 and not s_0): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1743,7 +1743,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47:  >> WhenGivingItemToNpc (i_41000009, n_widow): set s_15": {
+"47:  >> IfGivingItemToNpc (i_41000009, n_widow): set s_15": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1856,7 +1856,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"51:  >> When (s_4 and s_0): set s_16": {
+"51:  >> If (s_4 and s_0): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1997,7 +1997,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"55: s_17 >> When (s_8): set s_15": {
+"55:  >> If (s_15 or s_8): set s_17": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

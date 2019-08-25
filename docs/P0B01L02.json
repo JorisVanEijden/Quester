@@ -98,7 +98,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -278,7 +278,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-" 6: s_2 => TriggerOnItemFound (i_vamprelic)": {
+" 6:  >> IfItemFound (i_vamprelic): set s_2": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -389,7 +389,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-" 9:  >> WhenGivingItemToNpc (i_vamprelic, n_vampire): set s_1": {
+" 9:  >> IfGivingItemToNpc (i_vamprelic, n_vampire): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

@@ -331,7 +331,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> WhenTimerExpires (t_00004f37): set s_0": {
+" 4:  >> IfTimerExpires (t_00004f37): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -497,7 +497,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10:  >> WhenGivingItemToNpc (i_000068a9, n_qgiver): set s_4": {
+"10:  >> IfGivingItemToNpc (i_000068a9, n_qgiver): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -596,7 +596,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> WhenGivingItemToNpc (i_000068aa, n_qgiver): set s_5": {
+"14:  >> IfGivingItemToNpc (i_000068aa, n_qgiver): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -695,7 +695,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> WhenGivingItemToNpc (i_000068ab, n_qgiver): set s_6": {
+"18:  >> IfGivingItemToNpc (i_000068ab, n_qgiver): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -794,7 +794,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> WhenGivingItemToNpc (i_000068ac, n_qgiver): set s_7": {
+"22:  >> IfGivingItemToNpc (i_000068ac, n_qgiver): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1025,7 +1025,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"29: s_12 >> When (s_5 or s_6 or s_7): set s_4": {
+"29:  >> If (s_4 or s_5 or s_6 or s_7): set s_12": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1069,7 +1069,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (s_4 and s_5 and s_6 and s_7): set s_13": {
+"30:  >> If (s_4 and s_5 and s_6 and s_7): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1113,7 +1113,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> When (s_13): set s_14": {
+"31:  >> If (s_13): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1217,7 +1217,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34:  >> When (s_2 and s_12): set s_15": {
+"34:  >> If (s_2 and s_12): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1413,7 +1413,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41:  >> When (s_2 and not s_12): set s_16": {
+"41:  >> If (s_2 and not s_12): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

@@ -194,7 +194,7 @@
 }
 }
 ,"opCodes: [64]": {
-" 0:  >> WhenTimerExpires (t_finddaughter): set s_0": {
+" 0:  >> IfTimerExpires (t_finddaughter): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -344,7 +344,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-" 5: s_0 => TriggerOnClickNpc (n_witch)": {
+" 5:  >> IfNpcClicked (n_witch): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -367,7 +367,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-" 6:  >> When (s_0 and s_4): set s_24 [Msg 1020]": {
+" 6:  >> If (s_0 and s_4): set s_24 [Msg 1020]": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -411,7 +411,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-" 7:  >> When (s_0 and s_5): set s_25 [Msg 1021]": {
+" 7:  >> If (s_0 and s_5): set s_25 [Msg 1021]": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -455,7 +455,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-" 8:  >> When (s_0 and s_6): set s_26 [Msg 1022]": {
+" 8:  >> If (s_0 and s_6): set s_26 [Msg 1022]": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -577,7 +577,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"13:  >> When (s_0 and not s_1): set s_16": {
+"13:  >> If (s_0 and not s_1): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -621,7 +621,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"14:  >> When (s_1 and not s_13 and s_0): set s_15": {
+"14:  >> If (s_1 and not s_13 and s_0): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -829,7 +829,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"20: s_11 => TriggerOnMobHurtByPlayer (m_warrior) [Msg 1026]": {
+"20:  >> IfMobHurtByPlayer (m_warrior): set s_11 [Msg 1026]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -896,7 +896,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"22: s_12 => TriggerOnMobHurtByPlayer (m_battlemage)": {
+"22:  >> IfMobHurtByPlayer (m_battlemage): set s_12": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -963,7 +963,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"24: s_12 => TriggerOnMobHurtByPlayer (m_00003543)": {
+"24:  >> IfMobHurtByPlayer (m_00003543): set s_12": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1152,7 +1152,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"31: s_1 => TriggerOnClickNpc (n_child) [Msg 1025]": {
+"31:  >> IfNpcClicked (n_child): set s_1 [Msg 1025]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1221,7 +1221,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"34:  >> When (s_16 and s_4): set s_7": {
+"34:  >> If (s_16 and s_4): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1265,7 +1265,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"35:  >> When (s_16 and s_5): set s_8": {
+"35:  >> If (s_16 and s_5): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1309,7 +1309,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"36:  >> When (s_16 and s_6): set s_9": {
+"36:  >> If (s_16 and s_6): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1443,7 +1443,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"40:  >> When (s_0 and not s_1): set s_2": {
+"40:  >> If (s_0 and not s_1): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1531,7 +1531,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"42:  >> When (s_4 and s_15): set s_17": {
+"42:  >> If (s_4 and s_15): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1575,7 +1575,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"43:  >> When (s_5 and s_15): set s_18": {
+"43:  >> If (s_5 and s_15): set s_18": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1619,7 +1619,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"44:  >> When (s_6 and s_15): set s_19": {
+"44:  >> If (s_6 and s_15): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1891,7 +1891,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"54: s_20 => TriggerOnItemFound (i_aurielsbow)": {
+"54:  >> IfItemFound (i_aurielsbow): set s_20": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1914,7 +1914,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"55: s_21 => TriggerOnItemFound (i_aurielshield)": {
+"55:  >> IfItemFound (i_aurielshield): set s_21": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1937,7 +1937,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"56: s_22 => TriggerOnItemFound (i_lordsmail)": {
+"56:  >> IfItemFound (i_lordsmail): set s_22": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2029,7 +2029,7 @@
 "flags": 0,
 "lastUpdate": 55
 },
-"60: s_23 >> When (s_22 or s_21): set s_20": {
+"60:  >> If (s_20 or s_22 or s_21): set s_23": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

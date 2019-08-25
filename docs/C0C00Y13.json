@@ -109,7 +109,7 @@
 }
 }
 ,"opCodes: [14]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -162,7 +162,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-" 2:  >> WhenGivingItemToNpc (i_religitem, n_priest): set s_1": {
+" 2:  >> IfGivingItemToNpc (i_religitem, n_priest): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -310,7 +310,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-" 6: s_2 => TriggerOnMobHurtByPlayer (m_thief) [Msg 1011]": {
+" 6:  >> IfMobHurtByPlayer (m_thief): set s_2 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -333,7 +333,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-" 7: s_2 => TriggerOnMobHurtByPlayer (m_spellsword) [Msg 1011]": {
+" 7:  >> IfMobHurtByPlayer (m_spellsword): set s_2 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -460,7 +460,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"11:  >> WhenTimerExpires (t_delay): set s_1": {
+"11:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

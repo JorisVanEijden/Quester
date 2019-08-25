@@ -210,7 +210,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [53]": {
-" 0:  >> WhenTimerExpires (t_time1): set s_0": {
+" 0:  >> IfTimerExpires (t_time1): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -503,7 +503,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"10: s_13 >> When (s_1): set s_3": {
+"10:  >> If (s_3 or s_1): set s_13": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -547,7 +547,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"11: s_5 => TriggerOnClickNpc (n_scholar)": {
+"11:  >> IfNpcClicked (n_scholar): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -570,7 +570,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"12:  >> When (s_13 and s_5): set s_14": {
+"12:  >> If (s_13 and s_5): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -614,7 +614,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"13:  >> When (s_5 and s_2): set s_12": {
+"13:  >> If (s_5 and s_2): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -840,7 +840,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"21:  >> WhenTimerExpires (t_time2): set s_1": {
+"21:  >> IfTimerExpires (t_time2): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -932,7 +932,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"25:  >> WhenGivingItemToNpc (i_0006f2ce, n_contact): set s_6": {
+"25:  >> IfGivingItemToNpc (i_0006f2ce, n_contact): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1008,7 +1008,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"28:  >> WhenGivingItemToNpc (i_ingredient, n_scholar): set s_7": {
+"28:  >> IfGivingItemToNpc (i_ingredient, n_scholar): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1333,7 +1333,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"40: s_17 => TriggerOnItemFound (i_sage) [Msg 1050]": {
+"40:  >> IfItemFound (i_sage): set s_17 [Msg 1050]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1356,7 +1356,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"41: s_18 => TriggerOnClickNpc (n_questgiver)": {
+"41:  >> IfNpcClicked (n_questgiver): set s_18": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1379,7 +1379,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"42:  >> When (s_3 and s_5 and s_16 and s_18): set s_19": {
+"42:  >> If (s_3 and s_5 and s_16 and s_18): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1566,7 +1566,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"48:  >> WhenGivingItemToNpc (i_sage, n_questgiver): set s_4": {
+"48:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

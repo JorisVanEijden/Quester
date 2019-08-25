@@ -323,7 +323,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> WhenGivingItemToNpc (i_0000c9c4, n_00001aa0): set s_0": {
+" 4:  >> IfGivingItemToNpc (i_0000c9c4, n_00001aa0): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -706,7 +706,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> WhenGivingItemToNpc (i_0000c9c4, n_00006691): set s_5": {
+"17:  >> IfGivingItemToNpc (i_0000c9c4, n_00006691): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -736,7 +736,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> WhenGivingItemToNpc (i_0000c9c4, n_00001bb9): set s_5": {
+"18:  >> IfGivingItemToNpc (i_0000c9c4, n_00001bb9): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -766,7 +766,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> WhenGivingItemToNpc (i_0000c9c4, n_hitguard): set s_5": {
+"19:  >> IfGivingItemToNpc (i_0000c9c4, n_hitguard): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -881,7 +881,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24: s_10 => TriggerOnItemFound (i_0000c9c4) [Msg 1020]": {
+"24:  >> IfItemFound (i_0000c9c4): set s_10 [Msg 1020]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -934,7 +934,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> WhenTimerExpires (t_4000000d): set s_0": {
+"26:  >> IfTimerExpires (t_4000000d): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1104,7 +1104,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34: s_14 => TriggerOnClickNpc (n_agentuk)": {
+"34:  >> IfNpcClicked (n_agentuk): set s_14": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1233,7 +1233,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"39: s_15 => TriggerOnPlayerLevel (7)": {
+"39:  >> IfPlayerHasLevel (7): set s_15": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -1256,7 +1256,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40:  >> When (s_16 and s_15): set s_17": {
+"40:  >> If (s_16 and s_15): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

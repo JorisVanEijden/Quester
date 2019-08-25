@@ -34,13 +34,22 @@ namespace Quester
                 };
                 ParseFile(file);
                 name = @"../../../docs/" + name;
-                OutputJson(name);
+                try
+                {
+                    OutputJson(name);
+                }
+                catch (Exception e)
+                {
+                    Console.Error.WriteLine($"ERROR in quest {Quest.Name}");
+                    throw;
+                }
             }
         }
 
         private static void OutputJson(string name)
         {
             var jsonFile = $"{name}.json";
+            File.Delete(jsonFile);
             using (StreamWriter writer = new StreamWriter(File.OpenWrite(jsonFile)))
             {
                 JsonWriter.Write(writer, Quest);

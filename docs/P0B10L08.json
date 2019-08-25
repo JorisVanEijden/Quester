@@ -112,7 +112,7 @@
 }
 }
 ,"opCodes: [34]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -292,7 +292,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-" 6: s_1 => TriggerOnClickNpc (n_vamp)": {
+" 6:  >> IfNpcClicked (n_vamp): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -444,7 +444,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"12:  >> When (s_1 and not s_2 and not s_3): set s_4": {
+"12:  >> If (s_1 and not s_2 and not s_3): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -532,7 +532,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"14: s_5 => TriggerOnClickNpc (n_daedra)": {
+"14:  >> IfNpcClicked (n_daedra): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -714,7 +714,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"21: s_3 => TriggerOnMobKills (m_daedroth, 1)": {
+"21:  >> IfMobsKilled (m_daedroth, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -850,7 +850,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"26:  >> When (s_1 and s_2): set s_7": {
+"26:  >> If (s_1 and s_2): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -910,7 +910,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"28:  >> When (s_1 and s_3): set s_8": {
+"28:  >> If (s_1 and s_3): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

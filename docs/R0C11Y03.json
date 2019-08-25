@@ -111,7 +111,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -238,7 +238,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 4: s_7 => TriggerOnMobHurtByPlayer (m_daedra) [Msg 1020]": {
+" 4:  >> IfMobHurtByPlayer (m_daedra): set s_7 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -261,7 +261,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 5:  >> WhenGivingItemToNpc (i_sage, n_chemist): set s_3": {
+" 5:  >> IfGivingItemToNpc (i_sage, n_chemist): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -307,7 +307,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 7:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+" 7:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -330,7 +330,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 8: s_6 => TriggerOnClickNpc (n_questgiver)": {
+" 8:  >> IfNpcClicked (n_questgiver): set s_6": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -353,7 +353,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 9:  >> When (s_6 and s_3): set s_2": {
+" 9:  >> If (s_6 and s_3): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -441,7 +441,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-"11:  >> When (s_0 and not s_3): set s_5": {
+"11:  >> If (s_0 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

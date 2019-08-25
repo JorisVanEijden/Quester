@@ -677,7 +677,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenTimerExpires (t_queston): set s_0": {
+" 6:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -700,7 +700,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenTimerExpires (t_2letter): set s_5": {
+" 7:  >> IfTimerExpires (t_2letter): set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1074,7 +1074,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> WhenGivingItemToNpc (i_000005e2, n_qgiver): set s_0": {
+"19:  >> IfGivingItemToNpc (i_000005e2, n_qgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1104,7 +1104,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20:  >> WhenGivingItemToNpc (i_00069c81, n_qgiver): set s_0": {
+"20:  >> IfGivingItemToNpc (i_00069c81, n_qgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1134,7 +1134,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> When (s_20 and s_18): set s_0": {
+"21:  >> If (s_20 and s_18): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1254,7 +1254,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25:  >> WhenTimerExpires (t_40000003): set s_1": {
+"25:  >> IfTimerExpires (t_40000003): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1711,7 +1711,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40: s_7 => TriggerOnClickNpc (n_banker)": {
+"40:  >> IfNpcClicked (n_banker): set s_7": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1734,7 +1734,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41:  >> WhenTimerExpires (t_4000000d): set s_2": {
+"41:  >> IfTimerExpires (t_4000000d): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1840,7 +1840,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"45:  >> When (s_7 and not s_8): set s_9": {
+"45:  >> If (s_7 and not s_8): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1900,7 +1900,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47: s_10 => TriggerOnClickNpc (n_guard)": {
+"47:  >> IfNpcClicked (n_guard): set s_10": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -2082,7 +2082,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"54:  >> When (not s_11 and s_10): set s_12": {
+"54:  >> If (not s_11 and s_10): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2322,7 +2322,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"62:  >> When (s_16 and not s_14): set s_15": {
+"62:  >> If (s_16 and not s_14): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2558,7 +2558,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"68: s_17 => TriggerOnMobHurtByPlayer (m_warrior)": {
+"68:  >> IfMobHurtByPlayer (m_warrior): set s_17": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -2597,7 +2597,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"70: s_18 => TriggerOnMobKills (m_warrior, 1)": {
+"70:  >> IfMobsKilled (m_warrior, 1): set s_18": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -2659,7 +2659,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"73: s_20 => TriggerOnClickNpc (n_qgiver)": {
+"73:  >> IfNpcClicked (n_qgiver): set s_20": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -2682,7 +2682,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"74: s_23 => TriggerOnItemFound (i_000005e2)": {
+"74:  >> IfItemFound (i_000005e2): set s_23": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2721,7 +2721,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"76: s_24 => TriggerOnItemFound (i_00069c81)": {
+"76:  >> IfItemFound (i_00069c81): set s_24": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2760,7 +2760,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"78:  >> WhenTimerExpires (t_4000001a): set s_3": {
+"78:  >> IfTimerExpires (t_4000001a): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2974,7 +2974,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"87:  >> WhenTimerExpires (t_4000001b): set s_4": {
+"87:  >> IfTimerExpires (t_4000001b): set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2997,7 +2997,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"88: s_29 => TriggerOnClickNpc (n_gaffer)": {
+"88:  >> IfNpcClicked (n_gaffer): set s_29": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -3202,7 +3202,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"96:  >> When (s_29 and not s_30): set s_31": {
+"96:  >> If (s_29 and not s_30): set s_31": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3285,7 +3285,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"99:  >> When (s_20 and not s_18): set s_32": {
+"99:  >> If (s_20 and not s_18): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3373,7 +3373,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"101: s_33 => TriggerOnItemFound (i_rock) [Msg 1026]": {
+"101:  >> IfItemFound (i_rock): set s_33 [Msg 1026]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

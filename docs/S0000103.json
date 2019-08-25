@@ -63,7 +63,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> WhenTimerExpires (t_40000002): set s_1": {
+" 0:  >> IfTimerExpires (t_40000002): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -86,7 +86,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1: s_0 => TriggerOnMobHurtByPlayer (m_44000001)": {
+" 1:  >> IfMobHurtByPlayer (m_44000001): set s_0": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -109,7 +109,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2: s_0 => TriggerOnMobHurtByPlayer (m_44000000)": {
+" 2:  >> IfMobHurtByPlayer (m_44000000): set s_0": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -132,7 +132,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3:  >> WhenTimerExpires (t_40000001): set s_0": {
+" 3:  >> IfTimerExpires (t_40000001): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -231,7 +231,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenTimeOfDayBetween (04:10:00, 20:50:00): set s_3": {
+" 7:  >> IfTimeOfDayBetween (04:10:00, 20:50:00): set s_3": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -349,7 +349,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10: s_12 >> When (s_6 or s_7 or s_8): set s_5": {
+"10:  >> If (s_5 or s_6 or s_7 or s_8): set s_12": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -393,7 +393,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_13 >> When (s_10 or s_11): set s_9": {
+"11:  >> If (s_9 or s_10 or s_11): set s_13": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -437,7 +437,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_14 >> When (s_13): set s_12": {
+"12:  >> If (s_12 or s_13): set s_14": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

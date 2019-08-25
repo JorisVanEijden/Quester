@@ -202,7 +202,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 3:  >> WhenTimerExpires (t_queston): set s_0": {
+" 3:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -352,7 +352,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 8: s_1 => TriggerOnClickNpc (n_vamp)": {
+" 8:  >> IfNpcClicked (n_vamp): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -375,7 +375,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 9:  >> When (s_1): set s_6": {
+" 9:  >> If (s_1): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -488,7 +488,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"13:  >> When (s_1 and not s_4): set s_2": {
+"13:  >> If (s_1 and not s_4): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -680,7 +680,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"18: s_8 => TriggerOnMobHurtByPlayer (m_wereboar)": {
+"18:  >> IfMobHurtByPlayer (m_wereboar): set s_8": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -749,7 +749,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"21: s_4 => TriggerOnMobKills (m_wereboar, 1)": {
+"21:  >> IfMobsKilled (m_wereboar, 1): set s_4": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -795,7 +795,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"23:  >> WhenGivingItemToNpc (i_00001c21, n_vamp): set s_3": {
+"23:  >> IfGivingItemToNpc (i_00001c21, n_vamp): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

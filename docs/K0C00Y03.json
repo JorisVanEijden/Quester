@@ -173,7 +173,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-" 1:  >> WhenTimerExpires (t_queston): set s_1": {
+" 1:  >> IfTimerExpires (t_queston): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -353,7 +353,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-" 7:  >> WhenTimerExpires (t_2letter): set s_0": {
+" 7:  >> IfTimerExpires (t_2letter): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -542,7 +542,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"14: s_5 => TriggerOnMobHurtByPlayer (m_guard)": {
+"14:  >> IfMobHurtByPlayer (m_guard): set s_5": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -678,7 +678,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"19:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_9": {
+"19:  >> IfGivingItemToNpc (i_sage, n_contact): set s_9": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -791,7 +791,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"23:  >> WhenGivingItemToNpc (i_sage, n_contact2): set s_10": {
+"23:  >> IfGivingItemToNpc (i_sage, n_contact2): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -821,7 +821,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"24:  >> When (s_10 and s_1): set s_11": {
+"24:  >> If (s_10 and s_1): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -964,7 +964,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"29:  >> When (s_13 and s_14): set s_12": {
+"29:  >> If (s_13 and s_14): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

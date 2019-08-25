@@ -70,7 +70,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -176,7 +176,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 4: s_1 => TriggerOnMobKills (m_mage, 1)": {
+" 4:  >> IfMobsKilled (m_mage, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -222,7 +222,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 6: s_2 => TriggerOnClickNpc (n_qgiver)": {
+" 6:  >> IfNpcClicked (n_qgiver): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -245,7 +245,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 7:  >> When (s_2 and not s_1): set s_4": {
+" 7:  >> If (s_2 and not s_1): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -333,7 +333,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 9:  >> When (s_2 and s_1): set s_5": {
+" 9:  >> If (s_2 and s_1): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

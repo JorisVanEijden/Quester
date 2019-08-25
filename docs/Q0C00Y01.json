@@ -102,7 +102,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -222,7 +222,7 @@
 "flags": 0,
 "lastUpdate": 105
 },
-" 4: s_1 => TriggerOnItemFound (i_00000d04)": {
+" 4:  >> IfItemFound (i_00000d04): set s_1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -305,7 +305,7 @@
 "flags": 0,
 "lastUpdate": 105
 },
-" 7: s_2 => TriggerOnMobHurtByPlayer (m_guardian)": {
+" 7:  >> IfMobHurtByPlayer (m_guardian): set s_2": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -344,7 +344,7 @@
 "flags": 0,
 "lastUpdate": 105
 },
-" 9:  >> WhenGivingItemToNpc (i_00000d04, n_qgiver): set s_3": {
+" 9:  >> IfGivingItemToNpc (i_00000d04, n_qgiver): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

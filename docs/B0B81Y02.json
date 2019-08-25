@@ -223,7 +223,7 @@
 }
 }
 ,"opCodes: [65]": {
-" 0:  >> WhenTimerExpires (t_2dung): set s_0": {
+" 0:  >> IfTimerExpires (t_2dung): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -387,7 +387,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5: s_1 => TriggerOnMobKills (m_44000001, 1) [Msg 1011]": {
+" 5:  >> IfMobsKilled (m_44000001, 1): set s_1 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -417,7 +417,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6: s_1 => TriggerOnMobKills (m_44000000, 1) [Msg 1011]": {
+" 6:  >> IfMobsKilled (m_44000000, 1): set s_1 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8: s_2 => TriggerOnClickNpc (n_qgiver)": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -567,7 +567,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> When (s_2 and not s_1): set s_3": {
+"11:  >> If (s_2 and not s_1): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -895,7 +895,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> WhenTimerExpires (t_4000001e): set s_1": {
+"21:  >> IfTimerExpires (t_4000001e): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -971,7 +971,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24: s_13 => TriggerOnClickNpc (n_wizard)": {
+"24:  >> IfNpcClicked (n_wizard): set s_13": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -994,7 +994,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25:  >> When (s_8 and s_13): set s_14": {
+"25:  >> If (s_8 and s_13): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1075,7 +1075,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> When (s_9 and s_13): set s_15": {
+"27:  >> If (s_9 and s_13): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1156,7 +1156,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"29:  >> When (s_10 and s_13): set s_16": {
+"29:  >> If (s_10 and s_13): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1237,7 +1237,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> When (s_11 and s_13): set s_17": {
+"31:  >> If (s_11 and s_13): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1318,7 +1318,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33: s_18 => TriggerOnItemFound (i_41000002)": {
+"33:  >> IfItemFound (i_41000002): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1341,7 +1341,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34: s_18 => TriggerOnItemFound (i_41000003)": {
+"34:  >> IfItemFound (i_41000003): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1364,7 +1364,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"35: s_18 => TriggerOnItemFound (i_41000001)": {
+"35:  >> IfItemFound (i_41000001): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1387,7 +1387,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"36: s_18 => TriggerOnItemFound (i_41000004)": {
+"36:  >> IfItemFound (i_41000004): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1410,7 +1410,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"37:  >> When (s_13 and s_20): set s_19": {
+"37:  >> If (s_13 and s_20): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1657,7 +1657,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"45: s_23 => TriggerOnMobKills (m_ghost, 1)": {
+"45:  >> IfMobsKilled (m_ghost, 1): set s_23": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -1821,7 +1821,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"50:  >> When (s_8 and s_18): set s_26": {
+"50:  >> If (s_8 and s_18): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1888,7 +1888,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"52:  >> When (s_9 and s_18): set s_27": {
+"52:  >> If (s_9 and s_18): set s_27": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1955,7 +1955,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"54:  >> When (s_10 and s_18): set s_28": {
+"54:  >> If (s_10 and s_18): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2022,7 +2022,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"56:  >> When (s_11 and s_18): set s_29": {
+"56:  >> If (s_11 and s_18): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2105,7 +2105,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"59:  >> When (s_0 and not s_12): set s_31": {
+"59:  >> If (s_0 and not s_12): set s_31": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2165,7 +2165,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"61:  >> When (s_3 and s_0): set s_32": {
+"61:  >> If (s_3 and s_0): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2225,7 +2225,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"63: s_33 >> When (s_27 or s_28 or s_29): set s_26": {
+"63:  >> If (s_26 or s_27 or s_28 or s_29): set s_33": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

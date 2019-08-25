@@ -353,7 +353,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3:  >> WhenTimerExpires (t_witch): set s_3": {
+" 3:  >> IfTimerExpires (t_witch): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -376,7 +376,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 4:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -565,7 +565,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_0 => TriggerOnMobKills (m_murder, 1)": {
+"11:  >> IfMobsKilled (m_murder, 1): set s_0": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -595,7 +595,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"12:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -618,7 +618,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> WhenTimerExpires (t_40000003): set s_2": {
+"13:  >> IfTimerExpires (t_40000003): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1015,7 +1015,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26: s_8 => TriggerOnClickNpc (n_qgiver)": {
+"26:  >> IfNpcClicked (n_qgiver): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1038,7 +1038,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> When (s_8 and s_0): set s_9": {
+"27:  >> If (s_8 and s_0): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1253,7 +1253,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33: s_12 => TriggerOnClickNpc (n_hooker)": {
+"33:  >> IfNpcClicked (n_hooker): set s_12": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1389,7 +1389,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38: s_13 => TriggerOnClickNpc (n_contact)": {
+"38:  >> IfNpcClicked (n_contact): set s_13": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1675,7 +1675,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"48: s_17 >> When (s_11): set s_12": {
+"48:  >> If (s_12 or s_11): set s_17": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1719,7 +1719,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"49: s_18 => TriggerOnMobHurtByPlayer (m_murder) [Msg 1050]": {
+"49:  >> IfMobHurtByPlayer (m_murder): set s_18 [Msg 1050]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {

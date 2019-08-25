@@ -116,7 +116,7 @@
 }
 }
 ,"opCodes: [32]": {
-" 0:  >> WhenTimerExpires (t_00006a83): set s_0": {
+" 0:  >> IfTimerExpires (t_00006a83): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -536,7 +536,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"14: s_6 => TriggerOnMobHurtByPlayer (m_archer) [Msg 1021]": {
+"14:  >> IfMobHurtByPlayer (m_archer): set s_6 [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -559,7 +559,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"15: s_6 => TriggerOnMobHurtByPlayer (m_bard) [Msg 1022]": {
+"15:  >> IfMobHurtByPlayer (m_bard): set s_6 [Msg 1022]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -582,7 +582,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"16: s_6 => TriggerOnMobHurtByPlayer (m_rogue) [Msg 1023]": {
+"16:  >> IfMobHurtByPlayer (m_rogue): set s_6 [Msg 1023]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -605,7 +605,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"17: s_6 => TriggerOnMobHurtByPlayer (m_spellsword) [Msg 1024]": {
+"17:  >> IfMobHurtByPlayer (m_spellsword): set s_6 [Msg 1024]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -628,7 +628,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"18: s_7 => TriggerOnMobKills (m_archer, 1)": {
+"18:  >> IfMobsKilled (m_archer, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -658,7 +658,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"19: s_7 => TriggerOnMobKills (m_bard, 1)": {
+"19:  >> IfMobsKilled (m_bard, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -688,7 +688,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"20: s_7 => TriggerOnMobKills (m_rogue, 1)": {
+"20:  >> IfMobsKilled (m_rogue, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -718,7 +718,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"21: s_7 => TriggerOnMobKills (m_spellsword, 1)": {
+"21:  >> IfMobsKilled (m_spellsword, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -801,7 +801,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"24: s_8 => TriggerOnClickNpc (n_questgiver)": {
+"24:  >> IfNpcClicked (n_questgiver): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -824,7 +824,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"25:  >> When (s_8 and not s_7): set s_9": {
+"25:  >> If (s_8 and not s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -868,7 +868,7 @@
 "flags": 0,
 "lastUpdate": 446
 },
-"26:  >> When (s_8 and s_7): set s_10": {
+"26:  >> If (s_8 and s_7): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

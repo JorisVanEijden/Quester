@@ -133,7 +133,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [28]": {
-" 0:  >> WhenTimerExpires (t_questtime): set s_0": {
+" 0:  >> IfTimerExpires (t_questtime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -156,7 +156,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_shortdelay): set s_1": {
+" 1:  >> IfTimerExpires (t_shortdelay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -412,7 +412,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10: s_7 => TriggerOnClickNpc (n_sister)": {
+"10:  >> IfNpcClicked (n_sister): set s_7": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -435,7 +435,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> When (s_7 and s_2): set s_9": {
+"11:  >> If (s_7 and s_2): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -479,7 +479,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> When (s_7 and s_1): set s_8": {
+"12:  >> If (s_7 and s_1): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -555,7 +555,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> WhenGivingItemToNpc (i_sage, n_sister): set s_10": {
+"15:  >> IfGivingItemToNpc (i_sage, n_sister): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -622,7 +622,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> When (s_1 and s_12): set s_14": {
+"17:  >> If (s_1 and s_12): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -666,7 +666,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> When (s_2 and s_12): set s_15": {
+"18:  >> If (s_2 and s_12): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -772,7 +772,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> WhenGivingItemToNpc (i_sage, n_questg): set s_6": {
+"22:  >> IfGivingItemToNpc (i_sage, n_questg): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -883,7 +883,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25: s_17 >> When (s_10): set s_6": {
+"25:  >> If (s_6 or s_10): set s_17": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

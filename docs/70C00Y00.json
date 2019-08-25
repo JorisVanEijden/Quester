@@ -92,7 +92,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -228,7 +228,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-" 5: s_1 => TriggerOnMobKills (m_monster, 1)": {
+" 5:  >> IfMobsKilled (m_monster, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -274,7 +274,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-" 7: s_2 => TriggerOnClickNpc (n_contact)": {
+" 7:  >> IfNpcClicked (n_contact): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -297,7 +297,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-" 8:  >> When (s_2 and s_1): set s_0": {
+" 8:  >> If (s_2 and s_1): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -341,7 +341,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-" 9:  >> When (s_2 and not s_1): set s_4": {
+" 9:  >> If (s_2 and not s_1): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -473,7 +473,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-"12:  >> WhenTimerExpires (t_delay): set s_1": {
+"12:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

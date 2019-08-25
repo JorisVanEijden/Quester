@@ -183,7 +183,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_escapetime): set s_0": {
+" 1:  >> IfTimerExpires (t_escapetime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -282,7 +282,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5: s_2 => TriggerOnClickNpc (n_master) [Msg 1012]": {
+" 5:  >> IfNpcClicked (n_master): set s_2 [Msg 1012]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -305,7 +305,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenTimerExpires (t_shortdelay): set s_1": {
+" 6:  >> IfTimerExpires (t_shortdelay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -471,7 +471,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_3 => TriggerOnMobKills (m_mmaster, 1)": {
+"12:  >> IfMobsKilled (m_mmaster, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -545,7 +545,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> WhenTimerExpires (t_4000000d): set s_2": {
+"14:  >> IfTimerExpires (t_4000000d): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -598,7 +598,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> When (not s_3 and s_1): set s_4": {
+"16:  >> If (not s_3 and s_1): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -801,7 +801,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"23: s_5 => TriggerOnMobHurtByPlayer (m_mmaster)": {
+"23:  >> IfMobHurtByPlayer (m_mmaster): set s_5": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -824,7 +824,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_12 and s_5 and s_4): set s_7": {
+"24:  >> If (s_12 and s_5 and s_4): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -884,7 +884,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26: s_9 => TriggerOnClickNpc (n_qgiver)": {
+"26:  >> IfNpcClicked (n_qgiver): set s_9": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -907,7 +907,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> When (s_9 and s_4): set s_10": {
+"27:  >> If (s_9 and s_4): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -997,7 +997,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (s_9 and not s_4): set s_11": {
+"30:  >> If (s_9 and not s_4): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

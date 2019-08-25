@@ -235,7 +235,7 @@
 }
 }
 ,"opCodes: [60]": {
-" 0:  >> WhenTimerExpires (t_huntstart): set s_1": {
+" 0:  >> IfTimerExpires (t_huntstart): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -720,7 +720,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"15:  >> WhenTimerExpires (t_00006cc3): set s_0": {
+"15:  >> IfTimerExpires (t_00006cc3): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -743,7 +743,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"16:  >> When (s_6): set s_18": {
+"16:  >> If (s_6): set s_18": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -787,7 +787,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"17:  >> When (s_14): set s_19": {
+"17:  >> If (s_14): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -963,7 +963,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"21: s_7 => TriggerOnMobHurtByPlayer (m_0003808b) [Msg 1040]": {
+"21:  >> IfMobHurtByPlayer (m_0003808b): set s_7 [Msg 1040]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1090,7 +1090,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"25: s_0 => TriggerOnClickNpc (n_priest)": {
+"25:  >> IfNpcClicked (n_priest): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1581,7 +1581,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"43: s_13 => TriggerOnClickNpc (n_local)": {
+"43:  >> IfNpcClicked (n_local): set s_13": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1687,7 +1687,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"47:  >> WhenGivingItemToNpc (i_00000c7e, n_child): set s_8": {
+"47:  >> IfGivingItemToNpc (i_00000c7e, n_child): set s_8": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1936,7 +1936,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"56: s_17 => TriggerOnMobKills (m_wereboar, 1)": {
+"56:  >> IfMobsKilled (m_wereboar, 1): set s_17": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {

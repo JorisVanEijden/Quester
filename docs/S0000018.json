@@ -238,7 +238,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 3:  >> WhenTimerExpires (t_00035fb2): set s_2": {
+" 3:  >> IfTimerExpires (t_00035fb2): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -261,7 +261,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 4: s_5 => TriggerOnPlayerLevel (10)": {
+" 4:  >> IfPlayerHasLevel (10): set s_5": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -321,7 +321,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 6:  >> When (s_6 and s_4 and s_5): set s_7": {
+" 6:  >> If (s_6 and s_4 and s_5): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -434,7 +434,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"10:  >> WhenTimerExpires (t_delay): set s_0": {
+"10:  >> IfTimerExpires (t_delay): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -473,7 +473,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"12:  >> WhenTimerExpires (t_000018d8): set s_1": {
+"12:  >> IfTimerExpires (t_000018d8): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -586,7 +586,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"16: s_2 => TriggerOnClickNpc (n_gortwog)": {
+"16:  >> IfNpcClicked (n_gortwog): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -745,7 +745,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"22:  >> WhenGivingItemToNpc (i_spider, n_00001a11): set s_3": {
+"22:  >> IfGivingItemToNpc (i_spider, n_00001a11): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

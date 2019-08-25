@@ -104,7 +104,7 @@
 }
 }
 ,"opCodes: [23]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -344,7 +344,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-" 8: s_9 => TriggerOnMobHurtByPlayer (m_monster1) [Msg 1020]": {
+" 8:  >> IfMobHurtByPlayer (m_monster1): set s_9 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -367,7 +367,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-" 9: s_9 => TriggerOnMobHurtByPlayer (m_monster2) [Msg 1020]": {
+" 9:  >> IfMobHurtByPlayer (m_monster2): set s_9 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -390,7 +390,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"10: s_9 => TriggerOnMobHurtByPlayer (m_monster3) [Msg 1020]": {
+"10:  >> IfMobHurtByPlayer (m_monster3): set s_9 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -413,7 +413,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"11: s_9 => TriggerOnMobHurtByPlayer (m_monster4) [Msg 1020]": {
+"11:  >> IfMobHurtByPlayer (m_monster4): set s_9 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -436,7 +436,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"12: s_1 => TriggerOnMobKills (m_monster4, 1)": {
+"12:  >> IfMobsKilled (m_monster4, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -466,7 +466,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"13: s_1 => TriggerOnMobKills (m_monster3, 1)": {
+"13:  >> IfMobsKilled (m_monster3, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -496,7 +496,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"14: s_1 => TriggerOnMobKills (m_monster2, 1)": {
+"14:  >> IfMobsKilled (m_monster2, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -526,7 +526,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"15: s_1 => TriggerOnMobKills (m_monster1, 1)": {
+"15:  >> IfMobsKilled (m_monster1, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -556,7 +556,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"16: s_2 => TriggerOnClickNpc (n_questgiver)": {
+"16:  >> IfNpcClicked (n_questgiver): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -579,7 +579,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"17:  >> When (s_2 and not s_1): set s_4": {
+"17:  >> If (s_2 and not s_1): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -667,7 +667,7 @@
 "flags": 0,
 "lastUpdate": 109
 },
-"19:  >> When (s_2 and s_1): set s_0": {
+"19:  >> If (s_2 and s_1): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

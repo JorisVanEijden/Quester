@@ -114,7 +114,7 @@
 }
 }
 ,"opCodes: [23]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -391,7 +391,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-" 9: s_7 => TriggerOnMobHurtByPlayer (m_ghost) [Msg 1011]": {
+" 9:  >> IfMobHurtByPlayer (m_ghost): set s_7 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -414,7 +414,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"10: s_7 => TriggerOnMobHurtByPlayer (m_skeleton) [Msg 1011]": {
+"10:  >> IfMobHurtByPlayer (m_skeleton): set s_7 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -437,7 +437,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"11: s_7 => TriggerOnMobHurtByPlayer (m_wraith) [Msg 1011]": {
+"11:  >> IfMobHurtByPlayer (m_wraith): set s_7 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -460,7 +460,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"12: s_7 => TriggerOnMobHurtByPlayer (m_zombie) [Msg 1011]": {
+"12:  >> IfMobHurtByPlayer (m_zombie): set s_7 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -483,7 +483,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"13: s_6 => TriggerOnMobKills (m_ghost, 1)": {
+"13:  >> IfMobsKilled (m_ghost, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -513,7 +513,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"14: s_6 => TriggerOnMobKills (m_skeleton, 1)": {
+"14:  >> IfMobsKilled (m_skeleton, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -543,7 +543,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"15: s_6 => TriggerOnMobKills (m_wraith, 1)": {
+"15:  >> IfMobsKilled (m_wraith, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -573,7 +573,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"16: s_6 => TriggerOnMobKills (m_zombie, 1)": {
+"16:  >> IfMobsKilled (m_zombie, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -603,7 +603,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"17: s_1 => TriggerOnClickNpc (n_qgiver)": {
+"17:  >> IfNpcClicked (n_qgiver): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -626,7 +626,7 @@
 "flags": 0,
 "lastUpdate": 28
 },
-"18:  >> When (s_1 and not s_6): set s_10": {
+"18:  >> If (s_1 and not s_6): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

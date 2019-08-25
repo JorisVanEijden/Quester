@@ -219,7 +219,7 @@
 "flags": 0,
 "lastUpdate": 1761
 },
-" 3:  >> WhenTimerExpires (t_queston): set s_0": {
+" 3:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -390,7 +390,7 @@
 "flags": 0,
 "lastUpdate": 1761
 },
-" 8: s_7 => TriggerOnMobKills (m_0006e14b, 1)": {
+" 8:  >> IfMobsKilled (m_0006e14b, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -473,7 +473,7 @@
 "flags": 0,
 "lastUpdate": 1761
 },
-"11: s_4 => TriggerOnClickNpc (n_orsinium)": {
+"11:  >> IfNpcClicked (n_orsinium): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -512,7 +512,7 @@
 "flags": 0,
 "lastUpdate": 1761
 },
-"13:  >> WhenGivingItemToNpc (i_sage, n_orsinium): set s_8": {
+"13:  >> IfGivingItemToNpc (i_sage, n_orsinium): set s_8": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -701,7 +701,7 @@
 "flags": 0,
 "lastUpdate": 1761
 },
-"20:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_3": {
+"20:  >> IfGivingItemToNpc (i_sage, n_contact): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

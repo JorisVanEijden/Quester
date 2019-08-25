@@ -214,7 +214,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_queston): set s_0": {
+" 1:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -387,7 +387,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_1": {
+" 7:  >> IfGivingItemToNpc (i_sage, n_contact): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10:  >> WhenGivingItemToNpc (i_sage, n_vampire): set s_2": {
+"10:  >> IfGivingItemToNpc (i_sage, n_vampire): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -772,7 +772,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> WhenTimeOfDayBetween (05:50:00, 17:30:00): set s_5": {
+"21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_5": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -802,7 +802,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22: s_6 => TriggerOnMobHurtByPlayer (m_vampires)": {
+"22:  >> IfMobHurtByPlayer (m_vampires): set s_6": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -862,7 +862,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_8 and s_6): set s_10": {
+"24:  >> If (s_8 and s_6): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -966,7 +966,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27: s_11 => TriggerOnMobHurtByPlayer (m_vampleader)": {
+"27:  >> IfMobHurtByPlayer (m_vampleader): set s_11": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1146,7 +1146,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> When (not s_5 and not s_3): set s_13": {
+"33:  >> If (not s_5 and not s_3): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

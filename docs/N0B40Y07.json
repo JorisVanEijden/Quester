@@ -125,7 +125,7 @@
 }
 }
 ,"opCodes: [25]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -277,7 +277,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> When (s_4 and s_10 and not s_6): set s_1": {
+" 6:  >> If (s_4 and s_10 and not s_6): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -455,7 +455,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_4 => TriggerOnClickNpc (n_qgiver)": {
+"11:  >> IfNpcClicked (n_qgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -552,7 +552,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_6 => TriggerOnMobKills (m_daedra, 1)": {
+"14:  >> IfMobsKilled (m_daedra, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -582,7 +582,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15: s_7 => TriggerOnMobHurtByPlayer (m_daedra)": {
+"15:  >> IfMobHurtByPlayer (m_daedra): set s_7": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -695,7 +695,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> When (s_4 and s_6): set s_9": {
+"19:  >> If (s_4 and s_6): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -771,7 +771,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> When (s_2 and not s_6): set s_10": {
+"22:  >> If (s_2 and not s_6): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

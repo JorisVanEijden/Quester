@@ -110,7 +110,7 @@
 }
 }
 ,"opCodes: [30]": {
-" 0:  >> WhenTimerExpires (t_oneday): set s_0": {
+" 0:  >> IfTimerExpires (t_oneday): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -223,7 +223,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 4:  >> WhenTimeOfDayBetween (00:00:00, 03:00:00): set s_2": {
+" 4:  >> IfTimeOfDayBetween (00:00:00, 03:00:00): set s_2": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -459,7 +459,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"10: s_4 => TriggerOnMobHurtByPlayer (m_000036cd) [Msg 1012]": {
+"10:  >> IfMobHurtByPlayer (m_000036cd): set s_4 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -482,7 +482,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"11: s_5 => TriggerOnMobKills (m_000036cd, 2)": {
+"11:  >> IfMobsKilled (m_000036cd, 2): set s_5": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -512,7 +512,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"12: s_6 => TriggerOnItemFound (i_treasure)": {
+"12:  >> IfItemFound (i_treasure): set s_6": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -565,7 +565,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"14:  >> When (s_6 and not s_2): set s_7": {
+"14:  >> If (s_6 and not s_2): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -609,7 +609,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"15:  >> WhenTimerExpires (t_000da513): set s_1": {
+"15:  >> IfTimerExpires (t_000da513): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -736,7 +736,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"19: s_8 => TriggerOnMobHurtByPlayer (m_00003543) [Msg 1013]": {
+"19:  >> IfMobHurtByPlayer (m_00003543): set s_8 [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -759,7 +759,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"20: s_1 => TriggerOnClickNpc (n_qgiver)": {
+"20:  >> IfNpcClicked (n_qgiver): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -782,7 +782,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"21:  >> When (s_1 and s_5 and not s_7 and not s_2): set s_12": {
+"21:  >> If (s_1 and s_5 and not s_7 and not s_2): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -914,7 +914,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"24:  >> When (s_10 and s_7): set s_9": {
+"24:  >> If (s_10 and s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -958,7 +958,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"25:  >> When (s_0 and not s_7): set s_9": {
+"25:  >> If (s_0 and not s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

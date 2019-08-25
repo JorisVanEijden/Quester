@@ -581,7 +581,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_0 => TriggerOnClickNpc (n_acolyte)": {
+"11:  >> IfNpcClicked (n_acolyte): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -724,7 +724,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> WhenTimerExpires (t_queston1): set s_0": {
+"16:  >> IfTimerExpires (t_queston1): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -777,7 +777,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> WhenTimerExpires (t_queston2): set s_1": {
+"18:  >> IfTimerExpires (t_queston2): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -830,7 +830,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_3 => TriggerOnClickNpc (n_00001ad1)": {
+"20:  >> IfNpcClicked (n_00001ad1): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -915,7 +915,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24: s_4 => TriggerOnClickNpc (n_noble)": {
+"24:  >> IfNpcClicked (n_noble): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -938,7 +938,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25:  >> When (s_4 and s_3): set s_5": {
+"25:  >> If (s_4 and s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1088,7 +1088,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (s_4 and s_7): set s_6": {
+"30:  >> If (s_4 and s_7): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1238,7 +1238,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"35: s_7 => TriggerOnClickNpc (n_love)": {
+"35:  >> IfNpcClicked (n_love): set s_7": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1323,7 +1323,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"39:  >> When (s_4 and not s_3 and not s_7): set s_8": {
+"39:  >> If (s_4 and not s_3 and not s_7): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1510,7 +1510,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"45:  >> When (s_10 and not s_5 and not s_6): set s_9": {
+"45:  >> If (s_10 and not s_5 and not s_6): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1570,7 +1570,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47: s_10 >> When (s_13): set s_12": {
+"47:  >> If (s_12 or s_13): set s_10": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

@@ -235,7 +235,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2:  >> WhenTimerExpires (t_40000001): set s_1": {
+" 2:  >> IfTimerExpires (t_40000001): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -364,7 +364,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenTimeOfDayBetween (00:00:00, 08:00:00): set s_2": {
+" 7:  >> IfTimeOfDayBetween (00:00:00, 08:00:00): set s_2": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -424,7 +424,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9:  >> WhenTimeOfDayBetween (16:02:00, 1.00:00:00): set s_3": {
+" 9:  >> IfTimeOfDayBetween (16:02:00, 1.00:00:00): set s_3": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -484,7 +484,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> WhenTimeOfDayBetween (08:01:00, 16:01:00): set s_4": {
+"11:  >> IfTimeOfDayBetween (08:01:00, 16:01:00): set s_4": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -544,7 +544,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_5 => TriggerOnClickNpc (n_informant) [Msg 1025]": {
+"13:  >> IfNpcClicked (n_informant): set s_5 [Msg 1025]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -604,7 +604,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> WhenGivingItemToNpc (i_book, n_giver): set s_6": {
+"15:  >> IfGivingItemToNpc (i_book, n_giver): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -694,7 +694,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_8 => TriggerOnMobHurtByPlayer (m_thiefhome1) [Msg 1040]": {
+"18:  >> IfMobHurtByPlayer (m_thiefhome1): set s_8 [Msg 1040]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {

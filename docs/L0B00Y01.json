@@ -82,7 +82,7 @@
 }
 }
 ,"opCodes: [18]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -202,7 +202,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 4: s_3 => TriggerOnClickNpc (n_snitch)": {
+" 4:  >> IfNpcClicked (n_snitch): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -331,7 +331,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 9: s_2 => TriggerOnMobKills (m_target, 1)": {
+" 9:  >> IfMobsKilled (m_target, 1): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -377,7 +377,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"11: s_4 => TriggerOnClickNpc (n_qgiver)": {
+"11:  >> IfNpcClicked (n_qgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -400,7 +400,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"12:  >> When (s_4 and not s_2): set s_5": {
+"12:  >> If (s_4 and not s_2): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -488,7 +488,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"14:  >> When (s_4 and s_2): set s_1": {
+"14:  >> If (s_4 and s_2): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

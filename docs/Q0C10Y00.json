@@ -290,7 +290,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3:  >> WhenTimerExpires (t_queston): set s_0": {
+" 3:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -472,7 +472,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10:  >> WhenGivingItemToNpc (i_item1, n_qgiver): set s_0": {
+"10:  >> IfGivingItemToNpc (i_item1, n_qgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -502,7 +502,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> WhenGivingItemToNpc (i_item2, n_qgiver): set s_1": {
+"11:  >> IfGivingItemToNpc (i_item2, n_qgiver): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -532,7 +532,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> WhenGivingItemToNpc (i_item3, n_qgiver): set s_2": {
+"12:  >> IfGivingItemToNpc (i_item3, n_qgiver): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1066,7 +1066,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27: s_11 => TriggerOnItemFound (i_item1) [Msg 1021]": {
+"27:  >> IfItemFound (i_item1): set s_11 [Msg 1021]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1089,7 +1089,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28: s_12 => TriggerOnItemFound (i_item2) [Msg 1022]": {
+"28:  >> IfItemFound (i_item2): set s_12 [Msg 1022]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1112,7 +1112,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"29: s_13 => TriggerOnItemFound (i_item3) [Msg 1023]": {
+"29:  >> IfItemFound (i_item3): set s_13 [Msg 1023]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1179,7 +1179,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> When (s_0 and s_1 and s_2): set s_15": {
+"31:  >> If (s_0 and s_1 and s_2): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

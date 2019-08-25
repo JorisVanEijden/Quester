@@ -388,7 +388,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5: s_0 => TriggerOnMobKills (m_0000e361, 1)": {
+" 5:  >> IfMobsKilled (m_0000e361, 1): set s_0": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -464,7 +464,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8: s_2 => TriggerOnMobHurtByPlayer (m_0000e361)": {
+" 8:  >> IfMobHurtByPlayer (m_0000e361): set s_2": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -593,7 +593,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> WhenGivingItemToNpc (i_0000e2f5, n_barenziah): set s_3": {
+"13:  >> IfGivingItemToNpc (i_0000e2f5, n_barenziah): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -623,7 +623,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> WhenGivingItemToNpc (i_0000e2f5, n_00003285): set s_3": {
+"14:  >> IfGivingItemToNpc (i_0000e2f5, n_00003285): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -653,7 +653,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> WhenGivingItemToNpc (i_0000e2f5, n_000033dc): set s_3": {
+"15:  >> IfGivingItemToNpc (i_0000e2f5, n_000033dc): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -805,7 +805,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> WhenGivingItemToNpc (i_0000e2f5, n_000036c3): set s_4": {
+"21:  >> IfGivingItemToNpc (i_0000e2f5, n_000036c3): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -835,7 +835,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> WhenGivingItemToNpc (i_0000e2f5, n_00001a11): set s_4": {
+"22:  >> IfGivingItemToNpc (i_0000e2f5, n_00001a11): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -865,7 +865,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"23:  >> WhenGivingItemToNpc (i_0000e2f5, n_00006f81): set s_4": {
+"23:  >> IfGivingItemToNpc (i_0000e2f5, n_00006f81): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -994,7 +994,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> WhenGivingItemToNpc (i_0000e2f5, n_00006691): set s_5": {
+"28:  >> IfGivingItemToNpc (i_0000e2f5, n_00006691): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1040,7 +1040,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> WhenGivingItemToNpc (i_0000e2f5, n_0000353e): set s_6": {
+"30:  >> IfGivingItemToNpc (i_0000e2f5, n_0000353e): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1070,7 +1070,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> WhenGivingItemToNpc (i_0000e2f5, n_00000c7f): set s_6": {
+"31:  >> IfGivingItemToNpc (i_0000e2f5, n_00000c7f): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1243,7 +1243,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"37:  >> WhenGivingItemToNpc (i_0000e2f5, n_0000d5dd): set s_7": {
+"37:  >> IfGivingItemToNpc (i_0000e2f5, n_0000d5dd): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1273,7 +1273,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> WhenGivingItemToNpc (i_0000e2f5, n_gortwog): set s_7": {
+"38:  >> IfGivingItemToNpc (i_0000e2f5, n_gortwog): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1432,7 +1432,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"44: s_8 >> When (s_4 or s_0): set s_3": {
+"44:  >> If (s_3 or s_4 or s_0): set s_8": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1499,7 +1499,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"46: s_9 >> When (s_7 or s_6): set s_5": {
+"46:  >> If (s_5 or s_7 or s_6): set s_9": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1559,7 +1559,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"48:  >> When (s_8 and s_10 and s_12): set s_11": {
+"48:  >> If (s_8 and s_10 and s_12): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

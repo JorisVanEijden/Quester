@@ -104,7 +104,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -344,7 +344,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 8: s_2 => TriggerOnMobKills (m_00003504, 1) [Msg 1021]": {
+" 8:  >> IfMobsKilled (m_00003504, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -374,7 +374,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 9: s_2 => TriggerOnMobKills (m_00003503, 1) [Msg 1021]": {
+" 9:  >> IfMobsKilled (m_00003503, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -404,7 +404,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"10: s_2 => TriggerOnMobKills (m_00003502, 1) [Msg 1021]": {
+"10:  >> IfMobsKilled (m_00003502, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -434,7 +434,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"11: s_2 => TriggerOnMobKills (m_00003501, 1) [Msg 1021]": {
+"11:  >> IfMobsKilled (m_00003501, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -464,7 +464,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"12: s_1 => TriggerOnClickNpc (n_questgiver)": {
+"12:  >> IfNpcClicked (n_questgiver): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -487,7 +487,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"13:  >> When (s_1 and not s_2): set s_10": {
+"13:  >> If (s_1 and not s_2): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -575,7 +575,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"15:  >> When (s_1 and s_2): set s_0": {
+"15:  >> If (s_1 and s_2): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

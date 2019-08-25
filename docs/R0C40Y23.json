@@ -148,7 +148,7 @@
 }
 }
 ,"opCodes: [32]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -548,7 +548,7 @@
 "flags": 0,
 "lastUpdate": 1716
 },
-"11: s_8 => TriggerOnMobHurtByPlayer (m_seducer)": {
+"11:  >> IfMobHurtByPlayer (m_seducer): set s_8": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -571,7 +571,7 @@
 "flags": 0,
 "lastUpdate": 1716
 },
-"12:  >> When (s_10 and s_8): set s_12": {
+"12:  >> If (s_10 and s_8): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -712,7 +712,7 @@
 "flags": 0,
 "lastUpdate": 1716
 },
-"16: s_7 => TriggerOnMobKills (m_seducer, 1)": {
+"16:  >> IfMobsKilled (m_seducer, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -795,7 +795,7 @@
 "flags": 0,
 "lastUpdate": 1716
 },
-"19:  >> WhenGivingItemToNpc (i_sage, n_oblivion): set s_5": {
+"19:  >> IfGivingItemToNpc (i_sage, n_oblivion): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -984,7 +984,7 @@
 "flags": 0,
 "lastUpdate": 1716
 },
-"26:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_3": {
+"26:  >> IfGivingItemToNpc (i_sage, n_contact): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

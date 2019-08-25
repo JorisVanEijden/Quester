@@ -184,7 +184,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-" 3:  >> WhenTimerExpires (t_0001bd43): set s_1": {
+" 3:  >> IfTimerExpires (t_0001bd43): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -207,7 +207,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-" 4:  >> WhenTimerExpires (t_0001a1b4): set s_2": {
+" 4:  >> IfTimerExpires (t_0001a1b4): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -230,7 +230,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-" 5:  >> WhenTimerExpires (t_00019983): set s_0": {
+" 5:  >> IfTimerExpires (t_00019983): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -366,7 +366,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-"10: s_6 => TriggerOnMobHurtByPlayer (m_0001a627) [Msg 1019]": {
+"10:  >> IfMobHurtByPlayer (m_0001a627): set s_6 [Msg 1019]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -389,7 +389,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-"11: s_7 => TriggerOnMobKills (m_0001a627, 1)": {
+"11:  >> IfMobsKilled (m_0001a627, 1): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -463,7 +463,7 @@
 "flags": 0,
 "lastUpdate": 422
 },
-"13:  >> When (not s_8 and s_7): set s_9": {
+"13:  >> If (not s_8 and s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

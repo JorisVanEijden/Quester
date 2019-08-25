@@ -90,7 +90,7 @@
 }
 }
 ,"opCodes: [17]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -323,7 +323,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-" 8: s_1 => TriggerOnMobKills (m_monster, 1)": {
+" 8:  >> IfMobsKilled (m_monster, 1): set s_1": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -369,7 +369,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-"10: s_2 => TriggerOnClickNpc (n_questgiver)": {
+"10:  >> IfNpcClicked (n_questgiver): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -392,7 +392,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-"11:  >> When (s_2 and not s_1): set s_4": {
+"11:  >> If (s_2 and not s_1): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -480,7 +480,7 @@
 "flags": 0,
 "lastUpdate": 54
 },
-"13:  >> When (s_2 and s_1): set s_0": {
+"13:  >> If (s_2 and s_1): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

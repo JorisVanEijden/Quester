@@ -194,7 +194,7 @@
 }
 }
 ,"opCodes: [29]": {
-" 0:  >> WhenTimerExpires (t_00004f37): set s_0": {
+" 0:  >> IfTimerExpires (t_00004f37): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -217,7 +217,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-" 1:  >> WhenTimerExpires (t_0001347c): set s_1": {
+" 1:  >> IfTimerExpires (t_0001347c): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -413,7 +413,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-" 8: s_14 => TriggerOnItemFound (i_0001a179) [Msg 1099]": {
+" 8:  >> IfItemFound (i_0001a179): set s_14 [Msg 1099]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -533,7 +533,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-"12: s_3 => TriggerOnClickNpc (n_contact)": {
+"12:  >> IfNpcClicked (n_contact): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -701,7 +701,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-"19:  >> WhenTimerExpires (t_00002657): set s_2": {
+"19:  >> IfTimerExpires (t_00002657): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -763,7 +763,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-"22: s_4 => TriggerOnClickNpc (n_qgiver)": {
+"22:  >> IfNpcClicked (n_qgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -786,7 +786,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-"23:  >> WhenGivingItemToNpc (i_0001a179, n_qgiver): set s_2": {
+"23:  >> IfGivingItemToNpc (i_0001a179, n_qgiver): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -816,7 +816,7 @@
 "flags": 0,
 "lastUpdate": 25
 },
-"24:  >> When (s_4 and not s_2): set s_9": {
+"24:  >> If (s_4 and not s_2): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

@@ -114,7 +114,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -447,7 +447,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-" 9:  >> WhenGivingItemToNpc (i_book, n_qgiver): set s_2": {
+" 9:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-"10: s_7 => TriggerOnItemFound (i_book)": {
+"10:  >> IfItemFound (i_book): set s_7": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -500,7 +500,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-"11:  >> When (s_0 and s_7): set s_8": {
+"11:  >> If (s_0 and s_7): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

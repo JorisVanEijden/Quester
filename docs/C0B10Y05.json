@@ -126,7 +126,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -438,7 +438,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 9: s_6 => TriggerOnMobHurtByPlayer (m_orc1) [Msg 1011]": {
+" 9:  >> IfMobHurtByPlayer (m_orc1): set s_6 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -461,7 +461,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"10: s_6 => TriggerOnMobHurtByPlayer (m_orc2) [Msg 1011]": {
+"10:  >> IfMobHurtByPlayer (m_orc2): set s_6 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -484,7 +484,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"11: s_6 => TriggerOnMobHurtByPlayer (m_orc3) [Msg 1011]": {
+"11:  >> IfMobHurtByPlayer (m_orc3): set s_6 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -507,7 +507,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"12: s_6 => TriggerOnMobHurtByPlayer (m_orc4) [Msg 1011]": {
+"12:  >> IfMobHurtByPlayer (m_orc4): set s_6 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -530,7 +530,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"13:  >> WhenGivingItemToNpc (i_evilitem, n_0000d5a4): set s_1": {
+"13:  >> IfGivingItemToNpc (i_evilitem, n_0000d5a4): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -604,7 +604,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"15:  >> When (s_0 and not s_1): set s_7": {
+"15:  >> If (s_0 and not s_1): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

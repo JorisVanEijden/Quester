@@ -172,7 +172,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-" 1:  >> WhenTimerExpires (t_0000d533): set s_0": {
+" 1:  >> IfTimerExpires (t_0000d533): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -532,7 +532,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"13:  >> WhenTimeOfDayBetween (00:00:00, 01:00:00): set s_1": {
+"13:  >> IfTimeOfDayBetween (00:00:00, 01:00:00): set s_1": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -606,7 +606,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"15: s_2 => TriggerOnMobHurtByPlayer (m_0003843f) [Msg 1016]": {
+"15:  >> IfMobHurtByPlayer (m_0003843f): set s_2 [Msg 1016]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -673,7 +673,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"17: s_4 => TriggerOnClickNpc (n_sage)": {
+"17:  >> IfNpcClicked (n_sage): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -740,7 +740,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"19:  >> When (s_4 and not s_7): set s_8": {
+"19:  >> If (s_4 and not s_7): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -784,7 +784,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"20:  >> When (s_4 and s_7): set s_6": {
+"20:  >> If (s_4 and s_7): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -957,7 +957,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"26: s_9 => TriggerOnMobHurtByPlayer (m_realmummy)": {
+"26:  >> IfMobHurtByPlayer (m_realmummy): set s_9": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -996,7 +996,7 @@
 "flags": 0,
 "lastUpdate": 215
 },
-"28: s_5 => TriggerOnMobKills (m_realmummy, 1)": {
+"28:  >> IfMobsKilled (m_realmummy, 1): set s_5": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {

@@ -89,7 +89,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [13]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -172,7 +172,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3:  >> WhenGivingItemToNpc (i_item1, n_contact): set s_5": {
+" 3:  >> IfGivingItemToNpc (i_item1, n_contact): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -248,7 +248,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenGivingItemToNpc (i_item2, n_questgiver): set s_0": {
+" 6:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

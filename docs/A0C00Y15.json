@@ -169,7 +169,7 @@
 }
 }
 ,"opCodes: [51]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -712,7 +712,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"16: s_16 => TriggerOnMobHurtByPlayer (m_thief)": {
+"16:  >> IfMobHurtByPlayer (m_thief): set s_16": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -772,7 +772,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"18:  >> When (s_17 and s_2): set s_19": {
+"18:  >> If (s_17 and s_2): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -816,7 +816,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"19:  >> When (s_17 and s_3): set s_20": {
+"19:  >> If (s_17 and s_3): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -860,7 +860,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"20:  >> When (s_17 and s_4): set s_21": {
+"20:  >> If (s_17 and s_4): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -904,7 +904,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"21:  >> When (s_17 and s_5): set s_22": {
+"21:  >> If (s_17 and s_5): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -948,7 +948,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"22:  >> When (s_17 and s_6): set s_23": {
+"22:  >> If (s_17 and s_6): set s_23": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -992,7 +992,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"23:  >> When (s_17 and s_7): set s_24": {
+"23:  >> If (s_17 and s_7): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1036,7 +1036,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"24:  >> When (s_17 and s_8): set s_25": {
+"24:  >> If (s_17 and s_8): set s_25": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1080,7 +1080,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"25:  >> When (s_17 and s_9): set s_26": {
+"25:  >> If (s_17 and s_9): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1394,7 +1394,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"35:  >> WhenGivingItemToNpc (i_book, n_pickupregion): set s_11": {
+"35:  >> IfGivingItemToNpc (i_book, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1424,7 +1424,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"36:  >> WhenGivingItemToNpc (i_ingredient, n_pickupregion): set s_11": {
+"36:  >> IfGivingItemToNpc (i_ingredient, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1454,7 +1454,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"37:  >> WhenGivingItemToNpc (i_jewelry, n_pickupregion): set s_11": {
+"37:  >> IfGivingItemToNpc (i_jewelry, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1484,7 +1484,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"38:  >> WhenGivingItemToNpc (i_mensclothing, n_pickupregion): set s_11": {
+"38:  >> IfGivingItemToNpc (i_mensclothing, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1514,7 +1514,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"39:  >> WhenGivingItemToNpc (i_painting, n_pickupregion): set s_11": {
+"39:  >> IfGivingItemToNpc (i_painting, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1544,7 +1544,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"40:  >> WhenGivingItemToNpc (i_potion, n_pickupregion): set s_11": {
+"40:  >> IfGivingItemToNpc (i_potion, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1574,7 +1574,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"41:  >> WhenGivingItemToNpc (i_weapon, n_pickupregion): set s_11": {
+"41:  >> IfGivingItemToNpc (i_weapon, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1604,7 +1604,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"42:  >> WhenGivingItemToNpc (i_womensclothing, n_pickupregion): set s_11": {
+"42:  >> IfGivingItemToNpc (i_womensclothing, n_pickupregion): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1634,7 +1634,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"43: s_12 => TriggerOnClickNpc (n_pickupregion)": {
+"43:  >> IfNpcClicked (n_pickupregion): set s_12": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1657,7 +1657,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"44:  >> When (s_12 and not s_11): set s_13": {
+"44:  >> If (s_12 and not s_11): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1805,7 +1805,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"48:  >> WhenTimerExpires (t_delay): set s_1": {
+"48:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

@@ -329,7 +329,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> WhenGivingItemToNpc (i_0000d3bc, n_00003646): set s_3": {
+" 7:  >> IfGivingItemToNpc (i_0000d3bc, n_00003646): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -403,7 +403,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9:  >> WhenTimerExpires (t_40000001): set s_1": {
+" 9:  >> IfTimerExpires (t_40000001): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -569,7 +569,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> WhenGivingItemToNpc (i_0000db7c, n_necs): set s_4 [Msg 1009]": {
+"15:  >> IfGivingItemToNpc (i_0000db7c, n_necs): set s_4 [Msg 1009]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -659,7 +659,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> WhenTimerExpires (t_0000095d): set s_0": {
+"18:  >> IfTimerExpires (t_0000095d): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -850,7 +850,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> When (s_1 and not s_2): set s_9": {
+"26:  >> If (s_1 and not s_2): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

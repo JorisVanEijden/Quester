@@ -118,7 +118,7 @@
 }
 }
 ,"opCodes: [21]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -231,7 +231,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 4:  >> WhenTimeOfDayBetween (06:40:00, 17:20:00): set s_1": {
+" 4:  >> IfTimeOfDayBetween (06:40:00, 17:20:00): set s_1": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -471,7 +471,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"12:  >> WhenGivingItemToNpc (i_potion, n_mage): set s_2": {
+"12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -501,7 +501,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"13:  >> When (s_2 and s_3): set s_4": {
+"13:  >> If (s_2 and s_3): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -577,7 +577,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"16:  >> When (s_2 and not s_3): set s_5": {
+"16:  >> If (s_2 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

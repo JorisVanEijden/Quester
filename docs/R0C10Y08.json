@@ -141,7 +141,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -277,7 +277,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 5: s_1 => TriggerOnItemFound (i_sage)": {
+" 5:  >> IfItemFound (i_sage): set s_1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -420,7 +420,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"10: s_10 => TriggerOnMobHurtByPlayer (m_00000d49) [Msg 1020]": {
+"10:  >> IfMobHurtByPlayer (m_00000d49): set s_10 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -443,7 +443,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"11:  >> WhenGivingItemToNpc (i_sage, n_0003844c): set s_5": {
+"11:  >> IfGivingItemToNpc (i_sage, n_0003844c): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -489,7 +489,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"13:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"13:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -512,7 +512,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"14: s_4 => TriggerOnClickNpc (n_questgiver)": {
+"14:  >> IfNpcClicked (n_questgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -535,7 +535,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"15:  >> When (s_4 and not s_5): set s_8": {
+"15:  >> If (s_4 and not s_5): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -579,7 +579,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"16:  >> When (s_5 and s_4): set s_0": {
+"16:  >> If (s_5 and s_4): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -711,7 +711,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"19:  >> When (s_7): set s_2": {
+"19:  >> If (s_7): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -755,7 +755,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"20:  >> When (s_6 and not s_5): set s_2": {
+"20:  >> If (s_6 and not s_5): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

@@ -146,7 +146,7 @@
 }
 }
 ,"opCodes: [43]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -504,7 +504,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"11:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"11:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -617,7 +617,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"15: s_5 => TriggerOnClickNpc (n_mg)": {
+"15:  >> IfNpcClicked (n_mg): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -640,7 +640,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"16: s_1 => TriggerOnClickNpc (n_vamp)": {
+"16:  >> IfNpcClicked (n_vamp): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -801,7 +801,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"23: s_6 => TriggerOnMobHurtByPlayer (m_sorceror)": {
+"23:  >> IfMobHurtByPlayer (m_sorceror): set s_6": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -824,7 +824,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"24:  >> When (s_6 and s_5): set s_8": {
+"24:  >> If (s_6 and s_5): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -868,7 +868,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"25:  >> When (s_6 and not s_5): set s_10": {
+"25:  >> If (s_6 and not s_5): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1041,7 +1041,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"31:  >> WhenGivingItemToNpc (i_000006c3, n_mg): set s_11": {
+"31:  >> IfGivingItemToNpc (i_000006c3, n_mg): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1071,7 +1071,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"32:  >> WhenGivingItemToNpc (i_000006c3, n_vamp): set s_12": {
+"32:  >> IfGivingItemToNpc (i_000006c3, n_vamp): set s_12": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

@@ -109,7 +109,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -266,7 +266,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 5: s_10 => TriggerOnMobHurtByPlayer (m_thief)": {
+" 5:  >> IfMobHurtByPlayer (m_thief): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -430,7 +430,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"10:  >> WhenGivingItemToNpc (i_item1, n_contact): set s_3": {
+"10:  >> IfGivingItemToNpc (i_item1, n_contact): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -460,7 +460,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"11:  >> WhenTimerExpires (t_2ndparton): set s_1": {
+"11:  >> IfTimerExpires (t_2ndparton): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -543,7 +543,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"14:  >> WhenGivingItemToNpc (i_item2, n_questgiver): set s_0": {
+"14:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -617,7 +617,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"16:  >> When (s_11): set s_1": {
+"16:  >> If (s_11): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -661,7 +661,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"17:  >> When (s_4 and not s_3): set s_1": {
+"17:  >> If (s_4 and not s_3): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -735,7 +735,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"19: s_12 >> When (s_0): set s_1": {
+"19:  >> If (s_1 or s_0): set s_12": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

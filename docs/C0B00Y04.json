@@ -85,7 +85,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -191,7 +191,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-" 4: s_1 => TriggerOnMobHurtByPlayer (m_priest)": {
+" 4:  >> IfMobHurtByPlayer (m_priest): set s_1": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -283,7 +283,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-" 8:  >> When (s_1 and s_2): set s_3": {
+" 8:  >> If (s_1 and s_2): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -343,7 +343,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-"10: s_4 => TriggerOnClickNpc (n_qgiver)": {
+"10:  >> IfNpcClicked (n_qgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -366,7 +366,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-"11:  >> When (s_4 and not s_1): set s_5": {
+"11:  >> If (s_4 and not s_1): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

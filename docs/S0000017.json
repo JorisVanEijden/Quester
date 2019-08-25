@@ -92,7 +92,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [26]": {
-" 0:  >> WhenTimerExpires (t_2letter): set s_0": {
+" 0:  >> IfTimerExpires (t_2letter): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -396,7 +396,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_3 => TriggerOnClickNpc (n_00005691)": {
+"12:  >> IfNpcClicked (n_00005691): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -419,7 +419,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> When (s_3 and s_0): set s_4": {
+"13:  >> If (s_3 and s_0): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -516,7 +516,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> WhenGivingItemToNpc (i_sage, n_00005691): set s_6": {
+"16:  >> IfGivingItemToNpc (i_sage, n_00005691): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

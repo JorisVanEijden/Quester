@@ -205,7 +205,7 @@
 }
 }
 ,"opCodes: [57]": {
-" 0:  >> WhenTimerExpires (t_40000000): set s_0": {
+" 0:  >> IfTimerExpires (t_40000000): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -348,7 +348,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> WhenTimerExpires (t_40000003): set s_1": {
+" 5:  >> IfTimerExpires (t_40000003): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -424,7 +424,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8: s_1 => TriggerOnMobHurtByPlayer (m_atronach)": {
+" 8:  >> IfMobHurtByPlayer (m_atronach): set s_1": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10:  >> WhenTimerExpires (t_towertime): set s_2": {
+"10:  >> IfTimerExpires (t_towertime): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -643,7 +643,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16: s_4 => TriggerOnClickNpc (n_rebel)": {
+"16:  >> IfNpcClicked (n_rebel): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -742,7 +742,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_6 => TriggerOnItemFound (i_sage)": {
+"20:  >> IfItemFound (i_sage): set s_6": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -795,7 +795,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> When (s_4 and not s_6): set s_7": {
+"22:  >> If (s_4 and not s_6): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -945,7 +945,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> WhenGivingItemToNpc (i_sage, n_rebel): set s_8": {
+"27:  >> IfGivingItemToNpc (i_sage, n_rebel): set s_8": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1051,7 +1051,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> When (s_6 and s_7): set s_9": {
+"31:  >> If (s_6 and s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1125,7 +1125,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> WhenTimerExpires (t_40000012): set s_3": {
+"33:  >> IfTimerExpires (t_40000012): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1164,7 +1164,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"35:  >> When (s_10 and s_7): set s_11": {
+"35:  >> If (s_10 and s_7): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1296,7 +1296,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38: s_12 => TriggerOnMobHurtByPlayer (m_monster1)": {
+"38:  >> IfMobHurtByPlayer (m_monster1): set s_12": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1409,7 +1409,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42: s_13 => TriggerOnMobHurtByPlayer (m_monster2)": {
+"42:  >> IfMobHurtByPlayer (m_monster2): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1522,7 +1522,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"46:  >> When (s_3 and not s_1): set s_14": {
+"46:  >> If (s_3 and not s_1): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1582,7 +1582,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"48:  >> When (not s_10 and s_7): set s_16": {
+"48:  >> If (not s_10 and s_7): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1626,7 +1626,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"49:  >> When (s_15 and s_7): set s_16": {
+"49:  >> If (s_15 and s_7): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1686,7 +1686,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"51:  >> When (s_16 and s_9): set s_17": {
+"51:  >> If (s_16 and s_9): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1820,7 +1820,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"55: s_19 >> When (s_16): set s_15": {
+"55:  >> If (s_15 or s_16): set s_19": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

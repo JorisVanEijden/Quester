@@ -265,7 +265,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2:  >> WhenTimerExpires (t_qtime): set s_0": {
+" 2:  >> IfTimerExpires (t_qtime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -507,7 +507,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_2 => TriggerOnMobHurtByPlayer (m_tiger)": {
+"11:  >> IfMobHurtByPlayer (m_tiger): set s_2": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -560,7 +560,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_3 => TriggerOnMobKills (m_tiger, 1)": {
+"13:  >> IfMobsKilled (m_tiger, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -606,7 +606,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> When (s_4 and not s_3): set s_5": {
+"15:  >> If (s_4 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -770,7 +770,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_6 => TriggerOnClickNpc (n_dummy)": {
+"20:  >> IfNpcClicked (n_dummy): set s_6": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -793,7 +793,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> When (s_6 and s_5): set s_7": {
+"21:  >> If (s_6 and s_5): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -881,7 +881,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"23:  >> WhenTimerExpires (t_delay): set s_1": {
+"23:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -904,7 +904,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_6 and s_3): set s_8": {
+"24:  >> If (s_6 and s_3): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1128,7 +1128,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> WhenGivingItemToNpc (i_letter, n_love): set s_12": {
+"31:  >> IfGivingItemToNpc (i_letter, n_love): set s_12": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

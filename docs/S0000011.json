@@ -211,7 +211,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2: s_0 => TriggerOnClickNpc (n_barenziah)": {
+" 2:  >> IfNpcClicked (n_barenziah): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -234,7 +234,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3: s_2 => TriggerOnFactionReputation (391, 15)": {
+" 3:  >> IfFactionReputation (Queen_Barenziah, 15): set s_2": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -264,7 +264,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> When (s_1 and not s_4): set s_3": {
+" 4:  >> If (s_1 and not s_4): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -354,7 +354,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: s_4 => TriggerOnItemFound (i_000192b5)": {
+" 7:  >> IfItemFound (i_000192b5): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -400,7 +400,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9: s_5 >> When (s_15): set s_8": {
+" 9:  >> If (s_8 or s_15): set s_5": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -474,7 +474,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> WhenTimerExpires (t_40000001): set s_0": {
+"11:  >> IfTimerExpires (t_40000001): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -612,7 +612,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> WhenGivingItemToNpc (i_000192b5, n_barenziah): set s_8": {
+"17:  >> IfGivingItemToNpc (i_000192b5, n_barenziah): set s_8": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -875,7 +875,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> WhenTimerExpires (t_40000012): set s_2": {
+"26:  >> IfTimerExpires (t_40000012): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -921,7 +921,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> When (s_0 and s_11): set s_12": {
+"28:  >> If (s_0 and s_11): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1002,7 +1002,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30: s_13 => TriggerOnClickNpc (n_gortwog)": {
+"30:  >> IfNpcClicked (n_gortwog): set s_13": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1025,7 +1025,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31:  >> When (s_3 and s_13): set s_14": {
+"31:  >> If (s_3 and s_13): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1106,7 +1106,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> WhenGivingItemToNpc (i_000192b5, n_gortwog): set s_15": {
+"33:  >> IfGivingItemToNpc (i_000192b5, n_gortwog): set s_15": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1265,7 +1265,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"39:  >> When (s_13 and not s_3): set s_16": {
+"39:  >> If (s_13 and not s_3): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1353,7 +1353,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41:  >> When (s_3 and s_5): set s_17": {
+"41:  >> If (s_3 and s_5): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1443,7 +1443,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"44: s_20 >> When (s_15 or s_18): set s_8": {
+"44:  >> If (s_8 or s_15 or s_18): set s_20": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1533,7 +1533,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47:  >> When (s_8 and s_3): set s_21": {
+"47:  >> If (s_8 and s_3): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1609,7 +1609,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"50:  >> When (s_8 and not s_3): set s_22": {
+"50:  >> If (s_8 and not s_3): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1669,7 +1669,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"52: s_23 => TriggerOnPlayerLevel (9)": {
+"52:  >> IfPlayerHasLevel (9): set s_23": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -1692,7 +1692,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"53:  >> When (s_2 and s_23): set s_24": {
+"53:  >> If (s_2 and s_23): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1736,7 +1736,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"54:  >> WhenTimerExpires (t_4000000b): set s_1": {
+"54:  >> IfTimerExpires (t_4000000b): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1759,7 +1759,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"55: s_25 >> When (s_21 or s_22): set s_15": {
+"55:  >> If (s_15 or s_21 or s_22): set s_25": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

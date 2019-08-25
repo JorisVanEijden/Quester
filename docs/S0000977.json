@@ -108,7 +108,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-" 1:  >> WhenTimeOfDayBetween (05:00:00, 19:00:00): set s_1": {
+" 1:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_1": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -138,7 +138,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-" 2:  >> When (not s_1 and s_2): set s_3": {
+" 2:  >> If (not s_1 and s_2): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -182,7 +182,7 @@
 "flags": 0,
 "lastUpdate": 27
 },
-" 3: s_6 >> When (not s_2): set s_1": {
+" 3:  >> If (s_1 or not s_2): set s_6": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

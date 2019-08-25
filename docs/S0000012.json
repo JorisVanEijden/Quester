@@ -223,7 +223,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2: s_0 => TriggerOnClickNpc (n_00005f81)": {
+" 2:  >> IfNpcClicked (n_00005f81): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -511,7 +511,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_3 => TriggerOnClickNpc (n_dispatcher)": {
+"13:  >> IfNpcClicked (n_dispatcher): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -534,7 +534,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> WhenTimerExpires (t_2palace): set s_0": {
+"14:  >> IfTimerExpires (t_2palace): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -603,7 +603,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> WhenTimerExpires (t_40000007): set s_1": {
+"17:  >> IfTimerExpires (t_40000007): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -656,7 +656,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> WhenGivingItemToNpc (i_0001b857, n_messenger): set s_5": {
+"19:  >> IfGivingItemToNpc (i_0001b857, n_messenger): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -870,7 +870,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28: s_8 => TriggerOnClickNpc (n_00000c7f)": {
+"28:  >> IfNpcClicked (n_00000c7f): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -939,7 +939,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"31: s_9 => TriggerOnMobHurtByPlayer (m_44000000) [Msg 1016]": {
+"31:  >> IfMobHurtByPlayer (m_44000000): set s_9 [Msg 1016]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -992,7 +992,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> WhenGivingItemToNpc (i_jewelry, n_00005f81): set s_10": {
+"33:  >> IfGivingItemToNpc (i_jewelry, n_00005f81): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1241,7 +1241,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42:  >> When (s_1 and s_8): set s_11": {
+"42:  >> If (s_1 and s_8): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

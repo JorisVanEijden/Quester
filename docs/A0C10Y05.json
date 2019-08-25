@@ -139,7 +139,7 @@
 }
 }
 ,"opCodes: [33]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -496,7 +496,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_1 => TriggerOnClickNpc (n_betrothed) [Msg 1011]": {
+"14:  >> IfNpcClicked (n_betrothed): set s_1 [Msg 1011]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -653,7 +653,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19: s_4 => TriggerOnMobHurtByPlayer (m_44000001) [Msg 1012]": {
+"19:  >> IfMobHurtByPlayer (m_44000001): set s_4 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -676,7 +676,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_4 => TriggerOnMobHurtByPlayer (m_44000000) [Msg 1013]": {
+"20:  >> IfMobHurtByPlayer (m_44000000): set s_4 [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -699,7 +699,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_5 => TriggerOnClickNpc (n_priest)": {
+"21:  >> IfNpcClicked (n_priest): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -902,7 +902,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> When (not s_1 and s_5): set s_6": {
+"28:  >> If (not s_1 and s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -990,7 +990,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (s_5 and not s_3): set s_7": {
+"30:  >> If (s_5 and not s_3): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

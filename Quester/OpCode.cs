@@ -35,6 +35,7 @@ namespace Quester
                 case Instruction.WhenPlayerCasts:
                 case Instruction.WhenAtLocation:
                     return $"{state} >> {Code} ({Arguments[2]}): set {Arguments[1]}{message}";
+//                    return $"{state} >> {Code} ({Arguments[2]}, {Arguments[3]}): set {Arguments[1]}{message}";
                 case Instruction.WhenPlayerHasItems:
                     line = $"{state} >> {Code} (";
                     for (var i = 2; i < ArgCount; i++)
@@ -46,7 +47,7 @@ namespace Quester
 
                     return line + $"): set {Arguments[1]}{message}";
                 case Instruction.TriggerOnAndStates:
-                    line = " >> When (";
+                    line = " >> If (";
                     for (var i = 1; i < ArgCount; i++)
                     {
                         line += Arguments[i].ToString();
@@ -56,23 +57,32 @@ namespace Quester
 
                     return line + $"): set {state}{message}";
                 case Instruction.TriggerOnOrStates:
-                    line = $"{state} >> When (";
-                    for (var i = 2; i < ArgCount; i++)
+                    line = $" >> If (";
+                    for (var i = 1; i < ArgCount; i++)
                     {
                         line += Arguments[i].ToString();
                         if (i < ArgCount - 1 && Arguments[i + 1].ToString().Length >= 1)
                             line += " or ";
                     }
 
-                    return line + $"): set {Arguments[1]}{message}";
-                case Instruction.WhenTimeOfDayBetween:
+                    return line + $"): set {state}{message}";
+                case Instruction.IfMobHurtByPlayer:
+                case Instruction.IfItemFound:
+                case Instruction.IfNpcClicked:
+                case Instruction.IfPlayerHasLevel:
+                    return $" >> {Code} ({Arguments[1]}): set {state}{message}";
+                case Instruction.IfTimeOfDayBetween:
                     TimeSpan start = new TimeSpan(0, Arguments[1].Value, 0);
                     TimeSpan end = new TimeSpan(0, Arguments[2].Value, 0);
                     return $" >> {Code} ({start}, {end}): set {state}{message}";
-                case Instruction.WhenGivingItemToNpc:
+                case Instruction.IfGivingItemToNpc:
+                case Instruction.IfMobsKilled:
                     return $" >> {Code} ({Arguments[1]}, {Arguments[2]}): set {state}{message}";
+                case Instruction.IfFactionReputation:
+                    FactionId faction = (FactionId) Arguments[1].Value;
+                    return $" >> {Code} ({faction}, {Arguments[2]}): set {state}{message}";
                 case Instruction.StartTimer:
-                    return $" >> WhenTimerExpires ({Arguments[1]}): set s_{Arguments[1].Value}{message}";
+                    return $" >> IfTimerExpires ({Arguments[1]}): set s_{Arguments[1].Value}{message}";
                 case Instruction.CreateFoe:
                     Argument mobArgument = Arguments[1];
                     mobArgument.Type = RecordType.Mob;

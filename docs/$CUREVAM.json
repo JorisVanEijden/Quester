@@ -177,7 +177,7 @@
 }
 }
 ,"opCodes: [54]": {
-" 0:  >> WhenTimerExpires (t_huntstart): set s_2": {
+" 0:  >> IfTimerExpires (t_huntstart): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -253,7 +253,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-" 3:  >> WhenTimeOfDayBetween (06:00:00, 18:00:00): set s_4": {
+" 3:  >> IfTimeOfDayBetween (06:00:00, 18:00:00): set s_4": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -484,7 +484,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"10:  >> WhenTimerExpires (t_00006cc3): set s_1": {
+"10:  >> IfTimerExpires (t_00006cc3): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -641,7 +641,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"15: s_15 => TriggerOnMobHurtByPlayer (m_0003750b) [Msg 1040]": {
+"15:  >> IfMobHurtByPlayer (m_0003750b): set s_15 [Msg 1040]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -768,7 +768,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"19: s_1 => TriggerOnClickNpc (n_vamp1)": {
+"19:  >> IfNpcClicked (n_vamp1): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -835,7 +835,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"21:  >> When (s_6 and s_1): set s_7": {
+"21:  >> If (s_6 and s_1): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -916,7 +916,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"23:  >> When (s_1 and not s_7): set s_9": {
+"23:  >> If (s_1 and not s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1075,7 +1075,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"29:  >> WhenTimerExpires (t_000199b3): set s_0": {
+"29:  >> IfTimerExpires (t_000199b3): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1250,7 +1250,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"36:  >> When (s_10 and not s_4 and not s_16): set s_17": {
+"36:  >> If (s_10 and not s_4 and not s_16): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1382,7 +1382,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"39: s_18 => TriggerOnMobHurtByPlayer (m_vampire) [Msg 1025]": {
+"39:  >> IfMobHurtByPlayer (m_vampire): set s_18 [Msg 1025]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1405,7 +1405,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"40:  >> WhenGivingItemToNpc (i_token, n_vamp2): set s_16": {
+"40:  >> IfGivingItemToNpc (i_token, n_vamp2): set s_16": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1481,7 +1481,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"43: s_11 => TriggerOnMobHurtByPlayer (m_bloodfather) [Msg 1032]": {
+"43:  >> IfMobHurtByPlayer (m_bloodfather): set s_11 [Msg 1032]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1504,7 +1504,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"44: s_11 => TriggerOnMobHurtByPlayer (m_elder) [Msg 1030]": {
+"44:  >> IfMobHurtByPlayer (m_elder): set s_11 [Msg 1030]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1527,7 +1527,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"45: s_12 => TriggerOnMobKills (m_elder, 1) [Msg 1031]": {
+"45:  >> IfMobsKilled (m_elder, 1): set s_12 [Msg 1031]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -1557,7 +1557,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"46: s_0 => TriggerOnMobKills (m_bloodfather, 1)": {
+"46:  >> IfMobsKilled (m_bloodfather, 1): set s_0": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {

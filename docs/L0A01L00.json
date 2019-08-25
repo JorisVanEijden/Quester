@@ -174,7 +174,7 @@
 }
 }
 ,"opCodes: [36]": {
-" 0:  >> WhenTimerExpires (t_00034bd0): set s_1": {
+" 0:  >> IfTimerExpires (t_00034bd0): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -273,7 +273,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-" 4: s_2 => TriggerOnClickNpc (n_apothecary)": {
+" 4:  >> IfNpcClicked (n_apothecary): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -356,7 +356,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-" 7:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 7:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -462,7 +462,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"11: s_4 => TriggerOnItemFound (i_0000069d)": {
+"11:  >> IfItemFound (i_0000069d): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -767,7 +767,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"20: s_5 => TriggerOnClickNpc (n_darkbmember)": {
+"20:  >> IfNpcClicked (n_darkbmember): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -790,7 +790,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"21:  >> When (s_11 and s_3 and s_5): set s_6": {
+"21:  >> If (s_11 and s_3 and s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -834,7 +834,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"22:  >> When (not s_11 and not s_3 and s_5): set s_9": {
+"22:  >> If (not s_11 and not s_3 and s_5): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1012,7 +1012,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"27:  >> When (s_1 and not s_2): set s_7": {
+"27:  >> If (s_1 and not s_2): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1190,7 +1190,7 @@
 "flags": 0,
 "lastUpdate": 858
 },
-"32:  >> WhenTimerExpires (t_delay): set s_2": {
+"32:  >> IfTimerExpires (t_delay): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

@@ -451,7 +451,7 @@
 }
 }
 ,"opCodes: [114]": {
-" 0:  >> WhenTimerExpires (t_2letter): set s_0": {
+" 0:  >> IfTimerExpires (t_2letter): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -527,7 +527,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 3: s_1 => TriggerOnClickNpc (n_0000d04d)": {
+" 3:  >> IfNpcClicked (n_0000d04d): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -718,7 +718,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_4 => TriggerOnItemFound (i_00000dbf)": {
+"11:  >> IfItemFound (i_00000dbf): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -771,7 +771,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> WhenTimerExpires (t_delay): set s_1": {
+"13:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -794,7 +794,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> WhenTimerExpires (t_40000008): set s_2": {
+"14:  >> IfTimerExpires (t_40000008): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -863,7 +863,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> When (not s_6 and s_4): set s_7": {
+"17:  >> If (not s_6 and s_4): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -951,7 +951,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> WhenTimerExpires (t_40000026): set s_8": {
+"19:  >> IfTimerExpires (t_40000026): set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1348,7 +1348,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"32:  >> WhenTimerExpires (t_4000000a): set s_3": {
+"32:  >> IfTimerExpires (t_4000000a): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1394,7 +1394,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34:  >> When (not s_9 and s_7): set s_11": {
+"34:  >> If (not s_9 and s_7): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1468,7 +1468,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"36:  >> WhenTimerExpires (t_4000000d): set s_4": {
+"36:  >> IfTimerExpires (t_4000000d): set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1514,7 +1514,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> When (not s_12 and s_7): set s_14": {
+"38:  >> If (not s_12 and s_7): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1588,7 +1588,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40:  >> WhenTimerExpires (t_40000012): set s_5": {
+"40:  >> IfTimerExpires (t_40000012): set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1611,7 +1611,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41:  >> WhenTimerExpires (t_40000014): set s_7": {
+"41:  >> IfTimerExpires (t_40000014): set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1634,7 +1634,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42:  >> WhenTimerExpires (t_40000013): set s_6": {
+"42:  >> IfTimerExpires (t_40000013): set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1756,7 +1756,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47:  >> When (not s_15 and s_7): set s_21": {
+"47:  >> If (not s_15 and s_7): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1830,7 +1830,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"49: s_22 => TriggerOnMobHurtByPlayer (m_44000000)": {
+"49:  >> IfMobHurtByPlayer (m_44000000): set s_22": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1934,7 +1934,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"52:  >> When (not s_17 and s_7): set s_23": {
+"52:  >> If (not s_17 and s_7): set s_23": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2008,7 +2008,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"54:  >> When (not s_16 and s_7): set s_24": {
+"54:  >> If (not s_16 and s_7): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2142,7 +2142,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"58:  >> When (s_27 and s_25): set s_28": {
+"58:  >> If (s_27 and s_25): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2322,7 +2322,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"64:  >> WhenGivingItemToNpc (i_00000dbf, n_00005691): set s_30": {
+"64:  >> IfGivingItemToNpc (i_00000dbf, n_00005691): set s_30": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2580,7 +2580,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"74:  >> WhenGivingItemToNpc (i_00000dbf, n_0000d04d): set s_32": {
+"74:  >> IfGivingItemToNpc (i_00000dbf, n_0000d04d): set s_32": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2679,7 +2679,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"78:  >> WhenGivingItemToNpc (i_00000dbf, n_00016b9d): set s_33": {
+"78:  >> IfGivingItemToNpc (i_00000dbf, n_00016b9d): set s_33": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2755,7 +2755,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"81:  >> WhenGivingItemToNpc (i_00000dbf, n_00002d81): set s_34": {
+"81:  >> IfGivingItemToNpc (i_00000dbf, n_00002d81): set s_34": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2854,7 +2854,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"85:  >> WhenGivingItemToNpc (i_00000dbf, n_0000beff): set s_35": {
+"85:  >> IfGivingItemToNpc (i_00000dbf, n_0000beff): set s_35": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2953,7 +2953,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"89:  >> WhenGivingItemToNpc (i_00000dbf, n_00003285): set s_36": {
+"89:  >> IfGivingItemToNpc (i_00000dbf, n_00003285): set s_36": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -3043,7 +3043,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"92:  >> When (s_46 and s_7): set s_37": {
+"92:  >> If (s_46 and s_7): set s_37": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3202,7 +3202,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"98: s_40 >> When (s_44): set s_43": {
+"98:  >> If (s_43 or s_44): set s_40": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -3246,7 +3246,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"99:  >> When (s_39 and s_40 and s_7): set s_41": {
+"99:  >> If (s_39 and s_40 and s_7): set s_41": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3320,7 +3320,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"101:  >> When (s_40 and s_7): set s_42": {
+"101:  >> If (s_40 and s_7): set s_42": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3380,7 +3380,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"103: s_43 >> When (s_35 or s_36 or s_46): set s_28": {
+"103:  >> If (s_28 or s_35 or s_36 or s_46): set s_43": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -3424,7 +3424,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"104: s_44 >> When (s_32 or s_33 or s_34): set s_30": {
+"104:  >> If (s_30 or s_32 or s_33 or s_34): set s_44": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -3468,7 +3468,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"105: s_45 >> When (s_41): set s_8": {
+"105:  >> If (s_8 or s_41): set s_45": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -3643,7 +3643,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"112:  >> WhenGivingItemToNpc (i_00000dbf, n_00002d3e): set s_46": {
+"112:  >> IfGivingItemToNpc (i_00000dbf, n_00002d3e): set s_46": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

@@ -151,7 +151,7 @@
 }
 }
 ,"opCodes: [34]": {
-" 0:  >> WhenTimerExpires (t_queston1): set s_0": {
+" 0:  >> IfTimerExpires (t_queston1): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -398,7 +398,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 8:  >> WhenTimerExpires (t_0000a03c): set s_1": {
+" 8:  >> IfTimerExpires (t_0000a03c): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -580,7 +580,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"15: s_8 => TriggerOnClickNpc (n_victim)": {
+"15:  >> IfNpcClicked (n_victim): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -642,7 +642,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"18: s_9 => TriggerOnMobHurtByPlayer (m_cousin)": {
+"18:  >> IfMobHurtByPlayer (m_cousin): set s_9": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -681,7 +681,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"20: s_10 => TriggerOnMobKills (m_cousin, 1)": {
+"20:  >> IfMobsKilled (m_cousin, 1): set s_10": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -727,7 +727,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"22: s_11 => TriggerOnItemFound (i_gem)": {
+"22:  >> IfItemFound (i_gem): set s_11": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -766,7 +766,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"24:  >> WhenGivingItemToNpc (i_gem, n_qgiver): set s_13": {
+"24:  >> IfGivingItemToNpc (i_gem, n_qgiver): set s_13": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -796,7 +796,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"25: s_12 => TriggerOnClickNpc (n_qgiver)": {
+"25:  >> IfNpcClicked (n_qgiver): set s_12": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -819,7 +819,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"26: s_14 >> When (s_8 or s_13): set s_10": {
+"26:  >> If (s_10 or s_8 or s_13): set s_14": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

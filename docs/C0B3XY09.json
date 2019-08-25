@@ -162,7 +162,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 1:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -254,7 +254,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5: s_1 => TriggerOnItemFound (i_0000d481)": {
+" 5:  >> IfItemFound (i_0000d481): set s_1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -510,7 +510,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_3 => TriggerOnMobHurtByPlayer (m_guardian)": {
+"14:  >> IfMobHurtByPlayer (m_guardian): set s_3": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -725,7 +725,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_4 => TriggerOnMobKills (m_guardian, 1)": {
+"20:  >> IfMobsKilled (m_guardian, 1): set s_4": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -755,7 +755,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_5 => TriggerOnClickNpc (n_qgiver)": {
+"21:  >> IfNpcClicked (n_qgiver): set s_5": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -838,7 +838,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_5 and not s_4): set s_6": {
+"24:  >> If (s_5 and not s_4): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -926,7 +926,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26: not s_2 => TriggerOnMobHurtByPlayer (m_guardian)": {
+"26:  >> IfMobHurtByPlayer (m_guardian): set not s_2": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {

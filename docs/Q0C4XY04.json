@@ -114,7 +114,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -220,7 +220,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> WhenGivingItemToNpc (i_00000c84, n_questgiver): set s_0": {
+" 4:  >> IfGivingItemToNpc (i_00000c84, n_questgiver): set s_0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -310,7 +310,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: s_1 => TriggerOnItemFound (i_00000c84) [Msg 1040]": {
+" 7:  >> IfItemFound (i_00000c84): set s_1 [Msg 1040]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -349,7 +349,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9: s_6 => TriggerOnMobHurtByPlayer (m_firedaedra)": {
+" 9:  >> IfMobHurtByPlayer (m_firedaedra): set s_6": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -402,7 +402,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_7 => TriggerOnMobHurtByPlayer (m_44000003)": {
+"11:  >> IfMobHurtByPlayer (m_44000003): set s_7": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -455,7 +455,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_8 => TriggerOnMobHurtByPlayer (m_seducer)": {
+"13:  >> IfMobHurtByPlayer (m_seducer): set s_8": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -508,7 +508,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15: s_9 => TriggerOnMobHurtByPlayer (m_daedroth)": {
+"15:  >> IfMobHurtByPlayer (m_daedroth): set s_9": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -561,7 +561,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17:  >> When (not s_11 and s_12): set s_10": {
+"17:  >> If (not s_11 and s_12): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -781,7 +781,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22: s_11 >> When (s_7 or s_9 or s_8): set s_6": {
+"22:  >> If (s_6 or s_7 or s_9 or s_8): set s_11": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

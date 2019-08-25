@@ -95,7 +95,7 @@
 }
 }
 ,"opCodes: [18]": {
-" 0:  >> WhenTimerExpires (t_2dung): set s_0": {
+" 0:  >> IfTimerExpires (t_2dung): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -291,7 +291,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: s_1 => TriggerOnMobKills (m_monster, 1) [Msg 1011]": {
+" 7:  >> IfMobsKilled (m_monster, 1): set s_1 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -321,7 +321,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8: s_2 => TriggerOnClickNpc (n_qgiver)": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -404,7 +404,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11:  >> When (s_2 and not s_1): set s_3": {
+"11:  >> If (s_2 and not s_1): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -492,7 +492,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> WhenTimeOfDayBetween (05:00:00, 19:00:00): set s_5": {
+"13:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_5": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -522,7 +522,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14:  >> When (s_4 and not s_5): set s_6": {
+"14:  >> If (s_4 and not s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -596,7 +596,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> When (s_7 and s_2): set s_9": {
+"16:  >> If (s_7 and s_2): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

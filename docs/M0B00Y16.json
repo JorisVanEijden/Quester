@@ -152,7 +152,7 @@
 }
 }
 ,"opCodes: [41]": {
-" 0:  >> WhenTimerExpires (t_qtime): set s_0": {
+" 0:  >> IfTimerExpires (t_qtime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -376,7 +376,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: s_2 => TriggerOnMobHurtByPlayer (m_giant)": {
+" 7:  >> IfMobHurtByPlayer (m_giant): set s_2": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -459,7 +459,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10: s_3 => TriggerOnMobKills (m_giant, 1)": {
+"10:  >> IfMobsKilled (m_giant, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -512,7 +512,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_4 => TriggerOnClickNpc (n_questgiver)": {
+"12:  >> IfNpcClicked (n_questgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -535,7 +535,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> When (s_4 and s_3): set s_5": {
+"13:  >> If (s_4 and s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -667,7 +667,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> When (s_5 and s_0): set s_7": {
+"16:  >> If (s_5 and s_0): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -803,7 +803,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_10 => TriggerOnClickNpc (n_villager)": {
+"21:  >> IfNpcClicked (n_villager): set s_10": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1130,7 +1130,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34:  >> When (s_11 and not s_13 and s_6): set s_14": {
+"34:  >> If (s_11 and not s_13 and s_6): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1190,7 +1190,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"36:  >> When (s_5 and s_12): set s_15": {
+"36:  >> If (s_5 and s_12): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1234,7 +1234,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"37:  >> When (s_5 and s_9): set s_16": {
+"37:  >> If (s_5 and s_9): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1278,7 +1278,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> When (s_5 and s_13): set s_17": {
+"38:  >> If (s_5 and s_13): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1322,7 +1322,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"39: s_18 >> When (s_15 or s_16 or s_17): set s_6": {
+"39:  >> If (s_6 or s_15 or s_16 or s_17): set s_18": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

@@ -163,7 +163,7 @@
 }
 }
 ,"opCodes: [38]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -378,7 +378,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 6:  >> WhenTimerExpires (t_000096fc): set s_1": {
+" 6:  >> IfTimerExpires (t_000096fc): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -401,7 +401,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 7:  >> WhenTimerExpires (t_0004d53c): set s_2": {
+" 7:  >> IfTimerExpires (t_0004d53c): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -664,7 +664,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"16: s_6 => TriggerOnClickNpc (n_scholar)": {
+"16:  >> IfNpcClicked (n_scholar): set s_6": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -733,7 +733,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"19:  >> WhenGivingItemToNpc (i_000006c3, n_db): set s_7": {
+"19:  >> IfGivingItemToNpc (i_000006c3, n_db): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1072,7 +1072,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"31:  >> WhenGivingItemToNpc (i_000065b3, n_qgiver): set s_13": {
+"31:  >> IfGivingItemToNpc (i_000065b3, n_qgiver): set s_13": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1102,7 +1102,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"32:  >> WhenGivingItemToNpc (i_000006c3, n_qgiver): set s_12": {
+"32:  >> IfGivingItemToNpc (i_000006c3, n_qgiver): set s_12": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1132,7 +1132,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"33: s_14 >> When (s_13): set s_12": {
+"33:  >> If (s_12 or s_13): set s_14": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {

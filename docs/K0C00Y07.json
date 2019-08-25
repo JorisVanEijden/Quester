@@ -136,7 +136,7 @@
 }
 }
 ,"opCodes: [58]": {
-" 0:  >> WhenTimerExpires (t_2ransom): set s_1": {
+" 0:  >> IfTimerExpires (t_2ransom): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -159,7 +159,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 1:  >> WhenTimerExpires (t_queston): set s_0": {
+" 1:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -272,7 +272,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 5:  >> WhenGivingItemToNpc (i_gem, n_kidnapper): set s_2": {
+" 5:  >> IfGivingItemToNpc (i_gem, n_kidnapper): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -339,7 +339,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 7:  >> When (s_2 and not s_5): set s_6": {
+" 7:  >> If (s_2 and not s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -715,7 +715,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"20: s_9 => TriggerOnClickNpc (n_victim)": {
+"20:  >> IfNpcClicked (n_victim): set s_9": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -800,7 +800,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"24:  >> WhenGivingItemToNpc (i_gem, n_qgiver): set s_11": {
+"24:  >> IfGivingItemToNpc (i_gem, n_qgiver): set s_11": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -830,7 +830,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"25:  >> When (not s_9 and s_11): set s_22": {
+"25:  >> If (not s_9 and s_11): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -948,7 +948,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"28:  >> When (s_11 and s_9): set s_10": {
+"28:  >> If (s_11 and s_9): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1068,7 +1068,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"32:  >> When (s_11 and not s_9 and s_4): set s_13": {
+"32:  >> If (s_11 and not s_9 and s_4): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1128,7 +1128,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"34:  >> When (s_11 and not s_9 and not s_4): set s_12": {
+"34:  >> If (s_11 and not s_9 and not s_4): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1202,7 +1202,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"36: s_14 => TriggerOnClickNpc (n_qgiver)": {
+"36:  >> IfNpcClicked (n_qgiver): set s_14": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1313,7 +1313,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"39:  >> When (s_14 and s_7): set s_17": {
+"39:  >> If (s_14 and s_7): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1357,7 +1357,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"40:  >> When (s_14 and s_3): set s_17": {
+"40:  >> If (s_14 and s_3): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1401,7 +1401,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"41:  >> When (s_14 and not s_15 and s_9): set s_16": {
+"41:  >> If (s_14 and not s_15 and s_9): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1445,7 +1445,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"42: s_18 >> When (not s_9 or not s_3 or not s_7): set not s_15": {
+"42:  >> If (not s_15 or not s_9 or not s_3 or not s_7): set s_18": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1595,7 +1595,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"47: s_23 >> When (s_16 or s_17): set s_10": {
+"47:  >> If (s_10 or s_16 or s_17): set s_23": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1699,7 +1699,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"50:  >> When (s_0 and s_9 and not s_14): set s_19": {
+"50:  >> If (s_0 and s_9 and not s_14): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1826,7 +1826,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"54:  >> When (s_0 and not s_9 and not s_7 and not s_17): set s_21": {
+"54:  >> If (s_0 and not s_9 and not s_7 and not s_17): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

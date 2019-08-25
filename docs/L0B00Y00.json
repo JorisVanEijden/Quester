@@ -94,7 +94,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -334,7 +334,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-" 8: s_2 => TriggerOnMobKills (m_nightblade, 1) [Msg 1021]": {
+" 8:  >> IfMobsKilled (m_nightblade, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -364,7 +364,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-" 9: s_2 => TriggerOnMobKills (m_battlemage, 1) [Msg 1021]": {
+" 9:  >> IfMobsKilled (m_battlemage, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -394,7 +394,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-"10: s_2 => TriggerOnMobKills (m_acrobat, 1) [Msg 1021]": {
+"10:  >> IfMobsKilled (m_acrobat, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -424,7 +424,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-"11: s_2 => TriggerOnMobKills (m_assassin, 1) [Msg 1021]": {
+"11:  >> IfMobsKilled (m_assassin, 1): set s_2 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -454,7 +454,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-"12: s_3 => TriggerOnClickNpc (n_qgiver)": {
+"12:  >> IfNpcClicked (n_qgiver): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-"13:  >> When (s_3 and not s_2): set s_4": {
+"13:  >> If (s_3 and not s_2): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -565,7 +565,7 @@
 "flags": 0,
 "lastUpdate": 405
 },
-"15:  >> When (s_2 and s_3): set s_1": {
+"15:  >> If (s_2 and s_3): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

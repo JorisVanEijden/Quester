@@ -151,7 +151,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 1:  >> WhenTimerExpires (t_00004f37): set s_0": {
+" 1:  >> IfTimerExpires (t_00004f37): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -389,7 +389,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 8: s_5 => TriggerOnMobKills (m_soldier, 1)": {
+" 8:  >> IfMobsKilled (m_soldier, 1): set s_5": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -435,7 +435,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"10: s_6 => TriggerOnClickNpc (n_qgiver)": {
+"10:  >> IfNpcClicked (n_qgiver): set s_6": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -458,7 +458,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"11: s_8 >> When (s_4): set s_5": {
+"11:  >> If (s_5 or s_4): set s_8": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -502,7 +502,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"12:  >> When (s_6 and not s_8): set s_11": {
+"12:  >> If (s_6 and not s_8): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -590,7 +590,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"14:  >> When (s_6 and s_8): set s_2": {
+"14:  >> If (s_6 and s_8): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -708,7 +708,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"17:  >> When (s_0 and not s_8): set s_9": {
+"17:  >> If (s_0 and not s_8): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

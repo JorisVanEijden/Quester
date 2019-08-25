@@ -184,7 +184,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 2: s_0 => TriggerOnPlayerLevel (7)": {
+" 2:  >> IfPlayerHasLevel (7): set s_0": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -244,7 +244,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 4:  >> When (s_0 and s_1): set s_6": {
+" 4:  >> If (s_0 and s_1): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -399,7 +399,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 8: s_7 => TriggerOnMobHurtByPlayer (m_zombie)": {
+" 8:  >> IfMobHurtByPlayer (m_zombie): set s_7": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -422,7 +422,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 9: s_15 => TriggerOnMobKills (m_zombie, 1)": {
+" 9:  >> IfMobsKilled (m_zombie, 1): set s_15": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -468,7 +468,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"11: s_2 => TriggerOnClickNpc (n_0001ab9d)": {
+"11:  >> IfNpcClicked (n_0001ab9d): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -491,7 +491,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"12:  >> When (s_2 and s_15): set s_3": {
+"12:  >> If (s_2 and s_15): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -738,7 +738,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"20: s_8 => TriggerOnMobKills (m_lich, 1)": {
+"20:  >> IfMobsKilled (m_lich, 1): set s_8": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -791,7 +791,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"22:  >> WhenGivingItemToNpc (i_scarab, n_0001ab9d): set s_10": {
+"22:  >> IfGivingItemToNpc (i_scarab, n_0001ab9d): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -821,7 +821,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"23:  >> When (s_10 and s_8): set s_12": {
+"23:  >> If (s_10 and s_8): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -865,7 +865,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"24:  >> When (not s_8 and s_10): set s_11": {
+"24:  >> If (not s_8 and s_10): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

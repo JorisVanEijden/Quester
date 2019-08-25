@@ -190,7 +190,7 @@
 "flags": 0,
 "lastUpdate": 56
 },
-" 2:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 2:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -303,7 +303,7 @@
 "flags": 0,
 "lastUpdate": 56
 },
-" 6: s_3 => TriggerOnItemFound (i_clothing) [Msg 1018]": {
+" 6:  >> IfItemFound (i_clothing): set s_3 [Msg 1018]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -400,7 +400,7 @@
 "flags": 0,
 "lastUpdate": 56
 },
-" 9: s_5 => TriggerOnMobHurtByPlayer (m_0000388b)": {
+" 9:  >> IfMobHurtByPlayer (m_0000388b): set s_5": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -439,7 +439,7 @@
 "flags": 0,
 "lastUpdate": 56
 },
-"11:  >> WhenGivingItemToNpc (i_clothing, n_thiefmember): set s_1": {
+"11:  >> IfGivingItemToNpc (i_clothing, n_thiefmember): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

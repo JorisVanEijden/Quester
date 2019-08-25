@@ -114,7 +114,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -447,7 +447,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-" 9:  >> WhenGivingItemToNpc (i_coastal, n_qgiver): set s_2": {
+" 9:  >> IfGivingItemToNpc (i_coastal, n_qgiver): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -521,7 +521,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-"11: s_7 => TriggerOnItemFound (i_coastal)": {
+"11:  >> IfItemFound (i_coastal): set s_7": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -544,7 +544,7 @@
 "flags": 0,
 "lastUpdate": 212
 },
-"12:  >> When (s_7 and s_0): set s_8": {
+"12:  >> If (s_7 and s_0): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

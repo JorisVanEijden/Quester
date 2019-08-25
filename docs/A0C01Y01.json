@@ -80,7 +80,7 @@
 }
 }
 ,"opCodes: [18]": {
-" 0:  >> WhenTimerExpires (t_000343a8): set s_0": {
+" 0:  >> IfTimerExpires (t_000343a8): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -133,7 +133,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 2:  >> WhenTimeOfDayBetween (21:00:00, 1.00:00:00): set s_1": {
+" 2:  >> IfTimeOfDayBetween (21:00:00, 1.00:00:00): set s_1": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -193,7 +193,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 4:  >> When (s_5 and s_1): set s_8": {
+" 4:  >> If (s_5 and s_1): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -281,7 +281,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 6: s_2 => TriggerOnMobKills (m_00006f7b, 2)": {
+" 6:  >> IfMobsKilled (m_00006f7b, 2): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -341,7 +341,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 8: s_6 => TriggerOnMobHurtByPlayer (m_00006f7b) [Msg 1011]": {
+" 8:  >> IfMobHurtByPlayer (m_00006f7b): set s_6 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -364,7 +364,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-" 9: s_4 => TriggerOnClickNpc (n_qgiver)": {
+" 9:  >> IfNpcClicked (n_qgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -387,7 +387,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"10:  >> When (s_4 and s_2): set s_3": {
+"10:  >> If (s_4 and s_2): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -431,7 +431,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"11:  >> When (not s_2 and s_4): set s_7": {
+"11:  >> If (not s_2 and s_4): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -563,7 +563,7 @@
 "flags": 0,
 "lastUpdate": 111
 },
-"14:  >> When (s_3 and not s_5): set s_9": {
+"14:  >> If (s_3 and not s_5): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

@@ -236,7 +236,7 @@
 }
 }
 ,"opCodes: [80]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -446,7 +446,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7:  >> When (s_0 and not s_5 and not s_17): set s_1": {
+" 7:  >> If (s_0 and not s_5 and not s_17): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -605,7 +605,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_4 => TriggerOnClickNpc (n_qgfriend)": {
+"13:  >> IfNpcClicked (n_qgfriend): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -628,7 +628,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_5 => TriggerOnMobKills (m_monster, 1)": {
+"14:  >> IfMobsKilled (m_monster, 1): set s_5": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -674,7 +674,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16:  >> When (s_4 and s_5): set s_6": {
+"16:  >> If (s_4 and s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -762,7 +762,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18:  >> WhenTimerExpires (t_00000613): set s_1": {
+"18:  >> IfTimerExpires (t_00000613): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -829,7 +829,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_7 => TriggerOnMobHurtByPlayer (m_monster)": {
+"20:  >> IfMobHurtByPlayer (m_monster): set s_7": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -882,7 +882,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22: s_11 => TriggerOnItemFound (i_bow)": {
+"22:  >> IfItemFound (i_bow): set s_11": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -949,7 +949,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24: s_12 => TriggerOnItemFound (i_yes5)": {
+"24:  >> IfItemFound (i_yes5): set s_12": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1016,7 +1016,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26: s_13 => TriggerOnItemFound (i_00000d86)": {
+"26:  >> IfItemFound (i_00000d86): set s_13": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1083,7 +1083,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> When (s_17 and s_19): set s_14": {
+"28:  >> If (s_17 and s_19): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1226,7 +1226,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> When (s_17 and s_20): set s_15": {
+"33:  >> If (s_17 and s_20): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1369,7 +1369,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> When (s_17 and s_21): set s_16": {
+"38:  >> If (s_17 and s_21): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1579,7 +1579,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"45:  >> WhenTimerExpires (t_40000016): set s_2": {
+"45:  >> IfTimerExpires (t_40000016): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1685,7 +1685,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"49:  >> When (s_7 and s_8): set s_19": {
+"49:  >> If (s_7 and s_8): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1766,7 +1766,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"51:  >> When (s_7 and s_9): set s_20": {
+"51:  >> If (s_7 and s_9): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1847,7 +1847,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"53:  >> When (s_7 and s_33): set s_21": {
+"53:  >> If (s_7 and s_33): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1972,7 +1972,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"56: s_23 => TriggerOnMobHurtByPlayer (m_daedra)": {
+"56:  >> IfMobHurtByPlayer (m_daedra): set s_23": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -2011,7 +2011,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"58:  >> When (s_10 and s_14): set s_24": {
+"58:  >> If (s_10 and s_14): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2101,7 +2101,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"61:  >> When (s_10 and s_15): set s_25": {
+"61:  >> If (s_10 and s_15): set s_25": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2191,7 +2191,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"64:  >> When (s_10 and s_16): set s_26": {
+"64:  >> If (s_10 and s_16): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2281,7 +2281,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"67:  >> When (s_11 and not s_5): set s_27": {
+"67:  >> If (s_11 and not s_5): set s_27": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2325,7 +2325,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"68:  >> WhenTimerExpires (t_00068071): set s_3": {
+"68:  >> IfTimerExpires (t_00068071): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2348,7 +2348,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"69:  >> When (s_12 and not s_5): set s_28": {
+"69:  >> If (s_12 and not s_5): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2392,7 +2392,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"70:  >> WhenTimerExpires (t_00068071): set s_3": {
+"70:  >> IfTimerExpires (t_00068071): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2415,7 +2415,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"71:  >> When (s_13 and not s_5): set s_29": {
+"71:  >> If (s_13 and not s_5): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2459,7 +2459,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"72:  >> WhenTimerExpires (t_00068071): set s_3": {
+"72:  >> IfTimerExpires (t_00068071): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2482,7 +2482,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"73:  >> When (s_11 and s_5): set s_30": {
+"73:  >> If (s_11 and s_5): set s_30": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2549,7 +2549,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"75:  >> When (s_12 and s_5): set s_31": {
+"75:  >> If (s_12 and s_5): set s_31": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2616,7 +2616,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"77:  >> When (s_13 and s_5): set s_32": {
+"77:  >> If (s_13 and s_5): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

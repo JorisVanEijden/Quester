@@ -128,7 +128,7 @@
 }
 }
 ,"opCodes: [32]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -391,7 +391,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-" 9:  >> WhenTimerExpires (t_0000353d): set s_1": {
+" 9:  >> IfTimerExpires (t_0000353d): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -534,7 +534,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"14:  >> WhenTimerExpires (t_0000353e): set s_2": {
+"14:  >> IfTimerExpires (t_0000353e): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -677,7 +677,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"19:  >> WhenTimerExpires (t_0000353f): set s_3": {
+"19:  >> IfTimerExpires (t_0000353f): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -820,7 +820,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"24: s_3 => TriggerOnMobKills (m_imp, 1)": {
+"24:  >> IfMobsKilled (m_imp, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -850,7 +850,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"25: s_4 => TriggerOnClickNpc (n_questgiver)": {
+"25:  >> IfNpcClicked (n_questgiver): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -873,7 +873,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"26:  >> When (s_4 and not s_3): set s_5": {
+"26:  >> If (s_4 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -917,7 +917,7 @@
 "flags": 0,
 "lastUpdate": 2
 },
-"27:  >> When (s_4 and s_3): set s_6": {
+"27:  >> If (s_4 and s_3): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

@@ -175,7 +175,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_queston): set s_0": {
+" 1:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -304,7 +304,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenGivingItemToNpc (i_jewelry, n_man): set s_1": {
+" 6:  >> IfGivingItemToNpc (i_jewelry, n_man): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -537,7 +537,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_6 => TriggerOnMobKills (m_giant, 1)": {
+"14:  >> IfMobsKilled (m_giant, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -567,7 +567,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15: s_6 => TriggerOnMobKills (m_magic, 1)": {
+"15:  >> IfMobsKilled (m_magic, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -597,7 +597,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16: s_6 => TriggerOnMobKills (m_zombie, 1)": {
+"16:  >> IfMobsKilled (m_zombie, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -627,7 +627,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17: s_6 => TriggerOnMobKills (m_daedroth, 1)": {
+"17:  >> IfMobsKilled (m_daedroth, 1): set s_6": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -657,7 +657,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_7 => TriggerOnClickNpc (n_qgiver)": {
+"18:  >> IfNpcClicked (n_qgiver): set s_7": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -680,7 +680,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> When (s_7 and s_6): set s_8": {
+"19:  >> If (s_7 and s_6): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -809,7 +809,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_7 and s_1 and not s_6): set s_9": {
+"24:  >> If (s_7 and s_1 and not s_6): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -913,7 +913,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"27:  >> When (s_7 and not s_1): set s_10": {
+"27:  >> If (s_7 and not s_1): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

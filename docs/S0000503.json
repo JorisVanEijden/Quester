@@ -315,7 +315,7 @@
 }
 }
 ,"opCodes: [84]": {
-" 0:  >> WhenTimerExpires (t_40000000): set s_0": {
+" 0:  >> IfTimerExpires (t_40000000): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -608,7 +608,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10:  >> WhenTimerExpires (t_40000002): set s_1": {
+"10:  >> IfTimerExpires (t_40000002): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -788,7 +788,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16: s_3 => TriggerOnClickNpc (n_rebel)": {
+"16:  >> IfNpcClicked (n_rebel): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -855,7 +855,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_5 => TriggerOnItemFound (i_sage)": {
+"18:  >> IfItemFound (i_sage): set s_5": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -878,7 +878,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> When (s_21 and not s_19): set s_6": {
+"19:  >> If (s_21 and not s_19): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -922,7 +922,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20:  >> When (s_2 and not s_8): set s_6": {
+"20:  >> If (s_2 and not s_8): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -966,7 +966,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> WhenTimerExpires (t_4000000a): set s_2": {
+"21:  >> IfTimerExpires (t_4000000a): set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1150,7 +1150,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"29:  >> When (s_32 and not s_4): set s_12": {
+"29:  >> If (s_32 and not s_4): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1194,7 +1194,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> WhenTimerExpires (t_keytime): set s_4": {
+"30:  >> IfTimerExpires (t_keytime): set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1452,7 +1452,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40: s_15 => TriggerOnItemFound (i_key)": {
+"40:  >> IfItemFound (i_key): set s_15": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1535,7 +1535,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"43:  >> WhenTimerExpires (t_40000015): set s_5": {
+"43:  >> IfTimerExpires (t_40000015): set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1625,7 +1625,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"46:  >> When (s_3 and s_15 and s_13): set s_19": {
+"46:  >> If (s_3 and s_15 and s_13): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1669,7 +1669,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"47:  >> When (s_14 and s_3): set s_19": {
+"47:  >> If (s_14 and s_3): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1713,7 +1713,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"48:  >> WhenTimerExpires (t_4000001f): set s_6": {
+"48:  >> IfTimerExpires (t_4000001f): set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1849,7 +1849,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"53:  >> When (s_31 and not s_30): set s_22": {
+"53:  >> If (s_31 and not s_30): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1893,7 +1893,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"54:  >> When (s_10 and not s_12): set s_22": {
+"54:  >> If (s_10 and not s_12): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1976,7 +1976,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"57:  >> When (s_16 and not s_25): set s_24": {
+"57:  >> If (s_16 and not s_25): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2133,7 +2133,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"62: s_26 => TriggerOnMobHurtByPlayer (m_guardian)": {
+"62:  >> IfMobHurtByPlayer (m_guardian): set s_26": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -2172,7 +2172,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"64: s_27 => TriggerOnMobKills (m_guardian, 1)": {
+"64:  >> IfMobsKilled (m_guardian, 1): set s_27": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -2324,7 +2324,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"70:  >> When (s_5 and not s_16): set s_30": {
+"70:  >> If (s_5 and not s_16): set s_30": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2428,7 +2428,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"73: s_32 => TriggerOnItemFound (i_map)": {
+"73:  >> IfItemFound (i_map): set s_32": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2495,7 +2495,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"75:  >> WhenTimerExpires (t_4000000b): set s_3": {
+"75:  >> IfTimerExpires (t_4000000b): set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2534,7 +2534,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"77: s_33 >> When (s_22 or s_31 or s_28): set s_6": {
+"77:  >> If (s_6 or s_22 or s_31 or s_28): set s_33": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -2663,7 +2663,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"82:  >> When (s_19 and s_14): set s_34": {
+"82:  >> If (s_19 and s_14): set s_34": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

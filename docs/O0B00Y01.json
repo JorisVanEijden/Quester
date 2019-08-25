@@ -113,7 +113,7 @@
 }
 }
 ,"opCodes: [30]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -328,7 +328,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-" 6: s_6 => TriggerOnMobHurtByPlayer (m_0000319f)": {
+" 6:  >> IfMobHurtByPlayer (m_0000319f): set s_6": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -351,7 +351,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-" 7: s_9 => TriggerOnMobHurtByPlayer (m_00006370)": {
+" 7:  >> IfMobHurtByPlayer (m_00006370): set s_9": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -374,7 +374,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-" 8: s_10 => TriggerOnMobHurtByPlayer (m_guards)": {
+" 8:  >> IfMobHurtByPlayer (m_guards): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -651,7 +651,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"17:  >> WhenGivingItemToNpc (i_weapons, n_contact): set s_2": {
+"17:  >> IfGivingItemToNpc (i_weapons, n_contact): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -727,7 +727,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"20:  >> WhenGivingItemToNpc (i_gems, n_questgiver): set s_1": {
+"20:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

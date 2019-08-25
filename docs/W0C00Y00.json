@@ -157,7 +157,7 @@
 }
 }
 ,"opCodes: [28]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -286,7 +286,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> When (s_4 and s_3): set s_2": {
+" 5:  >> If (s_4 and s_3): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -330,7 +330,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> When (s_10 and s_3): set s_2": {
+" 6:  >> If (s_10 and s_3): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -418,7 +418,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8:  >> WhenTimerExpires (t_delay): set s_1": {
+" 8:  >> IfTimerExpires (t_delay): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -441,7 +441,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 9: s_3 => TriggerOnMobKills (m_monster, 1)": {
+" 9:  >> IfMobsKilled (m_monster, 1): set s_3": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -531,7 +531,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_4 => TriggerOnClickNpc (n_contact)": {
+"12:  >> IfNpcClicked (n_contact): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -554,7 +554,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> When (not s_3 and s_4): set s_5": {
+"13:  >> If (not s_3 and s_4): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -725,7 +725,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_7 => TriggerOnMobHurtByPlayer (m_monster)": {
+"18:  >> IfMobHurtByPlayer (m_monster): set s_7": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -889,7 +889,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"23:  >> WhenGivingItemToNpc (i_magic, n_contact): set s_10": {
+"23:  >> IfGivingItemToNpc (i_magic, n_contact): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -935,7 +935,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25:  >> When (s_10 and not s_3): set s_11": {
+"25:  >> If (s_10 and not s_3): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

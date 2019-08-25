@@ -116,7 +116,7 @@
 }
 }
 ,"opCodes: [27]": {
-" 0:  >> WhenTimerExpires (t_1stparton): set s_0": {
+" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -356,7 +356,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 8: s_10 => TriggerOnMobHurtByPlayer (m_battlemage)": {
+" 8:  >> IfMobHurtByPlayer (m_battlemage): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -379,7 +379,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 9: s_10 => TriggerOnMobHurtByPlayer (m_mage)": {
+" 9:  >> IfMobHurtByPlayer (m_mage): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -402,7 +402,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"10: s_10 => TriggerOnMobHurtByPlayer (m_0000db8c)": {
+"10:  >> IfMobHurtByPlayer (m_0000db8c): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -425,7 +425,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"11: s_10 => TriggerOnMobHurtByPlayer (m_00006fdc)": {
+"11:  >> IfMobHurtByPlayer (m_00006fdc): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -464,7 +464,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"13: s_2 => TriggerOnMobKills (m_battlemage, 1)": {
+"13:  >> IfMobsKilled (m_battlemage, 1): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -494,7 +494,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"14: s_2 => TriggerOnMobKills (m_mage, 1)": {
+"14:  >> IfMobsKilled (m_mage, 1): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -524,7 +524,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"15: s_2 => TriggerOnMobKills (m_0000db8c, 1)": {
+"15:  >> IfMobsKilled (m_0000db8c, 1): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -554,7 +554,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"16: s_2 => TriggerOnMobKills (m_00006fdc, 1)": {
+"16:  >> IfMobsKilled (m_00006fdc, 1): set s_2": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -600,7 +600,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"18: s_1 => TriggerOnClickNpc (n_questgiver)": {
+"18:  >> IfNpcClicked (n_questgiver): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -623,7 +623,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"19:  >> When (s_1 and s_2): set s_0": {
+"19:  >> If (s_1 and s_2): set s_0": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -667,7 +667,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"20:  >> When (s_1 and not s_2): set s_5": {
+"20:  >> If (s_1 and not s_2): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

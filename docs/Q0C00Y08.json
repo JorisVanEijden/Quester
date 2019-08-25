@@ -99,7 +99,7 @@
 }
 }
 ,"opCodes: [17]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -152,7 +152,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 2:  >> When (s_0 and s_5): set s_1": {
+" 2:  >> If (s_0 and s_5): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -251,7 +251,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> When (s_0 and not s_5): set s_2": {
+" 6:  >> If (s_0 and not s_5): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -311,7 +311,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8:  >> WhenGivingItemToNpc (i_book, n_qgiver): set s_3": {
+" 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -401,7 +401,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_4 => TriggerOnClickNpc (n_contact)": {
+"11:  >> IfNpcClicked (n_contact): set s_4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {

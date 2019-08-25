@@ -246,7 +246,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 8:  >> When (s_47 and s_48): set s_7": {
+" 8:  >> If (s_47 and s_48): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -306,7 +306,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"10: s_8 => TriggerOnFactionReputation (500, 0)": {
+"10:  >> IfFactionReputation (Cyndassa, 0): set s_8": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -336,7 +336,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_9 => TriggerOnFactionReputation (392, 0)": {
+"11:  >> IfFactionReputation (Princess_Elysana, 0): set s_9": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -366,7 +366,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12: s_10 => TriggerOnFactionReputation (365, 0)": {
+"12:  >> IfFactionReputation (Queen_Aubki, 0): set s_10": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -396,7 +396,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13: s_11 => TriggerOnFactionReputation (394, 0)": {
+"13:  >> IfFactionReputation (Princess_Morgiah, 0): set s_11": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -426,7 +426,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"14: s_12 => TriggerOnFactionReputation (363, 0)": {
+"14:  >> IfFactionReputation (Medora, 0): set s_12": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -456,7 +456,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15: s_13 => TriggerOnFactionReputation (393, 0)": {
+"15:  >> IfFactionReputation (Prince_Helseth, 0): set s_13": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -486,7 +486,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"16: s_14 => TriggerOnFactionReputation (382, 0)": {
+"16:  >> IfFactionReputation (Prince_Lhotun, 0): set s_14": {
 "opCode": 79,
 "argCount": 3,
 "arguments:": {
@@ -516,7 +516,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"17: s_15 => TriggerOnPlayerLevel (5)": {
+"17:  >> IfPlayerHasLevel (5): set s_15": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -539,7 +539,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_16 => TriggerOnPlayerLevel (4)": {
+"18:  >> IfPlayerHasLevel (4): set s_16": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -562,7 +562,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19: s_17 => TriggerOnPlayerLevel (8)": {
+"19:  >> IfPlayerHasLevel (8): set s_17": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -585,7 +585,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"20: s_18 => TriggerOnPlayerLevel (3)": {
+"20:  >> IfPlayerHasLevel (3): set s_18": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -608,7 +608,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21: s_19 => TriggerOnPlayerLevel (3)": {
+"21:  >> IfPlayerHasLevel (3): set s_19": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -631,7 +631,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22: s_20 => TriggerOnPlayerLevel (6)": {
+"22:  >> IfPlayerHasLevel (6): set s_20": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -654,7 +654,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"23: s_21 => TriggerOnPlayerLevel (5)": {
+"23:  >> IfPlayerHasLevel (5): set s_21": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
@@ -677,7 +677,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_4 and s_10 and not s_19): set s_22": {
+"24:  >> If (s_4 and s_10 and not s_19): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -737,7 +737,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"26:  >> When (s_6 and s_8 and not s_21): set s_23": {
+"26:  >> If (s_6 and s_8 and not s_21): set s_23": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -797,7 +797,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"28:  >> When (s_5 and s_9 and not s_20): set s_24": {
+"28:  >> If (s_5 and s_9 and not s_20): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -857,7 +857,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (s_1 and s_13 and not s_16): set s_25": {
+"30:  >> If (s_1 and s_13 and not s_16): set s_25": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -917,7 +917,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"32:  >> When (s_0 and s_14 and not s_15): set s_26": {
+"32:  >> If (s_0 and s_14 and not s_15): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -977,7 +977,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"34:  >> When (s_2 and s_12 and not s_17): set s_27": {
+"34:  >> If (s_2 and s_12 and not s_17): set s_27": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1037,7 +1037,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"36:  >> When (s_3 and s_11 and not s_18): set s_28": {
+"36:  >> If (s_3 and s_11 and not s_18): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1097,7 +1097,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> When (s_4 and not s_10): set s_29": {
+"38:  >> If (s_4 and not s_10): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1157,7 +1157,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"40:  >> When (s_6 and not s_8): set s_30": {
+"40:  >> If (s_6 and not s_8): set s_30": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1217,7 +1217,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42:  >> When (s_5 and not s_9): set s_31": {
+"42:  >> If (s_5 and not s_9): set s_31": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1277,7 +1277,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"44:  >> When (s_1 and not s_13): set s_32": {
+"44:  >> If (s_1 and not s_13): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1337,7 +1337,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"46:  >> When (s_0 and not s_14): set s_33": {
+"46:  >> If (s_0 and not s_14): set s_33": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1397,7 +1397,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"48:  >> When (s_2 and not s_12): set s_34": {
+"48:  >> If (s_2 and not s_12): set s_34": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1457,7 +1457,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"50:  >> When (s_3 and not s_11): set s_35": {
+"50:  >> If (s_3 and not s_11): set s_35": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1517,7 +1517,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"52:  >> When (s_10 and s_19 and s_4): set s_36": {
+"52:  >> If (s_10 and s_19 and s_4): set s_36": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1635,7 +1635,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"55:  >> When (s_6 and s_8 and s_21): set s_37": {
+"55:  >> If (s_6 and s_8 and s_21): set s_37": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1753,7 +1753,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"58:  >> When (s_5 and s_9 and s_20 and not s_47): set s_38": {
+"58:  >> If (s_5 and s_9 and s_20 and not s_47): set s_38": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1871,7 +1871,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"61:  >> When (s_1 and s_13 and s_16 and not s_43): set s_39": {
+"61:  >> If (s_1 and s_13 and s_16 and not s_43): set s_39": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1989,7 +1989,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"64:  >> When (s_0 and s_14 and s_15): set s_40": {
+"64:  >> If (s_0 and s_14 and s_15): set s_40": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2107,7 +2107,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"67:  >> When (s_2 and s_12 and s_17): set s_41": {
+"67:  >> If (s_2 and s_12 and s_17): set s_41": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2225,7 +2225,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"70:  >> When (s_3 and s_11 and s_18): set s_42": {
+"70:  >> If (s_3 and s_11 and s_18): set s_42": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2373,7 +2373,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"74:  >> When (s_14 and s_15): set s_45": {
+"74:  >> If (s_14 and s_15): set s_45": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2440,7 +2440,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"76:  >> When (s_11 and s_18): set s_46": {
+"76:  >> If (s_11 and s_18): set s_46": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2507,7 +2507,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"78:  >> When (s_51): set s_54": {
+"78:  >> If (s_51): set s_54": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2625,7 +2625,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"81:  >> When (s_52): set s_55": {
+"81:  >> If (s_52): set s_55": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2743,7 +2743,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"84:  >> When (s_53): set s_56": {
+"84:  >> If (s_53): set s_56": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2861,7 +2861,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"87:  >> When (s_50): set s_57": {
+"87:  >> If (s_50): set s_57": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

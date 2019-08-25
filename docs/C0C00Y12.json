@@ -179,7 +179,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 2:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 2:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -262,7 +262,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 5: s_3 => TriggerOnClickNpc (n_thief)": {
+" 5:  >> IfNpcClicked (n_thief): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -354,7 +354,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 9:  >> When (s_4 and s_3): set s_5": {
+" 9:  >> If (s_4 and s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -486,7 +486,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"12: s_2 => TriggerOnMobHurtByPlayer (m_burglar) [Msg 1012]": {
+"12:  >> IfMobHurtByPlayer (m_burglar): set s_2 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -509,7 +509,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"13: s_2 => TriggerOnMobHurtByPlayer (m_rogue) [Msg 1012]": {
+"13:  >> IfMobHurtByPlayer (m_rogue): set s_2 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -532,7 +532,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"14:  >> WhenGivingItemToNpc (i_religitem, n_qgiver): set s_1": {
+"14:  >> IfGivingItemToNpc (i_religitem, n_qgiver): set s_1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {

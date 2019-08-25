@@ -207,7 +207,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 2:  >> WhenTimerExpires (t_000271bc): set s_0": {
+" 2:  >> IfTimerExpires (t_000271bc): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -253,7 +253,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 4: s_12 => TriggerOnClickNpc (n_000034a9)": {
+" 4:  >> IfNpcClicked (n_000034a9): set s_12": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -276,7 +276,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 5:  >> When (s_12 and s_11): set s_13": {
+" 5:  >> If (s_12 and s_11): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -620,7 +620,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"16: s_6 => TriggerOnMobHurtByPlayer (m_00003543)": {
+"16:  >> IfMobHurtByPlayer (m_00003543): set s_6": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -643,7 +643,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"17: s_5 => TriggerOnMobHurtByPlayer (m_00018fdb)": {
+"17:  >> IfMobHurtByPlayer (m_00018fdb): set s_5": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -726,7 +726,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"20: s_8 => TriggerOnMobKills (m_00003543, 2)": {
+"20:  >> IfMobsKilled (m_00003543, 2): set s_8": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -772,7 +772,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"22: s_7 => TriggerOnMobKills (m_00018fdb, 3)": {
+"22:  >> IfMobsKilled (m_00018fdb, 3): set s_7": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -818,7 +818,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"24:  >> WhenTimeOfDayBetween (06:00:00, 18:00:00): set s_10": {
+"24:  >> IfTimeOfDayBetween (06:00:00, 18:00:00): set s_10": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
@@ -848,7 +848,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"25:  >> When (s_7 and s_8 and not s_10): set s_9": {
+"25:  >> If (s_7 and s_8 and not s_10): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -931,7 +931,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"28: s_0 => TriggerOnClickNpc (n_contact)": {
+"28:  >> IfNpcClicked (n_contact): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -954,7 +954,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"29:  >> When (s_9 and s_0): set s_2": {
+"29:  >> If (s_9 and s_0): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -998,7 +998,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"30:  >> When (not s_9 and s_0): set s_1": {
+"30:  >> If (not s_9 and s_0): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1231,7 +1231,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"38:  >> WhenTimerExpires (t_0000dd26): set s_1": {
+"38:  >> IfTimerExpires (t_0000dd26): set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

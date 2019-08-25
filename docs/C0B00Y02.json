@@ -230,7 +230,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 1:  >> WhenTimerExpires (t_queston): set s_0": {
+" 1:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -537,7 +537,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"11: s_1 => TriggerOnClickNpc (n_guardian)": {
+"11:  >> IfNpcClicked (n_guardian): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -560,7 +560,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> When (s_1 and s_2): set s_4": {
+"12:  >> If (s_1 and s_2): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -650,7 +650,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"15:  >> When (s_1 and s_3): set s_5": {
+"15:  >> If (s_1 and s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -740,7 +740,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"18: s_6 => TriggerOnClickNpc (n_child)": {
+"18:  >> IfNpcClicked (n_child): set s_6": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -763,7 +763,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"19:  >> When (s_9 and s_2): set s_7": {
+"19:  >> If (s_9 and s_2): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -899,7 +899,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> When (s_9 and s_3): set s_8": {
+"24:  >> If (s_9 and s_3): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1072,7 +1072,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30: s_10 => TriggerOnClickNpc (n_child)": {
+"30:  >> IfNpcClicked (n_child): set s_10": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1183,7 +1183,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"33:  >> When (s_6 and not s_7 and not s_8): set s_11": {
+"33:  >> If (s_6 and not s_7 and not s_8): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1273,7 +1273,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"36:  >> When (s_14 and not s_11): set s_12": {
+"36:  >> If (s_14 and not s_11): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1333,7 +1333,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"38:  >> When (s_14 and s_11): set s_13": {
+"38:  >> If (s_14 and s_11): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1423,7 +1423,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41: s_14 => TriggerOnClickNpc (n_priest)": {
+"41:  >> IfNpcClicked (n_priest): set s_14": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -1446,7 +1446,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42:  >> When (s_1 and s_7): set s_15": {
+"42:  >> If (s_1 and s_7): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1732,7 +1732,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"52:  >> When (s_1 and s_8): set s_21": {
+"52:  >> If (s_1 and s_8): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1845,7 +1845,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"56:  >> WhenGivingItemToNpc (i_sage, n_qgiver): set s_22": {
+"56:  >> IfGivingItemToNpc (i_sage, n_qgiver): set s_22": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1875,7 +1875,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"57:  >> WhenGivingItemToNpc (i_sage, n_priest): set s_23": {
+"57:  >> IfGivingItemToNpc (i_sage, n_priest): set s_23": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1905,7 +1905,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"58:  >> When (s_25 and s_7): set s_24": {
+"58:  >> If (s_25 and s_7): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1949,7 +1949,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"59:  >> When (s_14 and s_7): set s_24": {
+"59:  >> If (s_14 and s_7): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1993,7 +1993,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"60:  >> When (s_23 and s_21): set s_24": {
+"60:  >> If (s_23 and s_21): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2037,7 +2037,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"61:  >> When (s_22 and s_21): set s_24": {
+"61:  >> If (s_22 and s_21): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2141,7 +2141,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"64: s_25 => TriggerOnClickNpc (n_qgiver)": {
+"64:  >> IfNpcClicked (n_qgiver): set s_25": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {

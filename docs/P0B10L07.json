@@ -102,7 +102,7 @@
 }
 }
 ,"opCodes: [29]": {
-" 0:  >> WhenTimerExpires (t_queston): set s_0": {
+" 0:  >> IfTimerExpires (t_queston): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -356,7 +356,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-" 8: s_2 => TriggerOnClickNpc (n_vamp)": {
+" 8:  >> IfNpcClicked (n_vamp): set s_2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -448,7 +448,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"12:  >> When (s_2 and not s_5 and not s_4): set s_3": {
+"12:  >> If (s_2 and not s_5 and not s_4): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -566,7 +566,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"15: s_4 => TriggerOnMobHurtByPlayer (m_000035a8)": {
+"15:  >> IfMobHurtByPlayer (m_000035a8): set s_4": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -635,7 +635,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"18: s_5 => TriggerOnMobKills (m_000035a8, 1)": {
+"18:  >> IfMobsKilled (m_000035a8, 1): set s_5": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -681,7 +681,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"20:  >> When (s_2 and s_5): set s_7": {
+"20:  >> If (s_2 and s_5): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -787,7 +787,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"24:  >> When (s_2 and s_4 and not s_5): set s_6": {
+"24:  >> If (s_2 and s_4 and not s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {

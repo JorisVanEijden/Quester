@@ -82,7 +82,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [11]": {
-" 0:  >> WhenTimerExpires (t_traveltime): set s_0": {
+" 0:  >> IfTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -188,7 +188,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4: s_1 => TriggerOnItemFound (i_ingredient)": {
+" 4:  >> IfItemFound (i_ingredient): set s_1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -227,7 +227,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> WhenGivingItemToNpc (i_ingredient, n_qgiver): set s_2": {
+" 6:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
