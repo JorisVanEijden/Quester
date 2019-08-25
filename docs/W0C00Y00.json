@@ -554,7 +554,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"13:  >> When (! s_3 and s_4): set s_5": {
+"13:  >> When (not s_3 and s_4): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -565,7 +565,7 @@
 "index": "5",
 "unknown1": "0"
 },
-"1: ! s_3": {
+"1: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -935,7 +935,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"25:  >> When (s_10 and ! s_3): set s_11": {
+"25:  >> When (s_10 and not s_3): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -953,7 +953,7 @@
 "index": "10",
 "unknown1": "0"
 },
-"2: ! s_3": {
+"2: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",

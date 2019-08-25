@@ -277,7 +277,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 6:  >> When (s_4 and s_10 and ! s_6): set s_1": {
+" 6:  >> When (s_4 and s_10 and not s_6): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -302,7 +302,7 @@
 "index": "10",
 "unknown1": "0"
 },
-"3: ! s_6": {
+"3: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -771,7 +771,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"22:  >> When (s_2 and ! s_6): set s_10": {
+"22:  >> When (s_2 and not s_6): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -789,7 +789,7 @@
 "index": "2",
 "unknown1": "0"
 },
-"2: ! s_6": {
+"2: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -831,11 +831,11 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24: ! s_7 >> WhenItemIsUsed (i_00000d88): set s_5 [Msg 1050]": {
+"24: not s_7 >> WhenItemIsUsed (i_00000d88): set s_5 [Msg 1050]": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: ! s_7": {
+"0: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",

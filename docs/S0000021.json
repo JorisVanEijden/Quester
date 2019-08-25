@@ -288,11 +288,11 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 5: ! s_6 => StopNpcConversation (n_0001ab9d)": {
+" 5: not s_6 => StopNpcConversation (n_0001ab9d)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: ! s_6": {
+"0: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -535,11 +535,11 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"13: ! s_3 => Unset (s_2)": {
+"13: not s_3 => Unset (s_2)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: ! s_3": {
+"0: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -865,7 +865,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-"24:  >> When (! s_8 and s_10): set s_11": {
+"24:  >> When (not s_8 and s_10): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -876,7 +876,7 @@
 "index": "11",
 "unknown1": "92454131"
 },
-"1: ! s_8": {
+"1: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",

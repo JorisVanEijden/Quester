@@ -1524,7 +1524,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"42:  >> When (s_12 and ! s_11): set s_16": {
+"42:  >> When (s_12 and not s_11): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1542,7 +1542,7 @@
 "index": "12",
 "unknown1": "0"
 },
-"2: ! s_11": {
+"2: not s_11": {
 "type": "State",
 "value": "11",
 "not": "True",
@@ -2037,7 +2037,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"57:  >> When (s_19 and ! s_7): set s_23": {
+"57:  >> When (s_19 and not s_7): set s_23": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2055,7 +2055,7 @@
 "index": "19",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -2155,7 +2155,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"60:  >> When (s_18 and s_23 and ! s_27): set s_24": {
+"60:  >> When (s_18 and s_23 and not s_27): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2180,7 +2180,7 @@
 "index": "23",
 "unknown1": "0"
 },
-"3: ! s_27": {
+"3: not s_27": {
 "type": "State",
 "value": "27",
 "not": "True",
@@ -2273,7 +2273,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"63:  >> When (s_19 and ! s_7): set s_26": {
+"63:  >> When (s_19 and not s_7): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2291,7 +2291,7 @@
 "index": "19",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -2414,7 +2414,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"67:  >> When (s_27 and ! s_37 and ! s_7): set s_28": {
+"67:  >> When (s_27 and not s_37 and not s_7): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2432,14 +2432,14 @@
 "index": "27",
 "unknown1": "0"
 },
-"2: ! s_37": {
+"2: not s_37": {
 "type": "State",
 "value": "37",
 "not": "True",
 "index": "37",
 "unknown1": "0"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -2527,7 +2527,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"71:  >> When (s_27 and s_37 and ! s_7): set s_29": {
+"71:  >> When (s_27 and s_37 and not s_7): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2552,7 +2552,7 @@
 "index": "37",
 "unknown1": "0"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -3170,7 +3170,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"95:  >> When (s_6 and s_9 and ! s_7): set s_33": {
+"95:  >> When (s_6 and s_9 and not s_7): set s_33": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3195,7 +3195,7 @@
 "index": "9",
 "unknown1": "0"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -3373,7 +3373,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"102:  >> When (s_8 and ! s_7 and ! s_17): set s_35": {
+"102:  >> When (s_8 and not s_7 and not s_17): set s_35": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3391,14 +3391,14 @@
 "index": "8",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
 "index": "7",
 "unknown1": "0"
 },
-"3: ! s_17": {
+"3: not s_17": {
 "type": "State",
 "value": "17",
 "not": "True",
@@ -3507,7 +3507,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"106:  >> When (s_8 and ! s_7 and ! s_17 and s_11): set s_36": {
+"106:  >> When (s_8 and not s_7 and not s_17 and s_11): set s_36": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3525,14 +3525,14 @@
 "index": "8",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
 "index": "7",
 "unknown1": "0"
 },
-"3: ! s_17": {
+"3: not s_17": {
 "type": "State",
 "value": "17",
 "not": "True",
@@ -3648,7 +3648,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"110:  >> When (s_8 and ! s_7 and ! s_17 and ! s_11): set s_37": {
+"110:  >> When (s_8 and not s_7 and not s_17 and not s_11): set s_37": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3666,21 +3666,21 @@
 "index": "8",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
 "index": "7",
 "unknown1": "0"
 },
-"3: ! s_17": {
+"3: not s_17": {
 "type": "State",
 "value": "17",
 "not": "True",
 "index": "17",
 "unknown1": "0"
 },
-"4: ! s_11": {
+"4: not s_11": {
 "type": "State",
 "value": "11",
 "not": "True",
@@ -3754,7 +3754,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"114:  >> When (s_8 and ! s_7 and s_17 and ! s_19): set s_38": {
+"114:  >> When (s_8 and not s_7 and s_17 and not s_19): set s_38": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3772,7 +3772,7 @@
 "index": "8",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -3786,7 +3786,7 @@
 "index": "17",
 "unknown1": "0"
 },
-"4: ! s_19": {
+"4: not s_19": {
 "type": "State",
 "value": "19",
 "not": "True",
@@ -4105,7 +4105,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"125:  >> When (s_8 and ! s_7 and s_19 and ! s_14): set s_42": {
+"125:  >> When (s_8 and not s_7 and s_19 and not s_14): set s_42": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -4123,7 +4123,7 @@
 "index": "8",
 "unknown1": "0"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -4137,7 +4137,7 @@
 "index": "19",
 "unknown1": "0"
 },
-"4: ! s_14": {
+"4: not s_14": {
 "type": "State",
 "value": "14",
 "not": "True",

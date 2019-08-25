@@ -674,7 +674,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"18:  >> When (s_4 and ! s_19 and ! s_8): set s_20": {
+"18:  >> When (s_4 and not s_19 and not s_8): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -692,14 +692,14 @@
 "index": "4",
 "unknown1": "14"
 },
-"2: ! s_19": {
+"2: not s_19": {
 "type": "State",
 "value": "19",
 "not": "True",
 "index": "19",
 "unknown1": "-1305294848"
 },
-"3: ! s_8": {
+"3: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",

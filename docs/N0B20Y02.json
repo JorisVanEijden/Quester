@@ -284,7 +284,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-" 5:  >> When (! s_12 and ! s_4): set s_5": {
+" 5:  >> When (not s_12 and not s_4): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -295,14 +295,14 @@
 "index": "5",
 "unknown1": "100680946"
 },
-"1: ! s_12": {
+"1: not s_12": {
 "type": "State",
 "value": "12",
 "not": "True",
 "index": "12",
 "unknown1": "14"
 },
-"2: ! s_4": {
+"2: not s_4": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -328,11 +328,11 @@
 "flags": 0,
 "lastUpdate": 411
 },
-" 6: ! s_12 >> WhenAtLocation (l_magesguild): set s_1": {
+" 6: not s_12 >> WhenAtLocation (l_magesguild): set s_1": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: ! s_12": {
+"0: not s_12": {
 "type": "State",
 "value": "12",
 "not": "True",
@@ -951,7 +951,7 @@
 "flags": 0,
 "lastUpdate": 411
 },
-"27:  >> When (s_3 and s_12 and ! s_4): set s_6": {
+"27:  >> When (s_3 and s_12 and not s_4): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -976,7 +976,7 @@
 "index": "12",
 "unknown1": "1156761600"
 },
-"3: ! s_4": {
+"3: not s_4": {
 "type": "State",
 "value": "4",
 "not": "True",

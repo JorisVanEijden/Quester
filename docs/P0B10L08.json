@@ -444,7 +444,7 @@
 "flags": 0,
 "lastUpdate": 99
 },
-"12:  >> When (s_1 and ! s_2 and ! s_3): set s_4": {
+"12:  >> When (s_1 and not s_2 and not s_3): set s_4": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -462,14 +462,14 @@
 "index": "1",
 "unknown1": "14"
 },
-"2: ! s_2": {
+"2: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
 "index": "2",
 "unknown1": "-335456256"
 },
-"3: ! s_3": {
+"3: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",

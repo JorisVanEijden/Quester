@@ -1140,7 +1140,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"30:  >> When (! s_7 and s_21): set s_9": {
+"30:  >> When (not s_7 and s_21): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1151,7 +1151,7 @@
 "index": "9",
 "unknown1": "0"
 },
-"1: ! s_7": {
+"1: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -1371,7 +1371,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"37:  >> When (s_4 and s_8 and ! s_7): set s_12": {
+"37:  >> When (s_4 and s_8 and not s_7): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1396,7 +1396,7 @@
 "index": "8",
 "unknown1": "0"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -1491,7 +1491,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"41:  >> When (! s_4 and s_8 and ! s_7): set s_14": {
+"41:  >> When (not s_4 and s_8 and not s_7): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1502,7 +1502,7 @@
 "index": "14",
 "unknown1": "0"
 },
-"1: ! s_4": {
+"1: not s_4": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -1516,7 +1516,7 @@
 "index": "8",
 "unknown1": "0"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -1810,11 +1810,11 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"50: ! s_11 => ShowNpc (n_marknpc)": {
+"50: not s_11 => ShowNpc (n_marknpc)": {
 "opCode": 48,
 "argCount": 2,
 "arguments:": {
-"0: ! s_11": {
+"0: not s_11": {
 "type": "State",
 "value": "11",
 "not": "True",

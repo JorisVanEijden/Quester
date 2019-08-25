@@ -447,7 +447,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"10:  >> When (! s_4 and s_2): set s_6": {
+"10:  >> When (not s_4 and s_2): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -458,7 +458,7 @@
 "index": "6",
 "unknown1": "109228594"
 },
-"1: ! s_4": {
+"1: not s_4": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -708,11 +708,11 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"18: ! s_2 => Unset (s_6, s_5)": {
+"18: not s_2 => Unset (s_6, s_5)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: ! s_2": {
+"0: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -782,7 +782,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"20:  >> When (! s_3 and s_7 and ! s_1): set s_9": {
+"20:  >> When (not s_3 and s_7 and not s_1): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -793,7 +793,7 @@
 "index": "9",
 "unknown1": "109228594"
 },
-"1: ! s_3": {
+"1: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -807,7 +807,7 @@
 "index": "7",
 "unknown1": "-1305294848"
 },
-"3: ! s_1": {
+"3: not s_1": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -1214,7 +1214,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"33:  >> When (s_13 and ! s_8 and s_18): set s_17": {
+"33:  >> When (s_13 and not s_8 and s_18): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1232,7 +1232,7 @@
 "index": "13",
 "unknown1": "14"
 },
-"2: ! s_8": {
+"2: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",

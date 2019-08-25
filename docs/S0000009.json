@@ -532,11 +532,11 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"14: ! s_8 => SendFoe (m_00003543, 91, 10, 10)": {
+"14: not s_8 => SendFoe (m_00003543, 91, 10, 10)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
-"0: ! s_8": {
+"0: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",
@@ -576,11 +576,11 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"15: ! s_7 => SendFoe (m_00018fdb, 70, 10, 10)": {
+"15: not s_7 => SendFoe (m_00018fdb, 70, 10, 10)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
-"0: ! s_7": {
+"0: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -848,7 +848,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"25:  >> When (s_7 and s_8 and ! s_10): set s_9": {
+"25:  >> When (s_7 and s_8 and not s_10): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -873,7 +873,7 @@
 "index": "8",
 "unknown1": "-1124910974"
 },
-"3: ! s_10": {
+"3: not s_10": {
 "type": "State",
 "value": "10",
 "not": "True",
@@ -998,7 +998,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"30:  >> When (! s_9 and s_0): set s_1": {
+"30:  >> When (not s_9 and s_0): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1009,7 +1009,7 @@
 "index": "1",
 "unknown1": "92454131"
 },
-"1: ! s_9": {
+"1: not s_9": {
 "type": "State",
 "value": "9",
 "not": "True",

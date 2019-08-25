@@ -194,11 +194,11 @@
 "flags": 0,
 "lastUpdate": 24
 },
-" 3: ! s_3 => CreateFoe(m_daedra, 5, 33%, 33)": {
+" 3: not s_3 => CreateFoe(m_daedra, 5, 33%, 33)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: ! s_3": {
+"0: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -441,7 +441,7 @@
 "flags": 0,
 "lastUpdate": 24
 },
-"11:  >> When (s_0 and ! s_3): set s_5": {
+"11:  >> When (s_0 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -459,7 +459,7 @@
 "index": "0",
 "unknown1": "14"
 },
-"2: ! s_3": {
+"2: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",

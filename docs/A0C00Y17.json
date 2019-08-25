@@ -1383,11 +1383,11 @@
 "flags": 0,
 "lastUpdate": 209
 },
-"38: ! s_8 >> WhenAtLocation (l_destination): set s_6": {
+"38: not s_8 >> WhenAtLocation (l_destination): set s_6": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: ! s_8": {
+"0: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",
@@ -1533,7 +1533,7 @@
 "flags": 0,
 "lastUpdate": 209
 },
-"43:  >> When (s_0 and ! s_6): set s_20": {
+"43:  >> When (s_0 and not s_6): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1551,7 +1551,7 @@
 "index": "0",
 "unknown1": "14"
 },
-"2: ! s_6": {
+"2: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",

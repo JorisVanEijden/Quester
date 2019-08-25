@@ -246,11 +246,11 @@
 "flags": 0,
 "lastUpdate": 13
 },
-" 4: ! s_3 => CreateFoe(m_thief, 10, 50%, 50)": {
+" 4: not s_3 => CreateFoe(m_thief, 10, 50%, 50)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: ! s_3": {
+"0: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -726,7 +726,7 @@
 "flags": 0,
 "lastUpdate": 13
 },
-"20:  >> When (s_6 and ! s_3): set s_5": {
+"20:  >> When (s_6 and not s_3): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -744,7 +744,7 @@
 "index": "6",
 "unknown1": "14"
 },
-"2: ! s_3": {
+"2: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",

@@ -255,11 +255,11 @@
 "flags": 0,
 "lastUpdate": 221
 },
-" 7:  >> When (s_2 and ! s_1): set ! s_2": {
+" 7:  >> When (s_2 and not s_1): set not s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: ! s_2": {
+"0: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -273,7 +273,7 @@
 "index": "2",
 "unknown1": "14"
 },
-"2: ! s_1": {
+"2: not s_1": {
 "type": "State",
 "value": "1",
 "not": "True",

@@ -535,11 +535,11 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"13: ! s_6 => Unknown5_ItemLocation (i_treasure, l_magesguild)": {
+"13: not s_6 => Unknown5_ItemLocation (i_treasure, l_magesguild)": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
-"0: ! s_6": {
+"0: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -565,7 +565,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"14:  >> When (s_6 and ! s_2): set s_7": {
+"14:  >> When (s_6 and not s_2): set s_7": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -583,7 +583,7 @@
 "index": "6",
 "unknown1": "14"
 },
-"2: ! s_2": {
+"2: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -782,7 +782,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"21:  >> When (s_1 and s_5 and ! s_7 and ! s_2): set s_12": {
+"21:  >> When (s_1 and s_5 and not s_7 and not s_2): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -807,14 +807,14 @@
 "index": "5",
 "unknown1": "1156761600"
 },
-"3: ! s_7": {
+"3: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",
 "index": "7",
 "unknown1": "1997668352"
 },
-"4: ! s_2": {
+"4: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -958,7 +958,7 @@
 "flags": 0,
 "lastUpdate": 53
 },
-"25:  >> When (s_0 and ! s_7): set s_9": {
+"25:  >> When (s_0 and not s_7): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -976,7 +976,7 @@
 "index": "0",
 "unknown1": "14"
 },
-"2: ! s_7": {
+"2: not s_7": {
 "type": "State",
 "value": "7",
 "not": "True",

@@ -197,11 +197,11 @@
 "flags": 0,
 "lastUpdate": 26
 },
-" 3: ! s_4 >> WhenAtLocation (l_mondung): set s_7": {
+" 3: not s_4 >> WhenAtLocation (l_mondung): set s_7": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: ! s_4": {
+"0: not s_4": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -502,7 +502,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"12:  >> When (s_6 and ! s_8): set s_11": {
+"12:  >> When (s_6 and not s_8): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -520,7 +520,7 @@
 "index": "6",
 "unknown1": "14"
 },
-"2: ! s_8": {
+"2: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",
@@ -708,7 +708,7 @@
 "flags": 0,
 "lastUpdate": 26
 },
-"17:  >> When (s_0 and ! s_8): set s_9": {
+"17:  >> When (s_0 and not s_8): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -726,7 +726,7 @@
 "index": "0",
 "unknown1": "14"
 },
-"2: ! s_8": {
+"2: not s_8": {
 "type": "State",
 "value": "8",
 "not": "True",

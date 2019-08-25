@@ -239,7 +239,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> When (s_0 and ! s_9): set s_10": {
+" 5:  >> When (s_0 and not s_9): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -257,7 +257,7 @@
 "index": "0",
 "unknown1": "4518580"
 },
-"2: ! s_9": {
+"2: not s_9": {
 "type": "State",
 "value": "9",
 "not": "True",
@@ -299,11 +299,11 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 7: ! s_2 => Unset (s_0, s_10)": {
+" 7: not s_2 => Unset (s_0, s_10)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: ! s_2": {
+"0: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
