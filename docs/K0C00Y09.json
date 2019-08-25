@@ -111,7 +111,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 1:  => PlaceMobAtLocation (m_enemy, l_mondung)": {
 "opCode": 22,
@@ -139,7 +141,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 2:  => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -160,7 +164,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 3:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -188,7 +194,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 4: s_2 => TriggerOnMobKills (m_enemy, 1)": {
 "opCode": 2,
@@ -216,7 +224,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 5: s_2 => Say (1011)": {
 "opCode": 51,
@@ -230,7 +240,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 12
 },
 " 6: s_1 => TriggerOnMobHurtByPlayer (m_enemy)": {
 "opCode": 21,
@@ -251,7 +263,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 7: s_1 => Say (1012)": {
 "opCode": 51,
@@ -265,7 +279,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 12
 },
 " 8:  >> When (s_1 and ! s_2): set s_3": {
 "opCode": 52,
@@ -307,7 +323,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 9: s_3 => Unknown63_Mob (m_enemy)": {
 "opCode": 63,
@@ -328,7 +346,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "10: s_3 => PlaceMobAtLocation (m_enemy, l_00006e17)": {
 "opCode": 22,
@@ -356,7 +376,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "11: s_4 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -377,7 +399,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "12:  >> When (s_4 and ! s_1): set s_9": {
 "opCode": 52,
@@ -419,7 +443,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "13: s_9 => Unset (s_4, s_9)": {
 "opCode": 7,
@@ -461,7 +487,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "14:  >> When (s_4 and s_2): set s_6": {
 "opCode": 52,
@@ -503,7 +531,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "15: s_6 => Say (1014)": {
 "opCode": 51,
@@ -517,7 +547,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 12
 },
 "16: s_6 => PlaceItemOnCharacter (i_lessgold)": {
 "opCode": 26,
@@ -545,7 +577,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "17: s_6 => MakePermanent (i_lessgold)": {
 "opCode": 54,
@@ -566,7 +600,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "18: s_6 => EndQuest ()": {
 "opCode": 6,
@@ -580,7 +616,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "19:  >> When (s_3 and s_4): set s_7": {
 "opCode": 52,
@@ -622,7 +660,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "20: s_7 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -664,7 +704,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "21: s_7 => EndQuest ()": {
 "opCode": 6,
@@ -678,7 +720,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "22:  >> When (s_0 and s_3): set s_8": {
 "opCode": 52,
@@ -720,7 +764,9 @@
 "unknown1": "26083328"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "23: s_8 => Say (1013)": {
 "opCode": 51,
@@ -734,7 +780,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 12
 },
 "24: s_8 => Unknown64_Mob (m_enemy)": {
 "opCode": 64,
@@ -755,7 +803,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "25: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -769,7 +819,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 }
 }
 ,"states: [10]": {

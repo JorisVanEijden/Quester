@@ -91,7 +91,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -119,7 +121,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 2:  => PickOneOf (s_5, s_6, s_6)": {
 "opCode": 34,
@@ -161,7 +165,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 3:  => AddLocationToMap (l_qgiven)": {
 "opCode": 19,
@@ -182,7 +188,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 4:  => PlaceMobAtLocation (m_monster, l_qgiven)": {
 "opCode": 22,
@@ -210,7 +218,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 5: s_2 => TriggerOnMobKills (m_monster, 1) [Msg 1011]": {
 "opCode": 2,
@@ -238,7 +248,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 54
 },
 " 6: s_3 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -259,7 +271,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 7:  >> When (! s_2 and s_3): set s_4": {
 "opCode": 52,
@@ -301,7 +315,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 8: s_4 => Unset (s_3, s_4)": {
 "opCode": 7,
@@ -343,7 +359,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 9:  >> When (s_2 and s_3): set s_1": {
 "opCode": 52,
@@ -385,7 +403,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "10: s_1 => QuestSuccess ()": {
 "opCode": 4,
@@ -427,7 +447,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "11:  >> When (s_5 and s_1): set s_7": {
 "opCode": 52,
@@ -469,7 +491,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "12: s_7 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
@@ -490,7 +514,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1080
+"messageId": 1080,
+"flags": 0,
+"lastUpdate": 54
 },
 "13: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -504,7 +530,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "14: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -518,7 +546,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 }
 }
 ,"states: [8]": {

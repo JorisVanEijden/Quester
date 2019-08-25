@@ -116,7 +116,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -144,7 +146,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 2:  => EnsureNpcLocation (l_magesguild)": {
 "opCode": 81,
@@ -172,7 +176,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 3:  => PlaceItemAt (i_treasure, l_magesguild)": {
 "opCode": 0,
@@ -200,7 +206,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 4:  >> WhenTimeOfDayBetween (00:00:00, 03:00:00): set s_2": {
 "opCode": 31,
@@ -228,7 +236,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 5: s_2 >> WhenAtLocation (l_magesguild): set s_3": {
 "opCode": 43,
@@ -256,7 +266,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 6: s_3 => CreateFoe(m_000036cd, 82, 100%, 100)": {
 "opCode": 9,
@@ -298,7 +310,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 7: s_3 => CreateFoe(m_000036cd, 85, 100%, 100)": {
 "opCode": 9,
@@ -340,7 +354,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 8: s_3 => CreateFoe(m_000036cd, 100, 100%, 100)": {
 "opCode": 9,
@@ -382,7 +398,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 " 9: s_3 => CreateFoe(m_000036cd, 83, 100%, 100)": {
 "opCode": 9,
@@ -424,7 +442,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "10: s_4 => TriggerOnMobHurtByPlayer (m_000036cd) [Msg 1012]": {
 "opCode": 21,
@@ -445,7 +465,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 53
 },
 "11: s_5 => TriggerOnMobKills (m_000036cd, 2)": {
 "opCode": 2,
@@ -473,7 +495,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "12: s_6 => TriggerOnItemFound (i_treasure)": {
 "opCode": 3,
@@ -494,7 +518,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "13: ! s_6 => Unknown5_ItemLocation (i_treasure, l_magesguild)": {
 "opCode": 5,
@@ -522,7 +548,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "14:  >> When (s_6 and ! s_2): set s_7": {
 "opCode": 52,
@@ -564,7 +592,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "15:  >> WhenTimerExpires (t_000da513): set s_1": {
 "opCode": 12,
@@ -585,7 +615,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "16: s_7 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
@@ -613,7 +645,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "17: s_7 => AdjustReputationWithNpc (n_qgiver, -30)": {
 "opCode": 61,
@@ -641,7 +675,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "18: s_7 => CreateFoe(m_00003543, 60, 10%, 10)": {
 "opCode": 9,
@@ -683,7 +719,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "19: s_8 => TriggerOnMobHurtByPlayer (m_00003543) [Msg 1013]": {
 "opCode": 21,
@@ -704,7 +742,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 53
 },
 "20: s_1 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -725,7 +765,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "21:  >> When (s_1 and s_5 and ! s_7 and ! s_2): set s_12": {
 "opCode": 52,
@@ -767,7 +809,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "22:  => Unset (s_1)": {
 "opCode": 7,
@@ -809,7 +853,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "23: s_12 => QuestSuccess (i_potion)": {
 "opCode": 4,
@@ -851,7 +897,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "24:  >> When (s_10 and s_7): set s_9": {
 "opCode": 52,
@@ -893,7 +941,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "25:  >> When (s_0 and ! s_7): set s_9": {
 "opCode": 52,
@@ -935,7 +985,9 @@
 "unknown1": "76611584"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "26: s_9 => MakePermanent (i_treasure)": {
 "opCode": 54,
@@ -956,7 +1008,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "27: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -970,7 +1024,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "28: s_12 => EndQuest ()": {
 "opCode": 6,
@@ -984,7 +1040,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 },
 "29: s_9 => EndQuest ()": {
 "opCode": 6,
@@ -998,7 +1056,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 53
 }
 }
 ,"states: [14]": {

@@ -88,7 +88,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => SetQuestor (n_00005f81)": {
 "opCode": 85,
@@ -109,7 +111,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2: s_0 => TriggerOnClickNpc (n_00005f81)": {
 "opCode": 28,
@@ -130,7 +134,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3: s_9 >> When (s_1): set s_8": {
 "opCode": 53,
@@ -172,7 +178,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  >> When (s_0 and s_9): set s_2": {
 "opCode": 52,
@@ -214,7 +222,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  >> When (s_0 and ! s_9): set s_10": {
 "opCode": 52,
@@ -256,7 +266,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_10 => Say (1040)": {
 "opCode": 51,
@@ -270,7 +282,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1040
+"messageId": 1040,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: ! s_2 => Unset (s_0, s_10)": {
 "opCode": 7,
@@ -312,7 +326,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_2 => PromptYesNo (s_3, s_4, 1000)": {
 "opCode": 29,
@@ -347,7 +363,9 @@
 "unknown1": "-221773757"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_3 => Say (1002)": {
 "opCode": 51,
@@ -361,7 +379,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1002
+"messageId": 1002,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_4 => Say (1001)": {
 "opCode": 51,
@@ -375,7 +395,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1001
+"messageId": 1001,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_3 => ShowLocationOnMap (l_00005f5b, 26, 146892)": {
 "opCode": 27,
@@ -410,7 +432,9 @@
 "unknown1": "-221773757"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => PlaceItemOnCharacter (i_001bfabc)": {
 "opCode": 26,
@@ -438,7 +462,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_5 => PlaceItemAt (i_000d227c, l_00005f5b)": {
 "opCode": 0,
@@ -466,7 +492,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_3 => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -494,7 +522,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> WhenGivingItemToNpc (i_001bfabc, n_gortwog): set s_5": {
 "opCode": 1,
@@ -522,7 +552,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_5 => Say (1015)": {
 "opCode": 51,
@@ -536,7 +568,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
 "17:  >> WhenGivingItemToNpc (i_000d227c, n_00005f81): set s_6": {
 "opCode": 1,
@@ -564,7 +598,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_6 => Say (1030)": {
 "opCode": 51,
@@ -578,7 +614,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => CycleNextState (s_7)": {
 "opCode": 35,
@@ -620,7 +658,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => AdjustReputationWithNpc (n_00005f81, 15)": {
 "opCode": 61,
@@ -648,7 +688,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_6 => AdjustReputationWithNpc (n_gortwog, 10)": {
 "opCode": 61,
@@ -676,7 +718,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_6 => StartQuest (988, 988)": {
 "opCode": 8,
@@ -704,7 +748,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_6 => UnsetQuestor (n_gortwog)": {
 "opCode": 86,
@@ -725,7 +771,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_6 => UnsetQuestor (n_00005f81)": {
 "opCode": 86,
@@ -746,7 +794,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_6 => EndQuest ()": {
 "opCode": 6,
@@ -760,7 +810,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [11]": {

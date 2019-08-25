@@ -98,7 +98,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => SetQuestor (n_00005691)": {
 "opCode": 85,
@@ -119,7 +121,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => RemoveTopics (i_sage)": {
 "opCode": 11,
@@ -154,7 +158,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3: s_0 => PlaceItemOnPlayer (i_letter) [Msg 1012]": {
 "opCode": 76,
@@ -175,7 +181,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4: s_1 >> WhenItemIsUsed (i_sage): set s_5": {
 "opCode": 57,
@@ -203,7 +211,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_1 => PlaceItemAt (i_sage, l_000037ee)": {
 "opCode": 0,
@@ -231,7 +241,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_1 => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -259,7 +271,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: s_1 => Say (1002)": {
 "opCode": 51,
@@ -273,7 +287,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1002
+"messageId": 1002,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_1 => AddTopics (i_sage)": {
 "opCode": 10,
@@ -308,7 +324,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_2 => Say (1001)": {
 "opCode": 51,
@@ -322,7 +340,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1001
+"messageId": 1001,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_2 => UnsetQuestor (n_00005691)": {
 "opCode": 86,
@@ -343,7 +363,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -357,7 +379,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => TriggerOnClickNpc (n_00005691)": {
 "opCode": 28,
@@ -378,7 +402,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13:  >> When (s_3 and s_0): set s_4": {
 "opCode": 52,
@@ -420,7 +446,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 => PromptYesNo (s_1, s_2, 1000)": {
 "opCode": 29,
@@ -455,7 +483,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_5 => Say (1015)": {
 "opCode": 51,
@@ -469,7 +499,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
 "16:  >> WhenGivingItemToNpc (i_sage, n_00005691): set s_6": {
 "opCode": 1,
@@ -497,7 +529,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_6 => PromptYesNo (s_7, s_8, 1020)": {
 "opCode": 29,
@@ -532,7 +566,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_6 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -574,7 +610,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => StartQuest (10, 10)": {
 "opCode": 8,
@@ -602,7 +640,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => UnsetQuestor (n_00005691)": {
 "opCode": 86,
@@ -623,7 +663,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_6 => EndQuest ()": {
 "opCode": 6,
@@ -637,7 +679,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => Say (1022)": {
 "opCode": 51,
@@ -651,7 +695,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1022
+"messageId": 1022,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => AdjustReputationWithNpc (n_00005691, 10)": {
 "opCode": 61,
@@ -679,7 +725,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_8 => Say (1021)": {
 "opCode": 51,
@@ -693,7 +741,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_8 => AdjustReputationWithNpc (n_00005691, 15)": {
 "opCode": 61,
@@ -721,7 +771,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [9]": {

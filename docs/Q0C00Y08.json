@@ -105,7 +105,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -133,7 +135,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  >> When (s_0 and s_5): set s_1": {
 "opCode": 52,
@@ -175,7 +179,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3: s_1 => Say (1013)": {
 "opCode": 51,
@@ -189,7 +195,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4: s_1 => MakePermanent (i_book)": {
 "opCode": 54,
@@ -210,7 +218,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -224,7 +234,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  >> When (s_0 and ! s_5): set s_2": {
 "opCode": 52,
@@ -266,7 +278,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -280,7 +294,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8:  >> WhenGivingItemToNpc (i_book, n_qgiver): set s_3": {
 "opCode": 1,
@@ -308,7 +324,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_3 => QuestSuccess (i_mitem)": {
 "opCode": 4,
@@ -350,7 +368,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_3 => EndQuest ()": {
 "opCode": 6,
@@ -364,7 +384,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_4 => TriggerOnClickNpc (n_contact)": {
 "opCode": 28,
@@ -385,7 +407,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_4 => PlaceItemOnCharacter (i_book)": {
 "opCode": 26,
@@ -413,7 +437,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_4 => Say (1011)": {
 "opCode": 51,
@@ -427,7 +453,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 >> WhenPlayerHasItems (i_book): set s_5": {
 "opCode": 70,
@@ -469,9 +497,11 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-"15: s_5 => CreateFoe(m_guard, 20, 50%, 50)": {
+"15: s_5 => CreateFoe(m_guard, 20, 50%, 50) [Msg 1012]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -511,7 +541,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_5 => AdjustLegalReputation (-30)": {
 "opCode": 65,
@@ -532,7 +564,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [6]": {

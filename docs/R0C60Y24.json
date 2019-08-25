@@ -197,7 +197,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
@@ -218,7 +220,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -246,7 +250,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -274,7 +280,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => PickOneOf (s_8, s_9, s_9, s_9)": {
 "opCode": 34,
@@ -316,7 +324,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_0 => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
@@ -344,7 +354,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -358,7 +370,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_1": {
 "opCode": 1,
@@ -386,7 +400,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_1 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -428,7 +444,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -442,7 +460,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10:  >> WhenGivingItemToNpc (i_sage, n_vampire): set s_2": {
 "opCode": 1,
@@ -470,7 +490,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_2 => PromptYesNo (s_3, s_4, 1011)": {
 "opCode": 29,
@@ -505,7 +527,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => PlaceItemOnCharacter (i_vampreward)": {
 "opCode": 26,
@@ -533,7 +557,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_3 => PlaceItemOnCharacter (i_vampitem)": {
 "opCode": 26,
@@ -561,7 +587,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_3 => Say (1012)": {
 "opCode": 51,
@@ -575,7 +603,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_3 => MakePermanent (i_vampitem)": {
 "opCode": 54,
@@ -596,7 +626,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_3 => MakePermanent (i_vampreward)": {
 "opCode": 54,
@@ -617,7 +649,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_3 => AdjustReputationWithNpc (n_vampire, 10)": {
 "opCode": 61,
@@ -645,7 +679,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_4 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -673,7 +709,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_4 => Say (1013)": {
 "opCode": 51,
@@ -687,7 +725,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_4 => AdjustReputationWithNpc (n_vampire, -5)": {
 "opCode": 61,
@@ -715,7 +755,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21:  >> WhenTimeOfDayBetween (05:50:00, 17:30:00): set s_5": {
 "opCode": 31,
@@ -743,7 +785,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_6 => TriggerOnMobHurtByPlayer (m_vampires)": {
 "opCode": 21,
@@ -764,7 +808,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => ShowLocationOnMap (l_0001bb58, 11, 484567)": {
 "opCode": 27,
@@ -799,7 +845,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24:  >> When (s_8 and s_6): set s_10": {
 "opCode": 52,
@@ -841,7 +889,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_10 >> WhenItemIsUsed (i_map): set s_7": {
 "opCode": 57,
@@ -869,7 +919,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_10 => PlaceItemOnMob (i_map, m_vampires)": {
 "opCode": 39,
@@ -897,7 +949,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_11 => TriggerOnMobHurtByPlayer (m_vampleader)": {
 "opCode": 21,
@@ -918,7 +972,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_11 >> WhenItemIsUsed (i_note): set s_12": {
 "opCode": 57,
@@ -946,7 +1002,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_11 => PlaceItemOnMob (i_note, m_vampleader)": {
 "opCode": 39,
@@ -974,7 +1032,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30: s_12 => AddTopics (l_vamphouse)": {
 "opCode": 10,
@@ -1009,7 +1069,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: s_12 => PlaceNpcAt (n_vampire, l_vamphouse)": {
 "opCode": 30,
@@ -1037,7 +1099,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_12 => EnsureNpcLocation (l_vamphouse)": {
 "opCode": 81,
@@ -1065,7 +1129,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "33:  >> When (! s_5 and ! s_3): set s_13": {
 "opCode": 52,
@@ -1107,7 +1173,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "34: s_13 => CreateFoe(m_vampires, 10, 25%, 25)": {
 "opCode": 9,
@@ -1149,7 +1217,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "35: s_13 => CreateFoe(m_vampleader, 20, 100%, 100)": {
 "opCode": 9,
@@ -1191,7 +1261,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [14]": {

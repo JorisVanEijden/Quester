@@ -110,7 +110,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 1:  => RemoveTopics (n_child)": {
 "opCode": 11,
@@ -145,7 +147,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 2:  => PlaceNpcAt (n_child, l_dbguild)": {
 "opCode": 30,
@@ -173,9 +177,11 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
-" 3:  >> WhenAtLocation (l_dbguild): set s_1": {
+" 3:  >> WhenAtLocation (l_dbguild): set s_1 [Msg 1011]": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -201,7 +207,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 12
 },
 " 4:  => CreateLogEntry (1012, 0)": {
 "opCode": 23,
@@ -229,7 +237,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 5: s_6 => TriggerOnMobHurtByPlayer (m_darkb)": {
 "opCode": 21,
@@ -250,7 +260,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 6: s_6 => Say (1020)": {
 "opCode": 51,
@@ -264,7 +276,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 12
 },
 " 7: s_2 => TriggerOnClickNpc (n_child) [Msg 1010]": {
 "opCode": 28,
@@ -285,7 +299,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1010
+"messageId": 1010,
+"flags": 0,
+"lastUpdate": 12
 },
 " 8: s_2 => StartNpcEscort (n_child)": {
 "opCode": 55,
@@ -306,7 +322,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 9: s_2 => HideNpc (n_child)": {
 "opCode": 46,
@@ -327,7 +345,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "10: s_3 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -348,7 +368,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "11:  >> When (s_3 and s_2): set s_4": {
 "opCode": 52,
@@ -390,7 +412,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "12:  >> When (s_3 and ! s_2): set s_5": {
 "opCode": 52,
@@ -432,7 +456,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "13: s_5 => Unset (s_3, s_5)": {
 "opCode": 7,
@@ -474,7 +500,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "14: s_4 => QuestSuccess (i_money)": {
 "opCode": 4,
@@ -516,7 +544,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "15: s_4 => AdjustReputationWithNpc (n_dummydarkb, -15)": {
 "opCode": 61,
@@ -544,7 +574,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "16: s_1 => CreateFoe(m_darkb, 2, 30%, 30)": {
 "opCode": 9,
@@ -586,7 +618,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "17: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -600,7 +634,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "18: s_4 => EndQuest ()": {
 "opCode": 6,
@@ -614,7 +650,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 }
 }
 ,"states: [7]": {

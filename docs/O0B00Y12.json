@@ -139,7 +139,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 1:  >> WhenTimerExpires (t_0000060a): set s_1": {
 "opCode": 12,
@@ -160,7 +162,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 2:  => CreateLogEntry (1020, 0)": {
 "opCode": 23,
@@ -188,7 +192,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 3:  => EnsureNpcLocation (n_contact1)": {
 "opCode": 81,
@@ -216,7 +222,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 4:  => PlaceItemOnCharacter (i_drugs)": {
 "opCode": 26,
@@ -244,7 +252,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 5: s_1 => HideNpc (n_contact1)": {
 "opCode": 46,
@@ -265,7 +275,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 6: s_1 => PlaceItemOnPlayer (i_note) [Msg 1031]": {
 "opCode": 76,
@@ -286,7 +298,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1031
+"messageId": 1031,
+"flags": 0,
+"lastUpdate": 12
 },
 " 7: s_1 => EnsureNpcLocation (n_contact2)": {
 "opCode": 81,
@@ -314,7 +328,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 8: s_1 => CreateFoe(m_enemy, 10, 10%, 10)": {
 "opCode": 9,
@@ -356,7 +372,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 " 9: s_6 => TriggerOnMobHurtByPlayer (m_enemy)": {
 "opCode": 21,
@@ -377,7 +395,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "10: s_6 => Say (1035)": {
 "opCode": 51,
@@ -391,7 +411,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1035
+"messageId": 1035,
+"flags": 0,
+"lastUpdate": 12
 },
 "11: s_1 >> WhenItemIsUsed (i_note): set s_2": {
 "opCode": 57,
@@ -419,7 +441,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "12: s_2 => CreateLogEntry (1021, 1)": {
 "opCode": 23,
@@ -447,7 +471,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "13:  >> WhenGivingItemToNpc (i_drugs, n_contact1): set s_4": {
 "opCode": 1,
@@ -475,7 +501,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "14:  >> WhenGivingItemToNpc (i_drugs, n_contact2): set s_4": {
 "opCode": 1,
@@ -503,7 +531,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "15: s_4 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -545,7 +575,9 @@
 "unknown1": "25886720"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "16:  >> WhenTimerExpires (t_delay): set s_2": {
 "opCode": 12,
@@ -566,7 +598,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "17: s_5 => EndQuest ()": {
 "opCode": 6,
@@ -580,7 +614,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 },
 "18: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -594,7 +630,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 12
 }
 }
 ,"states: [7]": {

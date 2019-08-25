@@ -63,7 +63,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -91,7 +93,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2: s_1 => TriggerOnClickNpc (n_00001a11)": {
 "opCode": 28,
@@ -112,7 +116,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  >> When (s_1 and s_0): set s_2": {
 "opCode": 52,
@@ -154,7 +160,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4: s_2 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
@@ -182,7 +190,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_2 => PlaceItemOnCharacter (i_spider)": {
 "opCode": 26,
@@ -210,7 +220,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_2 => Say (1002)": {
 "opCode": 51,
@@ -224,7 +236,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1002
+"messageId": 1002,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> When (! s_0 and s_1): set s_3": {
 "opCode": 52,
@@ -266,7 +280,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_3 => Say (1001)": {
 "opCode": 51,
@@ -280,7 +296,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1001
+"messageId": 1001,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_3 => Unset (s_1, s_3)": {
 "opCode": 7,
@@ -322,7 +340,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_4 >> WhenPlayerHasItems (i_spider): set s_5": {
 "opCode": 70,
@@ -364,7 +384,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_5 => StartQuest (15, 15)": {
 "opCode": 8,
@@ -392,7 +414,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_5 => GiveItemToPlayer (i_spider)": {
 "opCode": 36,
@@ -413,7 +437,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_5 => PlayMovie (5)": {
 "opCode": 50,
@@ -434,7 +460,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_5 => EndQuest ()": {
 "opCode": 6,
@@ -448,7 +476,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> When (s_4 and ! s_5): set s_6": {
 "opCode": 52,
@@ -490,7 +520,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_6 => Unset (s_4, s_6)": {
 "opCode": 7,
@@ -532,7 +564,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [7]": {

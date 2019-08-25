@@ -155,7 +155,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 1:  >> WhenTimerExpires (t_0000d533): set s_0": {
 "opCode": 12,
@@ -176,7 +178,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 2:  => RemoveTopics (n_sage, i_finger)": {
 "opCode": 11,
@@ -211,7 +215,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 3:  => CycleNextState (s_3)": {
 "opCode": 35,
@@ -253,7 +259,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 4:  => PlaceMobAtLocation (m_realmummy, l_dungeon)": {
 "opCode": 22,
@@ -281,7 +289,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 5:  => PlaceItemOnCharacter (i_gold1)": {
 "opCode": 26,
@@ -309,7 +319,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 6:  => PlaceItemOnCharacter (i_letter)": {
 "opCode": 26,
@@ -337,7 +349,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 7:  => PlaceItemOnCharacter (i_finger)": {
 "opCode": 26,
@@ -365,7 +379,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 " 8:  => Say (1045)": {
 "opCode": 51,
@@ -379,7 +395,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1045
+"messageId": 1045,
+"flags": 0,
+"lastUpdate": 215
 },
 " 9:  => DeleteNpc (n_giver)": {
 "opCode": 44,
@@ -400,7 +418,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "10:  >> WhenItemIsUsed (i_letter): set s_11": {
 "opCode": 57,
@@ -428,7 +448,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "11: s_11 => AddTopics (i_finger)": {
 "opCode": 10,
@@ -463,7 +485,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "12: s_11 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
@@ -491,7 +515,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "13:  >> WhenTimeOfDayBetween (00:00:00, 01:00:00): set s_1": {
 "opCode": 31,
@@ -519,7 +545,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "14: s_1 => CreateFoe(m_0003843f, 35, 100%, 100)": {
 "opCode": 9,
@@ -561,7 +589,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "15: s_2 => TriggerOnMobHurtByPlayer (m_0003843f) [Msg 1016]": {
 "opCode": 21,
@@ -582,7 +612,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1016
+"messageId": 1016,
+"flags": 0,
+"lastUpdate": 215
 },
 "16:  => Unset (s_2)": {
 "opCode": 7,
@@ -624,7 +656,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "17: s_4 => TriggerOnClickNpc (n_sage)": {
 "opCode": 28,
@@ -645,7 +679,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "18: s_4 >> WhenPlayerHasItems (i_finger): set s_7": {
 "opCode": 70,
@@ -687,7 +723,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "19:  >> When (s_4 and ! s_7): set s_8": {
 "opCode": 52,
@@ -729,7 +767,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "20:  >> When (s_4 and s_7): set s_6": {
 "opCode": 52,
@@ -771,7 +811,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "21: s_6 => Say (1025)": {
 "opCode": 51,
@@ -785,7 +827,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1025
+"messageId": 1025,
+"flags": 0,
+"lastUpdate": 215
 },
 "22: s_8 => Say (1026)": {
 "opCode": 51,
@@ -799,7 +843,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1026
+"messageId": 1026,
+"flags": 0,
+"lastUpdate": 215
 },
 "23: s_6 => CreateLogEntry (1012, 2)": {
 "opCode": 23,
@@ -827,7 +873,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "24: s_6 => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
@@ -848,7 +896,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "25:  => Unset (s_6, s_8, s_4, s_7)": {
 "opCode": 7,
@@ -890,7 +940,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "26: s_9 => TriggerOnMobHurtByPlayer (m_realmummy)": {
 "opCode": 21,
@@ -911,7 +963,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "27: s_9 => Say (1020)": {
 "opCode": 51,
@@ -925,7 +979,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 215
 },
 "28: s_5 => TriggerOnMobKills (m_realmummy, 1)": {
 "opCode": 2,
@@ -953,7 +1009,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "29: s_5 => Say (1030)": {
 "opCode": 51,
@@ -967,7 +1025,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 215
 },
 "30: s_5 => MakePermanent (i_gold1)": {
 "opCode": 54,
@@ -988,7 +1048,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "31: s_10 => MakePermanent (i_gold1)": {
 "opCode": 54,
@@ -1009,7 +1071,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "32: s_10 => EndQuest ()": {
 "opCode": 6,
@@ -1023,7 +1087,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 },
 "33: s_5 => EndQuest ()": {
 "opCode": 6,
@@ -1037,7 +1103,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 215
 }
 }
 ,"states: [12]": {

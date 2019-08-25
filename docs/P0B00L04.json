@@ -98,7 +98,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 1:  => RemoveTopics (l_mondung, n_vamp)": {
 "opCode": 11,
@@ -133,7 +135,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 2:  => PlaceItemOnPlayer (i_letter) [Msg 1011]": {
 "opCode": 76,
@@ -154,7 +158,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 54
 },
 " 3:  >> WhenPlayerHasItems (i_letter): set s_8": {
 "opCode": 70,
@@ -196,7 +202,9 @@
 "unknown1": "18612224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 4:  >> WhenItemIsUsed (i_letter): set s_6": {
 "opCode": 57,
@@ -224,7 +232,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 5: s_6 => AddTopics (n_vamp)": {
 "opCode": 10,
@@ -259,7 +269,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 6:  => PlaceMobAtLocation (m_vampire, l_mondung)": {
 "opCode": 22,
@@ -287,7 +299,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 7: s_6 => CreateLogEntry (1012, 0)": {
 "opCode": 23,
@@ -315,7 +329,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 8: s_0 => TriggerOnClickNpc (n_vamp)": {
 "opCode": 28,
@@ -336,7 +352,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 " 9:  >> When (s_0): set s_7": {
 "opCode": 52,
@@ -378,7 +396,9 @@
 "unknown1": "18612224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "10: s_7 => Say (1013)": {
 "opCode": 51,
@@ -392,7 +412,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 54
 },
 "11: s_7 => CreateLogEntry (1014, 1)": {
 "opCode": 23,
@@ -420,7 +442,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "12: s_7 => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -441,7 +465,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "13: ! s_1 => Unset (s_0)": {
 "opCode": 7,
@@ -483,7 +509,9 @@
 "unknown1": "18612224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "14: s_3 => TriggerOnMobHurtByPlayer (m_vampire)": {
 "opCode": 21,
@@ -504,7 +532,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "15: s_3 => Say (1015)": {
 "opCode": 51,
@@ -518,7 +548,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 54
 },
 "16: s_1 => TriggerOnMobKills (m_vampire, 1)": {
 "opCode": 2,
@@ -546,7 +578,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "17: s_1 => Say (1016)": {
 "opCode": 51,
@@ -560,7 +594,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1016
+"messageId": 1016,
+"flags": 0,
+"lastUpdate": 54
 },
 "18:  >> When (s_0 and s_1): set s_4": {
 "opCode": 52,
@@ -602,7 +638,9 @@
 "unknown1": "18612224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "19: s_4 => QuestSuccess ()": {
 "opCode": 4,
@@ -644,7 +682,9 @@
 "unknown1": "18612224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "20: s_4 => EndQuest ()": {
 "opCode": 6,
@@ -658,7 +698,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 },
 "21: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -672,7 +714,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 54
 }
 }
 ,"states: [9]": {

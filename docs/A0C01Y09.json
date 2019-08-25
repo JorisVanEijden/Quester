@@ -139,7 +139,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> WhenTimerExpires (t_shortdelay): set s_1": {
 "opCode": 12,
@@ -160,7 +162,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => EnsureNpcLocation (n_sister)": {
 "opCode": 81,
@@ -188,7 +192,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => PlaceNpcAt (n_merchant, l_store)": {
 "opCode": 30,
@@ -216,7 +222,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => CreateLogEntry (1025, 0)": {
 "opCode": 23,
@@ -244,7 +252,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PickOneOf (s_1, s_2, s_1, s_2)": {
 "opCode": 34,
@@ -286,7 +296,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_4 => TakePlayerGold (s_5, 20, n_merchant)": {
 "opCode": 71,
@@ -321,7 +333,9 @@
 "unknown1": "-221773823"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: s_4 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -349,7 +363,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_4 => Say (1040)": {
 "opCode": 51,
@@ -363,7 +379,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1040
+"messageId": 1040,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_5 => Say (1041)": {
 "opCode": 51,
@@ -377,7 +395,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1041
+"messageId": 1041,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_7 => TriggerOnClickNpc (n_sister)": {
 "opCode": 28,
@@ -398,7 +418,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11:  >> When (s_7 and s_2): set s_9": {
 "opCode": 52,
@@ -440,7 +462,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12:  >> When (s_7 and s_1): set s_8": {
 "opCode": 52,
@@ -482,7 +506,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_8 => Say (1050)": {
 "opCode": 51,
@@ -496,7 +522,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1050
+"messageId": 1050,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_9 => Say (1051)": {
 "opCode": 51,
@@ -510,7 +538,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1051
+"messageId": 1051,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> WhenGivingItemToNpc (i_sage, n_sister): set s_10": {
 "opCode": 1,
@@ -538,7 +568,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_10 => PromptYesNo (s_12, s_11, 1011)": {
 "opCode": 29,
@@ -573,7 +605,9 @@
 "unknown1": "-221773823"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17:  >> When (s_1 and s_12): set s_14": {
 "opCode": 52,
@@ -615,7 +649,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18:  >> When (s_2 and s_12): set s_15": {
 "opCode": 52,
@@ -657,7 +693,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_14 => Say (1060)": {
 "opCode": 51,
@@ -671,7 +709,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1060
+"messageId": 1060,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_15 => Say (1061)": {
 "opCode": 51,
@@ -685,7 +725,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 1061
+"messageId": 1061,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_11 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -713,7 +755,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22:  >> WhenGivingItemToNpc (i_sage, n_questg): set s_6": {
 "opCode": 1,
@@ -741,7 +785,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_6 => PromptYesNo (s_13, s_11, 1013)": {
 "opCode": 29,
@@ -776,7 +822,9 @@
 "unknown1": "-221773823"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_13 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -818,7 +866,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_17 >> When (s_10): set s_6": {
 "opCode": 53,
@@ -860,7 +910,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_16 => EndQuest ()": {
 "opCode": 6,
@@ -874,7 +926,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -888,7 +942,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [18]": {

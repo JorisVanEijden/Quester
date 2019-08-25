@@ -218,7 +218,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => PlaceItemAt (i_41000001, l_mondung)": {
 "opCode": 0,
@@ -246,7 +248,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  >> WhenTimerExpires (t_qtime): set s_0": {
 "opCode": 12,
@@ -267,7 +271,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -288,7 +294,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => CreateLogEntry (1020, 0)": {
 "opCode": 23,
@@ -316,7 +324,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PlaceItemOnCharacter (i_41000000)": {
 "opCode": 26,
@@ -344,7 +354,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  => PickOneOf (s_10, s_10, s_11, s_11)": {
 "opCode": 34,
@@ -386,7 +398,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  => PlaceMobAtLocation (m_tiger, l_mondung)": {
 "opCode": 22,
@@ -414,7 +428,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8:  => EnsureNpcLocation (n_dummy)": {
 "opCode": 81,
@@ -442,7 +458,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -456,7 +474,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_1 => Say (1040)": {
 "opCode": 51,
@@ -470,7 +490,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1040
+"messageId": 1040,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_2 => TriggerOnMobHurtByPlayer (m_tiger)": {
 "opCode": 21,
@@ -491,7 +513,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_2 >> WhenItemIsUsed (i_41000000): set s_4": {
 "opCode": 57,
@@ -519,7 +543,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_3 => TriggerOnMobKills (m_tiger, 1)": {
 "opCode": 2,
@@ -547,7 +573,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_3 => Say (1030)": {
 "opCode": 51,
@@ -561,7 +589,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> When (s_4 and ! s_3): set s_5": {
 "opCode": 52,
@@ -603,7 +633,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_5 => CreateLogEntry (1021, 1)": {
 "opCode": 23,
@@ -631,7 +663,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_5 => Say (1041)": {
 "opCode": 51,
@@ -645,7 +679,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1041
+"messageId": 1041,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_5 => PlaceMobAtLocation (m_tiger, l_qgenemy)": {
 "opCode": 22,
@@ -673,7 +709,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19:  => Unset (s_1, s_4)": {
 "opCode": 7,
@@ -715,7 +753,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => TriggerOnClickNpc (n_dummy)": {
 "opCode": 28,
@@ -736,7 +776,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21:  >> When (s_6 and s_5): set s_7": {
 "opCode": 52,
@@ -778,7 +820,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -820,7 +864,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23:  >> WhenTimerExpires (t_delay): set s_1": {
 "opCode": 12,
@@ -841,7 +887,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24:  >> When (s_6 and s_3): set s_8": {
 "opCode": 52,
@@ -883,7 +931,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_8 => Say (1050)": {
 "opCode": 51,
@@ -897,7 +947,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1050
+"messageId": 1050,
+"flags": 0,
+"lastUpdate": 0
 },
 "26:  => Unset (s_6)": {
 "opCode": 7,
@@ -939,7 +991,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_10 >> WhenItemIsUsed (i_letter): set s_13": {
 "opCode": 57,
@@ -967,7 +1021,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_10 => PlaceItemAt (i_letter, l_mondung)": {
 "opCode": 0,
@@ -995,7 +1051,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_10 => EnsureNpcLocation (l_lovehouse)": {
 "opCode": 81,
@@ -1023,7 +1081,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30: s_10 => PlaceNpcAt (n_love, l_lovehouse)": {
 "opCode": 30,
@@ -1051,7 +1111,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31:  >> WhenGivingItemToNpc (i_letter, n_love): set s_12": {
 "opCode": 1,
@@ -1079,7 +1141,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_12 => PlaceItemOnCharacter (i_magic)": {
 "opCode": 26,
@@ -1107,7 +1171,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "33: s_12 => Say (1061)": {
 "opCode": 51,
@@ -1121,7 +1187,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1061
+"messageId": 1061,
+"flags": 0,
+"lastUpdate": 0
 },
 "34: s_12 => MakePermanent (i_magic)": {
 "opCode": 54,
@@ -1142,7 +1210,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "35: s_13 => AddTopics (l_lovehouse, n_love)": {
 "opCode": 10,
@@ -1177,7 +1247,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "36: s_14 => EndQuest ()": {
 "opCode": 6,
@@ -1191,7 +1263,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "37: ! s_2 >> WhenItemIsUsed (i_41000000): set s_1": {
 "opCode": 57,
@@ -1219,7 +1293,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [15]": {

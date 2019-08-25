@@ -110,7 +110,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -138,7 +140,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => EnsureNpcLocation (l_castle)": {
 "opCode": 81,
@@ -166,7 +170,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  >> WhenAtLocation (l_castle): set s_5": {
 "opCode": 43,
@@ -194,7 +200,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => DoneWithMob (m_44000000, _)": {
 "opCode": 68,
@@ -222,7 +230,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PlaceMobAtLocation (m_44000000, l_castle)": {
 "opCode": 22,
@@ -250,7 +260,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -264,7 +276,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> When (s_4 and s_3): set s_1": {
 "opCode": 52,
@@ -306,7 +320,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_1 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -348,7 +364,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_1 => AdjustReputationWithNpc (n_witch, -5)": {
 "opCode": 61,
@@ -376,7 +394,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -390,7 +410,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11:  >> When (s_4 and ! s_3): set s_2": {
 "opCode": 52,
@@ -432,7 +454,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_2 => Unset (s_4, s_2)": {
 "opCode": 7,
@@ -474,7 +498,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_3 => Say (1011)": {
 "opCode": 51,
@@ -488,7 +514,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -509,7 +537,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_5 >> WhenPlayerCasts (51): set s_3": {
 "opCode": 73,
@@ -537,7 +567,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [6]": {

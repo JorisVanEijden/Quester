@@ -1,0 +1,25 @@
+namespace Quester
+{
+    internal struct Location
+    {
+        public byte Flags;
+        public GeneralLocation GeneralLocation;
+        public ushort FineLocation;
+        public LocationType LocationType;
+        public short DoorSelector;
+        public ushort Unknown1;
+        public string Variable;
+        public uint ObjPtr;
+        public ushort TextRecordId1;
+        public ushort TextRecordId2;
+        public short Index;
+        public short LocationTypeRaw;
+        public NamedPlace KnownLocation;
+
+        public override string ToString()
+        {
+            var name = LocationType == LocationType.SpecificLocation ? KnownLocation.ToString() : LocationType.ToString();
+            return $"{Variable}: {GeneralLocation} {name}";
+        }
+    }
+}

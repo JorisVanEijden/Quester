@@ -168,7 +168,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
@@ -189,7 +191,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -217,7 +221,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -245,7 +251,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => PickOneOf (s_10, s_11, s_11, s_11)": {
 "opCode": 34,
@@ -287,7 +295,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => EnsureNpcLocation (n_contact)": {
 "opCode": 81,
@@ -315,7 +325,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  => EnsureNpcLocation (n_oblivion)": {
 "opCode": 81,
@@ -343,7 +355,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> WhenItemIsUsed (i_map): set s_9": {
 "opCode": 57,
@@ -371,7 +385,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_2 => MakePermanent (i_sage)": {
 "opCode": 54,
@@ -392,7 +408,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
@@ -420,7 +438,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -434,7 +454,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_3": {
 "opCode": 1,
@@ -462,7 +484,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -504,7 +528,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_3 => EndQuest ()": {
 "opCode": 6,
@@ -518,7 +544,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 => Say (1012)": {
 "opCode": 51,
@@ -532,7 +560,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_4 => AdjustReputationWithNpc (n_oblivion, 20)": {
 "opCode": 61,
@@ -560,7 +590,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16:  >> WhenGivingItemToNpc (i_sage, n_oblivion): set s_5": {
 "opCode": 1,
@@ -588,7 +620,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_5 => PromptYesNo (s_4, s_6, 1011)": {
 "opCode": 29,
@@ -623,7 +657,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_6 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -651,7 +687,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => Say (1025)": {
 "opCode": 51,
@@ -665,7 +703,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1025
+"messageId": 1025,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => AdjustReputationWithNpc (n_oblivion, -10)": {
 "opCode": 61,
@@ -693,7 +733,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_7 => TriggerOnMobKills (m_seducer, 1)": {
 "opCode": 2,
@@ -721,7 +763,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => AddTopics (n_oblivion)": {
 "opCode": 10,
@@ -756,7 +800,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => Say (1020)": {
 "opCode": 51,
@@ -770,7 +816,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_8 => TriggerOnMobHurtByPlayer (m_seducer)": {
 "opCode": 21,
@@ -791,7 +839,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_9 => ShowLocationOnMap (l_skeffingcoven, 38, 5531)": {
 "opCode": 27,
@@ -826,7 +876,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26:  >> When (s_10 and s_8): set s_12": {
 "opCode": 52,
@@ -868,7 +920,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_12 => PlaceItemOnMob (i_map, m_seducer)": {
 "opCode": 39,
@@ -896,7 +950,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: ! s_4 => CreateFoe(m_firedaedra, 6, 25%, 25)": {
 "opCode": 9,
@@ -938,7 +994,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: ! s_4 => CreateFoe(m_frostdaedra, 4, 17%, 17)": {
 "opCode": 9,
@@ -980,7 +1038,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30: ! s_4 => CreateFoe(m_lesserdaedra, 3, 12%, 12)": {
 "opCode": 9,
@@ -1022,7 +1082,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: ! s_4 => CreateFoe(m_seducer, 12, 50%, 50)": {
 "opCode": 9,
@@ -1064,7 +1126,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [13]": {

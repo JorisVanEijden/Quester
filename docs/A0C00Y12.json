@@ -179,7 +179,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => RemoveTopics (l_imp)": {
 "opCode": 11,
@@ -214,7 +216,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => RemoveTopics (l_store, n_thief)": {
 "opCode": 11,
@@ -249,7 +253,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  >> WhenTimerExpires (t_40000001): set s_0": {
 "opCode": 12,
@@ -270,7 +276,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -298,7 +306,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PlaceNpcAt (n_informant, l_0001a9a9)": {
 "opCode": 30,
@@ -326,7 +336,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -340,7 +352,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> WhenTimeOfDayBetween (00:00:00, 08:00:00): set s_2": {
 "opCode": 31,
@@ -368,7 +382,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_2 >> WhenAtLocation (l_house): set s_9": {
 "opCode": 43,
@@ -396,7 +412,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_2 => PlaceNpcAt (n_thief, l_house)": {
 "opCode": 30,
@@ -424,7 +442,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10:  >> WhenTimeOfDayBetween (16:02:00, 23:59:00): set s_3": {
 "opCode": 31,
@@ -452,7 +472,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_3 >> WhenAtLocation (l_imp): set s_10": {
 "opCode": 43,
@@ -480,7 +502,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => PlaceNpcAt (n_thief, l_imp)": {
 "opCode": 30,
@@ -508,7 +532,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13:  >> WhenTimeOfDayBetween (08:01:00, 16:01:00): set s_4": {
 "opCode": 31,
@@ -536,7 +562,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 >> WhenAtLocation (l_store): set s_11": {
 "opCode": 43,
@@ -564,7 +592,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_4 => PlaceNpcAt (n_thief, l_store)": {
 "opCode": 30,
@@ -592,7 +622,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_5 => TriggerOnClickNpc (n_informant) [Msg 1025]": {
 "opCode": 28,
@@ -613,7 +645,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1025
+"messageId": 1025,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_5 => CreateLogEntry (1035, 1)": {
 "opCode": 23,
@@ -641,7 +675,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18:  >> WhenGivingItemToNpc (i_book, n_giver): set s_6": {
 "opCode": 1,
@@ -669,7 +705,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -711,7 +749,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => EndQuest ()": {
 "opCode": 6,
@@ -725,7 +765,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_8 => TriggerOnMobHurtByPlayer (m_thiefhome1)": {
 "opCode": 21,
@@ -746,7 +788,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_8 => PlaceItemOnMob (i_book, m_thiefhome1)": {
 "opCode": 39,
@@ -774,7 +818,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_8 => Say (1030)": {
 "opCode": 51,
@@ -788,7 +834,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_9 => HideNpc (n_thief)": {
 "opCode": 46,
@@ -809,7 +857,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_9 => PlaceMobAtLocation (m_thiefhome1, l_house)": {
 "opCode": 22,
@@ -837,7 +887,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_10 => HideNpc (n_thief)": {
 "opCode": 46,
@@ -858,7 +910,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_10 => PlaceMobAtLocation (m_thiefhome1, l_imp)": {
 "opCode": 22,
@@ -886,7 +940,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_11 => HideNpc (n_thief)": {
 "opCode": 46,
@@ -907,7 +963,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_11 => PlaceMobAtLocation (m_thiefhome1, l_store)": {
 "opCode": 22,
@@ -935,7 +993,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [12]": {

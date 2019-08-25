@@ -196,7 +196,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> When (s_1 and s_3): set s_0": {
 "opCode": 52,
@@ -238,7 +240,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2: s_0 => QuestSuccess (i_jewelry)": {
 "opCode": 4,
@@ -280,7 +284,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3: s_0 => CycleNextState (s_7)": {
 "opCode": 35,
@@ -322,7 +328,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4: s_0 => AdjustReputationWithNpc (n_000034a9, 10)": {
 "opCode": 61,
@@ -350,7 +358,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_0 => UnsetQuestor (n_000034a9)": {
 "opCode": 86,
@@ -371,7 +381,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_1 => TriggerOnClickNpc (n_000034a9)": {
 "opCode": 28,
@@ -392,9 +404,11 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-" 7:  >> WhenGivingItemToNpc (i_41000000, n_00019714): set s_3": {
+" 7:  >> WhenGivingItemToNpc (i_41000000, n_00019714): set s_3 [Msg 1022]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -420,7 +434,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1022
+"messageId": 1022,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_3 >> WhenAtLocation (l_casfort): set s_12": {
 "opCode": 43,
@@ -448,7 +464,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9:  >> WhenTimerExpires (t_40000004): set s_0": {
 "opCode": 12,
@@ -469,7 +487,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_3 => PlaceItemAt (i_41000004, l_casfort)": {
 "opCode": 0,
@@ -497,7 +517,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_3 => HideNpc (n_00019714)": {
 "opCode": 46,
@@ -518,7 +540,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_4 => CreateFoe(m_44000002, 53, 15%, 15)": {
 "opCode": 9,
@@ -560,7 +584,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13:  >> When (s_15 and s_2): set s_5": {
 "opCode": 52,
@@ -602,7 +628,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_5 => UnsetQuestor (n_000034a9)": {
 "opCode": 86,
@@ -623,7 +651,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_5 => EndQuest ()": {
 "opCode": 6,
@@ -637,7 +667,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_7 => EndQuest ()": {
 "opCode": 6,
@@ -651,7 +683,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_8 >> WhenItemIsUsed (i_41000000): set s_2": {
 "opCode": 57,
@@ -679,7 +713,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18:  >> WhenTimerExpires (t_queston): set s_1": {
 "opCode": 12,
@@ -700,7 +736,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_8 => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -728,7 +766,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_8 => PlaceItemOnCharacter (i_41000000)": {
 "opCode": 26,
@@ -756,7 +796,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_8 => Say (1002)": {
 "opCode": 51,
@@ -770,7 +812,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1002
+"messageId": 1002,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_8 => SetQuestor (n_000034a9)": {
 "opCode": 85,
@@ -791,7 +835,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_8 => PlaceNpcAt (n_00019714, l_casfort)": {
 "opCode": 30,
@@ -819,7 +865,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_8 => EnsureNpcLocation (l_casfort)": {
 "opCode": 81,
@@ -847,7 +895,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_9 => Say (1001)": {
 "opCode": 51,
@@ -861,7 +911,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1001
+"messageId": 1001,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_9 => EndQuest ()": {
 "opCode": 6,
@@ -875,7 +927,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_10 => TriggerOnMobHurtByPlayer (m_44000003) [Msg 1020]": {
 "opCode": 21,
@@ -896,7 +950,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_10 => TriggerOnMobHurtByPlayer (m_44000004)": {
 "opCode": 21,
@@ -917,7 +973,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_10 => Say (1020)": {
 "opCode": 51,
@@ -931,7 +989,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 "30:  >> When (s_1 and ! s_3): set s_11": {
 "opCode": 52,
@@ -973,7 +1033,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: s_11 => Unset (s_1, s_11)": {
 "opCode": 7,
@@ -1015,7 +1077,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_12 => CreateFoe(m_44000001, 2, 50%, 50)": {
 "opCode": 9,
@@ -1057,7 +1121,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "33: s_13 => TriggerOnMobHurtByPlayer (m_44000000)": {
 "opCode": 21,
@@ -1078,7 +1144,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "34: s_13 => TriggerOnMobHurtByPlayer (m_44000005)": {
 "opCode": 21,
@@ -1099,7 +1167,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "35: s_13 => Say (1023)": {
 "opCode": 51,
@@ -1113,7 +1183,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1023
+"messageId": 1023,
+"flags": 0,
+"lastUpdate": 0
 },
 "36: s_13 => DoneWithMob (m_44000000, _)": {
 "opCode": 68,
@@ -1141,7 +1213,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "37: s_14 => TriggerOnMobHurtByPlayer (m_44000001) [Msg 1021]": {
 "opCode": 21,
@@ -1162,7 +1236,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 0
 },
 "38: s_14 => TriggerOnMobHurtByPlayer (m_44000002) [Msg 1021]": {
 "opCode": 21,
@@ -1183,7 +1259,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 0
 },
 "39: s_15 => TriggerOnMobKills (m_44000003, 3)": {
 "opCode": 2,
@@ -1211,7 +1289,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "40:  >> When (! s_17 and s_2): set s_18": {
 "opCode": 52,
@@ -1253,7 +1333,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "41: s_18 => CreateFoe(m_44000003, 1, 20%, 20)": {
 "opCode": 9,
@@ -1295,7 +1377,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "42:  >> When (s_17 and s_2): set s_19": {
 "opCode": 52,
@@ -1337,7 +1421,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "43: s_19 => CreateFoe(m_44000004, 1, 20%, 20)": {
 "opCode": 9,
@@ -1379,7 +1465,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "44:  >> When (! s_17 and s_12): set s_20": {
 "opCode": 52,
@@ -1421,7 +1509,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "45: s_20 => CreateFoe(m_44000000, 1, 50%, 50)": {
 "opCode": 9,
@@ -1463,7 +1553,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "46:  >> When (s_17 and s_12): set s_21": {
 "opCode": 52,
@@ -1505,7 +1597,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "47: s_21 => CreateFoe(m_44000005, 1, 100%, 100)": {
 "opCode": 9,
@@ -1547,7 +1641,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [22]": {

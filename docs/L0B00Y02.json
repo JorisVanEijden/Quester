@@ -109,7 +109,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -137,7 +139,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 2:  => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -158,7 +162,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 3:  => PlaceMobAtLocation (m_assassin, l_mondung)": {
 "opCode": 22,
@@ -186,7 +192,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 4:  => PlaceMobAtLocation (m_lady, l_stronghold)": {
 "opCode": 22,
@@ -214,7 +222,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 5:  => PlaceItemOnMob (i_letter, m_assassin)": {
 "opCode": 39,
@@ -242,7 +252,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 6: s_3 => TriggerOnMobKills (m_assassin, 1)": {
 "opCode": 2,
@@ -270,7 +282,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 7: s_3 => Say (1013)": {
 "opCode": 51,
@@ -284,7 +298,9 @@
 "unknown1": "109233938"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 6
 },
 " 8:  >> WhenItemIsUsed (i_letter): set s_5": {
 "opCode": 57,
@@ -312,7 +328,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 9: s_5 => CreateLogEntry (1012, 1)": {
 "opCode": 23,
@@ -340,7 +358,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "10: s_5 => AddLocationToMap (l_stronghold)": {
 "opCode": 19,
@@ -361,7 +381,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "11: s_4 => TriggerOnMobKills (m_lady, 1)": {
 "opCode": 2,
@@ -389,7 +411,9 @@
 "unknown1": "-955054080"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "12: s_4 => Say (1014)": {
 "opCode": 51,
@@ -403,7 +427,9 @@
 "unknown1": "109233938"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 6
 },
 "13: s_1 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -424,7 +450,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "14:  >> When (s_3 and ! s_4 and s_1): set s_6": {
 "opCode": 52,
@@ -466,7 +494,9 @@
 "unknown1": "26279936"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "15:  >> When (s_3 and s_4 and s_1): set s_7": {
 "opCode": 52,
@@ -508,7 +538,9 @@
 "unknown1": "26279936"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "16:  >> When (! s_3 and ! s_4 and s_1): set s_8": {
 "opCode": 52,
@@ -550,7 +582,9 @@
 "unknown1": "26279936"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "17: s_8 => Unset (s_1, s_8)": {
 "opCode": 7,
@@ -592,7 +626,9 @@
 "unknown1": "26279936"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "18: s_7 => QuestSuccess ()": {
 "opCode": 4,
@@ -634,7 +670,9 @@
 "unknown1": "26279936"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "19: s_6 => Say (1015)": {
 "opCode": 51,
@@ -648,7 +686,9 @@
 "unknown1": "109233938"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 6
 },
 "20: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -662,7 +702,9 @@
 "unknown1": "109233938"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "21: s_7 => EndQuest ()": {
 "opCode": 6,
@@ -676,7 +718,9 @@
 "unknown1": "109233938"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 }
 }
 ,"states: [9]": {

@@ -125,7 +125,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 1:  => RemoveTopics (n_decoy)": {
 "opCode": 11,
@@ -160,7 +162,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 2:  >> WhenTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
@@ -181,7 +185,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 3:  => PlaceNpcAt (n_thief, l_thiefplace)": {
 "opCode": 30,
@@ -209,7 +215,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 4:  >> WhenAtLocation (l_thiefplace): set s_4": {
 "opCode": 43,
@@ -237,7 +245,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 5: s_3 => TriggerOnClickNpc (n_thief)": {
 "opCode": 28,
@@ -258,7 +268,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 6: s_3 => Say (1011)": {
 "opCode": 51,
@@ -272,7 +284,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 13
 },
 " 7: s_3 => HideNpc (n_thief)": {
 "opCode": 46,
@@ -293,7 +307,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 8: s_3 => PlaceItemOnCharacter (i_religitem) [Msg 1020]": {
 "opCode": 26,
@@ -321,7 +337,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 13
 },
 " 9:  >> When (s_4 and s_3): set s_5": {
 "opCode": 52,
@@ -363,7 +381,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "10: s_5 => CreateFoe(m_burglar, 50, 2%, 2)": {
 "opCode": 9,
@@ -405,7 +425,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "11: s_5 => CreateFoe(m_rogue, 50, 3%, 3)": {
 "opCode": 9,
@@ -447,7 +469,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "12: s_2 => TriggerOnMobHurtByPlayer (m_burglar) [Msg 1012]": {
 "opCode": 21,
@@ -468,7 +492,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 13
 },
 "13: s_2 => TriggerOnMobHurtByPlayer (m_rogue) [Msg 1012]": {
 "opCode": 21,
@@ -489,7 +515,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 13
 },
 "14:  >> WhenGivingItemToNpc (i_religitem, n_qgiver): set s_1": {
 "opCode": 1,
@@ -517,7 +545,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "15: s_1 => QuestSuccess ()": {
 "opCode": 4,
@@ -559,7 +589,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "16: s_0 => MakePermanent (i_religitem)": {
 "opCode": 54,
@@ -580,7 +612,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "17: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -594,7 +628,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "18: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -608,7 +644,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 }
 }
 ,"states: [6]": {

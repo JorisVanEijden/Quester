@@ -569,22 +569,9 @@ namespace Quester
 
         public static string LookUp(uint hash)
         {
-            if (Names.TryGetValue(hash, out var name))
-                return name;
-            return $"{hash:x8}";
-        }
-
-
-        public static uint CalculateHash(string line)
-        {
-            uint val = 0;
-            foreach (var c in line)
-            {
-                val <<= 1;
-                val += c;
-            }
-
-            return val;
+            if (!Names.TryGetValue(hash, out var name))
+                name = $"{hash:x8}";
+            return name;
         }
     }
 }

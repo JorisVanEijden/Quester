@@ -161,7 +161,9 @@
 "unknown1": "662437888"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 1:  => RemoveTopics (i_spider)": {
 "opCode": 11,
@@ -196,7 +198,9 @@
 "unknown1": "662437888"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 2:  => AddLocationToMap (l_crypt)": {
 "opCode": 19,
@@ -217,7 +221,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 3:  >> WhenTimerExpires (t_00035fb2): set s_2": {
 "opCode": 12,
@@ -238,7 +244,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 4: s_5 => TriggerOnPlayerLevel (10)": {
 "opCode": 77,
@@ -259,7 +267,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 5: s_5 => CheckNpcReputation (s_4, n_00001a11, 0)": {
 "opCode": 37,
@@ -294,7 +304,9 @@
 "unknown1": "662437888"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 6:  >> When (s_6 and s_4 and s_5): set s_7": {
 "opCode": 52,
@@ -336,7 +348,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 7: ! s_7 => StopNpcConversation (n_gortwog)": {
 "opCode": 82,
@@ -357,7 +371,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 8: ! s_7 => StopNpcConversation (n_00001a11)": {
 "opCode": 82,
@@ -378,7 +394,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 9: s_7 => StartNpcEscort (n_00001a11)": {
 "opCode": 55,
@@ -399,7 +417,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "10:  >> WhenTimerExpires (t_delay): set s_0": {
 "opCode": 12,
@@ -420,7 +440,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "11: s_0 => Say (1015)": {
 "opCode": 51,
@@ -434,7 +456,9 @@
 "unknown1": "92502434"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 13
 },
 "12:  >> WhenTimerExpires (t_000018d8): set s_1": {
 "opCode": 12,
@@ -455,7 +479,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "13: s_1 => StopNpcEscort (n_00001a11)": {
 "opCode": 56,
@@ -476,7 +502,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "14: s_0 => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -504,7 +532,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "15: s_0 => ShowLocationOnMap (l_orsinium, 26, 146892)": {
 "opCode": 27,
@@ -539,7 +569,9 @@
 "unknown1": "662437888"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "16: s_2 => TriggerOnClickNpc (n_gortwog)": {
 "opCode": 28,
@@ -560,7 +592,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "17: s_2 => Say (1000)": {
 "opCode": 51,
@@ -574,7 +608,9 @@
 "unknown1": "92502434"
 }
 },
-"messageId": 1000
+"messageId": 1000,
+"flags": 0,
+"lastUpdate": 13
 },
 "18: s_2 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
@@ -602,7 +638,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "19: s_2 => PlaceMobAtLocation (m_mummy, l_crypt)": {
 "opCode": 22,
@@ -630,7 +668,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "20: s_2 => PlaceItemOnMob (i_letter, m_mummy)": {
 "opCode": 39,
@@ -658,7 +698,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "21: s_2 => PlaceItemOnMob (i_spider, m_mummy)": {
 "opCode": 39,
@@ -686,7 +728,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "22:  >> WhenGivingItemToNpc (i_spider, n_00001a11): set s_3": {
 "opCode": 1,
@@ -714,7 +758,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "23: s_3 => Say (1030)": {
 "opCode": 51,
@@ -728,7 +774,9 @@
 "unknown1": "92502434"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 13
 },
 "24: s_3 => StartQuest (22, 22)": {
 "opCode": 8,
@@ -756,7 +804,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "25: s_3 => AdjustReputationWithNpc (n_gortwog, 10)": {
 "opCode": 61,
@@ -784,7 +834,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "26: s_3 => AdjustReputationWithNpc (n_00001a11, 15)": {
 "opCode": 61,
@@ -812,7 +864,9 @@
 "unknown1": "2040727552"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "27: s_3 => EndQuest ()": {
 "opCode": 6,
@@ -826,7 +880,9 @@
 "unknown1": "92502434"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 }
 }
 ,"states: [8]": {

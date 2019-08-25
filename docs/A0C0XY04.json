@@ -205,7 +205,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
@@ -226,7 +228,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -254,7 +258,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => PlaceItemOnMob (i_ingredient, m_guardian)": {
 "opCode": 39,
@@ -282,7 +288,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => PlaceMobAtLocation (m_guardian, l_dungeon)": {
 "opCode": 22,
@@ -310,7 +318,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PlaceNpcAt (n_qgiver, l_meetingplace)": {
 "opCode": 30,
@@ -338,9 +348,11 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-" 6:  >> WhenGivingItemToNpc (i_ingredient, n_qgiver): set s_0": {
+" 6:  >> WhenGivingItemToNpc (i_ingredient, n_qgiver): set s_0 [Msg 1013]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -366,7 +378,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: s_0 => PlaceItemOnMob (i_ingredient, m_monster)": {
 "opCode": 39,
@@ -394,7 +408,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_0 => SetMobPowerLevel (m_monster, 46)": {
 "opCode": 69,
@@ -422,7 +438,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_0 => SetMobPowerLevel (m_monster, 17)": {
 "opCode": 69,
@@ -450,7 +468,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_1 => TriggerOnMobHurtByPlayer (m_guardian)": {
 "opCode": 21,
@@ -471,7 +491,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_1 => PromptYesNo (s_2, s_3, 1012)": {
 "opCode": 29,
@@ -506,7 +528,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_2 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
@@ -534,7 +558,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_2 => PlaceItemOnCharacter (i_token)": {
 "opCode": 26,
@@ -562,7 +588,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_2 => Say (1030)": {
 "opCode": 51,
@@ -576,7 +604,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_2 => DoneWithMob (m_guardian, _)": {
 "opCode": 68,
@@ -604,7 +634,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_3 => Say (1035)": {
 "opCode": 51,
@@ -618,9 +650,11 @@
 "unknown1": "0"
 }
 },
-"messageId": 1035
+"messageId": 1035,
+"flags": 0,
+"lastUpdate": 0
 },
-"17:  >> WhenGivingItemToNpc (i_token, n_qgiver): set s_5": {
+"17:  >> WhenGivingItemToNpc (i_token, n_qgiver): set s_5 [Msg 1014]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -646,7 +680,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_5 => SetMobPowerLevel (m_monster, 23)": {
 "opCode": 69,
@@ -674,7 +710,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => TriggerOnMobKills (m_monster, 1)": {
 "opCode": 2,
@@ -702,7 +740,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20:  >> WhenTimerExpires (t_extratime): set s_0": {
 "opCode": 12,
@@ -723,7 +763,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21:  >> When (s_5 and s_6): set s_7": {
 "opCode": 52,
@@ -765,7 +807,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => AdjustReputationWithNpc (n_dummymage, 25) [Msg 1015]": {
 "opCode": 61,
@@ -793,7 +837,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => AdjustReputationWithNpc (n_dummyorc, -10)": {
 "opCode": 61,
@@ -821,7 +867,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_8 => MakePermanent (i_ingredient)": {
 "opCode": 54,
@@ -842,7 +890,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_8 => EndQuest ()": {
 "opCode": 6,
@@ -856,7 +906,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_9 => MakePermanent (i_ingredient)": {
 "opCode": 54,
@@ -877,7 +929,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_9 => EndQuest ()": {
 "opCode": 6,
@@ -891,7 +945,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_10 >> When (s_5): set s_0": {
 "opCode": 53,
@@ -933,7 +989,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_10 => CreateFoe(m_orc, 1, 100%, 100)": {
 "opCode": 9,
@@ -975,7 +1033,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30: s_10 => HideNpc (n_qgiver)": {
 "opCode": 46,
@@ -996,7 +1056,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: s_10 => PlaceMobAtLocation (m_monster, l_meetingplace)": {
 "opCode": 22,
@@ -1024,7 +1086,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_11 => TriggerOnMobKills (m_guardian, 1)": {
 "opCode": 2,
@@ -1052,7 +1116,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "33:  >> When (s_2 and s_11): set s_12": {
 "opCode": 52,
@@ -1094,7 +1160,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "34: s_12 => CreateFoe(m_daedras, 1, 100%, 100)": {
 "opCode": 9,
@@ -1136,7 +1204,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "35: s_12 => GiveItemToPlayer (i_token) [Msg 1020]": {
 "opCode": 36,
@@ -1157,7 +1227,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 "36: s_12 => AdjustReputationWithNpc (n_dummydarkb, -75)": {
 "opCode": 61,
@@ -1185,7 +1257,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [13]": {

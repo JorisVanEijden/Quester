@@ -105,7 +105,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -133,7 +135,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 2:  => EnsureNpcLocation (n_contact)": {
 "opCode": 81,
@@ -161,7 +165,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 3:  => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -189,7 +195,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 4:  => CreateFoe(m_thief, 5, 25%, 25)": {
 "opCode": 9,
@@ -231,7 +239,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 5: s_6 => TriggerOnMobHurtByPlayer (m_thief)": {
 "opCode": 21,
@@ -252,7 +262,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 6: s_6 => PromptYesNo (s_4, s_5, 1020)": {
 "opCode": 29,
@@ -287,7 +299,9 @@
 "unknown1": "1997668352"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 7: s_4 >> WhenPlayerHasItems (i_sage): set s_7": {
 "opCode": 70,
@@ -329,7 +343,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 8: s_7 => DoneWithMob (m_thief, _)": {
 "opCode": 68,
@@ -357,7 +373,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 9: s_7 => PlaceItemOnMob (i_sage, m_thief) [Msg 1021]": {
 "opCode": 39,
@@ -385,7 +403,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 13
 },
 "10:  >> WhenGivingItemToNpc (i_sage, n_contact): set s_3": {
 "opCode": 1,
@@ -413,7 +433,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "11: s_3 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -455,7 +477,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "12: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
@@ -483,7 +507,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "13:  >> WhenTimerExpires (t_delay): set s_1": {
 "opCode": 12,
@@ -504,7 +530,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "14: s_9 >> When (s_8): set s_2": {
 "opCode": 53,
@@ -546,7 +574,9 @@
 "unknown1": "25493504"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "15: s_9 => MakePermanent (i_sage)": {
 "opCode": 54,
@@ -567,7 +597,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "16: s_8 => EndQuest ()": {
 "opCode": 6,
@@ -581,7 +613,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "17: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -595,7 +629,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 }
 }
 ,"states: [10]": {

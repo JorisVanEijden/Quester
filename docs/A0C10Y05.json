@@ -145,7 +145,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => Unknown17_LocationValueValue (l_betrothedhome, 100, 27000)": {
 "opCode": 17,
@@ -180,7 +182,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -208,9 +212,11 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-" 3:  >> WhenAtLocation (l_temple): set s_3": {
+" 3:  >> WhenAtLocation (l_temple): set s_3 [Msg 1015]": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -236,9 +242,11 @@
 "unknown1": "0"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
-" 4:  >> WhenAtLocation (l_betrothedhome): set s_2": {
+" 4:  >> WhenAtLocation (l_betrothedhome): set s_2 [Msg 1014]": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -264,7 +272,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => HideNpc (n_qgiver)": {
 "opCode": 46,
@@ -285,7 +295,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  => StartNpcEscort (n_qgiver)": {
 "opCode": 55,
@@ -306,7 +318,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  => PlaceNpcAt (n_priest, l_temple)": {
 "opCode": 30,
@@ -334,7 +348,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8:  => PlaceNpcAt (n_betrothed, l_betrothedhome)": {
 "opCode": 30,
@@ -362,7 +378,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_0 => Say (1020)": {
 "opCode": 51,
@@ -376,7 +394,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_0 => StopNpcEscort (n_betrothed)": {
 "opCode": 56,
@@ -397,7 +417,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_0 => StopNpcEscort (n_qgiver)": {
 "opCode": 56,
@@ -418,7 +440,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_0 => ShowNpc (n_qgiver)": {
 "opCode": 48,
@@ -439,7 +463,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -453,7 +479,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_1 => TriggerOnClickNpc (n_betrothed) [Msg 1011]": {
 "opCode": 28,
@@ -474,7 +502,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_1 => HideNpc (n_betrothed)": {
 "opCode": 46,
@@ -495,7 +525,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_1 => StartNpcEscort (n_betrothed)": {
 "opCode": 55,
@@ -516,7 +548,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_2 => CreateFoe(m_44000000, 1, 15%, 15)": {
 "opCode": 9,
@@ -558,7 +592,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_3 => CreateFoe(m_44000001, 2, 50%, 50)": {
 "opCode": 9,
@@ -600,7 +636,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_4 => TriggerOnMobHurtByPlayer (m_44000001) [Msg 1012]": {
 "opCode": 21,
@@ -621,7 +659,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_4 => TriggerOnMobHurtByPlayer (m_44000000) [Msg 1013]": {
 "opCode": 21,
@@ -642,7 +682,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_5 => TriggerOnClickNpc (n_priest)": {
 "opCode": 28,
@@ -663,7 +705,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_5 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -705,7 +749,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_5 => StopNpcEscort (n_qgiver)": {
 "opCode": 56,
@@ -726,7 +772,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_5 => StopNpcEscort (n_betrothed)": {
 "opCode": 56,
@@ -747,7 +795,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_5 => AdjustReputationWithNpc (n_ruler, -20)": {
 "opCode": 61,
@@ -775,7 +825,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_5 => PlaceNpcAt (n_qgiver, l_temple)": {
 "opCode": 30,
@@ -803,7 +855,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_5 => PlaceNpcAt (n_betrothed, l_temple)": {
 "opCode": 30,
@@ -831,7 +885,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "28:  >> When (! s_1 and s_5): set s_6": {
 "opCode": 52,
@@ -873,7 +929,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_6 => Unset (s_5, s_6)": {
 "opCode": 7,
@@ -915,7 +973,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30:  >> When (s_5 and ! s_3): set s_7": {
 "opCode": 52,
@@ -957,7 +1017,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: s_7 => ShowNpc (n_qgiver)": {
 "opCode": 48,
@@ -978,7 +1040,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_7 => EndQuest ()": {
 "opCode": 6,
@@ -992,7 +1056,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [8]": {

@@ -110,7 +110,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 1:  => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -131,7 +133,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 2:  => PickOneOf (s_5, s_6, s_7, s_8)": {
 "opCode": 34,
@@ -173,7 +177,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 3: s_5 => PlaceMobAtLocation (m_ghost, l_mondung)": {
 "opCode": 22,
@@ -201,7 +207,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 4: s_6 => PlaceMobAtLocation (m_mummy, l_mondung)": {
 "opCode": 22,
@@ -229,7 +237,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 5: s_7 => PlaceMobAtLocation (m_zombie, l_mondung)": {
 "opCode": 22,
@@ -257,7 +267,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 6: s_8 => PlaceMobAtLocation (m_wraith, l_mondung)": {
 "opCode": 22,
@@ -285,7 +297,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 7:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -313,7 +327,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 8: s_1 => TriggerOnMobKills (m_ghost, 1) [Msg 1020]": {
 "opCode": 2,
@@ -341,7 +357,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 13
 },
 " 9: s_1 => TriggerOnMobKills (m_mummy, 1) [Msg 1020]": {
 "opCode": 2,
@@ -369,7 +387,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 13
 },
 "10: s_1 => TriggerOnMobKills (m_zombie, 1) [Msg 1020]": {
 "opCode": 2,
@@ -397,7 +417,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 13
 },
 "11: s_1 => TriggerOnMobKills (m_wraith, 1) [Msg 1020]": {
 "opCode": 2,
@@ -425,7 +447,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 13
 },
 "12: s_2 => TriggerOnClickNpc (n_questgiver)": {
 "opCode": 28,
@@ -446,7 +470,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "13:  >> When (s_2 and ! s_1): set s_4": {
 "opCode": 52,
@@ -488,7 +514,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "14: s_4 => Unset (s_2, s_4)": {
 "opCode": 7,
@@ -530,7 +558,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "15:  >> When (s_2 and s_1): set s_0": {
 "opCode": 52,
@@ -572,7 +602,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "16: s_0 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -614,7 +646,9 @@
 "unknown1": "18022400"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "17: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -628,7 +662,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "18: s_3 => EndQuest ()": {
 "opCode": 6,
@@ -642,7 +678,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 }
 }
 ,"states: [9]": {

@@ -142,7 +142,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 1:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
@@ -163,7 +165,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 2:  => PlaceItemOnCharacter (i_gem)": {
 "opCode": 26,
@@ -191,7 +195,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 3:  => PlaceNpcAt (n_victim, l_mondung)": {
 "opCode": 30,
@@ -219,7 +225,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 4:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -247,7 +255,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 5:  >> WhenGivingItemToNpc (i_gem, n_kidnapper): set s_2": {
 "opCode": 1,
@@ -275,7 +285,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 6: s_2 => CheckNpcReputation (s_5, n_kidnapper, 10)": {
 "opCode": 37,
@@ -310,7 +322,9 @@
 "unknown1": "1736179712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 7:  >> When (s_2 and ! s_5): set s_6": {
 "opCode": 52,
@@ -352,7 +366,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 8: s_6 => PromptYesNo (s_3, s_4, 1011)": {
 "opCode": 29,
@@ -387,7 +403,9 @@
 "unknown1": "1736179712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 " 9: s_5 => PromptYesNo (s_7, s_4, 1012)": {
 "opCode": 29,
@@ -422,7 +440,9 @@
 "unknown1": "1736179712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "10: s_7 => Say (1018)": {
 "opCode": 51,
@@ -436,7 +456,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1018
+"messageId": 1018,
+"flags": 0,
+"lastUpdate": 6
 },
 "11: s_3 => Say (1019)": {
 "opCode": 51,
@@ -450,7 +472,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1019
+"messageId": 1019,
+"flags": 0,
+"lastUpdate": 6
 },
 "12: s_4 => Say (1013)": {
 "opCode": 51,
@@ -464,7 +488,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 6
 },
 "13: s_7 => PlaceItemOnCharacter (i_gem)": {
 "opCode": 26,
@@ -492,7 +518,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "14: s_4 => PlaceItemOnCharacter (i_gem)": {
 "opCode": 26,
@@ -520,7 +548,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "15: s_4 => HideNpc (n_kidnapper)": {
 "opCode": 46,
@@ -541,7 +571,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "16: s_4 => CreateFoe(m_thug, 1, 100%, 100)": {
 "opCode": 9,
@@ -583,7 +615,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "17: s_4 => PlaceItemOnMob (i_map, m_thug)": {
 "opCode": 39,
@@ -611,7 +645,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "18:  >> WhenItemIsUsed (i_map): set s_8": {
 "opCode": 57,
@@ -639,7 +675,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "19: s_8 => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -660,7 +698,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "20: s_9 => TriggerOnClickNpc (n_victim)": {
 "opCode": 28,
@@ -681,7 +721,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "21: s_9 => Say (1014)": {
 "opCode": 51,
@@ -695,7 +737,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 6
 },
 "22: s_9 => StartNpcEscort (n_victim)": {
 "opCode": 55,
@@ -716,7 +760,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "23: s_9 => HideNpc (n_victim)": {
 "opCode": 46,
@@ -737,7 +783,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "24:  >> WhenGivingItemToNpc (i_gem, n_qgiver): set s_11": {
 "opCode": 1,
@@ -765,7 +813,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "25:  >> When (! s_9 and s_11): set s_22": {
 "opCode": 52,
@@ -807,7 +857,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "26: s_22 => PlaceItemOnCharacter (i_gem)": {
 "opCode": 26,
@@ -835,7 +887,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "27: s_22 => Unset (s_11)": {
 "opCode": 7,
@@ -877,7 +931,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "28:  >> When (s_11 and s_9): set s_10": {
 "opCode": 52,
@@ -919,7 +975,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "29: s_10 => Say (1099)": {
 "opCode": 51,
@@ -933,7 +991,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1099
+"messageId": 1099,
+"flags": 0,
+"lastUpdate": 6
 },
 "30: s_10 => AdjustReputationWithNpc (n_qgiver, 15)": {
 "opCode": 61,
@@ -961,7 +1021,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "31: s_10 => AdjustReputationWithNpc (n_kidnapper, -10)": {
 "opCode": 61,
@@ -989,7 +1051,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "32:  >> When (s_11 and ! s_9 and s_4): set s_13": {
 "opCode": 52,
@@ -1031,7 +1095,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "33: s_13 => Say (1016)": {
 "opCode": 51,
@@ -1045,7 +1111,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1016
+"messageId": 1016,
+"flags": 0,
+"lastUpdate": 6
 },
 "34:  >> When (s_11 and ! s_9 and ! s_4): set s_12": {
 "opCode": 52,
@@ -1087,7 +1155,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "35: s_12 => PlaceItemOnCharacter (i_gem)": {
 "opCode": 26,
@@ -1115,7 +1185,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "36: s_14 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -1136,7 +1208,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "37: s_11 => Unset (s_14)": {
 "opCode": 7,
@@ -1178,7 +1252,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "38: s_14 >> WhenPlayerHasItems (i_gem): set s_15": {
 "opCode": 70,
@@ -1220,7 +1296,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "39:  >> When (s_14 and s_7): set s_17": {
 "opCode": 52,
@@ -1262,7 +1340,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "40:  >> When (s_14 and s_3): set s_17": {
 "opCode": 52,
@@ -1304,7 +1384,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "41:  >> When (s_14 and ! s_15 and s_9): set s_16": {
 "opCode": 52,
@@ -1346,7 +1428,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "42: s_18 >> When (! s_9 or ! s_3 or ! s_7): set ! s_15": {
 "opCode": 53,
@@ -1388,7 +1472,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "43: s_18 => Unset (s_14)": {
 "opCode": 7,
@@ -1430,7 +1516,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "44: s_16 => Say (1017)": {
 "opCode": 51,
@@ -1444,7 +1532,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1017
+"messageId": 1017,
+"flags": 0,
+"lastUpdate": 6
 },
 "45: s_16 => AdjustReputationWithNpc (n_qgiver, 8)": {
 "opCode": 61,
@@ -1472,7 +1562,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "46: s_17 => Say (1020)": {
 "opCode": 51,
@@ -1486,7 +1578,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 6
 },
 "47: s_23 >> When (s_16 or s_17): set s_10": {
 "opCode": 53,
@@ -1528,7 +1622,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "48: s_23 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -1570,7 +1666,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "49: s_23 => EndQuest ()": {
 "opCode": 6,
@@ -1584,7 +1682,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "50:  >> When (s_0 and s_9 and ! s_14): set s_19": {
 "opCode": 52,
@@ -1626,7 +1726,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "51: s_19 => Say (1021)": {
 "opCode": 51,
@@ -1640,7 +1742,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 6
 },
 "52: s_0 >> WhenPlayerHasItems (i_gem): set s_20": {
 "opCode": 70,
@@ -1682,7 +1786,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "53: s_20 => MakePermanent (i_gem)": {
 "opCode": 54,
@@ -1703,7 +1809,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "54:  >> When (s_0 and ! s_9 and ! s_7 and ! s_17): set s_21": {
 "opCode": 52,
@@ -1745,7 +1853,9 @@
 "unknown1": "25690112"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "55: s_21 => Say (1022)": {
 "opCode": 51,
@@ -1759,7 +1869,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": 1022
+"messageId": 1022,
+"flags": 0,
+"lastUpdate": 6
 },
 "56: s_21 => AdjustReputationWithNpc (n_qgiver, -5)": {
 "opCode": 61,
@@ -1787,7 +1899,9 @@
 "unknown1": "-1092417536"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 },
 "57: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -1801,7 +1915,9 @@
 "unknown1": "92454626"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 6
 }
 }
 ,"states: [24]": {

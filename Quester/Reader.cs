@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -10,35 +9,35 @@ namespace Quester
         {
             QbnHeader header = new QbnHeader
             {
-                questId = reader.ReadUInt16(),
-                factionId = reader.ReadUInt16(),
-                resourceId = reader.ReadUInt16(),
-                resourceFilename = reader.ReadChars(9),
-                hasDebugInfo = reader.ReadByte(),
-                itemsSectionCount = reader.ReadUInt16(),
-                section1count = reader.ReadUInt16(),
-                section2count = reader.ReadUInt16(),
+                QuestId = reader.ReadUInt16(),
+                FactionId = reader.ReadUInt16(),
+                ResourceId = reader.ReadUInt16(),
+                ResourceFilename = reader.ReadChars(9),
+                HasDebugInfo = reader.ReadByte(),
+                ItemsSectionCount = reader.ReadUInt16(),
+                Section1Count = reader.ReadUInt16(),
+                Section2Count = reader.ReadUInt16(),
                 // Section records counts
-                npcsSectionCount = reader.ReadUInt16(),
-                locationsSectionCount = reader.ReadUInt16(),
-                section5count = reader.ReadUInt16(),
-                timersSectionCount = reader.ReadUInt16(),
-                mobsSectionCount = reader.ReadUInt16(),
-                opCodesSectionCount = reader.ReadUInt16(),
-                statesSectionCount = reader.ReadUInt16(),
+                NpcsSectionCount = reader.ReadUInt16(),
+                LocationsSectionCount = reader.ReadUInt16(),
+                Section5Count = reader.ReadUInt16(),
+                TimersSectionCount = reader.ReadUInt16(),
+                MobsSectionCount = reader.ReadUInt16(),
+                OpCodesSectionCount = reader.ReadUInt16(),
+                StatesSectionCount = reader.ReadUInt16(),
                 // Section offsets
-                itemsSectionOffset = reader.ReadUInt16(),
-                section1offset = reader.ReadUInt16(),
-                section2offset = reader.ReadUInt16(),
-                npcsSectionOffset = reader.ReadUInt16(),
-                locationsSectionOffset = reader.ReadUInt16(),
-                section5offset = reader.ReadUInt16(),
-                timersSectionOffset = reader.ReadUInt16(),
-                mobsSectionOffset = reader.ReadUInt16(),
-                opCodesSectionOffset = reader.ReadUInt16(),
-                statesSectionOffset = reader.ReadUInt16(),
-                textVariableOffset = reader.ReadUInt16(),
-                null2 = reader.ReadUInt16()
+                ItemsSectionOffset = reader.ReadUInt16(),
+                Section1Offset = reader.ReadUInt16(),
+                Section2Offset = reader.ReadUInt16(),
+                NpcsSectionOffset = reader.ReadUInt16(),
+                LocationsSectionOffset = reader.ReadUInt16(),
+                Section5Offset = reader.ReadUInt16(),
+                TimersSectionOffset = reader.ReadUInt16(),
+                MobsSectionOffset = reader.ReadUInt16(),
+                OpCodesSectionOffset = reader.ReadUInt16(),
+                StatesSectionOffset = reader.ReadUInt16(),
+                TextVariableOffset = reader.ReadUInt16(),
+                Null2 = reader.ReadUInt16()
             };
 
             return header;
@@ -47,21 +46,21 @@ namespace Quester
         public static Dictionary<short, Item> ReadItemSection(BinaryReader reader, QbnHeader header)
         {
             var items = new Dictionary<short, Item>();
-            reader.BaseStream.Seek(header.itemsSectionOffset, 0);
-            for (var i = 0; i < header.itemsSectionCount; i++)
+            reader.BaseStream.Seek(header.ItemsSectionOffset, 0);
+            for (var i = 0; i < header.ItemsSectionCount; i++)
             {
                 var index = reader.ReadInt16();
 
                 items[index] = new Item
                 {
-                    index = index,
-                    rewardType = (RewardType) reader.ReadByte(),
-                    category = (ItemCategory) reader.ReadUInt16(),
-                    itemId = reader.ReadUInt16(),
-                    variable = "i_" + VariableNames.LookUp(reader.ReadUInt32()),
-                    unknown1 = reader.ReadUInt32(),
-                    textRecordId1 = reader.ReadUInt16(),
-                    textRecordId2 = reader.ReadUInt16()
+                    Index = index,
+                    RewardType = (RewardType) reader.ReadByte(),
+                    Category = (ItemCategory) reader.ReadUInt16(),
+                    ItemId = reader.ReadUInt16(),
+                    Variable = "i_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    Unknown1 = reader.ReadUInt32(),
+                    TextRecordId1 = reader.ReadUInt16(),
+                    TextRecordId2 = reader.ReadUInt16()
                 };
             }
 
@@ -71,24 +70,24 @@ namespace Quester
         public static Dictionary<short, Npc> ReadNpcSection(BinaryReader reader, QbnHeader header)
         {
             var npcs = new Dictionary<short, Npc>();
-            reader.BaseStream.Seek(header.npcsSectionOffset, 0);
-            for (var i = 0; i < header.npcsSectionCount; i++)
+            reader.BaseStream.Seek(header.NpcsSectionOffset, 0);
+            for (var i = 0; i < header.NpcsSectionCount; i++)
             {
                 var index = reader.ReadInt16();
 
                 Npc npc = new Npc
                 {
-                    index = index,
-                    gender = (Gender) reader.ReadByte(),
-                    facePictureIndex = reader.ReadByte(),
-                    factionType = reader.ReadUInt16(),
-                    factionRaw = reader.ReadUInt16(),
-                    variable = "n_" + VariableNames.LookUp(reader.ReadUInt32()),
-                    unknown1 = reader.ReadUInt32(),
-                    textRecordId1 = reader.ReadUInt16(),
-                    textRecordId2 = reader.ReadUInt16()
+                    Index = index,
+                    Gender = (Gender) reader.ReadByte(),
+                    FacePictureIndex = reader.ReadByte(),
+                    FactionType = reader.ReadUInt16(),
+                    FactionRaw = reader.ReadUInt16(),
+                    Variable = "n_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    Unknown1 = reader.ReadUInt32(),
+                    TextRecordId1 = reader.ReadUInt16(),
+                    TextRecordId2 = reader.ReadUInt16()
                 };
-                npc.faction = (FactionId) npc.factionRaw;
+                npc.Faction = (FactionId) npc.FactionRaw;
                 npcs[index] = npc;
             }
 
@@ -98,38 +97,38 @@ namespace Quester
         public static Dictionary<short, Location> ReadLocationSection(BinaryReader reader, QbnHeader header)
         {
             var locations = new Dictionary<short, Location>();
-            reader.BaseStream.Seek(header.locationsSectionOffset, 0);
-            for (var i = 0; i < header.locationsSectionCount; i++)
+            reader.BaseStream.Seek(header.LocationsSectionOffset, 0);
+            for (var i = 0; i < header.LocationsSectionCount; i++)
             {
                 var index = reader.ReadInt16();
 
                 Location location = new Location
                 {
-                    index = index,
-                    flags = reader.ReadByte(),
-                    generalLocation = (GeneralLocation) reader.ReadByte(),
-                    fineLocation = reader.ReadUInt16(),
-                    locationType = reader.ReadInt16(),
-                    doorSelector = reader.ReadInt16(),
-                    unknown1 = reader.ReadUInt16(),
-                    variable = "l_" + VariableNames.LookUp(reader.ReadUInt32()),
-                    objPtr = reader.ReadUInt32(),
-                    textRecordId1 = reader.ReadUInt16(),
-                    textRecordId2 = reader.ReadUInt16()
+                    Index = index,
+                    Flags = reader.ReadByte(),
+                    GeneralLocation = (GeneralLocation) reader.ReadByte(),
+                    FineLocation = reader.ReadUInt16(),
+                    LocationTypeRaw = reader.ReadInt16(),
+                    DoorSelector = reader.ReadInt16(),
+                    Unknown1 = reader.ReadUInt16(),
+                    Variable = "l_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    ObjPtr = reader.ReadUInt32(),
+                    TextRecordId1 = reader.ReadUInt16(),
+                    TextRecordId2 = reader.ReadUInt16()
                 };
 
-                if (location.generalLocation == GeneralLocation.Specific)
+                if (location.GeneralLocation == GeneralLocation.Specific)
                 {
                     location.LocationType = LocationType.SpecificLocation;
-                    location.knownLocation = (NamedPlace) location.fineLocation;
+                    location.KnownLocation = (NamedPlace) location.FineLocation;
                 }
                 else
                 {
-                    location.knownLocation = NamedPlace.None;
-                    if (location.fineLocation == 0)
-                        location.LocationType = (LocationType) location.locationType;
+                    location.KnownLocation = NamedPlace.None;
+                    if (location.FineLocation == 0)
+                        location.LocationType = (LocationType) location.LocationTypeRaw;
                     else
-                        location.LocationType = (LocationType) location.locationType + 500;
+                        location.LocationType = (LocationType) location.LocationTypeRaw + 500;
                 }
 
                 locations[index] = location;
@@ -141,23 +140,23 @@ namespace Quester
         public static Dictionary<short, Timer> ReadTimerSection(BinaryReader reader, QbnHeader header)
         {
             var timers = new Dictionary<short, Timer>();
-            reader.BaseStream.Seek(header.timersSectionOffset, 0);
-            for (var i = 0; i < header.timersSectionCount; i++)
+            reader.BaseStream.Seek(header.TimersSectionOffset, 0);
+            for (var i = 0; i < header.TimersSectionCount; i++)
             {
                 var index = reader.ReadInt16();
 
                 timers[index] = new Timer
                 {
-                    index = index,
-                    flags = reader.ReadUInt16(),
-                    type = (TimerType) reader.ReadByte(),
-                    minimum = reader.ReadInt32(),
-                    maximum = reader.ReadInt32(),
-                    started = reader.ReadUInt32(),
-                    duration = reader.ReadUInt32(),
-                    link1 = reader.ReadInt32(),
-                    link2 = reader.ReadInt32(),
-                    variable = "t_" + VariableNames.LookUp(reader.ReadUInt32())
+                    Index = index,
+                    Flags = reader.ReadUInt16(),
+                    Type = (TimerType) reader.ReadByte(),
+                    Minimum = reader.ReadInt32(),
+                    Maximum = reader.ReadInt32(),
+                    Started = reader.ReadUInt32(),
+                    Duration = reader.ReadUInt32(),
+                    Link1 = reader.ReadInt32(),
+                    Link2 = reader.ReadInt32(),
+                    Variable = "t_" + VariableNames.LookUp(reader.ReadUInt32())
                 };
             }
 
@@ -167,19 +166,19 @@ namespace Quester
         public static Dictionary<short, Mob> ReadMobSection(BinaryReader reader, QbnHeader header)
         {
             var mobs = new Dictionary<short, Mob>();
-            reader.BaseStream.Seek(header.mobsSectionOffset, 0);
-            for (var i = 0; i < header.mobsSectionCount; i++)
+            reader.BaseStream.Seek(header.MobsSectionOffset, 0);
+            for (var i = 0; i < header.MobsSectionCount; i++)
             {
                 short index = reader.ReadByte();
 
                 mobs[index] = new Mob
                 {
-                    index = index,
-                    null1 = reader.ReadUInt16(),
-                    type = (MobType) reader.ReadByte(),
-                    count = reader.ReadUInt16(),
-                    variable = "m_" + VariableNames.LookUp(reader.ReadUInt32()),
-                    null2 = reader.ReadUInt32()
+                    Index = index,
+                    Null1 = reader.ReadUInt16(),
+                    Type = (MobType) reader.ReadByte(),
+                    Count = reader.ReadUInt16(),
+                    Variable = "m_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    Null2 = reader.ReadUInt32()
                 };
             }
 
@@ -189,16 +188,17 @@ namespace Quester
         public static List<OpCode> ReadOpCodeSection(BinaryReader reader, QbnHeader header)
         {
             var opCodes = new List<OpCode>();
-            reader.BaseStream.Seek(header.opCodesSectionOffset, 0);
-            for (var i = 0; i < header.opCodesSectionCount; i++)
+            reader.BaseStream.Seek(header.OpCodesSectionOffset, 0);
+            for (var i = 0; i < header.OpCodesSectionCount; i++)
             {
+                // ReSharper disable once UseObjectOrCollectionInitializer
                 OpCode opCode = new OpCode();
-                opCode.code = (Instruction) reader.ReadInt16();
-                opCode.flags = reader.ReadInt16();
-                opCode.argCount = reader.ReadInt16();
-                opCode.arguments = ReadArguments(reader, opCode.argCount);
-                opCode.messageId = reader.ReadInt16();
-                opCode.lastUpdate = reader.ReadUInt32();
+                opCode.Code = (Instruction) reader.ReadInt16();
+                opCode.Flags = reader.ReadInt16();
+                opCode.ArgCount = reader.ReadInt16();
+                opCode.Arguments = ReadArguments(reader, opCode.ArgCount);
+                opCode.MessageId = reader.ReadInt16();
+                opCode.LastUpdate = reader.ReadUInt32();
                 opCodes.Add(opCode);
             }
 
@@ -208,17 +208,17 @@ namespace Quester
         public static Dictionary<short, State> ReadStateSection(BinaryReader reader, QbnHeader header)
         {
             var states = new Dictionary<short, State>();
-            reader.BaseStream.Seek(header.statesSectionOffset, 0);
-            for (var i = 0; i < header.statesSectionCount; i++)
+            reader.BaseStream.Seek(header.StatesSectionOffset, 0);
+            for (var i = 0; i < header.StatesSectionCount; i++)
             {
                 var index = reader.ReadInt16();
 
                 states[index] = new State
                 {
-                    index = index,
-                    isGlobal = reader.ReadBoolean(),
-                    globalIndex = reader.ReadByte(),
-                    variable = "s_" + VariableNames.LookUp(reader.ReadUInt32())
+                    Index = index,
+                    IsGlobal = reader.ReadBoolean(),
+                    GlobalIndex = reader.ReadByte(),
+                    Variable = "s_" + VariableNames.LookUp(reader.ReadUInt32())
                 };
             }
 
@@ -232,20 +232,20 @@ namespace Quester
             {
                 Argument argument = new Argument();
                 {
-                    argument.not = reader.ReadBoolean();
-                    argument.index = reader.ReadUInt32();
-                    argument.type = (RecordType) reader.ReadInt16();
-                    argument.value = reader.ReadInt32();
-                    argument.unknown1 = reader.ReadInt32();
+                    argument.Not = reader.ReadBoolean();
+                    argument.Index = reader.ReadUInt32();
+                    argument.Type = (RecordType) reader.ReadInt16();
+                    argument.Value = reader.ReadInt32();
+                    argument.Unknown1 = reader.ReadInt32();
                 }
-                if (argument.index == 0x12345678 || argument.index == 0x1234567)
+                if (argument.Index == 0x12345678 || argument.Index == 0x1234567)
                 {
-                    argument.type = RecordType.Value;
-                    argument.index = 0;
+                    argument.Type = RecordType.Value;
+                    argument.Index = 0;
                 }
                 else
                 {
-                    argument.index &= 255;
+                    argument.Index &= 255;
                 }
 
                 if (arguments.Count < count)

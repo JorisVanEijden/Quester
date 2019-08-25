@@ -130,7 +130,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -158,7 +160,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => PlaceItemOnCharacter (i_00000d59)": {
 "opCode": 26,
@@ -186,7 +190,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -200,7 +206,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4: s_1 => TriggerOnMobKills (m_duelist, 1)": {
 "opCode": 2,
@@ -228,7 +236,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5: s_1 => Say (1014)": {
 "opCode": 51,
@@ -242,7 +252,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1014
+"messageId": 1014,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  >> WhenGivingItemToNpc (i_00000d59, n_competitor): set s_2": {
 "opCode": 1,
@@ -270,7 +282,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7: s_2 >> WhenAtLocation (l_mage3): set s_4": {
 "opCode": 43,
@@ -298,7 +312,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8: s_2 => CreateLogEntry (1016, 1)": {
 "opCode": 23,
@@ -326,7 +342,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_2 => Say (1012)": {
 "opCode": 51,
@@ -340,7 +358,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_2 => PlaceMobAtLocation (m_duelist, l_mage3)": {
 "opCode": 22,
@@ -368,7 +388,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11:  >> WhenGivingItemToNpc (i_00000d59, n_lover): set s_3": {
 "opCode": 1,
@@ -396,7 +418,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_3 => PlaceItemOnCharacter (i_lovgold)": {
 "opCode": 26,
@@ -424,7 +448,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_3 => Say (1015)": {
 "opCode": 51,
@@ -438,7 +464,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_3 => MakePermanent (i_lovgold)": {
 "opCode": 54,
@@ -459,7 +487,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_3 => EndQuest ()": {
 "opCode": 6,
@@ -473,7 +503,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_4 => Say (1013)": {
 "opCode": 51,
@@ -487,7 +519,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_5 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -508,7 +542,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18:  >> When (s_5 and s_1): set s_6": {
 "opCode": 52,
@@ -550,7 +586,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_6 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -592,7 +630,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_6 => EndQuest ()": {
 "opCode": 6,
@@ -606,7 +646,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: ! s_6 => Unset (s_5)": {
 "opCode": 7,
@@ -648,7 +690,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [7]": {

@@ -244,7 +244,7 @@ namespace Quester
                 "Painting1",
                 "Painting2",
                 "Painting3",
-                "Portrait",
+                "Portrait"
             },
             [ItemCategory.Gems] = new List<string>
             {
@@ -329,7 +329,7 @@ namespace Quester
                 "Totem",
                 "Dead_body",
                 "Mantella",
-                "Finger",
+                "Finger"
             },
             [ItemCategory.MiscItems] = new List<string>
             {
@@ -341,7 +341,7 @@ namespace Quester
                 "Dead_Body",
                 "House_Deed",
                 "Ship_Deed",
-                "Map",
+                "Map"
             },
             [ItemCategory.Transportation] = new List<string>
             {
@@ -350,7 +350,7 @@ namespace Quester
                 "Rowboat",
                 "Large_boat",
                 "Small_ship",
-                "Large_Galley",
+                "Large_Galley"
             },
             [ItemCategory.CreatureIngredients1] = new List<string>
             {
@@ -368,7 +368,7 @@ namespace Quester
                 "Basilisk_eye",
                 "Daedra_heart",
                 "Saints_hair",
-                "Orcs_blood",
+                "Orcs_blood"
             },
             [ItemCategory.CreatureIngredients2] = new List<string>
             {
@@ -376,18 +376,18 @@ namespace Quester
                 "Giant_scorpion_stinger",
                 "Small_scorpion_stinger",
                 "Mummy_wrappings",
-                "Gryphon_Feather",
+                "Gryphon_Feather"
             },
             [ItemCategory.CreatureIngredients3] = new List<string>
             {
                 "Wereboar_tusk",
                 "Nymph_hair",
-                "Unicorn_horn",
+                "Unicorn_horn"
             },
             [ItemCategory.MiscellaneousIngredients2] = new List<string>
             {
                 "Ivory",
-                "Pearl",
+                "Pearl"
             },
             [ItemCategory.MagicItem] = new List<string>
             {
@@ -449,7 +449,7 @@ namespace Quester
                 "Auriel's Shield",
                 "Spell Breaker",
                 "Skeleton's Key",
-                "Ebony Blade",
+                "Ebony Blade"
             },
             [ItemCategory.MetalIngredients] = new List<string>
             {
@@ -463,8 +463,8 @@ namespace Quester
                 "Copper",
                 "Silver",
                 "Gold",
-                "Platinum",
-            },
+                "Platinum"
+            }
         };
     }
 }

@@ -167,7 +167,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 1:  >> WhenTimerExpires (t_000038d9): set s_1": {
 "opCode": 12,
@@ -188,7 +190,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 2:  => CreateLogEntry (1020, 0)": {
 "opCode": 23,
@@ -216,7 +220,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 3:  => EnsureNpcLocation (l_safehouse)": {
 "opCode": 81,
@@ -244,7 +250,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 4:  => RemoveTopics (l_safehouse, n_contact)": {
 "opCode": 11,
@@ -279,7 +287,9 @@
 "unknown1": "-1223557120"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 5:  => PlaceNpcAt (n_contact, l_safehouse)": {
 "opCode": 30,
@@ -307,7 +317,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 6:  => PlaceItemAt (i_heist, l_target)": {
 "opCode": 0,
@@ -335,7 +347,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 7:  >> WhenTimeOfDayBetween (05:30:00, 19:00:00): set s_4": {
 "opCode": 31,
@@ -363,7 +377,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 8:  >> WhenAtLocation (l_target): set s_2": {
 "opCode": 43,
@@ -391,7 +407,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 " 9: s_19 => TriggerOnItemFound (i_heist) [Msg 1040]": {
 "opCode": 3,
@@ -412,7 +430,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1040
+"messageId": 1040,
+"flags": 0,
+"lastUpdate": 13
 },
 "10:  >> When (! s_4 and s_2): set s_6": {
 "opCode": 52,
@@ -454,7 +474,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "11:  >> When (s_4 and s_2): set s_5": {
 "opCode": 52,
@@ -496,7 +518,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "12: s_5 => CreateFoe(m_guard, 2, 50%, 50)": {
 "opCode": 9,
@@ -538,7 +562,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "13: s_6 => CreateFoe(m_guard, 10, 50%, 50)": {
 "opCode": 9,
@@ -580,7 +606,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "14: s_3 => TriggerOnMobHurtByPlayer (m_guard)": {
 "opCode": 21,
@@ -601,7 +629,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "15: s_8 => TriggerOnMobKills (m_guard, 1)": {
 "opCode": 2,
@@ -629,7 +659,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "16: s_3 => Say (1060)": {
 "opCode": 51,
@@ -643,7 +675,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1060
+"messageId": 1060,
+"flags": 0,
+"lastUpdate": 13
 },
 "17: s_8 => Say (1061)": {
 "opCode": 51,
@@ -657,7 +691,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1061
+"messageId": 1061,
+"flags": 0,
+"lastUpdate": 13
 },
 "18: ! s_2 => Unset (s_6, s_5)": {
 "opCode": 7,
@@ -699,7 +735,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "19:  >> WhenGivingItemToNpc (i_heist, n_questgiver): set s_7": {
 "opCode": 1,
@@ -727,7 +765,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "20:  >> When (! s_3 and s_7 and ! s_1): set s_9": {
 "opCode": 52,
@@ -769,7 +809,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "21:  >> When (s_7 and s_1): set s_10": {
 "opCode": 52,
@@ -811,7 +853,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "22:  >> When (s_3 and s_7): set s_10": {
 "opCode": 52,
@@ -853,7 +897,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "23: s_9 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -895,7 +941,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "24:  >> WhenTimerExpires (t_delay): set s_2": {
 "opCode": 12,
@@ -916,7 +964,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "25: s_11 => EndQuest ()": {
 "opCode": 6,
@@ -930,7 +980,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "26: s_10 => CreateLogEntry (1021, 1)": {
 "opCode": 23,
@@ -958,7 +1010,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "27: s_10 => PlaceItemOnCharacter (i_heist)": {
 "opCode": 26,
@@ -986,7 +1040,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "28: s_10 => Say (1050)": {
 "opCode": 51,
@@ -1000,7 +1056,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1050
+"messageId": 1050,
+"flags": 0,
+"lastUpdate": 13
 },
 "29: s_10 => CreateFoe(m_posse, 60, 50%, 50)": {
 "opCode": 9,
@@ -1042,7 +1100,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "30: s_13 => TriggerOnMobHurtByPlayer (m_posse)": {
 "opCode": 21,
@@ -1063,7 +1123,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "31: s_8 => TriggerOnMobKills (m_posse, 1)": {
 "opCode": 2,
@@ -1091,7 +1153,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "32: s_13 >> WhenPlayerHasItems (i_heist): set s_18": {
 "opCode": 70,
@@ -1133,7 +1197,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "33:  >> When (s_13 and ! s_8 and s_18): set s_17": {
 "opCode": 52,
@@ -1175,7 +1241,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "34:  >> When (s_13 and s_8): set s_16": {
 "opCode": 52,
@@ -1217,7 +1285,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "35: s_16 => Say (1063)": {
 "opCode": 51,
@@ -1231,7 +1301,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1063
+"messageId": 1063,
+"flags": 0,
+"lastUpdate": 13
 },
 "36: s_17 => PromptYesNo (s_14, s_15, 1062)": {
 "opCode": 29,
@@ -1266,7 +1338,9 @@
 "unknown1": "-1223557120"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "37: s_14 => PlaceItemOnMob (i_heist, m_posse)": {
 "opCode": 39,
@@ -1294,7 +1368,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "38: s_14 => DoneWithMob (m_posse, _)": {
 "opCode": 68,
@@ -1322,7 +1398,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "39: s_14 => Unset (s_10, s_7)": {
 "opCode": 7,
@@ -1364,7 +1442,9 @@
 "unknown1": "59572224"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "40: s_14 => Say (1052)": {
 "opCode": 51,
@@ -1378,7 +1458,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1052
+"messageId": 1052,
+"flags": 0,
+"lastUpdate": 13
 },
 "41: s_15 => Say (1053)": {
 "opCode": 51,
@@ -1392,7 +1474,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1053
+"messageId": 1053,
+"flags": 0,
+"lastUpdate": 13
 },
 "42:  >> WhenGivingItemToNpc (i_heist, n_contact): set s_12": {
 "opCode": 1,
@@ -1420,7 +1504,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "43: s_12 => Say (1051)": {
 "opCode": 51,
@@ -1434,7 +1520,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": 1051
+"messageId": 1051,
+"flags": 0,
+"lastUpdate": 13
 },
 "44: s_12 => AdjustReputationWithNpc (n_questgiver, 2)": {
 "opCode": 61,
@@ -1462,7 +1550,9 @@
 "unknown1": "-1305294848"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "45:  >> WhenTimerExpires (t_delay): set s_2": {
 "opCode": 12,
@@ -1483,7 +1573,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 },
 "46: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -1497,7 +1589,9 @@
 "unknown1": "109228594"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 13
 }
 }
 ,"states: [20]": {

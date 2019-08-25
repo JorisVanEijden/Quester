@@ -179,7 +179,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1003, 0)": {
 "opCode": 23,
@@ -207,7 +209,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => RemoveTopics (l_sistershouse, n_lover, i_letter)": {
 "opCode": 11,
@@ -242,7 +246,9 @@
 "unknown1": "-221773815"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => RemoveTopics (l_givershouse, n_tatler)": {
 "opCode": 11,
@@ -277,7 +283,9 @@
 "unknown1": "-221773815"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => RemoveTopics (l_dungeon, n_sister, i_gold)": {
 "opCode": 11,
@@ -312,7 +320,9 @@
 "unknown1": "-221773815"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => TriggerOnClickNpc (n_giver) [Msg 1020]": {
 "opCode": 28,
@@ -333,7 +343,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_1 => TriggerOnClickNpc (n_tatler) [Msg 1017]": {
 "opCode": 28,
@@ -354,7 +366,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": 1017
+"messageId": 1017,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  => PlaceItemAt (i_letter, l_givershouse)": {
 "opCode": 0,
@@ -382,7 +396,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8:  => PlaceNpcAt (n_tatler, l_imp)": {
 "opCode": 30,
@@ -410,7 +426,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9:  => PlaceNpcAt (n_lover, l_dungeon)": {
 "opCode": 30,
@@ -438,7 +456,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_1 => CreateLogEntry (1010, 1)": {
 "opCode": 23,
@@ -466,9 +486,11 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-"11:  >> WhenGivingItemToNpc (i_letter, n_giver): set s_4": {
+"11:  >> WhenGivingItemToNpc (i_letter, n_giver): set s_4 [Msg 1021]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -494,7 +516,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_4 => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
@@ -515,7 +539,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_4 => CreateLogEntry (1018, 2)": {
 "opCode": 23,
@@ -543,7 +569,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_6 => TriggerOnClickNpc (n_lover) [Msg 2000]": {
 "opCode": 28,
@@ -564,7 +592,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": 2000
+"messageId": 2000,
+"flags": 0,
+"lastUpdate": 0
 },
 "15: s_6 => HideNpc (n_lover)": {
 "opCode": 46,
@@ -585,7 +615,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_6 => StartNpcEscort (n_lover)": {
 "opCode": 55,
@@ -606,7 +638,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_6 => CreateLogEntry (2001, 3)": {
 "opCode": 23,
@@ -634,7 +668,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_6 >> WhenAtLocation (l_sistershouse): set s_5": {
 "opCode": 43,
@@ -662,7 +698,9 @@
 "unknown1": "2048"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_5 => StopNpcEscort (n_lover)": {
 "opCode": 56,
@@ -683,7 +721,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_5 => QuestSuccess (i_magicsword)": {
 "opCode": 4,
@@ -725,7 +765,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21:  >> When (s_0 and s_6 and ! s_5): set s_7": {
 "opCode": 52,
@@ -767,7 +809,9 @@
 "unknown1": "1375731712"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => StopNpcEscort (n_lover)": {
 "opCode": 56,
@@ -788,7 +832,9 @@
 "unknown1": "4518580"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => Say (2005)": {
 "opCode": 51,
@@ -802,7 +848,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": 2005
+"messageId": 2005,
+"flags": 0,
+"lastUpdate": 0
 },
 "24: s_5 => EndQuest ()": {
 "opCode": 6,
@@ -816,7 +864,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -830,7 +880,9 @@
 "unknown1": "-1493154929"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [8]": {

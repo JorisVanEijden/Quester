@@ -120,7 +120,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 1:  => PlaceItemAt (i_book, l_mansion)": {
 "opCode": 0,
@@ -148,7 +150,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -176,7 +180,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 3:  >> WhenAtLocation (l_mansion): set s_1": {
 "opCode": 43,
@@ -204,7 +210,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 4: s_1 => PickOneOf (s_3, s_4, s_5, s_6)": {
 "opCode": 34,
@@ -246,7 +254,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 5: s_6 => CreateFoe(m_0000d41c, 4, 10%, 10)": {
 "opCode": 9,
@@ -288,7 +298,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 6: s_5 => CreateFoe(m_0000d41b, 4, 10%, 10)": {
 "opCode": 9,
@@ -330,7 +342,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 7: s_4 => CreateFoe(m_0000d41a, 4, 10%, 10)": {
 "opCode": 9,
@@ -372,7 +386,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 8: s_3 => CreateFoe(m_0000d419, 4, 10%, 10)": {
 "opCode": 9,
@@ -414,7 +430,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 " 9:  >> WhenGivingItemToNpc (i_book, n_qgiver): set s_2": {
 "opCode": 1,
@@ -442,7 +460,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "10: s_7 => TriggerOnItemFound (i_book)": {
 "opCode": 3,
@@ -463,7 +483,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "11:  >> When (s_0 and s_7): set s_8": {
 "opCode": 52,
@@ -505,7 +527,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "12: s_8 => MakePermanent (i_book)": {
 "opCode": 54,
@@ -526,7 +550,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "13: s_2 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -568,7 +594,9 @@
 "unknown1": "17367040"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "14: s_2 => EndQuest ()": {
 "opCode": 6,
@@ -582,7 +610,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 },
 "15: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -596,7 +626,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 212
 }
 }
 ,"states: [9]": {

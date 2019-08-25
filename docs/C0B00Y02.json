@@ -213,7 +213,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
@@ -234,7 +236,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -262,7 +266,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => PickOneOf (s_3, s_2)": {
 "opCode": 34,
@@ -304,7 +310,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  >> WhenPlayerHasItems (i_sage): set s_16": {
 "opCode": 70,
@@ -346,7 +354,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => EnsureNpcLocation (l_house)": {
 "opCode": 81,
@@ -374,7 +384,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6:  => PlaceNpcAt (n_child, l_house)": {
 "opCode": 30,
@@ -402,7 +414,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  => PlaceNpcAt (n_guardian, l_tavern)": {
 "opCode": 30,
@@ -430,7 +444,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 8:  => EnsureNpcLocation (l_house3)": {
 "opCode": 81,
@@ -458,7 +474,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9:  => PlaceNpcAt (n_priest, l_house3)": {
 "opCode": 30,
@@ -486,7 +504,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -500,7 +520,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_1 => TriggerOnClickNpc (n_guardian)": {
 "opCode": 28,
@@ -521,7 +543,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12:  >> When (s_1 and s_2): set s_4": {
 "opCode": 52,
@@ -563,7 +587,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13: s_4 => CreateLogEntry (1013, 1)": {
 "opCode": 23,
@@ -591,7 +617,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_4 => Say (1011)": {
 "opCode": 51,
@@ -605,7 +633,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> When (s_1 and s_3): set s_5": {
 "opCode": 52,
@@ -647,7 +677,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_5 => CreateLogEntry (1014, 2)": {
 "opCode": 23,
@@ -675,7 +707,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_5 => Say (1012)": {
 "opCode": 51,
@@ -689,7 +723,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 "18: s_6 => TriggerOnClickNpc (n_child)": {
 "opCode": 28,
@@ -710,7 +746,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19:  >> When (s_9 and s_2): set s_7": {
 "opCode": 52,
@@ -752,7 +790,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "20: s_7 => GiveItemToPlayer (i_sage)": {
 "opCode": 36,
@@ -773,7 +813,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "21: s_7 => HideNpc (n_child)": {
 "opCode": 46,
@@ -794,7 +836,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "22: s_7 => Say (1015)": {
 "opCode": 51,
@@ -808,7 +852,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1015
+"messageId": 1015,
+"flags": 0,
+"lastUpdate": 0
 },
 "23: s_7 => PlaceMobAtLocation (m_daedra, l_house)": {
 "opCode": 22,
@@ -836,7 +882,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "24:  >> When (s_9 and s_3): set s_8": {
 "opCode": 52,
@@ -878,7 +926,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "25: s_8 => PlaceItemOnMob (i_sage, m_daedra)": {
 "opCode": 39,
@@ -906,7 +956,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "26: s_8 => HideNpc (n_child)": {
 "opCode": 46,
@@ -927,7 +979,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "27: s_8 => Say (1016)": {
 "opCode": 51,
@@ -941,7 +995,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1016
+"messageId": 1016,
+"flags": 0,
+"lastUpdate": 0
 },
 "28: s_8 => PlaceNpcAt (n_guardian, l_house2)": {
 "opCode": 30,
@@ -969,7 +1025,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "29: s_8 => PlaceNpcAt (n_sneaker, l_tavern)": {
 "opCode": 30,
@@ -997,7 +1055,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "30: s_10 => TriggerOnClickNpc (n_child)": {
 "opCode": 28,
@@ -1018,7 +1078,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "31: s_10 >> WhenPlayerHasItems (i_sage): set s_9": {
 "opCode": 70,
@@ -1060,7 +1122,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "32: s_10 => Unset (s_10)": {
 "opCode": 7,
@@ -1102,7 +1166,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "33:  >> When (s_6 and ! s_7 and ! s_8): set s_11": {
 "opCode": 52,
@@ -1144,7 +1210,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "34: s_11 => CreateLogEntry (1020, 3)": {
 "opCode": 23,
@@ -1172,7 +1240,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "35: s_11 => Say (1017)": {
 "opCode": 51,
@@ -1186,7 +1256,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1017
+"messageId": 1017,
+"flags": 0,
+"lastUpdate": 0
 },
 "36:  >> When (s_14 and ! s_11): set s_12": {
 "opCode": 52,
@@ -1228,7 +1300,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "37: s_12 => Say (1018)": {
 "opCode": 51,
@@ -1242,7 +1316,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1018
+"messageId": 1018,
+"flags": 0,
+"lastUpdate": 0
 },
 "38:  >> When (s_14 and s_11): set s_13": {
 "opCode": 52,
@@ -1284,7 +1360,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "39: s_13 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -1312,7 +1390,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "40: s_13 => Say (1019)": {
 "opCode": 51,
@@ -1326,7 +1406,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1019
+"messageId": 1019,
+"flags": 0,
+"lastUpdate": 0
 },
 "41: s_14 => TriggerOnClickNpc (n_priest)": {
 "opCode": 28,
@@ -1347,7 +1429,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "42:  >> When (s_1 and s_7): set s_15": {
 "opCode": 52,
@@ -1389,7 +1473,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "43: s_15 => Say (1021)": {
 "opCode": 51,
@@ -1403,7 +1489,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1021
+"messageId": 1021,
+"flags": 0,
+"lastUpdate": 0
 },
 "44: s_17 => AddTopics (l_house2)": {
 "opCode": 10,
@@ -1438,7 +1526,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "45: s_17 => CreateLogEntry (1026, 6)": {
 "opCode": 23,
@@ -1466,7 +1556,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "46: s_17 => Say (1024)": {
 "opCode": 51,
@@ -1480,7 +1572,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1024
+"messageId": 1024,
+"flags": 0,
+"lastUpdate": 0
 },
 "47: s_18 => Say (1022)": {
 "opCode": 51,
@@ -1494,7 +1588,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1022
+"messageId": 1022,
+"flags": 0,
+"lastUpdate": 0
 },
 "48: s_19 => TakePlayerGold (s_18, 50, n_sneaker)": {
 "opCode": 71,
@@ -1529,7 +1625,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "49: s_19 => PromptYesNo (s_17, s_20, 1023)": {
 "opCode": 29,
@@ -1564,7 +1662,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "50: s_20 => PlaceItemOnCharacter (i_gold)": {
 "opCode": 26,
@@ -1592,7 +1692,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "51: s_20 => MakePermanent (i_gold)": {
 "opCode": 54,
@@ -1613,7 +1715,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "52:  >> When (s_1 and s_8): set s_21": {
 "opCode": 52,
@@ -1655,7 +1759,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "53: s_21 => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
@@ -1683,7 +1789,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "54: s_21 => HideNpc (n_guardian)": {
 "opCode": 46,
@@ -1704,7 +1812,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "55: s_21 => Say (1025)": {
 "opCode": 51,
@@ -1718,7 +1828,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1025
+"messageId": 1025,
+"flags": 0,
+"lastUpdate": 0
 },
 "56:  >> WhenGivingItemToNpc (i_sage, n_qgiver): set s_22": {
 "opCode": 1,
@@ -1746,7 +1858,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "57:  >> WhenGivingItemToNpc (i_sage, n_priest): set s_23": {
 "opCode": 1,
@@ -1774,7 +1888,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "58:  >> When (s_25 and s_7): set s_24": {
 "opCode": 52,
@@ -1816,7 +1932,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "59:  >> When (s_14 and s_7): set s_24": {
 "opCode": 52,
@@ -1858,7 +1976,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "60:  >> When (s_23 and s_21): set s_24": {
 "opCode": 52,
@@ -1900,7 +2020,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "61:  >> When (s_22 and s_21): set s_24": {
 "opCode": 52,
@@ -1942,7 +2064,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "62: s_24 => QuestSuccess (i_reward)": {
 "opCode": 4,
@@ -1984,7 +2108,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "63: s_24 => EndQuest ()": {
 "opCode": 6,
@@ -1998,7 +2124,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "64: s_25 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -2019,7 +2147,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "65: ! s_7 => Unset (s_14, s_25)": {
 "opCode": 7,
@@ -2061,7 +2191,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "66: ! s_21 => Unset (s_23, s_22, s_1)": {
 "opCode": 7,
@@ -2103,7 +2235,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [26]": {

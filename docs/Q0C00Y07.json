@@ -124,7 +124,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 1:  >> WhenTimerExpires (t_queston): set s_0": {
 "opCode": 12,
@@ -145,7 +147,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 2:  => AddLocationToMap (l_mondung)": {
 "opCode": 19,
@@ -166,7 +170,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 3:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -194,7 +200,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 4:  => PlaceItemOnCharacter (i_clothes)": {
 "opCode": 26,
@@ -222,7 +230,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 5:  => PlaceNpcAt (n_witch, l_mondung)": {
 "opCode": 30,
@@ -250,7 +260,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 6: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -264,7 +276,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 " 7:  >> WhenGivingItemToNpc (i_clothes, n_witch): set s_1": {
 "opCode": 1,
@@ -292,9 +306,11 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
-" 8: s_1 => CreateFoe(m_guard, 2, 50%, 50)": {
+" 8: s_1 => CreateFoe(m_guard, 2, 50%, 50) [Msg 1012]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -334,7 +350,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1012
+"messageId": 1012,
+"flags": 0,
+"lastUpdate": 0
 },
 " 9: s_1 => HideNpc (n_witch)": {
 "opCode": 46,
@@ -355,7 +373,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "10: s_1 => Say (1011)": {
 "opCode": 51,
@@ -369,7 +389,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1011
+"messageId": 1011,
+"flags": 0,
+"lastUpdate": 0
 },
 "11: s_1 => StartNpcEscort (n_witch)": {
 "opCode": 55,
@@ -390,7 +412,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "12: s_2 => TriggerOnClickNpc (n_qgiver)": {
 "opCode": 28,
@@ -411,7 +435,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "13:  >> When (s_2 and ! s_1): set s_3": {
 "opCode": 52,
@@ -453,7 +479,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "14: s_3 => Unset (s_2, s_3)": {
 "opCode": 7,
@@ -495,7 +523,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "15:  >> When (s_2 and s_1): set s_4": {
 "opCode": 52,
@@ -537,7 +567,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "16: s_4 => QuestSuccess ()": {
 "opCode": 4,
@@ -579,7 +611,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "17: s_4 => EndQuest ()": {
 "opCode": 6,
@@ -593,7 +627,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "18:  >> When (s_0 and s_1): set s_5": {
 "opCode": 52,
@@ -635,7 +671,9 @@
 "unknown1": "0"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 0
 },
 "19: s_5 => Say (1013)": {
 "opCode": 51,
@@ -649,7 +687,9 @@
 "unknown1": "0"
 }
 },
-"messageId": 1013
+"messageId": 1013,
+"flags": 0,
+"lastUpdate": 0
 }
 }
 ,"states: [6]": {

@@ -143,7 +143,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1020
+"messageId": 1020,
+"flags": 0,
+"lastUpdate": 56
 },
 " 1:  >> WhenItemIsUsed (i_letter): set s_4": {
 "opCode": 57,
@@ -171,7 +173,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 2:  >> WhenTimerExpires (t_traveltime): set s_0": {
 "opCode": 12,
@@ -192,7 +196,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 3: s_4 => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -220,7 +226,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 4:  => PlaceItemAt (i_clothing, l_mansion)": {
 "opCode": 0,
@@ -248,7 +256,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 5: s_4 >> WhenAtLocation (l_mansion): set s_2": {
 "opCode": 43,
@@ -276,7 +286,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 6: s_3 => TriggerOnItemFound (i_clothing) [Msg 1018]": {
 "opCode": 3,
@@ -297,7 +309,9 @@
 "unknown1": "14"
 }
 },
-"messageId": 1018
+"messageId": 1018,
+"flags": 0,
+"lastUpdate": 56
 },
 " 7: s_3 => PlaceItemOnCharacter (i_note)": {
 "opCode": 26,
@@ -325,7 +339,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 8: s_2 => CreateFoe(m_0000388b, 3, 25%, 25)": {
 "opCode": 9,
@@ -367,7 +383,9 @@
 "unknown1": "25165824"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 " 9: s_5 => TriggerOnMobHurtByPlayer (m_0000388b)": {
 "opCode": 21,
@@ -388,7 +406,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 "10: s_5 => Say (1030)": {
 "opCode": 51,
@@ -402,7 +422,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": 1030
+"messageId": 1030,
+"flags": 0,
+"lastUpdate": 56
 },
 "11:  >> WhenGivingItemToNpc (i_clothing, n_thiefmember): set s_1": {
 "opCode": 1,
@@ -430,7 +452,9 @@
 "unknown1": "1156761600"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 "12: s_1 => QuestSuccess (i_gold)": {
 "opCode": 4,
@@ -472,7 +496,9 @@
 "unknown1": "25165824"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 "13: s_1 => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
@@ -493,7 +519,9 @@
 "unknown1": "14"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 "14: s_1 => EndQuest ()": {
 "opCode": 6,
@@ -507,7 +535,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 },
 "15: s_0 => EndQuest ()": {
 "opCode": 6,
@@ -521,7 +551,9 @@
 "unknown1": "100680946"
 }
 },
-"messageId": -1
+"messageId": -1,
+"flags": 0,
+"lastUpdate": 56
 }
 }
 ,"states: [6]": {
