@@ -65,7 +65,7 @@ namespace Quester
                 throw;
             }
 
-            return (Not ? "! " : "") + variable;
+            return (Not ? "not " : "") + variable;
         }
     }
 }
