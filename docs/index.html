@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>Daggerfall Quest Decompiler</title>
     <style>
-        html{font-family:"Lucida Console",Monaco,monospace}body{background: #FAEBD7}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}#jsonDownload{font-size: 12px;
+        html{font-family:"Lucida Console",Monaco,monospace}body{background:#FAEBD7}span{white-space:pre;font-family:monospace;display: inline-block;}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}.smaller{font-size: 12px;
+
     </style>
 </head>
 <body>
 <h1>Daggerfall Quest Decompiler</h1>
 <p>QBN files reverse engineered and explorable in detail.</p>
 <div>
-    <select id="questSelector">
+    <label for="quest_selector"> Quest: </label>
+    <select id="quest_selector">
         <option>- Load Quest -</option>
         <option>$CUREVAM</option>
         <option>$CUREWER</option>
@@ -266,22 +268,48 @@
 </div>
 <div id="placeholder"></div>
 <br/>
-<div id="jsonDownload"></div>
+<div id="jsonDownload" class="smaller"></div>
+<div id="legend">
+    <h3>Opcodes:</h3>
+    Opcodes are the "script" of the quest. It contains references to items, locations, npcs, timers and mobs.
+    <ul>
+        <li><span>=></span> an action that is executed once.</li>
+        <li><span>>> If...</span> a state is set if a certain condition is true.</li>
+        <li><span>s_1 =></span> an action that is executed once when the state s_1 is set.</li>
+        <li><span>s_1 >> When...</span> if s_1 is set, set a certain state when a condition is true.</li>
+    </ul>
+    <h4>Labels:</h4>
+    <ul>
+        <li>Item labels are prefixed with <span>i_</span></li>
+        <li>Location labels are prefixed with <span>l_</span></li>
+        <li>Npc labels are prefixed with <span>n_</span></li>
+        <li>Mob labels are prefixed with <span>m_</span></li>
+        <li>Timer labels are prefixed with <span>t_</span></li>
+    </ul>
+    Some labels have names, others have numbers. The numbers are as yet unknown <a href="https://en.uesp.net/wiki/Daggerfall:Text_Variable_Hashes">hash
+    values</a>.
+</div>
+<p class="smaller">For background information see <a href="https://en.uesp.net/wiki/Daggerfall:Quest_hacking_guide">Quest_hacking_guide</a></p>
 </body>
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript">function JsonTreeBuilder(){this.build=function(d){var c=a(d);b(c);return $('<div id="jsonTree"/>').append(c)};var a=function(g){if(typeof(g)=="object"&&g!=null){var f=$("<ul>");for(var e in g){var c=$("<li>");f.append(c.html(e).append(a(g[e])))}return f}else{var d=(g==undefined)?"[empty]":g;var h=document.createTextNode(" : "+d);return h}};var b=function(c){$("li > ul",c).each(function(){var d=$(this);var e=d.parent("li");e.addClass("expandable");e.click(function(){$(this).toggleClass("expanded");d.slideToggle("fast")});d.click(function(f){f.stopPropagation()})});$("ul",c).hide()}};</script>
+<script type="text/javascript">
+    function JsonTreeBuilder(){this.build=function(d){var c=a(d);b(c);return $('<div id="jsonTree"/>').append(c)};var a=function(g){if(typeof(g)=="object"&&g!=null){var f=$("<ul>");for(var e in g){var c=$("<li>");f.append(c.html(e).append(a(g[e])))}return f}else{var d=(g==undefined)?"[empty]":g;var h=document.createTextNode(" : "+d);return h}};var b=function(c){$("li > ul",c).each(function(){var d=$(this);var e=d.parent("li");e.addClass("expandable");e.click(function(){$(this).toggleClass("expanded");d.slideToggle("fast")});d.click(function(f){f.stopPropagation()})});$("ul",c).hide()}};
+</script>
 <script type="text/javascript">
 $(document).ready(function () {
    var treeBuilder = new JsonTreeBuilder();
-   $('select#questSelector').change(function () {
-       var quest = $('select#questSelector option:selected').text();
+   $('select#quest_selector').change(function () {
+       var quest = $('select#quest_selector option:selected').text();
        $.getJSON(quest + '.json', function ( data ) {
            var tree = treeBuilder.build(data);
            $('#jsonTree').remove();
            $('div#placeholder').append(tree);
-           $('div#jsonDownload').html('Raw json source <a href="' + quest + '.json">here</a>.');
+           console.log($('#jsonTree > ul > li:nth-child(7)'));
+           $('#jsonTree > ul > li:nth-child(7)').click();
+           $('div#jsonDownload').html('Raw json source: <a href="' + quest + '.json">' + quest + '.json</a>.');
        });
    });
 });
+
 </script>
