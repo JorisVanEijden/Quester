@@ -15,12 +15,6 @@ namespace Quester
 
         public override string ToString()
         {
-            if (!ItemMapper.ItemMap.ContainsKey(Category))
-            {
-                Console.Error.WriteLine("{0}: Failed to find item category {1} in item map", Program.Quest.Name, Category);
-                return "ERROR";
-            }
-
             string item = $"{Variable}: ";
             if (RewardType == RewardType.Gold || RewardType == RewardType.Unknown)
             {
@@ -28,6 +22,11 @@ namespace Quester
             }
             else
             {
+                if (!ItemMapper.ItemMap.ContainsKey(Category))
+                {
+                    Console.Error.WriteLine("{0}: Failed to find item category {1} in item map", Program.Quest.Name, Category);
+                    return "ERROR";
+                }
                 try
                 {
                     var name = ItemId == 0xffff ? Category.ToString() : ItemMapper.ItemMap[Category][ItemId];
