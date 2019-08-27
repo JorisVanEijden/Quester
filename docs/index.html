@@ -5,7 +5,6 @@
     <title>Daggerfall Quest Decompiler</title>
     <style>
         html{font-family:"Lucida Console",Monaco,monospace}body{background:#FAEBD7}span{white-space:pre;font-family:monospace;display: inline-block;}#jsonTree ul{list-style:none;margin:5px;padding:0;cursor:default}#jsonTree li{list-style:none;padding-left:14px}#jsonTree li.expandable{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADxSURBVHjafFBLaoRAFKzE9gfiFTyEF8gcYEAIZOUJcpdsA24CA+6yGGEO4NqtR3AlBHdG2h+mX82HyWYePLr6VTVV/Z6yLHuxbbv0PA+u68JxHEhN04RxHKG1xjzPO7UsSxnHMcmu60hKBUGAKIqIq6oqlVHLCw6GYUCSJMRFUSAMQ2LhlVi0bUsrDlfcrJumYRTBSqz6vkeappiMSF+EyesbHAvI85xxKJT++cW/0uc0uPIUruuK78MniX36zvOUn+9KKQqfxd+sB77vM7RkZBssM+GY8f7X27bh+PVBbFnWbc5fmz3u6rp+uHDR/AkwAGqHn+ZepzDiAAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:0 5px;cursor:pointer}#jsonTree li.expanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACYSURBVHjajJA7CoMhEIQ3sD7u4wXy38NzBeyFXCGdta0HSG2XxsIn5F9DOiMZ2Go+mXEuxpgrY8xJKUEIAZxzINVaoZQCOWdorR3Ye3dKKdjJe+/wpOnFFiQfKSLGOKNWoirkIfVIKYHWeglaa2fXCdI9X+vYrz/BMQY87rcliIgfkPLPeeb90uz496/PHY8QwnZwYt4CDACMsHBjtyPgCAAAAABJRU5ErkJggg==)}.smaller{font-size: 12px;
-
     </style>
 </head>
 <body>
@@ -298,18 +297,31 @@
 </script>
 <script type="text/javascript">
 $(document).ready(function () {
-   var treeBuilder = new JsonTreeBuilder();
    $('select#quest_selector').change(function () {
        var quest = $('select#quest_selector option:selected').text();
-       $.getJSON(quest + '.json', function ( data ) {
-           var tree = treeBuilder.build(data);
-           $('#jsonTree').remove();
-           $('div#placeholder').append(tree);
-           console.log($('#jsonTree > ul > li:nth-child(7)'));
-           $('#jsonTree > ul > li:nth-child(7)').click();
-           $('div#jsonDownload').html('Raw json source: <a href="' + quest + '.json">' + quest + '.json</a>.');
-       });
+       buildTree(quest);
    });
+   if(location.hash) {
+        var quest = location.hash.substr(1);
+        $('select#quest_selector').val(quest).change();
+    }
 });
+function buildTree(quest) {
+    var treeBuilder = new JsonTreeBuilder();
+    $.getJSON(quest + '.json', function ( data ) {
+       var tree = treeBuilder.build(data);
+       $('#jsonTree').remove();
+       $('div#placeholder').append(tree);
+       $('#jsonTree > ul > li:nth-child(7)').click();
+       $('div#jsonDownload').html('Raw json source: <a href="' + quest + '.json">' + quest + '.json</a>.');
+       if(history.pushState) {
+           history.pushState(null, null, '#' + quest);
+        }
+        else {
+            location.hash = '#' + quest;
+        }
+   });
+}
+
 
 </script>
