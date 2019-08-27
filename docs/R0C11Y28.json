@@ -423,7 +423,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 4:  >> IfTimerExpires (t_witch): set s_2": {
+" 4:  >> StartTimer (t_witch); When it expires: set s_18": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -446,7 +446,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-" 5:  >> IfTimerExpires (t_1stparton): set s_0": {
+" 5:  >> StartTimer (t_1stparton); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -649,7 +649,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"12:  >> IfTimerExpires (t_2ndparton): set s_1": {
+"12: s_1 >> StartTimer (t_2ndparton); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

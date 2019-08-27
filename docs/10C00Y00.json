@@ -109,7 +109,7 @@
 }
 }
 ,"opCodes: [20]": {
-" 0:  >> IfTimerExpires (t_1stparton): set s_0": {
+" 0:  >> StartTimer (t_1stparton); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -675,7 +675,7 @@
 "flags": 0,
 "lastUpdate": 49
 },
-"17:  >> IfTimerExpires (t_delay): set s_1": {
+"17: s_2 >> StartTimer (t_delay); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

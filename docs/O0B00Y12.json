@@ -136,7 +136,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> IfTimerExpires (t_qtime): set s_0": {
+" 0:  >> StartTimer (t_qtime); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -159,7 +159,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-" 1:  >> IfTimerExpires (t_0000060a): set s_1": {
+" 1:  >> StartTimer (t_0000060a); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -595,7 +595,7 @@
 "flags": 0,
 "lastUpdate": 12
 },
-"16:  >> IfTimerExpires (t_delay): set s_2": {
+"16: s_4 >> StartTimer (t_delay); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

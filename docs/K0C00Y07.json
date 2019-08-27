@@ -139,7 +139,7 @@
 }
 }
 ,"opCodes: [58]": {
-" 0:  >> IfTimerExpires (t_2ransom): set s_1": {
+" 0:  >> StartTimer (t_2ransom); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -162,7 +162,7 @@
 "flags": 0,
 "lastUpdate": 6
 },
-" 1:  >> IfTimerExpires (t_queston): set s_0": {
+" 1:  >> StartTimer (t_queston); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

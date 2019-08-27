@@ -225,7 +225,7 @@
 }
 }
 ,"opCodes: [65]": {
-" 0:  >> IfTimerExpires (t_2dung): set s_0": {
+" 0:  >> StartTimer (t_2dung); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -897,7 +897,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"21:  >> IfTimerExpires (t_4000001e): set s_1": {
+"21: s_12 >> StartTimer (t_4000001e); When it expires: set s_30": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

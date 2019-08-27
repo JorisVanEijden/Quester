@@ -116,7 +116,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [27]": {
-" 0:  >> IfTimerExpires (t_questtime): set s_0": {
+" 0:  >> StartTimer (t_questtime); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -829,7 +829,7 @@
 "flags": 0,
 "lastUpdate": 0
 },
-"24:  >> IfTimerExpires (t_delay): set s_1": {
+"24: s_7 >> StartTimer (t_delay); When it expires: set s_11": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

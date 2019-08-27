@@ -214,7 +214,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [53]": {
-" 0:  >> IfTimerExpires (t_time1): set s_0": {
+" 0:  >> StartTimer (t_time1); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -844,7 +844,7 @@
 "flags": 0,
 "lastUpdate": 130
 },
-"21:  >> IfTimerExpires (t_time2): set s_1": {
+"21: s_10 >> StartTimer (t_time2); When it expires: set s_20": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

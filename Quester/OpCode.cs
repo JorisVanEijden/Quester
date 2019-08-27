@@ -82,7 +82,8 @@ namespace Quester
                     FactionId faction = (FactionId) Arguments[1].Value;
                     return $" >> {Code} ({faction}, {Arguments[2]}): set {state}{message}";
                 case Instruction.StartTimer:
-                    return $" >> IfTimerExpires ({Arguments[1]}): set s_{Arguments[1].Value}{message}";
+                    State timerState = FindTimerState(Arguments[1]);
+                    return $"{state} >> {Code} ({Arguments[1]}); When it expires: set s_{timerState.Index}{message}";
                 case Instruction.CreateFoe:
                     Argument mobArgument = Arguments[1];
                     mobArgument.Type = RecordType.Mob;
@@ -103,6 +104,26 @@ namespace Quester
                     sb.Append(message);
                     return sb.ToString();
             }
+        }
+
+        private State FindTimerState(Argument argument)
+        {
+            if (argument.Type != RecordType.Timer)
+            {
+                throw new ArgumentException($"Argument must be timer, not {argument.Type}");
+            }
+
+            Timer timer = Program.Quest.Timers[(short) argument.Index];
+            string variable = timer.Variable.Substring(2);
+            foreach (var state in Program.Quest.States)
+            {
+                if (state.Value.Variable.Substring(2) == variable)
+                {
+                    return state.Value;
+                }
+            }
+
+            throw new Exception("State not found");
         }
     }
 }
