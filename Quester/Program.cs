@@ -38,7 +38,7 @@ namespace Quester
                 {
                     OutputJson(name);
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     Console.Error.WriteLine($"ERROR in quest {Quest.Name}");
                     throw;

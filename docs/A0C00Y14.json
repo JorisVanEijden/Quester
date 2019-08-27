@@ -21,7 +21,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 1: i_womensclothing: Artifact WomensClothing WomensClothing": {
 "variable": "i_womensclothing",
@@ -31,7 +31,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 2: i_potion: Artifact MiscellaneousIngredients1 MiscellaneousIngredients1": {
 "variable": "i_potion",
@@ -41,7 +41,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 3: i_mensclothing: Artifact MensClothing MensClothing": {
 "variable": "i_mensclothing",
@@ -51,7 +51,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 4: i_painting: Artifact Paintings Painting1": {
 "variable": "i_painting",
@@ -61,7 +61,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 4,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 5: i_weapon: Artifact Weapon Weapon": {
 "variable": "i_weapon",
@@ -71,7 +71,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 5,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 6: i_ingredient: Artifact LargePlants LargePlants": {
 "variable": "i_ingredient",
@@ -81,7 +81,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 6,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 7: i_jewelry: Artifact Jewellery Jewellery": {
 "variable": "i_jewelry",
@@ -91,7 +91,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 7,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 8: i_gold: 30 - 75 gold": {
 "variable": "i_gold",
@@ -101,33 +101,35 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 8,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male ": {
+" 0: n_questgiver: Male (type QuestGiver) (face 137)": {
 "variable": "n_questgiver",
 "gender": "Male",
 "facePictureIndex": 137,
-"factionType": 21,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_pickuplocal: Male ": {
+" 1: n_pickuplocal: Male (face 232)": {
 "variable": "n_pickuplocal",
 "gender": "Male",
 "facePictureIndex": 232,
-"factionType": 65533,
+"npcType": "Unknown_3",
+"npcTypeRaw": "65533 [0xFFFD]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [0]": {
@@ -178,14 +180,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: t_oneday": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -201,21 +203,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: ": {
 "type": "Location",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -231,21 +233,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: 1010": {
 "type": "Value",
 "value": "1010",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -261,35 +263,35 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -305,35 +307,35 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: s_4": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: s_5": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -349,35 +351,35 @@
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_6": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_7": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -393,35 +395,35 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -437,21 +439,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1011,
@@ -467,21 +469,21 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1012,
@@ -497,21 +499,21 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_jewelry": {
 "type": "Item",
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1013,
@@ -527,21 +529,21 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_mensclothing": {
 "type": "Item",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1014,
@@ -557,21 +559,21 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_painting": {
 "type": "Item",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1015,
@@ -587,21 +589,21 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_potion": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1016,
@@ -617,21 +619,21 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_weapon": {
 "type": "Item",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1017,
@@ -647,21 +649,21 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_womensclothing": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": 1018,
@@ -677,35 +679,35 @@
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 20": {
 "type": "Value",
 "value": "20",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 25": {
 "type": "Value",
 "value": "25",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: 3": {
 "type": "Value",
 "value": "3",
 "not": "False",
 "index": "0",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -721,14 +723,14 @@
 "value": "16",
 "not": "False",
 "index": "16",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -744,28 +746,28 @@
 "value": "16",
 "not": "False",
 "index": "16",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_18": {
 "type": "State",
 "value": "18",
 "not": "False",
 "index": "18",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 1020": {
 "type": "Value",
 "value": "1020",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 }
 },
 "messageId": -1,
@@ -781,35 +783,35 @@
 "value": "19",
 "not": "False",
 "index": "19",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -825,35 +827,35 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -869,35 +871,35 @@
 "value": "21",
 "not": "False",
 "index": "21",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_4": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -913,35 +915,35 @@
 "value": "22",
 "not": "False",
 "index": "22",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_5": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -957,35 +959,35 @@
 "value": "23",
 "not": "False",
 "index": "23",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_6": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1001,35 +1003,35 @@
 "value": "24",
 "not": "False",
 "index": "24",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_7": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1045,35 +1047,35 @@
 "value": "25",
 "not": "False",
 "index": "25",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1089,35 +1091,35 @@
 "value": "26",
 "not": "False",
 "index": "26",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_17": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1133,21 +1135,21 @@
 "value": "19",
 "not": "False",
 "index": "19",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1163,21 +1165,21 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1193,21 +1195,21 @@
 "value": "21",
 "not": "False",
 "index": "21",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_jewelry": {
 "type": "Item",
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1223,21 +1225,21 @@
 "value": "22",
 "not": "False",
 "index": "22",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_mensclothing": {
 "type": "Item",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1253,21 +1255,21 @@
 "value": "23",
 "not": "False",
 "index": "23",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_painting": {
 "type": "Item",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1283,21 +1285,21 @@
 "value": "24",
 "not": "False",
 "index": "24",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_potion": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1313,21 +1315,21 @@
 "value": "25",
 "not": "False",
 "index": "25",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_weapon": {
 "type": "Item",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1343,21 +1345,21 @@
 "value": "26",
 "not": "False",
 "index": "26",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_womensclothing": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1373,21 +1375,21 @@
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_thief": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1403,21 +1405,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1433,21 +1435,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1463,21 +1465,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_jewelry": {
 "type": "Item",
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1493,21 +1495,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_mensclothing": {
 "type": "Item",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1523,21 +1525,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_painting": {
 "type": "Item",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1553,21 +1555,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_potion": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1583,21 +1585,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_weapon": {
 "type": "Item",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1613,21 +1615,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_womensclothing": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1643,14 +1645,14 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_pickuplocal": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1666,35 +1668,35 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: not s_11": {
 "type": "State",
 "value": "11",
 "not": "True",
 "index": "11",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1710,7 +1712,7 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": 1019,
@@ -1726,35 +1728,35 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1770,35 +1772,35 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_gold": {
 "type": "Item",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "25624576"
+"unknown1": "25624576 [0x01870000]"
 }
 },
 "messageId": -1,
@@ -1814,14 +1816,14 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: t_delay": {
 "type": "Timer",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1837,7 +1839,7 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,
@@ -1853,7 +1855,7 @@
 "value": "27",
 "not": "False",
 "index": "27",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,

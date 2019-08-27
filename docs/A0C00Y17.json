@@ -21,57 +21,61 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [4]": {
-" 0: n_questgiver: Male ": {
+" 0: n_questgiver: Male (type QuestGiver)": {
 "variable": "n_questgiver",
 "gender": "Male",
 "facePictureIndex": 0,
-"factionType": 21,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_mage: Female The_Mages_Guild": {
+" 1: n_mage: Female (faction The_Mages_Guild)": {
 "variable": "n_mage",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Mages_Guild",
-"factionRaw": 40,
+"factionRaw": "40 [0x0028]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 },
-" 2: n_thief: Female The_Thieves_Guild": {
+" 2: n_thief: Female (faction The_Thieves_Guild)": {
 "variable": "n_thief",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Thieves_Guild",
-"factionRaw": 42,
+"factionRaw": "42 [0x002A]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"null1": 0
 },
-" 3: n_darkb: Female The_Dark_Brotherhood": {
+" 3: n_darkb: Female (faction The_Dark_Brotherhood)": {
 "variable": "n_darkb",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Dark_Brotherhood",
-"factionRaw": 108,
+"factionRaw": "108 [0x006C]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [1]": {
@@ -88,7 +92,7 @@
 "index": 0,
 "flags": 0,
 "objPtr": 0,
-"unknown1": 12543
+"unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [2]": {
@@ -161,14 +165,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: t_traveltime": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -184,21 +188,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: l_destination": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -214,35 +218,35 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -258,21 +262,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: 1010": {
 "type": "Value",
 "value": "1010",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -288,14 +292,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -311,14 +315,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -334,35 +338,35 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_guards": {
 "type": "Mob",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 5": {
 "type": "Value",
 "value": "5",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 20": {
 "type": "Value",
 "value": "20",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: 5": {
 "type": "Value",
 "value": "5",
 "not": "False",
 "index": "0",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -378,35 +382,35 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_mages": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 5": {
 "type": "Value",
 "value": "5",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 25": {
 "type": "Value",
 "value": "25",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: 3": {
 "type": "Value",
 "value": "3",
 "not": "False",
 "index": "0",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -422,35 +426,35 @@
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_0000d11b": {
 "type": "Mob",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 5": {
 "type": "Value",
 "value": "5",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 25": {
 "type": "Value",
 "value": "25",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: 3": {
 "type": "Value",
 "value": "3",
 "not": "False",
 "index": "0",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -466,35 +470,35 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_000036cd": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 5": {
 "type": "Value",
 "value": "5",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 25": {
 "type": "Value",
 "value": "25",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: 3": {
 "type": "Value",
 "value": "3",
 "not": "False",
 "index": "0",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -510,14 +514,14 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_guards": {
 "type": "Mob",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1020,
@@ -533,14 +537,14 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_mages": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1021,
@@ -556,14 +560,14 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_000036cd": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1022,
@@ -579,14 +583,14 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_0000d11b": {
 "type": "Mob",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1023,
@@ -602,28 +606,28 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: 1019": {
 "type": "Value",
 "value": "1019",
 "not": "False",
 "index": "0",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 }
 },
 "messageId": -1,
@@ -639,35 +643,35 @@
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -683,35 +687,35 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -727,35 +731,35 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -771,35 +775,35 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -815,35 +819,35 @@
 "value": "16",
 "not": "False",
 "index": "16",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -859,35 +863,35 @@
 "value": "18",
 "not": "False",
 "index": "18",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -903,35 +907,35 @@
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -947,35 +951,35 @@
 "value": "19",
 "not": "False",
 "index": "19",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -991,21 +995,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_guards": {
 "type": "Mob",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1021,14 +1025,14 @@
 "value": "17",
 "not": "False",
 "index": "17",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: -20": {
 "type": "Value",
 "value": "-20",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1044,14 +1048,14 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1067,21 +1071,21 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_mages": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1097,21 +1101,21 @@
 "value": "18",
 "not": "False",
 "index": "18",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_mage": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: -20": {
 "type": "Value",
 "value": "-20",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1127,21 +1131,21 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_mage": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1157,21 +1161,21 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_000036cd": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1187,21 +1191,21 @@
 "value": "16",
 "not": "False",
 "index": "16",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_thief": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: -20": {
 "type": "Value",
 "value": "-20",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1217,21 +1221,21 @@
 "value": "13",
 "not": "False",
 "index": "13",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_thief": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1247,21 +1251,21 @@
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: m_0000d11b": {
 "type": "Mob",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1277,21 +1281,21 @@
 "value": "19",
 "not": "False",
 "index": "19",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_darkb": {
 "type": "Npc",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: -20": {
 "type": "Value",
 "value": "-20",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1307,21 +1311,21 @@
 "value": "15",
 "not": "False",
 "index": "15",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_darkb": {
 "type": "Npc",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1337,14 +1341,14 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1360,7 +1364,7 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": 1040,
@@ -1376,7 +1380,7 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": 1030,
@@ -1392,21 +1396,21 @@
 "value": "8",
 "not": "True",
 "index": "8",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_6": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: l_destination": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1422,14 +1426,14 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1445,21 +1449,21 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: l_destination": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
@@ -1475,14 +1479,14 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: t_extratime": {
 "type": "Timer",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1498,35 +1502,35 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_gold": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -1542,35 +1546,35 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: s_0": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: not s_6": {
 "type": "State",
 "value": "6",
 "not": "True",
 "index": "6",
-"unknown1": "1156761600"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1997668352"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "42663936"
+"unknown1": "42663936 [0x028B0000]"
 }
 },
 "messageId": -1,
@@ -1586,7 +1590,7 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": 1050,
@@ -1602,14 +1606,14 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1625,7 +1629,7 @@
 "value": "20",
 "not": "False",
 "index": "20",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,
@@ -1641,7 +1645,7 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,
@@ -1657,7 +1661,7 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "100680946"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,

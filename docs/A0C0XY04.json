@@ -21,7 +21,7 @@
 "textRecordId1": 1025,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 1: i_ingredient: Artifact MetalIngredients Lodestone": {
 "variable": "i_ingredient",
@@ -31,7 +31,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 2: i_token: Artifact MiscellaneousIngredients2 Pearl": {
 "variable": "i_token",
@@ -41,69 +41,74 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [5]": {
-" 0: n_qgiver: Female ": {
+" 0: n_qgiver: Female (type Chemist) (face 1)": {
 "variable": "n_qgiver",
 "gender": "Female",
 "facePictureIndex": 1,
-"factionType": 0,
+"npcType": "Chemist",
+"npcTypeRaw": "0 [0x0000]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_agent: Male ": {
+" 1: n_agent: Male (type QuestGiver)": {
 "variable": "n_agent",
 "gender": "Male",
 "facePictureIndex": 0,
-"factionType": 21,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 },
-" 2: n_dummymage: Female The_Mages_Guild": {
+" 2: n_dummymage: Female (faction The_Mages_Guild) (face 1)": {
 "variable": "n_dummymage",
 "gender": "Female",
 "facePictureIndex": 1,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Mages_Guild",
-"factionRaw": 40,
+"factionRaw": "40 [0x0028]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"null1": 0
 },
-" 3: n_dummyorc: Female Gortwog": {
+" 3: n_dummyorc: Female (faction Gortwog) (face 1)": {
 "variable": "n_dummyorc",
 "gender": "Female",
 "facePictureIndex": 1,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Gortwog",
-"factionRaw": 357,
+"factionRaw": "357 [0x0165]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"unknown1": 0
+"null1": 0
 },
-" 4: n_dummydarkb: Female The_Dark_Brotherhood": {
+" 4: n_dummydarkb: Female (faction The_Dark_Brotherhood) (face 49)": {
 "variable": "n_dummydarkb",
 "gender": "Female",
 "facePictureIndex": 49,
-"factionType": 65535,
+"npcType": "Unknown_1",
+"npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Dark_Brotherhood",
-"factionRaw": 108,
+"factionRaw": "108 [0x006C]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 4,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [2]": {
@@ -120,7 +125,7 @@
 "index": 0,
 "flags": 0,
 "objPtr": 0,
-"unknown1": 0
+"unknown1": "0 [0x0000]"
 },
 " 1: l_meetingplace: InCurrentTown Alchemist": {
 "variable": "l_meetingplace",
@@ -135,7 +140,7 @@
 "index": 1,
 "flags": 0,
 "objPtr": 0,
-"unknown1": 0
+"unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [2]": {
@@ -208,14 +213,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: t_totaltime": {
 "type": "Timer",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -231,14 +236,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: l_dungeon": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -254,21 +259,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: 1010": {
 "type": "Value",
 "value": "1010",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -284,21 +289,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: m_guardian": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -314,21 +319,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_guardian": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: l_dungeon": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -344,21 +349,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: n_qgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: l_meetingplace": {
 "type": "Location",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -374,21 +379,21 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: n_qgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1013,
@@ -404,21 +409,21 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -434,21 +439,21 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 46": {
 "type": "Value",
 "value": "46",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -464,21 +469,21 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 17": {
 "type": "Value",
 "value": "17",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -494,14 +499,14 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_guardian": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -517,28 +522,28 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: 1012": {
 "type": "Value",
 "value": "1012",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -554,21 +559,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: 1011": {
 "type": "Value",
 "value": "1011",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -584,21 +589,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_token": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -614,7 +619,7 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1030,
@@ -630,21 +635,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_guardian": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: _": {
 "type": "State",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -660,7 +665,7 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1035,
@@ -676,21 +681,21 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_token": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: n_qgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1014,
@@ -706,21 +711,21 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 23": {
 "type": "Value",
 "value": "23",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -736,21 +741,21 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -766,14 +771,14 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: t_extratime": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -789,35 +794,35 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: s_5": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: s_6": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -833,21 +838,21 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: n_dummymage": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 25": {
 "type": "Value",
 "value": "25",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1015,
@@ -863,21 +868,21 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: n_dummyorc": {
 "type": "Npc",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: -10": {
 "type": "Value",
 "value": "-10",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -893,14 +898,14 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -916,7 +921,7 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -932,14 +937,14 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_ingredient": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -955,7 +960,7 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -971,35 +976,35 @@
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: s_0": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: s_5": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1015,35 +1020,35 @@
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_orc": {
 "type": "Mob",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: 100": {
 "type": "Value",
 "value": "100",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "4: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1059,14 +1064,14 @@
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: n_qgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1082,21 +1087,21 @@
 "value": "10",
 "not": "False",
 "index": "10",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_monster": {
 "type": "Mob",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: l_meetingplace": {
 "type": "Location",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1112,21 +1117,21 @@
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_guardian": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1142,35 +1147,35 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1186,35 +1191,35 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: m_daedras": {
 "type": "Mob",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "3: 100": {
 "type": "Value",
 "value": "100",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "4: 3": {
 "type": "Value",
 "value": "3",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,
@@ -1230,14 +1235,14 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: i_token": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": 1020,
@@ -1253,21 +1258,21 @@
 "value": "12",
 "not": "False",
 "index": "12",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "1: n_dummydarkb": {
 "type": "Npc",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 },
 "2: -75": {
 "type": "Value",
 "value": "-75",
 "not": "False",
 "index": "0",
-"unknown1": "0"
+"unknown1": "0 [0x00000000]"
 }
 },
 "messageId": -1,

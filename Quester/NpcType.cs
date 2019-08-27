@@ -1,0 +1,36 @@
+namespace Quester
+{
+    internal enum NpcType
+    {
+        Chemist,
+        Group_1,
+        Armorer,
+        Banker,
+        Group_4,
+        Bookseller,
+        Tailor,
+        Carpenter,
+        Jeweler,
+        Shopkeeper,
+        Librarian,
+        Spellcaster,
+        Pawnbroker,
+        Smith,
+        Cleric,
+        Innkeeper,
+        Noble,
+        Resident1,
+        Resident2,
+        Resident3,
+        Resident4,
+        QuestGiver,
+        Permanent = 0xfff8,
+        Unknown_7 = 0xfff9,
+        Unknown_6 = 0xfffa,
+        Unknown_5 = 0xfffb,
+        Unknown_4 = 0xfffc,
+        Unknown_3 = 0xfffd,
+        Unknown_2 = 0xfffe,
+        Unknown_1 = 0xffff,
+    }
+}

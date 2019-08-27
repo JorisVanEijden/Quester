@@ -4,19 +4,35 @@ namespace Quester
     {
         public Gender Gender;
         public byte FacePictureIndex;
-        public ushort FactionType;
+        public NpcType NpcType;
         public FactionId Faction;
         public ushort FactionRaw;
+        public ushort NpcTypeRaw;
         public string Variable;
         public ushort TextRecordId1;
         public ushort TextRecordId2;
-        public uint Unknown1;
+        public uint Null1;
         public short Index;
 
         public override string ToString()
         {
-            var factionName = Faction == 0 ? "" : Faction.ToString();
-            return $"{Variable}: {Gender} {factionName}";
+            string npc = $"{Variable}: {Gender}";
+            if (NpcType < NpcType.Unknown_7)
+            {
+                npc += $" (type {NpcType})";
+            }
+
+            if (Faction != FactionId.None)
+            {
+                npc += $" (faction {Faction})";
+            }
+
+            if (FacePictureIndex > 0 && FacePictureIndex < 255)
+            {
+                npc += $" (face {FacePictureIndex})";
+            }
+
+            return npc;
         }
     }
 }

@@ -80,13 +80,14 @@ namespace Quester
                     Index = index,
                     Gender = (Gender) reader.ReadByte(),
                     FacePictureIndex = reader.ReadByte(),
-                    FactionType = reader.ReadUInt16(),
+                    NpcTypeRaw = reader.ReadUInt16(),
                     FactionRaw = reader.ReadUInt16(),
                     Variable = "n_" + VariableNames.LookUp(reader.ReadUInt32()),
-                    Unknown1 = reader.ReadUInt32(),
+                    Null1 = reader.ReadUInt32(),
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
                 };
+                npc.NpcType = (NpcType) npc.NpcTypeRaw;
                 npc.Faction = (FactionId) npc.FactionRaw;
                 npcs[index] = npc;
             }

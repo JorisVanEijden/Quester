@@ -21,7 +21,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 1: i_sage: Item LargePlants LargePlants": {
 "variable": "i_sage",
@@ -31,33 +31,35 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male ": {
+" 0: n_questgiver: Male (type QuestGiver) (face 112)": {
 "variable": "n_questgiver",
 "gender": "Male",
 "facePictureIndex": 112,
-"factionType": 21,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_chemist: Female ": {
+" 1: n_chemist: Female (type Chemist)": {
 "variable": "n_chemist",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 0,
+"npcType": "Chemist",
+"npcTypeRaw": "0 [0x0000]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [0]": {
@@ -88,14 +90,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: t_1stparton": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 }
 },
 "messageId": -1,
@@ -111,21 +113,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: 1030": {
 "type": "Value",
 "value": "1030",
 "not": "False",
 "index": "0",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "2048"
+"unknown1": "2048 [0x00000800]"
 }
 },
 "messageId": -1,
@@ -141,14 +143,14 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: n_chemist": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 }
 },
 "messageId": 1010,
@@ -164,21 +166,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: i_sage": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "2048"
+"unknown1": "2048 [0x00000800]"
 }
 },
 "messageId": -1,
@@ -194,21 +196,21 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: i_sage": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 },
 "2: n_questgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "2048"
+"unknown1": "2048 [0x00000800]"
 }
 },
 "messageId": -1,
@@ -224,35 +226,35 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: i_reward": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "2048"
+"unknown1": "2048 [0x00000800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-221773551"
+"unknown1": "-221773551 [0xF2C80111]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "1375731712"
+"unknown1": "1375731712 [0x52000000]"
 }
 },
 "messageId": -1,
@@ -268,35 +270,35 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 },
 "2: s_0": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "2048"
+"unknown1": "2048 [0x00000800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "-221773551"
+"unknown1": "-221773551 [0xF2C80111]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "1375731712"
+"unknown1": "1375731712 [0x52000000]"
 }
 },
 "messageId": -1,
@@ -312,14 +314,14 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 },
 "1: i_sage": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "4518580"
+"unknown1": "4518580 [0x0044F2B4]"
 }
 },
 "messageId": -1,
@@ -335,7 +337,7 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 }
 },
 "messageId": -1,
@@ -351,7 +353,7 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "-1493154929"
+"unknown1": "-1493154929 [0xA700438F]"
 }
 },
 "messageId": -1,

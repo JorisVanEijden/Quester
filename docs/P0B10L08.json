@@ -21,7 +21,7 @@
 "textRecordId1": 0,
 "textRecordId2": 1010,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 1: i_letter2: Artifact Flammable Parchment [1013]": {
 "variable": "i_letter2",
@@ -31,7 +31,7 @@
 "textRecordId1": 0,
 "textRecordId2": 1013,
 "index": 1,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 2: i_gem: Artifact Gems Gems": {
 "variable": "i_gem",
@@ -41,33 +41,35 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [2]": {
-" 0: n_vamp: Male Peryite": {
+" 0: n_vamp: Male (faction Peryite)": {
 "variable": "n_vamp",
 "gender": "Male",
 "facePictureIndex": 0,
-"factionType": 65534,
+"npcType": "Unknown_2",
+"npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Peryite",
-"factionRaw": 6,
+"factionRaw": "6 [0x0006]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_daedra: Female ": {
+" 1: n_daedra: Female (face 1)": {
 "variable": "n_daedra",
 "gender": "Female",
 "facePictureIndex": 1,
-"factionType": 65534,
+"npcType": "Unknown_2",
+"npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [1]": {
@@ -84,7 +86,7 @@
 "index": 0,
 "flags": 0,
 "objPtr": 0,
-"unknown1": 54271
+"unknown1": "54271 [0xD3FF]"
 }
 }
 ,"timers: [1]": {
@@ -121,14 +123,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: t_queston": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -144,28 +146,28 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: ": {
 "type": "Location",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_vamp": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 }
 },
 "messageId": -1,
@@ -181,14 +183,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: i_letter": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1021,
@@ -204,21 +206,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_9": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: i_letter": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -234,21 +236,21 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: 1014": {
 "type": "Value",
 "value": "1014",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -264,28 +266,28 @@
 "value": "9",
 "not": "False",
 "index": "9",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: ": {
 "type": "Location",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_vamp": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 }
 },
 "messageId": -1,
@@ -301,14 +303,14 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_vamp": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -324,7 +326,7 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": 1011,
@@ -340,21 +342,21 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: l_mondung": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -370,21 +372,21 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: i_letter2": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -400,21 +402,21 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: 1012": {
 "type": "Value",
 "value": "1012",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -430,14 +432,14 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: l_mondung": {
 "type": "Location",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -453,35 +455,35 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: not s_2": {
 "type": "State",
 "value": "2",
 "not": "True",
 "index": "2",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: not s_3": {
 "type": "State",
 "value": "3",
 "not": "True",
 "index": "3",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -497,35 +499,35 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -541,14 +543,14 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -564,28 +566,28 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_6": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: 1015": {
 "type": "Value",
 "value": "1015",
 "not": "False",
 "index": "0",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 }
 },
 "messageId": -1,
@@ -601,7 +603,7 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": 1016,
@@ -617,14 +619,14 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -640,7 +642,7 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": 1017,
@@ -656,14 +658,14 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -679,35 +681,35 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: m_daedroth": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: 100": {
 "type": "Value",
 "value": "100",
 "not": "False",
 "index": "0",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -723,21 +725,21 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: m_daedroth": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -753,7 +755,7 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": 1018,
@@ -769,21 +771,21 @@
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -799,21 +801,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_daedra": {
 "type": "Npc",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: -10": {
 "type": "Value",
 "value": "-10",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -829,21 +831,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: n_vamp": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: -5": {
 "type": "Value",
 "value": "-5",
 "not": "False",
 "index": "0",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 }
 },
 "messageId": -1,
@@ -859,35 +861,35 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -903,7 +905,7 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": 1019,
@@ -919,35 +921,35 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: s_1": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: s_3": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: ": {
 "type": "State",
 "value": "-2",
 "not": "False",
 "index": "254",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -963,35 +965,35 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: i_gem": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-335456256"
+"unknown1": "-335456256 [0xEC015800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1240072192"
+"unknown1": "-1240072192 [0xB6160000]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "18546688"
+"unknown1": "18546688 [0x011B0000]"
 }
 },
 "messageId": -1,
@@ -1007,14 +1009,14 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 },
 "1: i_gem": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -1030,7 +1032,7 @@
 "value": "7",
 "not": "False",
 "index": "7",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": -1,
@@ -1046,7 +1048,7 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": -1,
@@ -1062,7 +1064,7 @@
 "value": "8",
 "not": "False",
 "index": "8",
-"unknown1": "109308929"
+"unknown1": "109308929 [0x0683EC01]"
 }
 },
 "messageId": -1,

@@ -21,7 +21,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 1: i_note: Artifact Flammable Parchment [1030]": {
 "variable": "i_note",
@@ -31,7 +31,7 @@
 "textRecordId1": 0,
 "textRecordId2": 1030,
 "index": 1,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 },
 " 2: i_gold: Random gold": {
 "variable": "i_gold",
@@ -41,45 +41,48 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"unknown1": "0 [0x00000000]"
 }
 }
 ,"npcs: [3]": {
-" 0: n_contact1: Female Clavicus_Vile": {
+" 0: n_contact1: Female (faction Clavicus_Vile)": {
 "variable": "n_contact1",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 65531,
+"npcType": "Unknown_5",
+"npcTypeRaw": "65531 [0xFFFB]",
 "faction": "Clavicus_Vile",
-"factionRaw": 1,
+"factionRaw": "1 [0x0001]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"unknown1": 0
+"null1": 0
 },
-" 1: n_questgiver: Male ": {
+" 1: n_questgiver: Male (type QuestGiver)": {
 "variable": "n_questgiver",
 "gender": "Male",
 "facePictureIndex": 0,
-"factionType": 21,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"unknown1": 0
+"null1": 0
 },
-" 2: n_contact2: Female ": {
+" 2: n_contact2: Female": {
 "variable": "n_contact2",
 "gender": "Female",
 "facePictureIndex": 0,
-"factionType": 65533,
+"npcType": "Unknown_3",
+"npcTypeRaw": "65533 [0xFFFD]",
 "faction": "None",
-"factionRaw": 0,
+"factionRaw": "0 [0x0000]",
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"unknown1": 0
+"null1": 0
 }
 }
 ,"locations: [0]": {
@@ -142,14 +145,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: t_qtime": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -165,14 +168,14 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: t_0000060a": {
 "type": "Timer",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -188,21 +191,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: 1020": {
 "type": "Value",
 "value": "1020",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -218,21 +221,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: ": {
 "type": "Location",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_contact1": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -248,21 +251,21 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: i_drugs": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Npc",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -278,14 +281,14 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: n_contact1": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -301,14 +304,14 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: i_note": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": 1031,
@@ -324,21 +327,21 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: ": {
 "type": "Location",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_contact2": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -354,35 +357,35 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: m_enemy": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 },
 "3: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "-1223557120"
+"unknown1": "-1223557120 [0xB7120000]"
 },
 "4: 10": {
 "type": "Value",
 "value": "10",
 "not": "False",
 "index": "0",
-"unknown1": "25886720"
+"unknown1": "25886720 [0x018B0000]"
 }
 },
 "messageId": -1,
@@ -398,14 +401,14 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: m_enemy": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -421,7 +424,7 @@
 "value": "6",
 "not": "False",
 "index": "6",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 }
 },
 "messageId": 1035,
@@ -437,21 +440,21 @@
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: s_2": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: i_note": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -467,21 +470,21 @@
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: 1021": {
 "type": "Value",
 "value": "1021",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 1": {
 "type": "Value",
 "value": "1",
 "not": "False",
 "index": "0",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -497,21 +500,21 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: i_drugs": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_contact1": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -527,21 +530,21 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: i_drugs": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_contact2": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 }
 },
 "messageId": -1,
@@ -557,35 +560,35 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: i_gold": {
 "type": "Item",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1305294848"
+"unknown1": "-1305294848 [0xB232C800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "-1223557120"
+"unknown1": "-1223557120 [0xB7120000]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "25886720"
+"unknown1": "25886720 [0x018B0000]"
 }
 },
 "messageId": -1,
@@ -601,14 +604,14 @@
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 },
 "1: t_delay": {
 "type": "Timer",
 "value": "2",
 "not": "False",
 "index": "2",
-"unknown1": "14"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
@@ -624,7 +627,7 @@
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 }
 },
 "messageId": -1,
@@ -640,7 +643,7 @@
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "109228594"
+"unknown1": "109228594 [0x0682B232]"
 }
 },
 "messageId": -1,

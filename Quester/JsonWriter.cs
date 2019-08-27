@@ -124,7 +124,7 @@ namespace Quester
                 writer.WriteLine($"\"index\": {location.Index},");
                 writer.WriteLine($"\"flags\": {location.Flags},");
                 writer.WriteLine($"\"objPtr\": {location.ObjPtr},");
-                writer.WriteLine($"\"unknown1\": {location.Unknown1}");
+                writer.WriteLine($"\"unknown1\": \"{location.Unknown1} [0x{location.Unknown1:X4}]\"");
                 writer.WriteLine(i + 1 == locations.Count ? "}" : "},");
             }
 
@@ -141,13 +141,14 @@ namespace Quester
                 writer.WriteLine($"\"variable\": \"{npc.Variable}\",");
                 writer.WriteLine($"\"gender\": \"{npc.Gender}\",");
                 writer.WriteLine($"\"facePictureIndex\": {npc.FacePictureIndex},");
-                writer.WriteLine($"\"factionType\": {npc.FactionType},");
+                writer.WriteLine($"\"npcType\": \"{npc.NpcType}\",");
+                writer.WriteLine($"\"npcTypeRaw\": \"{npc.NpcTypeRaw} [0x{npc.NpcTypeRaw:X4}]\",");
                 writer.WriteLine($"\"faction\": \"{npc.Faction}\",");
-                writer.WriteLine($"\"factionRaw\": {npc.FactionRaw},");
+                writer.WriteLine($"\"factionRaw\": \"{npc.FactionRaw} [0x{npc.FactionRaw:X4}]\",");
                 writer.WriteLine($"\"textRecordId1\": {npc.TextRecordId1},");
                 writer.WriteLine($"\"textRecordId2\": {npc.TextRecordId2},");
                 writer.WriteLine($"\"index\": {npc.Index},");
-                writer.WriteLine($"\"unknown1\": {npc.Unknown1}");
+                writer.WriteLine($"\"null1\": {npc.Null1}");
                 writer.WriteLine(i + 1 == npcs.Count ? "}" : "},");
             }
 
@@ -168,7 +169,7 @@ namespace Quester
                 writer.WriteLine($"\"textRecordId1\": {item.TextRecordId1},");
                 writer.WriteLine($"\"textRecordId2\": {item.TextRecordId2},");
                 writer.WriteLine($"\"index\": {item.Index},");
-                writer.WriteLine($"\"unknown1\": {item.Unknown1}");
+                writer.WriteLine($"\"unknown1\": \"{item.Unknown1} [0x{item.Unknown1:X8}]\"");
                 writer.WriteLine(i + 1 == items.Count ? "}" : "},");
             }
 
@@ -193,7 +194,7 @@ namespace Quester
                     writer.WriteLine($"\"value\": \"{argument.Value}\",");
                     writer.WriteLine($"\"not\": \"{argument.Not}\",");
                     writer.WriteLine($"\"index\": \"{argument.Index}\",");
-                    writer.WriteLine($"\"unknown1\": \"{argument.Unknown1}\"");
+                    writer.WriteLine($"\"unknown1\": \"{argument.Unknown1} [0x{argument.Unknown1:X8}]\"");
                     writer.WriteLine(i + 1 == opCode.Arguments.Count ? "}" : "},");
                 }
 
