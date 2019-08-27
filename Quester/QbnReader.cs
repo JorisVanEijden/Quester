@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Quester
 {
-    internal static class Reader
+    internal static class QbnReader
     {
         public static QbnHeader ReadHeader(BinaryReader reader)
         {

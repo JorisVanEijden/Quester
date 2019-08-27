@@ -24,8 +24,47 @@ namespace Quester
             WriteOpCodes(writer, quest.OpCodes);
             writer.Write(",");
             WriteStates(writer, quest.States);
+            if (quest.TextRecords != null)
+            {
+                writer.Write(",");
+                WriteTextRecords(writer, quest.TextRecords);
+            }
+
             writer.WriteLine("}");
         }
+
+        private static void WriteTextRecords(TextWriter writer, Dictionary<int, List<string>> textRecords)
+        {
+            writer.WriteLine($"\"text records: [{textRecords.Count}]\": {{");
+            int i = 0;
+            foreach (var textRecord in textRecords)
+            {
+                i++;
+                if (textRecord.Value.Count == 0) continue;
+                writer.WriteLine($"\"{textRecord.Key}\": [");
+                int j = 0;
+                foreach (var subRecord in textRecord.Value)
+                {
+                    var escaped = EscapeString(subRecord);
+                    writer.Write($"\"{escaped}\"");
+                    writer.WriteLine(++j == textRecord.Value.Count ? "" : ",");
+                }
+
+                writer.WriteLine(i == textRecords.Count ? "]" : "],");
+            }
+
+            writer.WriteLine("}");
+        }
+
+        private static string EscapeString(string subRecord)
+        {
+            var escaped = subRecord.Replace("\"", "\\\"");
+            return escaped;
+        }
+        //"\r\n", " ")
+//        .Replace("\r", " ")
+//            .Replace("\n", " ")
+//            .Replace("\\", "\\\\")
 
         private static void WriteInfo(TextWriter writer, Info info)
         {

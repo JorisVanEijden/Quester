@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using CommandLine;
 using CommandLine.Text;
-using static Quester.Reader;
+using static Quester.QbnReader;
 
 namespace Quester
 {
@@ -27,12 +27,14 @@ namespace Quester
                 }
 
                 var name = Path.GetFileNameWithoutExtension(file);
+                var path = Path.GetDirectoryName(file) + Path.DirectorySeparatorChar;
                 Quest = new Quest
                 {
                     Info = new Info(),
                     Name = name
                 };
-                ParseFile(file);
+                ParseQbnFile(path + name + ".qbn");
+                ParseQrcFile(path + name + ".qrc");
                 name = @"../../../docs/" + name;
                 try
                 {
@@ -46,6 +48,16 @@ namespace Quester
             }
         }
 
+        private static void ParseQrcFile(string fileName)
+        {
+            if (!File.Exists(fileName)) return;
+
+            using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
+            {
+                Quest.TextRecords = QrcReader.ReadTextRecords(reader);
+            }
+        }
+
         private static void OutputJson(string name)
         {
             var jsonFile = $"{name}.json";
@@ -56,7 +68,7 @@ namespace Quester
             }
         }
 
-        private static void ParseFile(string fileName)
+        private static void ParseQbnFile(string fileName)
         {
             if (!File.Exists(fileName)) throw new FileNotFoundException();
 

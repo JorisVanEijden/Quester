@@ -57,6 +57,7 @@ namespace Quester
 
         public Info Info;
         private string _name;
+        public Dictionary<int, List<string>> TextRecords;
 
         public string Name
         {
