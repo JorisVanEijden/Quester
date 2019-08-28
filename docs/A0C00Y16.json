@@ -116,22 +116,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_0001b163: Fixed": {
+" 0: t_0001b163: Fixed 2.00:00:00": {
 "variable": "t_0001b163",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "2.00:00:00",
 "maximum": "00:00:00",
-"link1": 738198015,
-"link2": 52,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -166,7 +166,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 1:  => EnsureNpcLocation (n_friend1)": {
@@ -196,7 +196,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 2:  => EnsureNpcLocation (n_friend2)": {
@@ -226,7 +226,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 3:  => EnsureNpcLocation (n_friend3)": {
@@ -256,7 +256,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 4:  => EnsureNpcLocation (n_friend4)": {
@@ -286,7 +286,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 5:  => RemoveTopics (l_hidingplace, n_friend3)": {
@@ -323,7 +323,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 6:  => RemoveTopics (n_friend4)": {
@@ -360,7 +360,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 7:  => RemoveTopics (n_missingperson)": {
@@ -397,7 +397,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 8:  => PickOneOf (s_0, s_2, s_3, s_1)": {
@@ -441,7 +441,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 " 9: s_0 => PlaceNpcAt (n_missingperson, l_hidingplace)": {
@@ -471,7 +471,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "10:  => CreateLogEntry (1010, 0)": {
@@ -501,7 +501,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "11:  >> IfNpcClicked (n_missingperson): set s_22": {
@@ -524,7 +524,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "12: s_22 => StartNpcEscort (n_missingperson) [Msg 1040]": {
@@ -547,7 +547,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "13: s_22 => HideNpc (n_missingperson)": {
@@ -570,7 +570,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "14:  >> IfNpcClicked (n_friend1): set s_4": {
@@ -593,7 +593,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "15:  >> If (not s_0 and s_4): set s_12": {
@@ -637,7 +637,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "16:  >> If (s_0 and s_4): set s_8": {
@@ -681,7 +681,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "17: s_12 => Say (1031)": {
@@ -697,7 +697,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "18: s_8 => Say (1021)": {
@@ -713,7 +713,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "19:  >> IfNpcClicked (n_friend2): set s_5": {
@@ -736,7 +736,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "20:  >> If (not s_2 and s_5): set s_13": {
@@ -780,7 +780,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "21:  >> If (s_2 and s_5): set s_9": {
@@ -824,7 +824,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "22: s_13 => Say (1032)": {
@@ -840,7 +840,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "23: s_9 => Say (1022)": {
@@ -856,7 +856,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "24:  >> IfNpcClicked (n_friend3): set s_6": {
@@ -879,7 +879,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "25:  >> If (not s_3 and s_6): set s_14": {
@@ -923,7 +923,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "26:  >> If (s_3 and s_6): set s_10": {
@@ -967,7 +967,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "27: s_14 => Say (1033)": {
@@ -983,7 +983,7 @@
 }
 },
 "messageId": 1033,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "28: s_10 => Say (1023)": {
@@ -999,7 +999,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "29:  >> IfNpcClicked (n_friend4): set s_7": {
@@ -1022,7 +1022,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "30:  >> If (not s_1 and s_7): set s_15": {
@@ -1066,7 +1066,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "31:  >> If (s_1 and s_7): set s_11": {
@@ -1110,7 +1110,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "32: s_15 => Say (1034)": {
@@ -1126,7 +1126,7 @@
 }
 },
 "messageId": 1034,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "33: s_11 => Say (1024)": {
@@ -1142,7 +1142,7 @@
 }
 },
 "messageId": 1024,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "34: s_11 => CreateFoe(m_00001b6b, 1, 100%, 100)": {
@@ -1186,7 +1186,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "35:  >> IfMobsKilled (m_00001b6b, 1): set s_17": {
@@ -1216,7 +1216,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "36: s_17 => HideNpc (n_friend4)": {
@@ -1239,7 +1239,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "37: s_4 => AddTopics (n_friend3)": {
@@ -1276,7 +1276,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "38: s_5 => AddTopics (n_friend4)": {
@@ -1313,7 +1313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "39:  >> IfNpcClicked (n_questgiver): set s_18": {
@@ -1336,7 +1336,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "40:  >> If (s_8 or s_9 or s_10 or s_11): set s_20": {
@@ -1380,7 +1380,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "41:  >> If (not s_20 and s_18): set s_19": {
@@ -1424,7 +1424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "42:  >> If (s_20 and s_18): set s_21": {
@@ -1468,7 +1468,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "43:  >> If (s_22 and s_18): set s_23": {
@@ -1512,7 +1512,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "44: s_23 => StopNpcEscort (n_missingperson)": {
@@ -1535,7 +1535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "45:  >> If (s_18 and s_8 and s_22): set s_28": {
@@ -1579,7 +1579,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "46:  >> If (s_18 and s_8 and not s_22): set s_24": {
@@ -1623,7 +1623,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "47:  >> If (s_18 and s_9): set s_25": {
@@ -1667,7 +1667,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "48:  >> If (s_18 and s_10): set s_26": {
@@ -1711,7 +1711,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "49:  >> If (s_18 and s_11): set s_27": {
@@ -1755,7 +1755,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "50: s_28 => Say (1050)": {
@@ -1771,7 +1771,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "51: s_24 => Say (1051)": {
@@ -1787,7 +1787,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "52: s_25 => Say (1052)": {
@@ -1803,7 +1803,7 @@
 }
 },
 "messageId": 1052,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "53: s_26 => Say (1053)": {
@@ -1819,7 +1819,7 @@
 }
 },
 "messageId": 1053,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "54: s_27 => Say (1054)": {
@@ -1835,7 +1835,7 @@
 }
 },
 "messageId": 1054,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "55: s_19 => Unset (s_18)": {
@@ -1879,7 +1879,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "56: s_21 => QuestSuccess (i_gold)": {
@@ -1923,7 +1923,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "57: s_21 => EndQuest ()": {
@@ -1939,7 +1939,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 },
 "58: s_16 => EndQuest ()": {
@@ -1955,7 +1955,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 27
 }
 }

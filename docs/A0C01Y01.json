@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_000343a8: Fixed": {
+" 0: t_000343a8: Fixed 1.03:00:00": {
 "variable": "t_000343a8",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.03:00:00",
 "maximum": "00:00:00",
-"link1": -335544320,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -101,7 +101,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 1:  => EnsureNpcLocation (l_qgiverhome)": {
@@ -131,7 +131,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 2:  >> IfTimeOfDayBetween (21:00:00, 1.00:00:00): set s_1": {
@@ -161,7 +161,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 3:  >> WhenAtLocation (l_qgiverhome): set s_5 [Msg 1013]": {
@@ -191,7 +191,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 4:  >> If (s_5 and s_1): set s_8": {
@@ -235,7 +235,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 5: s_8 => CreateFoe(m_00006f7b, 10, 25%, 25)": {
@@ -279,7 +279,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 6:  >> IfMobsKilled (m_00006f7b, 2): set s_2": {
@@ -309,7 +309,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 7: s_1 => PlaceNpcAt (n_qgiver, l_qgiverhome)": {
@@ -339,7 +339,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 8:  >> IfMobHurtByPlayer (m_00006f7b): set s_6 [Msg 1011]": {
@@ -362,7 +362,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 9:  >> IfNpcClicked (n_qgiver): set s_4": {
@@ -385,7 +385,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "10:  >> If (s_4 and s_2): set s_3": {
@@ -429,7 +429,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "11:  >> If (not s_2 and s_4): set s_7": {
@@ -473,7 +473,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "12: s_7 => Unset (s_4, s_7)": {
@@ -517,7 +517,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "13: s_3 => QuestSuccess (i_gold)": {
@@ -561,7 +561,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "14:  >> If (s_3 and not s_5): set s_9": {
@@ -605,7 +605,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "15: s_9 => EndQuest ()": {
@@ -621,7 +621,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "16: s_0 => EndQuest ()": {
@@ -637,7 +637,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "17:  => CreateLogEntry (1010, 0)": {
@@ -667,7 +667,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 }
 }

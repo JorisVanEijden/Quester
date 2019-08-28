@@ -84,22 +84,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "31744 [0x7C00]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: TwoLinksPlus": {
+" 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_vampire'": {
 "variable": "t_1stparton",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "2 [10]",
 "duration": 0,
 "started": 0,
-"flags": 513,
 "index": 0
 }
 }
@@ -134,7 +134,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 1:  => EnsureNpcLocation (n_vampire)": {
@@ -164,7 +164,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 2:  => RemoveTopics (n_vampire, i_vampproof)": {
@@ -201,7 +201,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 3:  => PlaceItemOnPlayer (i_letter) [Msg 1021]": {
@@ -224,7 +224,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 4:  >> WhenPlayerHasItems (i_letter): set s_12": {
@@ -268,7 +268,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 5:  >> WhenItemIsUsed (i_letter): set s_8": {
@@ -298,7 +298,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 6: s_8 => AddTopics (n_vampire)": {
@@ -335,7 +335,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 7: s_8 => CreateLogEntry (1025, 0)": {
@@ -365,7 +365,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 8:  >> IfNpcClicked (n_vampire): set s_3 [Msg 1002]": {
@@ -388,7 +388,7 @@
 }
 },
 "messageId": 1002,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 " 9: s_3 => CreateLogEntry (1026, 1)": {
@@ -418,7 +418,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "10:  >> If (s_3): set s_11": {
@@ -462,7 +462,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "11:  >> If (s_3 and not s_2): set s_5": {
@@ -506,7 +506,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "12: s_11 => AddLocationToMap (l_mondung)": {
@@ -529,7 +529,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "13: s_5 => Unset (s_3, s_5)": {
@@ -573,7 +573,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "14:  >> WhenAtLocation (l_mondung): set s_10": {
@@ -603,7 +603,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "15: s_10 => PlaceMobAtLocation (m_vamprival, l_mondung)": {
@@ -633,7 +633,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "16: s_10 => PlaceItemOnMob (i_vampproof, m_vamprival)": {
@@ -663,7 +663,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "17:  >> IfMobsKilled (m_vamprival, 1): set s_2 [Msg 1022]": {
@@ -693,7 +693,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "18:  >> IfGivingItemToNpc (i_vampproof, n_vampire): set s_0": {
@@ -723,7 +723,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "19: s_0 => QuestSuccess (i_reward)": {
@@ -767,7 +767,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "20: s_4 => MakePermanent (i_vampproof)": {
@@ -790,7 +790,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "21:  >> If (s_7 and not s_3): set s_6": {
@@ -834,7 +834,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "22: s_0 => EndQuest ()": {
@@ -850,7 +850,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 },
 "23: s_4 => EndQuest ()": {
@@ -866,7 +866,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 221
 }
 }

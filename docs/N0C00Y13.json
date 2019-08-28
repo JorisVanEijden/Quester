@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "3072 [0x0C00]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: OneLink": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -101,7 +101,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -131,7 +131,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 2:  => AddLocationToMap (l_dungeon)": {
@@ -154,7 +154,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 3:  => PlaceItemAt (i_ingredient, l_dungeon)": {
@@ -184,7 +184,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 4:  >> IfItemFound (i_ingredient): set s_2": {
@@ -207,7 +207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 5: s_2 => Say (1040)": {
@@ -223,7 +223,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 6: s_2 >> WhenItemIsUsed (i_ingredient): set s_3 [Msg 1045]": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": 1045,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 7: s_3 => CreateFoe(m_atronach, 1, 100%, 100)": {
@@ -297,7 +297,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 8:  >> IfGivingItemToNpc (i_ingredient, n_questgiver): set s_1": {
@@ -327,7 +327,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 " 9: s_1 => QuestSuccess ()": {
@@ -371,7 +371,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 "10: s_1 => EndQuest ()": {
@@ -387,7 +387,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 },
 "11: s_0 => EndQuest ()": {
@@ -403,7 +403,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 104
 }
 }

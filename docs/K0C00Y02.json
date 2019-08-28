@@ -121,7 +121,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -136,7 +136,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -151,7 +151,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -166,22 +166,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_00004f37: OneLink": {
+" 0: t_00004f37: 1.5 times travel time between here and 'l_depository'": {
 "variable": "t_00004f37",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -239,7 +239,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => PlaceItemAt (i_000068aa, l_mansion)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PlaceItemAt (i_000068ab, l_mondung)": {
@@ -299,7 +299,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceItemAt (i_000068ac, l_palace)": {
@@ -329,7 +329,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> StartTimer (t_00004f37); When it expires: set s_2": {
@@ -352,7 +352,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => AddLocationToMap (l_mondung)": {
@@ -375,7 +375,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  => CreateLogEntry (1010, 0)": {
@@ -405,7 +405,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> WhenAtLocation (l_depository): set s_9": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> WhenAtLocation (l_mansion): set s_10": {
@@ -465,7 +465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> WhenAtLocation (l_palace): set s_8": {
@@ -495,7 +495,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfGivingItemToNpc (i_000068a9, n_qgiver): set s_4": {
@@ -525,7 +525,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_4 => Say (1015)": {
@@ -541,7 +541,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_4 => PlaceItemOnCharacter (i_reward1)": {
@@ -571,7 +571,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_4 => MakePermanent (i_reward1)": {
@@ -594,7 +594,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfGivingItemToNpc (i_000068aa, n_qgiver): set s_5": {
@@ -624,7 +624,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_5 => Say (1015)": {
@@ -640,7 +640,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_5 => PlaceItemOnCharacter (i_reward2)": {
@@ -670,7 +670,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_5 => MakePermanent (i_reward2)": {
@@ -693,7 +693,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> IfGivingItemToNpc (i_000068ab, n_qgiver): set s_6": {
@@ -723,7 +723,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_6 => Say (1015)": {
@@ -739,7 +739,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_6 => PlaceItemOnCharacter (i_reward3)": {
@@ -769,7 +769,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_6 => MakePermanent (i_reward3)": {
@@ -792,7 +792,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfGivingItemToNpc (i_000068ac, n_qgiver): set s_7": {
@@ -822,7 +822,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_7 => Say (1015)": {
@@ -838,7 +838,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_7 => PlaceItemOnCharacter (i_0000365c)": {
@@ -868,7 +868,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_7 => MakePermanent (i_0000365c)": {
@@ -891,7 +891,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_8 => CreateFoe(m_44000000, 10, 20%, 20)": {
@@ -935,7 +935,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_9 => CreateFoe(m_44000001, 10, 20%, 20)": {
@@ -979,7 +979,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28: s_10 => CreateFoe(m_44000002, 10, 20%, 20)": {
@@ -1023,7 +1023,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29:  >> If (s_4 or s_5 or s_6 or s_7): set s_12": {
@@ -1067,7 +1067,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> If (s_4 and s_5 and s_6 and s_7): set s_13": {
@@ -1111,7 +1111,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31:  >> If (s_13): set s_14": {
@@ -1155,7 +1155,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_14 => QuestSuccess ()": {
@@ -1199,7 +1199,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33: s_14 => EndQuest ()": {
@@ -1215,7 +1215,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34:  >> If (s_2 and s_12): set s_15": {
@@ -1259,7 +1259,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_15 => QuestSuccess ()": {
@@ -1303,7 +1303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "36: s_15 => MakePermanent (i_000068a9)": {
@@ -1326,7 +1326,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "37: s_15 => MakePermanent (i_000068aa)": {
@@ -1349,7 +1349,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "38: s_15 => MakePermanent (i_000068ab)": {
@@ -1372,7 +1372,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "39: s_15 => MakePermanent (i_000068ac)": {
@@ -1395,7 +1395,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "40: s_15 => EndQuest ()": {
@@ -1411,7 +1411,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "41:  >> If (s_2 and not s_12): set s_16": {
@@ -1455,7 +1455,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "42: s_16 => MakePermanent (i_000068a9)": {
@@ -1478,7 +1478,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "43: s_16 => MakePermanent (i_000068aa)": {
@@ -1501,7 +1501,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "44: s_16 => MakePermanent (i_000068ab)": {
@@ -1524,7 +1524,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "45: s_16 => MakePermanent (i_000068ac)": {
@@ -1547,7 +1547,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "46: s_16 => EndQuest ()": {
@@ -1563,7 +1563,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

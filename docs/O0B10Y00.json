@@ -75,28 +75,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_1stparton: SameAs2": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_1stparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "18 [00010010]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 274,
 "index": 0
 },
-" 1: t_delay: Random": {
+" 1: t_delay: Random between 00:05:00 and 00:05:00": {
 "variable": "t_delay",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:05:00",
 "maximum": "00:05:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -131,7 +131,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1015, 0)": {
@@ -161,7 +161,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PlaceItemOnCharacter (i_metal)": {
@@ -191,7 +191,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_0": {
@@ -221,7 +221,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_0 => QuestSuccess (i_reward)": {
@@ -265,7 +265,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => EndQuest ()": {
@@ -281,7 +281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> IfGivingItemToNpc (i_metal, n_contact): set s_1": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_1 => CreateFoe(m_guards, 173, 25%, 25)": {
@@ -355,7 +355,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_1 => PlaceItemOnCharacter (i_gems)": {
@@ -385,7 +385,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_1 => Say (1010)": {
@@ -401,7 +401,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_2 >> WhenPlayerHasItems (i_metal): set s_7": {
@@ -445,7 +445,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 >> WhenPlayerHasItems (i_gems): set s_8": {
@@ -489,7 +489,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_2 >> StartTimer (t_delay); When it expires: set s_3": {
@@ -512,7 +512,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 => EndQuest ()": {
@@ -528,7 +528,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfMobHurtByPlayer (m_guards): set s_4": {
@@ -551,7 +551,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_4 => PromptYesNo (s_5, s_6, 1020)": {
@@ -588,7 +588,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_5 => GiveItemToPlayer (i_gems)": {
@@ -611,7 +611,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_5 => AdjustReputationWithNpc (n_questgiver, -40)": {
@@ -641,7 +641,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_5 => DoneWithMob (m_guards, _)": {
@@ -671,7 +671,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_5 >> StartTimer (t_delay); When it expires: set s_3": {
@@ -694,7 +694,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_7 => MakePermanent (i_metal)": {
@@ -717,7 +717,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_8 => MakePermanent (i_gems)": {
@@ -740,7 +740,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> If (s_1 and s_2): set s_9": {
@@ -784,7 +784,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_9 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -814,7 +814,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

@@ -87,7 +87,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -102,7 +102,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -117,12 +117,12 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 3: l_0001a9a9: InCurrentTown Tavern": {
-"variable": "l_0001a9a9",
+" 3: l_informant1: InCurrentTown Tavern": {
+"variable": "l_informant1",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -132,22 +132,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_40000001: Fixed": {
+" 0: t_40000001: Fixed 10.00:00:00": {
 "variable": "t_40000001",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "10.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "9 [00001001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 9,
 "index": 0
 }
 }
@@ -196,7 +196,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => RemoveTopics (l_imp)": {
@@ -233,7 +233,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => RemoveTopics (l_store, n_thief)": {
@@ -270,7 +270,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> StartTimer (t_40000001); When it expires: set s_1": {
@@ -293,7 +293,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => CreateLogEntry (1010, 0)": {
@@ -323,10 +323,10 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PlaceNpcAt (n_informant, l_0001a9a9)": {
+" 5:  => PlaceNpcAt (n_informant, l_informant1)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -344,7 +344,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_0001a9a9": {
+"2: l_informant1": {
 "type": "Location",
 "value": "3",
 "not": "False",
@@ -353,7 +353,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_1 => EndQuest ()": {
@@ -369,7 +369,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfTimeOfDayBetween (00:00:00, 08:00:00): set s_2": {
@@ -399,7 +399,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_2 >> WhenAtLocation (l_house): set s_9": {
@@ -429,7 +429,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_2 => PlaceNpcAt (n_thief, l_house)": {
@@ -459,7 +459,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfTimeOfDayBetween (16:02:00, 23:59:00): set s_3": {
@@ -489,7 +489,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_3 >> WhenAtLocation (l_imp): set s_10": {
@@ -519,7 +519,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_3 => PlaceNpcAt (n_thief, l_imp)": {
@@ -549,7 +549,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> IfTimeOfDayBetween (08:01:00, 16:01:00): set s_4": {
@@ -579,7 +579,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_4 >> WhenAtLocation (l_store): set s_11": {
@@ -609,7 +609,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_4 => PlaceNpcAt (n_thief, l_store)": {
@@ -639,7 +639,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16:  >> IfNpcClicked (n_informant): set s_5 [Msg 1025]": {
@@ -662,7 +662,7 @@
 }
 },
 "messageId": 1025,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_5 => CreateLogEntry (1035, 1)": {
@@ -692,7 +692,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> IfGivingItemToNpc (i_book, n_giver): set s_6": {
@@ -722,7 +722,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_6 => QuestSuccess (i_gold)": {
@@ -766,7 +766,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_6 => EndQuest ()": {
@@ -782,7 +782,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> IfMobHurtByPlayer (m_thiefhome1): set s_8": {
@@ -805,7 +805,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_8 => PlaceItemOnMob (i_book, m_thiefhome1)": {
@@ -835,7 +835,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_8 => Say (1030)": {
@@ -851,7 +851,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_9 => HideNpc (n_thief)": {
@@ -874,7 +874,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_9 => PlaceMobAtLocation (m_thiefhome1, l_house)": {
@@ -904,7 +904,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_10 => HideNpc (n_thief)": {
@@ -927,7 +927,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_10 => PlaceMobAtLocation (m_thiefhome1, l_imp)": {
@@ -957,7 +957,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28: s_11 => HideNpc (n_thief)": {
@@ -980,7 +980,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_11 => PlaceMobAtLocation (m_thiefhome1, l_store)": {
@@ -1010,7 +1010,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

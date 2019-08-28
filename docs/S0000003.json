@@ -74,22 +74,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_2shedungent: OneLink": {
+" 0: t_2shedungent: 1.5 times travel time between here and 'l_huntstart'": {
 "variable": "t_2shedungent",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -130,7 +130,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1: s_0 => EndQuest ()": {
@@ -146,7 +146,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> IfNpcClicked (n_000036c3): set s_1": {
@@ -169,7 +169,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> If (s_1 and not s_9): set s_5": {
@@ -213,7 +213,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_5 => Say (1008)": {
@@ -229,7 +229,7 @@
 }
 },
 "messageId": 1008,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_5 => Unset (s_1, s_5)": {
@@ -273,7 +273,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_7 => PlaceItemAt (i_000037de, l_huntstart)": {
@@ -303,7 +303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_7 >> StartTimer (t_2shedungent); When it expires: set s_0": {
@@ -326,7 +326,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_7 => CreateLogEntry (1010, 0)": {
@@ -356,7 +356,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_7 => ShowLocationOnMap (l_huntstart, 16, 50966)": {
@@ -393,7 +393,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_7 => Say (1002)": {
@@ -409,7 +409,7 @@
 }
 },
 "messageId": 1002,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_8 => Say (1001)": {
@@ -425,7 +425,7 @@
 }
 },
 "messageId": 1001,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_8 => EndQuest ()": {
@@ -441,7 +441,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> IfGivingItemToNpc (i_000037de, n_00001a11): set s_10": {
@@ -471,7 +471,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_10 => QuestSuccess (i_magicitem)": {
@@ -515,7 +515,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_10 => StartQuest (18, 18)": {
@@ -545,7 +545,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_10 => AdjustReputationWithNpc (n_00001a11, 10)": {
@@ -575,7 +575,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_10 => StopNpcConversation (n_00001a11)": {
@@ -598,7 +598,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_10 => EndQuest ()": {
@@ -614,7 +614,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

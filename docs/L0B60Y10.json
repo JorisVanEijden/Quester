@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: OneLink": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "18 [00010010]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 18,
 "index": 0
 }
 }
@@ -125,7 +125,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 1:  => CreateLogEntry (1020, 0)": {
@@ -155,7 +155,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 2:  => PickOneOf (s_6, s_7, s_8, s_9)": {
@@ -199,7 +199,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 3: s_6 => PlaceMobAtLocation (m_00003501, l_mondung)": {
@@ -229,7 +229,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 4: s_7 => PlaceMobAtLocation (m_00003502, l_mondung)": {
@@ -259,7 +259,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 5: s_8 => PlaceMobAtLocation (m_00003503, l_mondung)": {
@@ -289,7 +289,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 6: s_9 => PlaceMobAtLocation (m_00003504, l_mondung)": {
@@ -319,7 +319,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 7:  >> IfMobHurtByPlayer (m_00003501): set s_11 [Msg 1023]": {
@@ -342,7 +342,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 8:  >> IfMobHurtByPlayer (m_00003502): set s_11 [Msg 1022]": {
@@ -365,7 +365,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 9:  >> IfMobHurtByPlayer (m_00003503): set s_11 [Msg 1022]": {
@@ -388,7 +388,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "10:  >> IfMobHurtByPlayer (m_00003504): set s_11 [Msg 1022]": {
@@ -411,7 +411,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "11:  >> IfMobsKilled (m_00003504, 1): set s_2 [Msg 1021]": {
@@ -441,7 +441,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "12:  >> IfMobsKilled (m_00003503, 1): set s_2 [Msg 1021]": {
@@ -471,7 +471,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "13:  >> IfMobsKilled (m_00003502, 1): set s_2 [Msg 1021]": {
@@ -501,7 +501,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "14:  >> IfMobsKilled (m_00003501, 1): set s_2 [Msg 1021]": {
@@ -531,7 +531,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "15:  >> IfNpcClicked (n_questgiver): set s_1": {
@@ -554,7 +554,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "16:  >> If (s_1 and not s_2): set s_10": {
@@ -598,7 +598,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "17: s_10 => Unset (s_1, s_10)": {
@@ -642,7 +642,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "18:  >> If (s_1 and s_2): set s_0": {
@@ -686,7 +686,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "19: s_0 => QuestSuccess (i_reward)": {
@@ -730,7 +730,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "20: s_0 => EndQuest ()": {
@@ -746,7 +746,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "21: s_4 => EndQuest ()": {
@@ -762,7 +762,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 }
 }

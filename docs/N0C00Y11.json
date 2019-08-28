@@ -51,7 +51,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "3327 [0x0CFF]"
 },
@@ -66,22 +66,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "3327 [0x0CFF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: OneLink": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -108,7 +108,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -138,7 +138,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PickOneOf (s_3, s_4, s_4)": {
@@ -182,7 +182,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => AddLocationToMap (l_dungeon)": {
@@ -205,7 +205,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PlaceItemAt (i_ingredient, l_dungeon)": {
@@ -235,7 +235,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  >> IfItemFound (i_ingredient): set s_2": {
@@ -258,7 +258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_2 => Say (1040)": {
@@ -274,7 +274,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_1": {
@@ -304,7 +304,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_1 => QuestSuccess ()": {
@@ -348,7 +348,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> If (s_3 and s_1): set s_5": {
@@ -392,7 +392,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_5 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
@@ -415,7 +415,7 @@
 }
 },
 "messageId": 1080,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_1 => EndQuest ()": {
@@ -431,7 +431,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_0 => EndQuest ()": {
@@ -447,7 +447,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

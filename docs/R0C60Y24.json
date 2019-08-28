@@ -127,7 +127,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -142,22 +142,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: SameAs2": {
+" 0: t_queston: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_queston",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 257,
 "index": 0
 }
 }
@@ -214,7 +214,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  >> StartTimer (t_queston); When it expires: set s_0": {
@@ -237,7 +237,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -267,7 +267,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_sage)": {
@@ -297,7 +297,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PickOneOf (s_8, s_9, s_9, s_9)": {
@@ -341,7 +341,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -371,7 +371,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_0 => EndQuest ()": {
@@ -387,7 +387,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfGivingItemToNpc (i_sage, n_contact): set s_1": {
@@ -417,7 +417,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_1 => QuestSuccess (i_reward)": {
@@ -461,7 +461,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_1 => EndQuest ()": {
@@ -477,7 +477,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfGivingItemToNpc (i_sage, n_vampire): set s_2": {
@@ -507,7 +507,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 => PromptYesNo (s_3, s_4, 1011)": {
@@ -544,7 +544,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_3 => PlaceItemOnCharacter (i_vampreward)": {
@@ -574,7 +574,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 => PlaceItemOnCharacter (i_vampitem)": {
@@ -604,7 +604,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_3 => Say (1012)": {
@@ -620,7 +620,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_3 => MakePermanent (i_vampitem)": {
@@ -643,7 +643,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_3 => MakePermanent (i_vampreward)": {
@@ -666,7 +666,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_3 => AdjustReputationWithNpc (n_vampire, 10)": {
@@ -696,7 +696,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_4 => PlaceItemOnCharacter (i_sage)": {
@@ -726,7 +726,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_4 => Say (1013)": {
@@ -742,7 +742,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_4 => AdjustReputationWithNpc (n_vampire, -5)": {
@@ -772,7 +772,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_5": {
@@ -802,7 +802,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfMobHurtByPlayer (m_vampires): set s_6": {
@@ -825,7 +825,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_7 => ShowLocationOnMap (l_0001bb58, 11, 484567)": {
@@ -862,7 +862,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24:  >> If (s_8 and s_6): set s_10": {
@@ -906,7 +906,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_10 >> WhenItemIsUsed (i_map): set s_7": {
@@ -936,7 +936,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_10 => PlaceItemOnMob (i_map, m_vampires)": {
@@ -966,7 +966,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27:  >> IfMobHurtByPlayer (m_vampleader): set s_11": {
@@ -989,7 +989,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28: s_11 >> WhenItemIsUsed (i_note): set s_12": {
@@ -1019,7 +1019,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_11 => PlaceItemOnMob (i_note, m_vampleader)": {
@@ -1049,7 +1049,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30: s_12 => AddTopics (l_vamphouse)": {
@@ -1086,7 +1086,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_12 => PlaceNpcAt (n_vampire, l_vamphouse)": {
@@ -1116,7 +1116,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_12 => EnsureNpcLocation (l_vamphouse)": {
@@ -1146,7 +1146,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33:  >> If (not s_5 and not s_3): set s_13": {
@@ -1190,7 +1190,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34: s_13 => CreateFoe(m_vampires, 10, 25%, 25)": {
@@ -1234,7 +1234,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_13 => CreateFoe(m_vampleader, 20, 100%, 100)": {
@@ -1278,7 +1278,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

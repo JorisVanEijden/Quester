@@ -51,7 +51,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -66,22 +66,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_2dung: OneLink": {
+" 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_2dung",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -140,7 +140,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => AddLocationToMap (l_dungeon)": {
@@ -163,7 +163,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -193,7 +193,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PickOneOf (s_8, s_9, s_9, s_9)": {
@@ -237,7 +237,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PickOneOf (s_4, s_5, s_6, s_7)": {
@@ -281,7 +281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => EndQuest ()": {
@@ -297,7 +297,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> IfMobsKilled (m_ice, 1): set s_1 [Msg 1011]": {
@@ -327,7 +327,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfMobsKilled (m_fire, 1): set s_1 [Msg 1011]": {
@@ -357,7 +357,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> IfMobsKilled (m_flesh, 1): set s_1 [Msg 1011]": {
@@ -387,7 +387,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> IfMobsKilled (m_iron, 1): set s_1 [Msg 1011]": {
@@ -417,7 +417,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfNpcClicked (n_qgiver): set s_2": {
@@ -440,7 +440,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 => QuestSuccess (i_gold)": {
@@ -484,7 +484,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> If (s_2 and not s_1): set s_3": {
@@ -528,7 +528,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 => Unset (s_2, s_3)": {
@@ -572,7 +572,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_4 => PlaceMobAtLocation (m_iron, l_dungeon)": {
@@ -602,7 +602,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_5 => PlaceMobAtLocation (m_ice, l_dungeon)": {
@@ -632,7 +632,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_6 => PlaceMobAtLocation (m_flesh, l_dungeon)": {
@@ -662,7 +662,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_7 => PlaceMobAtLocation (m_fire, l_dungeon)": {
@@ -692,7 +692,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> If (s_8 and s_2): set s_10": {
@@ -736,7 +736,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_10 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
@@ -759,7 +759,7 @@
 }
 },
 "messageId": 1080,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> If (s_9 and s_2): set s_11": {
@@ -803,7 +803,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> If (s_10 or s_11): set s_12": {
@@ -847,7 +847,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_12 => EndQuest ()": {
@@ -863,7 +863,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

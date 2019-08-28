@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: OneLink": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -109,7 +109,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -139,7 +139,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 2:  => AddLocationToMap (l_mondung)": {
@@ -162,7 +162,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 3:  => PickOneOf (s_6, s_5)": {
@@ -206,7 +206,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 4: s_6 => PlaceMobAtLocation (m_00000600, l_mondung)": {
@@ -236,7 +236,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 5: s_5 => PlaceMobAtLocation (m_wolf, l_mondung)": {
@@ -266,7 +266,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 6:  >> IfMobsKilled (m_00000600, 1): set s_1 [Msg 1020]": {
@@ -296,7 +296,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 7:  >> IfMobsKilled (m_wolf, 1): set s_1 [Msg 1020]": {
@@ -326,7 +326,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 8:  >> IfNpcClicked (n_questgiver): set s_2": {
@@ -349,7 +349,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 9:  >> If (s_2 and not s_1): set s_4": {
@@ -393,7 +393,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "10: s_4 => Unset (s_2, s_4)": {
@@ -437,7 +437,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "11:  >> If (s_2 and s_1): set s_0": {
@@ -481,7 +481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "12: s_0 => QuestSuccess (i_reward)": {
@@ -525,7 +525,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "13: s_0 => EndQuest ()": {
@@ -541,7 +541,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "14: s_3 => EndQuest ()": {
@@ -557,7 +557,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 }
 }

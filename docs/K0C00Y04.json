@@ -97,22 +97,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: Random": {
+" 0: t_queston: Random between 3.01:20:00 and 5.23:20:00": {
 "variable": "t_queston",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "3.01:20:00",
 "maximum": "5.23:20:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -147,7 +147,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -177,7 +177,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PlaceItemOnCharacter (i_00000d59)": {
@@ -207,7 +207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_0 => EndQuest ()": {
@@ -223,7 +223,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> IfMobsKilled (m_duelist, 1): set s_1": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_1 => Say (1014)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> IfGivingItemToNpc (i_00000d59, n_competitor): set s_2": {
@@ -299,7 +299,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_2 >> WhenAtLocation (l_mage3): set s_4": {
@@ -329,7 +329,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_2 => CreateLogEntry (1016, 1)": {
@@ -359,7 +359,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_2 => Say (1012)": {
@@ -375,7 +375,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_2 => PlaceMobAtLocation (m_duelist, l_mage3)": {
@@ -405,7 +405,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfGivingItemToNpc (i_00000d59, n_lover): set s_3": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_3 => PlaceItemOnCharacter (i_lovgold)": {
@@ -465,7 +465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 => Say (1015)": {
@@ -481,7 +481,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_3 => MakePermanent (i_lovgold)": {
@@ -504,7 +504,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_3 => EndQuest ()": {
@@ -520,7 +520,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_4 => Say (1013)": {
@@ -536,7 +536,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17:  >> IfNpcClicked (n_qgiver): set s_5": {
@@ -559,7 +559,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> If (s_5 and s_1): set s_6": {
@@ -603,7 +603,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_6 => QuestSuccess (i_gold)": {
@@ -647,7 +647,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_6 => EndQuest ()": {
@@ -663,7 +663,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: not s_6 => Unset (s_5)": {
@@ -707,7 +707,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

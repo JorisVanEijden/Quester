@@ -19,28 +19,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_40000001: Fixed": {
+" 0: t_40000001: Fixed 01:15:00": {
 "variable": "t_40000001",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:15:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_40000002: Fixed": {
+" 1: t_40000002: Fixed 44.10:40:00": {
 "variable": "t_40000002",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "44.10:40:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -83,7 +83,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  >> IfMobHurtByPlayer (m_44000001): set s_0": {
@@ -106,7 +106,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> IfMobHurtByPlayer (m_44000000): set s_0": {
@@ -129,7 +129,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_0 >> StartTimer (t_40000001); When it expires: set s_1": {
@@ -152,7 +152,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_0 => Say (1015)": {
@@ -168,7 +168,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_1 => Unset (s_1, s_0)": {
@@ -212,7 +212,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_2 => EndQuest ()": {
@@ -228,7 +228,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfTimeOfDayBetween (04:10:00, 20:50:00): set s_3": {
@@ -258,7 +258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_4 => CreateFoe(m_44000000, 1440, 5%, 5)": {
@@ -302,7 +302,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_4 => CreateFoe(m_44000001, 1440, 3%, 3)": {
@@ -346,7 +346,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> If (s_5 or s_6 or s_7 or s_8): set s_12": {
@@ -390,7 +390,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> If (s_9 or s_10 or s_11): set s_13": {
@@ -434,7 +434,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> If (s_12 or s_13): set s_14": {
@@ -478,7 +478,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_14 => CycleNextState (s_2)": {
@@ -522,7 +522,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: not s_3 => CycleNextState (s_4)": {
@@ -566,7 +566,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

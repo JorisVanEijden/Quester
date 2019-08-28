@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_oneday: Fixed": {
+" 0: t_oneday: Fixed 1.00:00:00": {
 "variable": "t_oneday",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
 "maximum": "00:00:00",
-"link1": -335544320,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -125,7 +125,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 1:  => EnsureNpcLocation (l_house)": {
@@ -155,7 +155,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -185,7 +185,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 3:  >> WhenAtLocation (l_house): set s_1": {
@@ -215,7 +215,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 4: s_1 => PickOneOf (s_4, s_5, s_6, s_7)": {
@@ -259,7 +259,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 5: s_4 => CreateFoe(m_bats, 3, 25%, 25)": {
@@ -303,7 +303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 6: s_5 => CreateFoe(m_rats, 3, 25%, 25)": {
@@ -347,7 +347,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 7: s_6 => CreateFoe(m_scorpions, 3, 25%, 25)": {
@@ -391,7 +391,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 8: s_7 => CreateFoe(m_spiders, 3, 25%, 25)": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 9:  >> IfMobsKilled (m_bats, 6): set s_3": {
@@ -465,7 +465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "10:  >> IfMobsKilled (m_rats, 7): set s_3": {
@@ -495,7 +495,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "11:  >> IfMobsKilled (m_scorpions, 3): set s_3": {
@@ -525,7 +525,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "12:  >> IfMobsKilled (m_spiders, 3): set s_3": {
@@ -555,7 +555,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "13:  >> IfNpcClicked (n_qgiver): set s_2": {
@@ -578,7 +578,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "14:  >> If (not s_3 and s_2): set s_8": {
@@ -622,7 +622,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "15: s_8 => Unset (s_2, s_8)": {
@@ -666,7 +666,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "16: s_2 => QuestSuccess (i_gold)": {
@@ -710,7 +710,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "17: s_0 => EndQuest ()": {
@@ -726,7 +726,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 }
 }

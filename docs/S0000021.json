@@ -87,7 +87,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "57343 [0xDFFF]"
 }
@@ -147,7 +147,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 1:  => RemoveTopics (i_scarab)": {
@@ -184,7 +184,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 2:  >> IfPlayerHasLevel (7): set s_0": {
@@ -207,7 +207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 3:  => CheckNpcReputation (s_1, n_0001ab9d, 0)": {
@@ -244,7 +244,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 4:  >> If (s_0 and s_1): set s_6": {
@@ -288,7 +288,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 5: not s_6 => StopNpcConversation (n_0001ab9d)": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 6: s_15 => Unset (s_6)": {
@@ -355,7 +355,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 7: s_6 => SendFoe (m_zombie, 1410, 100, -1)": {
@@ -399,7 +399,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 8:  >> IfMobHurtByPlayer (m_zombie): set s_7": {
@@ -422,7 +422,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 9:  >> IfMobsKilled (m_zombie, 1): set s_15": {
@@ -452,7 +452,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "10: s_15 => Say (1011)": {
@@ -468,7 +468,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "11:  >> IfNpcClicked (n_0001ab9d): set s_2": {
@@ -491,7 +491,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "12:  >> If (s_2 and s_15): set s_3": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "13: not s_3 => Unset (s_2)": {
@@ -579,7 +579,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "14: s_3 => PromptYesNo (s_4, s_5, 1000)": {
@@ -616,7 +616,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "15: s_4 => Say (1002)": {
@@ -632,7 +632,7 @@
 }
 },
 "messageId": 1002,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "16: s_5 => Say (1001)": {
@@ -648,7 +648,7 @@
 }
 },
 "messageId": 1001,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "17: s_4 => CreateLogEntry (1010, 0)": {
@@ -678,7 +678,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "18: s_4 => PlaceItemOnCharacter (i_scarab)": {
@@ -708,7 +708,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "19: s_4 => PlaceMobAtLocation (m_lich, l_00006df6)": {
@@ -738,7 +738,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "20:  >> IfMobsKilled (m_lich, 1): set s_8": {
@@ -768,7 +768,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "21: s_8 => StartNpcEscort (n_000068ff)": {
@@ -791,7 +791,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "22:  >> IfGivingItemToNpc (i_scarab, n_0001ab9d): set s_10": {
@@ -821,7 +821,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "23:  >> If (s_10 and s_8): set s_12": {
@@ -865,7 +865,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "24:  >> If (not s_8 and s_10): set s_11": {
@@ -909,7 +909,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "25: s_11 => PlaceItemOnCharacter (i_scarab)": {
@@ -939,7 +939,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "26: s_12 => PlaceNpcAt (n_00003279, l_00006df6)": {
@@ -969,7 +969,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "27: s_12 => QuestSuccess (i_magicitem)": {
@@ -1013,7 +1013,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "28: s_12 => CycleNextState (s_14)": {
@@ -1057,7 +1057,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "29: s_12 => AdjustReputationWithNpc (n_0001ab9d, 15)": {
@@ -1087,7 +1087,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "30: s_12 => StopNpcEscort (n_000068ff)": {
@@ -1110,7 +1110,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "31: s_5 => EndQuest ()": {
@@ -1126,7 +1126,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "32: s_12 => EndQuest ()": {
@@ -1142,7 +1142,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 }
 }

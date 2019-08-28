@@ -78,16 +78,16 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'n_qgiver'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 0
 }
 }
@@ -122,7 +122,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -152,7 +152,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> If (s_0 and s_5): set s_1": {
@@ -196,7 +196,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_1 => Say (1013)": {
@@ -212,7 +212,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_1 => MakePermanent (i_book)": {
@@ -235,7 +235,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_1 => EndQuest ()": {
@@ -251,7 +251,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> If (s_0 and not s_5): set s_2": {
@@ -295,7 +295,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_2 => EndQuest ()": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_3": {
@@ -341,7 +341,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_3 => QuestSuccess (i_mitem)": {
@@ -385,7 +385,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_3 => EndQuest ()": {
@@ -401,7 +401,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfNpcClicked (n_contact): set s_4": {
@@ -424,7 +424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_4 => PlaceItemOnCharacter (i_book)": {
@@ -454,7 +454,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_4 => Say (1011)": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_4 >> WhenPlayerHasItems (i_book): set s_5": {
@@ -514,7 +514,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_5 => CreateFoe(m_guard, 20, 50%, 50) [Msg 1012]": {
@@ -558,7 +558,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_5 => AdjustLegalReputation (-30)": {
@@ -581,7 +581,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

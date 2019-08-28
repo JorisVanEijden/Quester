@@ -28,7 +28,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -43,22 +43,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_delay: Fixed": {
+" 0: t_delay: Fixed 00:01:00": {
 "variable": "t_delay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:01:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -99,7 +99,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -129,7 +129,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => Say (1012)": {
@@ -145,7 +145,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => Unknown83_Location (l_43000000, 31, 1001)": {
@@ -182,7 +182,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_0 => PlayMovie (3)": {
@@ -205,7 +205,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => Say (1050)": {
@@ -221,7 +221,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_1 >> StartTimer (t_delay); When it expires: set s_0": {
@@ -244,7 +244,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_1 => Unknown83_Location (l_0001b51c, 16, 50966)": {
@@ -281,7 +281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> If (s_19 and s_20): set s_2": {
@@ -325,7 +325,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> If (s_1 and s_2 and s_0): set s_9": {
@@ -369,7 +369,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_9 => PlayMovie (14)": {
@@ -392,7 +392,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> If (s_1 and s_3 and s_0): set s_10": {
@@ -436,7 +436,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_10 => PlayMovie (10)": {
@@ -459,7 +459,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> If (s_1 and s_4 and s_0): set s_11": {
@@ -503,7 +503,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_11 => PlayMovie (6)": {
@@ -526,7 +526,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15:  >> If (s_1 and s_5 and s_0): set s_12": {
@@ -570,7 +570,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_12 => PlayMovie (8)": {
@@ -593,7 +593,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17:  >> If (s_1 and s_6 and s_0): set s_13": {
@@ -637,7 +637,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_13 => PlayMovie (9)": {
@@ -660,7 +660,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  >> If (s_1 and s_7 and s_0): set s_14": {
@@ -704,7 +704,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_14 => PlayMovie (15)": {
@@ -727,7 +727,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> If (s_1 and s_8 and s_0): set s_15": {
@@ -771,7 +771,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_15 => PlayMovie (7)": {
@@ -794,7 +794,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23:  >> If (s_17 or s_18): set s_16": {
@@ -838,7 +838,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_16 => Say (1020)": {
@@ -854,7 +854,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_16 => EndQuest ()": {
@@ -870,7 +870,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26:  >> If (s_9 or s_10 or s_11 or s_12): set s_17": {
@@ -914,7 +914,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27:  >> If (s_13 or s_14 or s_15): set s_18": {
@@ -958,7 +958,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> If (not s_3 and not s_4 and not s_5): set s_19": {
@@ -1002,7 +1002,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29:  >> If (not s_6 and not s_7 and not s_8): set s_20": {
@@ -1046,7 +1046,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

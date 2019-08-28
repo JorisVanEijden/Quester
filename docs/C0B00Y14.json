@@ -64,34 +64,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "9216 [0x2400]"
 }
 }
 ,"timers: [2]": {
-" 0: t_delay: Fixed": {
+" 0: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 1442840576,
-"link2": 27,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_qtime: TwoLinksPlus": {
+" 1: t_qtime: 1.5 times travel time from here to 'n_priest' and then 'l_mondung'": {
 "variable": "t_qtime",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 1
 }
 }
@@ -142,7 +142,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 1:  => PickOneOf (s_5, s_5, s_4)": {
@@ -186,7 +186,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 2:  => PickOneOf (s_0, s_1, s_2)": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 3:  => AddLocationToMap (l_mondung)": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 4:  => PlaceItemOnCharacter (i_0000d724)": {
@@ -283,7 +283,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 5: s_0 => PlaceMobAtLocation (m_monster1, l_mondung)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 6: s_1 => PlaceMobAtLocation (m_monster2, l_mondung)": {
@@ -343,7 +343,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 7: s_2 => PlaceMobAtLocation (m_monster3, l_mondung)": {
@@ -373,7 +373,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 8: s_4 => Say (1050)": {
@@ -389,7 +389,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 9: s_5 => CreateLogEntry (1020, 0)": {
@@ -419,7 +419,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "10: s_4 => CreateLogEntry (1021, 0)": {
@@ -449,7 +449,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "11:  >> IfGivingItemToNpc (i_0000d724, n_priest): set s_8": {
@@ -479,7 +479,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "12: s_8 => Say (1051)": {
@@ -495,7 +495,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "13: s_8 => PlaceItemOnCharacter (i_0000d724)": {
@@ -525,7 +525,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "14:  >> IfMobsKilled (m_monster1, 1): set s_6": {
@@ -555,7 +555,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "15:  >> IfMobsKilled (m_monster2, 1): set s_6": {
@@ -585,7 +585,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "16:  >> IfMobsKilled (m_monster3, 1): set s_6": {
@@ -615,7 +615,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "17: s_6 >> WhenPlayerHasItems (i_0000d724): set s_9": {
@@ -659,7 +659,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "18:  >> If (s_9 and not s_8 and s_4): set s_10": {
@@ -703,7 +703,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "19:  >> If (s_6 and s_9 and not s_10): set s_7": {
@@ -747,7 +747,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "20: s_7 => GiveItemToPlayer (i_0000d724)": {
@@ -770,7 +770,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "21: s_6 => Say (1060)": {
@@ -786,7 +786,7 @@
 }
 },
 "messageId": 1060,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "22: s_7 => Say (1061)": {
@@ -802,7 +802,7 @@
 }
 },
 "messageId": 1061,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "23:  >> IfNpcClicked (n_questgiver): set s_11": {
@@ -825,7 +825,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "24:  >> If (s_11 and s_7): set s_12": {
@@ -869,7 +869,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "25:  => Unset (s_11)": {
@@ -913,7 +913,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "26: s_12 => QuestSuccess ()": {
@@ -957,7 +957,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "27: s_3 => EndQuest ()": {
@@ -973,7 +973,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "28: s_12 => EndQuest ()": {
@@ -989,7 +989,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 }
 }

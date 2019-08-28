@@ -74,22 +74,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "50687 [0xC5FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -124,7 +124,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 1:  => RemoveTopics (n_vamp)": {
@@ -161,7 +161,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 2:  => PlaceItemOnPlayer (i_letter) [Msg 1017]": {
@@ -184,7 +184,7 @@
 }
 },
 "messageId": 1017,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 3:  >> WhenPlayerHasItems (i_letter): set s_9": {
@@ -228,7 +228,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 4:  >> WhenItemIsUsed (i_letter): set s_8": {
@@ -258,7 +258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 5: s_8 => AddTopics (l_mondung, n_vamp)": {
@@ -295,7 +295,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 6: s_8 => EnsureNpcLocation (n_vamp)": {
@@ -325,7 +325,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 7: s_8 => CreateLogEntry (1012, 0)": {
@@ -355,7 +355,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 8:  >> IfNpcClicked (n_vamp): set s_2": {
@@ -378,7 +378,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 " 9: s_2 => AddLocationToMap (l_mondung)": {
@@ -401,7 +401,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "10: s_2 => Say (1011)": {
@@ -417,7 +417,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "11: s_2 => CreateLogEntry (1013, 1)": {
@@ -447,7 +447,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "12:  >> If (s_2 and not s_5 and not s_4): set s_3": {
@@ -491,7 +491,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "13: s_3 => Unset (s_2, s_3)": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "14:  => PlaceMobAtLocation (m_000035a8, l_mondung)": {
@@ -565,7 +565,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "15:  >> IfMobHurtByPlayer (m_000035a8): set s_4": {
@@ -588,7 +588,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "16: s_4 => DoneWithMob (m_000035a8, s_4)": {
@@ -618,7 +618,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "17: s_4 => Say (1014)": {
@@ -634,7 +634,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "18:  >> IfMobsKilled (m_000035a8, 1): set s_5": {
@@ -664,7 +664,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "19: s_5 => Say (1015)": {
@@ -680,7 +680,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "20:  >> If (s_2 and s_5): set s_7": {
@@ -724,7 +724,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "21: s_7 => Say (1016)": {
@@ -740,7 +740,7 @@
 }
 },
 "messageId": 1016,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "22: s_7 => AdjustReputationWithNpc (n_vamp, -5)": {
@@ -770,7 +770,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "23: s_7 => EndQuest ()": {
@@ -786,7 +786,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "24:  >> If (s_2 and s_4 and not s_5): set s_6": {
@@ -830,7 +830,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "25: s_6 => QuestSuccess (i_jewelry)": {
@@ -874,7 +874,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "26: s_1 => AdjustReputationWithNpc (n_vamp, -5)": {
@@ -904,7 +904,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "27: s_6 => EndQuest ()": {
@@ -920,7 +920,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 },
 "28: s_1 => EndQuest ()": {
@@ -936,7 +936,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 53
 }
 }

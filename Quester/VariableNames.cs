@@ -564,7 +564,8 @@ namespace Quester
             [0x0006A7C3] = "necromancers",
             [0x0001B727] = "thiefhome1",
             [0x00003333] = "daytime",
-            [0x0006A575] = "incurability"
+            [0x0006A575] = "incurability",
+            [0x0001A9A9] = "informant1",
         };
 
         public static string LookUp(uint hash)

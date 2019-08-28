@@ -28,7 +28,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -43,130 +43,130 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [10]": {
-" 0: t_40000003: Fixed": {
+" 0: t_40000003: Fixed 00:06:00": {
 "variable": "t_40000003",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:06:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_40000004: Fixed": {
+" 1: t_40000004: Fixed 00:08:00": {
 "variable": "t_40000004",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:08:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_40000005: Fixed": {
+" 2: t_40000005: Fixed 00:24:00": {
 "variable": "t_40000005",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:24:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 },
-" 3: t_40000006: Fixed": {
+" 3: t_40000006: Fixed 00:12:00": {
 "variable": "t_40000006",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:12:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 3
 },
-" 4: t_40000007: Fixed": {
+" 4: t_40000007: Fixed 00:06:00": {
 "variable": "t_40000007",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:06:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 4
 },
-" 5: t_40000008: Fixed": {
+" 5: t_40000008: Fixed 00:08:00": {
 "variable": "t_40000008",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:08:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 5
 },
-" 6: t_4000000a: Fixed": {
+" 6: t_4000000a: Fixed 14.00:00:00": {
 "variable": "t_4000000a",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "14.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 6
 },
-" 7: t_000005c7: Fixed": {
+" 7: t_000005c7: Fixed 1.00:00:00": {
 "variable": "t_000005c7",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 7
 },
-" 8: t_000005c8: Fixed": {
+" 8: t_000005c8: Fixed 1.00:00:00": {
 "variable": "t_000005c8",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 8
 },
-" 9: t_2dagger: Fixed": {
+" 9: t_2dagger: Fixed 13.22:40:00": {
 "variable": "t_2dagger",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "13.22:40:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 9
 }
 }
@@ -207,7 +207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1: s_1 >> WhenAtLocation (l_001c2a98): set s_0": {
@@ -237,7 +237,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2: s_1 >> StartTimer (t_40000003); When it expires: set s_3": {
@@ -260,7 +260,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_1 => Say (1012)": {
@@ -276,7 +276,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_2 => StartQuest (977, 977)": {
@@ -306,7 +306,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_2 => EndQuest ()": {
@@ -322,7 +322,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_3 => PromptYesNo (s_16, s_2, 1013)": {
@@ -359,7 +359,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_4 => PromptYesNo (s_17, s_2, 1015)": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_5 => PromptYesNo (s_19, s_2, 1025)": {
@@ -433,7 +433,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_6 => PromptYesNo (s_18, s_2, 1020)": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_7 => PromptYesNo (s_20, s_2, 1030)": {
@@ -507,7 +507,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_8 => PromptYesNo (s_9, s_2, 1035)": {
@@ -544,7 +544,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_12 => PromptYesNo (s_23, s_2, 1050)": {
@@ -581,7 +581,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_13 => StartQuest (977, 977)": {
@@ -611,7 +611,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_13 => Say (1055)": {
@@ -627,7 +627,7 @@
 }
 },
 "messageId": 1055,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_13 => Say (1056)": {
@@ -643,7 +643,7 @@
 }
 },
 "messageId": 1056,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_13 => EndQuest ()": {
@@ -659,7 +659,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_14 => StartQuest (977, 977)": {
@@ -689,7 +689,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_14 => EndQuest ()": {
@@ -705,7 +705,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_15 >> WhenAtLocation (l_00014ff8): set s_25": {
@@ -735,7 +735,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> If (s_1 and not s_0): set s_15": {
@@ -779,7 +779,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_15 => Say (1040)": {
@@ -795,7 +795,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_15 => PromptYesNo (s_21, s_2, 1041)": {
@@ -832,7 +832,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_16 >> StartTimer (t_40000004); When it expires: set s_4": {
@@ -855,7 +855,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_17 >> StartTimer (t_40000006); When it expires: set s_6": {
@@ -878,7 +878,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_18 >> StartTimer (t_40000005); When it expires: set s_5": {
@@ -901,7 +901,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_19 >> StartTimer (t_40000007); When it expires: set s_7": {
@@ -924,7 +924,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_20 >> StartTimer (t_40000008); When it expires: set s_8": {
@@ -947,7 +947,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28: s_21 >> StartTimer (t_2dagger); When it expires: set s_14": {
@@ -970,7 +970,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_22 >> StartTimer (t_000005c7); When it expires: set s_12": {
@@ -993,7 +993,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30: s_23 >> StartTimer (t_000005c8); When it expires: set s_13": {
@@ -1016,7 +1016,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_25 => Say (1045)": {
@@ -1032,7 +1032,7 @@
 }
 },
 "messageId": 1045,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_25 => PromptYesNo (s_22, s_2, 1046)": {
@@ -1069,7 +1069,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

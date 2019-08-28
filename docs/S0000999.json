@@ -39,16 +39,16 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_001c3a54: Random": {
+" 0: t_001c3a54: Random between 00:00:00 and 00:00:00": {
 "variable": "t_001c3a54",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "9 [00001001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 9,
 "index": 0
 }
 }
@@ -82,7 +82,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1: s_0 => Unknown78_Value (382)": {
@@ -105,7 +105,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2: s_1 => Unknown78_Value (393)": {
@@ -128,7 +128,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_2 => Unknown78_Value (363)": {
@@ -151,7 +151,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_3 => Unknown78_Value (394)": {
@@ -174,7 +174,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_4 => Unknown78_Value (365)": {
@@ -197,7 +197,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_5 => Unknown78_Value (392)": {
@@ -220,7 +220,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_6 => Unknown78_Value (500)": {
@@ -243,7 +243,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> If (s_47 and s_48): set s_7": {
@@ -287,7 +287,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_7 => EndQuest ()": {
@@ -303,7 +303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfFactionReputation (Cyndassa, 0): set s_8": {
@@ -333,7 +333,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfFactionReputation (Princess_Elysana, 0): set s_9": {
@@ -363,7 +363,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> IfFactionReputation (Queen_Aubki, 0): set s_10": {
@@ -393,7 +393,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> IfFactionReputation (Princess_Morgiah, 0): set s_11": {
@@ -423,7 +423,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfFactionReputation (Medora, 0): set s_12": {
@@ -453,7 +453,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15:  >> IfFactionReputation (Prince_Helseth, 0): set s_13": {
@@ -483,7 +483,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16:  >> IfFactionReputation (Prince_Lhotun, 0): set s_14": {
@@ -513,7 +513,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17:  >> IfPlayerHasLevel (5): set s_15": {
@@ -536,7 +536,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> IfPlayerHasLevel (4): set s_16": {
@@ -559,7 +559,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  >> IfPlayerHasLevel (8): set s_17": {
@@ -582,7 +582,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> IfPlayerHasLevel (3): set s_18": {
@@ -605,7 +605,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> IfPlayerHasLevel (3): set s_19": {
@@ -628,7 +628,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfPlayerHasLevel (6): set s_20": {
@@ -651,7 +651,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23:  >> IfPlayerHasLevel (5): set s_21": {
@@ -674,7 +674,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24:  >> If (s_4 and s_10 and not s_19): set s_22": {
@@ -718,7 +718,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_22 => Say (1032)": {
@@ -734,7 +734,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26:  >> If (s_6 and s_8 and not s_21): set s_23": {
@@ -778,7 +778,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_23 => Say (1034)": {
@@ -794,7 +794,7 @@
 }
 },
 "messageId": 1034,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> If (s_5 and s_9 and not s_20): set s_24": {
@@ -838,7 +838,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_24 => Say (1032)": {
@@ -854,7 +854,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> If (s_1 and s_13 and not s_16): set s_25": {
@@ -898,7 +898,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_25 => Say (1032)": {
@@ -914,7 +914,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32:  >> If (s_0 and s_14 and not s_15): set s_26": {
@@ -958,7 +958,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33: s_26 => Say (1032)": {
@@ -974,7 +974,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34:  >> If (s_2 and s_12 and not s_17): set s_27": {
@@ -1018,7 +1018,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_27 => Say (1036)": {
@@ -1034,7 +1034,7 @@
 }
 },
 "messageId": 1036,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "36:  >> If (s_3 and s_11 and not s_18): set s_28": {
@@ -1078,7 +1078,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "37: s_28 => Say (1032)": {
@@ -1094,7 +1094,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "38:  >> If (s_4 and not s_10): set s_29": {
@@ -1138,7 +1138,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "39: s_29 => Say (1031)": {
@@ -1154,7 +1154,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "40:  >> If (s_6 and not s_8): set s_30": {
@@ -1198,7 +1198,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "41: s_30 => Say (1033)": {
@@ -1214,7 +1214,7 @@
 }
 },
 "messageId": 1033,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "42:  >> If (s_5 and not s_9): set s_31": {
@@ -1258,7 +1258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "43: s_31 => Say (1031)": {
@@ -1274,7 +1274,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "44:  >> If (s_1 and not s_13): set s_32": {
@@ -1318,7 +1318,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "45: s_32 => Say (1031)": {
@@ -1334,7 +1334,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "46:  >> If (s_0 and not s_14): set s_33": {
@@ -1378,7 +1378,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "47: s_33 => Say (1031)": {
@@ -1394,7 +1394,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "48:  >> If (s_2 and not s_12): set s_34": {
@@ -1438,7 +1438,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "49: s_34 => Say (1035)": {
@@ -1454,7 +1454,7 @@
 }
 },
 "messageId": 1035,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "50:  >> If (s_3 and not s_11): set s_35": {
@@ -1498,7 +1498,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "51: s_35 => Say (1031)": {
@@ -1514,7 +1514,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "52:  >> If (s_10 and s_19 and s_4): set s_36": {
@@ -1558,7 +1558,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "53: s_36 => StartQuest (5, 5)": {
@@ -1588,7 +1588,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "54:  => Unset (s_4)": {
@@ -1632,7 +1632,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "55:  >> If (s_6 and s_8 and s_21): set s_37": {
@@ -1676,7 +1676,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "56: s_37 => StartQuest (7, 7)": {
@@ -1706,7 +1706,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "57:  => Unset (s_30, s_23, s_6)": {
@@ -1750,7 +1750,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "58:  >> If (s_5 and s_9 and s_20 and not s_47): set s_38": {
@@ -1794,7 +1794,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "59: s_38 => StartQuest (6, 6)": {
@@ -1824,7 +1824,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "60:  => Unset (s_5)": {
@@ -1868,7 +1868,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "61:  >> If (s_1 and s_13 and s_16 and not s_43): set s_39": {
@@ -1912,7 +1912,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "62: s_39 => StartQuest (2, 2)": {
@@ -1942,7 +1942,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "63:  => Unset (s_1)": {
@@ -1986,7 +1986,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "64:  >> If (s_0 and s_14 and s_15): set s_40": {
@@ -2030,7 +2030,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "65: s_40 => StartQuest (1, 1)": {
@@ -2060,7 +2060,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "66:  => Unset (s_0)": {
@@ -2104,7 +2104,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "67:  >> If (s_2 and s_12 and s_17): set s_41": {
@@ -2148,7 +2148,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "68: s_41 => StartQuest (3, 3)": {
@@ -2178,7 +2178,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "69:  => Unset (s_34, s_27, s_2)": {
@@ -2222,7 +2222,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "70:  >> If (s_3 and s_11 and s_18): set s_42": {
@@ -2266,7 +2266,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "71: s_42 => StartQuest (4, 4)": {
@@ -2296,7 +2296,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "72:  => Unset (s_3)": {
@@ -2340,7 +2340,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "73: s_44 => CreateLogEntry (1011, 1)": {
@@ -2370,7 +2370,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "74:  >> If (s_14 and s_15): set s_45": {
@@ -2414,7 +2414,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "75: s_45 => PlaceItemOnPlayer (i_001b0846) [Msg 1026]": {
@@ -2437,7 +2437,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "76:  >> If (s_11 and s_18): set s_46": {
@@ -2481,7 +2481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "77: s_46 => PlaceItemOnPlayer (i_006d6646) [Msg 1026]": {
@@ -2504,7 +2504,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "78:  >> If (s_51): set s_54": {
@@ -2548,7 +2548,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "79: s_54 => Unset (s_50)": {
@@ -2592,7 +2592,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "80: s_54 => StartQuest (997, 997)": {
@@ -2622,7 +2622,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "81:  >> If (s_52): set s_55": {
@@ -2666,7 +2666,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "82: s_55 => Unset (s_50)": {
@@ -2710,7 +2710,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "83: s_55 => StartQuest (998, 998)": {
@@ -2740,7 +2740,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "84:  >> If (s_53): set s_56": {
@@ -2784,7 +2784,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "85: s_56 => Unset (s_50)": {
@@ -2828,7 +2828,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "86: s_56 => StartQuest (998, 998)": {
@@ -2858,7 +2858,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "87:  >> If (s_50): set s_57": {
@@ -2902,7 +2902,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "88: s_57 => Unset (s_52, s_51, s_54, s_55)": {
@@ -2946,7 +2946,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "89: s_57 => Unset (s_50, s_57, s_53, s_56)": {
@@ -2990,7 +2990,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

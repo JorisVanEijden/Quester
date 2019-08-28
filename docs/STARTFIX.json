@@ -71,70 +71,70 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [5]": {
-" 0: t_0004dcfc: Random": {
+" 0: t_0004dcfc: Random between 7.00:00:00 and 14.00:00:00": {
 "variable": "t_0004dcfc",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
 "maximum": "14.00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_0009eb7c: Fixed": {
+" 1: t_0009eb7c: Fixed 30.00:00:00": {
 "variable": "t_0009eb7c",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "30.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_00009bae: Fixed": {
+" 2: t_00009bae: Fixed 14.00:00:00": {
 "variable": "t_00009bae",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "14.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 },
-" 3: t_oneday: Fixed": {
+" 3: t_oneday: Fixed 1.00:00:00": {
 "variable": "t_oneday",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 3
 },
-" 4: t_0006b98d: Fixed": {
+" 4: t_0006b98d: Fixed 29.09:00:00": {
 "variable": "t_0006b98d",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "29.09:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 4
 }
 }
@@ -168,7 +168,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => StartQuest (977, 977)": {
@@ -198,7 +198,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> StartTimer (t_0004dcfc); When it expires: set s_0": {
@@ -221,7 +221,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_0 >> StartTimer (t_0009eb7c); When it expires: set s_1": {
@@ -244,7 +244,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_0 => PlaceItemOnPlayer (i_letter1) [Msg 1026]": {
@@ -267,7 +267,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => EnsureNpcLocation (l_dirtypit)": {
@@ -297,7 +297,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_0 => PlaceNpcAt (n_0000b04d, l_dirtypit)": {
@@ -327,7 +327,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_1 >> StartTimer (t_00009bae); When it expires: set s_2": {
@@ -350,7 +350,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_1 => PlaceItemOnPlayer (i_letter2) [Msg 1026]": {
@@ -373,7 +373,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_2 >> StartTimer (t_0006b98d); When it expires: set s_6": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_2 => AdjustReputationWithNpc (n_0000b04d, -15)": {
@@ -426,7 +426,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 => PlaceItemOnPlayer (i_0006a0fc) [Msg 1026]": {
@@ -449,7 +449,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> IfNpcClicked (n_0000b04d): set s_3": {
@@ -472,7 +472,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 >> StartTimer (t_oneday); When it expires: set s_4": {
@@ -495,7 +495,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_3 => StopTimer (t_0004dcfc)": {
@@ -518,7 +518,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_3 => StopTimer (t_00009bae)": {
@@ -541,7 +541,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_3 => StopTimer (t_0009eb7c)": {
@@ -564,7 +564,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_3 => CreateLogEntry (1011, 1)": {
@@ -594,7 +594,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_3 => CycleNextState (s_5)": {
@@ -638,7 +638,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_3 => Say (1015)": {
@@ -654,7 +654,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_3 => Say (1016)": {
@@ -670,7 +670,7 @@
 }
 },
 "messageId": 1016,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_4 => EndQuest ()": {
@@ -686,7 +686,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_4 => QuestSuccess ()": {
@@ -730,7 +730,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_6 => EndQuest ()": {
@@ -746,7 +746,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

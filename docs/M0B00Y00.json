@@ -51,7 +51,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 },
@@ -66,22 +66,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: OneLink": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -132,7 +132,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 1:  => CreateLogEntry (1030, 0)": {
@@ -162,7 +162,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 2:  => PickOneOf (s_9, s_10, s_10, s_10)": {
@@ -206,7 +206,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 3:  => AddLocationToMap (l_mondung)": {
@@ -229,7 +229,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 4:  => PickOneOf (s_6, s_7, s_8)": {
@@ -273,7 +273,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 5: s_6 => PlaceMobAtLocation (m_gem2, l_mondung)": {
@@ -303,7 +303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 6: s_7 => PlaceMobAtLocation (m_wereboar, l_mondung)": {
@@ -333,7 +333,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 7: s_8 => PlaceMobAtLocation (m_werewolf, l_mondung)": {
@@ -363,7 +363,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 8:  >> IfMobsKilled (m_gem2, 1): set s_1 [Msg 1021]": {
@@ -393,7 +393,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 " 9:  >> IfMobsKilled (m_wereboar, 1): set s_1 [Msg 1020]": {
@@ -423,7 +423,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "10:  >> IfMobsKilled (m_werewolf, 1): set s_1 [Msg 1020]": {
@@ -453,7 +453,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "11:  >> IfNpcClicked (n_questgiver): set s_2": {
@@ -476,7 +476,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "12:  >> If (s_2 and not s_1): set s_5": {
@@ -520,7 +520,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "13: s_5 => Unset (s_2, s_5)": {
@@ -564,7 +564,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "14:  >> If (s_2 and s_1): set s_0": {
@@ -608,7 +608,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "15: s_0 => QuestSuccess (i_reward)": {
@@ -652,7 +652,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "16:  >> If (s_9 and s_0): set s_11": {
@@ -696,7 +696,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "17: s_11 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
@@ -719,7 +719,7 @@
 }
 },
 "messageId": 1080,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "18: s_0 => EndQuest ()": {
@@ -735,7 +735,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 },
 "19: s_3 => EndQuest ()": {
@@ -751,7 +751,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 5
 }
 }

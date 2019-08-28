@@ -128,15 +128,17 @@ namespace Quester
                 writer.WriteLine($"\"{i,2}: {timer}\": {{");
                 writer.WriteLine($"\"variable\": \"{timer.Variable}\",");
                 writer.WriteLine($"\"type\": \"{timer.Type}\",");
+                writer.WriteLine($"\"typeRaw\": \"{timer.TypeRaw} [0x{timer.TypeRaw:X2}]\",");
                 TimeSpan minimum = TimeSpan.FromMinutes(timer.Minimum);
                 writer.WriteLine($"\"minimum\": \"{minimum}\",");
                 TimeSpan maximum = TimeSpan.FromMinutes(timer.Maximum);
                 writer.WriteLine($"\"maximum\": \"{maximum}\",");
-                writer.WriteLine($"\"link1\": {timer.Link1},");
-                writer.WriteLine($"\"link2\": {timer.Link2},");
+                string binary = Convert.ToString(timer.Flags1, 2).PadLeft(8, '0');
+                writer.WriteLine($"\"flags1\": \"{timer.Flags1} [{binary}]\",");
+                binary = Convert.ToString(timer.Flags2, 2).PadLeft(2, '0');
+                writer.WriteLine($"\"flags2\": \"{timer.Flags2} [{binary}]\",");
                 writer.WriteLine($"\"duration\": {timer.Duration},");
                 writer.WriteLine($"\"started\": {timer.Started},");
-                writer.WriteLine($"\"flags\": {timer.Flags},");
                 writer.WriteLine($"\"index\": {timer.Index}");
                 writer.WriteLine(i + 1 == timers.Count ? "}" : "},");
             }
@@ -161,7 +163,7 @@ namespace Quester
                 writer.WriteLine($"\"textRecordId1\": {location.TextRecordId1},");
                 writer.WriteLine($"\"textRecordId2\": {location.TextRecordId2},");
                 writer.WriteLine($"\"index\": {location.Index},");
-                writer.WriteLine($"\"flags\": {location.Flags},");
+                writer.WriteLine($"\"flags\": \"{location.Flags} [0x{location.Flags:X2}]\",");
                 writer.WriteLine($"\"objPtr\": {location.ObjPtr},");
                 writer.WriteLine($"\"unknown1\": \"{location.Unknown1} [0x{location.Unknown1:X4}]\"");
                 writer.WriteLine(i + 1 == locations.Count ? "}" : "},");
@@ -239,7 +241,7 @@ namespace Quester
 
                 writer.WriteLine("},");
                 writer.WriteLine($"\"messageId\": {opCode.MessageId},");
-                writer.WriteLine($"\"flags\": {opCode.Flags},");
+                writer.WriteLine($"\"flags\": \"{opCode.Flags} [0x{opCode.Flags:X4}]\",");
                 writer.WriteLine($"\"lastUpdate\": {opCode.LastUpdate}");
                 writer.WriteLine(j + 1 == opCodes.Count ? "}" : "},");
             }

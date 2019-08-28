@@ -74,7 +74,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -89,22 +89,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -147,7 +147,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => AddLocationToMap (l_mondung)": {
@@ -170,7 +170,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -200,7 +200,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_00000d88)": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PlaceMobAtLocation (m_daedra, l_mondung)": {
@@ -260,7 +260,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => EndQuest ()": {
@@ -276,7 +276,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> If (s_4 and s_10 and not s_6): set s_1": {
@@ -320,7 +320,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_1 => QuestSuccess (i_book)": {
@@ -364,7 +364,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  => Unset (s_4)": {
@@ -408,7 +408,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_1 => EndQuest ()": {
@@ -424,7 +424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_2 => PlaceMobAtLocation (m_daedra, l_0000d527)": {
@@ -454,7 +454,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfNpcClicked (n_qgiver): set s_4": {
@@ -477,7 +477,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_5 => PlaceItemAt (i_00000d88, l_0000d527)": {
@@ -507,7 +507,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_5 => CreateFoe(m_firedaedra, 1, 100%, 100) [Msg 1051]": {
@@ -551,7 +551,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfMobsKilled (m_daedra, 1): set s_6": {
@@ -581,7 +581,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15:  >> IfMobHurtByPlayer (m_daedra): set s_7": {
@@ -604,7 +604,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_7 >> WhenItemIsUsed (i_00000d88): set s_8": {
@@ -634,7 +634,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_8 >> WhenPlayerCasts (57): set s_2": {
@@ -664,7 +664,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_8 => DoneWithMob (m_daedra, _)": {
@@ -694,7 +694,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  >> If (s_4 and s_6): set s_9": {
@@ -738,7 +738,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_9 => Say (1040)": {
@@ -754,7 +754,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_9 => EndQuest ()": {
@@ -770,7 +770,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> If (s_2 and not s_6): set s_10": {
@@ -814,7 +814,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_10 => Say (1060)": {
@@ -830,7 +830,7 @@
 }
 },
 "messageId": 1060,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: not s_7 >> WhenItemIsUsed (i_00000d88): set s_5 [Msg 1050]": {
@@ -860,7 +860,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

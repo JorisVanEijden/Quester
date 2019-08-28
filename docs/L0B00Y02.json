@@ -51,7 +51,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "31744 [0x7C00]"
 },
@@ -66,22 +66,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "31744 [0x7C00]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: TwoLinksPlus": {
+" 0: t_queston: 1.5 times travel time from here to 'l_mondung' and then 'l_stronghold'": {
 "variable": "t_queston",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 1,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -124,7 +124,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -154,7 +154,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 2:  => AddLocationToMap (l_mondung)": {
@@ -177,7 +177,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 3:  => PlaceMobAtLocation (m_assassin, l_mondung)": {
@@ -207,7 +207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 4:  => PlaceMobAtLocation (m_lady, l_stronghold)": {
@@ -237,7 +237,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 5:  => PlaceItemOnMob (i_letter, m_assassin)": {
@@ -267,7 +267,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 6:  >> IfMobsKilled (m_assassin, 1): set s_3": {
@@ -297,7 +297,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 7: s_3 => Say (1013)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 8:  >> WhenItemIsUsed (i_letter): set s_5": {
@@ -343,7 +343,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 9: s_5 => CreateLogEntry (1012, 1)": {
@@ -373,7 +373,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "10: s_5 => AddLocationToMap (l_stronghold)": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "11:  >> IfMobsKilled (m_lady, 1): set s_4": {
@@ -426,7 +426,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "12: s_4 => Say (1014)": {
@@ -442,7 +442,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "13:  >> IfNpcClicked (n_qgiver): set s_1": {
@@ -465,7 +465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "14:  >> If (s_3 and not s_4 and s_1): set s_6": {
@@ -509,7 +509,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "15:  >> If (s_3 and s_4 and s_1): set s_7": {
@@ -553,7 +553,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "16:  >> If (not s_3 and not s_4 and s_1): set s_8": {
@@ -597,7 +597,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "17: s_8 => Unset (s_1, s_8)": {
@@ -641,7 +641,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "18: s_7 => QuestSuccess ()": {
@@ -685,7 +685,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "19: s_6 => Say (1015)": {
@@ -701,7 +701,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "20: s_0 => EndQuest ()": {
@@ -717,7 +717,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "21: s_7 => EndQuest ()": {
@@ -733,7 +733,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 }
 }

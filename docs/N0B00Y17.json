@@ -150,7 +150,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 },
@@ -165,7 +165,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 },
@@ -180,34 +180,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [2]": {
-" 0: t_time1: TwoLinksPlus": {
+" 0: t_time1: 1.5 times travel time from here to 'l_hintdung' and then 'l_itemdung'": {
 "variable": "t_time1",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 2,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 },
-" 1: t_time2: OneLink": {
+" 1: t_time2: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_time2",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 3,
-"link2": 2,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 1
 }
 }
@@ -234,7 +234,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 1:  => AddLocationToMap (l_hintdung)": {
@@ -257,7 +257,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 2:  => AddLocationToMap (l_scholardung)": {
@@ -280,7 +280,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 3:  => CreateLogEntry (1020, 0)": {
@@ -310,7 +310,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 4:  => PickOneOf (s_2, s_1, s_1, s_3)": {
@@ -354,7 +354,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 5:  => PlaceNpcAt (n_scholar, l_scholardung)": {
@@ -384,7 +384,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 6:  => PlaceItemAt (i_sage, l_itemdung)": {
@@ -414,7 +414,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 7: s_3 => PlaceItemAt (i_00003674, l_hintdung)": {
@@ -444,7 +444,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 8: s_2 => PlaceItemAt (i_00003674, l_hintdung)": {
@@ -474,7 +474,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 9: s_1 => PlaceItemAt (i_00000634, l_hintdung)": {
@@ -504,7 +504,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "10:  >> If (s_3 or s_1): set s_13": {
@@ -548,7 +548,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "11:  >> IfNpcClicked (n_scholar): set s_5": {
@@ -571,7 +571,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "12:  >> If (s_13 and s_5): set s_14": {
@@ -615,7 +615,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "13:  >> If (s_5 and s_2): set s_12": {
@@ -659,7 +659,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "14: s_12 => Say (1040)": {
@@ -675,7 +675,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "15: s_12 => CreateLogEntry (1022, 1)": {
@@ -705,7 +705,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "16: s_12 => AddLocationToMap (l_itemdung)": {
@@ -728,7 +728,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "17: s_14 => PromptYesNo (s_10, s_11, 1041)": {
@@ -765,7 +765,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "18: s_10 => Say (1042)": {
@@ -781,7 +781,7 @@
 }
 },
 "messageId": 1042,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "19: s_10 => CreateLogEntry (1025, 1)": {
@@ -811,7 +811,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "20: s_10 => PlaceItemOnCharacter (i_0006f2ce)": {
@@ -841,7 +841,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "21: s_10 >> StartTimer (t_time2); When it expires: set s_20": {
@@ -864,7 +864,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "22: s_20 => HideNpc (n_scholar)": {
@@ -887,7 +887,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "23: s_11 => Say (1043)": {
@@ -903,7 +903,7 @@
 }
 },
 "messageId": 1043,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "24: s_11 => CreateLogEntry (1021, 1)": {
@@ -933,7 +933,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "25:  >> IfGivingItemToNpc (i_0006f2ce, n_contact): set s_6": {
@@ -963,7 +963,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "26: s_6 => Say (1044)": {
@@ -979,7 +979,7 @@
 }
 },
 "messageId": 1044,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "27: s_6 => PlaceItemOnCharacter (i_ingredient)": {
@@ -1009,7 +1009,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "28:  >> IfGivingItemToNpc (i_ingredient, n_scholar): set s_7": {
@@ -1039,7 +1039,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "29: s_7 => PlaceItemOnCharacter (i_scholarreward)": {
@@ -1069,7 +1069,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "30: s_7 => PromptYesNo (s_8, s_9, 1045)": {
@@ -1106,7 +1106,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "31: s_8 => Say (1046)": {
@@ -1122,7 +1122,7 @@
 }
 },
 "messageId": 1046,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "32: s_8 => PlaceNpcAt (l_hintdung)": {
@@ -1152,7 +1152,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "33: s_9 => Say (1047)": {
@@ -1168,7 +1168,7 @@
 }
 },
 "messageId": 1047,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "34: s_7 => MakePermanent (i_scholarreward)": {
@@ -1191,7 +1191,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "35:  >> WhenItemIsUsed (i_00000634): set s_15": {
@@ -1221,7 +1221,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "36:  >> WhenItemIsUsed (i_00003674): set s_16": {
@@ -1251,7 +1251,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "37: s_15 => CreateLogEntry (1023, 2)": {
@@ -1281,7 +1281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "38: s_16 => CreateLogEntry (1024, 2)": {
@@ -1311,7 +1311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "39: s_15 => AddLocationToMap (l_itemdung)": {
@@ -1334,7 +1334,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "40:  >> IfItemFound (i_sage): set s_17 [Msg 1050]": {
@@ -1357,7 +1357,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "41:  >> IfNpcClicked (n_questgiver): set s_18": {
@@ -1380,7 +1380,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "42:  >> If (s_3 and s_5 and s_16 and s_18): set s_19": {
@@ -1424,7 +1424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "43: s_19 => Say (1060)": {
@@ -1440,7 +1440,7 @@
 }
 },
 "messageId": 1060,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "44: s_19 => PlaceItemOnCharacter (i_gold)": {
@@ -1470,7 +1470,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "45: s_19 => MakePermanent (i_gold)": {
@@ -1493,7 +1493,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "46: s_19 => AdjustReputationWithNpc (n_questgiver, 5)": {
@@ -1523,7 +1523,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "47:  => Unset (s_18)": {
@@ -1567,7 +1567,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "48:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_4": {
@@ -1597,7 +1597,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "49: s_4 => QuestSuccess (i_sage)": {
@@ -1641,7 +1641,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "50: s_19 => EndQuest ()": {
@@ -1657,7 +1657,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "51: s_0 => EndQuest ()": {
@@ -1673,7 +1673,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "52: s_4 => EndQuest ()": {
@@ -1689,7 +1689,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 }
 }

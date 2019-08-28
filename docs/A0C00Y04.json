@@ -123,7 +123,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "39936 [0x9C00]"
 },
@@ -138,34 +138,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "39936 [0x9C00]"
 }
 }
 ,"timers: [2]": {
-" 0: t_extratime: Fixed": {
+" 0: t_extratime: Fixed 00:30:00": {
 "variable": "t_extratime",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:30:00",
 "maximum": "00:00:00",
-"link1": 671116543,
-"link2": 426,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_totaltime: OneLink": {
+" 1: t_totaltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_totaltime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "90.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 426,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 1
 }
 }
@@ -224,7 +224,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 1:  => AddLocationToMap (l_dungeon)": {
@@ -247,7 +247,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 2:  => PlaceNpcAt (n_qgiver, l_meetingplace)": {
@@ -277,7 +277,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 3:  => PlaceMobAtLocation (m_guardian, l_dungeon)": {
@@ -307,7 +307,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 4:  => PlaceItemOnMob (i_ingredient, m_guardian)": {
@@ -337,7 +337,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 5:  => CreateLogEntry (1010, 0)": {
@@ -367,7 +367,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 6:  >> IfMobHurtByPlayer (m_guardian): set s_1": {
@@ -390,7 +390,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 7:  >> If (s_1): set s_12": {
@@ -434,7 +434,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 8:  >> If (s_1 and s_2): set s_11": {
@@ -478,7 +478,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 " 9: s_11 => GiveItemToPlayer (i_token) [Msg 1020]": {
@@ -501,7 +501,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "10: s_11 => AdjustReputationWithNpc (n_dummydarkb, -75)": {
@@ -531,7 +531,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "11: s_11 => CreateFoe(m_daedras, 1, 100%, 100)": {
@@ -575,7 +575,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "12: s_12 => PromptYesNo (s_2, s_3, 1012)": {
@@ -612,7 +612,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "13: s_12 => Unset (s_1, _)": {
@@ -656,7 +656,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "14: s_2 => CreateLogEntry (1011, 1)": {
@@ -686,7 +686,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "15: s_2 => DoneWithMob (m_guardian, _)": {
@@ -716,7 +716,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "16: s_2 => PlaceItemOnCharacter (i_token)": {
@@ -746,7 +746,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "17:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_0 [Msg 1013]": {
@@ -776,7 +776,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "18:  >> IfGivingItemToNpc (i_token, n_qgiver): set s_5 [Msg 1014]": {
@@ -806,7 +806,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "19:  >> If (s_0 or s_5): set s_10": {
@@ -850,7 +850,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "20: s_10 => HideNpc (n_qgiver)": {
@@ -873,7 +873,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "21: s_10 => PlaceMobAtLocation (m_monster, l_meetingplace)": {
@@ -903,7 +903,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "22: s_0 => PlaceItemOnMob (i_ingredient, m_monster)": {
@@ -933,7 +933,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "23: s_5 => SetMobPowerLevel (m_monster, 23)": {
@@ -963,7 +963,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "24: s_10 => CreateFoe(m_orc, 1, 100%, 100)": {
@@ -1007,7 +1007,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "25:  >> IfMobsKilled (m_monster, 1): set s_6": {
@@ -1037,7 +1037,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "26:  >> If (s_5 and s_6): set s_7": {
@@ -1081,7 +1081,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "27: s_7 => AdjustReputationWithNpc (n_dummyorc, -10)": {
@@ -1111,7 +1111,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "28: s_7 => AdjustReputationWithNpc (n_dummymage, 25) [Msg 1015]": {
@@ -1141,7 +1141,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "29: s_6 >> StartTimer (t_extratime); When it expires: set s_8": {
@@ -1164,7 +1164,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "30: s_9 => MakePermanent (i_ingredient)": {
@@ -1187,7 +1187,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "31: s_8 => MakePermanent (i_ingredient)": {
@@ -1210,7 +1210,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "32: s_8 => EndQuest ()": {
@@ -1226,7 +1226,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 },
 "33: s_9 => EndQuest ()": {
@@ -1242,7 +1242,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 49
 }
 }

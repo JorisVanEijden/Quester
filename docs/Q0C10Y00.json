@@ -101,7 +101,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -116,7 +116,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -131,22 +131,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: TwoLinksPlus": {
+" 0: t_queston: 1.5 times travel time from here to 'l_dungeon1' and then 'l_dungeon1'": {
 "variable": "t_queston",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "6.22:40:00",
 "maximum": "10.10:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -228,7 +228,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => PlaceItemAt (i_item2, l_dungeon2)": {
@@ -258,7 +258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PlaceItemAt (i_item1, l_dungeon1)": {
@@ -288,7 +288,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> StartTimer (t_queston); When it expires: set s_3": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => AddLocationToMap (l_dungeon3)": {
@@ -334,7 +334,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => AddLocationToMap (l_dungeon2)": {
@@ -357,7 +357,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  => AddLocationToMap (l_dungeon1)": {
@@ -380,7 +380,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  => CreateLogEntry (1015, 0)": {
@@ -410,7 +410,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> WhenAtLocation (l_dungeon1): set s_10": {
@@ -440,7 +440,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> WhenAtLocation (l_dungeon2): set s_14": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfGivingItemToNpc (i_item1, n_qgiver): set s_0": {
@@ -500,7 +500,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfGivingItemToNpc (i_item2, n_qgiver): set s_1": {
@@ -530,7 +530,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> IfGivingItemToNpc (i_item3, n_qgiver): set s_2": {
@@ -560,7 +560,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_3 => EndQuest ()": {
@@ -576,7 +576,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_4 => CreateFoe(m_zombie, 15, 5%, 5)": {
@@ -620,7 +620,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_4 => PlaceMobAtLocation (m_zombie, l_dungeon1)": {
@@ -650,7 +650,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_5 => CreateFoe(m_mummy, 10, 5%, 5)": {
@@ -694,7 +694,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_5 => PlaceMobAtLocation (m_mummy, l_dungeon1)": {
@@ -724,7 +724,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_6 => CreateFoe(m_skeleton, 12, 5%, 5)": {
@@ -768,7 +768,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_6 => PlaceMobAtLocation (m_skeleton, l_dungeon1)": {
@@ -798,7 +798,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_7 => CreateFoe(m_44000000, 10, 5%, 5)": {
@@ -842,7 +842,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_7 => PlaceMobAtLocation (m_44000000, l_dungeon2)": {
@@ -872,7 +872,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_8 => CreateFoe(m_spriggan, 15, 5%, 5)": {
@@ -916,7 +916,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_8 => PlaceMobAtLocation (m_spriggan, l_dungeon2)": {
@@ -946,7 +946,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_9 => CreateFoe(m_wereboar, 12, 5%, 5)": {
@@ -990,7 +990,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_9 => PlaceMobAtLocation (m_wereboar, l_dungeon2)": {
@@ -1020,7 +1020,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_10 => PickOneOf (s_4, s_5, s_6, s_4)": {
@@ -1064,7 +1064,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27:  >> IfItemFound (i_item1): set s_11 [Msg 1021]": {
@@ -1087,7 +1087,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> IfItemFound (i_item2): set s_12 [Msg 1022]": {
@@ -1110,7 +1110,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29:  >> IfItemFound (i_item3): set s_13 [Msg 1023]": {
@@ -1133,7 +1133,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30: s_14 => PickOneOf (s_7, s_8, s_9, s_7)": {
@@ -1177,7 +1177,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31:  >> If (s_0 and s_1 and s_2): set s_15": {
@@ -1221,7 +1221,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_15 => QuestSuccess (i_reward1, i_reward2, i_reward3)": {
@@ -1265,7 +1265,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33: s_15 => EndQuest ()": {
@@ -1281,7 +1281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

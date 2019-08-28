@@ -64,46 +64,46 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "57343 [0xDFFF]"
 }
 }
 ,"timers: [3]": {
-" 0: t_oneday: Fixed": {
+" 0: t_oneday: Fixed 1.03:00:00": {
 "variable": "t_oneday",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1.03:00:00",
 "maximum": "00:00:00",
-"link1": -335544320,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_00006cc3: Fixed": {
+" 1: t_00006cc3: Fixed 7.00:00:00": {
 "variable": "t_00006cc3",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "7.00:00:00",
 "maximum": "00:00:00",
-"link1": -335544320,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_0001bf33: Fixed": {
+" 2: t_0001bf33: Fixed 03:00:00": {
 "variable": "t_0001bf33",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "03:00:00",
 "maximum": "00:00:00",
-"link1": -335544320,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 }
 }
@@ -170,7 +170,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 1:  >> StartTimer (t_oneday); When it expires: set s_0": {
@@ -193,7 +193,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 2:  => EnsureNpcLocation (l_magesguild)": {
@@ -223,7 +223,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 3:  => PlaceNpcAt (n_sleepingmage, l_magesguild)": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 4:  => CreateLogEntry (1010, 0)": {
@@ -283,7 +283,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 5:  >> If (not s_12 and not s_4): set s_5": {
@@ -327,7 +327,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 6: not s_12 >> WhenAtLocation (l_magesguild): set s_1": {
@@ -357,7 +357,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 7:  >> IfNpcClicked (n_sleepingmage): set s_4 [Msg 1012]": {
@@ -380,7 +380,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 8: s_12 => HideNpc (n_sleepingmage)": {
@@ -403,7 +403,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 " 9: s_4 => HideNpc (n_sleepingmage)": {
@@ -426,7 +426,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "10: s_4 => PlaceMobAtLocation (m_mage, l_magesguild)": {
@@ -456,7 +456,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "11: s_4 => SetMobPowerLevel (m_mage, 22)": {
@@ -486,7 +486,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "12: s_4 => SetMobPowerLevel (m_mage, 47)": {
@@ -516,7 +516,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "13:  >> IfMobHurtByPlayer (m_mage): set s_8 [Msg 1013]": {
@@ -539,7 +539,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "14:  >> IfMobsKilled (m_mage, 1): set s_7": {
@@ -569,7 +569,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "15: s_7 => CreateFoe(m_00019bd1, 2, 50%, 50)": {
@@ -613,7 +613,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "16: s_7 => CreateFoe(m_00003543, 30, 10%, 10)": {
@@ -657,7 +657,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "17: s_7 => CreateFoe(m_0000d11b, 25, 10%, 10)": {
@@ -701,7 +701,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "18:  >> IfMobHurtByPlayer (m_00003543): set s_10 [Msg 1014]": {
@@ -724,7 +724,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "19:  >> IfMobHurtByPlayer (m_0000d11b): set s_10 [Msg 1014]": {
@@ -747,7 +747,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "20:  >> IfMobHurtByPlayer (m_00019bd1): set s_10 [Msg 1030]": {
@@ -770,7 +770,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "21: s_7 >> StartTimer (t_00006cc3); When it expires: set s_9": {
@@ -793,7 +793,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "22: s_7 => AdjustReputationWithNpc (n_sleepingmage, -50)": {
@@ -823,7 +823,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "23: s_4 => AdjustReputationWithNpc (n_sleepingmage, -10)": {
@@ -853,7 +853,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "24: s_1 => CreateFoe(m_0000d093, 55, 100%, 100)": {
@@ -897,7 +897,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "25:  >> IfMobHurtByPlayer (m_0000d093): set s_2 [Msg 1011]": {
@@ -920,7 +920,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "26:  >> IfMobsKilled (m_0000d093, 3): set s_3": {
@@ -950,7 +950,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "27:  >> If (s_3 and s_12 and not s_4): set s_6": {
@@ -994,7 +994,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "28: s_6 => QuestSuccess (i_magicitem)": {
@@ -1038,7 +1038,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "29:  >> If (s_7 and s_9): set s_11": {
@@ -1082,7 +1082,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "30: s_11 => EndQuest ()": {
@@ -1098,7 +1098,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 },
 "31: s_6 => EndQuest ()": {
@@ -1114,7 +1114,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 411
 }
 }

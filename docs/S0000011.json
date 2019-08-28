@@ -107,7 +107,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -122,46 +122,46 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [3]": {
-" 0: t_40000001: Fixed": {
+" 0: t_40000001: Fixed 6.00:01:00": {
 "variable": "t_40000001",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "6.00:01:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_4000000b: Random": {
+" 1: t_4000000b: Random between 7.00:00:00 and 10.00:00:00": {
 "variable": "t_4000000b",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
 "maximum": "10.00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_40000012: Fixed": {
+" 2: t_40000012: Fixed 150.00:00:00": {
 "variable": "t_40000012",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "150.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 }
 }
@@ -188,7 +188,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => SetQuestor (n_gortwog)": {
@@ -211,7 +211,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> IfNpcClicked (n_barenziah): set s_0": {
@@ -234,7 +234,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> IfFactionReputation (Queen_Barenziah, 15): set s_2": {
@@ -264,7 +264,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> If (s_1 and not s_4): set s_3": {
@@ -308,7 +308,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_3 => PlaceItemAt (i_000192b5, l_scourgbarrow)": {
@@ -338,7 +338,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_3 => Say (1061)": {
@@ -354,7 +354,7 @@
 }
 },
 "messageId": 1061,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfItemFound (i_000192b5): set s_4": {
@@ -377,7 +377,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_4 => StopTimer (t_40000001)": {
@@ -400,7 +400,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> If (s_8 or s_15): set s_5": {
@@ -444,7 +444,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_6 => PlaceItemAt (i_000192b5, l_orsinium)": {
@@ -474,7 +474,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_6 >> StartTimer (t_40000001); When it expires: set s_1": {
@@ -497,7 +497,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_6 => CreateLogEntry (1010, 0)": {
@@ -527,7 +527,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_6 => ShowLocationOnMap (l_orsinium, 26, 146892)": {
@@ -564,7 +564,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_6 => Say (1002)": {
@@ -580,7 +580,7 @@
 }
 },
 "messageId": 1002,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_7 => Say (1001)": {
@@ -596,7 +596,7 @@
 }
 },
 "messageId": 1001,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_7 => EndQuest ()": {
@@ -612,7 +612,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17:  >> IfGivingItemToNpc (i_000192b5, n_barenziah): set s_8": {
@@ -642,7 +642,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_8 => QuestSuccess (i_reward)": {
@@ -686,7 +686,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_8 => CycleNextState (s_19)": {
@@ -730,7 +730,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_8 => AdjustReputationWithNpc (n_barenziah, 10)": {
@@ -760,7 +760,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_8 => Say (1014)": {
@@ -776,7 +776,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_9 => CreateLogEntry (1060, 1)": {
@@ -806,7 +806,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_9 => ShowLocationOnMap (l_scourgbarrow, 1, 450958)": {
@@ -843,7 +843,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_9 => Say (1052)": {
@@ -859,7 +859,7 @@
 }
 },
 "messageId": 1052,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_10 => Say (1051)": {
@@ -875,7 +875,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_11 >> StartTimer (t_40000012); When it expires: set s_18": {
@@ -898,7 +898,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_11 => PlaceItemOnPlayer (i_00064cfc) [Msg 1017]": {
@@ -921,7 +921,7 @@
 }
 },
 "messageId": 1017,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> If (s_0 and s_11): set s_12": {
@@ -965,7 +965,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_12 => PromptYesNo (s_6, s_7, 1000)": {
@@ -1002,7 +1002,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> IfNpcClicked (n_gortwog): set s_13": {
@@ -1025,7 +1025,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31:  >> If (s_3 and s_13): set s_14": {
@@ -1069,7 +1069,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_14 => PromptYesNo (s_9, s_10, 1050)": {
@@ -1106,7 +1106,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33:  >> IfGivingItemToNpc (i_000192b5, n_gortwog): set s_15": {
@@ -1136,7 +1136,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34: s_15 => PlaceItemOnCharacter (i_jewelry)": {
@@ -1166,7 +1166,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_15 => MakePermanent (i_jewelry)": {
@@ -1189,7 +1189,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "36: s_15 => Say (1054)": {
@@ -1205,7 +1205,7 @@
 }
 },
 "messageId": 1054,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "37: s_15 => AdjustReputationWithNpc (n_barenziah, -20)": {
@@ -1235,7 +1235,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "38: s_15 => AdjustReputationWithNpc (n_gortwog, 15)": {
@@ -1265,7 +1265,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "39:  >> If (s_13 and not s_3): set s_16": {
@@ -1309,7 +1309,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "40: s_16 => Unset (s_13, s_16)": {
@@ -1353,7 +1353,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "41:  >> If (s_3 and s_5): set s_17": {
@@ -1397,7 +1397,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "42: s_17 => AdjustReputationWithNpc (n_necromancers, -20)": {
@@ -1427,7 +1427,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "43: s_18 => EndQuest ()": {
@@ -1443,7 +1443,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "44:  >> If (s_8 or s_15 or s_18): set s_20": {
@@ -1487,7 +1487,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "45: s_20 => UnsetQuestor (n_gortwog)": {
@@ -1510,7 +1510,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "46: s_20 => UnsetQuestor (n_barenziah)": {
@@ -1533,7 +1533,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "47:  >> If (s_8 and s_3): set s_21": {
@@ -1577,7 +1577,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "48: s_21 => Say (1020)": {
@@ -1593,7 +1593,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "49: s_21 => Say (1030)": {
@@ -1609,7 +1609,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "50:  >> If (s_8 and not s_3): set s_22": {
@@ -1653,7 +1653,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "51: s_22 => Say (1030)": {
@@ -1669,7 +1669,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "52:  >> IfPlayerHasLevel (9): set s_23": {
@@ -1692,7 +1692,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "53:  >> If (s_2 and s_23): set s_24": {
@@ -1736,7 +1736,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "54: s_24 >> StartTimer (t_4000000b); When it expires: set s_11": {
@@ -1759,7 +1759,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "55:  >> If (s_15 or s_21 or s_22): set s_25": {
@@ -1803,7 +1803,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "56: s_25 => EndQuest ()": {
@@ -1819,7 +1819,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "57: not s_12 => Unset (s_0)": {
@@ -1863,7 +1863,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

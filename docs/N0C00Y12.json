@@ -41,22 +41,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: OneLink": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -91,7 +91,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 1:  => AddLocationToMap (l_mondung)": {
@@ -114,7 +114,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 2:  => CreateLogEntry (1020, 0)": {
@@ -144,7 +144,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 3:  => PlaceMobAtLocation (m_imp, l_mondung)": {
@@ -174,7 +174,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 4:  >> IfMobHurtByPlayer (m_imp): set s_6 [Msg 1010]": {
@@ -197,7 +197,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 5:  >> IfMobsKilled (m_imp, 1): set s_2": {
@@ -227,7 +227,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 6:  >> IfNpcClicked (n_qgiver): set s_3": {
@@ -250,7 +250,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 7:  >> If (s_3 and s_2): set s_0": {
@@ -294,7 +294,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 8:  => Unset (s_3)": {
@@ -338,7 +338,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 " 9: s_0 => QuestSuccess ()": {
@@ -382,7 +382,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 "10: s_0 => EndQuest ()": {
@@ -398,7 +398,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 },
 "11: s_4 => EndQuest ()": {
@@ -414,7 +414,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 2
 }
 }

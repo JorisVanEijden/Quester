@@ -77,22 +77,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "24575 [0x5FFF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: OneLink": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_thiefplace'": {
 "variable": "t_traveltime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 12,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -142,7 +142,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 1:  => RemoveTopics (n_decoy)": {
@@ -179,7 +179,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 2:  >> StartTimer (t_traveltime); When it expires: set s_0": {
@@ -202,7 +202,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 3:  => PlaceNpcAt (n_thief, l_thiefplace)": {
@@ -232,7 +232,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 4:  >> WhenAtLocation (l_thiefplace): set s_4": {
@@ -262,7 +262,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 5:  >> IfNpcClicked (n_thief): set s_3": {
@@ -285,7 +285,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 6: s_3 => Say (1011)": {
@@ -301,7 +301,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 7: s_3 => HideNpc (n_thief)": {
@@ -324,7 +324,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 8: s_3 => PlaceItemOnCharacter (i_religitem) [Msg 1020]": {
@@ -354,7 +354,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 9:  >> If (s_4 and s_3): set s_5": {
@@ -398,7 +398,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "10: s_5 => CreateFoe(m_burglar, 50, 2%, 2)": {
@@ -442,7 +442,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "11: s_5 => CreateFoe(m_rogue, 50, 3%, 3)": {
@@ -486,7 +486,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "12:  >> IfMobHurtByPlayer (m_burglar): set s_2 [Msg 1012]": {
@@ -509,7 +509,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "13:  >> IfMobHurtByPlayer (m_rogue): set s_2 [Msg 1012]": {
@@ -532,7 +532,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "14:  >> IfGivingItemToNpc (i_religitem, n_qgiver): set s_1": {
@@ -562,7 +562,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "15: s_1 => QuestSuccess ()": {
@@ -606,7 +606,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "16: s_0 => MakePermanent (i_religitem)": {
@@ -629,7 +629,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "17: s_0 => EndQuest ()": {
@@ -645,7 +645,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "18: s_1 => EndQuest ()": {
@@ -661,7 +661,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 }
 }

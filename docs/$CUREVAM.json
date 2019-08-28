@@ -87,7 +87,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "39936 [0x9C00]"
 },
@@ -102,46 +102,46 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "39936 [0x9C00]"
 }
 }
 ,"timers: [3]": {
-" 0: t_000199b3: Random": {
+" 0: t_000199b3: Random between 1.00:00:00 and 2.22:00:00": {
 "variable": "t_000199b3",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "1.00:00:00",
 "maximum": "2.22:00:00",
-"link1": -872412417,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_00006cc3: Random": {
+" 1: t_00006cc3: Random between 7.00:00:00 and 27.23:40:00": {
 "variable": "t_00006cc3",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
 "maximum": "27.23:40:00",
-"link1": -872412417,
-"link2": 26,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_huntstart: TwoLinksPlus": {
+" 2: t_huntstart: 1.5 times travel time from here to 'n_vamp1' and then 'n_vamp2'": {
 "variable": "t_huntstart",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 1,
+"flags1": "1 [00000001]",
+"flags2": "3 [11]",
 "duration": 0,
 "started": 0,
-"flags": 769,
 "index": 2
 }
 }
@@ -200,7 +200,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 1: s_3 => CreateLogEntry (1050, 0)": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 2:  => PlaceItemOnPlayer (i_letter) [Msg 1045]": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": 1045,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 3:  >> IfTimeOfDayBetween (06:00:00, 18:00:00): set s_4": {
@@ -283,7 +283,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 4:  => EnsureNpcLocation (n_vamp1)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 5:  => RemoveTopics (n_vamp2)": {
@@ -350,7 +350,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 6:  => RemoveTopics (n_shaman)": {
@@ -387,7 +387,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 7:  => RemoveTopics (l_fatherdung, n_vamp1)": {
@@ -424,7 +424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 8:  => PlaceMobAtLocation (m_elder, l_wrongdung)": {
@@ -454,7 +454,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 9:  => PlaceMobAtLocation (m_bloodfather, l_fatherdung)": {
@@ -484,7 +484,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "10: s_14 >> StartTimer (t_00006cc3); When it expires: set s_13": {
@@ -507,7 +507,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "11: s_14 => HideNpc (n_vamp1)": {
@@ -530,7 +530,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "12: s_14 => HideNpc (n_vamp2)": {
@@ -553,7 +553,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "13: s_14 => CreateFoe(m_0003750b, 60, 20%, 20)": {
@@ -597,7 +597,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "14:  >> WhenPlayerHasItems (i_letter): set s_19": {
@@ -641,7 +641,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "15:  >> IfMobHurtByPlayer (m_0003750b): set s_15 [Msg 1040]": {
@@ -664,7 +664,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "16:  >> WhenItemIsUsed (i_letter): set s_3": {
@@ -694,7 +694,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "17: s_3 => AddTopics (n_shaman)": {
@@ -731,7 +731,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "18: s_3 => AddTopics (n_vamp1)": {
@@ -768,7 +768,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "19:  >> IfNpcClicked (n_vamp1): set s_1": {
@@ -791,7 +791,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "20: s_1 >> WhenPlayerHasItems (i_letter): set s_6": {
@@ -835,7 +835,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "21:  >> If (s_6 and s_1): set s_7": {
@@ -879,7 +879,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "22: s_7 => PromptYesNo (s_8, s_9, 1021)": {
@@ -916,7 +916,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "23:  >> If (s_1 and not s_7): set s_9": {
@@ -960,7 +960,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "24: s_8 => HideNpc (n_vamp1)": {
@@ -983,7 +983,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "25: s_8 => HideNpc (n_vamp2)": {
@@ -1006,7 +1006,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "26: s_8 => Say (1022)": {
@@ -1022,7 +1022,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "27: s_9 => Say (1023)": {
@@ -1038,7 +1038,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "28: s_9 => AddTopics (n_vamp2)": {
@@ -1075,7 +1075,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "29: s_9 >> StartTimer (t_000199b3); When it expires: set s_10": {
@@ -1098,7 +1098,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "30: s_9 => AddLocationToMap (l_wrongdung)": {
@@ -1121,7 +1121,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "31: s_9 => AddLocationToMap (l_fatherdung)": {
@@ -1144,7 +1144,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "32: s_9 => PlaceItemOnCharacter (i_token)": {
@@ -1174,7 +1174,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "33: s_9 => CreateLogEntry (1051, 1)": {
@@ -1204,7 +1204,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "34: s_10 => HideNpc (n_vamp1)": {
@@ -1227,7 +1227,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "35: s_10 => HideNpc (n_vamp2)": {
@@ -1250,7 +1250,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "36:  >> If (s_10 and not s_4 and not s_16): set s_17": {
@@ -1294,7 +1294,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "37: s_17 => CreateFoe(m_vampire, 60, 25%, 25)": {
@@ -1338,7 +1338,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "38: s_4 => Unset (s_17)": {
@@ -1382,7 +1382,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "39:  >> IfMobHurtByPlayer (m_vampire): set s_18 [Msg 1025]": {
@@ -1405,7 +1405,7 @@
 }
 },
 "messageId": 1025,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "40:  >> IfGivingItemToNpc (i_token, n_vamp2): set s_16": {
@@ -1435,7 +1435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "41: s_16 => Say (1024)": {
@@ -1451,7 +1451,7 @@
 }
 },
 "messageId": 1024,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "42: s_16 => CreateLogEntry (1052, 2)": {
@@ -1481,7 +1481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "43:  >> IfMobHurtByPlayer (m_bloodfather): set s_11 [Msg 1032]": {
@@ -1504,7 +1504,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "44:  >> IfMobHurtByPlayer (m_elder): set s_11 [Msg 1030]": {
@@ -1527,7 +1527,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "45:  >> IfMobsKilled (m_elder, 1): set s_12 [Msg 1031]": {
@@ -1557,7 +1557,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "46:  >> IfMobsKilled (m_bloodfather, 1): set s_0": {
@@ -1587,7 +1587,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "47: s_10 => AdjustReputationWithNpc (n_vamp1, -15)": {
@@ -1617,7 +1617,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "48: s_12 => AdjustReputationWithNpc (n_vamp1, -20)": {
@@ -1647,7 +1647,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "49: s_0 => AdjustReputationWithNpc (n_vamp1, -20)": {
@@ -1677,7 +1677,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "50: s_0 => CureVampirism ()": {
@@ -1693,7 +1693,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "51: s_0 => QuestSuccess ()": {
@@ -1737,7 +1737,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "52: s_0 => EndQuest ()": {
@@ -1753,7 +1753,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "53: s_13 => EndQuest ()": {
@@ -1769,7 +1769,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 }
 }

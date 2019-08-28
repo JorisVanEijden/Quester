@@ -90,7 +90,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -105,22 +105,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: TwoLinksPlus": {
+" 0: t_traveltime: 1.5 times travel time from here to 'l_betrothedhome' and then 'l_betrothedhome'": {
 "variable": "t_traveltime",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -163,7 +163,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => Unknown17_LocationValueValue (l_betrothedhome, 100, 27000)": {
@@ -200,7 +200,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> WhenAtLocation (l_temple): set s_3 [Msg 1015]": {
@@ -260,7 +260,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> WhenAtLocation (l_betrothedhome): set s_2 [Msg 1014]": {
@@ -290,7 +290,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => HideNpc (n_qgiver)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  => StartNpcEscort (n_qgiver)": {
@@ -336,7 +336,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  => PlaceNpcAt (n_priest, l_temple)": {
@@ -366,7 +366,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  => PlaceNpcAt (n_betrothed, l_betrothedhome)": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_0 => Say (1020)": {
@@ -412,7 +412,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_0 => StopNpcEscort (n_betrothed)": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_0 => StopNpcEscort (n_qgiver)": {
@@ -458,7 +458,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_0 => ShowNpc (n_qgiver)": {
@@ -481,7 +481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_0 => EndQuest ()": {
@@ -497,7 +497,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfNpcClicked (n_betrothed): set s_1 [Msg 1011]": {
@@ -520,7 +520,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_1 => HideNpc (n_betrothed)": {
@@ -543,7 +543,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_1 => StartNpcEscort (n_betrothed)": {
@@ -566,7 +566,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_2 => CreateFoe(m_44000000, 1, 15%, 15)": {
@@ -610,7 +610,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_3 => CreateFoe(m_44000001, 2, 50%, 50)": {
@@ -654,7 +654,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  >> IfMobHurtByPlayer (m_44000001): set s_4 [Msg 1012]": {
@@ -677,7 +677,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> IfMobHurtByPlayer (m_44000000): set s_4 [Msg 1013]": {
@@ -700,7 +700,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21:  >> IfNpcClicked (n_priest): set s_5": {
@@ -723,7 +723,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_5 => QuestSuccess (i_gold)": {
@@ -767,7 +767,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_5 => StopNpcEscort (n_qgiver)": {
@@ -790,7 +790,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_5 => StopNpcEscort (n_betrothed)": {
@@ -813,7 +813,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_5 => AdjustReputationWithNpc (n_ruler, -20)": {
@@ -843,7 +843,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_5 => PlaceNpcAt (n_qgiver, l_temple)": {
@@ -873,7 +873,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_5 => PlaceNpcAt (n_betrothed, l_temple)": {
@@ -903,7 +903,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> If (not s_1 and s_5): set s_6": {
@@ -947,7 +947,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_6 => Unset (s_5, s_6)": {
@@ -991,7 +991,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> If (s_5 and not s_3): set s_7": {
@@ -1035,7 +1035,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_7 => ShowNpc (n_qgiver)": {
@@ -1058,7 +1058,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_7 => EndQuest ()": {
@@ -1074,7 +1074,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

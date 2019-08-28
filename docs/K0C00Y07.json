@@ -97,34 +97,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "58880 [0xE600]"
 }
 }
 ,"timers: [2]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 210,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 },
-" 1: t_2ransom: OneLink": {
+" 1: t_2ransom: 1.5 times travel time between here and 'n_kidnapper'": {
 "variable": "t_2ransom",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 210,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 1
 }
 }
@@ -159,7 +159,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 1:  >> StartTimer (t_queston); When it expires: set s_0": {
@@ -182,7 +182,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 2:  => PlaceItemOnCharacter (i_gem)": {
@@ -212,7 +212,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 3:  => PlaceNpcAt (n_victim, l_mondung)": {
@@ -242,7 +242,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 4:  => CreateLogEntry (1010, 0)": {
@@ -272,7 +272,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 5:  >> IfGivingItemToNpc (i_gem, n_kidnapper): set s_2": {
@@ -302,7 +302,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 6: s_2 => CheckNpcReputation (s_5, n_kidnapper, 10)": {
@@ -339,7 +339,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 7:  >> If (s_2 and not s_5): set s_6": {
@@ -383,7 +383,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 8: s_6 => PromptYesNo (s_3, s_4, 1011)": {
@@ -420,7 +420,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 9: s_5 => PromptYesNo (s_7, s_4, 1012)": {
@@ -457,7 +457,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "10: s_7 => Say (1018)": {
@@ -473,7 +473,7 @@
 }
 },
 "messageId": 1018,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "11: s_3 => Say (1019)": {
@@ -489,7 +489,7 @@
 }
 },
 "messageId": 1019,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "12: s_4 => Say (1013)": {
@@ -505,7 +505,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "13: s_7 => PlaceItemOnCharacter (i_gem)": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "14: s_4 => PlaceItemOnCharacter (i_gem)": {
@@ -565,7 +565,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "15: s_4 => HideNpc (n_kidnapper)": {
@@ -588,7 +588,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "16: s_4 => CreateFoe(m_thug, 1, 100%, 100)": {
@@ -632,7 +632,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "17: s_4 => PlaceItemOnMob (i_map, m_thug)": {
@@ -662,7 +662,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "18:  >> WhenItemIsUsed (i_map): set s_8": {
@@ -692,7 +692,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "19: s_8 => AddLocationToMap (l_mondung)": {
@@ -715,7 +715,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "20:  >> IfNpcClicked (n_victim): set s_9": {
@@ -738,7 +738,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "21: s_9 => Say (1014)": {
@@ -754,7 +754,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "22: s_9 => StartNpcEscort (n_victim)": {
@@ -777,7 +777,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "23: s_9 => HideNpc (n_victim)": {
@@ -800,7 +800,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "24:  >> IfGivingItemToNpc (i_gem, n_qgiver): set s_11": {
@@ -830,7 +830,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "25:  >> If (not s_9 and s_11): set s_22": {
@@ -874,7 +874,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "26: s_22 => PlaceItemOnCharacter (i_gem)": {
@@ -904,7 +904,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "27: s_22 => Unset (s_11)": {
@@ -948,7 +948,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "28:  >> If (s_11 and s_9): set s_10": {
@@ -992,7 +992,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "29: s_10 => Say (1099)": {
@@ -1008,7 +1008,7 @@
 }
 },
 "messageId": 1099,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "30: s_10 => AdjustReputationWithNpc (n_qgiver, 15)": {
@@ -1038,7 +1038,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "31: s_10 => AdjustReputationWithNpc (n_kidnapper, -10)": {
@@ -1068,7 +1068,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "32:  >> If (s_11 and not s_9 and s_4): set s_13": {
@@ -1112,7 +1112,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "33: s_13 => Say (1016)": {
@@ -1128,7 +1128,7 @@
 }
 },
 "messageId": 1016,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "34:  >> If (s_11 and not s_9 and not s_4): set s_12": {
@@ -1172,7 +1172,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "35: s_12 => PlaceItemOnCharacter (i_gem)": {
@@ -1202,7 +1202,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "36:  >> IfNpcClicked (n_qgiver): set s_14": {
@@ -1225,7 +1225,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "37: s_11 => Unset (s_14)": {
@@ -1269,7 +1269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "38: s_14 >> WhenPlayerHasItems (i_gem): set s_15": {
@@ -1313,7 +1313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "39:  >> If (s_14 and s_7): set s_17": {
@@ -1357,7 +1357,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "40:  >> If (s_14 and s_3): set s_17": {
@@ -1401,7 +1401,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "41:  >> If (s_14 and not s_15 and s_9): set s_16": {
@@ -1445,7 +1445,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "42:  >> If (not s_15 or not s_9 or not s_3 or not s_7): set s_18": {
@@ -1489,7 +1489,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "43: s_18 => Unset (s_14)": {
@@ -1533,7 +1533,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "44: s_16 => Say (1017)": {
@@ -1549,7 +1549,7 @@
 }
 },
 "messageId": 1017,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "45: s_16 => AdjustReputationWithNpc (n_qgiver, 8)": {
@@ -1579,7 +1579,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "46: s_17 => Say (1020)": {
@@ -1595,7 +1595,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "47:  >> If (s_10 or s_16 or s_17): set s_23": {
@@ -1639,7 +1639,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "48: s_23 => QuestSuccess (i_gold)": {
@@ -1683,7 +1683,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "49: s_23 => EndQuest ()": {
@@ -1699,7 +1699,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "50:  >> If (s_0 and s_9 and not s_14): set s_19": {
@@ -1743,7 +1743,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "51: s_19 => Say (1021)": {
@@ -1759,7 +1759,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "52: s_0 >> WhenPlayerHasItems (i_gem): set s_20": {
@@ -1803,7 +1803,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "53: s_20 => MakePermanent (i_gem)": {
@@ -1826,7 +1826,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "54:  >> If (s_0 and not s_9 and not s_7 and not s_17): set s_21": {
@@ -1870,7 +1870,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "55: s_21 => Say (1022)": {
@@ -1886,7 +1886,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "56: s_21 => AdjustReputationWithNpc (n_qgiver, -5)": {
@@ -1916,7 +1916,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "57: s_0 => EndQuest ()": {
@@ -1932,7 +1932,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 }
 }

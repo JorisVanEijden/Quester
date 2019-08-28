@@ -61,22 +61,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: OneLink": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_townhouse'": {
 "variable": "t_traveltime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -135,7 +135,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 1:  => PlaceItemAt (i_painting, l_townhouse)": {
@@ -165,7 +165,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -195,7 +195,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 3:  >> WhenAtLocation (l_townhouse): set s_1": {
@@ -225,7 +225,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 4: s_1 => PickOneOf (s_3, s_4, s_5, s_6)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 5: s_6 => CreateFoe(m_0000d41c, 4, 10%, 10)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 6: s_5 => CreateFoe(m_0000d41b, 4, 10%, 10)": {
@@ -357,7 +357,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 7: s_4 => CreateFoe(m_0000d41a, 4, 10%, 10)": {
@@ -401,7 +401,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 8: s_3 => CreateFoe(m_0000d419, 4, 10%, 10)": {
@@ -445,7 +445,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 " 9:  >> IfGivingItemToNpc (i_painting, n_qgiver): set s_2": {
@@ -475,7 +475,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 "10: s_2 => QuestSuccess (i_gold)": {
@@ -519,7 +519,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 "11: s_2 => EndQuest ()": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 },
 "12: s_0 => EndQuest ()": {
@@ -551,7 +551,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 212
 }
 }

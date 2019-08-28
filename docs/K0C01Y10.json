@@ -51,22 +51,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "8192 [0x2000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -109,7 +109,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -139,7 +139,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 2:  => AddLocationToMap (l_mondung)": {
@@ -162,7 +162,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 3:  => PlaceItemAt (i_00001b20, l_mondung)": {
@@ -192,7 +192,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 4:  => PlaceMobAtLocation (m_guardian, l_mondung)": {
@@ -222,7 +222,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 5:  >> IfItemFound (i_00001b20): set s_1": {
@@ -245,7 +245,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 6: s_1 => Say (1012)": {
@@ -261,7 +261,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 7:  >> IfGivingItemToNpc (i_00001b20, n_qgiver): set s_4": {
@@ -291,7 +291,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 8: s_4 => QuestSuccess ()": {
@@ -335,7 +335,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 " 9: s_1 >> WhenItemIsUsed (i_00001b20): set s_2 [Msg 1015]": {
@@ -365,7 +365,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "10: s_2 => CreateFoe(m_0000718e, 1, 100%, 100)": {
@@ -409,7 +409,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "11:  >> IfMobHurtByPlayer (m_0000718e): set s_5": {
@@ -432,7 +432,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "12: s_5 => Say (1014)": {
@@ -448,7 +448,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "13:  >> If (s_0 and s_1): set s_3": {
@@ -492,7 +492,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "14: s_3 => Say (1013)": {
@@ -508,7 +508,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "15: s_0 => EndQuest ()": {
@@ -524,7 +524,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 },
 "16: s_4 => EndQuest ()": {
@@ -540,7 +540,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 113
 }
 }

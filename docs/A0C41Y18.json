@@ -107,22 +107,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "37631 [0x92FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_0000d533: Fixed": {
+" 0: t_0000d533: Fixed 1001.00:00:00": {
 "variable": "t_0000d533",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "1001.00:00:00",
 "maximum": "00:00:00",
-"link1": -285212672,
-"link2": 12,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -172,7 +172,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 1:  >> StartTimer (t_0000d533); When it expires: set s_10": {
@@ -195,7 +195,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 2:  => RemoveTopics (n_sage, i_finger)": {
@@ -232,7 +232,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 3:  => CycleNextState (s_3)": {
@@ -276,7 +276,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 4:  => PlaceMobAtLocation (m_realmummy, l_dungeon)": {
@@ -306,7 +306,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 5:  => PlaceItemOnCharacter (i_gold1)": {
@@ -336,7 +336,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 6:  => PlaceItemOnCharacter (i_letter)": {
@@ -366,7 +366,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 7:  => PlaceItemOnCharacter (i_finger)": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 8:  => Say (1045)": {
@@ -412,7 +412,7 @@
 }
 },
 "messageId": 1045,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 " 9:  => DeleteNpc (n_giver)": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "10:  >> WhenItemIsUsed (i_letter): set s_11": {
@@ -465,7 +465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "11: s_11 => AddTopics (i_finger)": {
@@ -502,7 +502,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "12: s_11 => CreateLogEntry (1011, 1)": {
@@ -532,7 +532,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "13:  >> IfTimeOfDayBetween (00:00:00, 01:00:00): set s_1": {
@@ -562,7 +562,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "14: s_1 => CreateFoe(m_0003843f, 35, 100%, 100)": {
@@ -606,7 +606,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "15:  >> IfMobHurtByPlayer (m_0003843f): set s_2 [Msg 1016]": {
@@ -629,7 +629,7 @@
 }
 },
 "messageId": 1016,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "16:  => Unset (s_2)": {
@@ -673,7 +673,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "17:  >> IfNpcClicked (n_sage): set s_4": {
@@ -696,7 +696,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "18: s_4 >> WhenPlayerHasItems (i_finger): set s_7": {
@@ -740,7 +740,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "19:  >> If (s_4 and not s_7): set s_8": {
@@ -784,7 +784,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "20:  >> If (s_4 and s_7): set s_6": {
@@ -828,7 +828,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "21: s_6 => Say (1025)": {
@@ -844,7 +844,7 @@
 }
 },
 "messageId": 1025,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "22: s_8 => Say (1026)": {
@@ -860,7 +860,7 @@
 }
 },
 "messageId": 1026,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "23: s_6 => CreateLogEntry (1012, 2)": {
@@ -890,7 +890,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "24: s_6 => AddLocationToMap (l_dungeon)": {
@@ -913,7 +913,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "25:  => Unset (s_6, s_8, s_4, s_7)": {
@@ -957,7 +957,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "26:  >> IfMobHurtByPlayer (m_realmummy): set s_9": {
@@ -980,7 +980,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "27: s_9 => Say (1020)": {
@@ -996,7 +996,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "28:  >> IfMobsKilled (m_realmummy, 1): set s_5": {
@@ -1026,7 +1026,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "29: s_5 => Say (1030)": {
@@ -1042,7 +1042,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "30: s_5 => MakePermanent (i_gold1)": {
@@ -1065,7 +1065,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "31: s_10 => MakePermanent (i_gold1)": {
@@ -1088,7 +1088,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "32: s_10 => EndQuest ()": {
@@ -1104,7 +1104,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 },
 "33: s_5 => EndQuest ()": {
@@ -1120,7 +1120,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 215
 }
 }

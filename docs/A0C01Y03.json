@@ -130,7 +130,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 },
@@ -145,22 +145,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_00003660: Fixed": {
+" 0: t_00003660: Fixed 90.00:00:00": {
 "variable": "t_00003660",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "90.00:00:00",
 "maximum": "00:00:00",
-"link1": -1543488257,
-"link2": 53,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -194,7 +194,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  >> StartTimer (t_00003660); When it expires: set s_1": {
@@ -217,7 +217,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PlaceItemOnCharacter (i_flowers)": {
@@ -247,7 +247,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_letter)": {
@@ -277,7 +277,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PlaceNpcAt (n_teacher, l_school)": {
@@ -307,7 +307,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => PlaceNpcAt (n_hermit, l_dungeon)": {
@@ -337,7 +337,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_3 => CreateLogEntry (1016, 2)": {
@@ -367,7 +367,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_2 => CreateLogEntry (1015, 1)": {
@@ -397,7 +397,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  => CreateLogEntry (1010, 0)": {
@@ -427,7 +427,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  => RemoveTopics (l_dungeon, n_hermit)": {
@@ -464,7 +464,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  => RemoveTopics (l_school, n_teacher)": {
@@ -501,7 +501,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> IfGivingItemToNpc (i_flowers, n_spouse): set s_2 [Msg 1011]": {
@@ -531,7 +531,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> IfGivingItemToNpc (i_letter, n_hermit): set s_4 [Msg 1013]": {
@@ -561,7 +561,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> IfGivingItemToNpc (i_000019b0, n_qgiver): set s_5": {
@@ -591,7 +591,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfGivingItemToNpc (i_book, n_teacher): set s_3 [Msg 1012]": {
@@ -621,7 +621,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_2 => AddTopics (l_school, n_teacher)": {
@@ -658,7 +658,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_3 => AddLocationToMap (l_dungeon)": {
@@ -681,7 +681,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_3 => AddTopics (n_hermit)": {
@@ -718,7 +718,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_4 => PlaceItemOnCharacter (i_000019b0)": {
@@ -748,7 +748,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_2 => PlaceItemOnCharacter (i_book)": {
@@ -778,7 +778,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_5 => QuestSuccess (i_gold)": {
@@ -822,7 +822,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_1 => EndQuest ()": {
@@ -838,7 +838,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_5 => EndQuest ()": {
@@ -854,7 +854,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

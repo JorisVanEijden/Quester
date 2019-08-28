@@ -74,22 +74,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "20479 [0x4FFF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_1stparton: TwoLinksPlus": {
+" 0: t_1stparton: 1.5 times travel time from here to 'l_hidingplace' and then 'n_questgiver'": {
 "variable": "t_1stparton",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "2 [10]",
 "duration": 0,
 "started": 0,
-"flags": 513,
 "index": 0
 }
 }
@@ -124,7 +124,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 1:  => EnsureNpcLocation (l_hidingplace)": {
@@ -154,7 +154,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 2:  => PlaceNpcAt (n_spy, l_hidingplace)": {
@@ -184,7 +184,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 3:  => CreateLogEntry (1015, 0)": {
@@ -214,7 +214,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 4:  >> WhenAtLocation (l_hidingplace): set s_6": {
@@ -244,7 +244,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 5: s_6 => CreateFoe(m_0000d11b, 2, 30%, 30)": {
@@ -288,7 +288,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 6:  >> IfMobHurtByPlayer (m_0000d11b): set s_7 [Msg 1020]": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 7:  >> IfNpcClicked (n_spy): set s_2": {
@@ -334,7 +334,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 8: s_2 => PlaceItemOnCharacter (i_sage)": {
@@ -364,7 +364,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 " 9: s_2 => Say (1010)": {
@@ -380,7 +380,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "10:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_0": {
@@ -410,7 +410,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "11: s_0 => QuestSuccess (i_reward)": {
@@ -454,7 +454,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "12: s_5 => MakePermanent (i_sage)": {
@@ -477,7 +477,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "13: s_5 => AdjustReputationWithNpc (n_questgiver, -10)": {
@@ -507,7 +507,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "14: s_5 => EndQuest ()": {
@@ -523,7 +523,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 },
 "15: s_0 => EndQuest ()": {
@@ -539,7 +539,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 209
 }
 }

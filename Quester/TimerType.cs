@@ -4,9 +4,9 @@ namespace Quester
     {
         Random,
         Fixed,
-        OneLink,
-        TwoLinks,
-        SameAs2,
-        TwoLinksPlus
+        Relative1,
+        Relative2,
+        Relative3,
+        Relative4
     }
 }

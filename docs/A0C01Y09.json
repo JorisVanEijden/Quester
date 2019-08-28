@@ -87,7 +87,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 },
@@ -102,34 +102,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [2]": {
-" 0: t_questtime: Fixed": {
+" 0: t_questtime: Fixed 31.00:00:00": {
 "variable": "t_questtime",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "31.00:00:00",
 "maximum": "00:00:00",
-"link1": 1140981503,
-"link2": 106,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 },
-" 1: t_shortdelay: Fixed": {
+" 1: t_shortdelay: Fixed 01:00:00": {
 "variable": "t_shortdelay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 1140981503,
-"link2": 106,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -156,7 +156,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1: s_17 >> StartTimer (t_shortdelay); When it expires: set s_16": {
@@ -179,7 +179,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => EnsureNpcLocation (n_sister)": {
@@ -209,7 +209,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceNpcAt (n_merchant, l_store)": {
@@ -239,7 +239,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => CreateLogEntry (1025, 0)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => PickOneOf (s_1, s_2, s_1, s_2)": {
@@ -313,7 +313,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_4 => TakePlayerGold (s_5, 20, n_merchant)": {
@@ -350,7 +350,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_4 => PlaceItemOnCharacter (i_sage)": {
@@ -380,7 +380,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_4 => Say (1040)": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_5 => Say (1041)": {
@@ -412,7 +412,7 @@
 }
 },
 "messageId": 1041,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfNpcClicked (n_sister): set s_7": {
@@ -435,7 +435,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> If (s_7 and s_2): set s_9": {
@@ -479,7 +479,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> If (s_7 and s_1): set s_8": {
@@ -523,7 +523,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_8 => Say (1050)": {
@@ -539,7 +539,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_9 => Say (1051)": {
@@ -555,7 +555,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15:  >> IfGivingItemToNpc (i_sage, n_sister): set s_10": {
@@ -585,7 +585,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_10 => PromptYesNo (s_12, s_11, 1011)": {
@@ -622,7 +622,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17:  >> If (s_1 and s_12): set s_14": {
@@ -666,7 +666,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> If (s_2 and s_12): set s_15": {
@@ -710,7 +710,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_14 => Say (1060)": {
@@ -726,7 +726,7 @@
 }
 },
 "messageId": 1060,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_15 => Say (1061)": {
@@ -742,7 +742,7 @@
 }
 },
 "messageId": 1061,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_11 => PlaceItemOnCharacter (i_sage)": {
@@ -772,7 +772,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfGivingItemToNpc (i_sage, n_questg): set s_6": {
@@ -802,7 +802,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_6 => PromptYesNo (s_13, s_11, 1013)": {
@@ -839,7 +839,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_13 => QuestSuccess (i_gold)": {
@@ -883,7 +883,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25:  >> If (s_6 or s_10): set s_17": {
@@ -927,7 +927,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_16 => EndQuest ()": {
@@ -943,7 +943,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_0 => EndQuest ()": {
@@ -959,7 +959,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

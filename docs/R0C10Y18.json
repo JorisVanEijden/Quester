@@ -101,28 +101,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_1stparton: SameAs2": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_npc1'": {
 "variable": "t_1stparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 427,
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 257,
 "index": 0
 },
-" 1: t_2ndparton: SameAs2": {
+" 1: t_2ndparton: 1.5 times travel time between here and 'n_npc2'": {
 "variable": "t_2ndparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 427,
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 257,
 "index": 1
 }
 }
@@ -157,7 +157,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 1: s_3 => EnsureNpcLocation (n_npc2)": {
@@ -187,7 +187,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 2:  => CreateLogEntry (1015, 0)": {
@@ -217,7 +217,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 3:  => PlaceItemOnCharacter (i_item1)": {
@@ -247,7 +247,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 4:  >> IfGivingItemToNpc (i_item1, n_npc1): set s_3": {
@@ -277,7 +277,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 5: s_3 => Say (1010)": {
@@ -293,7 +293,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 6: s_3 => PlaceItemOnCharacter (i_item2)": {
@@ -323,7 +323,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 7: s_3 >> StartTimer (t_2ndparton); When it expires: set s_7": {
@@ -346,7 +346,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 8: s_3 => CreateFoe(m_thief, 1, 20%, 20)": {
@@ -390,7 +390,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 9:  >> IfMobHurtByPlayer (m_thief): set s_11": {
@@ -413,7 +413,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "10: s_11 => PromptYesNo (s_8, s_9, 1020)": {
@@ -450,7 +450,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "11: s_8 >> WhenPlayerHasItems (i_item2): set s_10": {
@@ -494,7 +494,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "12: s_10 => PlaceItemOnMob (i_item2, m_thief) [Msg 1021]": {
@@ -524,7 +524,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "13: s_10 => DoneWithMob (m_thief, _)": {
@@ -554,7 +554,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "14: s_3 => CreateLogEntry (1016, 1)": {
@@ -584,7 +584,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "15:  >> IfGivingItemToNpc (i_item2, n_npc2): set s_0": {
@@ -614,7 +614,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "16: s_0 => QuestSuccess (i_reward)": {
@@ -658,7 +658,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "17: s_0 => EndQuest ()": {
@@ -674,7 +674,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "18:  >> If (s_6 and not s_3): set s_5": {
@@ -718,7 +718,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "19: s_0 => AdjustReputationWithNpc (n_0001ab34, -20)": {
@@ -748,7 +748,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "20: s_5 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -778,7 +778,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "21: s_7 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -808,7 +808,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "22: s_5 => MakePermanent (i_item1)": {
@@ -831,7 +831,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "23: s_7 => MakePermanent (i_item2)": {
@@ -854,7 +854,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "24: s_5 => EndQuest ()": {
@@ -870,7 +870,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "25: s_7 => EndQuest ()": {
@@ -886,7 +886,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 }
 }

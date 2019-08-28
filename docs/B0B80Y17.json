@@ -54,22 +54,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_2dung: OneLink": {
+" 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_2dung",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 12,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -112,7 +112,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 1:  => PickOneOf (s_5, s_4, s_4)": {
@@ -156,7 +156,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 2:  => AddLocationToMap (l_dungeon)": {
@@ -179,7 +179,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 3:  => CreateLogEntry (1010, 0)": {
@@ -209,7 +209,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 4: s_4 => PlaceMobAtLocation (m_0000e822, l_dungeon)": {
@@ -239,7 +239,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 5: s_5 => PlaceMobAtLocation (m_000035b2, l_dungeon)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 6:  >> IfMobsKilled (m_0000e822, 1): set s_1 [Msg 1011]": {
@@ -299,7 +299,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 7:  >> IfMobsKilled (m_000035b2, 1): set s_1 [Msg 1011]": {
@@ -329,7 +329,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 8:  >> IfNpcClicked (n_qgiver): set s_2": {
@@ -352,7 +352,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 " 9:  >> If (s_2 and not s_1): set s_3": {
@@ -396,7 +396,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 "10: s_3 => Unset (s_2, s_3)": {
@@ -440,7 +440,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 "11: s_2 => AdjustReputationWithNpc (n_local, 4)": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 "12: s_2 => QuestSuccess ()": {
@@ -514,7 +514,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 "13: s_0 => EndQuest ()": {
@@ -530,7 +530,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 },
 "14: s_2 => EndQuest ()": {
@@ -546,7 +546,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 232
 }
 }

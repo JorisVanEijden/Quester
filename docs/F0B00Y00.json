@@ -65,16 +65,16 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_1stparton: SameAs2": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_1stparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 51,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 0
 }
 }
@@ -101,7 +101,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1030, 0)": {
@@ -131,7 +131,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  >> IfNpcClicked (n_contact): set s_2": {
@@ -154,7 +154,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3: s_2 => PlaceItemOnCharacter (i_sage)": {
@@ -184,7 +184,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4: s_2 => Say (1010)": {
@@ -200,7 +200,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_3": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_3 => QuestSuccess (i_reward)": {
@@ -274,7 +274,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> If (s_2 and s_0): set s_6": {
@@ -318,7 +318,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_6 => MakePermanent (i_sage)": {
@@ -341,7 +341,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_0 => EndQuest ()": {
@@ -357,7 +357,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_3 => EndQuest ()": {
@@ -373,7 +373,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

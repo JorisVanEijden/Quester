@@ -74,7 +74,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 },
@@ -89,70 +89,70 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 }
 }
 ,"timers: [5]": {
-" 0: t_qtime: OneLink": {
+" 0: t_qtime: 1.5 times travel time between here and 'l_rebelhouse'": {
 "variable": "t_qtime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 449,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 },
-" 1: t_00001941: Random": {
+" 1: t_00001941: Random between 00:01:00 and 00:05:00": {
 "variable": "t_00001941",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:01:00",
 "maximum": "00:05:00",
-"link1": 1,
-"link2": 449,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_00001942: Random": {
+" 2: t_00001942: Random between 00:01:00 and 00:10:00": {
 "variable": "t_00001942",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:01:00",
 "maximum": "00:10:00",
-"link1": 1,
-"link2": 449,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 },
-" 3: t_00001943: Random": {
+" 3: t_00001943: Random between 00:01:00 and 00:14:00": {
 "variable": "t_00001943",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:01:00",
 "maximum": "00:14:00",
-"link1": 1,
-"link2": 449,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 3
 },
-" 4: t_healer: Random": {
+" 4: t_healer: Random between 00:02:00 and 00:18:00": {
 "variable": "t_healer",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:02:00",
 "maximum": "00:18:00",
-"link1": 1,
-"link2": 449,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 4
 }
 }
@@ -219,7 +219,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 1:  => PlaceNpcAt (n_rebel, l_rebelhouse)": {
@@ -249,7 +249,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 2:  => CreateLogEntry (1020, 0)": {
@@ -279,7 +279,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 3: s_2 => CreateLogEntry (1021, 1)": {
@@ -309,7 +309,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 4:  >> IfNpcClicked (n_rebel): set s_1": {
@@ -332,7 +332,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 5: s_1 => PromptYesNo (s_2, s_3, 1030)": {
@@ -369,7 +369,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 6: s_2 => Say (1031)": {
@@ -385,7 +385,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 7: s_2 => PlaceItemOnCharacter (i_letter)": {
@@ -415,7 +415,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 8: s_3 => Say (1032)": {
@@ -431,7 +431,7 @@
 }
 },
 "messageId": 1032,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 9: s_1 => PlaceNpcAt (n_rebel, l_0000d527)": {
@@ -461,7 +461,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "10: s_3 => PlaceMobAtLocation (m_mage1, l_rebelhouse)": {
@@ -491,7 +491,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "11: s_3 => SetMobPowerLevel (m_mage1, 46)": {
@@ -521,7 +521,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "12: s_3 >> StartTimer (t_00001941); When it expires: set s_4": {
@@ -544,7 +544,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "13: s_20 >> StartTimer (t_00001942); When it expires: set s_5": {
@@ -567,7 +567,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "14: s_5 >> StartTimer (t_00001943); When it expires: set s_6": {
@@ -590,7 +590,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "15: s_6 >> StartTimer (t_healer); When it expires: set s_7": {
@@ -613,7 +613,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "16: s_4 => PlaceMobAtLocation (m_mage1, l_0000d527) [Msg 1060]": {
@@ -643,7 +643,7 @@
 }
 },
 "messageId": 1060,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "17: s_4 >> WhenAtLocation (l_rebelhouse): set s_19": {
@@ -673,7 +673,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "18:  >> If (s_4 and not s_19 and not s_8): set s_20": {
@@ -717,7 +717,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "19: s_20 => CreateFoe(m_mage2, 1, 100%, 100)": {
@@ -761,7 +761,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "20: s_20 => SetMobPowerLevel (m_mage2, 46)": {
@@ -791,7 +791,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "21: s_5 => PlaceMobAtLocation (m_mage2, l_0000d527)": {
@@ -821,7 +821,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "22: s_5 => CreateFoe(m_mage3, 1, 100%, 100) [Msg 1061]": {
@@ -865,7 +865,7 @@
 }
 },
 "messageId": 1061,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "23: s_6 => PlaceMobAtLocation (m_mage3, l_0000d527)": {
@@ -895,7 +895,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "24: s_6 => CreateFoe(m_mage4, 1, 100%, 100) [Msg 1062]": {
@@ -939,7 +939,7 @@
 }
 },
 "messageId": 1062,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "25: s_7 => PlaceMobAtLocation (m_mage4, l_0000d527)": {
@@ -969,7 +969,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "26: s_7 => CreateFoe(m_00000c73, 1, 100%, 100) [Msg 1063]": {
@@ -1013,7 +1013,7 @@
 }
 },
 "messageId": 1063,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "27:  >> IfMobsKilled (m_mage1, 1): set s_8": {
@@ -1043,7 +1043,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "28:  >> IfMobsKilled (m_mage2, 1): set s_8": {
@@ -1073,7 +1073,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "29:  >> IfMobsKilled (m_mage3, 1): set s_8": {
@@ -1103,7 +1103,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "30:  >> IfMobsKilled (m_mage4, 1): set s_8": {
@@ -1133,7 +1133,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "31:  >> IfMobsKilled (m_00000c73, 1): set s_8": {
@@ -1163,7 +1163,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "32:  >> If (s_8 or s_2): set s_9": {
@@ -1207,7 +1207,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "33: s_9 => StopTimer (t_00001941)": {
@@ -1230,7 +1230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "34: s_9 => StopTimer (t_00001942)": {
@@ -1253,7 +1253,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "35: s_9 => StopTimer (t_00001943)": {
@@ -1276,7 +1276,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "36: s_9 => StopTimer (t_healer)": {
@@ -1299,7 +1299,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "37:  >> IfMobHurtByPlayer (m_mage1): set s_10": {
@@ -1322,7 +1322,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "38: s_10 => SetMobPowerLevel (m_mage1, 64)": {
@@ -1352,7 +1352,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "39:  >> IfMobHurtByPlayer (m_mage2): set s_11": {
@@ -1375,7 +1375,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "40: s_11 => SetMobPowerLevel (m_mage2, 64)": {
@@ -1405,7 +1405,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "41:  >> IfMobHurtByPlayer (m_mage3): set s_12": {
@@ -1428,7 +1428,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "42: s_12 => SetMobPowerLevel (m_mage3, 64)": {
@@ -1458,7 +1458,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "43:  >> IfMobHurtByPlayer (m_mage4): set s_13": {
@@ -1481,7 +1481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "44:  >> IfMobHurtByPlayer (m_00000c73): set s_14": {
@@ -1504,7 +1504,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "45: s_11 => PromptYesNo (s_2, s_3, 1050)": {
@@ -1541,7 +1541,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "46: s_12 => PromptYesNo (s_2, s_3, 1051)": {
@@ -1578,7 +1578,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "47: s_13 => PromptYesNo (s_2, s_3, 1052)": {
@@ -1615,7 +1615,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "48: s_14 => PromptYesNo (s_2, s_3, 1053)": {
@@ -1652,7 +1652,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "49: s_2 => PlaceMobAtLocation (m_mage1, l_0000d527)": {
@@ -1682,7 +1682,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "50: s_2 => PlaceMobAtLocation (m_mage2, l_0000d527)": {
@@ -1712,7 +1712,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "51: s_2 => PlaceMobAtLocation (m_mage3, l_0000d527)": {
@@ -1742,7 +1742,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "52: s_2 => PlaceMobAtLocation (m_mage4, l_0000d527)": {
@@ -1772,7 +1772,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "53: s_2 => PlaceMobAtLocation (m_00000c73, l_0000d527)": {
@@ -1802,7 +1802,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "54: s_2 => StartQuest (502, 502)": {
@@ -1832,7 +1832,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "55:  >> IfGivingItemToNpc (i_letter, n_questgiver): set s_15": {
@@ -1862,7 +1862,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "56:  >> IfNpcClicked (n_questgiver): set s_16": {
@@ -1885,7 +1885,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "57:  >> If (s_16 and s_8): set s_17": {
@@ -1929,7 +1929,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "58:  => Unset (s_16)": {
@@ -1973,7 +1973,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "59: s_15 => Say (1041)": {
@@ -1989,7 +1989,7 @@
 }
 },
 "messageId": 1041,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "60: s_17 => Say (1042)": {
@@ -2005,7 +2005,7 @@
 }
 },
 "messageId": 1042,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "61:  >> If (s_15 or s_17): set s_18": {
@@ -2049,7 +2049,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "62: s_18 => QuestSuccess (i_reward)": {
@@ -2093,7 +2093,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "63: s_0 => EndQuest ()": {
@@ -2109,7 +2109,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "64: s_18 => EndQuest ()": {
@@ -2125,7 +2125,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 }
 }

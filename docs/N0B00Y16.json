@@ -87,22 +87,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "31744 [0x7C00]"
 }
 }
 ,"timers: [1]": {
-" 0: t_qtime: Fixed": {
+" 0: t_qtime: Fixed 2.00:00:00": {
 "variable": "t_qtime",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "2.00:00:00",
 "maximum": "00:00:00",
-"link1": 520093696,
-"link2": 6,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -185,7 +185,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 1:  => CreateLogEntry (1020, 0)": {
@@ -215,7 +215,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 2:  => PlaceNpcAt (n_merchant, l_shop)": {
@@ -245,7 +245,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 3:  >> IfNpcClicked (n_merchant): set s_2": {
@@ -268,7 +268,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 4: s_2 => Say (1030)": {
@@ -284,7 +284,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 5: s_2 => PlaceItemOnCharacter (i_box)": {
@@ -314,7 +314,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 6: s_2 >> WhenPlayerCasts (18): set s_7": {
@@ -344,7 +344,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 7: s_7 >> WhenPlayerHasItems (i_box): set s_8": {
@@ -388,7 +388,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 8: s_8 => PickOneOf (s_3, s_4, s_5, s_6)": {
@@ -432,7 +432,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 " 9: s_3 => Say (1040)": {
@@ -448,7 +448,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "10: s_4 => Say (1041)": {
@@ -464,7 +464,7 @@
 }
 },
 "messageId": 1041,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "11: s_5 => Say (1042)": {
@@ -480,7 +480,7 @@
 }
 },
 "messageId": 1042,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "12: s_6 => Say (1043)": {
@@ -496,7 +496,7 @@
 }
 },
 "messageId": 1043,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "13: s_3 => CreateFoe(m_imp, 1, 100%, 100)": {
@@ -540,7 +540,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "14: s_4 => PlaceItemOnCharacter (i_wand)": {
@@ -570,7 +570,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "15: s_4 >> WhenItemIsUsed (i_wand): set s_9": {
@@ -600,7 +600,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "16: s_9 => CreateFoe(m_skeleton, 1, 100%, 100)": {
@@ -644,7 +644,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "17: s_5 => CreateFoe(m_rats, 3, 100%, 100)": {
@@ -688,7 +688,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "18: s_5 => CreateFoe(m_bats, 2, 100%, 100)": {
@@ -732,7 +732,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "19: s_9 => MakePermanent (i_wand)": {
@@ -755,7 +755,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "20:  >> IfGivingItemToNpc (i_box, n_merchant): set s_10": {
@@ -785,7 +785,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "21:  >> If (s_10 and not s_8): set s_13": {
@@ -829,7 +829,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "22:  >> If (s_8 and s_10): set s_11": {
@@ -873,7 +873,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "23: s_13 => Say (1051)": {
@@ -889,7 +889,7 @@
 }
 },
 "messageId": 1051,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "24: s_13 => PlaceItemOnCharacter (i_box)": {
@@ -919,7 +919,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "25:  => Unset (s_10, s_13)": {
@@ -963,7 +963,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "26: s_11 => Say (1050)": {
@@ -979,7 +979,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "27:  >> IfNpcClicked (n_questgiver): set s_1": {
@@ -1002,7 +1002,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "28:  >> If (s_11 and s_1): set s_12": {
@@ -1046,7 +1046,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "29:  => Unset (s_1)": {
@@ -1090,7 +1090,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "30: s_12 => QuestSuccess ()": {
@@ -1134,7 +1134,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "31: s_0 => EndQuest ()": {
@@ -1150,7 +1150,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 },
 "32: s_12 => EndQuest ()": {
@@ -1166,7 +1166,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 109
 }
 }

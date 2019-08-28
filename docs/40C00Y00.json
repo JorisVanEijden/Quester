@@ -104,7 +104,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -119,7 +119,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -134,7 +134,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -149,7 +149,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -164,58 +164,58 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 4,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [4]": {
-" 0: t_1stparton: TwoLinksPlus": {
+" 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_questgiver'": {
 "variable": "t_1stparton",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "2 [10]",
 "duration": 0,
 "started": 0,
-"flags": 513,
 "index": 0
 },
-" 1: t_00000613: Fixed": {
+" 1: t_00000613: Fixed 01:00:00": {
 "variable": "t_00000613",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_40000016: Random": {
+" 2: t_40000016: Random between 1.00:00:00 and 2.18:40:00": {
 "variable": "t_40000016",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "1.00:00:00",
 "maximum": "2.18:40:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 },
-" 3: t_00068071: Random": {
+" 3: t_00068071: Random between 00:02:00 and 00:30:00": {
 "variable": "t_00068071",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "00:02:00",
 "maximum": "00:30:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 3
 }
 }
@@ -258,7 +258,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => AddLocationToMap (l_mondung)": {
@@ -281,7 +281,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1020, 0)": {
@@ -311,7 +311,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> WhenItemIsUsed (i_letter): set s_2": {
@@ -341,7 +341,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> WhenAtLocation (l_mondung): set s_0": {
@@ -371,7 +371,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => PickOneOf (s_8, s_9, s_33)": {
@@ -415,7 +415,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  => PlaceMobAtLocation (m_monster, l_mondung)": {
@@ -445,7 +445,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> If (s_0 and not s_5 and not s_17): set s_1": {
@@ -489,7 +489,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_1 => CreateLogEntry (1018, 1)": {
@@ -519,7 +519,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_1 => Say (1017)": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": 1017,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_2 => AddLocationToMap (l_00006527)": {
@@ -558,7 +558,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 => CreateLogEntry (1019, 1)": {
@@ -588,7 +588,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_3 => EndQuest ()": {
@@ -604,7 +604,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13:  >> IfNpcClicked (n_qgfriend): set s_4": {
@@ -627,7 +627,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfMobsKilled (m_monster, 1): set s_5": {
@@ -657,7 +657,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_5 => Say (1035)": {
@@ -673,7 +673,7 @@
 }
 },
 "messageId": 1035,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16:  >> If (s_4 and s_5): set s_6": {
@@ -717,7 +717,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_6 => QuestSuccess (i_artifact)": {
@@ -761,7 +761,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_6 >> StartTimer (t_00000613); When it expires: set s_34": {
@@ -784,7 +784,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  => Unset (s_4)": {
@@ -828,7 +828,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> IfMobHurtByPlayer (m_monster): set s_7": {
@@ -851,7 +851,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_7 => PlaceItemAt (i_letter, l_mondung)": {
@@ -881,7 +881,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfItemFound (i_bow): set s_11": {
@@ -904,7 +904,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_11 => Unset (s_8)": {
@@ -948,7 +948,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24:  >> IfItemFound (i_yes5): set s_12": {
@@ -971,7 +971,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_12 => Unset (s_9)": {
@@ -1015,7 +1015,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26:  >> IfItemFound (i_00000d86): set s_13": {
@@ -1038,7 +1038,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_13 => Unset (s_33)": {
@@ -1082,7 +1082,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> If (s_17 and s_19): set s_14": {
@@ -1126,7 +1126,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_14 => PlaceItemAt (i_bow, l_bowdung)": {
@@ -1156,7 +1156,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30: s_14 => AddLocationToMap (l_bowdung)": {
@@ -1179,7 +1179,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_14 => CreateLogEntry (1021, 2)": {
@@ -1209,7 +1209,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_14 => Say (1040)": {
@@ -1225,7 +1225,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33:  >> If (s_17 and s_20): set s_15": {
@@ -1269,7 +1269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34: s_15 => PlaceItemAt (i_yes5, l_ringdung)": {
@@ -1299,7 +1299,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_15 => AddLocationToMap (l_ringdung)": {
@@ -1322,7 +1322,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "36: s_15 => CreateLogEntry (1022, 2)": {
@@ -1352,7 +1352,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "37: s_15 => Say (1041)": {
@@ -1368,7 +1368,7 @@
 }
 },
 "messageId": 1041,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "38:  >> If (s_17 and s_21): set s_16": {
@@ -1412,7 +1412,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "39: s_16 => PlaceItemAt (i_00000d86, l_0000de97)": {
@@ -1442,7 +1442,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "40: s_16 => AddLocationToMap (l_0000de97)": {
@@ -1465,7 +1465,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "41: s_16 => CreateLogEntry (1023, 2)": {
@@ -1495,7 +1495,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "42: s_16 => Say (1042)": {
@@ -1511,7 +1511,7 @@
 }
 },
 "messageId": 1042,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "43: s_17 => PlaceItemAt (i_letter, l_mondung)": {
@@ -1541,7 +1541,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "44: s_17 => RemoveTopics (l_00006527)": {
@@ -1578,7 +1578,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "45: s_17 >> StartTimer (t_40000016); When it expires: set s_22": {
@@ -1601,7 +1601,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "46: s_17 => AddRumor (1015)": {
@@ -1624,7 +1624,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "47: s_17 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -1654,7 +1654,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "48: s_17 => PlaceMobAtLocation (m_monster, l_00006527)": {
@@ -1684,7 +1684,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "49:  >> If (s_7 and s_8): set s_19": {
@@ -1728,7 +1728,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "50: s_19 => PromptYesNo (s_17, s_18, 1030)": {
@@ -1765,7 +1765,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "51:  >> If (s_7 and s_9): set s_20": {
@@ -1809,7 +1809,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "52: s_20 => PromptYesNo (s_17, s_18, 1031)": {
@@ -1846,7 +1846,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "53:  >> If (s_7 and s_33): set s_21": {
@@ -1890,7 +1890,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "54: s_21 => PromptYesNo (s_17, s_18, 1032)": {
@@ -1927,7 +1927,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "55: s_22 => CreateFoe(m_daedra, 3, 100%, 100)": {
@@ -1971,7 +1971,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "56:  >> IfMobHurtByPlayer (m_daedra): set s_23": {
@@ -1994,7 +1994,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "57: s_23 => Say (1050)": {
@@ -2010,7 +2010,7 @@
 }
 },
 "messageId": 1050,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "58:  >> If (s_10 and s_14): set s_24": {
@@ -2054,7 +2054,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "59: s_24 => PlaceItemAt (i_bow, l_00006527)": {
@@ -2084,7 +2084,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "60: s_24 => Say (1045)": {
@@ -2100,7 +2100,7 @@
 }
 },
 "messageId": 1045,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "61:  >> If (s_10 and s_15): set s_25": {
@@ -2144,7 +2144,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "62: s_25 => PlaceItemAt (i_yes5, l_00006527)": {
@@ -2174,7 +2174,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "63: s_25 => Say (1046)": {
@@ -2190,7 +2190,7 @@
 }
 },
 "messageId": 1046,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "64:  >> If (s_10 and s_16): set s_26": {
@@ -2234,7 +2234,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "65: s_26 => PlaceItemAt (i_00000d86, l_00006527)": {
@@ -2264,7 +2264,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "66: s_26 => Say (1047)": {
@@ -2280,7 +2280,7 @@
 }
 },
 "messageId": 1047,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "67:  >> If (s_11 and not s_5): set s_27": {
@@ -2324,7 +2324,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "68: s_27 >> StartTimer (t_00068071); When it expires: set s_10": {
@@ -2347,7 +2347,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "69:  >> If (s_12 and not s_5): set s_28": {
@@ -2391,7 +2391,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "70: s_28 >> StartTimer (t_00068071); When it expires: set s_10": {
@@ -2414,7 +2414,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "71:  >> If (s_13 and not s_5): set s_29": {
@@ -2458,7 +2458,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "72: s_29 >> StartTimer (t_00068071); When it expires: set s_10": {
@@ -2481,7 +2481,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "73:  >> If (s_11 and s_5): set s_30": {
@@ -2525,7 +2525,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "74: s_30 => MakePermanent (i_bow)": {
@@ -2548,7 +2548,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "75:  >> If (s_12 and s_5): set s_31": {
@@ -2592,7 +2592,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "76: s_31 => MakePermanent (i_yes5)": {
@@ -2615,7 +2615,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "77:  >> If (s_13 and s_5): set s_32": {
@@ -2659,7 +2659,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "78: s_32 => MakePermanent (i_00000d86)": {
@@ -2682,7 +2682,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "79: s_34 => EndQuest ()": {
@@ -2698,7 +2698,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

@@ -118,40 +118,40 @@
 ,"locations: [0]": {
 }
 ,"timers: [3]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'n_scholar'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 53,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 0
 },
-" 1: t_000096fc: Random": {
+" 1: t_000096fc: Random between 01:40:00 and 13:20:00": {
 "variable": "t_000096fc",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "01:40:00",
 "maximum": "13:20:00",
-"link1": 2,
-"link2": 53,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_0004d53c: Random": {
+" 2: t_0004d53c: Random between 06:40:00 and 23:20:00": {
 "variable": "t_0004d53c",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "06:40:00",
 "maximum": "23:20:00",
-"link1": 2,
-"link2": 53,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 }
 }
@@ -186,7 +186,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -216,7 +216,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 2:  => CheckNpcReputation (s_0, n_db, 10)": {
@@ -253,7 +253,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 3: not s_0 => RemoveTopics (n_db)": {
@@ -290,7 +290,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 4:  => PickOneOf (s_3, s_3, s_4, s_4)": {
@@ -334,7 +334,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 5: s_0 => Unset (s_3)": {
@@ -378,7 +378,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 6: s_0 >> StartTimer (t_000096fc); When it expires: set s_2": {
@@ -401,7 +401,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 7: s_3 >> StartTimer (t_0004d53c); When it expires: set s_5": {
@@ -424,7 +424,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 8: s_2 => PlaceItemOnPlayer (i_0001a7fc) [Msg 1022]": {
@@ -447,7 +447,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 " 9: s_5 => PlaceItemOnPlayer (i_0003453c) [Msg 1022]": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "10:  >> WhenItemIsUsed (i_0003453c): set s_16": {
@@ -500,7 +500,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "11:  >> WhenItemIsUsed (i_0001a7fc): set s_15": {
@@ -530,7 +530,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "12: s_16 => CreateLogEntry (1020, 1)": {
@@ -560,7 +560,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "13: s_15 => CreateLogEntry (1021, 1)": {
@@ -590,7 +590,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "14: s_15 => AddTopics (n_db)": {
@@ -627,7 +627,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "15: s_16 => AddTopics (n_db)": {
@@ -664,7 +664,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "16:  >> IfNpcClicked (n_scholar): set s_6": {
@@ -687,7 +687,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "17: s_6 => Say (1013)": {
@@ -703,7 +703,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "18: s_6 => PlaceItemOnCharacter (i_000006c3)": {
@@ -733,7 +733,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "19:  >> IfGivingItemToNpc (i_000006c3, n_db): set s_7": {
@@ -763,7 +763,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "20: s_7 => PromptYesNo (s_8, s_9, 1014)": {
@@ -800,7 +800,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "21: s_8 => AdjustReputationWithNpc (n_db, 10)": {
@@ -830,7 +830,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "22: s_9 => PlaceItemOnCharacter (i_000006c3)": {
@@ -860,7 +860,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "23: s_8 => PickOneOf (s_10, s_11)": {
@@ -904,7 +904,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "24: s_10 => Say (1019)": {
@@ -920,7 +920,7 @@
 }
 },
 "messageId": 1019,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "25: s_11 => Say (1018)": {
@@ -936,7 +936,7 @@
 }
 },
 "messageId": 1018,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "26: s_11 => PlaceItemOnCharacter (i_dbgold)": {
@@ -966,7 +966,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "27: s_10 => PlaceItemOnCharacter (i_000065b3)": {
@@ -996,7 +996,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "28: s_10 => PlaceItemOnCharacter (i_dbgold)": {
@@ -1026,7 +1026,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "29: s_10 => MakePermanent (i_dbgold)": {
@@ -1049,7 +1049,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "30: s_11 => MakePermanent (i_dbgold)": {
@@ -1072,7 +1072,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "31:  >> IfGivingItemToNpc (i_000065b3, n_qgiver): set s_13": {
@@ -1102,7 +1102,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "32:  >> IfGivingItemToNpc (i_000006c3, n_qgiver): set s_12": {
@@ -1132,7 +1132,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "33:  >> If (s_12 or s_13): set s_14": {
@@ -1176,7 +1176,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "34: s_14 => QuestSuccess (i_gold)": {
@@ -1220,7 +1220,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "35: s_1 => EndQuest ()": {
@@ -1236,7 +1236,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "36: s_14 => EndQuest ()": {
@@ -1252,7 +1252,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 },
 "37: s_11 => EndQuest ()": {
@@ -1268,7 +1268,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 26
 }
 }

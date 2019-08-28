@@ -61,34 +61,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "5375 [0x14FF]"
 }
 }
 ,"timers: [2]": {
-" 0: t_qtime: OneLink": {
+" 0: t_qtime: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_qtime",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 },
-" 1: t_shortdelay: Fixed": {
+" 1: t_shortdelay: Fixed 00:02:00": {
 "variable": "t_shortdelay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "00:02:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 449,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -123,7 +123,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 1:  => AddLocationToMap (l_mondung)": {
@@ -146,7 +146,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 2:  => PlaceMobAtLocation (m_lich, l_mondung)": {
@@ -176,7 +176,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 3:  => PlaceItemAt (i_sage, l_mondung)": {
@@ -206,7 +206,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 4:  => CreateLogEntry (1020, 0)": {
@@ -236,7 +236,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 5:  >> IfItemFound (i_sage): set s_4": {
@@ -259,7 +259,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 6: s_4 => Say (1030)": {
@@ -275,7 +275,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 7: s_4 >> StartTimer (t_shortdelay); When it expires: set s_5": {
@@ -298,7 +298,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 8:  >> If (s_5 and not s_2): set s_6": {
@@ -342,7 +342,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 " 9: s_6 => Say (1040)": {
@@ -358,7 +358,7 @@
 }
 },
 "messageId": 1040,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "10:  >> IfMobsKilled (m_lich, 1): set s_2": {
@@ -388,7 +388,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "11:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_1": {
@@ -418,7 +418,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "12: s_1 => QuestSuccess (i_reward)": {
@@ -462,7 +462,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "13:  >> If (s_1 and s_2): set s_3": {
@@ -506,7 +506,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "14: s_3 => AdjustReputationWithNpc (n_questgiver, 7)": {
@@ -536,7 +536,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "15: s_3 => Say (1035)": {
@@ -552,7 +552,7 @@
 }
 },
 "messageId": 1035,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "16: s_0 >> WhenPlayerHasItems (i_sage): set s_7": {
@@ -596,7 +596,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "17:  >> If (s_0 and s_7): set s_8": {
@@ -640,7 +640,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "18: s_8 => Say (1015)": {
@@ -656,7 +656,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "19: s_0 => EndQuest ()": {
@@ -672,7 +672,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 },
 "20: s_1 => EndQuest ()": {
@@ -688,7 +688,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 6
 }
 }

@@ -61,22 +61,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 26,
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 17,
 "index": 0
 }
 }
@@ -111,7 +111,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 1:  => AddLocationToMap (l_mondung)": {
@@ -134,7 +134,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -164,7 +164,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 3:  => PlaceMobAtLocation (m_mummy, l_mondung)": {
@@ -194,7 +194,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 4:  >> IfMobHurtByPlayer (m_mummy): set s_4": {
@@ -217,7 +217,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 5: s_4 => PlaceItemOnMob (i_0000e381, m_mummy)": {
@@ -247,7 +247,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 6:  >> IfItemFound (i_0000e381): set s_3": {
@@ -270,7 +270,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 7: s_3 => Say (1011)": {
@@ -286,7 +286,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 8:  >> IfGivingItemToNpc (i_0000e381, n_qgiver): set s_1": {
@@ -316,7 +316,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 9: s_1 => QuestSuccess (i_gold)": {
@@ -360,7 +360,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "10: s_0 => EndQuest ()": {
@@ -376,7 +376,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "11: s_1 => EndQuest ()": {
@@ -392,7 +392,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 }
 }

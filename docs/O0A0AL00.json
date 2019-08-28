@@ -94,7 +94,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12288 [0x3000]"
 },
@@ -109,22 +109,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12288 [0x3000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_traveltime: Fixed": {
+" 0: t_traveltime: Fixed 90.00:01:00": {
 "variable": "t_traveltime",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "90.00:01:00",
 "maximum": "00:00:00",
-"link1": -83885825,
-"link2": 2,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -159,7 +159,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 1:  >> WhenItemIsUsed (i_letter): set s_4": {
@@ -189,7 +189,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 2: s_4 >> StartTimer (t_traveltime); When it expires: set s_0": {
@@ -212,7 +212,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 3: s_4 => CreateLogEntry (1010, 0)": {
@@ -242,7 +242,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 4:  => PlaceItemAt (i_clothing, l_mansion)": {
@@ -272,7 +272,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 5: s_4 >> WhenAtLocation (l_mansion): set s_2": {
@@ -302,7 +302,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 6:  >> IfItemFound (i_clothing): set s_3 [Msg 1018]": {
@@ -325,7 +325,7 @@
 }
 },
 "messageId": 1018,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 7: s_3 => PlaceItemOnCharacter (i_note)": {
@@ -355,7 +355,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 8: s_2 => CreateFoe(m_0000388b, 3, 25%, 25)": {
@@ -399,7 +399,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 " 9:  >> IfMobHurtByPlayer (m_0000388b): set s_5": {
@@ -422,7 +422,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "10: s_5 => Say (1030)": {
@@ -438,7 +438,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "11:  >> IfGivingItemToNpc (i_clothing, n_thiefmember): set s_1": {
@@ -468,7 +468,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "12: s_1 => QuestSuccess (i_gold)": {
@@ -512,7 +512,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "13: s_1 => AddLocationToMap (l_dungeon)": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "14: s_1 => EndQuest ()": {
@@ -551,7 +551,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 },
 "15: s_0 => EndQuest ()": {
@@ -567,7 +567,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 56
 }
 }

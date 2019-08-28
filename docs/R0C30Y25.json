@@ -127,7 +127,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -142,34 +142,34 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [2]": {
-" 0: t_1stparton: SameAs2": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_1stparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 0
 },
-" 1: t_2ndparton: TwoLinksPlus": {
+" 1: t_2ndparton: 1.5 times travel time from here to 'l_thievesguild' and then 'n_questgiver'": {
 "variable": "t_2ndparton",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "2 [10]",
 "duration": 0,
 "started": 0,
-"flags": 513,
 "index": 1
 }
 }
@@ -234,7 +234,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  >> StartTimer (t_1stparton); When it expires: set s_4": {
@@ -257,7 +257,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -287,7 +287,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => PlaceItemOnCharacter (i_item1)": {
@@ -317,7 +317,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => PickOneOf (s_13, s_14, s_14, s_14)": {
@@ -361,7 +361,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => EnsureNpcLocation (n_contact)": {
@@ -391,7 +391,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> WhenItemIsUsed (i_map): set s_15": {
@@ -421,7 +421,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_0": {
@@ -451,7 +451,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_0 => QuestSuccess (i_reward, i_item3)": {
@@ -495,7 +495,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_0 => EndQuest ()": {
@@ -511,7 +511,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> If (s_12): set s_1": {
@@ -555,7 +555,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> If (s_4 and not s_6): set s_1": {
@@ -599,7 +599,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_1 => MakePermanent (i_item1)": {
@@ -622,7 +622,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_1 => MakePermanent (i_item2)": {
@@ -645,7 +645,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_1 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -675,7 +675,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_1 => EndQuest ()": {
@@ -691,7 +691,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16:  >> IfGivingItemToNpc (i_item1, n_contact): set s_3": {
@@ -721,7 +721,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_3 => CreateFoe(m_thief, 10, 100%, 100)": {
@@ -765,7 +765,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_3 => PlaceItemOnCharacter (i_item2)": {
@@ -795,7 +795,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_3 => Say (1011)": {
@@ -811,7 +811,7 @@
 }
 },
 "messageId": 1011,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_6 >> WhenAtLocation (l_thievesguild): set s_10": {
@@ -841,7 +841,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_6 => PlaceItemAt (i_item2, l_thievesguild)": {
@@ -871,7 +871,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_6 >> StartTimer (t_2ndparton); When it expires: set s_12": {
@@ -894,7 +894,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23:  >> IfMobHurtByPlayer (m_thief): set s_8": {
@@ -917,7 +917,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_8 => PlaceItemOnMob (i_letter, m_thief)": {
@@ -947,7 +947,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_8 => Say (1020)": {
@@ -963,7 +963,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_8 >> WhenPlayerHasItems (i_item2): set s_6": {
@@ -1007,7 +1007,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_10 => PlaceItemOnMob (i_item2, m_44000001)": {
@@ -1037,7 +1037,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28: s_10 => DoneWithMob (m_44000001, _)": {
@@ -1067,7 +1067,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29: s_10 => PlaceMobAtLocation (m_44000001, l_thievesguild)": {
@@ -1097,7 +1097,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> IfMobHurtByPlayer (m_44000001): set s_11": {
@@ -1120,7 +1120,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_11 => CreateFoe(m_guards, 2, 50%, 50)": {
@@ -1164,7 +1164,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_11 => Say (1030)": {
@@ -1180,7 +1180,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33: s_11 => AdjustReputationWithNpc (n_qgenemy, -20)": {
@@ -1210,7 +1210,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34: s_13 => PlaceItemOnMob (i_map, m_44000001)": {
@@ -1240,7 +1240,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_15 => ShowLocationOnMap (l_000348b1, 46, 423290)": {
@@ -1277,7 +1277,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

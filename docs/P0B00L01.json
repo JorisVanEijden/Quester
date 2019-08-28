@@ -75,16 +75,16 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_1stparton: OneLink": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_pawn'": {
 "variable": "t_1stparton",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 6,
+"flags1": "17 [00010001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 273,
 "index": 0
 }
 }
@@ -111,7 +111,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 1:  => PlaceItemOnPlayer (i_000038a3) [Msg 1021]": {
@@ -134,7 +134,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 2:  >> WhenPlayerHasItems (i_000038a3): set s_13": {
@@ -178,7 +178,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 3:  => RemoveTopics (n_vampire)": {
@@ -215,7 +215,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 4:  => RemoveTopics (n_pawn)": {
@@ -252,7 +252,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 5: s_5 => EnsureNpcLocation (n_pawn)": {
@@ -282,7 +282,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 6:  => EnsureNpcLocation (n_vampire)": {
@@ -312,7 +312,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 7:  >> WhenItemIsUsed (i_000038a3): set s_12": {
@@ -342,7 +342,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 8: s_12 => AddTopics (n_vampire)": {
@@ -379,7 +379,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 " 9: s_12 => CreateLogEntry (1026, 0)": {
@@ -409,7 +409,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "10:  >> IfGivingItemToNpc (i_000038a3, n_vampire): set s_5": {
@@ -439,7 +439,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "11: s_5 => Say (1002)": {
@@ -455,7 +455,7 @@
 }
 },
 "messageId": 1002,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "12: s_5 => PlaceItemOnCharacter (i_letter)": {
@@ -485,7 +485,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "13: s_5 => CreateLogEntry (1025, 1)": {
@@ -515,7 +515,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "14: s_5 => AddTopics (n_pawn)": {
@@ -552,7 +552,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "15:  >> IfGivingItemToNpc (i_letter, n_pawn): set s_4": {
@@ -582,7 +582,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "16: s_4 => Say (1010)": {
@@ -598,7 +598,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "17: s_4 => AdjustReputationWithNpc (n_vampire, 5)": {
@@ -628,7 +628,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "18:  >> IfNpcClicked (n_vampire): set s_11": {
@@ -651,7 +651,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "19:  >> If (s_11 and not s_4): set s_8": {
@@ -695,7 +695,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "20: s_8 => Unset (s_11, s_8)": {
@@ -739,7 +739,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "21: s_11 => QuestSuccess (i_reward)": {
@@ -783,7 +783,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "22: s_11 => EndQuest ()": {
@@ -799,7 +799,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 },
 "23: s_6 => EndQuest ()": {
@@ -815,7 +815,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 130
 }
 }

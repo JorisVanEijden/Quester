@@ -74,22 +74,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "12543 [0x30FF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: OneLink": {
+" 0: t_queston: 1.5 times travel time between here and 'l_ranger'": {
 "variable": "t_queston",
-"type": "OneLink",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 6,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -140,7 +140,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -170,7 +170,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 2:  => PlaceNpcAt (n_mage, l_ranger)": {
@@ -200,7 +200,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 3:  => PlaceItemOnCharacter (i_potion)": {
@@ -230,7 +230,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 4:  >> IfTimeOfDayBetween (06:40:00, 17:20:00): set s_1": {
@@ -260,7 +260,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 5: not s_1 => CreateFoe(m_vampire, 15, 70%, 70) [Msg 1012]": {
@@ -304,7 +304,7 @@
 }
 },
 "messageId": 1012,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 6: not s_1 => CreateFoe(m_wereboar, 11, 40%, 40) [Msg 1014]": {
@@ -348,7 +348,7 @@
 }
 },
 "messageId": 1014,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 7: not s_1 => CreateFoe(m_werewolf, 19, 50%, 50) [Msg 1013]": {
@@ -392,7 +392,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 8:  >> WhenItemIsUsed (i_potion): set s_3": {
@@ -422,7 +422,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 " 9: s_3 => CureLycanthropy ()": {
@@ -438,7 +438,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "10: s_3 => CureVampirism ()": {
@@ -454,7 +454,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "11: s_3 => Say (1015)": {
@@ -470,7 +470,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_2": {
@@ -500,7 +500,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "13:  >> If (s_2 and s_3): set s_4": {
@@ -544,7 +544,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "14: s_4 => Say (1017)": {
@@ -560,7 +560,7 @@
 }
 },
 "messageId": 1017,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "15: s_4 => EndQuest ()": {
@@ -576,7 +576,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "16:  >> If (s_2 and not s_3): set s_5": {
@@ -620,7 +620,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "17: s_5 => QuestSuccess (i_gold)": {
@@ -664,7 +664,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "18: s_0 => MakePermanent (i_potion)": {
@@ -687,7 +687,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "19: s_0 => EndQuest ()": {
@@ -703,7 +703,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 },
 "20: s_5 => EndQuest ()": {
@@ -719,7 +719,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 111
 }
 }

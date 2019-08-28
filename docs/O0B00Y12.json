@@ -88,40 +88,40 @@
 ,"locations: [0]": {
 }
 ,"timers: [3]": {
-" 0: t_qtime: TwoLinksPlus": {
+" 0: t_qtime: 1.5 times travel time from here to 'n_contact1' and then 'n_contact2'": {
 "variable": "t_qtime",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 2,
+"flags1": "1 [00000001]",
+"flags2": "3 [11]",
 "duration": 0,
 "started": 0,
-"flags": 769,
 "index": 0
 },
-" 1: t_0000060a: Random": {
+" 1: t_0000060a: Random between 1.00:00:00 and 2.18:40:00": {
 "variable": "t_0000060a",
 "type": "Random",
+"typeRaw": "0 [0x00]",
 "minimum": "1.00:00:00",
 "maximum": "2.18:40:00",
-"link1": 0,
-"link2": 2,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 },
-" 2: t_delay: Fixed": {
+" 2: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 2,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 2
 }
 }
@@ -156,7 +156,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 1:  >> StartTimer (t_0000060a); When it expires: set s_1": {
@@ -179,7 +179,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 2:  => CreateLogEntry (1020, 0)": {
@@ -209,7 +209,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 3:  => EnsureNpcLocation (n_contact1)": {
@@ -239,7 +239,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 4:  => PlaceItemOnCharacter (i_drugs)": {
@@ -269,7 +269,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 5: s_1 => HideNpc (n_contact1)": {
@@ -292,7 +292,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 6: s_1 => PlaceItemOnPlayer (i_note) [Msg 1031]": {
@@ -315,7 +315,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 7: s_1 => EnsureNpcLocation (n_contact2)": {
@@ -345,7 +345,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 8: s_1 => CreateFoe(m_enemy, 10, 10%, 10)": {
@@ -389,7 +389,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 " 9:  >> IfMobHurtByPlayer (m_enemy): set s_6": {
@@ -412,7 +412,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "10: s_6 => Say (1035)": {
@@ -428,7 +428,7 @@
 }
 },
 "messageId": 1035,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "11: s_1 >> WhenItemIsUsed (i_note): set s_2": {
@@ -458,7 +458,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "12: s_2 => CreateLogEntry (1021, 1)": {
@@ -488,7 +488,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "13:  >> IfGivingItemToNpc (i_drugs, n_contact1): set s_4": {
@@ -518,7 +518,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "14:  >> IfGivingItemToNpc (i_drugs, n_contact2): set s_4": {
@@ -548,7 +548,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "15: s_4 => QuestSuccess (i_gold)": {
@@ -592,7 +592,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "16: s_4 >> StartTimer (t_delay); When it expires: set s_5": {
@@ -615,7 +615,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "17: s_5 => EndQuest ()": {
@@ -631,7 +631,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 },
 "18: s_0 => EndQuest ()": {
@@ -647,7 +647,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 12
 }
 }

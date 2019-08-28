@@ -68,28 +68,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_questtime: TwoLinksPlus": {
+" 0: t_questtime: 1.5 times travel time from here to 'n_giver' and then 'n_giver'": {
 "variable": "t_questtime",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "3 [11]",
 "duration": 0,
 "started": 0,
-"flags": 769,
 "index": 0
 },
-" 1: t_delay: Fixed": {
+" 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -116,7 +116,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => PromptYesNo (s_1, s_2, 1011)": {
@@ -153,7 +153,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => PickOneOf (s_6, s_7)": {
@@ -197,7 +197,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  >> WhenItemIsUsed (i_00000635): set s_8": {
@@ -227,7 +227,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => EnsureNpcLocation (n_cousin)": {
@@ -257,7 +257,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5: s_0 => EndQuest ()": {
@@ -273,7 +273,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6: s_1 => CreateLogEntry (1003, 0)": {
@@ -303,7 +303,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7: s_1 => Say (1025)": {
@@ -319,7 +319,7 @@
 }
 },
 "messageId": 1025,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8: s_2 => EndQuest () [Msg 1006]": {
@@ -335,7 +335,7 @@
 }
 },
 "messageId": 1006,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9:  >> IfNpcClicked (n_cousin): set s_3": {
@@ -358,7 +358,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10: s_3 => Say (1010)": {
@@ -374,7 +374,7 @@
 }
 },
 "messageId": 1010,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11:  >> If (s_3 and s_6): set s_4": {
@@ -418,7 +418,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_4 => Unknown72_Value (7)": {
@@ -441,7 +441,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_8 => GiveItemToPlayer (i_00000635) [Msg 1019]": {
@@ -464,7 +464,7 @@
 }
 },
 "messageId": 1019,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_8 => CureAllDisease (7)": {
@@ -487,7 +487,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15:  >> IfGivingItemToNpc (i_00000635, n_cousin): set s_9": {
@@ -517,7 +517,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_9 => QuestSuccess ()": {
@@ -561,7 +561,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_9 >> StartTimer (t_delay); When it expires: set s_14": {
@@ -584,7 +584,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_9 => CreateLogEntry (1018, 2)": {
@@ -614,7 +614,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_9 => Say (1016)": {
@@ -630,7 +630,7 @@
 }
 },
 "messageId": 1016,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20:  >> IfNpcClicked (n_healer): set s_10 [Msg 1013]": {
@@ -653,7 +653,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_10 => PromptYesNo (s_12, s_11, 1014)": {
@@ -690,7 +690,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22: s_11 => Unset (s_10)": {
@@ -734,7 +734,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_12 => TakePlayerGold (s_13, 20, n_healer)": {
@@ -771,7 +771,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_12 => CreateLogEntry (1017, 1)": {
@@ -801,7 +801,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_12 => PlaceItemOnCharacter (i_00000635)": {
@@ -831,7 +831,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_13 => Say (1015)": {
@@ -847,7 +847,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_14 => EndQuest ()": {
@@ -863,7 +863,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

@@ -88,28 +88,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_questtime: TwoLinksPlus": {
+" 0: t_questtime: 1.5 times travel time from here to 'n_healer' and then 'n_cousin'": {
 "variable": "t_questtime",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 1,
+"flags1": "1 [00000001]",
+"flags2": "3 [11]",
 "duration": 0,
 "started": 0,
-"flags": 769,
 "index": 0
 },
-" 1: t_delay: Fixed": {
+" 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 1,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 1
 }
 }
@@ -136,7 +136,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => CreateLogEntry (1010, 0)": {
@@ -166,7 +166,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => RemoveTopics (n_healer, i_00000635)": {
@@ -203,7 +203,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => EnsureNpcLocation (n_cousin)": {
@@ -233,7 +233,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  => EnsureNpcLocation (n_healer)": {
@@ -263,7 +263,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => PlaceItemOnCharacter (i_gold1)": {
@@ -293,7 +293,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  => MakePermanent (i_gold1)": {
@@ -316,7 +316,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  => PickOneOf (s_4, s_5)": {
@@ -360,7 +360,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  >> IfNpcClicked (n_cousin): set s_1 [Msg 1030]": {
@@ -383,7 +383,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_1 => CreateLogEntry (1011, 1)": {
@@ -413,7 +413,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> If (s_1 and s_4): set s_2": {
@@ -457,7 +457,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_2 => Unknown72_Value (15)": {
@@ -480,7 +480,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12:  >> IfNpcClicked (n_healer): set s_8": {
@@ -503,7 +503,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_9 => TakePlayerGold (s_10, 20, n_healer)": {
@@ -540,7 +540,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14: s_9 => Say (1013)": {
@@ -556,7 +556,7 @@
 }
 },
 "messageId": 1013,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_10 => Say (1015)": {
@@ -572,7 +572,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_9 => PlaceItemOnCharacter (i_00000635)": {
@@ -602,7 +602,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_9 => CreateLogEntry (1017, 2)": {
@@ -632,7 +632,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18: s_10 => Unset (s_8, s_9, s_10)": {
@@ -676,7 +676,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19:  >> WhenItemIsUsed (i_00000635): set s_6": {
@@ -706,7 +706,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_6 => GiveItemToPlayer (i_00000635) [Msg 1019]": {
@@ -729,7 +729,7 @@
 }
 },
 "messageId": 1019,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_6 => CureAllDisease (15)": {
@@ -752,7 +752,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfGivingItemToNpc (i_00000635, n_cousin): set s_7": {
@@ -782,7 +782,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_7 => QuestSuccess (i_gold2)": {
@@ -826,7 +826,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_7 >> StartTimer (t_delay); When it expires: set s_11": {
@@ -849,7 +849,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_11 => EndQuest ()": {
@@ -865,7 +865,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_0 => EndQuest ()": {
@@ -881,7 +881,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

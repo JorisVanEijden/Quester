@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -146,11 +147,12 @@ namespace Quester
             {
                 var index = reader.ReadInt16();
 
-                timers[index] = new Timer
+                Timer timer = new Timer
                 {
                     Index = index,
-                    Flags = reader.ReadUInt16(),
-                    Type = (TimerType) reader.ReadByte(),
+                    Flags1 = reader.ReadByte(),
+                    Flags2 = reader.ReadByte(),
+                    TypeRaw = reader.ReadByte(),
                     Minimum = reader.ReadInt32(),
                     Maximum = reader.ReadInt32(),
                     Started = reader.ReadUInt32(),
@@ -159,6 +161,17 @@ namespace Quester
                     Link2 = reader.ReadInt32(),
                     Variable = "t_" + VariableNames.LookUp(reader.ReadUInt32())
                 };
+                timer.Type = (TimerType) timer.TypeRaw;
+                timer.Link1Type = ((timer.Flags2 & 0x1) == 0) ? RecordType.Location : RecordType.Npc;
+                timer.Link2Type = ((timer.Flags2 & 0x2) == 0) ? RecordType.Location : RecordType.Npc;
+
+                timers[index] = timer;
+
+                TimeSpan minimum = TimeSpan.FromMinutes(timer.Minimum);
+                TimeSpan maximum = TimeSpan.FromMinutes(timer.Maximum);
+
+                string binary1 = Convert.ToString(timer.Flags1, 2).PadLeft(8, '0');
+                Console.WriteLine($"{Program.Quest.Name} {Program.Quest.Locations.Count} {Program.Quest.Npcs.Count} {timer.Type} '{binary1}' {timer.Link1Type} {timer.Link1} {timer.Link2Type} {timer.Link2} {minimum} {maximum}");
             }
 
             return timers;

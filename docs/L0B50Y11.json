@@ -87,7 +87,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -102,7 +102,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 1,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -117,7 +117,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -132,7 +132,7 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
@@ -147,22 +147,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 4,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 }
 }
 ,"timers: [1]": {
-" 0: t_40000000: Fixed": {
+" 0: t_40000000: Fixed 7.00:00:00": {
 "variable": "t_40000000",
 "type": "Fixed",
+"typeRaw": "1 [0x01]",
 "minimum": "7.00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 0,
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
 "duration": 0,
 "started": 0,
-"flags": 1,
 "index": 0
 }
 }
@@ -235,7 +235,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 1:  => RemoveTopics (l_house)": {
@@ -272,7 +272,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 2:  => RemoveTopics (l_guildhall)": {
@@ -309,7 +309,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 3:  => RemoveTopics (l_fakeplace)": {
@@ -346,7 +346,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 4:  >> StartTimer (t_40000000); When it expires: set s_0": {
@@ -369,7 +369,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 5:  => CreateLogEntry (1010, 0)": {
@@ -399,7 +399,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 6:  >> WhenAtLocation (l_fakeplace): set s_11": {
@@ -429,7 +429,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 7:  => PlaceNpcAt (n_00006cdd, l_mistresshome)": {
@@ -459,7 +459,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 8:  => PlaceNpcAt (n_marknpc, l_fakeplace)": {
@@ -489,7 +489,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 " 9: s_0 => EndQuest ()": {
@@ -505,7 +505,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "10:  >> IfTimeOfDayBetween (00:00:00, 10:00:00): set s_1": {
@@ -535,7 +535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "11: s_1 >> WhenAtLocation (l_house): set s_5": {
@@ -565,7 +565,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "12: s_1 => SetMobPowerLevel (m_home, 17)": {
@@ -595,7 +595,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "13: s_1 => PlaceMobAtLocation (m_home, l_house)": {
@@ -625,7 +625,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "14:  >> IfTimeOfDayBetween (19:01:00, 1.00:00:00): set s_2": {
@@ -655,7 +655,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "15: s_2 >> WhenAtLocation (l_imp): set s_5": {
@@ -685,7 +685,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "16: s_2 => SetMobPowerLevel (m_home, 17)": {
@@ -715,7 +715,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "17: s_2 => PlaceMobAtLocation (m_home, l_imp)": {
@@ -745,7 +745,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "18:  >> IfTimeOfDayBetween (10:01:00, 18:00:00): set s_3": {
@@ -775,7 +775,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "19: s_3 >> WhenAtLocation (l_guildhall): set s_5": {
@@ -805,7 +805,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "20: s_3 => SetMobPowerLevel (m_home, 17)": {
@@ -835,7 +835,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "21: s_3 => PlaceMobAtLocation (m_home, l_guildhall)": {
@@ -865,7 +865,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "22:  >> IfTimeOfDayBetween (18:01:00, 19:00:00): set s_4": {
@@ -895,7 +895,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "23: s_4 >> WhenAtLocation (l_mistresshome): set s_6": {
@@ -925,7 +925,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "24: s_4 => PlaceMobAtLocation (m_home, l_mistresshome)": {
@@ -955,7 +955,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "25: s_5 => CreateFoe(m_44000003, 2, 50%, 50)": {
@@ -999,7 +999,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "26: s_5 => CreateFoe(m_44000002, 4, 50%, 50)": {
@@ -1043,7 +1043,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "27: s_5 => CreateFoe(m_44000001, 3, 50%, 50)": {
@@ -1087,7 +1087,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "28:  >> IfMobsKilled (m_home, 1): set s_7 [Msg 1031]": {
@@ -1117,7 +1117,7 @@
 }
 },
 "messageId": 1031,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "29:  >> IfNpcClicked (n_00006cdd): set s_8": {
@@ -1140,7 +1140,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "30:  >> If (not s_7 and s_21): set s_9": {
@@ -1184,7 +1184,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "31: s_9 => Say (1015)": {
@@ -1200,7 +1200,7 @@
 }
 },
 "messageId": 1015,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "32: s_9 => Unset (s_21, s_9)": {
@@ -1244,7 +1244,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "33:  >> If (s_7 and s_21): set s_10": {
@@ -1288,7 +1288,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "34: s_10 => QuestSuccess (i_gold)": {
@@ -1332,7 +1332,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "35: s_10 => EndQuest ()": {
@@ -1348,7 +1348,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "36: s_11 => HideNpc (n_marknpc)": {
@@ -1371,7 +1371,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "37:  >> If (s_4 and s_8 and not s_7): set s_12": {
@@ -1415,7 +1415,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "38: s_12 => Say (1021)": {
@@ -1431,7 +1431,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "39:  >> If (s_4 and s_8 and s_7): set s_13": {
@@ -1475,7 +1475,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "40: s_13 => Say (1022)": {
@@ -1491,7 +1491,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "41:  >> If (not s_4 and s_8 and not s_7): set s_14": {
@@ -1535,7 +1535,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "42: s_14 => PromptYesNo (s_15, s_16, 1020)": {
@@ -1572,7 +1572,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "43: s_17 => TakePlayerGold (s_18, 50, n_00006cdd)": {
@@ -1609,7 +1609,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "44:  >> If (s_17 and s_16): set s_19": {
@@ -1653,7 +1653,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "45: s_19 => PlaceItemOnCharacter (i_0000d88a)": {
@@ -1683,7 +1683,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "46:  >> If (s_17 and s_15): set s_20": {
@@ -1727,7 +1727,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "47: s_20 => Say (1023)": {
@@ -1743,7 +1743,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "48:  => Unset (s_8)": {
@@ -1787,7 +1787,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "49:  >> IfNpcClicked (n_questgiver): set s_21": {
@@ -1810,7 +1810,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 },
 "50: not s_11 => ShowNpc (n_marknpc)": {
@@ -1833,7 +1833,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 0
 }
 }

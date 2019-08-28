@@ -87,22 +87,22 @@
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
-"flags": 0,
+"flags": "0 [0x00]",
 "objPtr": 0,
 "unknown1": "20479 [0x4FFF]"
 }
 }
 ,"timers: [1]": {
-" 0: t_queston: TwoLinksPlus": {
+" 0: t_queston: 1.5 times travel time from here to 'n_orsinium' and then 'n_contact'": {
 "variable": "t_queston",
-"type": "TwoLinksPlus",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 2,
-"link2": 1,
+"flags1": "2 [00000010]",
+"flags2": "3 [11]",
 "duration": 0,
 "started": 0,
-"flags": 770,
 "index": 0
 }
 }
@@ -159,7 +159,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 1:  => EnsureNpcLocation (n_orsinium)": {
@@ -189,7 +189,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 2:  => EnsureNpcLocation (n_contact)": {
@@ -219,7 +219,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 3:  >> StartTimer (t_queston); When it expires: set s_2": {
@@ -242,7 +242,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 4:  => CreateLogEntry (1010, 0)": {
@@ -272,7 +272,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 5:  => PlaceItemOnCharacter (i_sage)": {
@@ -302,7 +302,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 6: not s_5 => CreateFoe(m_0006e14b, 10, 35%, 35)": {
@@ -346,7 +346,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 7: not s_5 => CreateFoe(m_note, 5, 35%, 35)": {
@@ -390,7 +390,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 8:  >> IfMobsKilled (m_0006e14b, 1): set s_7": {
@@ -420,7 +420,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 " 9: s_7 => AddTopics (n_orsinium)": {
@@ -457,7 +457,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "10: s_7 => Say (1030)": {
@@ -473,7 +473,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "11:  >> IfNpcClicked (n_orsinium): set s_4": {
@@ -496,7 +496,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "12: s_4 => Say (1020)": {
@@ -512,7 +512,7 @@
 }
 },
 "messageId": 1020,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "13:  >> IfGivingItemToNpc (i_sage, n_orsinium): set s_8": {
@@ -542,7 +542,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "14: s_8 => PromptYesNo (s_5, s_6, 1021)": {
@@ -579,7 +579,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "15: s_5 => Say (1022)": {
@@ -595,7 +595,7 @@
 }
 },
 "messageId": 1022,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "16: s_6 => Say (1023)": {
@@ -611,7 +611,7 @@
 }
 },
 "messageId": 1023,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "17: s_6 => PlaceItemOnCharacter (i_sage)": {
@@ -641,7 +641,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "18: s_5 => AdjustReputationWithNpc (n_orsinium, 30)": {
@@ -671,7 +671,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "19: s_6 => AdjustReputationWithNpc (n_orsinium, -10)": {
@@ -701,7 +701,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "20:  >> IfGivingItemToNpc (i_sage, n_contact): set s_3": {
@@ -731,7 +731,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "21: s_3 => QuestSuccess (i_reward)": {
@@ -775,7 +775,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "22: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -805,7 +805,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "23: s_2 => MakePermanent (i_sage)": {
@@ -828,7 +828,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "24: s_3 => EndQuest ()": {
@@ -844,7 +844,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
 "25: s_2 => EndQuest ()": {
@@ -860,7 +860,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 1761
 }
 }

@@ -75,28 +75,28 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_1stparton: SameAs2": {
+" 0: t_1stparton: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_1stparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 1,
-"link2": 51,
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 257,
 "index": 0
 },
-" 1: t_2ndparton: SameAs2": {
+" 1: t_2ndparton: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_2ndparton",
-"type": "SameAs2",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
 "maximum": "00:00:00",
-"link1": 0,
-"link2": 51,
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
 "duration": 0,
 "started": 0,
-"flags": 257,
 "index": 1
 }
 }
@@ -131,7 +131,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 1:  => EnsureNpcLocation (n_contact)": {
@@ -161,7 +161,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 2:  => CreateLogEntry (1010, 0)": {
@@ -191,7 +191,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 3:  => PlaceItemOnCharacter (i_item1)": {
@@ -221,7 +221,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 4: not s_3 => CreateFoe(m_thief, 5, 25%, 25)": {
@@ -265,7 +265,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 5:  >> IfMobHurtByPlayer (m_thief): set s_10": {
@@ -288,7 +288,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 6: s_10 => PromptYesNo (s_7, s_8, 1020)": {
@@ -325,7 +325,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 7: s_7 >> WhenPlayerHasItems (i_item1): set s_9": {
@@ -369,7 +369,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 8: s_9 => DoneWithMob (m_thief, _)": {
@@ -399,7 +399,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 " 9: s_9 => PlaceItemOnMob (i_item1, m_thief) [Msg 1021]": {
@@ -429,7 +429,7 @@
 }
 },
 "messageId": 1021,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "10:  >> IfGivingItemToNpc (i_item1, n_contact): set s_3": {
@@ -459,7 +459,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "11: s_3 >> StartTimer (t_2ndparton); When it expires: set s_11": {
@@ -482,7 +482,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "12: s_3 => PlaceItemOnCharacter (i_item2) [Msg 1030]": {
@@ -512,7 +512,7 @@
 }
 },
 "messageId": 1030,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "13: s_3 => CreateLogEntry (1011, 1)": {
@@ -542,7 +542,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "14:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_0": {
@@ -572,7 +572,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "15: s_0 => QuestSuccess (i_reward)": {
@@ -616,7 +616,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "16:  >> If (s_11): set s_1": {
@@ -660,7 +660,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "17:  >> If (s_4 and not s_3): set s_1": {
@@ -704,7 +704,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "18: s_1 => AdjustReputationWithNpc (n_questgiver, -20)": {
@@ -734,7 +734,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "19:  >> If (s_1 or s_0): set s_12": {
@@ -778,7 +778,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "20: s_12 => MakePermanent (i_item2)": {
@@ -801,7 +801,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "21: s_12 => MakePermanent (i_item1)": {
@@ -824,7 +824,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "22: s_0 => EndQuest ()": {
@@ -840,7 +840,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 },
 "23: s_1 => EndQuest ()": {
@@ -856,7 +856,7 @@
 }
 },
 "messageId": -1,
-"flags": 0,
+"flags": "0 [0x0000]",
 "lastUpdate": 13
 }
 }
