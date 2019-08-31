@@ -12,7 +12,17 @@
 "resourceFileName": "",
 "hasDebugInfo": false
 }
-,"items: [0]": {
+,"items: [1]": {
+" 0: i_0001b76f: Artifact MagicItem %it of Force Bolts": {
+"variable": "i_0001b76f",
+"rewardType": "Artifact",
+"category": "MagicItem",
+"itemId": 3,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
 }
 ,"npcs: [0]": {
 }
@@ -172,7 +182,7 @@
 }
 ,"mobs: [0]": {
 }
-,"opCodes: [33]": {
+,"opCodes: [34]": {
 " 0:  => PromptYesNo (s_1, s_2, 1010)": {
 "opCode": 29,
 "argCount": 4,
@@ -263,7 +273,37 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_1 => Say (1012)": {
+" 3:  => PlaceItemOnCharacter (i_0001b76f)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_0001b76f": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 4: s_1 => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
@@ -279,7 +319,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_2 => StartQuest (977, 977)": {
+" 5: s_2 => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -309,7 +349,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_2 => EndQuest ()": {
+" 6: s_2 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
@@ -325,7 +365,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_3 => PromptYesNo (s_16, s_2, 1013)": {
+" 7: s_3 => PromptYesNo (s_16, s_2, 1013)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -362,7 +402,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_4 => PromptYesNo (s_17, s_2, 1015)": {
+" 8: s_4 => PromptYesNo (s_17, s_2, 1015)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -399,7 +439,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_5 => PromptYesNo (s_19, s_2, 1025)": {
+" 9: s_5 => PromptYesNo (s_19, s_2, 1025)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -436,7 +476,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_6 => PromptYesNo (s_18, s_2, 1020)": {
+"10: s_6 => PromptYesNo (s_18, s_2, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -473,7 +513,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_7 => PromptYesNo (s_20, s_2, 1030)": {
+"11: s_7 => PromptYesNo (s_20, s_2, 1030)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -510,7 +550,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_8 => PromptYesNo (s_9, s_2, 1035)": {
+"12: s_8 => PromptYesNo (s_9, s_2, 1035)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -547,7 +587,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_12 => PromptYesNo (s_23, s_2, 1050)": {
+"13: s_12 => PromptYesNo (s_23, s_2, 1050)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -584,7 +624,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_13 => StartQuest (977, 977)": {
+"14: s_13 => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -614,7 +654,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_13 => Say (1055)": {
+"15: s_13 => Say (1055)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
@@ -630,7 +670,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_13 => Say (1056)": {
+"16: s_13 => Say (1056)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
@@ -646,7 +686,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_13 => EndQuest ()": {
+"17: s_13 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
@@ -662,7 +702,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_14 => StartQuest (977, 977)": {
+"18: s_14 => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -692,7 +732,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_14 => EndQuest ()": {
+"19: s_14 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
@@ -708,7 +748,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_15 >> WhenAtLocation (l_00014ff8): set s_25": {
+"20: s_15 >> WhenAtLocation (l_00014ff8): set s_25": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -738,7 +778,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> If (s_1 and not s_0): set s_15": {
+"21:  >> If (s_1 and not s_0): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -782,7 +822,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_15 => Say (1040)": {
+"22: s_15 => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
@@ -798,7 +838,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_15 => PromptYesNo (s_21, s_2, 1041)": {
+"23: s_15 => PromptYesNo (s_21, s_2, 1041)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -835,7 +875,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_16 >> StartTimer (t_40000004); When it expires: set s_4": {
+"24: s_16 >> StartTimer (t_40000004); When it expires: set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -858,7 +898,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_17 >> StartTimer (t_40000006); When it expires: set s_6": {
+"25: s_17 >> StartTimer (t_40000006); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -881,7 +921,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_18 >> StartTimer (t_40000005); When it expires: set s_5": {
+"26: s_18 >> StartTimer (t_40000005); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -904,7 +944,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_19 >> StartTimer (t_40000007); When it expires: set s_7": {
+"27: s_19 >> StartTimer (t_40000007); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -927,7 +967,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_20 >> StartTimer (t_40000008); When it expires: set s_8": {
+"28: s_20 >> StartTimer (t_40000008); When it expires: set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -950,7 +990,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_21 >> StartTimer (t_2dagger); When it expires: set s_14": {
+"29: s_21 >> StartTimer (t_2dagger); When it expires: set s_14": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -973,7 +1013,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_22 >> StartTimer (t_000005c7); When it expires: set s_12": {
+"30: s_22 >> StartTimer (t_000005c7); When it expires: set s_12": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -996,7 +1036,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_23 >> StartTimer (t_000005c8); When it expires: set s_13": {
+"31: s_23 >> StartTimer (t_000005c8); When it expires: set s_13": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1019,7 +1059,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_25 => Say (1045)": {
+"32: s_25 => Say (1045)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
@@ -1035,7 +1075,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_25 => PromptYesNo (s_22, s_2, 1046)": {
+"33: s_25 => PromptYesNo (s_22, s_2, 1046)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {

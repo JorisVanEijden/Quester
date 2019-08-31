@@ -89,6 +89,8 @@ namespace Quester
                     mobArgument.Type = RecordType.Mob;
                     Arguments[1] = mobArgument;
                     return $"{state} => CreateFoe({mobArgument}, {Arguments[2]}, {Arguments[3]}%, {Arguments[3]}){message}";
+                case Instruction.TeleportPlayer:
+                    return $"{state} >> {Code} ({Arguments[1]}, {(Region)Arguments[2].Value}, 0x{Arguments[3].Value:X4}){message}";
                 default:
                     StringBuilder sb = new StringBuilder(state);
                     sb.Append($" => {Code} (");

@@ -67,7 +67,7 @@ namespace Quester
         IfFactionReputation = 79,
         EnsureNpcLocation = 81,
         StopNpcConversation = 82,
-        Unknown83_Location = 83,
+        TeleportPlayer = 83,
         PlaySound = 84,
         SetQuestor = 85,
         UnsetQuestor = 86,
