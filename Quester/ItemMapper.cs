@@ -391,16 +391,6 @@ namespace Quester
             },
             [ItemCategory.MagicItem] = new List<string>
             {
-                "The Masque of Clavicus",
-                "The Mehrunes Razor",
-                "The Mace of Molag Bal",
-                "The Hircine Ring",
-                "The Sanguine Rose",
-                "Oghma Infinium",
-                "The Wabbajack",
-                "The Ring of Namira",
-                "The Skull of Corruption",
-                "Azura's Star",
                 "Silent %it",
                 "%it of the Wise",
                 "%it of Wildfire",
@@ -437,19 +427,6 @@ namespace Quester
                 "%it of Oblivion",
                 "%it of Toxic Clouds",
                 "%it of Paralysis",
-                "Volendrung",
-                "Warlock's Ring",
-                "Auriel's Bow",
-                "Necromancer's Amulet",
-                "Chrysamere",
-                "Lord's Mail",
-                "Staff of Magnus",
-                "Ring of Khajiit",
-                "Ebony Mail",
-                "Auriel's Shield",
-                "Spell Breaker",
-                "Skeleton's Key",
-                "Ebony Blade"
             },
             [ItemCategory.MetalIngredients] = new List<string>
             {
