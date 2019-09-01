@@ -272,11 +272,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5: s_1 => HideNpc (n_contact1)": {
+" 5: s_0000060a => HideNpc (n_contact1)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0000060a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -295,11 +295,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6: s_1 => PlaceItemOnPlayer (i_note) [Msg 1031]": {
+" 6: s_0000060a => PlaceItemOnPlayer (i_note) [Msg 1031]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0000060a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -318,11 +318,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_1 => EnsureNpcLocation (n_contact2)": {
+" 7: s_0000060a => EnsureNpcLocation (n_contact2)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000060a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -348,11 +348,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 8: s_1 => CreateFoe(m_enemy, 10, 10%, 10)": {
+" 8: s_0000060a => CreateFoe(m_enemy, 10, 10%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_0000060a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -392,11 +392,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9:  >> IfMobHurtByPlayer (m_enemy): set s_6": {
+" 9:  >> IfMobHurtByPlayer (m_enemy): set s_00006967": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00006967": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -415,11 +415,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_6 => Say (1035)": {
+"10: s_00006967 => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_00006967": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -431,18 +431,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11: s_1 >> WhenItemIsUsed (i_note): set s_2": {
+"11: s_0000060a >> WhenItemIsUsed (i_note): set s_readnote": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000060a": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_2": {
+"1: s_readnote": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -461,11 +461,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12: s_2 => CreateLogEntry (1021, 1)": {
+"12: s_readnote => CreateLogEntry (1021, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_readnote": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -491,11 +491,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13:  >> IfGivingItemToNpc (i_drugs, n_contact1): set s_4": {
+"13:  >> IfGivingItemToNpc (i_drugs, n_contact1): set s_success": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_success": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -521,11 +521,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"14:  >> IfGivingItemToNpc (i_drugs, n_contact2): set s_4": {
+"14:  >> IfGivingItemToNpc (i_drugs, n_contact2): set s_success": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_success": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -551,11 +551,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"15: s_4 => QuestSuccess (i_gold)": {
+"15: s_success => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_success": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -595,11 +595,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"16: s_4 >> StartTimer (t_delay); When it expires: set s_5": {
+"16: s_success >> StartTimer (t_delay); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_success": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -618,11 +618,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"17: s_5 => EndQuest ()": {
+"17: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_delay": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -634,11 +634,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"18: s_0 => EndQuest ()": {
+"18: s_qtime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_qtime": {
 "type": "State",
 "value": "0",
 "not": "False",

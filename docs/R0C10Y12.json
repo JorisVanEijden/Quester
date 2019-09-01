@@ -194,11 +194,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfGivingItemToNpc (i_sage, n_contact): set s_0": {
+" 4:  >> IfGivingItemToNpc (i_sage, n_contact): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -224,11 +224,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => QuestSuccess (i_reward)": {
+" 5: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -268,11 +268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
+" 6: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -298,11 +298,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_2 => MakePermanent (i_sage)": {
+" 7: s_queston => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -321,11 +321,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => EndQuest ()": {
+" 8: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -337,11 +337,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => EndQuest ()": {
+" 9: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",

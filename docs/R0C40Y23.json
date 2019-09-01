@@ -75,7 +75,7 @@
 "variable": "n_oblivion",
 "gender": "Female",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
 "factionRaw": "0 [0x0000]",
@@ -331,11 +331,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-" 6: not s_4 => CreateFoe(m_firedaedra, 6, 25%, 25)": {
+" 6: not s_thankyou => CreateFoe(m_firedaedra, 6, 25%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_4": {
+"0: not s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -375,11 +375,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-" 7: not s_4 => CreateFoe(m_frostdaedra, 4, 17%, 17)": {
+" 7: not s_thankyou => CreateFoe(m_frostdaedra, 4, 17%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_4": {
+"0: not s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -419,11 +419,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-" 8: not s_4 => CreateFoe(m_lesserdaedra, 3, 12%, 12)": {
+" 8: not s_thankyou => CreateFoe(m_lesserdaedra, 3, 12%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_4": {
+"0: not s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -463,11 +463,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-" 9: not s_4 => CreateFoe(m_seducer, 12, 50%, 50)": {
+" 9: not s_thankyou => CreateFoe(m_seducer, 12, 50%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_4": {
+"0: not s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -507,7 +507,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"10:  => PickOneOf (s_10, s_11, s_11, s_11)": {
+"10:  => PickOneOf (s_yesmap, s_nomap, s_nomap, s_nomap)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -518,28 +518,28 @@
 "index": "255",
 "unknown1": "100680897 [0x060044C1]"
 },
-"1: s_10": {
+"1: s_yesmap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_11": {
+"2: s_nomap": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "1153521664 [0x44C15800]"
 },
-"3: s_11": {
+"3: s_nomap": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "1981939712 [0x76220000]"
 },
-"4: s_11": {
+"4: s_nomap": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -551,11 +551,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"11:  >> IfMobHurtByPlayer (m_seducer): set s_8": {
+"11:  >> IfMobHurtByPlayer (m_seducer): set s_hitseducer": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_hitseducer": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -574,25 +574,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"12:  >> If (s_10 and s_8): set s_12": {
+"12:  >> If (s_yesmap and s_hitseducer): set s_placemap": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_placemap": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "100680897 [0x060044C1]"
 },
-"1: s_10": {
+"1: s_yesmap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_8": {
+"2: s_hitseducer": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -618,11 +618,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"13: s_12 => PlaceItemOnMob (i_map, m_seducer)": {
+"13: s_placemap => PlaceItemOnMob (i_map, m_seducer)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_placemap": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -648,18 +648,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"14: s_12 >> WhenItemIsUsed (i_map): set s_9": {
+"14: s_placemap >> WhenItemIsUsed (i_map): set s_readmap": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_placemap": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "100680897 [0x060044C1]"
 },
-"1: s_9": {
+"1: s_readmap": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -678,11 +678,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"15: s_9 => ShowLocationOnMap (l_skeffingcoven, 40, 5531)": {
+"15: s_readmap => ShowLocationOnMap (l_skeffingcoven, 40, 5531)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_readmap": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -715,11 +715,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"16:  >> IfMobsKilled (m_seducer, 1): set s_7": {
+"16:  >> IfMobsKilled (m_seducer, 1): set s_killmon": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_killmon": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -745,11 +745,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"17: s_7 => Say (1020)": {
+"17: s_killmon => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_killmon": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -761,11 +761,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"18: s_7 => AddTopics (n_oblivion)": {
+"18: s_killmon => AddTopics (n_oblivion)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_killmon": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -798,11 +798,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"19:  >> IfGivingItemToNpc (i_sage, n_oblivion): set s_5": {
+"19:  >> IfGivingItemToNpc (i_sage, n_oblivion): set s_clickoblivion": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_clickoblivion": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -828,25 +828,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"20: s_5 => PromptYesNo (s_4, s_6, 1011)": {
+"20: s_clickoblivion => PromptYesNo (s_thankyou, s_gimmegimme, 1011)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_clickoblivion": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680897 [0x060044C1]"
 },
-"1: s_4": {
+"1: s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_6": {
+"2: s_gimmegimme": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -865,11 +865,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"21: s_6 => AdjustReputationWithNpc (n_oblivion, -10)": {
+"21: s_gimmegimme => AdjustReputationWithNpc (n_oblivion, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_gimmegimme": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -895,11 +895,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"22: s_4 => AdjustReputationWithNpc (n_oblivion, 20)": {
+"22: s_thankyou => AdjustReputationWithNpc (n_oblivion, 20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -925,11 +925,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"23: s_6 => Say (1025)": {
+"23: s_gimmegimme => Say (1025)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_gimmegimme": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -941,11 +941,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"24: s_4 => Say (1012)": {
+"24: s_thankyou => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_thankyou": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -957,11 +957,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"25: s_6 => PlaceItemOnCharacter (i_sage)": {
+"25: s_gimmegimme => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_gimmegimme": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -987,11 +987,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"26:  >> IfGivingItemToNpc (i_sage, n_contact): set s_3": {
+"26:  >> IfGivingItemToNpc (i_sage, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1017,11 +1017,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"27: s_3 => QuestSuccess (i_reward)": {
+"27: s_npcclicked => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1061,11 +1061,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"28: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"28: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1091,11 +1091,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"29: s_2 => MakePermanent (i_sage)": {
+"29: s_queston => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1114,11 +1114,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"30: s_3 => EndQuest ()": {
+"30: s_npcclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1130,11 +1130,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"31: s_2 => EndQuest ()": {
+"31: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",

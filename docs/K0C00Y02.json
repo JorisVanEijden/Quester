@@ -408,7 +408,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> WhenAtLocation (l_depository): set s_9": {
+" 7:  >> WhenAtLocation (l_depository): set s_letter2": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -419,7 +419,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_letter2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -894,7 +894,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_8 => CreateFoe(m_44000000, 10, 20%, 20)": {
+"26: s_8 => CreateFoe(m_44000000, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -938,11 +938,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_9 => CreateFoe(m_44000001, 10, 20%, 20)": {
+"27: s_letter2 => CreateFoe(m_44000001, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_letter2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -982,7 +982,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_10 => CreateFoe(m_44000002, 10, 20%, 20)": {
+"28: s_10 => CreateFoe(m_44000002, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1026,11 +1026,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29:  >> If (s_4 or s_5 or s_6 or s_7): set s_12": {
+"29:  >> If (s_4 or s_5 or s_6 or s_7): set s_mggold": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_mggold": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1070,11 +1070,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_4 and s_5 and s_6 and s_7): set s_13": {
+"30:  >> If (s_4 and s_5 and s_6 and s_7): set s_lesser": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_lesser": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1114,7 +1114,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31:  >> If (s_13): set s_14": {
+"31:  >> If (s_lesser): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1125,7 +1125,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_13": {
+"1: s_lesser": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1218,25 +1218,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> If (s_2 and s_12): set s_15": {
+"34:  >> If (s_00004f37 and s_mggold): set s_success": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_00004f37": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_12": {
+"2: s_mggold": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1262,11 +1262,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_15 => QuestSuccess ()": {
+"35: s_success => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1306,11 +1306,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_15 => MakePermanent (i_000068a9)": {
+"36: s_success => MakePermanent (i_000068a9)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1329,11 +1329,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: s_15 => MakePermanent (i_000068aa)": {
+"37: s_success => MakePermanent (i_000068aa)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1352,11 +1352,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38: s_15 => MakePermanent (i_000068ab)": {
+"38: s_success => MakePermanent (i_000068ab)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1375,11 +1375,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39: s_15 => MakePermanent (i_000068ac)": {
+"39: s_success => MakePermanent (i_000068ac)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1398,11 +1398,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_15 => EndQuest ()": {
+"40: s_success => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_15": {
+"0: s_success": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1414,25 +1414,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41:  >> If (s_2 and not s_12): set s_16": {
+"41:  >> If (s_00004f37 and not s_mggold): set s_000005f2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_00004f37": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_12": {
+"2: not s_mggold": {
 "type": "State",
 "value": "12",
 "not": "True",
@@ -1458,11 +1458,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_16 => MakePermanent (i_000068a9)": {
+"42: s_000005f2 => MakePermanent (i_000068a9)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1481,11 +1481,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_16 => MakePermanent (i_000068aa)": {
+"43: s_000005f2 => MakePermanent (i_000068aa)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1504,11 +1504,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44: s_16 => MakePermanent (i_000068ab)": {
+"44: s_000005f2 => MakePermanent (i_000068ab)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1527,11 +1527,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_16 => MakePermanent (i_000068ac)": {
+"45: s_000005f2 => MakePermanent (i_000068ac)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1550,11 +1550,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46: s_16 => EndQuest ()": {
+"46: s_000005f2 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_16": {
+"0: s_000005f2": {
 "type": "State",
 "value": "16",
 "not": "False",

@@ -163,11 +163,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 2:  >> IfGivingItemToNpc (i_religitem, n_priest): set s_1": {
+" 2:  >> IfGivingItemToNpc (i_religitem, n_priest): set s_questdone": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -223,7 +223,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 4:  => CreateFoe(m_thief, 12, 5%, 5)": {
+" 4:  => CreateFoe(m_thief, 12, 5%, 2)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -267,7 +267,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 5:  => CreateFoe(m_spellsword, 12, 5%, 5)": {
+" 5:  => CreateFoe(m_spellsword, 12, 5%, 2)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -311,11 +311,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 6:  >> IfMobHurtByPlayer (m_thief): set s_2 [Msg 1011]": {
+" 6:  >> IfMobHurtByPlayer (m_thief): set s_00006967 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00006967": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -334,11 +334,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 7:  >> IfMobHurtByPlayer (m_spellsword): set s_2 [Msg 1011]": {
+" 7:  >> IfMobHurtByPlayer (m_spellsword): set s_00006967 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00006967": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -387,11 +387,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 9: s_1 => QuestSuccess (i_gold)": {
+" 9: s_questdone => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -431,11 +431,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-"10: s_1 => EndQuest ()": {
+"10: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -447,11 +447,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-"11: s_0 => EndQuest ()": {
+"11: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

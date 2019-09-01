@@ -235,7 +235,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 4:  >> WhenAtLocation (l_thiefplace): set s_4": {
+" 4:  >> WhenAtLocation (l_thiefplace): set s_00068f8f": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -246,7 +246,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_00068f8f": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -265,11 +265,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5:  >> IfNpcClicked (n_thief): set s_3": {
+" 5:  >> IfNpcClicked (n_thief): set s_0001aad4": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0001aad4": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -288,11 +288,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 6: s_3 => Say (1011)": {
+" 6: s_0001aad4 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0001aad4": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -304,11 +304,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 7: s_3 => HideNpc (n_thief)": {
+" 7: s_0001aad4 => HideNpc (n_thief)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0001aad4": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -327,11 +327,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 8: s_3 => PlaceItemOnCharacter (i_religitem) [Msg 1020]": {
+" 8: s_0001aad4 => PlaceItemOnCharacter (i_religitem) [Msg 1020]": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_0001aad4": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -357,25 +357,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 9:  >> If (s_4 and s_3): set s_5": {
+" 9:  >> If (s_00068f8f and s_0001aad4): set s_00036eb5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_00036eb5": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_00068f8f": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_0001aad4": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -401,11 +401,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"10: s_5 => CreateFoe(m_burglar, 50, 2%, 2)": {
+"10: s_00036eb5 => CreateFoe(m_burglar, 50, 2%, 2)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_00036eb5": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -445,11 +445,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"11: s_5 => CreateFoe(m_rogue, 50, 3%, 3)": {
+"11: s_00036eb5 => CreateFoe(m_rogue, 50, 3%, 2)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_00036eb5": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -489,11 +489,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"12:  >> IfMobHurtByPlayer (m_burglar): set s_2 [Msg 1012]": {
+"12:  >> IfMobHurtByPlayer (m_burglar): set s_00006a14 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00006a14": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -512,11 +512,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"13:  >> IfMobHurtByPlayer (m_rogue): set s_2 [Msg 1012]": {
+"13:  >> IfMobHurtByPlayer (m_rogue): set s_00006a14 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00006a14": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -535,11 +535,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"14:  >> IfGivingItemToNpc (i_religitem, n_qgiver): set s_1": {
+"14:  >> IfGivingItemToNpc (i_religitem, n_qgiver): set s_questdone": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -565,11 +565,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"15: s_1 => QuestSuccess ()": {
+"15: s_questdone => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -609,11 +609,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"16: s_0 => MakePermanent (i_religitem)": {
+"16: s_traveltime => MakePermanent (i_religitem)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -632,11 +632,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"17: s_0 => EndQuest ()": {
+"17: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -648,11 +648,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"18: s_1 => EndQuest ()": {
+"18: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",

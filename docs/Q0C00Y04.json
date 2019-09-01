@@ -233,11 +233,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 4:  >> IfTimeOfDayBetween (06:40:00, 17:20:00): set s_1": {
+" 4:  >> IfTimeOfDayBetween (06:40:00, 17:20:00): set s_daytime": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_daytime": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -263,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 5: not s_1 => CreateFoe(m_vampire, 15, 70%, 70) [Msg 1012]": {
+" 5: not s_daytime => CreateFoe(m_vampire, 15, 70%, 7) [Msg 1012]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_daytime": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -307,11 +307,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 6: not s_1 => CreateFoe(m_wereboar, 11, 40%, 40) [Msg 1014]": {
+" 6: not s_daytime => CreateFoe(m_wereboar, 11, 40%, 10) [Msg 1014]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_daytime": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -351,11 +351,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 7: not s_1 => CreateFoe(m_werewolf, 19, 50%, 50) [Msg 1013]": {
+" 7: not s_daytime => CreateFoe(m_werewolf, 19, 50%, 12) [Msg 1013]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_daytime": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -395,7 +395,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 8:  >> WhenItemIsUsed (i_potion): set s_3": {
+" 8:  >> WhenItemIsUsed (i_potion): set s_0000e340": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -406,7 +406,7 @@
 "index": "255",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_3": {
+"1: s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -425,11 +425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 9: s_3 => CureLycanthropy ()": {
+" 9: s_0000e340 => CureLycanthropy ()": {
 "opCode": 59,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -441,11 +441,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"10: s_3 => CureVampirism ()": {
+"10: s_0000e340 => CureVampirism ()": {
 "opCode": 58,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -457,11 +457,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"11: s_3 => Say (1015)": {
+"11: s_0000e340 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -473,11 +473,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_2": {
+"12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_0000d342": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000d342": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -503,25 +503,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"13:  >> If (s_2 and s_3): set s_4": {
+"13:  >> If (s_0000d342 and s_0000e340): set s_incurability": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_incurability": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_2": {
+"1: s_0000d342": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -547,11 +547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"14: s_4 => Say (1017)": {
+"14: s_incurability => Say (1017)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_incurability": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -563,11 +563,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"15: s_4 => EndQuest ()": {
+"15: s_incurability => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_incurability": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -579,25 +579,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"16:  >> If (s_2 and not s_3): set s_5": {
+"16:  >> If (s_0000d342 and not s_0000e340): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_reward": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_2": {
+"1: s_0000d342": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_0000e340": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -623,11 +623,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"17: s_5 => QuestSuccess (i_gold)": {
+"17: s_reward => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_reward": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -667,11 +667,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"18: s_0 => MakePermanent (i_potion)": {
+"18: s_queston => MakePermanent (i_potion)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -690,11 +690,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"19: s_0 => EndQuest ()": {
+"19: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -706,11 +706,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"20: s_5 => EndQuest ()": {
+"20: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_reward": {
 "type": "State",
 "value": "5",
 "not": "False",

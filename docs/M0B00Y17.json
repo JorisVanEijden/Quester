@@ -375,7 +375,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  => PickOneOf (s_10, s_10, s_11, s_11)": {
+" 6:  => PickOneOf (s_0000060d, s_0000060d, s_11, s_11)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -386,14 +386,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_10": {
+"2: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -479,11 +479,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => EndQuest ()": {
+" 9: s_qtime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_qtime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -797,11 +797,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> If (s_6 and s_5): set s_7": {
+"21:  >> If (s_6 and s_5): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -841,11 +841,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_7 => QuestSuccess (i_gold)": {
+"22: s_pcgetsgold => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -885,11 +885,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 >> StartTimer (t_delay); When it expires: set s_14": {
+"23: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_14": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1012,18 +1012,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_10 >> WhenItemIsUsed (i_letter): set s_13": {
+"27: s_0000060d >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_13": {
+"1: s_readletter": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1042,11 +1042,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_10 => PlaceItemAt (i_letter, l_mondung)": {
+"28: s_0000060d => PlaceItemAt (i_letter, l_mondung)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1072,11 +1072,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_10 => EnsureNpcLocation (l_lovehouse)": {
+"29: s_0000060d => EnsureNpcLocation (l_lovehouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1102,11 +1102,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_10 => PlaceNpcAt (n_love, l_lovehouse)": {
+"30: s_0000060d => PlaceNpcAt (n_love, l_lovehouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_0000060d": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1231,11 +1231,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_13 => AddTopics (l_lovehouse, n_love)": {
+"35: s_readletter => AddTopics (l_lovehouse, n_love)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_13": {
+"0: s_readletter": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1268,11 +1268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_14 => EndQuest ()": {
+"36: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_14": {
+"0: s_delay": {
 "type": "State",
 "value": "14",
 "not": "False",

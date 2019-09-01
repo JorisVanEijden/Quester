@@ -42,7 +42,7 @@
 "variable": "n_nobleman",
 "gender": "Female",
 "facePictureIndex": 182,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Malacath",
 "factionRaw": "7 [0x0007]",
@@ -138,7 +138,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 1:  => PickOneOf (s_4, s_5)": {
+" 1:  => PickOneOf (s_000036e5, s_000036e6)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -149,14 +149,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_000036e5": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_000036e6": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -235,11 +235,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4: s_4 => PlaceMobAtLocation (m_wraith, l_dungeon)": {
+" 4: s_000036e5 => PlaceMobAtLocation (m_wraith, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_000036e5": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -265,11 +265,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_5 => PlaceMobAtLocation (m_ghost, l_dungeon)": {
+" 5: s_000036e6 => PlaceMobAtLocation (m_ghost, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_000036e6": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -295,11 +295,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6:  >> IfMobsKilled (m_wraith, 1): set s_1 [Msg 1011]": {
+" 6:  >> IfMobsKilled (m_wraith, 1): set s_0003701a [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0003701a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -325,11 +325,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7:  >> IfMobsKilled (m_ghost, 1): set s_1 [Msg 1011]": {
+" 7:  >> IfMobsKilled (m_ghost, 1): set s_0003701a [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0003701a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -355,11 +355,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_00006623": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -378,25 +378,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 9:  >> If (s_2 and not s_1): set s_3": {
+" 9:  >> If (s_00006623 and not s_0003701a): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_1": {
+"2: not s_0003701a": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -422,25 +422,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"10: s_3 => Unset (s_2, s_3)": {
+"10: s_clearclick => Unset (s_00006623, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -466,11 +466,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"11: s_2 => QuestSuccess ()": {
+"11: s_00006623 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -510,11 +510,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"12: s_2 => AdjustReputationWithNpc (n_local, 4)": {
+"12: s_00006623 => AdjustReputationWithNpc (n_local, 4)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -540,11 +540,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"13: s_2 => AdjustReputationWithNpc (n_nobleman, 10)": {
+"13: s_00006623 => AdjustReputationWithNpc (n_nobleman, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -570,11 +570,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"14: s_0 => EndQuest ()": {
+"14: s_2dung => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -586,11 +586,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"15: s_2 => EndQuest ()": {
+"15: s_00006623 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_00006623": {
 "type": "State",
 "value": "2",
 "not": "False",

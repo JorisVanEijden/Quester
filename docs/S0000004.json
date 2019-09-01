@@ -128,7 +128,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [32]": {
-" 0:  => PromptYesNo (s_6, s_7, 1000)": {
+" 0:  => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -139,14 +139,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_7": {
+"2: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -165,11 +165,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0 => UnsetQuestor (n_00003646)": {
+" 1: s_0000095d => UnsetQuestor (n_00003646)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_0000095d": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -188,11 +188,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0 => EndQuest ()": {
+" 2: s_0000095d => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_0000095d": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -287,7 +287,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 >> WhenPlayerHasItems (i_000679fc): set s_10": {
+" 6: s_2 >> WhenPlayerHasItems (i_000679fc): set s_00000c8e": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -298,7 +298,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_00000c8e": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -661,11 +661,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_6 >> StartTimer (t_0000095d); When it expires: set s_0": {
+"18: s_yes >> StartTimer (t_0000095d); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -684,11 +684,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_6 => CreateLogEntry (1012, 0)": {
+"19: s_yes => CreateLogEntry (1012, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -714,11 +714,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 => PlaceItemOnCharacter (i_0000db7c)": {
+"20: s_yes => PlaceItemOnCharacter (i_0000db7c)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -744,11 +744,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_6 => ShowLocationOnMap (l_scourgbarrow, 1, 450958)": {
+"21: s_yes => ShowLocationOnMap (l_scourgbarrow, 1, 450958)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -781,11 +781,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_6 => Say (1002)": {
+"22: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -797,11 +797,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_6 => SetQuestor (n_00003646)": {
+"23: s_yes => SetQuestor (n_00003646)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -820,11 +820,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 => Say (1001)": {
+"24: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -836,11 +836,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 => EndQuest ()": {
+"25: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -852,11 +852,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26:  >> If (s_1 and not s_2): set s_9": {
+"26:  >> If (s_1 and not s_2): set s_0000189e": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_0000189e": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -896,11 +896,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_9 => StartQuest (21, 21)": {
+"27: s_0000189e => StartQuest (21, 21)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_0000189e": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -926,11 +926,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_9 => EndQuest ()": {
+"28: s_0000189e => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_0000189e": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -942,11 +942,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_10 => MakePermanent (i_000679fc)": {
+"29: s_00000c8e => MakePermanent (i_000679fc)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_00000c8e": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -965,11 +965,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_10 => StartQuest (21, 21)": {
+"30: s_00000c8e => StartQuest (21, 21)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_00000c8e": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -995,11 +995,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_10 => EndQuest ()": {
+"31: s_00000c8e => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: s_00000c8e": {
 "type": "State",
 "value": "10",
 "not": "False",

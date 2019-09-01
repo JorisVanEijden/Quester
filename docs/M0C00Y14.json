@@ -207,11 +207,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_2dung => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -336,11 +336,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> If (s_2 and not s_1): set s_3": {
+"10:  >> If (s_2 and not s_1): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -380,11 +380,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => Unset (s_2, s_3)": {
+"11: s_clearclick => Unset (s_2, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -398,7 +398,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -424,7 +424,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 => CreateFoe(m_monster, 5, 75%, 75)": {
+"12: s_4 => CreateFoe(m_monster, 5, 75%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

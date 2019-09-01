@@ -178,7 +178,7 @@
 }
 }
 ,"opCodes: [48]": {
-" 0:  => PromptYesNo (s_8, s_9, 1000)": {
+" 0:  => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -189,14 +189,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -215,11 +215,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> If (s_1 and s_3): set s_0": {
+" 1:  >> If (s_1 and s_3): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -259,11 +259,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0 => QuestSuccess (i_jewelry)": {
+" 2: s_pcgetsgold => QuestSuccess (i_jewelry)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -303,11 +303,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => CycleNextState (s_7)": {
+" 3: s_pcgetsgold => CycleNextState (s_7)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -347,11 +347,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => AdjustReputationWithNpc (n_000034a9, 10)": {
+" 4: s_pcgetsgold => AdjustReputationWithNpc (n_000034a9, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -377,11 +377,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => UnsetQuestor (n_000034a9)": {
+" 5: s_pcgetsgold => UnsetQuestor (n_000034a9)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -559,7 +559,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 => CreateFoe(m_44000002, 53, 15%, 15)": {
+"12: s_4 => CreateFoe(m_44000002, 53, 15%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -603,11 +603,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_15 and s_2): set s_5": {
+"13:  >> If (s_15 and s_2): set s_queston": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -647,11 +647,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_5 => UnsetQuestor (n_000034a9)": {
+"14: s_queston => UnsetQuestor (n_000034a9)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -670,11 +670,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_5 => EndQuest ()": {
+"15: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -702,11 +702,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_8 >> WhenItemIsUsed (i_41000000): set s_2": {
+"17: s_yes >> WhenItemIsUsed (i_41000000): set s_2": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -732,11 +732,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_8 >> StartTimer (t_queston); When it expires: set s_5": {
+"18: s_yes >> StartTimer (t_queston); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -755,11 +755,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_8 => CreateLogEntry (1010, 0)": {
+"19: s_yes => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -785,11 +785,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_8 => PlaceItemOnCharacter (i_41000000)": {
+"20: s_yes => PlaceItemOnCharacter (i_41000000)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -815,11 +815,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_8 => Say (1002)": {
+"21: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -831,11 +831,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_8 => SetQuestor (n_000034a9)": {
+"22: s_yes => SetQuestor (n_000034a9)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -854,11 +854,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_8 => PlaceNpcAt (n_00019714, l_casfort)": {
+"23: s_yes => PlaceNpcAt (n_00019714, l_casfort)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -884,11 +884,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_8 => EnsureNpcLocation (l_casfort)": {
+"24: s_yes => EnsureNpcLocation (l_casfort)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -914,11 +914,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_9 => Say (1001)": {
+"25: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -930,11 +930,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_9 => EndQuest ()": {
+"26: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1008,11 +1008,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_1 and not s_3): set s_11": {
+"30:  >> If (s_1 and not s_3): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1052,11 +1052,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_11 => Unset (s_1, s_11)": {
+"31: s_clearclick => Unset (s_1, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1070,7 +1070,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_11": {
+"2: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1096,7 +1096,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_12 => CreateFoe(m_44000001, 2, 50%, 50)": {
+"32: s_12 => CreateFoe(m_44000001, 2, 50%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1232,11 +1232,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> IfMobHurtByPlayer (m_44000001): set s_14 [Msg 1021]": {
+"37:  >> IfMobHurtByPlayer (m_44000001): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_14": {
+"0: s_hitguard": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1255,11 +1255,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38:  >> IfMobHurtByPlayer (m_44000002): set s_14 [Msg 1021]": {
+"38:  >> IfMobHurtByPlayer (m_44000002): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_14": {
+"0: s_hitguard": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1352,7 +1352,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_18 => CreateFoe(m_44000003, 1, 20%, 20)": {
+"41: s_18 => CreateFoe(m_44000003, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1440,7 +1440,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_19 => CreateFoe(m_44000004, 1, 20%, 20)": {
+"43: s_19 => CreateFoe(m_44000004, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1528,7 +1528,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_20 => CreateFoe(m_44000000, 1, 50%, 50)": {
+"45: s_20 => CreateFoe(m_44000000, 1, 50%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1616,7 +1616,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"47: s_21 => CreateFoe(m_44000005, 1, 100%, 100)": {
+"47: s_21 => CreateFoe(m_44000005, 1, 100%, 32768)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

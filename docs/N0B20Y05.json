@@ -200,11 +200,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 4:  >> IfMobsKilled (m_monster, 1): set s_2": {
+" 4:  >> IfMobsKilled (m_monster, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -230,11 +230,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 5: s_2 => Say (1040)": {
+" 5: s_mondead => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -246,11 +246,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 6:  >> IfNpcClicked (n_questgiver): set s_3": {
+" 6:  >> IfNpcClicked (n_questgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -269,25 +269,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 7:  >> If (s_3 and s_2): set s_0": {
+" 7:  >> If (s_qgclicked and s_mondead): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -313,7 +313,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 8:  => Unset (s_3)": {
+" 8:  => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -324,7 +324,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -357,11 +357,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 9: s_0 => QuestSuccess (i_reward)": {
+" 9: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -401,11 +401,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"10: s_0 => EndQuest ()": {
+"10: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -417,11 +417,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11: s_4 => EndQuest ()": {
+"11: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_1stparton": {
 "type": "State",
 "value": "4",
 "not": "False",

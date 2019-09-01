@@ -181,7 +181,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 3:  => PickOneOf (s_6, s_8, s_9, s_7)": {
+" 3:  => PickOneOf (s_fire, s_flesh, s_ice, s_iron)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -192,28 +192,28 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_fire": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_8": {
+"2: s_flesh": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "1156761600 [0x44F2C800]"
 },
-"3: s_9": {
+"3: s_ice": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "1997668352 [0x77120000]"
 },
-"4: s_7": {
+"4: s_iron": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -225,11 +225,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 4: s_6 => PlaceMobAtLocation (m_0000d064, l_mondung)": {
+" 4: s_fire => PlaceMobAtLocation (m_0000d064, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_fire": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -255,11 +255,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 5: s_8 => PlaceMobAtLocation (m_0001a104, l_mondung)": {
+" 5: s_flesh => PlaceMobAtLocation (m_0001a104, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_flesh": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -285,11 +285,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 6: s_9 => PlaceMobAtLocation (m_000066a4, l_mondung)": {
+" 6: s_ice => PlaceMobAtLocation (m_000066a4, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_ice": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -315,11 +315,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 7: s_7 => PlaceMobAtLocation (m_0000d844, l_mondung)": {
+" 7: s_iron => PlaceMobAtLocation (m_0000d844, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_iron": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -345,11 +345,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 8:  >> IfMobsKilled (m_0000d064, 1): set s_2 [Msg 1010]": {
+" 8:  >> IfMobsKilled (m_0000d064, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -375,11 +375,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 9:  >> IfMobsKilled (m_0001a104, 1): set s_2 [Msg 1010]": {
+" 9:  >> IfMobsKilled (m_0001a104, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -405,11 +405,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"10:  >> IfMobsKilled (m_000066a4, 1): set s_2 [Msg 1010]": {
+"10:  >> IfMobsKilled (m_000066a4, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -435,11 +435,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"11:  >> IfMobsKilled (m_0000d844, 1): set s_2 [Msg 1010]": {
+"11:  >> IfMobsKilled (m_0000d844, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -465,11 +465,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"12:  >> IfNpcClicked (n_questgiver): set s_3": {
+"12:  >> IfNpcClicked (n_questgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -488,25 +488,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"13:  >> If (s_3 and not s_2): set s_10": {
+"13:  >> If (s_qgclicked and not s_mondead): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_2": {
+"2: not s_mondead": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -532,25 +532,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"14: s_10 => Unset (s_3, s_10)": {
+"14: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_10": {
+"2: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -576,25 +576,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"15:  >> If (s_3 and s_2): set s_0": {
+"15:  >> If (s_qgclicked and s_mondead): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_mondead": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -620,11 +620,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"16: s_0 => QuestSuccess (i_reward)": {
+"16: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -664,11 +664,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"17: s_0 => EndQuest ()": {
+"17: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -680,11 +680,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"18: s_4 => EndQuest ()": {
+"18: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_1stparton": {
 "type": "State",
 "value": "4",
 "not": "False",

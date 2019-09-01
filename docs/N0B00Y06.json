@@ -197,11 +197,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 4:  >> IfMobHurtByPlayer (m_mummy): set s_4": {
+" 4:  >> IfMobHurtByPlayer (m_mummy): set s_00006a3f": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_00006a3f": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -220,11 +220,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5: s_4 => PlaceItemOnMob (i_0000e381, m_mummy)": {
+" 5: s_00006a3f => PlaceItemOnMob (i_0000e381, m_mummy)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_00006a3f": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -250,11 +250,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 6:  >> IfItemFound (i_0000e381): set s_3": {
+" 6:  >> IfItemFound (i_0000e381): set s_00038fc2": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_00038fc2": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -273,11 +273,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 7: s_3 => Say (1011)": {
+" 7: s_00038fc2 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_00038fc2": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -289,11 +289,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 8:  >> IfGivingItemToNpc (i_0000e381, n_qgiver): set s_1": {
+" 8:  >> IfGivingItemToNpc (i_0000e381, n_qgiver): set s_reward": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -319,11 +319,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 9: s_1 => QuestSuccess (i_gold)": {
+" 9: s_reward => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -363,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"10: s_0 => EndQuest ()": {
+"10: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -379,11 +379,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"11: s_1 => EndQuest ()": {
+"11: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",

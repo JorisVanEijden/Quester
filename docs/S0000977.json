@@ -78,7 +78,7 @@
 }
 }
 ,"opCodes: [9]": {
-" 0:  >> WhenAtLocation (l_00018ff8): set s_2": {
+" 0:  >> WhenAtLocation (l_00018ff8): set s_00068ff8": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -89,7 +89,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_00068ff8": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -108,11 +108,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 1:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_1": {
+" 1:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_daytime": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_daytime": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -138,25 +138,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 2:  >> If (not s_1 and s_2): set s_3": {
+" 2:  >> If (not s_daytime and s_00068ff8): set s_000694bb": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_000694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: not s_1": {
+"1: not s_daytime": {
 "type": "State",
 "value": "1",
 "not": "True",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_00068ff8": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -182,25 +182,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 3:  >> If (s_1 or not s_2): set s_6": {
+" 3:  >> If (s_daytime or not s_00068ff8): set s_0001b8bb": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0001b8bb": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_daytime": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_2": {
+"2: not s_00068ff8": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -226,18 +226,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4: s_6 => Unset (s_3)": {
+" 4: s_0001b8bb => Unset (s_000694bb)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0001b8bb": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_000694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -270,11 +270,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_3 => CreateFoe(m_wraith, 21, 50%, 50)": {
+" 5: s_000694bb => CreateFoe(m_wraith, 21, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_000694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -314,11 +314,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6: s_3 => CreateFoe(m_000019ff, 31, 50%, 50)": {
+" 6: s_000694bb => CreateFoe(m_000019ff, 31, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_000694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -358,11 +358,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7: s_3 => PlaySound (386, 5, 25)": {
+" 7: s_000694bb => PlaySound (386, 5, 25)": {
 "opCode": 84,
 "argCount": 4,
 "arguments:": {
-"0: s_3": {
+"0: s_000694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -395,11 +395,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8: s_0 => EndQuest ()": {
+" 8: s_0000007e => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_0000007e": {
 "type": "State",
 "value": "0",
 "not": "False",

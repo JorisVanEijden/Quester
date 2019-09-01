@@ -189,11 +189,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfItemFound (i_sage): set s_2 [Msg 1011]": {
+" 4:  >> IfItemFound (i_sage): set s_pchasitem [Msg 1011]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -212,11 +212,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_0": {
+" 5:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -242,11 +242,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => QuestSuccess (i_reward)": {
+" 6: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -286,11 +286,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_0 => EndQuest ()": {
+" 7: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -302,11 +302,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_3 => AdjustReputationWithNpc (n_questgiver, -5)": {
+" 8: s_1stparton => AdjustReputationWithNpc (n_questgiver, -5)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -332,11 +332,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 => MakePermanent (i_sage)": {
+" 9: s_1stparton => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -355,11 +355,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => EndQuest ()": {
+"10: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",

@@ -187,11 +187,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 4:  >> IfItemFound (i_ingredient): set s_2": {
+" 4:  >> IfItemFound (i_ingredient): set s_00000cec": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00000cec": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -210,11 +210,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 5: s_2 => Say (1040)": {
+" 5: s_00000cec => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_00000cec": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -226,18 +226,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 6: s_2 >> WhenItemIsUsed (i_ingredient): set s_3 [Msg 1045]": {
+" 6: s_00000cec >> WhenItemIsUsed (i_ingredient): set s_0000d6c8 [Msg 1045]": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00000cec": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_0000d6c8": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -256,11 +256,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 7: s_3 => CreateFoe(m_atronach, 1, 100%, 100)": {
+" 7: s_0000d6c8 => CreateFoe(m_atronach, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000d6c8": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -300,11 +300,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 8:  >> IfGivingItemToNpc (i_ingredient, n_questgiver): set s_1": {
+" 8:  >> IfGivingItemToNpc (i_ingredient, n_questgiver): set s_0000d328": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000d328": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -330,11 +330,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 9: s_1 => QuestSuccess ()": {
+" 9: s_0000d328 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_0000d328": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -374,11 +374,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-"10: s_1 => EndQuest ()": {
+"10: s_0000d328 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_0000d328": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -390,11 +390,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-"11: s_0 => EndQuest ()": {
+"11: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

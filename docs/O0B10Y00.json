@@ -194,11 +194,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_0": {
+" 3:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_qgclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -224,11 +224,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => QuestSuccess (i_reward)": {
+" 4: s_qgclicked => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -268,11 +268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_qgclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -284,11 +284,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfGivingItemToNpc (i_metal, n_contact): set s_1": {
+" 6:  >> IfGivingItemToNpc (i_metal, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -314,11 +314,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => CreateFoe(m_guards, 173, 25%, 25)": {
+" 7: s_npcclicked => CreateFoe(m_guards, 173, 25%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -358,11 +358,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => PlaceItemOnCharacter (i_gems)": {
+" 8: s_npcclicked => PlaceItemOnCharacter (i_gems)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -388,11 +388,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => Say (1010)": {
+" 9: s_npcclicked => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -404,18 +404,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 >> WhenPlayerHasItems (i_metal): set s_7": {
+"10: s_1stparton >> WhenPlayerHasItems (i_metal): set s_keptmetal": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_1stparton": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: s_keptmetal": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -448,18 +448,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 >> WhenPlayerHasItems (i_gems): set s_8": {
+"11: s_1stparton >> WhenPlayerHasItems (i_gems): set s_keptgems": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_1stparton": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_keptgems": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -492,11 +492,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 >> StartTimer (t_delay); When it expires: set s_3": {
+"12: s_1stparton >> StartTimer (t_delay); When it expires: set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_1stparton": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => EndQuest ()": {
+"13: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_delay": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -531,11 +531,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfMobHurtByPlayer (m_guards): set s_4": {
+"14:  >> IfMobHurtByPlayer (m_guards): set s_hitguard": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_hitguard": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -554,25 +554,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_4 => PromptYesNo (s_5, s_6, 1020)": {
+"15: s_hitguard => PromptYesNo (s_0000ddb1, s_00001a05, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_4": {
+"0: s_hitguard": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_0000ddb1": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_00001a05": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -591,11 +591,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_5 => GiveItemToPlayer (i_gems)": {
+"16: s_0000ddb1 => GiveItemToPlayer (i_gems)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_0000ddb1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -614,11 +614,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_5 => AdjustReputationWithNpc (n_questgiver, -40)": {
+"17: s_0000ddb1 => AdjustReputationWithNpc (n_questgiver, -40)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_0000ddb1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -644,11 +644,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_5 => DoneWithMob (m_guards, _)": {
+"18: s_0000ddb1 => DoneWithMob (m_guards, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_0000ddb1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -674,11 +674,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_5 >> StartTimer (t_delay); When it expires: set s_3": {
+"19: s_0000ddb1 >> StartTimer (t_delay); When it expires: set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_0000ddb1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -697,11 +697,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_7 => MakePermanent (i_metal)": {
+"20: s_keptmetal => MakePermanent (i_metal)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_keptmetal": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -720,11 +720,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_8 => MakePermanent (i_gems)": {
+"21: s_keptgems => MakePermanent (i_gems)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_keptgems": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -743,25 +743,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_1 and s_2): set s_9": {
+"22:  >> If (s_npcclicked and s_1stparton): set s_00019a71": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_00019a71": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_1stparton": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -787,11 +787,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_9 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"23: s_00019a71 => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_00019a71": {
 "type": "State",
 "value": "9",
 "not": "False",

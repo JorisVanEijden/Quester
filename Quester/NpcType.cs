@@ -30,7 +30,7 @@ namespace Quester
         Unknown_5 = 0xfffb,
         Unknown_4 = 0xfffc,
         Unknown_3 = 0xfffd,
-        Unknown_2 = 0xfffe,
+        Daedra = 0xfffe,
         Unknown_1 = 0xffff,
     }
 }

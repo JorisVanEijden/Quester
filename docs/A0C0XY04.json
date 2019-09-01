@@ -370,11 +370,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_0 [Msg 1013]": {
+" 6:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_giveingredient [Msg 1013]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_giveingredient": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -400,11 +400,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_0 => PlaceItemOnMob (i_ingredient, m_monster)": {
+" 7: s_giveingredient => PlaceItemOnMob (i_ingredient, m_monster)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_giveingredient": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -430,11 +430,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => SetMobPowerLevel (m_monster, 46)": {
+" 8: s_giveingredient => SetMobPowerLevel (m_monster, 46)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_giveingredient": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -460,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => SetMobPowerLevel (m_monster, 17)": {
+" 9: s_giveingredient => SetMobPowerLevel (m_monster, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_giveingredient": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -490,11 +490,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfMobHurtByPlayer (m_guardian): set s_1": {
+"10:  >> IfMobHurtByPlayer (m_guardian): set s_hitguardian": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_hitguardian": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -513,25 +513,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_1 => PromptYesNo (s_2, s_3, 1012)": {
+"11: s_hitguardian => PromptYesNo (s_yes, s_no, 1012)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_1": {
+"0: s_hitguardian": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_no": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -550,11 +550,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 => CreateLogEntry (1011, 1)": {
+"12: s_yes => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -580,11 +580,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_2 => PlaceItemOnCharacter (i_token)": {
+"13: s_yes => PlaceItemOnCharacter (i_token)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -610,11 +610,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_2 => Say (1030)": {
+"14: s_yes => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -626,11 +626,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_2 => DoneWithMob (m_guardian, _)": {
+"15: s_yes => DoneWithMob (m_guardian, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -656,11 +656,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => Say (1035)": {
+"16: s_no => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_no": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -672,11 +672,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> IfGivingItemToNpc (i_token, n_qgiver): set s_5 [Msg 1014]": {
+"17:  >> IfGivingItemToNpc (i_token, n_qgiver): set s_givetoken [Msg 1014]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_givetoken": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -702,11 +702,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_5 => SetMobPowerLevel (m_monster, 23)": {
+"18: s_givetoken => SetMobPowerLevel (m_monster, 23)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_givetoken": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -732,11 +732,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfMobsKilled (m_monster, 1): set s_6": {
+"19:  >> IfMobsKilled (m_monster, 1): set s_shamandead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_shamandead": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -762,11 +762,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 >> StartTimer (t_extratime); When it expires: set s_8": {
+"20: s_shamandead >> StartTimer (t_extratime); When it expires: set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_shamandead": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -785,25 +785,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> If (s_5 and s_6): set s_7": {
+"21:  >> If (s_givetoken and s_shamandead): set s_givereward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_givereward": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_givetoken": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_shamandead": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -829,11 +829,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_7 => AdjustReputationWithNpc (n_dummymage, 25) [Msg 1015]": {
+"22: s_givereward => AdjustReputationWithNpc (n_dummymage, 25) [Msg 1015]": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_givereward": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -859,11 +859,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 => AdjustReputationWithNpc (n_dummyorc, -10)": {
+"23: s_givereward => AdjustReputationWithNpc (n_dummyorc, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_givereward": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -889,11 +889,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_8 => MakePermanent (i_ingredient)": {
+"24: s_extratime => MakePermanent (i_ingredient)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_extratime": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -912,11 +912,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_8 => EndQuest ()": {
+"25: s_extratime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_extratime": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -928,11 +928,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_9 => MakePermanent (i_ingredient)": {
+"26: s_totaltime => MakePermanent (i_ingredient)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_totaltime": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -951,11 +951,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_9 => EndQuest ()": {
+"27: s_totaltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_totaltime": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -967,25 +967,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (s_0 or s_5): set s_10": {
+"28:  >> If (s_giveingredient or s_givetoken): set s_revealmonsters": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_revealmonsters": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_giveingredient": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_givetoken": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1011,11 +1011,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_10 => CreateFoe(m_orc, 1, 100%, 100)": {
+"29: s_revealmonsters => CreateFoe(m_orc, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_revealmonsters": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1055,11 +1055,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_10 => HideNpc (n_qgiver)": {
+"30: s_revealmonsters => HideNpc (n_qgiver)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_revealmonsters": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1078,11 +1078,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_10 => PlaceMobAtLocation (m_monster, l_meetingplace)": {
+"31: s_revealmonsters => PlaceMobAtLocation (m_monster, l_meetingplace)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_revealmonsters": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1108,11 +1108,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32:  >> IfMobsKilled (m_guardian, 1): set s_11": {
+"32:  >> IfMobsKilled (m_guardian, 1): set s_001a97f4": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_001a97f4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1138,25 +1138,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (s_2 and s_11): set s_12": {
+"33:  >> If (s_yes and s_001a97f4): set s_betrayguardian": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_betrayguardian": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_11": {
+"2: s_001a97f4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1182,11 +1182,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_12 => CreateFoe(m_daedras, 1, 100%, 100)": {
+"34: s_betrayguardian => CreateFoe(m_daedras, 1, 100%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_betrayguardian": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1226,11 +1226,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_12 => GiveItemToPlayer (i_token) [Msg 1020]": {
+"35: s_betrayguardian => GiveItemToPlayer (i_token) [Msg 1020]": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_12": {
+"0: s_betrayguardian": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1249,11 +1249,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_12 => AdjustReputationWithNpc (n_dummydarkb, -75)": {
+"36: s_betrayguardian => AdjustReputationWithNpc (n_dummydarkb, -75)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_betrayguardian": {
 "type": "State",
 "value": "12",
 "not": "False",

@@ -322,25 +322,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 6:  >> If (s_7 and not s_3): set s_8": {
+" 6:  >> If (s_escapetime and not s_mondead): set s_00003383": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_00003383": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_escapetime": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_mondead": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -366,11 +366,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 7: s_8 => PlaceMobAtLocation (m_monster, l_hideout)": {
+" 7: s_00003383 => PlaceMobAtLocation (m_monster, l_hideout)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_00003383": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -396,11 +396,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 8: s_8 => PlaceItemAt (i_letter, l_mondung)": {
+" 8: s_00003383 => PlaceItemAt (i_letter, l_mondung)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_00003383": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -426,7 +426,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 9:  >> WhenItemIsUsed (i_letter): set s_10": {
+" 9:  >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -437,7 +437,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_10": {
+"1: s_readletter": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -456,11 +456,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"10: s_10 => AddTopics (n_mfriend)": {
+"10: s_readletter => AddTopics (n_mfriend)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_10": {
+"0: s_readletter": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -493,11 +493,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11:  >> IfNpcClicked (n_mfriend): set s_9": {
+"11:  >> IfNpcClicked (n_mfriend): set s_000d30c2": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_000d30c2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -516,11 +516,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"12: s_9 => Say (1041)": {
+"12: s_000d30c2 => Say (1041)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_000d30c2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -532,11 +532,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"13: s_9 => AddLocationToMap (l_hideout)": {
+"13: s_000d30c2 => AddLocationToMap (l_hideout)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_000d30c2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -555,11 +555,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"14: s_9 => CreateLogEntry (1042, 1)": {
+"14: s_000d30c2 => CreateLogEntry (1042, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_000d30c2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -585,11 +585,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"15:  >> IfMobsKilled (m_monster, 1): set s_3": {
+"15:  >> IfMobsKilled (m_monster, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -615,11 +615,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"16: s_3 => Say (1030)": {
+"16: s_mondead => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -631,11 +631,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"17:  >> IfNpcClicked (n_qgfriend): set s_4": {
+"17:  >> IfNpcClicked (n_qgfriend): set s_npcclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -654,25 +654,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"18:  >> If (s_4 and s_3): set s_2": {
+"18:  >> If (s_npcclicked and s_mondead): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -698,25 +698,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"19:  >> If (s_4 and not s_3): set s_5": {
+"19:  >> If (s_npcclicked and not s_mondead): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_mondead": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -742,25 +742,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"20: s_5 => Unset (s_4, s_5)": {
+"20: s_clearclick => Unset (s_npcclicked, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -786,11 +786,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"21: s_2 => QuestSuccess (i_artifact)": {
+"21: s_pcgetsgold => QuestSuccess (i_artifact)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -830,11 +830,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"22: s_2 >> StartTimer (t_delay); When it expires: set s_6": {
+"22: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -853,11 +853,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"23: s_6 => EndQuest ()": {
+"23: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_delay": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -869,11 +869,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"24: s_0 => EndQuest ()": {
+"24: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_1stparton": {
 "type": "State",
 "value": "0",
 "not": "False",

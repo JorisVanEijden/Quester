@@ -231,7 +231,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PickOneOf (s_8, s_9, s_9)": {
+" 3:  => PickOneOf (s_victim, s_9, s_9)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -242,7 +242,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_victim": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -275,7 +275,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PickOneOf (s_0, s_1, s_1)": {
+" 4:  => PickOneOf (s_map, s_nomap, s_nomap)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -286,21 +286,21 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_map": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_nomap": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_1": {
+"3: s_nomap": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -402,7 +402,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => CreateFoe(m_44000001, 2, 100%, 100)": {
+" 8: s_2 => CreateFoe(m_44000001, 2, 100%, 6)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfNpcClicked (n_questgiver): set s_4": {
+"12:  >> IfNpcClicked (n_questgiver): set s_clickqgiver": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_clickqgiver": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -538,18 +538,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_4 and s_3): set s_5": {
+"13:  >> If (s_clickqgiver and s_3): set s_success": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -582,11 +582,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_5 => QuestSuccess (i_gold)": {
+"14: s_success => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -626,7 +626,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  => Unset (s_4)": {
+"15:  => Unset (s_clickqgiver)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -637,7 +637,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -670,25 +670,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> If (s_5 and s_0): set s_7": {
+"16:  >> If (s_success and s_map): set s_duelist": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_duelist": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_map": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -714,11 +714,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_7 => AddLocationToMap (l_qgenemy)": {
+"17: s_duelist => AddLocationToMap (l_qgenemy)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_duelist": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -737,11 +737,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_7 => Say (1080)": {
+"18: s_duelist => Say (1080)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_duelist": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -753,11 +753,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_8 => PlaceNpcAt (n_villager, l_mondung)": {
+"19: s_victim => PlaceNpcAt (n_villager, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_victim": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -829,7 +829,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_10 => PromptYesNo (s_11, s_12, 1040)": {
+"22: s_10 => PromptYesNo (s_yes, s_no, 1040)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -840,14 +840,14 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_11": {
+"1: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_12": {
+"2: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -866,11 +866,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_11 >> WhenAtLocation (l_store): set s_13": {
+"23: s_yes >> WhenAtLocation (l_store): set s_13": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -896,11 +896,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_11 => CreateLogEntry (1021, 1)": {
+"24: s_yes => CreateLogEntry (1021, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -926,11 +926,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_11 => HideNpc (n_villager)": {
+"25: s_yes => HideNpc (n_villager)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -949,11 +949,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_11 => Say (1041)": {
+"26: s_yes => Say (1041)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -965,11 +965,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_11 => StartNpcEscort (n_villager)": {
+"27: s_yes => StartNpcEscort (n_villager)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -988,11 +988,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_12 => Say (1043)": {
+"28: s_no => Say (1043)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_12": {
+"0: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1004,11 +1004,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_12 => AdjustReputationWithNpc (n_villager, -10)": {
+"29: s_no => AdjustReputationWithNpc (n_villager, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1133,7 +1133,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> If (s_11 and not s_13 and s_6): set s_14": {
+"34:  >> If (s_yes and not s_13 and s_qtime): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1144,7 +1144,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_11": {
+"1: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1158,7 +1158,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_6": {
+"3: s_qtime": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1193,7 +1193,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36:  >> If (s_5 and s_12): set s_15": {
+"36:  >> If (s_success and s_no): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1204,14 +1204,14 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_12": {
+"2: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1237,7 +1237,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> If (s_5 and s_9): set s_16": {
+"37:  >> If (s_success and s_9): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1248,7 +1248,7 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1281,7 +1281,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38:  >> If (s_5 and s_13): set s_17": {
+"38:  >> If (s_success and s_13): set s_17": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1292,7 +1292,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_success": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1325,7 +1325,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39:  >> If (s_6 or s_15 or s_16 or s_17): set s_18": {
+"39:  >> If (s_qtime or s_15 or s_16 or s_17): set s_18": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -1336,7 +1336,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: s_qtime": {
 "type": "State",
 "value": "6",
 "not": "False",

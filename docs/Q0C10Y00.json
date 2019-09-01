@@ -473,11 +473,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfGivingItemToNpc (i_item1, n_qgiver): set s_0": {
+"10:  >> IfGivingItemToNpc (i_item1, n_qgiver): set s_pchasitem1": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pchasitem1": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -503,11 +503,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfGivingItemToNpc (i_item2, n_qgiver): set s_1": {
+"11:  >> IfGivingItemToNpc (i_item2, n_qgiver): set s_pchasitem2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_pchasitem2": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -533,11 +533,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfGivingItemToNpc (i_item3, n_qgiver): set s_2": {
+"12:  >> IfGivingItemToNpc (i_item3, n_qgiver): set s_pchasitem3": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem3": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -563,11 +563,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => EndQuest ()": {
+"13: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_queston": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -579,11 +579,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_4 => CreateFoe(m_zombie, 15, 5%, 5)": {
+"14: s_a1 => CreateFoe(m_zombie, 15, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_a1": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -623,11 +623,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_4 => PlaceMobAtLocation (m_zombie, l_dungeon1)": {
+"15: s_a1 => PlaceMobAtLocation (m_zombie, l_dungeon1)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_a1": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -653,11 +653,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_5 => CreateFoe(m_mummy, 10, 5%, 5)": {
+"16: s_a2 => CreateFoe(m_mummy, 10, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_a2": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -697,11 +697,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_5 => PlaceMobAtLocation (m_mummy, l_dungeon1)": {
+"17: s_a2 => PlaceMobAtLocation (m_mummy, l_dungeon1)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_a2": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -727,11 +727,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_6 => CreateFoe(m_skeleton, 12, 5%, 5)": {
+"18: s_a3 => CreateFoe(m_skeleton, 12, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_a3": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -771,11 +771,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_6 => PlaceMobAtLocation (m_skeleton, l_dungeon1)": {
+"19: s_a3 => PlaceMobAtLocation (m_skeleton, l_dungeon1)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_a3": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -801,11 +801,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_7 => CreateFoe(m_44000000, 10, 5%, 5)": {
+"20: s_a4 => CreateFoe(m_44000000, 10, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_a4": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -845,11 +845,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_7 => PlaceMobAtLocation (m_44000000, l_dungeon2)": {
+"21: s_a4 => PlaceMobAtLocation (m_44000000, l_dungeon2)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_a4": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -875,11 +875,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_8 => CreateFoe(m_spriggan, 15, 5%, 5)": {
+"22: s_a5 => CreateFoe(m_spriggan, 15, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_a5": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -919,11 +919,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_8 => PlaceMobAtLocation (m_spriggan, l_dungeon2)": {
+"23: s_a5 => PlaceMobAtLocation (m_spriggan, l_dungeon2)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_a5": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -949,11 +949,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_9 => CreateFoe(m_wereboar, 12, 5%, 5)": {
+"24: s_a6 => CreateFoe(m_wereboar, 12, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_a6": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -993,11 +993,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_9 => PlaceMobAtLocation (m_wereboar, l_dungeon2)": {
+"25: s_a6 => PlaceMobAtLocation (m_wereboar, l_dungeon2)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_a6": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1023,7 +1023,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_10 => PickOneOf (s_4, s_5, s_6, s_4)": {
+"26: s_10 => PickOneOf (s_a1, s_a2, s_a3, s_a1)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -1034,28 +1034,28 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_a1": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_a2": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_6": {
+"3: s_a3": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_4": {
+"4: s_a1": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1067,11 +1067,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> IfItemFound (i_item1): set s_11 [Msg 1021]": {
+"27:  >> IfItemFound (i_item1): set s_00000c59 [Msg 1021]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_00000c59": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1136,7 +1136,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_14 => PickOneOf (s_7, s_8, s_9, s_7)": {
+"30: s_14 => PickOneOf (s_a4, s_a5, s_a6, s_a4)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -1147,28 +1147,28 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: s_a4": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: s_a5": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_9": {
+"3: s_a6": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_7": {
+"4: s_a4": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1180,7 +1180,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31:  >> If (s_0 and s_1 and s_2): set s_15": {
+"31:  >> If (s_pchasitem1 and s_pchasitem2 and s_pchasitem3): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1191,21 +1191,21 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_pchasitem1": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_pchasitem2": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_2": {
+"3: s_pchasitem3": {
 "type": "State",
 "value": "2",
 "not": "False",

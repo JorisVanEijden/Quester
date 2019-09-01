@@ -958,7 +958,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_5 => CreateFoe(m_44000003, 2, 50%, 50)": {
+"25: s_5 => CreateFoe(m_44000003, 2, 50%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1002,7 +1002,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_5 => CreateFoe(m_44000002, 4, 50%, 50)": {
+"26: s_5 => CreateFoe(m_44000002, 4, 50%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1046,7 +1046,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_5 => CreateFoe(m_44000001, 3, 50%, 50)": {
+"27: s_5 => CreateFoe(m_44000001, 3, 50%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1143,11 +1143,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (not s_7 and s_21): set s_9": {
+"30:  >> If (not s_7 and s_21): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1187,11 +1187,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_9 => Say (1015)": {
+"31: s_clearclick => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1203,11 +1203,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 => Unset (s_21, s_9)": {
+"32: s_clearclick => Unset (s_21, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1221,7 +1221,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1247,11 +1247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (s_7 and s_21): set s_10": {
+"33:  >> If (s_7 and s_21): set s_vamp3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_vamp3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1291,11 +1291,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_10 => QuestSuccess (i_gold)": {
+"34: s_vamp3 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_vamp3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1335,11 +1335,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_10 => EndQuest ()": {
+"35: s_vamp3 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: s_vamp3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1538,7 +1538,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_14 => PromptYesNo (s_15, s_16, 1020)": {
+"42: s_14 => PromptYesNo (s_yes, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1549,14 +1549,14 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_15": {
+"1: s_yes": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_16": {
+"2: s_no": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1612,7 +1612,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44:  >> If (s_17 and s_16): set s_19": {
+"44:  >> If (s_17 and s_no): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1630,7 +1630,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_16": {
+"2: s_no": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1686,7 +1686,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46:  >> If (s_17 and s_15): set s_20": {
+"46:  >> If (s_17 and s_yes): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1704,7 +1704,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_15": {
+"2: s_yes": {
 "type": "State",
 "value": "15",
 "not": "False",

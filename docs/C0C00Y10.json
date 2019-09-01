@@ -260,11 +260,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_questtime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_questtime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -656,7 +656,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_10 => PromptYesNo (s_12, s_11, 1014)": {
+"21: s_10 => PromptYesNo (s_12, s_no, 1014)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -674,7 +674,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_11": {
+"2: s_no": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -693,11 +693,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_11 => Unset (s_10)": {
+"22: s_no => Unset (s_10)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_no": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -850,11 +850,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_14 => EndQuest ()": {
+"27: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_14": {
+"0: s_delay": {
 "type": "State",
 "value": "14",
 "not": "False",

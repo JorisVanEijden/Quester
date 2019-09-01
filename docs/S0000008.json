@@ -481,11 +481,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0 => PlaceItemOnPlayer (i_letter) [Msg 1070]": {
+" 1: s_2letter => PlaceItemOnPlayer (i_letter) [Msg 1070]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_2letter": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -504,11 +504,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0 => PlaceNpcAt (n_0000d04d, l_tavern)": {
+" 2: s_2letter => PlaceNpcAt (n_0000d04d, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_2letter": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -534,11 +534,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> IfNpcClicked (n_0000d04d): set s_1": {
+" 3:  >> IfNpcClicked (n_0000d04d): set s_0000cc6d": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -557,25 +557,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_1 => PromptYesNo (s_2, s_3, 1000)": {
+" 4: s_0000cc6d => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_1": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_no": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -594,11 +594,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_2 => PlaceItemAt (i_00000dbf, l_00018ff8)": {
+" 5: s_yes => PlaceItemAt (i_00000dbf, l_00018ff8)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -624,11 +624,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 => Say (1002)": {
+" 6: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -640,11 +640,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_2 => SetQuestor (n_0000d04d)": {
+" 7: s_yes => SetQuestor (n_0000d04d)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -663,11 +663,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => CreateLogEntry (1010, 0)": {
+" 8: s_yes => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_yes": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -693,11 +693,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 => Say (1001)": {
+" 9: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_no": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -709,11 +709,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => EndQuest ()": {
+"10: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_no": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -801,11 +801,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_5 >> StartTimer (t_40000008); When it expires: set s_8": {
+"14: s_delay >> StartTimer (t_40000008); When it expires: set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_delay": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -824,11 +824,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_5 => CreateLogEntry (1017, 1)": {
+"15: s_delay => CreateLogEntry (1017, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_delay": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -854,11 +854,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_5 => Say (1015)": {
+"16: s_delay => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_delay": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -914,7 +914,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_7 => CreateFoe(m_44000000, 1300, 10%, 10)": {
+"18: s_7 => CreateFoe(m_44000000, 1300, 10%, 100)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -2990,7 +2990,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"90: s_36 => CreateFoe(m_44000001, 1, 100%, 100)": {
+"90: s_36 => CreateFoe(m_44000001, 1, 100%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

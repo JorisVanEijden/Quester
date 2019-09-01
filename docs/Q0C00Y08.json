@@ -52,7 +52,7 @@
 "variable": "n_daedra",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
 "factionRaw": "0 [0x0000]",
@@ -155,7 +155,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> If (s_0 and s_5): set s_1": {
+" 2:  >> If (s_queston and s_5): set s_1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -166,7 +166,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -254,7 +254,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> If (s_0 and not s_5): set s_2": {
+" 6:  >> If (s_queston and not s_5): set s_2": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -265,7 +265,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -314,11 +314,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_3": {
+" 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_qgclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -344,11 +344,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 => QuestSuccess (i_mitem)": {
+" 9: s_qgclicked => QuestSuccess (i_mitem)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -388,11 +388,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => EndQuest ()": {
+"10: s_qgclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -517,7 +517,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_5 => CreateFoe(m_guard, 20, 50%, 50) [Msg 1012]": {
+"15: s_5 => CreateFoe(m_guard, 20, 50%, 20) [Msg 1012]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

@@ -52,7 +52,7 @@
 "variable": "n_murder",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Malacath",
 "factionRaw": "7 [0x0007]",
@@ -256,11 +256,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 4: s_3 => EnsureNpcLocation (n_qgfriend)": {
+" 4: s_mondead => EnsureNpcLocation (n_qgfriend)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -369,11 +369,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 8:  >> IfMobsKilled (m_monster, 1): set s_3": {
+" 8:  >> IfMobsKilled (m_monster, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -399,11 +399,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 9: s_3 => Say (1015)": {
+" 9: s_mondead => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -415,7 +415,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"10:  >> WhenItemIsUsed (i_note): set s_7": {
+"10:  >> WhenItemIsUsed (i_note): set s_readnote": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -426,7 +426,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_readnote": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -445,11 +445,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11: s_7 => AddTopics (n_murder)": {
+"11: s_readnote => AddTopics (n_murder)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_readnote": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -482,11 +482,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"12:  >> IfGivingItemToNpc (i_note, n_ruler): set s_8": {
+"12:  >> IfGivingItemToNpc (i_note, n_ruler): set s_rulerclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_rulerclicked": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -512,25 +512,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"13: s_8 => PromptYesNo (s_9, s_10, 1041)": {
+"13: s_rulerclicked => PromptYesNo (s_0000383d, s_school, 1041)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_8": {
+"0: s_rulerclicked": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_9": {
+"1: s_0000383d": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_10": {
+"2: s_school": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -549,11 +549,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"14: s_10 => PlaceItemOnCharacter (i_note)": {
+"14: s_school => PlaceItemOnCharacter (i_note)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_school": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -579,11 +579,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"15: s_9 => Say (1040)": {
+"15: s_0000383d => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_0000383d": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -595,11 +595,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"16: s_9 => AdjustReputationWithNpc (n_murder, 15)": {
+"16: s_0000383d => AdjustReputationWithNpc (n_murder, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_0000383d": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -625,11 +625,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"17:  >> IfNpcClicked (n_qgfriend): set s_4": {
+"17:  >> IfNpcClicked (n_qgfriend): set s_npcclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -648,25 +648,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"18:  >> If (s_4 and s_3): set s_2": {
+"18:  >> If (s_npcclicked and s_mondead): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -692,7 +692,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"19:  => Unset (s_4)": {
+"19:  => Unset (s_npcclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -703,7 +703,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -736,11 +736,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"20: s_2 => QuestSuccess (i_artifact)": {
+"20: s_pcgetsgold => QuestSuccess (i_artifact)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -780,11 +780,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"21: s_2 >> StartTimer (t_delay); When it expires: set s_6": {
+"21: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -803,11 +803,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"22: s_6 => EndQuest ()": {
+"22: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_delay": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -819,11 +819,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"23: s_0 => EndQuest ()": {
+"23: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_1stparton": {
 "type": "State",
 "value": "0",
 "not": "False",

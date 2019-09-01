@@ -115,7 +115,7 @@
 "variable": "n_target",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Boethiah",
 "factionRaw": "10 [0x000A]",
@@ -1187,7 +1187,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_9 => CreateFoe(m_44000000, 1, 100%, 100) [Msg 1042]": {
+"30: s_9 => CreateFoe(m_44000000, 1, 100%, 1) [Msg 1042]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1231,7 +1231,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_9 => CreateFoe(m_mages, 2, 100%, 100)": {
+"31: s_9 => CreateFoe(m_mages, 2, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1524,7 +1524,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_12 => Unset (s_13)": {
+"41: s_12 => Unset (s_conhouse)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -1535,7 +1535,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_13": {
+"1: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1568,11 +1568,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (s_0 and not s_12): set s_13": {
+"42:  >> If (s_0 and not s_12): set s_conhouse": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1612,11 +1612,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_13 => CreateFoe(m_44000003, 10, 10%, 10)": {
+"43: s_conhouse => CreateFoe(m_44000003, 10, 10%, 100)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -2530,11 +2530,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"75:  >> IfMobHurtByPlayer (m_mtraitor): set s_28": {
+"75:  >> IfMobHurtByPlayer (m_mtraitor): set s_hittraitor": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_28": {
+"0: s_hittraitor": {
 "type": "State",
 "value": "28",
 "not": "False",
@@ -2553,11 +2553,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"76: s_28 >> StartTimer (t_40000023); When it expires: set s_35": {
+"76: s_hittraitor >> StartTimer (t_40000023); When it expires: set s_35": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_28": {
+"0: s_hittraitor": {
 "type": "State",
 "value": "28",
 "not": "False",
@@ -2576,11 +2576,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"77: s_28 => StopTimer (t_gettraitor)": {
+"77: s_hittraitor => StopTimer (t_gettraitor)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_28": {
+"0: s_hittraitor": {
 "type": "State",
 "value": "28",
 "not": "False",
@@ -2599,11 +2599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"78: s_28 => Say (1071)": {
+"78: s_hittraitor => Say (1071)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_28": {
+"0: s_hittraitor": {
 "type": "State",
 "value": "28",
 "not": "False",
@@ -2684,11 +2684,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"82:  >> If (s_29 and s_30): set s_31": {
+"82:  >> If (s_29 and s_30): set s_success": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_31": {
+"0: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -2728,11 +2728,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"83: s_31 => PlaceItemOnCharacter (i_queenreward)": {
+"83: s_success => PlaceItemOnCharacter (i_queenreward)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_31": {
+"0: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -2758,11 +2758,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"84: s_31 => Say (1055)": {
+"84: s_success => Say (1055)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_31": {
+"0: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -2774,11 +2774,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"85: s_31 => MakePermanent (i_queenreward)": {
+"85: s_success => MakePermanent (i_queenreward)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_31": {
+"0: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -2797,7 +2797,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"86:  >> If (s_1 and not s_23): set s_32": {
+"86:  >> If (s_time1 and not s_23): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2808,7 +2808,7 @@
 "index": "32",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_time1": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -2841,7 +2841,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"87:  >> If (s_21 or s_31): set s_33": {
+"87:  >> If (s_21 or s_success): set s_33": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -2859,7 +2859,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_31": {
+"2: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -3273,7 +3273,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"100:  >> If (s_17 or s_25 or s_31): set s_39": {
+"100:  >> If (s_17 or s_gettraitor or s_success): set s_39": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -3291,14 +3291,14 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_25": {
+"2: s_gettraitor": {
 "type": "State",
 "value": "25",
 "not": "False",
 "index": "25",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_31": {
+"3: s_success": {
 "type": "State",
 "value": "31",
 "not": "False",

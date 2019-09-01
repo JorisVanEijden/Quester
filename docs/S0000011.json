@@ -447,11 +447,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_6 => PlaceItemAt (i_000192b5, l_orsinium)": {
+"10: s_yes => PlaceItemAt (i_000192b5, l_orsinium)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -477,11 +477,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_6 >> StartTimer (t_40000001); When it expires: set s_1": {
+"11: s_yes >> StartTimer (t_40000001); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -500,11 +500,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_6 => CreateLogEntry (1010, 0)": {
+"12: s_yes => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -530,11 +530,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_6 => ShowLocationOnMap (l_orsinium, 26, 146892)": {
+"13: s_yes => ShowLocationOnMap (l_orsinium, 26, 146892)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -567,11 +567,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_6 => Say (1002)": {
+"14: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -583,11 +583,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_7 => Say (1001)": {
+"15: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -599,11 +599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_7 => EndQuest ()": {
+"16: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -968,7 +968,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_12 => PromptYesNo (s_6, s_7, 1000)": {
+"29: s_12 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -979,14 +979,14 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: s_yes": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_7": {
+"2: s_no": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1268,11 +1268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39:  >> If (s_13 and not s_3): set s_16": {
+"39:  >> If (s_13 and not s_3): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_16": {
+"0: s_clearclick": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1312,11 +1312,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_16 => Unset (s_13, s_16)": {
+"40: s_clearclick => Unset (s_13, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_16": {
+"0: s_clearclick": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1330,7 +1330,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_16": {
+"2: s_clearclick": {
 "type": "State",
 "value": "16",
 "not": "False",

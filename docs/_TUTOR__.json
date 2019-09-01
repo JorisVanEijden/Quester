@@ -183,7 +183,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [34]": {
-" 0:  => PromptYesNo (s_1, s_2, 1010)": {
+" 0:  => PromptYesNo (s_yes, s_no, 1010)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -194,14 +194,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -220,18 +220,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_1 >> WhenAtLocation (l_001c2a98): set s_0": {
+" 1: s_yes >> WhenAtLocation (l_001c2a98): set s_0000d498": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_0000d498": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -250,11 +250,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_1 >> StartTimer (t_40000003); When it expires: set s_3": {
+" 2: s_yes >> StartTimer (t_40000003); When it expires: set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -303,11 +303,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_1 => Say (1012)": {
+" 4: s_yes => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -319,11 +319,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_2 => StartQuest (977, 977)": {
+" 5: s_no => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -349,11 +349,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 => EndQuest ()": {
+" 6: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -365,7 +365,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_3 => PromptYesNo (s_16, s_2, 1013)": {
+" 7: s_3 => PromptYesNo (s_yes1, s_no, 1013)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -376,14 +376,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_16": {
+"1: s_yes1": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -402,7 +402,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_4 => PromptYesNo (s_17, s_2, 1015)": {
+" 8: s_4 => PromptYesNo (s_yes2, s_no, 1015)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -413,14 +413,14 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_17": {
+"1: s_yes2": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -439,7 +439,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_5 => PromptYesNo (s_19, s_2, 1025)": {
+" 9: s_5 => PromptYesNo (s_yes4, s_no, 1025)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -450,14 +450,14 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_19": {
+"1: s_yes4": {
 "type": "State",
 "value": "19",
 "not": "False",
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -476,7 +476,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_6 => PromptYesNo (s_18, s_2, 1020)": {
+"10: s_6 => PromptYesNo (s_yes3, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -487,14 +487,14 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_18": {
+"1: s_yes3": {
 "type": "State",
 "value": "18",
 "not": "False",
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -513,7 +513,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_7 => PromptYesNo (s_20, s_2, 1030)": {
+"11: s_7 => PromptYesNo (s_yes5, s_no, 1030)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -524,14 +524,14 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_20": {
+"1: s_yes5": {
 "type": "State",
 "value": "20",
 "not": "False",
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -550,7 +550,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_8 => PromptYesNo (s_9, s_2, 1035)": {
+"12: s_8 => PromptYesNo (s_9, s_no, 1035)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -568,7 +568,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -587,25 +587,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_12 => PromptYesNo (s_23, s_2, 1050)": {
+"13: s_000005c7 => PromptYesNo (s_0000067a, s_no, 1050)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_12": {
+"0: s_000005c7": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_23": {
+"1: s_0000067a": {
 "type": "State",
 "value": "23",
 "not": "False",
 "index": "23",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -624,11 +624,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_13 => StartQuest (977, 977)": {
+"14: s_000005c8 => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_13": {
+"0: s_000005c8": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -654,11 +654,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_13 => Say (1055)": {
+"15: s_000005c8 => Say (1055)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_13": {
+"0: s_000005c8": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -670,11 +670,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_13 => Say (1056)": {
+"16: s_000005c8 => Say (1056)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_13": {
+"0: s_000005c8": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -686,11 +686,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_13 => EndQuest ()": {
+"17: s_000005c8 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_13": {
+"0: s_000005c8": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -702,11 +702,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_14 => StartQuest (977, 977)": {
+"18: s_2dagger => StartQuest (977, 977)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_14": {
+"0: s_2dagger": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -732,11 +732,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_14 => EndQuest ()": {
+"19: s_2dagger => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_14": {
+"0: s_2dagger": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -778,7 +778,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> If (s_1 and not s_0): set s_15": {
+"21:  >> If (s_yes and not s_0000d498): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -789,14 +789,14 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_0": {
+"2: not s_0000d498": {
 "type": "State",
 "value": "0",
 "not": "True",
@@ -838,7 +838,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_15 => PromptYesNo (s_21, s_2, 1041)": {
+"23: s_15 => PromptYesNo (s_yes6, s_no, 1041)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -849,14 +849,14 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_21": {
+"1: s_yes6": {
 "type": "State",
 "value": "21",
 "not": "False",
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -875,11 +875,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_16 >> StartTimer (t_40000004); When it expires: set s_4": {
+"24: s_yes1 >> StartTimer (t_40000004); When it expires: set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_16": {
+"0: s_yes1": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -898,11 +898,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_17 >> StartTimer (t_40000006); When it expires: set s_6": {
+"25: s_yes2 >> StartTimer (t_40000006); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_17": {
+"0: s_yes2": {
 "type": "State",
 "value": "17",
 "not": "False",
@@ -921,11 +921,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_18 >> StartTimer (t_40000005); When it expires: set s_5": {
+"26: s_yes3 >> StartTimer (t_40000005); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_18": {
+"0: s_yes3": {
 "type": "State",
 "value": "18",
 "not": "False",
@@ -944,11 +944,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_19 >> StartTimer (t_40000007); When it expires: set s_7": {
+"27: s_yes4 >> StartTimer (t_40000007); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_19": {
+"0: s_yes4": {
 "type": "State",
 "value": "19",
 "not": "False",
@@ -967,11 +967,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_20 >> StartTimer (t_40000008); When it expires: set s_8": {
+"28: s_yes5 >> StartTimer (t_40000008); When it expires: set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_20": {
+"0: s_yes5": {
 "type": "State",
 "value": "20",
 "not": "False",
@@ -990,11 +990,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_21 >> StartTimer (t_2dagger); When it expires: set s_14": {
+"29: s_yes6 >> StartTimer (t_2dagger); When it expires: set s_14": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_21": {
+"0: s_yes6": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1013,11 +1013,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_22 >> StartTimer (t_000005c7); When it expires: set s_12": {
+"30: s_note >> StartTimer (t_000005c7); When it expires: set s_12": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_22": {
+"0: s_note": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1036,11 +1036,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_23 >> StartTimer (t_000005c8); When it expires: set s_13": {
+"31: s_0000067a >> StartTimer (t_000005c8); When it expires: set s_13": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_23": {
+"0: s_0000067a": {
 "type": "State",
 "value": "23",
 "not": "False",
@@ -1075,7 +1075,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_25 => PromptYesNo (s_22, s_2, 1046)": {
+"33: s_25 => PromptYesNo (s_note, s_no, 1046)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1086,14 +1086,14 @@
 "index": "25",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_22": {
+"1: s_note": {
 "type": "State",
 "value": "22",
 "not": "False",
 "index": "22",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",

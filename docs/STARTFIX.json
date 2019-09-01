@@ -224,11 +224,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 >> StartTimer (t_0009eb7c); When it expires: set s_1": {
+" 3: s_0004dcfc >> StartTimer (t_0009eb7c); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_0004dcfc": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -247,11 +247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => PlaceItemOnPlayer (i_letter1) [Msg 1026]": {
+" 4: s_0004dcfc => PlaceItemOnPlayer (i_letter1) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_0004dcfc": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -270,11 +270,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EnsureNpcLocation (l_dirtypit)": {
+" 5: s_0004dcfc => EnsureNpcLocation (l_dirtypit)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_0004dcfc": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -300,11 +300,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => PlaceNpcAt (n_0000b04d, l_dirtypit)": {
+" 6: s_0004dcfc => PlaceNpcAt (n_0000b04d, l_dirtypit)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_0004dcfc": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -330,11 +330,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 >> StartTimer (t_00009bae); When it expires: set s_2": {
+" 7: s_0009eb7c >> StartTimer (t_00009bae); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0009eb7c": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -353,11 +353,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => PlaceItemOnPlayer (i_letter2) [Msg 1026]": {
+" 8: s_0009eb7c => PlaceItemOnPlayer (i_letter2) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0009eb7c": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -376,11 +376,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 >> StartTimer (t_0006b98d); When it expires: set s_6": {
+" 9: s_00009bae >> StartTimer (t_0006b98d); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00009bae": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -399,11 +399,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => AdjustReputationWithNpc (n_0000b04d, -15)": {
+"10: s_00009bae => AdjustReputationWithNpc (n_0000b04d, -15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00009bae": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -429,11 +429,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => PlaceItemOnPlayer (i_0006a0fc) [Msg 1026]": {
+"11: s_00009bae => PlaceItemOnPlayer (i_0006a0fc) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00009bae": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -452,11 +452,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfNpcClicked (n_0000b04d): set s_3": {
+"12:  >> IfNpcClicked (n_0000b04d): set s_0000cc6d": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -475,11 +475,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 >> StartTimer (t_oneday); When it expires: set s_4": {
+"13: s_0000cc6d >> StartTimer (t_oneday); When it expires: set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -498,11 +498,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => StopTimer (t_0004dcfc)": {
+"14: s_0000cc6d => StopTimer (t_0004dcfc)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -521,11 +521,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => StopTimer (t_00009bae)": {
+"15: s_0000cc6d => StopTimer (t_00009bae)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -544,11 +544,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => StopTimer (t_0009eb7c)": {
+"16: s_0000cc6d => StopTimer (t_0009eb7c)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -567,11 +567,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => CreateLogEntry (1011, 1)": {
+"17: s_0000cc6d => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -597,11 +597,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => CycleNextState (s_5)": {
+"18: s_0000cc6d => CycleNextState (s_5)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -641,11 +641,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_3 => Say (1015)": {
+"19: s_0000cc6d => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -657,11 +657,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_3 => Say (1016)": {
+"20: s_0000cc6d => Say (1016)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_0000cc6d": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -673,11 +673,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_4 => EndQuest ()": {
+"21: s_oneday => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_oneday": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -689,11 +689,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_4 => QuestSuccess ()": {
+"22: s_oneday => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_oneday": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -733,11 +733,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_6 => EndQuest ()": {
+"23: s_0006b98d => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_0006b98d": {
 "type": "State",
 "value": "6",
 "not": "False",

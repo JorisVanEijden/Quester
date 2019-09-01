@@ -312,7 +312,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6:  => PickOneOf (s_1, s_2)": {
+" 6:  => PickOneOf (s_0000069a, s_00001b4a)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -323,14 +323,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_0000069a": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_00001b4a": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -356,11 +356,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_1 >> StartTimer (t_2letter); When it expires: set s_7": {
+" 7: s_0000069a >> StartTimer (t_2letter); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0000069a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -379,11 +379,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 8: s_7 => PlaceItemOnPlayer (i_letter) [Msg 1012]": {
+" 8: s_2letter => PlaceItemOnPlayer (i_letter) [Msg 1012]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_2letter": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -402,18 +402,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9: s_7 >> WhenItemIsUsed (i_letter): set s_8": {
+" 9: s_2letter >> WhenItemIsUsed (i_letter): set s_0001ae0a": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_2letter": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_8": {
+"1: s_0001ae0a": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -432,11 +432,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_8 => CreateLogEntry (1013, 1)": {
+"10: s_0001ae0a => CreateLogEntry (1013, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0001ae0a": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -462,18 +462,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11: s_1 >> WhenAtLocation (l_conhouse): set s_4": {
+"11: s_0000069a >> WhenAtLocation (l_conhouse): set s_0001c79d": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000069a": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_0001c79d": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -492,11 +492,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12: s_4 => HideNpc (n_contact)": {
+"12: s_0001c79d => HideNpc (n_contact)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_0001c79d": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13: s_4 => PlaceMobAtLocation (m_guard, l_conhouse)": {
+"13: s_0001c79d => PlaceMobAtLocation (m_guard, l_conhouse)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_0001c79d": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -545,11 +545,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"14:  >> IfMobHurtByPlayer (m_guard): set s_5": {
+"14:  >> IfMobHurtByPlayer (m_guard): set s_00000d4d": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_00000d4d": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -568,25 +568,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"15: s_5 => PromptYesNo (s_6, s_15, 1015)": {
+"15: s_00000d4d => PromptYesNo (s_000005e2, s_no, 1015)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_00000d4d": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_000005e2": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_15": {
+"2: s_no": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -605,11 +605,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"16: s_6 => PlaceItemOnMob (i_sage, m_guard)": {
+"16: s_000005e2 => PlaceItemOnMob (i_sage, m_guard)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_000005e2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -635,11 +635,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"17: s_6 => DoneWithMob (m_guard, _)": {
+"17: s_000005e2 => DoneWithMob (m_guard, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_000005e2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -665,11 +665,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"18: s_6 => Say (1016)": {
+"18: s_000005e2 => Say (1016)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_000005e2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -681,11 +681,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"19:  >> IfGivingItemToNpc (i_sage, n_contact): set s_9": {
+"19:  >> IfGivingItemToNpc (i_sage, n_contact): set s_reward": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_reward": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -711,11 +711,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"20: s_9 => QuestSuccess (i_gold)": {
+"20: s_reward => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_reward": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -755,11 +755,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"21: s_9 => AdjustLegalReputation (100)": {
+"21: s_reward => AdjustLegalReputation (100)": {
 "opCode": 65,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_reward": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -778,11 +778,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"22: s_9 => EndQuest ()": {
+"22: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_reward": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -794,11 +794,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"23:  >> IfGivingItemToNpc (i_sage, n_contact2): set s_10": {
+"23:  >> IfGivingItemToNpc (i_sage, n_contact2): set s_0001a692": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a692": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -824,25 +824,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"24:  >> If (s_10 and s_1): set s_11": {
+"24:  >> If (s_0001a692 and s_0000069a): set s_0000c8e1": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_0000c8e1": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_10": {
+"1: s_0001a692": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_1": {
+"2: s_0000069a": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -868,11 +868,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"25: s_11 => Say (1014)": {
+"25: s_0000c8e1 => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_0000c8e1": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -884,11 +884,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"26: s_11 => AdjustLegalReputation (100)": {
+"26: s_0000c8e1 => AdjustLegalReputation (100)": {
 "opCode": 65,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_0000c8e1": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -907,11 +907,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"27: s_11 => EndQuest ()": {
+"27: s_0000c8e1 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_0000c8e1": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -923,18 +923,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"28: s_13 >> WhenPlayerHasItems (i_sage): set s_14": {
+"28: s_queston >> WhenPlayerHasItems (i_sage): set s_0000cf85": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_queston": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_14": {
+"1: s_0000cf85": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -967,25 +967,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"29:  >> If (s_13 and s_14): set s_12": {
+"29:  >> If (s_queston and s_0000cf85): set s_0000d1a5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_0000d1a5": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_13": {
+"1: s_queston": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_14": {
+"2: s_0000cf85": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1011,11 +1011,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"30: s_12 => Say (1017)": {
+"30: s_0000d1a5 => Say (1017)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_12": {
+"0: s_0000d1a5": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1027,11 +1027,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"31: s_12 => MakePermanent (i_sage)": {
+"31: s_0000d1a5 => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_12": {
+"0: s_0000d1a5": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1050,11 +1050,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"32: s_13 => EndQuest ()": {
+"32: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_13": {
+"0: s_queston": {
 "type": "State",
 "value": "13",
 "not": "False",

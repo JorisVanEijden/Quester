@@ -305,11 +305,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 6: not s_5 => CreateFoe(m_0006e14b, 10, 35%, 35)": {
+" 6: not s_rewards1 => CreateFoe(m_0006e14b, 10, 35%, 12)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_5": {
+"0: not s_rewards1": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -349,11 +349,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 7: not s_5 => CreateFoe(m_note, 5, 35%, 35)": {
+" 7: not s_rewards1 => CreateFoe(m_note, 5, 35%, 12)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_5": {
+"0: not s_rewards1": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -393,11 +393,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 8:  >> IfMobsKilled (m_0006e14b, 1): set s_7": {
+" 8:  >> IfMobsKilled (m_0006e14b, 1): set s_00003503": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_00003503": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -423,11 +423,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 9: s_7 => AddTopics (n_orsinium)": {
+" 9: s_00003503 => AddTopics (n_orsinium)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_00003503": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -460,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"10: s_7 => Say (1030)": {
+"10: s_00003503 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_00003503": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -476,11 +476,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"11:  >> IfNpcClicked (n_orsinium): set s_4": {
+"11:  >> IfNpcClicked (n_orsinium): set s_0000dbc1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_0000dbc1": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -499,11 +499,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"12: s_4 => Say (1020)": {
+"12: s_0000dbc1 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_0000dbc1": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"13:  >> IfGivingItemToNpc (i_sage, n_orsinium): set s_8": {
+"13:  >> IfGivingItemToNpc (i_sage, n_orsinium): set s_0000346b": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000346b": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -545,25 +545,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"14: s_8 => PromptYesNo (s_5, s_6, 1021)": {
+"14: s_0000346b => PromptYesNo (s_rewards1, s_bookstore, 1021)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_8": {
+"0: s_0000346b": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: s_5": {
+"1: s_rewards1": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_6": {
+"2: s_bookstore": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -582,11 +582,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"15: s_5 => Say (1022)": {
+"15: s_rewards1 => Say (1022)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_rewards1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -598,11 +598,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"16: s_6 => Say (1023)": {
+"16: s_bookstore => Say (1023)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_bookstore": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -614,11 +614,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"17: s_6 => PlaceItemOnCharacter (i_sage)": {
+"17: s_bookstore => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_bookstore": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -644,11 +644,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"18: s_5 => AdjustReputationWithNpc (n_orsinium, 30)": {
+"18: s_rewards1 => AdjustReputationWithNpc (n_orsinium, 30)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_rewards1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -674,11 +674,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"19: s_6 => AdjustReputationWithNpc (n_orsinium, -10)": {
+"19: s_bookstore => AdjustReputationWithNpc (n_orsinium, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_bookstore": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -704,11 +704,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"20:  >> IfGivingItemToNpc (i_sage, n_contact): set s_3": {
+"20:  >> IfGivingItemToNpc (i_sage, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -734,11 +734,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"21: s_3 => QuestSuccess (i_reward)": {
+"21: s_npcclicked => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -778,11 +778,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"22: s_2 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"22: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -808,11 +808,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"23: s_2 => MakePermanent (i_sage)": {
+"23: s_queston => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -831,11 +831,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"24: s_3 => EndQuest ()": {
+"24: s_npcclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -847,11 +847,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"25: s_2 => EndQuest ()": {
+"25: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",

@@ -167,11 +167,11 @@ namespace Quester
 
                 timers[index] = timer;
 
-                TimeSpan minimum = TimeSpan.FromMinutes(timer.Minimum);
-                TimeSpan maximum = TimeSpan.FromMinutes(timer.Maximum);
+//                TimeSpan minimum = TimeSpan.FromMinutes(timer.Minimum);
+//                TimeSpan maximum = TimeSpan.FromMinutes(timer.Maximum);
 
-                string binary1 = Convert.ToString(timer.Flags1, 2).PadLeft(8, '0');
-                Console.WriteLine($"{Program.Quest.Name} {Program.Quest.Locations.Count} {Program.Quest.Npcs.Count} {timer.Type} '{binary1}' {timer.Link1Type} {timer.Link1} {timer.Link2Type} {timer.Link2} {minimum} {maximum}");
+//                string binary1 = Convert.ToString(timer.Flags1, 2).PadLeft(8, '0');
+//                Console.WriteLine($"{Program.Quest.Name} {Program.Quest.Locations.Count} {Program.Quest.Npcs.Count} {timer.Type} '{binary1}' {timer.Link1Type} {timer.Link1} {timer.Link2Type} {timer.Link2} {minimum} {maximum}");
             }
 
             return timers;
@@ -223,9 +223,9 @@ namespace Quester
         {
             var states = new Dictionary<short, State>();
             reader.BaseStream.Seek(header.StatesSectionOffset, 0);
-            for (var i = 0; i < header.StatesSectionCount; i++)
+            for (int i = 0; i < header.StatesSectionCount; i++)
             {
-                var index = reader.ReadInt16();
+                short index = reader.ReadInt16();
 
                 states[index] = new State
                 {
@@ -242,7 +242,7 @@ namespace Quester
         private static List<Argument> ReadArguments(BinaryReader reader, int count)
         {
             var arguments = new List<Argument>();
-            for (var i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Argument argument = new Argument();
                 {

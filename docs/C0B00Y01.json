@@ -141,7 +141,7 @@
 "variable": "n_replace",
 "gender": "Female",
 "facePictureIndex": 3,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Sheogorath",
 "factionRaw": "9 [0x0009]",
@@ -591,7 +591,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> WhenItemIsUsed (i_0001b5bc): set s_22": {
+"10:  >> WhenItemIsUsed (i_0001b5bc): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -602,7 +602,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_22": {
+"1: s_readletter": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -741,11 +741,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_0 => EndQuest ()": {
+"15: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -757,11 +757,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> IfGivingItemToNpc (i_0001b5bc, n_qgiver): set s_1": {
+"16:  >> IfGivingItemToNpc (i_0001b5bc, n_qgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -787,11 +787,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> IfGivingItemToNpc (i_finger, n_qgiver): set s_1": {
+"17:  >> IfGivingItemToNpc (i_finger, n_qgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -817,11 +817,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_1 => QuestSuccess (i_reward)": {
+"18: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -861,11 +861,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_1 => EndQuest ()": {
+"19: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -2253,11 +2253,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"71: s_22 => CreateLogEntry (1035, 4)": {
+"71: s_readletter => CreateLogEntry (1035, 4)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_22": {
+"0: s_readletter": {
 "type": "State",
 "value": "22",
 "not": "False",

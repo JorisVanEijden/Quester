@@ -189,11 +189,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfItemFound (i_ingredient): set s_2 [Msg 1011]": {
+" 4:  >> IfItemFound (i_ingredient): set s_0000352f [Msg 1011]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_0000352f": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -212,11 +212,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_1": {
+" 5:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_questdone": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -242,11 +242,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_1 => QuestSuccess (i_gold)": {
+" 6: s_questdone => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -286,11 +286,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => EndQuest ()": {
+" 7: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -302,11 +302,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => EndQuest ()": {
+" 8: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

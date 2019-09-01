@@ -52,7 +52,7 @@
 "variable": "n_daedra",
 "gender": "Female",
 "facePictureIndex": 80,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
 "factionRaw": "0 [0x0000]",
@@ -224,11 +224,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 4:  >> IfItemFound (i_00000d04): set s_1": {
+" 4:  >> IfItemFound (i_00000d04): set s_00006a39": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_00006a39": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -247,11 +247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 5: s_1 => Say (1011)": {
+" 5: s_00006a39 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_00006a39": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -263,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 6: s_1 => CreateFoe(m_guardian, 1, 100%, 100)": {
+" 6: s_00006a39 => CreateFoe(m_guardian, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_00006a39": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -307,11 +307,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 7:  >> IfMobHurtByPlayer (m_guardian): set s_2": {
+" 7:  >> IfMobHurtByPlayer (m_guardian): set s_00000d65": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00000d65": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -330,11 +330,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 8: s_2 => Say (1013)": {
+" 8: s_00000d65 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_00000d65": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -346,11 +346,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 9:  >> IfGivingItemToNpc (i_00000d04, n_qgiver): set s_3": {
+" 9:  >> IfGivingItemToNpc (i_00000d04, n_qgiver): set s_reward": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -376,11 +376,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-"10: s_3 => QuestSuccess (i_mitem)": {
+"10: s_reward => QuestSuccess (i_mitem)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -420,11 +420,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-"11: s_3 => EndQuest ()": {
+"11: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -436,11 +436,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-"12: s_0 => EndQuest ()": {
+"12: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",

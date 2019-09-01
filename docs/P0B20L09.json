@@ -39,7 +39,7 @@
 "variable": "n_vamp",
 "gender": "Male",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Peryite",
 "factionRaw": "6 [0x0006]",
@@ -122,7 +122,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 1:  >> WhenPlayerHasItems (i_letter): set s_9": {
+" 1:  >> WhenPlayerHasItems (i_letter): set s_000033b2": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -133,7 +133,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_9": {
+"1: s_000033b2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -203,11 +203,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 3: s_9 >> StartTimer (t_queston); When it expires: set s_0": {
+" 3: s_000033b2 >> StartTimer (t_queston); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_000033b2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -226,7 +226,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 4:  >> WhenItemIsUsed (i_letter): set s_5": {
+" 4:  >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -237,7 +237,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_5": {
+"1: s_readletter": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -256,11 +256,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 5: s_5 => AddTopics (n_vamp)": {
+" 5: s_readletter => AddTopics (n_vamp)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_readletter": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -293,11 +293,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 6: s_5 => CreateLogEntry (1012, 0)": {
+" 6: s_readletter => CreateLogEntry (1012, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_readletter": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -323,11 +323,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 7: s_5 => EnsureNpcLocation (n_vamp)": {
+" 7: s_readletter => EnsureNpcLocation (n_vamp)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_readletter": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -353,11 +353,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 8:  >> IfNpcClicked (n_vamp): set s_1": {
+" 8:  >> IfNpcClicked (n_vamp): set s_vampclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -376,18 +376,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 9:  >> If (s_1): set s_6": {
+" 9:  >> If (s_vampclicked): set s_0001a6fa": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a6fa": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -420,11 +420,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"10: s_6 => Say (1011)": {
+"10: s_0001a6fa => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a6fa": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -436,11 +436,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"11: s_6 => AddLocationToMap (l_mondung)": {
+"11: s_0001a6fa => AddLocationToMap (l_mondung)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a6fa": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -459,11 +459,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"12: s_6 => CreateLogEntry (1013, 1)": {
+"12: s_0001a6fa => CreateLogEntry (1013, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a6fa": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -489,25 +489,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"13:  >> If (s_1 and not s_4): set s_2": {
+"13:  >> If (s_vampclicked and not s_0001a9a4): set s_nononono": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_nononono": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_4": {
+"2: not s_0001a9a4": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -533,25 +533,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"14: s_2 => Unset (s_1, s_2)": {
+"14: s_nononono => Unset (s_vampclicked, s_nononono)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_nononono": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_nononono": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -607,7 +607,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"16:  >> WhenAtLocation (l_mondung): set s_7": {
+"16:  >> WhenAtLocation (l_mondung): set s_00001a37": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -618,7 +618,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_00001a37": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -637,11 +637,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"17: s_7 => CreateFoe(m_00000d23, 12, 50%, 50)": {
+"17: s_00001a37 => CreateFoe(m_00000d23, 12, 50%, 30)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_00001a37": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -681,11 +681,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"18:  >> IfMobHurtByPlayer (m_wereboar): set s_8": {
+"18:  >> IfMobHurtByPlayer (m_wereboar): set s_0000d324": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_0000d324": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -704,11 +704,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"19: s_8 => PlaceItemOnMob (i_00001c21, m_wereboar)": {
+"19: s_0000d324 => PlaceItemOnMob (i_00001c21, m_wereboar)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000d324": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -734,11 +734,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"20: s_8 => Say (1021)": {
+"20: s_0000d324 => Say (1021)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_0000d324": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -750,11 +750,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"21:  >> IfMobsKilled (m_wereboar, 1): set s_4": {
+"21:  >> IfMobsKilled (m_wereboar, 1): set s_0001a9a4": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -780,11 +780,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"22: s_4 => Say (1020)": {
+"22: s_0001a9a4 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -796,11 +796,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"23:  >> IfGivingItemToNpc (i_00001c21, n_vamp): set s_3": {
+"23:  >> IfGivingItemToNpc (i_00001c21, n_vamp): set s_reward": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -826,11 +826,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"24: s_3 => QuestSuccess (i_00001c21)": {
+"24: s_reward => QuestSuccess (i_00001c21)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -870,11 +870,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"25: s_0 => AdjustReputationWithNpc (n_vamp, -5)": {
+"25: s_queston => AdjustReputationWithNpc (n_vamp, -5)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -900,11 +900,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"26: s_0 => EndQuest ()": {
+"26: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -916,11 +916,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"27: s_3 => EndQuest ()": {
+"27: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_reward": {
 "type": "State",
 "value": "3",
 "not": "False",

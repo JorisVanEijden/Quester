@@ -172,7 +172,7 @@
 "variable": "n_priest",
 "gender": "Male",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Sheogorath",
 "factionRaw": "9 [0x0009]",
@@ -185,7 +185,7 @@
 "variable": "n_noble",
 "gender": "Female",
 "facePictureIndex": 174,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Boethiah",
 "factionRaw": "10 [0x000A]",
@@ -498,7 +498,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => CreateFoe(m_guard, 1, 100%, 100)": {
+" 1:  => CreateFoe(m_guard, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1510,11 +1510,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_9 => CheckNpcReputation (s_11, n_tg, 10)": {
+"31: s_2letter => CheckNpcReputation (s_11, n_tg, 10)": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_2letter": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1547,11 +1547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 => CheckNpcReputation (s_12, n_000002e5, 10)": {
+"32: s_2letter => CheckNpcReputation (s_12, n_000002e5, 10)": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_2letter": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1584,11 +1584,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_9 => CheckNpcReputation (s_13, n_00000155, 10)": {
+"33: s_2letter => CheckNpcReputation (s_13, n_00000155, 10)": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_2letter": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1621,11 +1621,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_10 >> WhenPlayerHasItems (i_gem): set s_59": {
+"34: s_queston >> WhenPlayerHasItems (i_gem): set s_59": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_queston": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1882,7 +1882,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_13 >> WhenItemIsUsed (i_00006fbc): set s_61": {
+"42: s_13 >> WhenItemIsUsed (i_00006fbc): set s_000003ed": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -1893,7 +1893,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_61": {
+"1: s_000003ed": {
 "type": "State",
 "value": "61",
 "not": "False",
@@ -2233,7 +2233,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"53: s_20 => CreateFoe(m_guard2, 1, 100%, 100)": {
+"53: s_20 => CreateFoe(m_guard2, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -4144,11 +4144,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"116:  >> If (s_45 or s_46 or s_48 or s_47): set s_44": {
+"116:  >> If (s_45 or s_46 or s_48 or s_47): set s_00000643": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_44": {
+"0: s_00000643": {
 "type": "State",
 "value": "44",
 "not": "False",
@@ -4188,11 +4188,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"117: s_44 => CreateLogEntry (1059, 5)": {
+"117: s_00000643 => CreateLogEntry (1059, 5)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_44": {
+"0: s_00000643": {
 "type": "State",
 "value": "44",
 "not": "False",
@@ -4218,11 +4218,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"118: s_44 => ShowNpc (n_qgiver)": {
+"118: s_00000643 => ShowNpc (n_qgiver)": {
 "opCode": 48,
 "argCount": 2,
 "arguments:": {
-"0: s_44": {
+"0: s_00000643": {
 "type": "State",
 "value": "44",
 "not": "False",
@@ -4425,11 +4425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"127:  >> If (s_55 and not s_44): set s_49": {
+"127:  >> If (s_55 and not s_00000643): set s_mapdung": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_49": {
+"0: s_mapdung": {
 "type": "State",
 "value": "49",
 "not": "False",
@@ -4443,7 +4443,7 @@
 "index": "55",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_44": {
+"2: not s_00000643": {
 "type": "State",
 "value": "44",
 "not": "True",
@@ -4469,11 +4469,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"128: s_49 => CreateFoe(m_guard3, 1, 100%, 100)": {
+"128: s_mapdung => CreateFoe(m_guard3, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_49": {
+"0: s_mapdung": {
 "type": "State",
 "value": "49",
 "not": "False",
@@ -4513,11 +4513,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"129: s_49 => Say (1057)": {
+"129: s_mapdung => Say (1057)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_49": {
+"0: s_mapdung": {
 "type": "State",
 "value": "49",
 "not": "False",
@@ -4529,11 +4529,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"130: s_49 => Unset (s_51, s_52, s_53, s_54)": {
+"130: s_mapdung => Unset (s_51, s_52, s_53, s_54)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_49": {
+"0: s_mapdung": {
 "type": "State",
 "value": "49",
 "not": "False",
@@ -4573,11 +4573,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"131:  >> IfGivingItemToNpc (i_gem, n_qgiver): set s_50": {
+"131:  >> IfGivingItemToNpc (i_gem, n_qgiver): set s_00000644": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_50": {
+"0: s_00000644": {
 "type": "State",
 "value": "50",
 "not": "False",
@@ -4603,11 +4603,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"132: s_50 => QuestSuccess (i_reward)": {
+"132: s_00000644 => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_50": {
+"0: s_00000644": {
 "type": "State",
 "value": "50",
 "not": "False",
@@ -4647,11 +4647,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"133: s_50 => AdjustReputationWithNpc (n_qgiver, 10)": {
+"133: s_00000644 => AdjustReputationWithNpc (n_qgiver, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_50": {
+"0: s_00000644": {
 "type": "State",
 "value": "50",
 "not": "False",
@@ -4677,11 +4677,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"134: s_50 => AdjustLegalReputation (110)": {
+"134: s_00000644 => AdjustLegalReputation (110)": {
 "opCode": 65,
 "argCount": 2,
 "arguments:": {
-"0: s_50": {
+"0: s_00000644": {
 "type": "State",
 "value": "50",
 "not": "False",
@@ -4700,11 +4700,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"135: s_50 => EndQuest ()": {
+"135: s_00000644 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_50": {
+"0: s_00000644": {
 "type": "State",
 "value": "50",
 "not": "False",
@@ -4882,11 +4882,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"142:  >> If (s_52 and s_47): set s_57": {
+"142:  >> If (s_52 and s_47): set s_revenge": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -4926,11 +4926,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"143:  >> If (s_53 and s_46): set s_57": {
+"143:  >> If (s_53 and s_46): set s_revenge": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -4970,11 +4970,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"144:  >> If (s_51 and s_48): set s_57": {
+"144:  >> If (s_51 and s_48): set s_revenge": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -5014,11 +5014,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"145:  >> If (s_54 and s_45): set s_57": {
+"145:  >> If (s_54 and s_45): set s_revenge": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -5058,11 +5058,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"146: s_57 => CreateFoe(m_guard4, 1, 100%, 100)": {
+"146: s_revenge => CreateFoe(m_guard4, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -5102,11 +5102,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"147: s_57 => Say (1058)": {
+"147: s_revenge => Say (1058)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_57": {
+"0: s_revenge": {
 "type": "State",
 "value": "57",
 "not": "False",
@@ -5118,7 +5118,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"148:  >> If (s_10 and not s_50): set s_58": {
+"148:  >> If (s_queston and not s_00000644): set s_58": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -5129,14 +5129,14 @@
 "index": "58",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_queston": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_50": {
+"2: not s_00000644": {
 "type": "State",
 "value": "50",
 "not": "True",
@@ -5201,7 +5201,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"151:  >> If (s_21 and s_9): set s_60": {
+"151:  >> If (s_21 and s_2letter): set s_60": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -5219,7 +5219,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_2letter": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -5245,11 +5245,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"152: s_61 => CreateLogEntry (1027, 1)": {
+"152: s_000003ed => CreateLogEntry (1027, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_61": {
+"0: s_000003ed": {
 "type": "State",
 "value": "61",
 "not": "False",
@@ -5275,11 +5275,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"153: s_62 => HideNpc (n_qgiver)": {
+"153: s_delay => HideNpc (n_qgiver)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_62": {
+"0: s_delay": {
 "type": "State",
 "value": "62",
 "not": "False",
@@ -5298,11 +5298,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"154: s_62 => Say (1100)": {
+"154: s_delay => Say (1100)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_62": {
+"0: s_delay": {
 "type": "State",
 "value": "62",
 "not": "False",
@@ -5314,18 +5314,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"155:  >> If (s_10 and s_58): set s_63": {
+"155:  >> If (s_queston and s_58): set s_000003ef": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_63": {
+"0: s_000003ef": {
 "type": "State",
 "value": "63",
 "not": "False",
 "index": "63",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_queston": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -5358,11 +5358,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"156: s_63 => ShowNpc (n_qgiver)": {
+"156: s_000003ef => ShowNpc (n_qgiver)": {
 "opCode": 48,
 "argCount": 2,
 "arguments:": {
-"0: s_63": {
+"0: s_000003ef": {
 "type": "State",
 "value": "63",
 "not": "False",
@@ -5381,11 +5381,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"157: s_63 => EndQuest ()": {
+"157: s_000003ef => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_63": {
+"0: s_000003ef": {
 "type": "State",
 "value": "63",
 "not": "False",

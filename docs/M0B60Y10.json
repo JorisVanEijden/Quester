@@ -196,7 +196,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PickOneOf (s_8, s_9, s_9, s_9)": {
+" 3:  => PickOneOf (s_map, s_nomap, s_nomap, s_nomap)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -207,28 +207,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_map": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_9": {
+"3: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_9": {
+"4: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -284,11 +284,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_2dung => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -487,11 +487,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> If (s_2 and not s_1): set s_3": {
+"12:  >> If (s_2 and not s_1): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -531,11 +531,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => Unset (s_2, s_3)": {
+"13: s_clearclick => Unset (s_2, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -549,7 +549,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -695,7 +695,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> If (s_8 and s_2): set s_10": {
+"18:  >> If (s_map and s_2): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -706,7 +706,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_map": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -762,7 +762,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> If (s_9 and s_2): set s_11": {
+"20:  >> If (s_nomap and s_2): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -773,7 +773,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",

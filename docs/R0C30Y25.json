@@ -320,7 +320,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PickOneOf (s_13, s_14, s_14, s_14)": {
+" 4:  => PickOneOf (s_yesmap, s_nomap, s_nomap, s_nomap)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -331,28 +331,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_13": {
+"1: s_yesmap": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_14": {
+"2: s_nomap": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_14": {
+"3: s_nomap": {
 "type": "State",
 "value": "14",
 "not": "False",
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_14": {
+"4: s_nomap": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -394,7 +394,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> WhenItemIsUsed (i_map): set s_15": {
+" 6:  >> WhenItemIsUsed (i_map): set s_readmap": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -405,7 +405,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_15": {
+"1: s_readmap": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -424,11 +424,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_0": {
+" 7:  >> IfGivingItemToNpc (i_item2, n_questgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -454,11 +454,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => QuestSuccess (i_reward, i_item3)": {
+" 8: s_pcgetsgold => QuestSuccess (i_reward, i_item3)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -498,11 +498,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => EndQuest ()": {
+" 9: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -514,18 +514,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> If (s_12): set s_1": {
+"10:  >> If (s_2ndparton): set s_queston": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_12": {
+"1: s_2ndparton": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -558,25 +558,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_4 and not s_6): set s_1": {
+"11:  >> If (s_1stparton and not s_pchasitem2): set s_queston": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_1stparton": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_6": {
+"2: not s_pchasitem2": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -602,11 +602,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_1 => MakePermanent (i_item1)": {
+"12: s_queston => MakePermanent (i_item1)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -625,11 +625,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_1 => MakePermanent (i_item2)": {
+"13: s_queston => MakePermanent (i_item2)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -648,11 +648,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_1 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"14: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -678,11 +678,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_1 => EndQuest ()": {
+"15: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_queston": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -694,11 +694,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> IfGivingItemToNpc (i_item1, n_contact): set s_3": {
+"16:  >> IfGivingItemToNpc (i_item1, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -724,11 +724,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => CreateFoe(m_thief, 10, 100%, 100)": {
+"17: s_npcclicked => CreateFoe(m_thief, 10, 100%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -768,11 +768,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => PlaceItemOnCharacter (i_item2)": {
+"18: s_npcclicked => PlaceItemOnCharacter (i_item2)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -798,11 +798,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_3 => Say (1011)": {
+"19: s_npcclicked => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -814,11 +814,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 >> WhenAtLocation (l_thievesguild): set s_10": {
+"20: s_pchasitem2 >> WhenAtLocation (l_thievesguild): set s_10": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_pchasitem2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -844,11 +844,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_6 => PlaceItemAt (i_item2, l_thievesguild)": {
+"21: s_pchasitem2 => PlaceItemAt (i_item2, l_thievesguild)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_pchasitem2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -874,11 +874,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_6 >> StartTimer (t_2ndparton); When it expires: set s_12": {
+"22: s_pchasitem2 >> StartTimer (t_2ndparton); When it expires: set s_12": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_pchasitem2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -966,7 +966,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_8 >> WhenPlayerHasItems (i_item2): set s_6": {
+"26: s_8 >> WhenPlayerHasItems (i_item2): set s_pchasitem2": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -977,7 +977,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: s_pchasitem2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1123,7 +1123,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_11 => CreateFoe(m_guards, 2, 50%, 50)": {
+"31: s_11 => CreateFoe(m_guards, 2, 50%, 6)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1213,11 +1213,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_13 => PlaceItemOnMob (i_map, m_44000001)": {
+"34: s_yesmap => PlaceItemOnMob (i_map, m_44000001)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_13": {
+"0: s_yesmap": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1243,11 +1243,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_15 => ShowLocationOnMap (l_000348b1, 46, 423290)": {
+"35: s_readmap => ShowLocationOnMap (l_000348b1, 46, 423290)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_15": {
+"0: s_readmap": {
 "type": "State",
 "value": "15",
 "not": "False",

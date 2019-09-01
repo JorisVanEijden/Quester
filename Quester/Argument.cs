@@ -42,7 +42,9 @@ namespace Quester
                         variable = Program.Quest.Npcs[(short) Value].Variable;
                         break;
                     case RecordType.State:
-                        variable = "s_" + Program.Quest.States[(short) Value].Index;
+                        variable = Program.Quest.States[(short) Value].Variable;
+                        if (variable.StartsWith("s_400000"))
+                            variable = "s_" + Program.Quest.States[(short) Value].Index;
                         break;
                     case RecordType.Timer:
                         variable = Program.Quest.Timers[(short) Value].Variable;

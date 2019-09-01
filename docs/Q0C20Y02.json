@@ -52,7 +52,7 @@
 "variable": "n_other",
 "gender": "Female",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Boethiah",
 "factionRaw": "10 [0x000A]",
@@ -164,18 +164,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_1 => TakePlayerGold (s_7, 1000, n_other)": {
+" 3: s_pchasitem => TakePlayerGold (s_0000dc82, 1000, n_other)": {
 "opCode": 71,
 "argCount": 4,
 "arguments:": {
-"0: s_1": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_7": {
+"1: s_0000dc82": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -201,11 +201,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_1 => Say (1010)": {
+" 4: s_pchasitem => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -217,11 +217,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_7 => Say (1020)": {
+" 5: s_0000dc82 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_0000dc82": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -233,11 +233,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_1 => PlaceItemOnCharacter (i_magicitem)": {
+" 6: s_pchasitem => PlaceItemOnCharacter (i_magicitem)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -263,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_magicitem, n_questgiver): set s_0": {
+" 7:  >> IfGivingItemToNpc (i_magicitem, n_questgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -293,11 +293,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => QuestSuccess (i_reward)": {
+" 8: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -337,11 +337,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_4 => MakePermanent (i_magicitem)": {
+" 9: s_1stparton => MakePermanent (i_magicitem)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_1stparton": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -360,11 +360,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0 => EndQuest ()": {
+"10: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -376,11 +376,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_4 => EndQuest ()": {
+"11: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_1stparton": {
 "type": "State",
 "value": "4",
 "not": "False",

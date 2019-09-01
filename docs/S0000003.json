@@ -96,7 +96,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [19]": {
-" 0:  => PromptYesNo (s_7, s_8, 1000)": {
+" 0:  => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -107,14 +107,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -133,11 +133,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0 => EndQuest ()": {
+" 1: s_2shedungent => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2shedungent": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -276,11 +276,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_7 => PlaceItemAt (i_000037de, l_huntstart)": {
+" 6: s_yes => PlaceItemAt (i_000037de, l_huntstart)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -306,11 +306,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_7 >> StartTimer (t_2shedungent); When it expires: set s_0": {
+" 7: s_yes >> StartTimer (t_2shedungent); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -329,11 +329,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_7 => CreateLogEntry (1010, 0)": {
+" 8: s_yes => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -359,11 +359,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_7 => ShowLocationOnMap (l_huntstart, 16, 50966)": {
+" 9: s_yes => ShowLocationOnMap (l_huntstart, 16, 50966)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -396,11 +396,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_7 => Say (1002)": {
+"10: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -412,11 +412,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_8 => Say (1001)": {
+"11: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -428,11 +428,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_8 => EndQuest ()": {
+"12: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",

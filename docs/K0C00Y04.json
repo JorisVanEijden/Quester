@@ -210,11 +210,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => EndQuest ()": {
+" 3: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -539,11 +539,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> IfNpcClicked (n_qgiver): set s_5": {
+"17:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -562,18 +562,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> If (s_5 and s_1): set s_6": {
+"18:  >> If (s_qgclicked and s_1): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_reward": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -606,11 +606,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_6 => QuestSuccess (i_gold)": {
+"19: s_reward => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_reward": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -650,11 +650,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 => EndQuest ()": {
+"20: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_reward": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -666,18 +666,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: not s_6 => Unset (s_5)": {
+"21: not s_reward => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: not s_6": {
+"0: not s_reward": {
 "type": "State",
 "value": "6",
 "not": "True",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",

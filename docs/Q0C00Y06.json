@@ -187,11 +187,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 4:  >> IfMobsKilled (m_vamprival, 1): set s_1": {
+" 4:  >> IfMobsKilled (m_vamprival, 1): set s_0000dcba": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000dcba": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -217,11 +217,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 5: s_1 => Say (1020)": {
+" 5: s_0000dcba => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_0000dcba": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -233,11 +233,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 6:  >> IfNpcClicked (n_witch): set s_2": {
+" 6:  >> IfNpcClicked (n_witch): set s_vampclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -256,25 +256,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 7:  >> If (s_2 and not s_1): set not s_2": {
+" 7:  >> If (s_vampclicked and not s_0000dcba): set not s_vampclicked": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: not s_2": {
+"0: not s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "True",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_1": {
+"2: not s_0000dcba": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -300,25 +300,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 8:  >> If (s_2 and s_1): set s_0": {
+" 8:  >> If (s_vampclicked and s_0000dcba): set s_0000d500": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_0000d500": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_1": {
+"2: s_0000dcba": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -344,11 +344,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-" 9: s_0 => QuestSuccess (i_reward)": {
+" 9: s_0000d500 => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_0000d500": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -388,11 +388,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-"10: s_3 => EndQuest ()": {
+"10: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -404,11 +404,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 221
 },
-"11: s_0 => EndQuest ()": {
+"11: s_0000d500 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_0000d500": {
 "type": "State",
 "value": "0",
 "not": "False",

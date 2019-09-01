@@ -171,7 +171,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 2:  => PickOneOf (s_6, s_7, s_8, s_9)": {
+" 2:  => PickOneOf (s_00006f59, s_00006f5a, s_orsinium, s_00006f5c)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -182,28 +182,28 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_00006f59": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_7": {
+"2: s_00006f5a": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "1156761600 [0x44F2C800]"
 },
-"3: s_8": {
+"3: s_orsinium": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "1997668352 [0x77120000]"
 },
-"4: s_9": {
+"4: s_00006f5c": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -238,11 +238,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 4: s_6 => PlaceMobAtLocation (m_giant, l_mondung)": {
+" 4: s_00006f59 => PlaceMobAtLocation (m_giant, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_00006f59": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -268,11 +268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5: s_7 => PlaceMobAtLocation (m_mage, l_mondung)": {
+" 5: s_00006f5a => PlaceMobAtLocation (m_mage, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_00006f5a": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -298,11 +298,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6: s_8 => PlaceMobAtLocation (m_wereboar, l_mondung)": {
+" 6: s_orsinium => PlaceMobAtLocation (m_wereboar, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_orsinium": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -328,11 +328,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_9 => PlaceMobAtLocation (m_vampire, l_mondung)": {
+" 7: s_00006f5c => PlaceMobAtLocation (m_vampire, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_00006f5c": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -374,11 +374,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9:  >> IfMobHurtByPlayer (m_giant): set s_10": {
+" 9:  >> IfMobHurtByPlayer (m_giant): set s_0001a9a4": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -397,11 +397,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10:  >> IfMobHurtByPlayer (m_mage): set s_10": {
+"10:  >> IfMobHurtByPlayer (m_mage): set s_0001a9a4": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -420,11 +420,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11:  >> IfMobHurtByPlayer (m_vampire): set s_10": {
+"11:  >> IfMobHurtByPlayer (m_vampire): set s_0001a9a4": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -443,11 +443,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12:  >> IfMobHurtByPlayer (m_wereboar): set s_10": {
+"12:  >> IfMobHurtByPlayer (m_wereboar): set s_0001a9a4": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -466,11 +466,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13: s_10 => Say (1030)": {
+"13: s_0001a9a4 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: s_0001a9a4": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -482,11 +482,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"14:  >> IfMobsKilled (m_giant, 1): set s_3": {
+"14:  >> IfMobsKilled (m_giant, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -512,11 +512,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"15:  >> IfMobsKilled (m_mage, 1): set s_3": {
+"15:  >> IfMobsKilled (m_mage, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -542,11 +542,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"16:  >> IfMobsKilled (m_wereboar, 1): set s_3": {
+"16:  >> IfMobsKilled (m_wereboar, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -572,11 +572,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"17:  >> IfMobsKilled (m_vampire, 1): set s_3": {
+"17:  >> IfMobsKilled (m_vampire, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -602,11 +602,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"18: s_3 => EnsureNpcLocation (n_qgfriend)": {
+"18: s_mondead => EnsureNpcLocation (n_qgfriend)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -632,11 +632,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"19: s_3 => Say (1012)": {
+"19: s_mondead => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -648,11 +648,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"20:  >> IfNpcClicked (n_qgfriend): set s_4": {
+"20:  >> IfNpcClicked (n_qgfriend): set s_npcclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -671,25 +671,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"21:  >> If (s_4 and not s_3): set s_5": {
+"21:  >> If (s_npcclicked and not s_mondead): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_mondead": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -715,25 +715,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"22:  >> If (s_4 and s_3): set s_1": {
+"22:  >> If (s_npcclicked and s_mondead): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_mondead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -759,25 +759,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"23: s_5 => Unset (s_4, s_5)": {
+"23: s_clearclick => Unset (s_npcclicked, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -803,11 +803,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"24: s_1 => QuestSuccess (i_reward)": {
+"24: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -847,11 +847,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"25: s_0 => EndQuest ()": {
+"25: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_1stparton": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -863,11 +863,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"26: s_1 => EndQuest ()": {
+"26: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "1",
 "not": "False",

@@ -198,11 +198,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 3: not s_2 => CreateFoe(m_00006370, 179, 5%, 5)": {
+" 3: not s_npcclicked => CreateFoe(m_00006370, 179, 5%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_2": {
+"0: not s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -242,11 +242,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 4: not s_2 => CreateFoe(m_0000319f, 163, 5%, 5)": {
+" 4: not s_npcclicked => CreateFoe(m_0000319f, 163, 5%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_2": {
+"0: not s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -286,11 +286,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 5: not s_2 => CreateFoe(m_guards, 150, 5%, 5)": {
+" 5: not s_npcclicked => CreateFoe(m_guards, 150, 5%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_2": {
+"0: not s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -330,11 +330,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 6:  >> IfMobHurtByPlayer (m_0000319f): set s_6": {
+" 6:  >> IfMobHurtByPlayer (m_0000319f): set s_0000d216": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_0000d216": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -353,11 +353,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 7:  >> IfMobHurtByPlayer (m_00006370): set s_9": {
+" 7:  >> IfMobHurtByPlayer (m_00006370): set s_0001a45e": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_0001a45e": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -376,11 +376,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 8:  >> IfMobHurtByPlayer (m_guards): set s_10": {
+" 8:  >> IfMobHurtByPlayer (m_guards): set s_hitguard": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: s_hitguard": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -399,25 +399,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 9: s_6 => PromptYesNo (s_7, s_8, 1020)": {
+" 9: s_0000d216 => PromptYesNo (s_yes, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_6": {
+"0: s_0000d216": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_8": {
+"2: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -436,25 +436,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"10: s_9 => PromptYesNo (s_7, s_8, 1021)": {
+"10: s_0001a45e => PromptYesNo (s_yes, s_no, 1021)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_0001a45e": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_8": {
+"2: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -473,25 +473,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"11: s_10 => PromptYesNo (s_7, s_8, 1022)": {
+"11: s_hitguard => PromptYesNo (s_yes, s_no, 1022)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_10": {
+"0: s_hitguard": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_7": {
+"1: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_8": {
+"2: s_no": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -510,11 +510,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"12: s_7 => GiveItemToPlayer (i_weapons) [Msg 1023]": {
+"12: s_yes => GiveItemToPlayer (i_weapons) [Msg 1023]": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -533,11 +533,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"13: s_7 => DoneWithMob (m_0000319f, _)": {
+"13: s_yes => DoneWithMob (m_0000319f, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -563,11 +563,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"14: s_7 => DoneWithMob (m_00006370, _)": {
+"14: s_yes => DoneWithMob (m_00006370, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -593,11 +593,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"15: s_7 => DoneWithMob (m_guards, _)": {
+"15: s_yes => DoneWithMob (m_guards, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -623,11 +623,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"16: s_7 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"16: s_yes => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_yes": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -653,11 +653,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"17:  >> IfGivingItemToNpc (i_weapons, n_contact): set s_2": {
+"17:  >> IfGivingItemToNpc (i_weapons, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -683,11 +683,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"18: s_2 => Say (1010)": {
+"18: s_npcclicked => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -699,11 +699,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"19: s_2 => PlaceItemOnCharacter (i_gems)": {
+"19: s_npcclicked => PlaceItemOnCharacter (i_gems)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -729,11 +729,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"20:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_1": {
+"20:  >> IfGivingItemToNpc (i_gems, n_questgiver): set s_qgclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -759,11 +759,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"21: s_1 => QuestSuccess (i_reward)": {
+"21: s_qgclicked => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -803,11 +803,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"22: s_1 => EndQuest ()": {
+"22: s_qgclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -819,18 +819,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"23: s_3 >> WhenPlayerHasItems (i_gems): set s_12": {
+"23: s_1stparton >> WhenPlayerHasItems (i_gems): set s_keptgems": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_12": {
+"1: s_keptgems": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -863,11 +863,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"24: s_12 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"24: s_keptgems => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_keptgems": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -893,18 +893,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"25: s_3 >> WhenPlayerHasItems (i_weapons): set s_11": {
+"25: s_1stparton >> WhenPlayerHasItems (i_weapons): set s_000356fb": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_11": {
+"1: s_000356fb": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -937,11 +937,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"26: s_11 => AdjustReputationWithNpc (n_questgiver, -10)": {
+"26: s_000356fb => AdjustReputationWithNpc (n_questgiver, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_000356fb": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -967,11 +967,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"27: s_3 => MakePermanent (i_weapons)": {
+"27: s_1stparton => MakePermanent (i_weapons)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -990,11 +990,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"28: s_3 => MakePermanent (i_gems)": {
+"28: s_1stparton => MakePermanent (i_gems)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1013,11 +1013,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-"29: s_3 => EndQuest ()": {
+"29: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",

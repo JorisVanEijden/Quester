@@ -75,7 +75,7 @@
 "variable": "n_guardian",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Boethiah",
 "factionRaw": "10 [0x000A]",
@@ -88,7 +88,7 @@
 "variable": "n_priest",
 "gender": "Female",
 "facePictureIndex": 104,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Sheogorath",
 "factionRaw": "9 [0x0009]",
@@ -526,11 +526,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0 => EndQuest ()": {
+"10: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -1451,11 +1451,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (s_1 and s_7): set s_15": {
+"42:  >> If (s_1 and s_7): set s_atronach": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_15": {
+"0: s_atronach": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1495,11 +1495,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_15 => Say (1021)": {
+"43: s_atronach => Say (1021)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_15": {
+"0: s_atronach": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1610,11 +1610,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"48: s_19 => TakePlayerGold (s_18, 50, n_sneaker)": {
+"48: s_bribe => TakePlayerGold (s_18, 50, n_sneaker)": {
 "opCode": 71,
 "argCount": 4,
 "arguments:": {
-"0: s_19": {
+"0: s_bribe": {
 "type": "State",
 "value": "19",
 "not": "False",
@@ -1647,11 +1647,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"49: s_19 => PromptYesNo (s_17, s_20, 1023)": {
+"49: s_bribe => PromptYesNo (s_17, s_20, 1023)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_19": {
+"0: s_bribe": {
 "type": "State",
 "value": "19",
 "not": "False",
@@ -1910,7 +1910,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"58:  >> If (s_25 and s_7): set s_24": {
+"58:  >> If (s_qgclicked and s_7): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1921,7 +1921,7 @@
 "index": "24",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_25": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "25",
 "not": "False",
@@ -2146,11 +2146,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"64:  >> IfNpcClicked (n_qgiver): set s_25": {
+"64:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_25": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "25",
 "not": "False",
@@ -2169,7 +2169,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"65: not s_7 => Unset (s_14, s_25)": {
+"65: not s_7 => Unset (s_14, s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -2187,7 +2187,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_25": {
+"2: s_qgclicked": {
 "type": "State",
 "value": "25",
 "not": "False",

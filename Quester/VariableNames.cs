@@ -566,6 +566,8 @@ namespace Quester
             [0x00003333] = "daytime",
             [0x0006A575] = "incurability",
             [0x0001A9A9] = "informant1",
+            [0X0001B51C] = "shedungent",
+            [0x0000031A] = "out",
         };
 
         public static string LookUp(uint hash)

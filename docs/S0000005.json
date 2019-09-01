@@ -139,7 +139,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => PromptYesNo (s_8, s_9, 1000)": {
+" 2:  => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -150,14 +150,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -176,11 +176,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => UnsetQuestor (n_00000c7f)": {
+" 3: s_2shedungent => UnsetQuestor (n_00000c7f)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_2shedungent": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -199,11 +199,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => EndQuest ()": {
+" 4: s_2shedungent => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2shedungent": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -254,11 +254,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> If (s_3 and s_1): set s_2": {
+" 7:  >> If (s_3 and s_1): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -298,11 +298,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => QuestSuccess (i_magicitem)": {
+" 8: s_pcgetsgold => QuestSuccess (i_magicitem)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -342,11 +342,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => StartQuest (107, 107)": {
+" 9: s_pcgetsgold => StartQuest (107, 107)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -372,11 +372,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => CheckNpcReputation (s_11, n_00000c7f, 15)": {
+"10: s_pcgetsgold => CheckNpcReputation (s_11, n_00000c7f, 15)": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -409,11 +409,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => AdjustReputationWithNpc (n_00000c7f, 10)": {
+"11: s_pcgetsgold => AdjustReputationWithNpc (n_00000c7f, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -439,11 +439,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 => StopNpcConversation (n_00000c7f)": {
+"12: s_pcgetsgold => StopNpcConversation (n_00000c7f)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -462,11 +462,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_2 => UnsetQuestor (n_00000c7f)": {
+"13: s_pcgetsgold => UnsetQuestor (n_00000c7f)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -485,11 +485,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_2 => StopTimer (t_2shedungent)": {
+"14: s_pcgetsgold => StopTimer (t_2shedungent)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -531,11 +531,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_8 => Say (1002)": {
+"16: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -547,11 +547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_8 => SetQuestor (n_00000c7f)": {
+"17: s_yes => SetQuestor (n_00000c7f)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -570,11 +570,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_8 => ShowLocationOnMap (l_huntstart, 16, 50966)": {
+"18: s_yes => ShowLocationOnMap (l_huntstart, 16, 50966)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_8": {
+"0: s_yes": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -607,11 +607,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_9 => Say (1001)": {
+"19: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -623,11 +623,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_9 => UnsetQuestor (n_00000c7f)": {
+"20: s_no => UnsetQuestor (n_00000c7f)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -646,11 +646,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_9 => EndQuest ()": {
+"21: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_no": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -662,11 +662,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_3 and not s_1): set s_10": {
+"22:  >> If (s_3 and not s_1): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -706,11 +706,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_10 => Unset (s_3, s_10)": {
+"23: s_clearclick => Unset (s_3, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -724,7 +724,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_10": {
+"2: s_clearclick": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -750,7 +750,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_11 and s_2): set s_12": {
+"24:  >> If (s_11 and s_pcgetsgold): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -768,7 +768,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",

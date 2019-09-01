@@ -264,11 +264,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5:  >> IfItemFound (i_sage): set s_2": {
+" 5:  >> IfItemFound (i_sage): set s_pchasitem": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -287,11 +287,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6: s_2 => EnsureNpcLocation (n_qgfriend)": {
+" 6: s_pchasitem => EnsureNpcLocation (n_qgfriend)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -317,11 +317,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_2 => Say (1011)": {
+" 7: s_pchasitem => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -333,11 +333,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 8:  >> IfGivingItemToNpc (i_sage, n_qgfriend): set s_0": {
+" 8:  >> IfGivingItemToNpc (i_sage, n_qgfriend): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -363,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9: s_0 => QuestSuccess (i_reward)": {
+" 9: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -407,11 +407,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_3 => AdjustReputationWithNpc (n_qgfriend, -10)": {
+"10: s_1stparton => AdjustReputationWithNpc (n_qgfriend, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -437,11 +437,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11: s_3 => MakePermanent (i_sage)": {
+"11: s_1stparton => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -460,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12: s_0 >> StartTimer (t_delay); When it expires: set s_5": {
+"12: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -483,11 +483,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13: s_5 => EndQuest ()": {
+"13: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_delay": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -499,11 +499,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"14: s_3 => EndQuest ()": {
+"14: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",

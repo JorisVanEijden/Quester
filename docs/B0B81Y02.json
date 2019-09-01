@@ -301,7 +301,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PickOneOf (s_6, s_7, s_7)": {
+" 3:  => PickOneOf (s_ancientlich, s_lich, s_lich)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -312,21 +312,21 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: s_ancientlich": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_7": {
+"2: s_lich": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_7": {
+"3: s_lich": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -345,7 +345,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PickOneOf (s_8, s_9, s_10, s_11)": {
+" 4:  => PickOneOf (s_artifact1, s_artifact2, s_artifact3, s_artifact4)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -356,28 +356,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_artifact1": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_artifact2": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_10": {
+"3: s_artifact3": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_11": {
+"4: s_artifact4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -449,7 +449,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 >> WhenItemIsUsed (i_map): set s_12": {
+" 7: s_1 >> WhenItemIsUsed (i_map): set s_readmap": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -460,7 +460,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_12": {
+"1: s_readmap": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -479,11 +479,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_clickqgiver": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_clickqgiver": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -502,11 +502,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => QuestSuccess ()": {
+" 9: s_clickqgiver => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_clickqgiver": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -546,11 +546,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => RemoveLogFromSlot (0)": {
+"10: s_clickqgiver => RemoveLogFromSlot (0)": {
 "opCode": 24,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_clickqgiver": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -569,7 +569,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_2 and not s_1): set s_3": {
+"11:  >> If (s_clickqgiver and not s_1): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -580,7 +580,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -613,7 +613,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => Unset (s_2, s_3)": {
+"12: s_3 => Unset (s_clickqgiver, s_3)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -624,7 +624,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -657,11 +657,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_6 => PlaceItemOnMob (i_map, m_44000000)": {
+"13: s_ancientlich => PlaceItemOnMob (i_map, m_44000000)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_ancientlich": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -687,11 +687,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_6 => PlaceMobAtLocation (m_44000000, l_dungeon)": {
+"14: s_ancientlich => PlaceMobAtLocation (m_44000000, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_ancientlich": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -717,11 +717,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_7 => PlaceItemOnMob (i_map, m_44000001)": {
+"15: s_lich => PlaceItemOnMob (i_map, m_44000001)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_lich": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -747,11 +747,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_7 => PlaceMobAtLocation (m_44000001, l_dungeon)": {
+"16: s_lich => PlaceMobAtLocation (m_44000001, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_lich": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -777,11 +777,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_8 => PlaceItemAt (i_41000003, l_mageguild)": {
+"17: s_artifact1 => PlaceItemAt (i_41000003, l_mageguild)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_artifact1": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -807,11 +807,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_9 => PlaceItemAt (i_41000002, l_mageguild)": {
+"18: s_artifact2 => PlaceItemAt (i_41000002, l_mageguild)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_artifact2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -837,11 +837,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_10 => PlaceItemAt (i_41000004, l_mageguild)": {
+"19: s_artifact3 => PlaceItemAt (i_41000004, l_mageguild)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_artifact3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -867,11 +867,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_11 => PlaceItemAt (i_41000001, l_mageguild)": {
+"20: s_artifact4 => PlaceItemAt (i_41000001, l_mageguild)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_artifact4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -897,11 +897,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_12 >> StartTimer (t_4000001e); When it expires: set s_30": {
+"21: s_readmap >> StartTimer (t_4000001e); When it expires: set s_30": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_12": {
+"0: s_readmap": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -920,11 +920,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_12 => AddLocationToMap (l_dungeon2)": {
+"22: s_readmap => AddLocationToMap (l_dungeon2)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_12": {
+"0: s_readmap": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -943,11 +943,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_12 => PlaceNpcAt (n_wizard, l_dungeon2)": {
+"23: s_readmap => PlaceNpcAt (n_wizard, l_dungeon2)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_readmap": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -996,7 +996,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25:  >> If (s_8 and s_13): set s_14": {
+"25:  >> If (s_artifact1 and s_13): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1007,7 +1007,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_artifact1": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1040,7 +1040,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_14 => PromptYesNo (s_21, s_22, 1031)": {
+"26: s_14 => PromptYesNo (s_yes, s_no, 1031)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1051,14 +1051,14 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_21": {
+"1: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_22": {
+"2: s_no": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1077,7 +1077,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> If (s_9 and s_13): set s_15": {
+"27:  >> If (s_artifact2 and s_13): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1088,7 +1088,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_artifact2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1121,7 +1121,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_15 => PromptYesNo (s_21, s_22, 1032)": {
+"28: s_15 => PromptYesNo (s_yes, s_no, 1032)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1132,14 +1132,14 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_21": {
+"1: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_22": {
+"2: s_no": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1158,7 +1158,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29:  >> If (s_10 and s_13): set s_16": {
+"29:  >> If (s_artifact3 and s_13): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1169,7 +1169,7 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_artifact3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1202,7 +1202,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_16 => PromptYesNo (s_21, s_22, 1033)": {
+"30: s_16 => PromptYesNo (s_yes, s_no, 1033)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1213,14 +1213,14 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_21": {
+"1: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_22": {
+"2: s_no": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1239,18 +1239,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31:  >> If (s_11 and s_13): set s_17": {
+"31:  >> If (s_artifact4 and s_13): set s_potion": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_17": {
+"0: s_potion": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_11": {
+"1: s_artifact4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1283,25 +1283,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_17 => PromptYesNo (s_21, s_22, 1034)": {
+"32: s_potion => PromptYesNo (s_yes, s_no, 1034)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_17": {
+"0: s_potion": {
 "type": "State",
 "value": "17",
 "not": "False",
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_21": {
+"1: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_22": {
+"2: s_no": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1500,11 +1500,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39: s_21 >> WhenAtLocation (l_mageguild): set s_25": {
+"39: s_yes >> WhenAtLocation (l_mageguild): set s_25": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_21": {
+"0: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1530,11 +1530,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_21 => AddLocationToMap (l_dungeon3) [Msg 1035]": {
+"40: s_yes => AddLocationToMap (l_dungeon3) [Msg 1035]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_21": {
+"0: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1553,11 +1553,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_21 => CreateLogEntry (1041, 1)": {
+"41: s_yes => CreateLogEntry (1041, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_21": {
+"0: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1583,11 +1583,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_21 => PlaceItemOnCharacter (i_41000006)": {
+"42: s_yes => PlaceItemOnCharacter (i_41000006)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_21": {
+"0: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1613,11 +1613,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_21 => PlaceMobAtLocation (m_ghost, l_dungeon3)": {
+"43: s_yes => PlaceMobAtLocation (m_ghost, l_dungeon3)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_21": {
+"0: s_yes": {
 "type": "State",
 "value": "21",
 "not": "False",
@@ -1643,11 +1643,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44: s_22 => Say (1030)": {
+"44: s_no => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_22": {
+"0: s_no": {
 "type": "State",
 "value": "22",
 "not": "False",
@@ -1659,11 +1659,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45:  >> IfMobsKilled (m_ghost, 1): set s_23": {
+"45:  >> IfMobsKilled (m_ghost, 1): set s_0000d23a": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_23": {
+"0: s_0000d23a": {
 "type": "State",
 "value": "23",
 "not": "False",
@@ -1689,11 +1689,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46: s_23 >> WhenPlayerHasItems (i_41000006): set s_24": {
+"46: s_0000d23a >> WhenPlayerHasItems (i_41000006): set s_24": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_23": {
+"0: s_0000d23a": {
 "type": "State",
 "value": "23",
 "not": "False",
@@ -1779,7 +1779,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"49: s_25 => CreateFoe(m_battlemage, 5, 50%, 50)": {
+"49: s_25 => CreateFoe(m_battlemage, 5, 50%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1823,7 +1823,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"50:  >> If (s_8 and s_18): set s_26": {
+"50:  >> If (s_artifact1 and s_18): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1834,7 +1834,7 @@
 "index": "26",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_artifact1": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1890,7 +1890,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"52:  >> If (s_9 and s_18): set s_27": {
+"52:  >> If (s_artifact2 and s_18): set s_27": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1901,7 +1901,7 @@
 "index": "27",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_artifact2": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1957,7 +1957,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"54:  >> If (s_10 and s_18): set s_28": {
+"54:  >> If (s_artifact3 and s_18): set s_28": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1968,7 +1968,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_artifact3": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -2024,7 +2024,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"56:  >> If (s_11 and s_18): set s_29": {
+"56:  >> If (s_artifact4 and s_18): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2035,7 +2035,7 @@
 "index": "29",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_11": {
+"1: s_artifact4": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -2107,25 +2107,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"59:  >> If (s_0 and not s_12): set s_31": {
+"59:  >> If (s_2dung and not s_readmap): set s_questdone": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_31": {
+"0: s_questdone": {
 "type": "State",
 "value": "31",
 "not": "False",
 "index": "31",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_12": {
+"2: not s_readmap": {
 "type": "State",
 "value": "12",
 "not": "True",
@@ -2151,11 +2151,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"60: s_31 => EndQuest ()": {
+"60: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_31": {
+"0: s_questdone": {
 "type": "State",
 "value": "31",
 "not": "False",
@@ -2167,7 +2167,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"61:  >> If (s_3 and s_0): set s_32": {
+"61:  >> If (s_3 and s_2dung): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2185,7 +2185,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",

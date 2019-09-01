@@ -105,7 +105,7 @@
 "variable": "n_vampire",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Peryite",
 "factionRaw": "6 [0x0006]",
@@ -300,7 +300,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PickOneOf (s_8, s_9, s_9, s_9)": {
+" 4:  => PickOneOf (s_yesmap, s_nomap, s_nomap, s_nomap)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -311,28 +311,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_yesmap": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_9": {
+"3: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_9": {
+"4: s_nomap": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -344,11 +344,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => AdjustReputationWithNpc (n_questgiver, -20)": {
+" 5: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -374,11 +374,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => EndQuest ()": {
+" 6: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -390,11 +390,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_sage, n_contact): set s_1": {
+" 7:  >> IfGivingItemToNpc (i_sage, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -420,11 +420,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => QuestSuccess (i_reward)": {
+" 8: s_npcclicked => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -464,11 +464,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => EndQuest ()": {
+" 9: s_npcclicked => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -480,11 +480,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfGivingItemToNpc (i_sage, n_vampire): set s_2": {
+"10:  >> IfGivingItemToNpc (i_sage, n_vampire): set s_vampclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -510,25 +510,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => PromptYesNo (s_3, s_4, 1011)": {
+"11: s_vampclicked => PromptYesNo (s_thankyou, s_gimme, 1011)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_2": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_gimme": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -547,11 +547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => PlaceItemOnCharacter (i_vampreward)": {
+"12: s_thankyou => PlaceItemOnCharacter (i_vampreward)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -577,11 +577,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => PlaceItemOnCharacter (i_vampitem)": {
+"13: s_thankyou => PlaceItemOnCharacter (i_vampitem)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -607,11 +607,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => Say (1012)": {
+"14: s_thankyou => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -623,11 +623,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => MakePermanent (i_vampitem)": {
+"15: s_thankyou => MakePermanent (i_vampitem)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -646,11 +646,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => MakePermanent (i_vampreward)": {
+"16: s_thankyou => MakePermanent (i_vampreward)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -669,11 +669,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => AdjustReputationWithNpc (n_vampire, 10)": {
+"17: s_thankyou => AdjustReputationWithNpc (n_vampire, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -699,11 +699,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_4 => PlaceItemOnCharacter (i_sage)": {
+"18: s_gimme => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_gimme": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -729,11 +729,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_4 => Say (1013)": {
+"19: s_gimme => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_gimme": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -745,11 +745,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_4 => AdjustReputationWithNpc (n_vampire, -5)": {
+"20: s_gimme => AdjustReputationWithNpc (n_vampire, -5)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_gimme": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -828,11 +828,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 => ShowLocationOnMap (l_0001bb58, 11, 484567)": {
+"23: s_readmap => ShowLocationOnMap (l_0001bb58, 11, 484567)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_readmap": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -865,18 +865,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_8 and s_6): set s_10": {
+"24:  >> If (s_yesmap and s_6): set s_placemap": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_placemap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_yesmap": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -909,18 +909,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_10 >> WhenItemIsUsed (i_map): set s_7": {
+"25: s_placemap >> WhenItemIsUsed (i_map): set s_readmap": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_placemap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: s_readmap": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -939,11 +939,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_10 => PlaceItemOnMob (i_map, m_vampires)": {
+"26: s_placemap => PlaceItemOnMob (i_map, m_vampires)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_placemap": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -992,7 +992,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_11 >> WhenItemIsUsed (i_note): set s_12": {
+"28: s_11 >> WhenItemIsUsed (i_note): set s_readnote": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -1003,7 +1003,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_12": {
+"1: s_readnote": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1052,11 +1052,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_12 => AddTopics (l_vamphouse)": {
+"30: s_readnote => AddTopics (l_vamphouse)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_12": {
+"0: s_readnote": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1089,11 +1089,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_12 => PlaceNpcAt (n_vampire, l_vamphouse)": {
+"31: s_readnote => PlaceNpcAt (n_vampire, l_vamphouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_readnote": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1119,11 +1119,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_12 => EnsureNpcLocation (l_vamphouse)": {
+"32: s_readnote => EnsureNpcLocation (l_vamphouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_readnote": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1149,11 +1149,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (not s_5 and not s_3): set s_13": {
+"33:  >> If (not s_5 and not s_thankyou): set s_conhouse": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1167,7 +1167,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_3": {
+"2: not s_thankyou": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -1193,11 +1193,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_13 => CreateFoe(m_vampires, 10, 25%, 25)": {
+"34: s_conhouse => CreateFoe(m_vampires, 10, 25%, 8)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1237,11 +1237,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_13 => CreateFoe(m_vampleader, 20, 100%, 100)": {
+"35: s_conhouse => CreateFoe(m_vampleader, 20, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_13": {
+"0: s_conhouse": {
 "type": "State",
 "value": "13",
 "not": "False",

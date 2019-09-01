@@ -65,7 +65,7 @@
 "variable": "n_dummydaedra",
 "gender": "Female",
 "facePictureIndex": 102,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
 "factionRaw": "0 [0x0000]",
@@ -197,11 +197,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 3: not s_3 => CreateFoe(m_daedra, 5, 33%, 33)": {
+" 3: not s_npcclicked => CreateFoe(m_daedra, 5, 33%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_3": {
+"0: not s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -241,11 +241,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 4:  >> IfMobHurtByPlayer (m_daedra): set s_7 [Msg 1020]": {
+" 4:  >> IfMobHurtByPlayer (m_daedra): set s_0000d20d [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d20d": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -264,11 +264,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 5:  >> IfGivingItemToNpc (i_sage, n_chemist): set s_3": {
+" 5:  >> IfGivingItemToNpc (i_sage, n_chemist): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -294,11 +294,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 6: s_3 => Say (1010)": {
+" 6: s_npcclicked => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -310,11 +310,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 7: s_3 >> StartTimer (t_2ndparton); When it expires: set s_1": {
+" 7: s_npcclicked >> StartTimer (t_2ndparton); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -333,11 +333,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 8:  >> IfNpcClicked (n_questgiver): set s_6": {
+" 8:  >> IfNpcClicked (n_questgiver): set s_0001b11f": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_0001b11f": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -356,25 +356,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 9:  >> If (s_6 and s_3): set s_2": {
+" 9:  >> If (s_0001b11f and s_npcclicked): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_0001b11f": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -400,11 +400,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"10: s_2 => QuestSuccess (i_reward)": {
+"10: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -444,25 +444,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"11:  >> If (s_0 and not s_3): set s_5": {
+"11:  >> If (s_1stparton and not s_npcclicked): set s_queston": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0": {
+"1: s_1stparton": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -488,11 +488,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"12: s_3 => AdjustReputationWithNpc (n_dummydaedra, -20)": {
+"12: s_npcclicked => AdjustReputationWithNpc (n_dummydaedra, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -518,11 +518,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"13: s_1 => AdjustReputationWithNpc (n_questgiver, -30)": {
+"13: s_2ndparton => AdjustReputationWithNpc (n_questgiver, -30)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_2ndparton": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -548,11 +548,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"14: s_5 => AdjustReputationWithNpc (n_questgiver, -30)": {
+"14: s_queston => AdjustReputationWithNpc (n_questgiver, -30)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -578,11 +578,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"15: s_5 => MakePermanent (i_sage)": {
+"15: s_queston => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -601,11 +601,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"16: s_5 => EndQuest ()": {
+"16: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -617,11 +617,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"17: s_2 => EndQuest ()": {
+"17: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -633,11 +633,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-"18: s_1 => EndQuest ()": {
+"18: s_2ndparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_2ndparton": {
 "type": "State",
 "value": "1",
 "not": "False",

@@ -55,7 +55,7 @@
 "variable": "n_priest",
 "gender": "Female",
 "facePictureIndex": 201,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Sheogorath",
 "factionRaw": "9 [0x0009]",
@@ -68,7 +68,7 @@
 "variable": "n_ruler",
 "gender": "Female",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Malacath",
 "factionRaw": "7 [0x0007]",
@@ -399,11 +399,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => Say (1020)": {
+" 9: s_traveltime => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -415,11 +415,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0 => StopNpcEscort (n_betrothed)": {
+"10: s_traveltime => StopNpcEscort (n_betrothed)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -438,11 +438,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_0 => StopNpcEscort (n_qgiver)": {
+"11: s_traveltime => StopNpcEscort (n_qgiver)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -461,11 +461,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_0 => ShowNpc (n_qgiver)": {
+"12: s_traveltime => ShowNpc (n_qgiver)": {
 "opCode": 48,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -484,11 +484,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_0 => EndQuest ()": {
+"13: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -569,7 +569,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_2 => CreateFoe(m_44000000, 1, 15%, 15)": {
+"17: s_2 => CreateFoe(m_44000000, 1, 15%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -613,7 +613,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => CreateFoe(m_44000001, 2, 50%, 50)": {
+"18: s_3 => CreateFoe(m_44000001, 2, 50%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -657,11 +657,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfMobHurtByPlayer (m_44000001): set s_4 [Msg 1012]": {
+"19:  >> IfMobHurtByPlayer (m_44000001): set s_dummy [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_dummy": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -680,11 +680,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfMobHurtByPlayer (m_44000000): set s_4 [Msg 1013]": {
+"20:  >> IfMobHurtByPlayer (m_44000000): set s_dummy [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_dummy": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -906,11 +906,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (not s_1 and s_5): set s_6": {
+"28:  >> If (not s_1 and s_5): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_clearclick": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -950,11 +950,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_6 => Unset (s_5, s_6)": {
+"29: s_clearclick => Unset (s_5, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_clearclick": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -968,7 +968,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_clearclick": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -994,11 +994,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_5 and not s_3): set s_7": {
+"30:  >> If (s_5 and not s_3): set s_questdone": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_questdone": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1038,11 +1038,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_7 => ShowNpc (n_qgiver)": {
+"31: s_questdone => ShowNpc (n_qgiver)": {
 "opCode": 48,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_questdone": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1061,11 +1061,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_7 => EndQuest ()": {
+"32: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_questdone": {
 "type": "State",
 "value": "7",
 "not": "False",

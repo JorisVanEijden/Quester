@@ -52,7 +52,7 @@
 "variable": "n_dummydaedra",
 "gender": "Female",
 "facePictureIndex": 249,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "None",
 "factionRaw": "0 [0x0000]",
@@ -263,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -279,18 +279,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> If (s_4 and s_10 and not s_6): set s_1": {
+" 6:  >> If (s_qgclicked and s_10 and not s_6): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -323,11 +323,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => QuestSuccess (i_book)": {
+" 7: s_reward => QuestSuccess (i_book)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -367,7 +367,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  => Unset (s_4)": {
+" 8:  => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -378,7 +378,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -411,11 +411,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => EndQuest ()": {
+" 9: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_reward": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -427,11 +427,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => PlaceMobAtLocation (m_daedra, l_0000d527)": {
+"10: s_out => PlaceMobAtLocation (m_daedra, l_0000d527)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_out": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -457,11 +457,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfNpcClicked (n_qgiver): set s_4": {
+"11:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -510,7 +510,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_5 => CreateFoe(m_firedaedra, 1, 100%, 100) [Msg 1051]": {
+"13: s_5 => CreateFoe(m_firedaedra, 1, 100%, 1) [Msg 1051]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -637,7 +637,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_8 >> WhenPlayerCasts (57): set s_2": {
+"17: s_8 >> WhenPlayerCasts (57): set s_out": {
 "opCode": 73,
 "argCount": 3,
 "arguments:": {
@@ -648,7 +648,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_out": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -697,7 +697,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> If (s_4 and s_6): set s_9": {
+"19:  >> If (s_qgclicked and s_6): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -708,7 +708,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -773,7 +773,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_2 and not s_6): set s_10": {
+"22:  >> If (s_out and not s_6): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -784,7 +784,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_out": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -877,8 +877,8 @@
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000031a": {
-"variable": "s_0000031a",
+" 2: s_out": {
+"variable": "s_out",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2

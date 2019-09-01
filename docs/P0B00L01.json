@@ -49,7 +49,7 @@
 "variable": "n_vampire",
 "gender": "Male",
 "facePictureIndex": 0,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Peryite",
 "factionRaw": "6 [0x0006]",
@@ -91,11 +91,11 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [24]": {
-" 0: s_13 >> StartTimer (t_1stparton); When it expires: set s_6": {
+" 0: s_000033b2 >> StartTimer (t_1stparton); When it expires: set s_6": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_13": {
+"0: s_000033b2": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -137,7 +137,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 2:  >> WhenPlayerHasItems (i_000038a3): set s_13": {
+" 2:  >> WhenPlayerHasItems (i_000038a3): set s_000033b2": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -148,7 +148,7 @@
 "index": "255",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_13": {
+"1: s_000033b2": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -255,11 +255,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 5: s_5 => EnsureNpcLocation (n_pawn)": {
+" 5: s_vampclicked => EnsureNpcLocation (n_pawn)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -315,7 +315,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 7:  >> WhenItemIsUsed (i_000038a3): set s_12": {
+" 7:  >> WhenItemIsUsed (i_000038a3): set s_00035da3": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -326,7 +326,7 @@
 "index": "255",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_12": {
+"1: s_00035da3": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -345,11 +345,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 8: s_12 => AddTopics (n_vampire)": {
+" 8: s_00035da3 => AddTopics (n_vampire)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_12": {
+"0: s_00035da3": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -382,11 +382,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 9: s_12 => CreateLogEntry (1026, 0)": {
+" 9: s_00035da3 => CreateLogEntry (1026, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_12": {
+"0: s_00035da3": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -412,11 +412,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"10:  >> IfGivingItemToNpc (i_000038a3, n_vampire): set s_5": {
+"10:  >> IfGivingItemToNpc (i_000038a3, n_vampire): set s_vampclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -442,11 +442,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"11: s_5 => Say (1002)": {
+"11: s_vampclicked => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -458,11 +458,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"12: s_5 => PlaceItemOnCharacter (i_letter)": {
+"12: s_vampclicked => PlaceItemOnCharacter (i_letter)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -488,11 +488,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"13: s_5 => CreateLogEntry (1025, 1)": {
+"13: s_vampclicked => CreateLogEntry (1025, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -518,11 +518,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"14: s_5 => AddTopics (n_pawn)": {
+"14: s_vampclicked => AddTopics (n_pawn)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -555,11 +555,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"15:  >> IfGivingItemToNpc (i_letter, n_pawn): set s_4": {
+"15:  >> IfGivingItemToNpc (i_letter, n_pawn): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -585,11 +585,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"16: s_4 => Say (1010)": {
+"16: s_npcclicked => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -601,11 +601,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"17: s_4 => AdjustReputationWithNpc (n_vampire, 5)": {
+"17: s_npcclicked => AdjustReputationWithNpc (n_vampire, 5)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -631,11 +631,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"18:  >> IfNpcClicked (n_vampire): set s_11": {
+"18:  >> IfNpcClicked (n_vampire): set s_0006f16e": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_0006f16e": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -654,25 +654,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"19:  >> If (s_11 and not s_4): set s_8": {
+"19:  >> If (s_0006f16e and not s_npcclicked): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_clearclick": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_11": {
+"1: s_0006f16e": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "-2101402892 [0x82BF22F4]"
 },
-"2: not s_4": {
+"2: not s_npcclicked": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -698,25 +698,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"20: s_8 => Unset (s_11, s_8)": {
+"20: s_clearclick => Unset (s_0006f16e, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_clearclick": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_11": {
+"1: s_0006f16e": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "-2101402892 [0x82BF22F4]"
 },
-"2: s_8": {
+"2: s_clearclick": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -742,11 +742,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"21: s_11 => QuestSuccess (i_reward)": {
+"21: s_0006f16e => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_0006f16e": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -786,11 +786,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"22: s_11 => EndQuest ()": {
+"22: s_0006f16e => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_0006f16e": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -802,11 +802,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"23: s_6 => EndQuest ()": {
+"23: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_1stparton": {
 "type": "State",
 "value": "6",
 "not": "False",

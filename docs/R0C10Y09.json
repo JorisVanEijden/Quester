@@ -217,7 +217,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 4:  >> WhenAtLocation (l_hidingplace): set s_6": {
+" 4:  >> WhenAtLocation (l_hidingplace): set s_000d3fef": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -228,7 +228,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_000d3fef": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -247,11 +247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 5: s_6 => CreateFoe(m_0000d11b, 2, 30%, 30)": {
+" 5: s_000d3fef => CreateFoe(m_0000d11b, 2, 30%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_000d3fef": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -291,11 +291,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 6:  >> IfMobHurtByPlayer (m_0000d11b): set s_7 [Msg 1020]": {
+" 6:  >> IfMobHurtByPlayer (m_0000d11b): set s_00001a0d [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_00001a0d": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -314,11 +314,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 7:  >> IfNpcClicked (n_spy): set s_2": {
+" 7:  >> IfNpcClicked (n_spy): set s_pchasitem": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -337,11 +337,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 8: s_2 => PlaceItemOnCharacter (i_sage)": {
+" 8: s_pchasitem => PlaceItemOnCharacter (i_sage)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -367,11 +367,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 9: s_2 => Say (1010)": {
+" 9: s_pchasitem => Say (1010)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_pchasitem": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -383,11 +383,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"10:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_0": {
+"10:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -413,11 +413,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"11: s_0 => QuestSuccess (i_reward)": {
+"11: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -457,11 +457,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"12: s_5 => MakePermanent (i_sage)": {
+"12: s_1stparton => MakePermanent (i_sage)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_1stparton": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -480,11 +480,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"13: s_5 => AdjustReputationWithNpc (n_questgiver, -10)": {
+"13: s_1stparton => AdjustReputationWithNpc (n_questgiver, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_1stparton": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -510,11 +510,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"14: s_5 => EndQuest ()": {
+"14: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_1stparton": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -526,11 +526,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"15: s_0 => EndQuest ()": {
+"15: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",

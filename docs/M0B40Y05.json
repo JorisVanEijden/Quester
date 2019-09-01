@@ -237,7 +237,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PickOneOf (s_9, s_10, s_10, s_9)": {
+" 4:  => PickOneOf (s_map, s_nomap, s_nomap, s_map)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -248,28 +248,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_map": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_10": {
+"2: s_nomap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_10": {
+"3: s_nomap": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_9": {
+"4: s_map": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -311,11 +311,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => EndQuest ()": {
+" 6: s_2dung => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -456,11 +456,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> If (s_2 and not s_1 and not s_7): set s_3": {
+"12:  >> If (s_2 and not s_1 and not s_7): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -500,11 +500,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => Unset (s_2, s_3)": {
+"13: s_clearclick => Unset (s_2, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -518,7 +518,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -567,7 +567,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_4 => PromptYesNo (s_5, s_6, 1020)": {
+"15: s_4 => PromptYesNo (s_yes, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -578,14 +578,14 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_no": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -604,11 +604,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_5 => AddTopics (n_woodsman)": {
+"16: s_yes => AddTopics (n_woodsman)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -641,11 +641,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_5 => CreateLogEntry (1030, 1)": {
+"17: s_yes => CreateLogEntry (1030, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -671,11 +671,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_5 => Say (1021)": {
+"18: s_yes => Say (1021)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -687,11 +687,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_5 => DoneWithMob (m_monster, _)": {
+"19: s_yes => DoneWithMob (m_monster, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -717,11 +717,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_5 => EnsureNpcLocation (l_house)": {
+"20: s_yes => EnsureNpcLocation (l_house)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -747,11 +747,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_5 => PlaceNpcAt (n_woodsman, l_house)": {
+"21: s_yes => PlaceNpcAt (n_woodsman, l_house)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_yes": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -777,11 +777,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_6 => Say (1022)": {
+"22: s_no => Say (1022)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_no": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -950,7 +950,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (s_9 and s_2): set s_11": {
+"28:  >> If (s_map and s_2): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -961,7 +961,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_map": {
 "type": "State",
 "value": "9",
 "not": "False",

@@ -262,7 +262,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => PromptYesNo (s_11, s_12, 1000)": {
+" 2:  => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -273,14 +273,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_11": {
+"1: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_12": {
+"2: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -910,11 +910,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_11 => PlaceItemAt (i_0000c9c4, l_ukcrypt)": {
+"25: s_yes => PlaceItemAt (i_0000c9c4, l_ukcrypt)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -940,11 +940,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_11 >> StartTimer (t_4000000d); When it expires: set s_13": {
+"26: s_yes >> StartTimer (t_4000000d); When it expires: set s_13": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -963,11 +963,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_11 => CreateLogEntry (1019, 0)": {
+"27: s_yes => CreateLogEntry (1019, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -993,11 +993,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_11 => Say (1002)": {
+"28: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1009,11 +1009,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_11 => SetQuestor (n_00001aa0)": {
+"29: s_yes => SetQuestor (n_00001aa0)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_yes": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1032,11 +1032,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_12 => Say (1001)": {
+"30: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_12": {
+"0: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1048,11 +1048,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_12 => UnsetQuestor (n_00001aa0)": {
+"31: s_no => UnsetQuestor (n_00001aa0)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_12": {
+"0: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1071,11 +1071,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_12 => EndQuest ()": {
+"32: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_12": {
+"0: s_no": {
 "type": "State",
 "value": "12",
 "not": "False",

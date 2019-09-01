@@ -212,11 +212,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 4:  >> IfMobsKilled (m_enemy, 1): set s_2": {
+" 4:  >> IfMobsKilled (m_enemy, 1): set s_killmon": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_killmon": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -242,11 +242,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5: s_2 => Say (1011)": {
+" 5: s_killmon => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_killmon": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -258,11 +258,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6:  >> IfMobHurtByPlayer (m_enemy): set s_1": {
+" 6:  >> IfMobHurtByPlayer (m_enemy): set s_00001a30": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_00001a30": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -281,11 +281,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_1 => Say (1012)": {
+" 7: s_00001a30 => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_00001a30": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -297,25 +297,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 8:  >> If (s_1 and not s_2): set s_3": {
+" 8:  >> If (s_00001a30 and not s_killmon): set s_0000d6cf": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000d6cf": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_00001a30": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_2": {
+"2: not s_killmon": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -341,11 +341,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9: s_3 => Unknown63_Mob (m_enemy)": {
+" 9: s_0000d6cf => Unknown63_Mob (m_enemy)": {
 "opCode": 63,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_0000d6cf": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -364,11 +364,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_3 => PlaceMobAtLocation (m_enemy, l_00006e17)": {
+"10: s_0000d6cf => PlaceMobAtLocation (m_enemy, l_00006e17)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_0000d6cf": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -394,11 +394,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11:  >> IfNpcClicked (n_qgiver): set s_4": {
+"11:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -417,25 +417,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12:  >> If (s_4 and not s_1): set s_9": {
+"12:  >> If (s_qgclicked and not s_00001a30): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_1": {
+"2: not s_00001a30": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -461,25 +461,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13: s_9 => Unset (s_4, s_9)": {
+"13: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_9": {
+"2: s_clearclick": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -505,25 +505,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"14:  >> If (s_4 and s_2): set s_6": {
+"14:  >> If (s_qgclicked and s_killmon): set s_000d6cc8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_000d6cc8": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_killmon": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -549,11 +549,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"15: s_6 => Say (1014)": {
+"15: s_000d6cc8 => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_000d6cc8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -565,11 +565,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"16: s_6 => PlaceItemOnCharacter (i_lessgold)": {
+"16: s_000d6cc8 => PlaceItemOnCharacter (i_lessgold)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_000d6cc8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -595,11 +595,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"17: s_6 => MakePermanent (i_lessgold)": {
+"17: s_000d6cc8 => MakePermanent (i_lessgold)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_000d6cc8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -618,11 +618,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"18: s_6 => EndQuest ()": {
+"18: s_000d6cc8 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_000d6cc8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -634,25 +634,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"19:  >> If (s_3 and s_4): set s_7": {
+"19:  >> If (s_0000d6cf and s_qgclicked): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_reward": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_0000d6cf": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_4": {
+"2: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -678,11 +678,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"20: s_7 => QuestSuccess (i_gold)": {
+"20: s_reward => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_reward": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -722,11 +722,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"21: s_7 => EndQuest ()": {
+"21: s_reward => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_reward": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -738,25 +738,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"22:  >> If (s_0 and s_3): set s_8": {
+"22:  >> If (s_queston and s_0000d6cf): set s_0000688f": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_0000688f": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0": {
+"1: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_0000d6cf": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -782,11 +782,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"23: s_8 => Say (1013)": {
+"23: s_0000688f => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_0000688f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -798,11 +798,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"24: s_8 => Unknown64_Mob (m_enemy)": {
+"24: s_0000688f => Unknown64_Mob (m_enemy)": {
 "opCode": 64,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_0000688f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -821,11 +821,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"25: s_0 => EndQuest ()": {
+"25: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_queston": {
 "type": "State",
 "value": "0",
 "not": "False",

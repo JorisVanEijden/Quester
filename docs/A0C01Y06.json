@@ -268,11 +268,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => EndQuest ()": {
+" 4: s_escapetime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_escapetime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -284,11 +284,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfNpcClicked (n_master): set s_2 [Msg 1012]": {
+" 5:  >> IfNpcClicked (n_master): set s_clickonenemy [Msg 1012]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -307,11 +307,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 >> StartTimer (t_shortdelay); When it expires: set s_1": {
+" 6: s_clickonenemy >> StartTimer (t_shortdelay); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -330,11 +330,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_2 => HideNpc (n_master)": {
+" 7: s_clickonenemy => HideNpc (n_master)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -353,11 +353,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => SetMobPowerLevel (m_mmaster, 17)": {
+" 8: s_clickonenemy => SetMobPowerLevel (m_mmaster, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -383,11 +383,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => SetMobPowerLevel (m_mmaster, 46)": {
+" 9: s_clickonenemy => SetMobPowerLevel (m_mmaster, 46)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -413,11 +413,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => SetMobPowerLevel (m_mmaster, 10)": {
+"10: s_clickonenemy => SetMobPowerLevel (m_mmaster, 10)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -443,11 +443,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => PlaceMobAtLocation (m_mmaster, l_meetingplace)": {
+"11: s_clickonenemy => PlaceMobAtLocation (m_mmaster, l_meetingplace)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_clickonenemy": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -473,11 +473,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfMobsKilled (m_mmaster, 1): set s_3": {
+"12:  >> IfMobsKilled (m_mmaster, 1): set s_traitordead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_traitordead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -503,11 +503,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => QuestSuccess ()": {
+"13: s_traitordead => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_traitordead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -547,11 +547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 >> StartTimer (t_4000000d); When it expires: set s_13": {
+"14: s_traitordead >> StartTimer (t_4000000d); When it expires: set s_13": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_traitordead": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -570,11 +570,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_4 >> WhenAtLocation (l_hidingplace): set s_12": {
+"15: s_teleportpc >> WhenAtLocation (l_hidingplace): set s_12": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -600,25 +600,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> If (not s_3 and s_1): set s_4": {
+"16:  >> If (not s_traitordead and s_shortdelay): set s_teleportpc": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_3": {
+"1: not s_traitordead": {
 "type": "State",
 "value": "3",
 "not": "True",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_shortdelay": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -644,11 +644,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_4 => AddLocationToMap (l_dungeon)": {
+"17: s_teleportpc => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -667,11 +667,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_4 => CreateLogEntry (1011, 1)": {
+"18: s_teleportpc => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -697,11 +697,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_4 => Say (1035)": {
+"19: s_teleportpc => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -713,11 +713,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_4 => PlaceNpcAt (n_master, l_hidingplace)": {
+"20: s_teleportpc => PlaceNpcAt (n_master, l_hidingplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -743,11 +743,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_4 => PlaceNpcAt (l_dungeon)": {
+"21: s_teleportpc => PlaceNpcAt (l_dungeon)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -773,11 +773,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_4 => PlaceMobAtLocation (m_mmaster, l_hidingplace)": {
+"22: s_teleportpc => PlaceMobAtLocation (m_mmaster, l_hidingplace)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -803,11 +803,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23:  >> IfMobHurtByPlayer (m_mmaster): set s_5": {
+"23:  >> IfMobHurtByPlayer (m_mmaster): set s_hittraitor": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_hittraitor": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -826,11 +826,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_12 and s_5 and s_4): set s_7": {
+"24:  >> If (s_12 and s_hittraitor and s_teleportpc): set s_foundme": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_foundme": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -844,14 +844,14 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_hittraitor": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_4": {
+"3: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -870,11 +870,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 => Say (1014)": {
+"25: s_foundme => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_foundme": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -886,11 +886,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26:  >> IfNpcClicked (n_qgiver): set s_9": {
+"26:  >> IfNpcClicked (n_qgiver): set s_clickqgiver": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_clickqgiver": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -909,25 +909,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> If (s_9 and s_4): set s_10": {
+"27:  >> If (s_clickqgiver and s_teleportpc): set s_findtraitor": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_findtraitor": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -953,11 +953,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_10 => CreateLogEntry (1030, 2)": {
+"28: s_findtraitor => CreateLogEntry (1030, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_findtraitor": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -983,11 +983,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_10 => Say (1013)": {
+"29: s_findtraitor => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: s_findtraitor": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -999,25 +999,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_9 and not s_4): set s_11": {
+"30:  >> If (s_clickqgiver and not s_teleportpc): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_4": {
+"2: not s_teleportpc": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -1043,25 +1043,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_11 => Unset (s_9, s_11)": {
+"31: s_clearclick => Unset (s_clickqgiver, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_11": {
+"2: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1087,18 +1087,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_11 => Unset (s_9)": {
+"32: s_clearclick => Unset (s_clickqgiver)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_11": {
+"0: s_clearclick": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_clickqgiver": {
 "type": "State",
 "value": "9",
 "not": "False",

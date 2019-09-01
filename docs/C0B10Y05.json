@@ -264,11 +264,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5: not s_1 => CreateFoe(m_orc1, 21, 5%, 5)": {
+" 5: not s_0003719f => CreateFoe(m_orc1, 21, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -308,11 +308,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 6: not s_1 => CreateFoe(m_orc2, 21, 5%, 5)": {
+" 6: not s_0003719f => CreateFoe(m_orc2, 21, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -352,11 +352,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7: not s_1 => CreateFoe(m_orc3, 31, 5%, 5)": {
+" 7: not s_0003719f => CreateFoe(m_orc3, 31, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -396,11 +396,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 8: not s_1 => CreateFoe(m_orc4, 41, 5%, 5)": {
+" 8: not s_0003719f => CreateFoe(m_orc4, 41, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_1": {
+"0: not s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -440,11 +440,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 9:  >> IfMobHurtByPlayer (m_orc1): set s_6 [Msg 1011]": {
+" 9:  >> IfMobHurtByPlayer (m_orc1): set s_00001a33 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00001a33": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -463,11 +463,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"10:  >> IfMobHurtByPlayer (m_orc2): set s_6 [Msg 1011]": {
+"10:  >> IfMobHurtByPlayer (m_orc2): set s_00001a33 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00001a33": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -486,11 +486,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"11:  >> IfMobHurtByPlayer (m_orc3): set s_6 [Msg 1011]": {
+"11:  >> IfMobHurtByPlayer (m_orc3): set s_00001a33 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00001a33": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -509,11 +509,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"12:  >> IfMobHurtByPlayer (m_orc4): set s_6 [Msg 1011]": {
+"12:  >> IfMobHurtByPlayer (m_orc4): set s_00001a33 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00001a33": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -532,11 +532,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"13:  >> IfGivingItemToNpc (i_evilitem, n_0000d5a4): set s_1": {
+"13:  >> IfGivingItemToNpc (i_evilitem, n_0000d5a4): set s_0003719f": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -562,11 +562,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"14: s_1 => QuestSuccess (i_gold)": {
+"14: s_0003719f => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -606,25 +606,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"15:  >> If (s_0 and not s_1): set s_7": {
+"15:  >> If (s_traveltime and not s_0003719f): set s_00069b3d": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_00069b3d": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0": {
+"1: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_1": {
+"2: not s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -650,11 +650,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"16: s_7 => Unknown72_Value (3) [Msg 1012]": {
+"16: s_00069b3d => Unknown72_Value (3) [Msg 1012]": {
 "opCode": 72,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_00069b3d": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -673,11 +673,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"17: s_1 => EndQuest ()": {
+"17: s_0003719f => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_0003719f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -689,11 +689,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"18: s_0 => EndQuest ()": {
+"18: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

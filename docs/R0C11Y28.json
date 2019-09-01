@@ -135,7 +135,7 @@
 "variable": "n_vamp",
 "gender": "Female",
 "facePictureIndex": 1,
-"npcType": "Unknown_2",
+"npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
 "faction": "Peryite",
 "factionRaw": "6 [0x0006]",
@@ -649,11 +649,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_1 >> StartTimer (t_2ndparton); When it expires: set s_2": {
+"12: s_1stparton >> StartTimer (t_2ndparton); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_1stparton": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -672,7 +672,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_2 and not s_13): set s_3": {
+"13:  >> If (s_2ndparton and not s_13): set s_3": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -683,7 +683,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_2ndparton": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -889,11 +889,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfNpcClicked (n_vamp): set s_4": {
+"20:  >> IfNpcClicked (n_vamp): set s_vampclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_vampclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -912,11 +912,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> IfNpcClicked (n_qgiver): set s_5": {
+"21:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -935,11 +935,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_0 and s_5): set s_6": {
+"22:  >> If (s_0 and s_qgclicked): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -953,7 +953,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -979,11 +979,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_6 => QuestSuccess (i_reward)": {
+"23: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1023,7 +1023,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  => Unset (s_5)": {
+"24:  => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -1034,7 +1034,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1067,11 +1067,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_6 => EndQuest ()": {
+"25: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1157,7 +1157,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (s_4 and s_11): set s_8": {
+"28:  >> If (s_vampclicked and s_11): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1168,7 +1168,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1704,7 +1704,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46: s_14 => CreateFoe(m_murder, 15, 15%, 15)": {
+"46: s_14 => CreateFoe(m_murder, 15, 15%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1861,7 +1861,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"51:  >> If (s_4 and s_0): set s_16": {
+"51:  >> If (s_vampclicked and s_0): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1872,7 +1872,7 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1958,7 +1958,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"54:  => Unset (s_4)": {
+"54:  => Unset (s_vampclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -1969,7 +1969,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_vampclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -2046,11 +2046,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"56: s_18 => EndQuest ()": {
+"56: s_witch => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_18": {
+"0: s_witch": {
 "type": "State",
 "value": "18",
 "not": "False",

@@ -239,11 +239,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5:  >> IfItemFound (i_sage): set s_4": {
+" 5:  >> IfItemFound (i_sage): set s_pickupitem": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_pickupitem": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -262,11 +262,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 6: s_4 => Say (1030)": {
+" 6: s_pickupitem => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_pickupitem": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -278,11 +278,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7: s_4 >> StartTimer (t_shortdelay); When it expires: set s_5": {
+" 7: s_pickupitem >> StartTimer (t_shortdelay); When it expires: set s_5": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_pickupitem": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -301,25 +301,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 8:  >> If (s_5 and not s_2): set s_6": {
+" 8:  >> If (s_shortdelay and not s_000068fa): set s_0001a7d5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a7d5": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_5": {
+"1: s_shortdelay": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_2": {
+"2: not s_000068fa": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -345,11 +345,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 9: s_6 => Say (1040)": {
+" 9: s_0001a7d5 => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_0001a7d5": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -361,11 +361,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"10:  >> IfMobsKilled (m_lich, 1): set s_2": {
+"10:  >> IfMobsKilled (m_lich, 1): set s_000068fa": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_000068fa": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -391,11 +391,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"11:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_1": {
+"11:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_0001a62c": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0001a62c": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -421,11 +421,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"12: s_1 => QuestSuccess (i_reward)": {
+"12: s_0001a62c => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_0001a62c": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -465,25 +465,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"13:  >> If (s_1 and s_2): set s_3": {
+"13:  >> If (s_0001a62c and s_000068fa): set s_00006c2a": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_00006c2a": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_1": {
+"1: s_0001a62c": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_000068fa": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -509,11 +509,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"14: s_3 => AdjustReputationWithNpc (n_questgiver, 7)": {
+"14: s_00006c2a => AdjustReputationWithNpc (n_questgiver, 7)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_00006c2a": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -539,11 +539,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"15: s_3 => Say (1035)": {
+"15: s_00006c2a => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_00006c2a": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -555,18 +555,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"16: s_0 >> WhenPlayerHasItems (i_sage): set s_7": {
+"16: s_qtime >> WhenPlayerHasItems (i_sage): set s_0000199a": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_qtime": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_7": {
+"1: s_0000199a": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -599,25 +599,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"17:  >> If (s_0 and s_7): set s_8": {
+"17:  >> If (s_qtime and s_0000199a): set s_0000cea8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_0000cea8": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_0": {
+"1: s_qtime": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_7": {
+"2: s_0000199a": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -643,11 +643,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"18: s_8 => Say (1015)": {
+"18: s_0000cea8 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_0000cea8": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -659,11 +659,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"19: s_0 => EndQuest ()": {
+"19: s_qtime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_qtime": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -675,11 +675,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"20: s_1 => EndQuest ()": {
+"20: s_0001a62c => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_0001a62c": {
 "type": "State",
 "value": "1",
 "not": "False",

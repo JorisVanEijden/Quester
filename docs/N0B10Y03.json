@@ -224,11 +224,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 4:  >> IfTimeOfDayBetween (00:00:00, 03:00:00): set s_2": {
+" 4:  >> IfTimeOfDayBetween (00:00:00, 03:00:00): set s_0000d4c3": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000d4c3": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -254,18 +254,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 5: s_2 >> WhenAtLocation (l_magesguild): set s_3": {
+" 5: s_0000d4c3 >> WhenAtLocation (l_magesguild): set s_0000c8b5": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000d4c3": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_3": {
+"1: s_0000c8b5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -284,11 +284,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 6: s_3 => CreateFoe(m_000036cd, 82, 100%, 100)": {
+" 6: s_0000c8b5 => CreateFoe(m_000036cd, 82, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000c8b5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -328,11 +328,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 7: s_3 => CreateFoe(m_000036cd, 85, 100%, 100)": {
+" 7: s_0000c8b5 => CreateFoe(m_000036cd, 85, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000c8b5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -372,11 +372,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 8: s_3 => CreateFoe(m_000036cd, 100, 100%, 100)": {
+" 8: s_0000c8b5 => CreateFoe(m_000036cd, 100, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000c8b5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -416,11 +416,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 9: s_3 => CreateFoe(m_000036cd, 83, 100%, 100)": {
+" 9: s_0000c8b5 => CreateFoe(m_000036cd, 83, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_0000c8b5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -460,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"10:  >> IfMobHurtByPlayer (m_000036cd): set s_4 [Msg 1012]": {
+"10:  >> IfMobHurtByPlayer (m_000036cd): set s_00006a14 [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_00006a14": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -483,11 +483,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"11:  >> IfMobsKilled (m_000036cd, 2): set s_5": {
+"11:  >> IfMobsKilled (m_000036cd, 2): set s_0000325a": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_0000325a": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -513,11 +513,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"12:  >> IfItemFound (i_treasure): set s_6": {
+"12:  >> IfItemFound (i_treasure): set s_000e38e5": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_000e38e5": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -536,11 +536,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"13: not s_6 => Unknown5_ItemLocation (i_treasure, l_magesguild)": {
+"13: not s_000e38e5 => Unknown5_ItemLocation (i_treasure, l_magesguild)": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
-"0: not s_6": {
+"0: not s_000e38e5": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -566,25 +566,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"14:  >> If (s_6 and not s_2): set s_7": {
+"14:  >> If (s_000e38e5 and not s_0000d4c3): set s_0000d9e9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_6": {
+"1: s_000e38e5": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_2": {
+"2: not s_0000d4c3": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -610,11 +610,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"15: s_7 >> StartTimer (t_000da513); When it expires: set s_10": {
+"15: s_0000d9e9 >> StartTimer (t_000da513); When it expires: set s_10": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -633,11 +633,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"16: s_7 => CreateLogEntry (1011, 1)": {
+"16: s_0000d9e9 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -663,11 +663,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"17: s_7 => AdjustReputationWithNpc (n_qgiver, -30)": {
+"17: s_0000d9e9 => AdjustReputationWithNpc (n_qgiver, -30)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -693,11 +693,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"18: s_7 => CreateFoe(m_00003543, 60, 10%, 10)": {
+"18: s_0000d9e9 => CreateFoe(m_00003543, 60, 10%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -737,11 +737,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"19:  >> IfMobHurtByPlayer (m_00003543): set s_8 [Msg 1013]": {
+"19:  >> IfMobHurtByPlayer (m_00003543): set s_001a98fb [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_001a98fb": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -760,11 +760,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"20:  >> IfNpcClicked (n_qgiver): set s_1": {
+"20:  >> IfNpcClicked (n_qgiver): set s_clickonqgiver": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_clickonqgiver": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -783,39 +783,39 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"21:  >> If (s_1 and s_5 and not s_7 and not s_2): set s_12": {
+"21:  >> If (s_clickonqgiver and s_0000325a and not s_0000d9e9 and not s_0000d4c3): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_clickonqgiver": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_0000325a": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "1156761600 [0x44F2C800]"
 },
-"3: not s_7": {
+"3: not s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "True",
 "index": "7",
 "unknown1": "1997668352 [0x77120000]"
 },
-"4: not s_2": {
+"4: not s_0000d4c3": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -827,7 +827,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"22:  => Unset (s_1)": {
+"22:  => Unset (s_clickonqgiver)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -838,7 +838,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_clickonqgiver": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -871,11 +871,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"23: s_12 => QuestSuccess (i_potion)": {
+"23: s_pcgetsgold => QuestSuccess (i_potion)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_12": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -915,25 +915,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"24:  >> If (s_10 and s_7): set s_9": {
+"24:  >> If (s_000da513 and s_0000d9e9): set s_questdone": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_questdone": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_10": {
+"1: s_000da513": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_7": {
+"2: s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -959,25 +959,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"25:  >> If (s_0 and not s_7): set s_9": {
+"25:  >> If (s_oneday and not s_0000d9e9): set s_questdone": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_questdone": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0": {
+"1: s_oneday": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_7": {
+"2: not s_0000d9e9": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -1003,11 +1003,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"26: s_9 => MakePermanent (i_treasure)": {
+"26: s_questdone => MakePermanent (i_treasure)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_questdone": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1026,11 +1026,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"27: s_0 => EndQuest ()": {
+"27: s_oneday => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_oneday": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -1042,11 +1042,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"28: s_12 => EndQuest ()": {
+"28: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_12": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1058,11 +1058,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"29: s_9 => EndQuest ()": {
+"29: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_questdone": {
 "type": "State",
 "value": "9",
 "not": "False",

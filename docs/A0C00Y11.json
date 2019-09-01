@@ -319,7 +319,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  => PickOneOf (s_4, s_5)": {
+" 7:  => PickOneOf (s_00189e76, s_0018a1f9)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -330,14 +330,14 @@
 "index": "255",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_4": {
+"1: s_00189e76": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "4518580 [0x0044F2B4]"
 },
-"2: s_5": {
+"2: s_0018a1f9": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -363,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfNpcClicked (n_cousin): set s_1 [Msg 1030]": {
+" 8:  >> IfNpcClicked (n_cousin): set s_00038884 [Msg 1030]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_00038884": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -386,11 +386,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => CreateLogEntry (1011, 1)": {
+" 9: s_00038884 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_00038884": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -416,25 +416,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> If (s_1 and s_4): set s_2": {
+"10:  >> If (s_00038884 and s_00189e76): set s_00184326": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_00184326": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_1": {
+"1: s_00038884": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "4518580 [0x0044F2B4]"
 },
-"2: s_4": {
+"2: s_00189e76": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -460,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => Unknown72_Value (15)": {
+"11: s_00184326 => Unknown72_Value (15)": {
 "opCode": 72,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_00184326": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -483,11 +483,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfNpcClicked (n_healer): set s_8": {
+"12:  >> IfNpcClicked (n_healer): set s_0006fe44": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_0006fe44": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -506,18 +506,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_9 => TakePlayerGold (s_10, 20, n_healer)": {
+"13: s_00006595 => TakePlayerGold (s_00069995, 20, n_healer)": {
 "opCode": 71,
 "argCount": 4,
 "arguments:": {
-"0: s_9": {
+"0: s_00006595": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_10": {
+"1: s_00069995": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -543,11 +543,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_9 => Say (1013)": {
+"14: s_00006595 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_00006595": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -559,11 +559,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_10 => Say (1015)": {
+"15: s_00069995 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: s_00069995": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -575,11 +575,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_9 => PlaceItemOnCharacter (i_00000635)": {
+"16: s_00006595 => PlaceItemOnCharacter (i_00000635)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_00006595": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -605,11 +605,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_9 => CreateLogEntry (1017, 2)": {
+"17: s_00006595 => CreateLogEntry (1017, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_00006595": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -635,32 +635,32 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_10 => Unset (s_8, s_9, s_10)": {
+"18: s_00069995 => Unset (s_0006fe44, s_00006595, s_00069995)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: s_00069995": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_8": {
+"1: s_0006fe44": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "4518580 [0x0044F2B4]"
 },
-"2: s_9": {
+"2: s_00006595": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "2048 [0x00000800]"
 },
-"3: s_10": {
+"3: s_00069995": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -679,7 +679,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> WhenItemIsUsed (i_00000635): set s_6": {
+"19:  >> WhenItemIsUsed (i_00000635): set s_00062a55": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -690,7 +690,7 @@
 "index": "255",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_6": {
+"1: s_00062a55": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -709,11 +709,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 => GiveItemToPlayer (i_00000635) [Msg 1019]": {
+"20: s_00062a55 => GiveItemToPlayer (i_00000635) [Msg 1019]": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00062a55": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -732,11 +732,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_6 => CureAllDisease (15)": {
+"21: s_00062a55 => CureAllDisease (15)": {
 "opCode": 49,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_00062a55": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -755,11 +755,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfGivingItemToNpc (i_00000635, n_cousin): set s_7": {
+"22:  >> IfGivingItemToNpc (i_00000635, n_cousin): set s_0018780b": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0018780b": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -785,11 +785,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 => QuestSuccess (i_gold2)": {
+"23: s_0018780b => QuestSuccess (i_gold2)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_0018780b": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -829,11 +829,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 >> StartTimer (t_delay); When it expires: set s_11": {
+"24: s_0018780b >> StartTimer (t_delay); When it expires: set s_11": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_0018780b": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -852,11 +852,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_11 => EndQuest ()": {
+"25: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_11": {
+"0: s_delay": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -868,11 +868,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_0 => EndQuest ()": {
+"26: s_questtime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_questtime": {
 "type": "State",
 "value": "0",
 "not": "False",

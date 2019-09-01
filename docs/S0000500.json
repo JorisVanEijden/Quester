@@ -227,7 +227,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0 >> WhenItemIsUsed (i_letter): set s_10": {
+" 1: s_0 >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -238,7 +238,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_readletter": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -713,11 +713,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfMobHurtByPlayer (m_guards): set s_4": {
+"20:  >> IfMobHurtByPlayer (m_guards): set s_hitguard": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_hitguard": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -736,11 +736,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_4 => CreateFoe(m_44000001, 2, 50%, 50)": {
+"21: s_hitguard => CreateFoe(m_44000001, 2, 50%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_hitguard": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -780,11 +780,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_4 => Say (1050)": {
+"22: s_hitguard => Say (1050)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_hitguard": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -997,11 +997,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_7 => EndQuest ()": {
+"29: s_delay => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_delay": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1013,7 +1013,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_1 and not s_3): set s_8": {
+"30:  >> If (s_executiondelay and not s_3): set s_8": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1024,7 +1024,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_executiondelay": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -1096,11 +1096,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_9 => Say (1051)": {
+"33: s_escapetime => Say (1051)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_escapetime": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1112,11 +1112,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_9 => EndQuest ()": {
+"34: s_escapetime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_escapetime": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1128,11 +1128,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_10 => CreateLogEntry (1020, 0)": {
+"35: s_readletter => CreateLogEntry (1020, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: s_readletter": {
 "type": "State",
 "value": "10",
 "not": "False",

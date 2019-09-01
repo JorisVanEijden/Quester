@@ -599,11 +599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_1 >> StartTimer (t_2ndparton); When it expires: set s_2": {
+"12: s_1stparton >> StartTimer (t_2ndparton); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_1stparton": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -622,11 +622,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_2 >> StartTimer (t_40000003); When it expires: set s_3": {
+"13: s_2ndparton >> StartTimer (t_40000003); When it expires: set s_3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_2ndparton": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -645,11 +645,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_2 => CycleNextState (s_6)": {
+"14: s_2ndparton => CycleNextState (s_6)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_2ndparton": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1019,11 +1019,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26:  >> IfNpcClicked (n_qgiver): set s_8": {
+"26:  >> IfNpcClicked (n_qgiver): set s_qgclicked": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1042,18 +1042,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> If (s_8 and s_0): set s_9": {
+"27:  >> If (s_qgclicked and s_0): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1086,11 +1086,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_9 => QuestSuccess (i_reward)": {
+"28: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1130,7 +1130,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29:  => Unset (s_8)": {
+"29:  => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -1141,7 +1141,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: s_qgclicked": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1174,11 +1174,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_9 => EndQuest ()": {
+"30: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1746,11 +1746,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"50: s_19 => EndQuest ()": {
+"50: s_witch => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_19": {
+"0: s_witch": {
 "type": "State",
 "value": "19",
 "not": "False",

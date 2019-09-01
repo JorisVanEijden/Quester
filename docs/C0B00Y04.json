@@ -192,11 +192,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4:  >> IfMobHurtByPlayer (m_priest): set s_1": {
+" 4:  >> IfMobHurtByPlayer (m_priest): set s_00000613": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_00000613": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -215,11 +215,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_1 => PlaceMobAtLocation (m_priest, l_00006e17)": {
+" 5: s_00000613 => PlaceMobAtLocation (m_priest, l_00006e17)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_00000613": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -245,11 +245,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6: s_1 => Say (1011)": {
+" 6: s_00000613 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_00000613": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -261,11 +261,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7: s_1 => Unknown63_Mob (m_priest)": {
+" 7: s_00000613 => Unknown63_Mob (m_priest)": {
 "opCode": 63,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_00000613": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -284,25 +284,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8:  >> If (s_1 and s_2): set s_3": {
+" 8:  >> If (s_00000613 and s_queston): set s_000005ed": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_000005ed": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_00000613": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_2": {
+"2: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -328,11 +328,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 9: s_3 => Say (1012)": {
+" 9: s_000005ed => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_000005ed": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -344,11 +344,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"10:  >> IfNpcClicked (n_qgiver): set s_4": {
+"10:  >> IfNpcClicked (n_qgiver): set s_000032dd": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_000032dd": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -367,25 +367,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"11:  >> If (s_4 and not s_1): set s_5": {
+"11:  >> If (s_000032dd and not s_00000613): set s_00000671": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_00000671": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_000032dd": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_1": {
+"2: not s_00000613": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -411,25 +411,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"12: s_5 => Unset (s_4, s_5)": {
+"12: s_00000671 => Unset (s_000032dd, s_00000671)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_00000671": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_000032dd": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_00000671": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -455,11 +455,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"13: s_4 => QuestSuccess ()": {
+"13: s_000032dd => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_000032dd": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -499,11 +499,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"14: s_2 => EndQuest ()": {
+"14: s_queston => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_queston": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"15: s_4 => EndQuest ()": {
+"15: s_000032dd => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_000032dd": {
 "type": "State",
 "value": "4",
 "not": "False",

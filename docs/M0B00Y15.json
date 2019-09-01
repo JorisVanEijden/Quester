@@ -165,7 +165,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PickOneOf (s_5, s_6)": {
+" 3:  => PickOneOf (s_monster1, s_monster2)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -176,14 +176,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_monster1": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_monster2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -239,11 +239,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => EndQuest ()": {
+" 5: s_2dung => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_2dung": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -414,11 +414,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> If (s_2 and not s_1): set s_3": {
+"12:  >> If (s_2 and not s_1): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -458,11 +458,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => Unset (s_2, s_3)": {
+"13: s_clearclick => Unset (s_2, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -476,7 +476,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_clearclick": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -502,7 +502,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_4 => CreateFoe(m_rats, 3, 60%, 60)": {
+"14: s_4 => CreateFoe(m_rats, 3, 60%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -546,11 +546,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_5 >> WhenAtLocation (l_house): set s_4": {
+"15: s_monster1 >> WhenAtLocation (l_house): set s_4": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_monster1": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -576,11 +576,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_6 >> WhenAtLocation (l_house): set s_7": {
+"16: s_monster2 >> WhenAtLocation (l_house): set s_7": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_monster2": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -606,7 +606,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_7 => CreateFoe(m_monster, 3, 60%, 60)": {
+"17: s_7 => CreateFoe(m_monster, 3, 60%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

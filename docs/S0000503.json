@@ -520,7 +520,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> WhenItemIsUsed (i_map): set s_23": {
+" 7:  >> WhenItemIsUsed (i_map): set s_readmap": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -531,7 +531,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_23": {
+"1: s_readmap": {
 "type": "State",
 "value": "23",
 "not": "False",
@@ -1090,11 +1090,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_9 => Say (1041)": {
+"26: s_target => Say (1041)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_target": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1219,7 +1219,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_12 => PromptYesNo (s_13, s_14, 1045)": {
+"31: s_12 => PromptYesNo (s_spouse, s_14, 1045)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1230,7 +1230,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_13": {
+"1: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1309,11 +1309,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_13 => PlaceItemAt (i_key, l_00003527)": {
+"34: s_spouse => PlaceItemAt (i_key, l_00003527)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_13": {
+"0: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1339,11 +1339,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_13 => AddLocationToMap (l_00003527)": {
+"35: s_spouse => AddLocationToMap (l_00003527)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_13": {
+"0: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1362,11 +1362,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_13 => CreateLogEntry (1023, 2)": {
+"36: s_spouse => CreateLogEntry (1023, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_13": {
+"0: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1392,11 +1392,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: s_13 => Say (1046)": {
+"37: s_spouse => Say (1046)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_13": {
+"0: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1454,11 +1454,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40:  >> IfItemFound (i_key): set s_15": {
+"40:  >> IfItemFound (i_key): set s_house1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_15": {
+"0: s_house1": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1477,11 +1477,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_15 => Say (1050)": {
+"41: s_house1 => Say (1050)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_15": {
+"0: s_house1": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1537,11 +1537,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_17 >> StartTimer (t_40000015); When it expires: set s_21": {
+"43: s_keytime >> StartTimer (t_40000015); When it expires: set s_21": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_17": {
+"0: s_keytime": {
 "type": "State",
 "value": "17",
 "not": "False",
@@ -1560,11 +1560,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44: s_17 => PlaceNpcAt (n_rebel, l_tavern)": {
+"44: s_keytime => PlaceNpcAt (n_rebel, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_17": {
+"0: s_keytime": {
 "type": "State",
 "value": "17",
 "not": "False",
@@ -1590,7 +1590,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_18 => PromptYesNo (s_8, s_9, 1040)": {
+"45: s_18 => PromptYesNo (s_8, s_target, 1040)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -1608,7 +1608,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_target": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1627,7 +1627,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46:  >> If (s_3 and s_15 and s_13): set s_19": {
+"46:  >> If (s_3 and s_house1 and s_spouse): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1645,14 +1645,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_15": {
+"2: s_house1": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_13": {
+"3: s_spouse": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1955,11 +1955,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"56: s_23 => AddLocationToMap (l_itemdung)": {
+"56: s_readmap => AddLocationToMap (l_itemdung)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_23": {
+"0: s_readmap": {
 "type": "State",
 "value": "23",
 "not": "False",
@@ -2135,11 +2135,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"62:  >> IfMobHurtByPlayer (m_guardian): set s_26": {
+"62:  >> IfMobHurtByPlayer (m_guardian): set s_hitguardian": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_26": {
+"0: s_hitguardian": {
 "type": "State",
 "value": "26",
 "not": "False",
@@ -2158,11 +2158,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"63: s_26 => Say (1053)": {
+"63: s_hitguardian => Say (1053)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_26": {
+"0: s_hitguardian": {
 "type": "State",
 "value": "26",
 "not": "False",
@@ -2243,7 +2243,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"67: s_29 => CreateFoe(m_44000003, 1, 100%, 100)": {
+"67: s_29 => CreateFoe(m_44000003, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -2453,7 +2453,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"74: s_32 => CreateFoe(m_guards, 2, 100%, 100)": {
+"74: s_32 => CreateFoe(m_guards, 2, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {

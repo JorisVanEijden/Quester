@@ -242,7 +242,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 4:  >> WhenAtLocation (l_palace): set s_1": {
+" 4:  >> WhenAtLocation (l_palace): set s_0000679f": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -253,7 +253,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_1": {
+"1: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -272,11 +272,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 5: s_1 => SetMobPowerLevel (m_imp, 6)": {
+" 5: s_0000679f => SetMobPowerLevel (m_imp, 6)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -302,11 +302,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 6: s_1 => SetMobPowerLevel (m_imp, 17)": {
+" 6: s_0000679f => SetMobPowerLevel (m_imp, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -332,11 +332,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 7: s_1 => SetMobPowerLevel (m_imp, 24)": {
+" 7: s_0000679f => SetMobPowerLevel (m_imp, 24)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -362,11 +362,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 8: s_1 => SetMobPowerLevel (m_imp, 22)": {
+" 8: s_0000679f => SetMobPowerLevel (m_imp, 22)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -392,11 +392,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 9: s_1 >> StartTimer (t_0000353d); When it expires: set s_2": {
+" 9: s_0000679f >> StartTimer (t_0000353d); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -415,11 +415,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"10: s_2 => SetMobPowerLevel (m_imp, 6)": {
+"10: s_0000353d => SetMobPowerLevel (m_imp, 6)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000353d": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -445,11 +445,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"11: s_2 => SetMobPowerLevel (m_imp, 17)": {
+"11: s_0000353d => SetMobPowerLevel (m_imp, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000353d": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -475,11 +475,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"12: s_2 => SetMobPowerLevel (m_imp, 24)": {
+"12: s_0000353d => SetMobPowerLevel (m_imp, 24)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000353d": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -505,11 +505,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"13: s_2 => SetMobPowerLevel (m_imp, 22)": {
+"13: s_0000353d => SetMobPowerLevel (m_imp, 22)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_0000353d": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -535,11 +535,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"14: s_2 >> StartTimer (t_0000353e); When it expires: set s_7": {
+"14: s_0000353d >> StartTimer (t_0000353e); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_0000353d": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -558,11 +558,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"15: s_7 => SetMobPowerLevel (m_imp, 6)": {
+"15: s_0000353e => SetMobPowerLevel (m_imp, 6)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0000353e": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -588,11 +588,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"16: s_1 => SetMobPowerLevel (m_imp, 17)": {
+"16: s_0000679f => SetMobPowerLevel (m_imp, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_0000679f": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -618,11 +618,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"17: s_7 => SetMobPowerLevel (m_imp, 24)": {
+"17: s_0000353e => SetMobPowerLevel (m_imp, 24)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0000353e": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -648,11 +648,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"18: s_7 => SetMobPowerLevel (m_imp, 22)": {
+"18: s_0000353e => SetMobPowerLevel (m_imp, 22)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_0000353e": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -678,11 +678,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"19: s_7 >> StartTimer (t_0000353f); When it expires: set s_8": {
+"19: s_0000353e >> StartTimer (t_0000353f); When it expires: set s_8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_0000353e": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -701,11 +701,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"20: s_8 => SetMobPowerLevel (m_imp, 6)": {
+"20: s_0000353f => SetMobPowerLevel (m_imp, 6)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000353f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -731,11 +731,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"21: s_8 => SetMobPowerLevel (m_imp, 17)": {
+"21: s_0000353f => SetMobPowerLevel (m_imp, 17)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000353f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -761,11 +761,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"22: s_8 => SetMobPowerLevel (m_imp, 24)": {
+"22: s_0000353f => SetMobPowerLevel (m_imp, 24)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000353f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -791,11 +791,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"23: s_8 => SetMobPowerLevel (m_imp, 22)": {
+"23: s_0000353f => SetMobPowerLevel (m_imp, 22)": {
 "opCode": 69,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_0000353f": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -821,11 +821,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"24:  >> IfMobsKilled (m_imp, 1): set s_3": {
+"24:  >> IfMobsKilled (m_imp, 1): set s_000034ba": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_000034ba": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -851,11 +851,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"25:  >> IfNpcClicked (n_questgiver): set s_4": {
+"25:  >> IfNpcClicked (n_questgiver): set s_00006623": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_00006623": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -874,25 +874,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"26:  >> If (s_4 and not s_3): set s_5": {
+"26:  >> If (s_00006623 and not s_000034ba): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_00006623": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_3": {
+"2: not s_000034ba": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -918,25 +918,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"27:  >> If (s_4 and s_3): set s_6": {
+"27:  >> If (s_00006623 and s_000034ba): set s_0000d194": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0000d194": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_00006623": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_3": {
+"2: s_000034ba": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -962,25 +962,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"28: s_5 => Unset (s_4, s_5)": {
+"28: s_clearclick => Unset (s_00006623, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_00006623": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_5": {
+"2: s_clearclick": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1006,11 +1006,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"29: s_6 => QuestSuccess (i_gold)": {
+"29: s_0000d194 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_0000d194": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1050,11 +1050,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"30: s_6 => EndQuest ()": {
+"30: s_0000d194 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_0000d194": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1066,11 +1066,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-"31: s_0 => EndQuest ()": {
+"31: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

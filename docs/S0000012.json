@@ -250,7 +250,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => PromptYesNo (s_1, s_2, 1000)": {
+" 3: s_0 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -261,14 +261,14 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -310,11 +310,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_1 => CreateLogEntry (1010, 0)": {
+" 5: s_yes => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -340,11 +340,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_1 => PlaceItemOnCharacter (i_0001b857)": {
+" 6: s_yes => PlaceItemOnCharacter (i_0001b857)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -370,11 +370,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => Say (1002)": {
+" 7: s_yes => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -386,11 +386,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => AddTopics (i_0001b857)": {
+" 8: s_yes => AddTopics (i_0001b857)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -423,11 +423,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => PlaceNpcAt (n_dispatcher, l_00006ac0)": {
+" 9: s_yes => PlaceNpcAt (n_dispatcher, l_00006ac0)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -453,11 +453,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_1 => EnsureNpcLocation (l_00006ac0)": {
+"10: s_yes => EnsureNpcLocation (l_00006ac0)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -483,11 +483,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_2 => Say (1001)": {
+"11: s_no => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -499,11 +499,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 => EndQuest ()": {
+"12: s_no => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_no": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -607,11 +607,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_4 >> StartTimer (t_40000007); When it expires: set s_7": {
+"17: s_2palace >> StartTimer (t_40000007); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_2palace": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -630,11 +630,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_4 => PlaceNpcAt (n_messenger, l_palace)": {
+"18: s_2palace => PlaceNpcAt (n_messenger, l_palace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_2palace": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1245,7 +1245,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (s_1 and s_8): set s_11": {
+"42:  >> If (s_yes and s_8): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1256,7 +1256,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_yes": {
 "type": "State",
 "value": "1",
 "not": "False",

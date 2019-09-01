@@ -162,7 +162,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 1:  >> WhenItemIsUsed (i_letter): set s_4": {
+" 1:  >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -173,7 +173,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_4": {
+"1: s_readletter": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -192,11 +192,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 2: s_4 >> StartTimer (t_traveltime); When it expires: set s_0": {
+" 2: s_readletter >> StartTimer (t_traveltime); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_readletter": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -215,11 +215,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 3: s_4 => CreateLogEntry (1010, 0)": {
+" 3: s_readletter => CreateLogEntry (1010, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_readletter": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -275,18 +275,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 5: s_4 >> WhenAtLocation (l_mansion): set s_2": {
+" 5: s_readletter >> WhenAtLocation (l_mansion): set s_0000d4c8": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_readletter": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_2": {
+"1: s_0000d4c8": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -305,11 +305,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 6:  >> IfItemFound (i_clothing): set s_3 [Msg 1018]": {
+" 6:  >> IfItemFound (i_clothing): set s_000355c7 [Msg 1018]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_000355c7": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -328,11 +328,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 7: s_3 => PlaceItemOnCharacter (i_note)": {
+" 7: s_000355c7 => PlaceItemOnCharacter (i_note)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_000355c7": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -358,11 +358,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 8: s_2 => CreateFoe(m_0000388b, 3, 25%, 25)": {
+" 8: s_0000d4c8 => CreateFoe(m_0000388b, 3, 25%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_0000d4c8": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -402,11 +402,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 9:  >> IfMobHurtByPlayer (m_0000388b): set s_5": {
+" 9:  >> IfMobHurtByPlayer (m_0000388b): set s_0000d58c": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_0000d58c": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -425,11 +425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"10: s_5 => Say (1030)": {
+"10: s_0000d58c => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_0000d58c": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -441,11 +441,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"11:  >> IfGivingItemToNpc (i_clothing, n_thiefmember): set s_1": {
+"11:  >> IfGivingItemToNpc (i_clothing, n_thiefmember): set s_questdone": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -471,11 +471,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"12: s_1 => QuestSuccess (i_gold)": {
+"12: s_questdone => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -515,11 +515,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"13: s_1 => AddLocationToMap (l_dungeon)": {
+"13: s_questdone => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -538,11 +538,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"14: s_1 => EndQuest ()": {
+"14: s_questdone => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_questdone": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -554,11 +554,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"15: s_0 => EndQuest ()": {
+"15: s_traveltime => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_traveltime": {
 "type": "State",
 "value": "0",
 "not": "False",

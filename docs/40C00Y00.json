@@ -591,11 +591,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => EndQuest ()": {
+"12: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_1stparton": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1930,7 +1930,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"55: s_22 => CreateFoe(m_daedra, 3, 100%, 100)": {
+"55: s_22 => CreateFoe(m_daedra, 3, 100%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -2013,7 +2013,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"58:  >> If (s_10 and s_14): set s_24": {
+"58:  >> If (s_00068071 and s_14): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2024,7 +2024,7 @@
 "index": "24",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_00068071": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -2103,7 +2103,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"61:  >> If (s_10 and s_15): set s_25": {
+"61:  >> If (s_00068071 and s_15): set s_25": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2114,7 +2114,7 @@
 "index": "25",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_00068071": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -2193,7 +2193,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"64:  >> If (s_10 and s_16): set s_26": {
+"64:  >> If (s_00068071 and s_16): set s_26": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2204,7 +2204,7 @@
 "index": "26",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_10": {
+"1: s_00068071": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -2685,11 +2685,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"79: s_34 => EndQuest ()": {
+"79: s_00000613 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_34": {
+"0: s_00000613": {
 "type": "State",
 "value": "34",
 "not": "False",

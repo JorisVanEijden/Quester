@@ -340,11 +340,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_3 => CreateLogEntry (1016, 2)": {
+" 6: s_000068e5 => CreateLogEntry (1016, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_000068e5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -370,11 +370,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_2 => CreateLogEntry (1015, 1)": {
+" 7: s_00034b13 => CreateLogEntry (1015, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00034b13": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -504,11 +504,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfGivingItemToNpc (i_flowers, n_spouse): set s_2 [Msg 1011]": {
+"11:  >> IfGivingItemToNpc (i_flowers, n_spouse): set s_00034b13 [Msg 1011]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00034b13": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -534,11 +534,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfGivingItemToNpc (i_letter, n_hermit): set s_4 [Msg 1013]": {
+"12:  >> IfGivingItemToNpc (i_letter, n_hermit): set s_0001a5bc [Msg 1013]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_0001a5bc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -564,11 +564,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> IfGivingItemToNpc (i_000019b0, n_qgiver): set s_5": {
+"13:  >> IfGivingItemToNpc (i_000019b0, n_qgiver): set s_0001a4f0": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_0001a4f0": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -594,11 +594,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfGivingItemToNpc (i_book, n_teacher): set s_3 [Msg 1012]": {
+"14:  >> IfGivingItemToNpc (i_book, n_teacher): set s_000068e5 [Msg 1012]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_000068e5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -624,11 +624,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_2 => AddTopics (l_school, n_teacher)": {
+"15: s_00034b13 => AddTopics (l_school, n_teacher)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_2": {
+"0: s_00034b13": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -661,11 +661,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => AddLocationToMap (l_dungeon)": {
+"16: s_000068e5 => AddLocationToMap (l_dungeon)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_000068e5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -684,11 +684,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => AddTopics (n_hermit)": {
+"17: s_000068e5 => AddTopics (n_hermit)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_3": {
+"0: s_000068e5": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -721,11 +721,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_4 => PlaceItemOnCharacter (i_000019b0)": {
+"18: s_0001a5bc => PlaceItemOnCharacter (i_000019b0)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_0001a5bc": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -751,11 +751,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_2 => PlaceItemOnCharacter (i_book)": {
+"19: s_00034b13 => PlaceItemOnCharacter (i_book)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_00034b13": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -781,11 +781,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_5 => QuestSuccess (i_gold)": {
+"20: s_0001a4f0 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_0001a4f0": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -825,11 +825,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_1 => EndQuest ()": {
+"21: s_00003660 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_00003660": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -841,11 +841,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_5 => EndQuest ()": {
+"22: s_0001a4f0 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_0001a4f0": {
 "type": "State",
 "value": "5",
 "not": "False",

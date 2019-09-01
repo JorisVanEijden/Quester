@@ -185,11 +185,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => PlayMovie (3)": {
+" 4: s_delay => PlayMovie (3)": {
 "opCode": 50,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -208,11 +208,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => Say (1050)": {
+" 5: s_delay => Say (1050)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -328,7 +328,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9:  >> If (s_1 and s_2 and s_0): set s_9": {
+" 9:  >> If (s_1 and s_2 and s_delay): set s_9": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -353,7 +353,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -395,7 +395,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_1 and s_3 and s_0): set s_10": {
+"11:  >> If (s_1 and s_3 and s_delay): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -420,7 +420,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -462,7 +462,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_1 and s_4 and s_0): set s_11": {
+"13:  >> If (s_1 and s_4 and s_delay): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -487,7 +487,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -529,7 +529,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (s_1 and s_5 and s_0): set s_12": {
+"15:  >> If (s_1 and s_5 and s_delay): set s_12": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -554,7 +554,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -596,7 +596,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> If (s_1 and s_6 and s_0): set s_13": {
+"17:  >> If (s_1 and s_6 and s_delay): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -621,7 +621,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -663,7 +663,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> If (s_1 and s_7 and s_0): set s_14": {
+"19:  >> If (s_1 and s_7 and s_delay): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -688,7 +688,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -730,7 +730,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> If (s_1 and s_8 and s_0): set s_15": {
+"21:  >> If (s_1 and s_8 and s_delay): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -755,7 +755,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_delay": {
 "type": "State",
 "value": "0",
 "not": "False",

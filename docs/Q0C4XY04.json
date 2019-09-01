@@ -191,7 +191,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> WhenAtLocation (l_mondung): set s_12": {
+" 3:  >> WhenAtLocation (l_mondung): set s_0000d498": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -202,7 +202,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_12": {
+"1: s_0000d498": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -221,11 +221,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfGivingItemToNpc (i_00000c84, n_questgiver): set s_0": {
+" 4:  >> IfGivingItemToNpc (i_00000c84, n_questgiver): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -251,11 +251,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => QuestSuccess (i_reward)": {
+" 5: s_pcgetsgold => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -295,11 +295,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => EndQuest ()": {
+" 6: s_pcgetsgold => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_pcgetsgold": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -334,11 +334,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_5 => EndQuest ()": {
+" 8: s_1stparton => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_1stparton": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -562,7 +562,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> If (not s_11 and s_12): set s_10": {
+"17:  >> If (not s_11 and s_0000d498): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -580,7 +580,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_12": {
+"2: s_0000d498": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -606,7 +606,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_10 => CreateFoe(m_seducer, 15, 10%, 10)": {
+"18: s_10 => CreateFoe(m_seducer, 15, 10%, 7)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -650,7 +650,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_10 => CreateFoe(m_44000003, 20, 30%, 30)": {
+"19: s_10 => CreateFoe(m_44000003, 20, 30%, 6)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -694,7 +694,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_10 => CreateFoe(m_firedaedra, 18, 25%, 25)": {
+"20: s_10 => CreateFoe(m_firedaedra, 18, 25%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -738,7 +738,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_10 => CreateFoe(m_daedroth, 12, 20%, 20)": {
+"21: s_10 => CreateFoe(m_daedroth, 12, 20%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
