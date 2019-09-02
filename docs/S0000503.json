@@ -317,7 +317,7 @@
 }
 }
 ,"opCodes: [84]": {
-" 0:  >> StartTimer (t_40000000); When it expires: set s_0": {
+" 0:  >> StartTimer (t_40000000); When it expires: set s_40000000": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -610,7 +610,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0 >> StartTimer (t_40000002); When it expires: set s_2": {
+"10: s_0 >> StartTimer (t_40000002); When it expires: set s_40000002": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -857,7 +857,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> IfItemFound (i_sage): set s_5": {
+"18:  >> IfItemPickedUp (i_sage): set s_5": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -968,7 +968,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_8 >> StartTimer (t_4000000a); When it expires: set s_10": {
+"21: s_8 >> StartTimer (t_4000000a); When it expires: set s_4000000a": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1196,7 +1196,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_12 >> StartTimer (t_keytime); When it expires: set s_17": {
+"30: s_12 >> StartTimer (t_keytime); When it expires: set s_keytime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1454,7 +1454,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40:  >> IfItemFound (i_key): set s_house1": {
+"40:  >> IfItemPickedUp (i_key): set s_house1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1537,7 +1537,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_keytime >> StartTimer (t_40000015); When it expires: set s_21": {
+"43: s_keytime >> StartTimer (t_40000015); When it expires: set s_40000015": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1715,7 +1715,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"48: s_19 >> StartTimer (t_4000001f); When it expires: set s_31": {
+"48: s_19 >> StartTimer (t_4000001f); When it expires: set s_4000001f": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2430,7 +2430,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"73:  >> IfItemFound (i_map): set s_32": {
+"73:  >> IfItemPickedUp (i_map): set s_32": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -2497,7 +2497,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"75: s_32 >> StartTimer (t_4000000b); When it expires: set s_11": {
+"75: s_32 >> StartTimer (t_4000000b); When it expires: set s_4000000b": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

@@ -234,7 +234,7 @@
 }
 }
 ,"opCodes: [44]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_5": {
+" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -571,7 +571,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"11:  >> IfItemFound (i_falseletter1): set s_000d8afc": {
+"11:  >> IfItemPickedUp (i_falseletter1): set s_000d8afc": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -594,7 +594,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"12:  >> IfItemFound (i_falseletter2): set s_000d8afc": {
+"12:  >> IfItemPickedUp (i_falseletter2): set s_000d8afc": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -617,7 +617,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"13:  >> IfItemFound (i_falseletter3): set s_000d8afc": {
+"13:  >> IfItemPickedUp (i_falseletter3): set s_000d8afc": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -640,7 +640,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"14:  >> IfItemFound (i_falseletter4): set s_000d8afc": {
+"14:  >> IfItemPickedUp (i_falseletter4): set s_000d8afc": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -843,7 +843,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"21: s_001a4680 => Unknown5_ItemLocation (i_falseletter1, l_imp) [Msg 1015]": {
+"21:  >> IfItemDroppedAt (i_falseletter1, l_imp): set s_001a4680 [Msg 1015]": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
@@ -873,7 +873,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"22: s_001a4680 => Unknown5_ItemLocation (i_falseletter2, l_imp) [Msg 1015]": {
+"22:  >> IfItemDroppedAt (i_falseletter2, l_imp): set s_001a4680 [Msg 1015]": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
@@ -903,7 +903,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"23: s_001a4680 => Unknown5_ItemLocation (i_falseletter3, l_imp) [Msg 1015]": {
+"23:  >> IfItemDroppedAt (i_falseletter3, l_imp): set s_001a4680 [Msg 1015]": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
@@ -933,7 +933,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"24: s_001a4680 => Unknown5_ItemLocation (i_falseletter4, l_imp) [Msg 1015]": {
+"24:  >> IfItemDroppedAt (i_falseletter4, l_imp): set s_001a4680 [Msg 1015]": {
 "opCode": 5,
 "argCount": 3,
 "arguments:": {
@@ -963,7 +963,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"25:  >> IfItemFound (i_treasure): set s_0006cee5": {
+"25:  >> IfItemPickedUp (i_treasure): set s_0006cee5": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -986,7 +986,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"26:  >> IfItemFound (i_falseletter4): set not s_001a4680": {
+"26:  >> IfItemPickedUp (i_falseletter4): set not s_001a4680": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1009,7 +1009,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"27:  >> IfItemFound (i_falseletter3): set not s_001a4680": {
+"27:  >> IfItemPickedUp (i_falseletter3): set not s_001a4680": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1032,7 +1032,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"28:  >> IfItemFound (i_falseletter2): set not s_001a4680": {
+"28:  >> IfItemPickedUp (i_falseletter2): set not s_001a4680": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1055,7 +1055,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"29:  >> IfItemFound (i_falseletter1): set not s_001a4680": {
+"29:  >> IfItemPickedUp (i_falseletter1): set not s_001a4680": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

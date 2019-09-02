@@ -103,7 +103,7 @@
 }
 }
 ,"opCodes: [21]": {
-" 0:  >> StartTimer (t_qtime); When it expires: set s_0": {
+" 0:  >> StartTimer (t_qtime); When it expires: set s_qtime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -239,7 +239,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5:  >> IfItemFound (i_sage): set s_pickupitem": {
+" 5:  >> IfItemPickedUp (i_sage): set s_pickupitem": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -278,7 +278,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7: s_pickupitem >> StartTimer (t_shortdelay); When it expires: set s_5": {
+" 7: s_pickupitem >> StartTimer (t_shortdelay); When it expires: set s_shortdelay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

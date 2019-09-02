@@ -164,7 +164,7 @@
 }
 }
 ,"opCodes: [47]": {
-" 0:  >> StartTimer (t_time); When it expires: set s_0": {
+" 0:  >> StartTimer (t_time); When it expires: set s_time": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -187,7 +187,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 1:  >> StartTimer (t_000038d9); When it expires: set s_1": {
+" 1:  >> StartTimer (t_000038d9); When it expires: set s_000038d9": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -427,7 +427,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 9:  >> IfItemFound (i_heist): set s_00000cfe [Msg 1040]": {
+" 9:  >> IfItemPickedUp (i_heist): set s_00000cfe [Msg 1040]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -961,7 +961,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"24: s_0000064d >> StartTimer (t_delay); When it expires: set s_11": {
+"24: s_0000064d >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1570,7 +1570,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"45: s_00034a5e >> StartTimer (t_delay); When it expires: set s_11": {
+"45: s_00034a5e >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

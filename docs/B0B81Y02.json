@@ -225,7 +225,7 @@
 }
 }
 ,"opCodes: [65]": {
-" 0:  >> StartTimer (t_2dung); When it expires: set s_0": {
+" 0:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -897,7 +897,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_readmap >> StartTimer (t_4000001e); When it expires: set s_30": {
+"21: s_readmap >> StartTimer (t_4000001e); When it expires: set s_4000001e": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1320,7 +1320,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> IfItemFound (i_41000002): set s_18": {
+"33:  >> IfItemPickedUp (i_41000002): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1343,7 +1343,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> IfItemFound (i_41000003): set s_18": {
+"34:  >> IfItemPickedUp (i_41000003): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1366,7 +1366,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35:  >> IfItemFound (i_41000001): set s_18": {
+"35:  >> IfItemPickedUp (i_41000001): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1389,7 +1389,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36:  >> IfItemFound (i_41000004): set s_18": {
+"36:  >> IfItemPickedUp (i_41000004): set s_18": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

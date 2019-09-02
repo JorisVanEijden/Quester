@@ -568,6 +568,11 @@ namespace Quester
             [0x0001A9A9] = "informant1",
             [0X0001B51C] = "shedungent",
             [0x0000031A] = "out",
+            [0x0000D4C3] = "midnight3",
+            [0x000036CD] = "thieves",
+            [0x00003543] = "knights",
+            [0X000E38E5] = "stoletreasure",
+            [0x0000D9E9] = "persecute",
         };
 
         public static string LookUp(uint hash)

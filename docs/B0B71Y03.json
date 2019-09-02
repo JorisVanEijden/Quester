@@ -173,8 +173,8 @@
 }
 }
 ,"mobs: [3]": {
-" 0: m_00003543: 2 Knight": {
-"variable": "m_00003543",
+" 0: m_knights: 2 Knight": {
+"variable": "m_knights",
 "type": "Knight",
 "count": 2,
 "null1": 0,
@@ -199,7 +199,7 @@
 }
 }
 ,"opCodes: [64]": {
-" 0:  >> StartTimer (t_finddaughter); When it expires: set s_3": {
+" 0:  >> StartTimer (t_finddaughter); When it expires: set s_finddaughter": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -924,7 +924,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"23: s_000198f0 => CreateFoe(m_00003543, 3, 30%, 5)": {
+"23: s_000198f0 => CreateFoe(m_knights, 3, 30%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -935,7 +935,7 @@
 "index": "1",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -968,7 +968,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"24:  >> IfMobHurtByPlayer (m_00003543): set s_0001a90b": {
+"24:  >> IfMobHurtByPlayer (m_knights): set s_0001a90b": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -979,7 +979,7 @@
 "index": "12",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1896,7 +1896,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"54:  >> IfItemFound (i_aurielsbow): set s_00001a4d": {
+"54:  >> IfItemPickedUp (i_aurielsbow): set s_00001a4d": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1919,7 +1919,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"55:  >> IfItemFound (i_aurielshield): set s_0000d678": {
+"55:  >> IfItemPickedUp (i_aurielshield): set s_0000d678": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -1942,7 +1942,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"56:  >> IfItemFound (i_lordsmail): set s_0000350a": {
+"56:  >> IfItemPickedUp (i_lordsmail): set s_0000350a": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

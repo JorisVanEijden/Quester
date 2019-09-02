@@ -458,7 +458,7 @@
 }
 }
 ,"opCodes: [114]": {
-" 0:  >> StartTimer (t_2letter); When it expires: set s_0": {
+" 0:  >> StartTimer (t_2letter); When it expires: set s_2letter": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -725,7 +725,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfItemFound (i_00000dbf): set s_4": {
+"11:  >> IfItemPickedUp (i_00000dbf): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -778,7 +778,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_4 >> StartTimer (t_delay); When it expires: set s_5": {
+"13: s_4 >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -801,7 +801,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_delay >> StartTimer (t_40000008); When it expires: set s_8": {
+"14: s_delay >> StartTimer (t_40000008); When it expires: set s_40000008": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -958,7 +958,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_7 >> StartTimer (t_40000026); When it expires: set s_38": {
+"19: s_7 >> StartTimer (t_40000026); When it expires: set s_40000026": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -981,7 +981,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_7 => CheckNpcReputation (s_9, n_00005691, 5)": {
+"20:  >> IfNpcReputation (s_9, n_00005691): set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1018,7 +1018,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_7 => CheckNpcReputation (s_12, n_00003285, 15)": {
+"21:  >> IfNpcReputation (s_12, n_00003285): set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1055,7 +1055,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_7 => CheckNpcReputation (s_15, n_00002d81, 10)": {
+"22:  >> IfNpcReputation (s_15, n_00002d81): set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1092,7 +1092,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 => CheckNpcReputation (s_16, n_0000beff, 0)": {
+"23:  >> IfNpcReputation (s_16, n_0000beff): set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1129,7 +1129,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 => CheckNpcReputation (s_17, n_00016b9d, 0)": {
+"24:  >> IfNpcReputation (s_17, n_00016b9d): set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1355,7 +1355,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 >> StartTimer (t_4000000a); When it expires: set s_10": {
+"32: s_9 >> StartTimer (t_4000000a); When it expires: set s_4000000a": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1475,7 +1475,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_12 >> StartTimer (t_4000000d); When it expires: set s_13": {
+"36: s_12 >> StartTimer (t_4000000d); When it expires: set s_4000000d": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1595,7 +1595,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_15 >> StartTimer (t_40000012); When it expires: set s_18": {
+"40: s_15 >> StartTimer (t_40000012); When it expires: set s_40000012": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1618,7 +1618,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_16 >> StartTimer (t_40000014); When it expires: set s_20": {
+"41: s_16 >> StartTimer (t_40000014); When it expires: set s_40000014": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1641,7 +1641,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_17 >> StartTimer (t_40000013); When it expires: set s_19": {
+"42: s_17 >> StartTimer (t_40000013); When it expires: set s_40000013": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

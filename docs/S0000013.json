@@ -141,7 +141,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 1:  >> StartTimer (t_startquest); When it expires: set s_4": {
+" 1:  >> StartTimer (t_startquest); When it expires: set s_startquest": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -362,7 +362,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"10: s_yes >> StartTimer (t_2myndung); When it expires: set s_0": {
+"10: s_yes >> StartTimer (t_2myndung); When it expires: set s_2myndung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -491,7 +491,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"15:  >> IfItemFound (i_treasure): set s_dummy [Msg 1009]": {
+"15:  >> IfItemPickedUp (i_treasure): set s_dummy [Msg 1009]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

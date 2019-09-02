@@ -204,7 +204,7 @@
 }
 }
 ,"opCodes: [36]": {
-" 0:  >> StartTimer (t_40000000); When it expires: set s_0": {
+" 0:  >> StartTimer (t_40000000); When it expires: set s_40000000": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -257,7 +257,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0 >> StartTimer (t_executiondelay); When it expires: set s_1": {
+" 2: s_0 >> StartTimer (t_executiondelay); When it expires: set s_executiondelay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -485,7 +485,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 >> StartTimer (t_escapetime); When it expires: set s_9": {
+"11: s_3 >> StartTimer (t_escapetime); When it expires: set s_escapetime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -907,7 +907,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_6 >> StartTimer (t_delay); When it expires: set s_7": {
+"26: s_6 >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

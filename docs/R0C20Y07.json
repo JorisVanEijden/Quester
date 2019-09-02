@@ -128,7 +128,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_3": {
+" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -264,7 +264,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5:  >> IfItemFound (i_sage): set s_pchasitem": {
+" 5:  >> IfItemPickedUp (i_sage): set s_pchasitem": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -460,7 +460,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_5": {
+"12: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

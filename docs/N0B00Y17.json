@@ -214,7 +214,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [53]": {
-" 0:  >> StartTimer (t_time1); When it expires: set s_0": {
+" 0:  >> StartTimer (t_time1); When it expires: set s_time1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -844,7 +844,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"21: s_000712ae >> StartTimer (t_time2); When it expires: set s_20": {
+"21: s_000712ae >> StartTimer (t_time2); When it expires: set s_time2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1337,7 +1337,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"40:  >> IfItemFound (i_sage): set s_dummymage [Msg 1050]": {
+"40:  >> IfItemPickedUp (i_sage): set s_dummymage [Msg 1050]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

@@ -67,7 +67,7 @@ namespace Quester
 
                     return line + $"): set {state}{message}";
                 case Instruction.IfMobHurtByPlayer:
-                case Instruction.IfItemFound:
+                case Instruction.IfItemPickedUp:
                 case Instruction.IfNpcClicked:
                 case Instruction.IfPlayerHasLevel:
                     return $" >> {Code} ({Arguments[1]}): set {state}{message}";
@@ -77,13 +77,15 @@ namespace Quester
                     return $" >> {Code} ({start}, {end}): set {state}{message}";
                 case Instruction.IfGivingItemToNpc:
                 case Instruction.IfMobsKilled:
+                case Instruction.IfNpcReputation:
+                case Instruction.IfItemDroppedAt:
                     return $" >> {Code} ({Arguments[1]}, {Arguments[2]}): set {state}{message}";
                 case Instruction.IfFactionReputation:
                     FactionId faction = (FactionId) Arguments[1].Value;
                     return $" >> {Code} ({faction}, {Arguments[2]}): set {state}{message}";
                 case Instruction.StartTimer:
                     State timerState = FindTimerState(Arguments[1]);
-                    return $"{state} >> {Code} ({Arguments[1]}); When it expires: set s_{timerState.Index}{message}";
+                    return $"{state} >> {Code} ({Arguments[1]}); When it expires: set {timerState}{message}";
                 case Instruction.CreateFoe:
                     Argument mobArgument = Arguments[1];
                     mobArgument.Type = RecordType.Mob;

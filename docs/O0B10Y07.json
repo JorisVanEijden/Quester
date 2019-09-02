@@ -71,8 +71,8 @@
 }
 }
 ,"mobs: [4]": {
-" 0: m_00003543: 1 Knight": {
-"variable": "m_00003543",
+" 0: m_knights: 1 Knight": {
+"variable": "m_knights",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -105,7 +105,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_2palace); When it expires: set s_0": {
+" 0:  >> StartTimer (t_2palace); When it expires: set s_2palace": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -350,7 +350,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 103
 },
-" 7: s_0001ad1f => CreateFoe(m_00003543, 10, 15%, 10)": {
+" 7: s_0001ad1f => CreateFoe(m_knights, 10, 15%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -361,7 +361,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -394,7 +394,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 103
 },
-" 8:  >> IfItemFound (i_jewelry): set s_001af69a [Msg 1020]": {
+" 8:  >> IfItemPickedUp (i_jewelry): set s_001af69a [Msg 1020]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

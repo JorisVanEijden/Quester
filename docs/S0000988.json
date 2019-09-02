@@ -228,7 +228,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => CheckNpcReputation (s_0, n_gortwog, 25)": {
+" 3:  >> IfNpcReputation (s_0, n_gortwog): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -265,7 +265,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => CheckNpcReputation (s_1, n_thievesguild, 50)": {
+" 4:  >> IfNpcReputation (s_1, n_thievesguild): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -302,7 +302,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => CheckNpcReputation (s_0, n_0000d4fb, 50)": {
+" 5:  >> IfNpcReputation (s_0, n_0000d4fb): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -339,7 +339,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  => CheckNpcReputation (s_2, n_magesguild, 50)": {
+" 6:  >> IfNpcReputation (s_2, n_magesguild): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -519,7 +519,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 >> StartTimer (t_delay); When it expires: set s_4": {
+"12: s_3 >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

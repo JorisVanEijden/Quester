@@ -83,7 +83,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [11]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_3": {
+" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -189,7 +189,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfItemFound (i_sage): set s_pchasitem [Msg 1011]": {
+" 4:  >> IfItemPickedUp (i_sage): set s_pchasitem [Msg 1011]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

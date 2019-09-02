@@ -132,8 +132,8 @@
 "null2": 0,
 "index": 2
 },
-" 3: m_00003543: 1 Knight": {
-"variable": "m_00003543",
+" 3: m_knights: 1 Knight": {
+"variable": "m_knights",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -150,7 +150,7 @@
 }
 }
 ,"opCodes: [32]": {
-" 0:  >> StartTimer (t_0001bf33); When it expires: set s_12": {
+" 0:  >> StartTimer (t_0001bf33); When it expires: set s_0001bf33": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -173,7 +173,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 411
 },
-" 1:  >> StartTimer (t_oneday); When it expires: set s_0": {
+" 1:  >> StartTimer (t_oneday); When it expires: set s_oneday": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -616,7 +616,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 411
 },
-"16: s_000063bf => CreateFoe(m_00003543, 30, 10%, 10)": {
+"16: s_000063bf => CreateFoe(m_knights, 30, 10%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -627,7 +627,7 @@
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -704,7 +704,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 411
 },
-"18:  >> IfMobHurtByPlayer (m_00003543): set s_0001a90b [Msg 1014]": {
+"18:  >> IfMobHurtByPlayer (m_knights): set s_0001a90b [Msg 1014]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -715,7 +715,7 @@
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -773,7 +773,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 411
 },
-"21: s_000063bf >> StartTimer (t_00006cc3); When it expires: set s_9": {
+"21: s_000063bf >> StartTimer (t_00006cc3); When it expires: set s_00006cc3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

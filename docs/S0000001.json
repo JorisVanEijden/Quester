@@ -500,7 +500,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => CheckNpcReputation (s_16, n_00006691, 5)": {
+" 9:  >> IfNpcReputation (s_16, n_00006691): set s_0": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -887,7 +887,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> IfItemFound (i_0000c9c4): set s_10 [Msg 1020]": {
+"24:  >> IfItemPickedUp (i_0000c9c4): set s_10 [Msg 1020]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -940,7 +940,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_yes >> StartTimer (t_4000000d); When it expires: set s_13": {
+"26: s_yes >> StartTimer (t_4000000d); When it expires: set s_4000000d": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

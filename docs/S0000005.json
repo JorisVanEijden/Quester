@@ -86,7 +86,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [27]": {
-" 0:  >> StartTimer (t_2shedungent); When it expires: set s_0": {
+" 0:  >> StartTimer (t_2shedungent); When it expires: set s_2shedungent": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -372,7 +372,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_pcgetsgold => CheckNpcReputation (s_11, n_00000c7f, 15)": {
+"10:  >> IfNpcReputation (s_11, n_00000c7f): set s_pcgetsgold": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {

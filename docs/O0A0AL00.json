@@ -192,7 +192,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 2: s_readletter >> StartTimer (t_traveltime); When it expires: set s_0": {
+" 2: s_readletter >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -305,7 +305,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 6:  >> IfItemFound (i_clothing): set s_000355c7 [Msg 1018]": {
+" 6:  >> IfItemPickedUp (i_clothing): set s_000355c7 [Msg 1018]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

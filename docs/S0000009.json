@@ -155,8 +155,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_00003543: 1 Knight": {
-"variable": "m_00003543",
+" 1: m_knights: 1 Knight": {
+"variable": "m_knights",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -211,7 +211,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 2:  >> StartTimer (t_000271bc); When it expires: set s_11": {
+" 2:  >> StartTimer (t_000271bc); When it expires: set s_000271bc": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -536,7 +536,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"14: not s_0006a5e8 => SendFoe (m_00003543, 91, 10, 10)": {
+"14: not s_0006a5e8 => SendFoe (m_knights, 91, 10, 10)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
@@ -547,7 +547,7 @@
 "index": "8",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -624,7 +624,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"16:  >> IfMobHurtByPlayer (m_00003543): set s_0000d3e8": {
+"16:  >> IfMobHurtByPlayer (m_knights): set s_0000d3e8": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -635,7 +635,7 @@
 "index": "6",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -700,7 +700,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"19: s_0000d3e8 => PlaceItemOnMob (i_00037be9, m_00003543)": {
+"19: s_0000d3e8 => PlaceItemOnMob (i_00037be9, m_knights)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -718,7 +718,7 @@
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: m_00003543": {
+"2: m_knights": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -730,7 +730,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"20:  >> IfMobsKilled (m_00003543, 2): set s_0006a5e8": {
+"20:  >> IfMobsKilled (m_knights, 2): set s_0006a5e8": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -741,7 +741,7 @@
 "index": "8",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1235,7 +1235,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"38: s_npcclicked >> StartTimer (t_0000dd26); When it expires: set s_14": {
+"38: s_npcclicked >> StartTimer (t_0000dd26); When it expires: set s_0000dd26": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

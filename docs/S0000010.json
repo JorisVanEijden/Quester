@@ -158,7 +158,7 @@
 }
 }
 ,"opCodes: [30]": {
-" 0:  => CheckNpcReputation (s_7, n_agentuk, 0)": {
+" 0:  >> IfNpcReputation (s_7, n_agentuk): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -435,7 +435,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_yes >> StartTimer (t_itemindung); When it expires: set s_11": {
+" 9: s_yes >> StartTimer (t_itemindung); When it expires: set s_itemindung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -654,7 +654,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_4 >> StartTimer (t_4000000a); When it expires: set s_10": {
+"17: s_4 >> StartTimer (t_4000000a); When it expires: set s_4000000a": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -954,7 +954,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_9 >> StartTimer (t_40000004); When it expires: set s_4": {
+"27: s_9 >> StartTimer (t_40000004); When it expires: set s_40000004": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

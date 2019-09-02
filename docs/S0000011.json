@@ -357,7 +357,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfItemFound (i_000192b5): set s_4": {
+" 7:  >> IfItemPickedUp (i_000192b5): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -477,7 +477,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_yes >> StartTimer (t_40000001); When it expires: set s_1": {
+"11: s_yes >> StartTimer (t_40000001); When it expires: set s_40000001": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -878,7 +878,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_11 >> StartTimer (t_40000012); When it expires: set s_18": {
+"26: s_11 >> StartTimer (t_40000012); When it expires: set s_40000012": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1739,7 +1739,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"54: s_24 >> StartTimer (t_4000000b); When it expires: set s_11": {
+"54: s_24 >> StartTimer (t_4000000b); When it expires: set s_4000000b": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

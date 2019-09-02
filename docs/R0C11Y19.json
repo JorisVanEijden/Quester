@@ -89,8 +89,8 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_00003543: 2 Knight": {
-"variable": "m_00003543",
+" 0: m_knights: 2 Knight": {
+"variable": "m_knights",
 "type": "Knight",
 "count": 2,
 "null1": 0,
@@ -99,7 +99,7 @@
 }
 }
 ,"opCodes: [18]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_4": {
+" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -258,7 +258,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 6: s_pchasitem2 => CreateFoe(m_00003543, 5, 35%, 3)": {
+" 6: s_pchasitem2 => CreateFoe(m_knights, 5, 35%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -269,7 +269,7 @@
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -302,7 +302,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 7:  >> IfMobHurtByPlayer (m_00003543): set s_00001a30": {
+" 7:  >> IfMobHurtByPlayer (m_knights): set s_00001a30": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -313,7 +313,7 @@
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_00003543": {
+"1: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -406,7 +406,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"10: s_00006947 => PlaceItemOnMob (i_item2, m_00003543) [Msg 1021]": {
+"10: s_00006947 => PlaceItemOnMob (i_item2, m_knights) [Msg 1021]": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -424,7 +424,7 @@
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: m_00003543": {
+"2: m_knights": {
 "type": "Mob",
 "value": "0",
 "not": "False",

@@ -838,7 +838,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> StartTimer (t_queston); When it expires: set s_10": {
+"10:  >> StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -861,7 +861,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> StartTimer (t_delay); When it expires: set s_62": {
+"11:  >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -884,7 +884,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> StartTimer (t_2letter); When it expires: set s_9": {
+"12:  >> StartTimer (t_2letter); When it expires: set s_2letter": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1510,7 +1510,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_2letter => CheckNpcReputation (s_11, n_tg, 10)": {
+"31:  >> IfNpcReputation (s_11, n_tg): set s_2letter": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1547,7 +1547,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_2letter => CheckNpcReputation (s_12, n_000002e5, 10)": {
+"32:  >> IfNpcReputation (s_12, n_000002e5): set s_2letter": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1584,7 +1584,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_2letter => CheckNpcReputation (s_13, n_00000155, 10)": {
+"33:  >> IfNpcReputation (s_13, n_00000155): set s_2letter": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -3579,7 +3579,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"96:  >> IfItemFound (i_gem): set s_37": {
+"96:  >> IfItemPickedUp (i_gem): set s_37": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -4036,7 +4036,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"111:  >> IfItemFound (i_001bbf6b): set s_43": {
+"111:  >> IfItemPickedUp (i_001bbf6b): set s_43": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -4059,7 +4059,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"112:  >> IfItemFound (i_000dbd6b): set s_43": {
+"112:  >> IfItemPickedUp (i_000dbd6b): set s_43": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -4082,7 +4082,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"113:  >> IfItemFound (i_000d576b): set s_43": {
+"113:  >> IfItemPickedUp (i_000d576b): set s_43": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -4105,7 +4105,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"114:  >> IfItemFound (i_000d866b): set s_43": {
+"114:  >> IfItemPickedUp (i_000d866b): set s_43": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

@@ -99,7 +99,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0: s_000033b2 >> StartTimer (t_1stparton); When it expires: set s_3": {
+" 0: s_000033b2 >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -279,7 +279,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 405
 },
-" 6:  >> IfItemFound (i_vamprelic): set s_pchasitem": {
+" 6:  >> IfItemPickedUp (i_vamprelic): set s_pchasitem": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

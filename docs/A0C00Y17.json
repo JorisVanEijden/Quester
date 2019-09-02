@@ -130,8 +130,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_000036cd: 2 Thief": {
-"variable": "m_000036cd",
+" 1: m_thieves: 2 Thief": {
+"variable": "m_thieves",
 "type": "Thief",
 "count": 2,
 "null1": 0,
@@ -156,7 +156,7 @@
 }
 }
 ,"opCodes: [49]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_0": {
+" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -461,7 +461,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 9: s_0006d201 => CreateFoe(m_000036cd, 5, 25%, 3)": {
+" 9: s_0006d201 => CreateFoe(m_thieves, 5, 25%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -472,7 +472,7 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000036cd": {
+"1: m_thieves": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -551,7 +551,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"12:  >> IfMobHurtByPlayer (m_000036cd): set s_0000d478 [Msg 1022]": {
+"12:  >> IfMobHurtByPlayer (m_thieves): set s_0000d478 [Msg 1022]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -562,7 +562,7 @@
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000036cd": {
+"1: m_thieves": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1152,7 +1152,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"29: s_0003684d => DoneWithMob (m_000036cd, _)": {
+"29: s_0003684d => DoneWithMob (m_thieves, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -1163,7 +1163,7 @@
 "index": "13",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000036cd": {
+"1: m_thieves": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1470,7 +1470,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"41: s_yes >> StartTimer (t_extratime); When it expires: set s_7": {
+"41: s_yes >> StartTimer (t_extratime); When it expires: set s_extratime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

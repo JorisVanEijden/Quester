@@ -93,7 +93,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_0": {
+" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -252,7 +252,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfItemFound (i_book): set s_00006b65": {
+" 6:  >> IfItemPickedUp (i_book): set s_00006b65": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

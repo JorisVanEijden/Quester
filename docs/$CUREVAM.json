@@ -180,7 +180,7 @@
 }
 }
 ,"opCodes: [54]": {
-" 0: s_0000cc1e >> StartTimer (t_huntstart); When it expires: set s_14": {
+" 0: s_0000cc1e >> StartTimer (t_huntstart); When it expires: set s_huntstart": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -487,7 +487,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_huntstart >> StartTimer (t_00006cc3); When it expires: set s_13": {
+"10: s_huntstart >> StartTimer (t_00006cc3); When it expires: set s_00006cc3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1078,7 +1078,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"29: s_00001b3d >> StartTimer (t_000199b3); When it expires: set s_10": {
+"29: s_00001b3d >> StartTimer (t_000199b3); When it expires: set s_000199b3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

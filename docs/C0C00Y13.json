@@ -112,7 +112,7 @@
 }
 }
 ,"opCodes: [14]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_0": {
+" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -463,7 +463,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-"11: s_questdone >> StartTimer (t_delay); When it expires: set s_3": {
+"11: s_questdone >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

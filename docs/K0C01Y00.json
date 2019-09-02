@@ -154,7 +154,7 @@
 }
 }
 ,"opCodes: [34]": {
-" 0:  >> StartTimer (t_queston1); When it expires: set s_0": {
+" 0:  >> StartTimer (t_queston1); When it expires: set s_queston1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -364,7 +364,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 7:  => CheckNpcReputation (s_0000dc87, n_tg, 10)": {
+" 7:  >> IfNpcReputation (s_0000dc87, n_tg): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -401,7 +401,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 8: s_0000dc87 >> StartTimer (t_0000a03c); When it expires: set s_5": {
+" 8: s_0000dc87 >> StartTimer (t_0000a03c); When it expires: set s_0000a03c": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -730,7 +730,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"22:  >> IfItemFound (i_gem): set s_000019a3": {
+"22:  >> IfItemPickedUp (i_gem): set s_000019a3": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

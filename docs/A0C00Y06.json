@@ -185,7 +185,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_escapetime); When it expires: set s_0": {
+" 1:  >> StartTimer (t_escapetime); When it expires: set s_escapetime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -307,7 +307,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_clickonenemy >> StartTimer (t_shortdelay); When it expires: set s_1": {
+" 6: s_clickonenemy >> StartTimer (t_shortdelay); When it expires: set s_shortdelay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -413,7 +413,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_traitordead >> StartTimer (t_delay); When it expires: set s_12": {
+"10: s_traitordead >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

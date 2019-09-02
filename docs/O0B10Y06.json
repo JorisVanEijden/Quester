@@ -115,7 +115,7 @@
 }
 }
 ,"opCodes: [17]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_0": {
+" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -448,7 +448,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 9:  >> IfItemFound (i_jewelry): set s_00001c00": {
+" 9:  >> IfItemPickedUp (i_jewelry): set s_00001c00": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

@@ -453,7 +453,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> StartTimer (t_00004f37); When it expires: set s_0": {
+" 4:  >> StartTimer (t_00004f37); When it expires: set s_00004f37": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -603,7 +603,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9:  => CheckNpcReputation (s_0006c7ee, n_00006e29, 4)": {
+" 9:  >> IfNpcReputation (s_0006c7ee, n_00006e29): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -640,7 +640,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  => CheckNpcReputation (s_0006c7ee, n_000031e2, 4)": {
+"10:  >> IfNpcReputation (s_0006c7ee, n_000031e2): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -677,7 +677,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  => CheckNpcReputation (s_0006c7ee, n_000031bf, 4)": {
+"11:  >> IfNpcReputation (s_0006c7ee, n_000031bf): set ": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1159,7 +1159,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_000069be >> StartTimer (t_delay); When it expires: set s_4": {
+"28: s_000069be >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2353,7 +2353,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"65: s_0000c8f5 >> StartTimer (t_00000dbc); When it expires: set s_27": {
+"65: s_0000c8f5 >> StartTimer (t_00000dbc); When it expires: set s_00000dbc": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -2925,7 +2925,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"85: s_000019b2 >> StartTimer (t_000018d8); When it expires: set s_32": {
+"85: s_000019b2 >> StartTimer (t_000018d8); When it expires: set s_000018d8": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -3130,7 +3130,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"93: s_000018d8 >> StartTimer (t_delay); When it expires: set s_4": {
+"93: s_000018d8 >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -3333,7 +3333,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"100: s_00019762 >> StartTimer (t_2ndparton); When it expires: set s_1": {
+"100: s_00019762 >> StartTimer (t_2ndparton); When it expires: set s_2ndparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -4413,7 +4413,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"136: s_0000dee9 >> StartTimer (t_delay); When it expires: set s_4": {
+"136: s_0000dee9 >> StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {

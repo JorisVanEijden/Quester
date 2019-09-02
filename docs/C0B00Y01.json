@@ -469,7 +469,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> StartTimer (t_40000004); When it expires: set s_4": {
+" 5:  >> StartTimer (t_40000004); When it expires: set s_40000004": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -492,7 +492,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> StartTimer (t_4000000e); When it expires: set s_14": {
+" 6:  >> StartTimer (t_4000000e); When it expires: set s_4000000e": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -515,7 +515,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> StartTimer (t_queston); When it expires: set s_0": {
+" 7:  >> StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1057,7 +1057,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_4 >> StartTimer (t_40000006); When it expires: set s_6": {
+"26: s_4 >> StartTimer (t_40000006); When it expires: set s_40000006": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1315,7 +1315,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_8 => CheckNpcReputation (s_9, n_lover, 5)": {
+"36:  >> IfNpcReputation (s_9, n_lover): set s_8": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1712,7 +1712,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"49: s_14 >> StartTimer (t_40000010); When it expires: set s_16": {
+"49: s_14 >> StartTimer (t_40000010); When it expires: set s_40000010": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1917,7 +1917,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"57:  >> IfItemFound (i_finger): set s_17": {
+"57:  >> IfItemPickedUp (i_finger): set s_17": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {

@@ -241,7 +241,7 @@
 }
 }
 ,"opCodes: [60]": {
-" 0: s_0000cc1e >> StartTimer (t_huntstart); When it expires: set s_6": {
+" 0: s_0000cc1e >> StartTimer (t_huntstart); When it expires: set s_huntstart": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -726,7 +726,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"15: s_huntstart >> StartTimer (t_00006cc3); When it expires: set s_5": {
+"15: s_huntstart >> StartTimer (t_00006cc3); When it expires: set s_00006cc3": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
