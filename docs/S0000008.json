@@ -188,8 +188,8 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_00002d3e: Female (type Permanent) (faction King_Gothryd)": {
-"variable": "n_00002d3e",
+" 1: n_Gothryd: Female (type Permanent) (faction King_Gothryd)": {
+"variable": "n_Gothryd",
 "gender": "Female",
 "facePictureIndex": 0,
 "npcType": "Permanent",
@@ -201,8 +201,8 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_00003285: Female (type Permanent) (faction King_Eadwyre)": {
-"variable": "n_00003285",
+" 2: n_eadwyre: Female (type Permanent) (faction King_Eadwyre)": {
+"variable": "n_eadwyre",
 "gender": "Female",
 "facePictureIndex": 0,
 "npcType": "Permanent",
@@ -214,8 +214,8 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_00005691: Female (type Permanent) (faction Queen_Akorithi)": {
-"variable": "n_00005691",
+" 3: n_Akorithi: Female (type Permanent) (faction Queen_Akorithi)": {
+"variable": "n_Akorithi",
 "gender": "Female",
 "facePictureIndex": 0,
 "npcType": "Permanent",
@@ -227,8 +227,8 @@
 "index": 3,
 "null1": 0
 },
-" 4: n_00002d81: Female (type Permanent) (faction Gortwog)": {
-"variable": "n_00002d81",
+" 4: n_Gortwog: Female (type Permanent) (faction Gortwog)": {
+"variable": "n_Gortwog",
 "gender": "Female",
 "facePictureIndex": 0,
 "npcType": "Permanent",
@@ -240,8 +240,8 @@
 "index": 4,
 "null1": 0
 },
-" 5: n_0000beff: Female (faction Agents_of_The_Underking) (face 1)": {
-"variable": "n_0000beff",
+" 5: n_Underking: Female (faction Agents_of_The_Underking) (face 1)": {
+"variable": "n_Underking",
 "gender": "Female",
 "facePictureIndex": 1,
 "npcType": "Unknown_1",
@@ -253,8 +253,8 @@
 "index": 5,
 "null1": 0
 },
-" 6: n_00016b9d: Female (type Permanent) (faction King_of_Worms)": {
-"variable": "n_00016b9d",
+" 6: n_Kingoworms: Female (type Permanent) (faction King_of_Worms)": {
+"variable": "n_Kingoworms",
 "gender": "Female",
 "facePictureIndex": 0,
 "npcType": "Permanent",
@@ -268,8 +268,8 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_00018ff8: Specific DaggerfallCastle": {
-"variable": "l_00018ff8",
+" 0: l_daggerfall: Specific DaggerfallCastle": {
+"variable": "l_daggerfall",
 "generalLocation": "Specific",
 "locationType": -1524,
 "LocationType": "SpecificLocation",
@@ -458,7 +458,7 @@
 }
 }
 ,"opCodes: [114]": {
-" 0:  >> StartTimer (t_2letter); When it expires: set s_2letter": {
+" 0:  => StartTimer (t_2letter); When it expires: set s_2letter": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -594,7 +594,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_yes => PlaceItemAt (i_00000dbf, l_00018ff8)": {
+" 5: s_yes => PlaceItemAt (i_00000dbf, l_daggerfall)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -612,7 +612,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_00018ff8": {
+"2: l_daggerfall": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -748,7 +748,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 >> WhenAtLocation (l_00018ff8): set s_6": {
+"12: s_4 >> WhenAtLocation (l_daggerfall): set s_6": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -766,7 +766,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_00018ff8": {
+"2: l_daggerfall": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -778,7 +778,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_4 >> StartTimer (t_delay); When it expires: set s_delay": {
+"13: s_4 => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -801,7 +801,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_delay >> StartTimer (t_40000008); When it expires: set s_40000008": {
+"14: s_delay => StartTimer (t_40000008); When it expires: set s_40000008": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -958,7 +958,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_7 >> StartTimer (t_40000026); When it expires: set s_40000026": {
+"19: s_7 => StartTimer (t_40000026); When it expires: set s_40000026": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -981,7 +981,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfNpcReputation (s_9, n_00005691): set s_7": {
+"20: s_7 >> IfNpcReputation (n_Akorithi) > 5: set s_9": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -999,7 +999,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00005691": {
+"2: n_Akorithi": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -1018,7 +1018,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> IfNpcReputation (s_12, n_00003285): set s_7": {
+"21: s_7 >> IfNpcReputation (n_eadwyre) > 15: set s_12": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1036,7 +1036,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00003285": {
+"2: n_eadwyre": {
 "type": "Npc",
 "value": "2",
 "not": "False",
@@ -1055,7 +1055,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfNpcReputation (s_15, n_00002d81): set s_7": {
+"22: s_7 >> IfNpcReputation (n_Gortwog) > 10: set s_15": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1073,7 +1073,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00002d81": {
+"2: n_Gortwog": {
 "type": "Npc",
 "value": "4",
 "not": "False",
@@ -1092,7 +1092,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23:  >> IfNpcReputation (s_16, n_0000beff): set s_7": {
+"23: s_7 >> IfNpcReputation (n_Underking) > 0: set s_16": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1110,7 +1110,7 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_0000beff": {
+"2: n_Underking": {
 "type": "Npc",
 "value": "5",
 "not": "False",
@@ -1129,7 +1129,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> IfNpcReputation (s_17, n_00016b9d): set s_7": {
+"24: s_7 >> IfNpcReputation (n_Kingoworms) > 0: set s_17": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -1147,7 +1147,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00016b9d": {
+"2: n_Kingoworms": {
 "type": "Npc",
 "value": "6",
 "not": "False",
@@ -1210,7 +1210,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_7 => SetQuestor (n_00002d3e)": {
+"26: s_7 => SetQuestor (n_Gothryd)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -1221,7 +1221,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00002d3e": {
+"1: n_Gothryd": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -1233,7 +1233,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_7 => SetQuestor (n_00005691)": {
+"27: s_7 => SetQuestor (n_Akorithi)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -1244,7 +1244,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -1256,7 +1256,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_7 => SetQuestor (n_00002d81)": {
+"28: s_7 => SetQuestor (n_Gortwog)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -1267,7 +1267,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00002d81": {
+"1: n_Gortwog": {
 "type": "Npc",
 "value": "4",
 "not": "False",
@@ -1279,7 +1279,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_7 => SetQuestor (n_00003285)": {
+"29: s_7 => SetQuestor (n_eadwyre)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -1290,7 +1290,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003285": {
+"1: n_eadwyre": {
 "type": "Npc",
 "value": "2",
 "not": "False",
@@ -1355,7 +1355,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 >> StartTimer (t_4000000a); When it expires: set s_4000000a": {
+"32: s_9 => StartTimer (t_4000000a); When it expires: set s_4000000a": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1475,7 +1475,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_12 >> StartTimer (t_4000000d); When it expires: set s_4000000d": {
+"36: s_12 => StartTimer (t_4000000d); When it expires: set s_4000000d": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1595,7 +1595,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_15 >> StartTimer (t_40000012); When it expires: set s_40000012": {
+"40: s_15 => StartTimer (t_40000012); When it expires: set s_40000012": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1618,7 +1618,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_16 >> StartTimer (t_40000014); When it expires: set s_40000014": {
+"41: s_16 => StartTimer (t_40000014); When it expires: set s_40000014": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1641,7 +1641,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_17 >> StartTimer (t_40000013); When it expires: set s_40000013": {
+"42: s_17 => StartTimer (t_40000013); When it expires: set s_40000013": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1733,7 +1733,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46: s_20 => PlaceNpcAt (n_0000beff, l_temple)": {
+"46: s_20 => PlaceNpcAt (n_Underking, l_temple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1744,7 +1744,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_0000beff": {
+"1: n_Underking": {
 "type": "Npc",
 "value": "5",
 "not": "False",
@@ -2329,7 +2329,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"64:  >> IfGivingItemToNpc (i_00000dbf, n_00005691): set s_30": {
+"64:  >> IfGivingItemToNpc (i_00000dbf, n_Akorithi): set s_30": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2347,7 +2347,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00005691": {
+"2: n_Akorithi": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -2686,7 +2686,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"78:  >> IfGivingItemToNpc (i_00000dbf, n_00016b9d): set s_33": {
+"78:  >> IfGivingItemToNpc (i_00000dbf, n_Kingoworms): set s_33": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2704,7 +2704,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00016b9d": {
+"2: n_Kingoworms": {
 "type": "Npc",
 "value": "6",
 "not": "False",
@@ -2762,7 +2762,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"81:  >> IfGivingItemToNpc (i_00000dbf, n_00002d81): set s_34": {
+"81:  >> IfGivingItemToNpc (i_00000dbf, n_Gortwog): set s_34": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2780,7 +2780,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00002d81": {
+"2: n_Gortwog": {
 "type": "Npc",
 "value": "4",
 "not": "False",
@@ -2861,7 +2861,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"85:  >> IfGivingItemToNpc (i_00000dbf, n_0000beff): set s_35": {
+"85:  >> IfGivingItemToNpc (i_00000dbf, n_Underking): set s_35": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2879,7 +2879,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_0000beff": {
+"2: n_Underking": {
 "type": "Npc",
 "value": "5",
 "not": "False",
@@ -2960,7 +2960,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"89:  >> IfGivingItemToNpc (i_00000dbf, n_00003285): set s_36": {
+"89:  >> IfGivingItemToNpc (i_00000dbf, n_eadwyre): set s_36": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2978,7 +2978,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00003285": {
+"2: n_eadwyre": {
 "type": "Npc",
 "value": "2",
 "not": "False",
@@ -3094,7 +3094,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"93: s_37 => PlaceItemOnCharacter (i_goldgoth, n_00002d3e)": {
+"93: s_37 => PlaceItemOnCharacter (i_goldgoth, n_Gothryd)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -3112,7 +3112,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00002d3e": {
+"2: n_Gothryd": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -3542,7 +3542,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"107: s_45 => UnsetQuestor (n_00005691)": {
+"107: s_45 => UnsetQuestor (n_Akorithi)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -3553,7 +3553,7 @@
 "index": "45",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -3565,7 +3565,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"108: s_45 => UnsetQuestor (n_00003285)": {
+"108: s_45 => UnsetQuestor (n_eadwyre)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -3576,7 +3576,7 @@
 "index": "45",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003285": {
+"1: n_eadwyre": {
 "type": "Npc",
 "value": "2",
 "not": "False",
@@ -3588,7 +3588,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"109: s_45 => UnsetQuestor (n_00002d81)": {
+"109: s_45 => UnsetQuestor (n_Gortwog)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -3599,7 +3599,7 @@
 "index": "45",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00002d81": {
+"1: n_Gortwog": {
 "type": "Npc",
 "value": "4",
 "not": "False",
@@ -3611,7 +3611,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"110: s_45 => UnsetQuestor (n_00002d3e)": {
+"110: s_45 => UnsetQuestor (n_Gothryd)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -3622,7 +3622,7 @@
 "index": "45",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00002d3e": {
+"1: n_Gothryd": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -3650,7 +3650,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"112:  >> IfGivingItemToNpc (i_00000dbf, n_00002d3e): set s_46": {
+"112:  >> IfGivingItemToNpc (i_00000dbf, n_Gothryd): set s_46": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -3668,7 +3668,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00002d3e": {
+"2: n_Gothryd": {
 "type": "Npc",
 "value": "1",
 "not": "False",
