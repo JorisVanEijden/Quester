@@ -560,6 +560,7 @@ namespace Quester
             [0X00001B1C] = "tatler",
             [0X0000C91E] = "barenziah",
             [0X00003581] = "gortwog",
+            [0X00002D81] = "Gortwog",
             [0X0006E2BD] = "scourgbarrow",
             [0x0006A7C3] = "necromancers",
             [0x0001B727] = "thiefhome1",
@@ -583,7 +584,13 @@ namespace Quester
             [0X000D866B] = "nobleevidence",
             [0X001BBF6B] = "priestevidence",
             [0X000D576B] = "merchevidence",
-            
+            [0X0000B04D] = "Brisienna",
+            [0X00016B9D] = "Kingoworms",
+            [0X0000BEFF] = "Underking",
+            [0X00003285] = "eadwyre",
+            [0X00002D3E] = "Gothryd",
+            [0X00005691] = "Akorithi",
+            [0X00018FF8] = "daggerfall"
         };
 
         public static string LookUp(uint hash)
