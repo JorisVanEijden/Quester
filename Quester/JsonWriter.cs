@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Quester
 {
@@ -35,6 +36,7 @@ namespace Quester
 
         private static void WriteTextRecords(TextWriter writer, Dictionary<int, List<string>> textRecords)
         {
+            textRecords = new Dictionary<int, List<string>>(textRecords.Where(record => record.Value.Count > 0));
             writer.WriteLine($"\"text records: [{textRecords.Count}]\": {{");
             int i = 0;
             foreach (var textRecord in textRecords)
@@ -224,7 +226,7 @@ namespace Quester
             {
                 OpCode opCode = opCodes[j];
                 writer.WriteLine($"\"{j,2}: {opCode}\": {{");
-                writer.WriteLine($"\"opCode\": {(int) opCode.Code},");
+                writer.WriteLine($"\"opCode\": {(int)opCode.Code},");
                 writer.WriteLine($"\"argCount\": {opCode.ArgCount},");
                 writer.WriteLine("\"arguments:\": {");
                 for (var i = 0; i < opCode.Arguments.Count; i++)
