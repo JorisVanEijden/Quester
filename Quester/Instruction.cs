@@ -63,7 +63,7 @@ namespace Quester
         WhenPlayerCasts = 73,
         PlaceItemOnPlayer = 76,
         IfPlayerHasLevel = 77,
-        Unknown78_Value = 78,
+        IfPersonAvailable = 78,
         IfFactionReputation = 79,
         EnsureNpcLocation = 81,
         StopNpcConversation = 82,

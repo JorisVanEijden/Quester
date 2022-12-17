@@ -79,7 +79,10 @@ namespace Quester
                 case Instruction.IfItemDroppedAt:
                     return $" >> {Code} ({Arguments[1]}, {Arguments[2]}): set {state}{message}";
                 case Instruction.IfNpcReputation:
-                    return $"{state} >> {Code} ({Arguments[2]}) > {Arguments[3]}: set {Arguments[1]}{message}";
+                    return $"{state} => {Code} ({Arguments[2]}) > {Arguments[3]}: set {Arguments[1]}{message}";
+                case Instruction.IfPersonAvailable:    
+                    FactionId person = (FactionId) Arguments[1].Value;
+                    return $" >> {Code} ({person}): set {state}{message}";
                 case Instruction.IfFactionReputation:
                     FactionId faction = (FactionId) Arguments[1].Value;
                     return $" >> {Code} ({faction}, {Arguments[2]}): set {state}{message}";
