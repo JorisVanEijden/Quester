@@ -28,6 +28,7 @@ namespace Quester
         House6,
         Town23,
         Ship,
+        Dungeon = 499,
         Crypt = 500,
         OrcStronghold = 501,
         HumanStronghold = 502,

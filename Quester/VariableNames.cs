@@ -24,7 +24,7 @@ namespace Quester
             [0x000002E4] = "man",
             [0x000002E6] = "map",
             [0x000002E8] = "len",
-            [0x000002EE] = "imp",
+            [0x000002EE] = "inn",
             [0x000002EF] = "key",
             [0x000002F4] = "mob",
             [0x000002FB] = "npc",
@@ -573,6 +573,17 @@ namespace Quester
             [0x00003543] = "knights",
             [0X000E38E5] = "stoletreasure",
             [0x0000D9E9] = "persecute",
+            [0X0000D80B] = "noblehome",
+            [0X0001BB9B] = "priesthome",
+            [0X0000DB7B] = "thiefhome",
+            [0X0006AA7B] = "merchanthome",
+            [0x000002E5] = "nec",
+            [0x00000155] = "uk",
+            [0x000DBD6B] = "thiefevidence",
+            [0X000D866B] = "nobleevidence",
+            [0X001BBF6B] = "priestevidence",
+            [0X000D576B] = "merchevidence",
+            
         };
 
         public static string LookUp(uint hash)
