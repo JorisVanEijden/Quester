@@ -35,7 +35,8 @@ namespace Quester
                 };
                 ParseQbnFile(path + name + ".qbn");
                 ParseQrcFile(path + name + ".qrc");
-                name = @"../../../docs/" + name;
+                
+                name = Path.Join(Environment.CurrentDirectory, "docs",  name);
                 try
                 {
                     OutputJson(name);

@@ -2,7 +2,7 @@ namespace Quester
 {
     internal struct Npc
     {
-        public Gender Gender;
+        public byte Unknown1;
         public byte FacePictureIndex;
         public NpcType NpcType;
         public FactionId Faction;
@@ -16,10 +16,11 @@ namespace Quester
 
         public override string ToString()
         {
-            string npc = $"{Variable}: {Gender}";
-            if (NpcType < NpcType.Unknown_7)
+            // string npc = $"{Variable}: {Gender}";  Gender is not correct. but what is it?
+            string npc = $"{Variable}: ";
+            if (NpcType < NpcType.Normal)
             {
-                npc += $" (type {NpcType})";
+                npc += $" (type? {NpcType})";
             }
 
             if (Faction != FactionId.None)
@@ -27,10 +28,11 @@ namespace Quester
                 npc += $" (faction {Faction})";
             }
 
-            if (FacePictureIndex > 0 && FacePictureIndex < 255)
-            {
-                npc += $" (face {FacePictureIndex})";
-            }
+            // Useless unless we can connect it to the actual pictures
+            // if (FacePictureIndex > 0 && FacePictureIndex < 255)
+            // {
+            //     npc += $" (face? {FacePictureIndex})";
+            // }
 
             return npc;
         }

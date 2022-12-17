@@ -182,7 +182,8 @@ namespace Quester
                 Npc npc = npcs[i];
                 writer.WriteLine($"\"{i,2}: {npc}\": {{");
                 writer.WriteLine($"\"variable\": \"{npc.Variable}\",");
-                writer.WriteLine($"\"gender\": \"{npc.Gender}\",");
+                // writer.WriteLine($"\"gender\": \"{npc.Gender}\",");
+                writer.WriteLine($"\"unknown1\": \"[0x{npc.Unknown1:X2}]\",");
                 writer.WriteLine($"\"facePictureIndex\": {npc.FacePictureIndex},");
                 writer.WriteLine($"\"npcType\": \"{npc.NpcType}\",");
                 writer.WriteLine($"\"npcTypeRaw\": \"{npc.NpcTypeRaw} [0x{npc.NpcTypeRaw:X4}]\",");

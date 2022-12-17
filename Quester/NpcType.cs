@@ -31,6 +31,6 @@ namespace Quester
         Unknown_4 = 0xfffc,
         Unknown_3 = 0xfffd,
         Daedra = 0xfffe,
-        Unknown_1 = 0xffff,
+        Normal = 0xffff,
     }
 }

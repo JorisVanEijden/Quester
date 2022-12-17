@@ -79,7 +79,7 @@ namespace Quester
                 Npc npc = new Npc
                 {
                     Index = index,
-                    Gender = (Gender) reader.ReadByte(),
+                    Unknown1 = reader.ReadByte(),
                     FacePictureIndex = reader.ReadByte(),
                     NpcTypeRaw = reader.ReadUInt16(),
                     FactionRaw = reader.ReadUInt16(),

@@ -35,7 +35,6 @@ namespace Quester
                 case Instruction.WhenPlayerCasts:
                 case Instruction.WhenAtLocation:
                     return $"{state} >> {Code} ({Arguments[2]}): set {Arguments[1]}{message}";
-//                    return $"{state} >> {Code} ({Arguments[2]}, {Arguments[3]}): set {Arguments[1]}{message}";
                 case Instruction.WhenPlayerHasItems:
                     line = $"{state} >> {Code} (";
                     for (var i = 2; i < ArgCount; i++)
@@ -86,7 +85,7 @@ namespace Quester
                     return $" >> {Code} ({faction}, {Arguments[2]}): set {state}{message}";
                 case Instruction.StartTimer:
                     State timerState = FindTimerState(Arguments[1]);
-                    return $"{state} >> {Code} ({Arguments[1]}); When it expires: set {timerState}{message}";
+                    return $"{state} => {Code} ({Arguments[1]}); When it expires: set {timerState}{message}";
                 case Instruction.CreateFoe:
                     Argument mobArgument = Arguments[1];
                     mobArgument.Type = RecordType.Mob;
@@ -105,7 +104,7 @@ namespace Quester
                             sb.Append(", ");
                     }
 
-                    sb.Append(")");
+                    sb.Append(')');
                     sb.Append(message);
                     return sb.ToString();
             }
