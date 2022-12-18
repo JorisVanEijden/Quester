@@ -2,8 +2,8 @@ namespace Quester
 {
     internal enum RewardType
     {
-        Artifact,
-        Item,
+        Item1,
+        Item2,
         Gold,
         Unknown
     }

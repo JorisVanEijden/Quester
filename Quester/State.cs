@@ -6,10 +6,11 @@ namespace Quester
         public byte GlobalIndex;
         public string Variable;
         public short Index;
+        public uint NameRaw;
 
         public override string ToString()
         {
-            return IsGlobal ? Variable.ToUpper() : Variable;
+            return Variable;
         }
     }
 }

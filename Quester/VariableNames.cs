@@ -587,17 +587,25 @@ namespace Quester
             [0X0000B04D] = "Brisienna",
             [0X00016B9D] = "Kingoworms",
             [0X0000BEFF] = "Underking",
+            [0X00002A85] = "Eadwyre",
             [0X00003285] = "eadwyre",
             [0X00002D3E] = "Gothryd",
             [0X00005691] = "Akorithi",
-            [0X00018FF8] = "daggerfall"
+            [0X00018FF8] = "daggerfall",
+            [0X00068FF8] = "indaggerfall"
         };
 
-        public static string LookUp(uint hash)
+        public static string LookUp(uint value)
         {
-            if (!Names.TryGetValue(hash, out var name))
-                name = $"{hash:x8}";
-            return name;
+            var isHashed = (value & 0xFF000000) == 0;
+            if (isHashed)
+            {
+                return Names.TryGetValue(value, out var name) 
+                    ? name 
+                    : $"{value:x6}";
+            }
+
+            return $"{value & 0x00FFFFFF}";
         }
     }
 }

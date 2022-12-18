@@ -29,7 +29,7 @@ namespace Quester
         PlaceNpcAt = 30,
         IfTimeOfDayBetween = 31,
         PickOneOf = 34,
-        CycleNextState = 35,
+        Set = 35,
         GiveItemToPlayer = 36,
         IfNpcReputation = 37,
         AddRumor = 38,

@@ -19,6 +19,7 @@
 ,"locations: [1]": {
 " 0: l_daggerfall: Specific DaggerfallCity": {
 "variable": "l_daggerfall",
+"nameRaw": "[0x00018ff8]",
 "generalLocation": "Specific",
 "locationType": 1,
 "LocationType": "SpecificLocation",
@@ -36,6 +37,7 @@
 ,"timers: [2]": {
 " 0: t_delay: Random between 00:04:00 and 00:15:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:04:00",
@@ -46,8 +48,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_0000db1c: Fixed 00:01:00": {
-"variable": "t_0000db1c",
+" 1: t_00db1c: Fixed 00:01:00": {
+"variable": "t_00db1c",
+"nameRaw": "[0x0000db1c]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "00:01:00",
@@ -60,8 +63,9 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_000019ff: 1 Ghost": {
-"variable": "m_000019ff",
+" 0: m_0019ff: 1 Ghost": {
+"variable": "m_0019ff",
+"nameRaw": "[0X000019ff]",
 "type": "Ghost",
 "count": 1,
 "null1": 0,
@@ -70,6 +74,7 @@
 },
 " 1: m_wraith: 1 Wraith": {
 "variable": "m_wraith",
+"nameRaw": "[0X00001bfc]",
 "type": "Wraith",
 "count": 1,
 "null1": 0,
@@ -78,7 +83,7 @@
 }
 }
 ,"opCodes: [9]": {
-" 0:  >> WhenAtLocation (l_daggerfall): set s_00068ff8": {
+" 0:  >> WhenAtLocation (l_daggerfall): set s_indaggerfall": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -89,7 +94,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00068ff8": {
+"1: s_indaggerfall": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -138,11 +143,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 2:  >> If (not s_daytime and s_00068ff8): set s_000694bb": {
+" 2:  >> If (not s_daytime and s_indaggerfall): set s_0694bb": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_000694bb": {
+"0: s_0694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -156,7 +161,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00068ff8": {
+"2: s_indaggerfall": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -182,11 +187,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 3:  >> If (s_daytime or not s_00068ff8): set s_0001b8bb": {
+" 3:  >> If (s_daytime or not s_indaggerfall): set s_01b8bb": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b8bb": {
+"0: s_01b8bb": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -200,7 +205,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_00068ff8": {
+"2: not s_indaggerfall": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -226,18 +231,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4: s_0001b8bb => Unset (s_000694bb)": {
+" 4: s_01b8bb => Unset (s_0694bb)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b8bb": {
+"0: s_01b8bb": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000694bb": {
+"1: s_0694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -270,11 +275,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_000694bb => CreateFoe(m_wraith, 21, 50%, -1)": {
+" 5: s_0694bb => CreateFoe(m_wraith, 21, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000694bb": {
+"0: s_0694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -314,18 +319,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6: s_000694bb => CreateFoe(m_000019ff, 31, 50%, -1)": {
+" 6: s_0694bb => CreateFoe(m_0019ff, 31, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000694bb": {
+"0: s_0694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000019ff": {
+"1: m_0019ff": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -358,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7: s_000694bb => PlaySound (386, 5, 25)": {
+" 7: s_0694bb => PlaySound (386, 5, 25)": {
 "opCode": 84,
 "argCount": 4,
 "arguments:": {
-"0: s_000694bb": {
+"0: s_0694bb": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -395,11 +400,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8: s_0000007e => EndQuest ()": {
+" 8: gs_LiftedCurse => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000007e": {
+"0: gs_LiftedCurse": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -413,44 +418,51 @@
 }
 }
 ,"states: [7]": {
-" 0: S_0000007E": {
-"variable": "s_0000007e",
+" 0: gs_LiftedCurse": {
+"variable": "gs_LiftedCurse",
+"nameRaw": "[0x0000007e]",
 "isGlobal": true,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_daytime": {
 "variable": "s_daytime",
+"nameRaw": "[0x00003333]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00068ff8": {
-"variable": "s_00068ff8",
+" 2: s_indaggerfall": {
+"variable": "s_indaggerfall",
+"nameRaw": "[0x00068ff8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_000694bb": {
-"variable": "s_000694bb",
+" 3: s_0694bb": {
+"variable": "s_0694bb",
+"nameRaw": "[0x000694bb]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000db1c": {
-"variable": "s_0000db1c",
+" 5: s_00db1c": {
+"variable": "s_00db1c",
+"nameRaw": "[0x0000db1c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0001b8bb": {
-"variable": "s_0001b8bb",
+" 6: s_01b8bb": {
+"variable": "s_01b8bb",
+"nameRaw": "[0x0001b8bb]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

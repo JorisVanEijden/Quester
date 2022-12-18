@@ -7,11 +7,12 @@ namespace Quester
         public RewardType RewardType;
         public ItemCategory Category;
         public ushort ItemId;
-        public string Variable;
+        public uint NameRaw;
         public ushort TextRecordId1;
         public ushort TextRecordId2;
         public uint Unknown1;
         public short Index;
+        public string Variable;
 
         public override string ToString()
         {
@@ -30,7 +31,7 @@ namespace Quester
                 try
                 {
                     var name = ItemId == 0xffff ? Category.ToString() : ItemMapper.ItemMap[Category][ItemId];
-                    item += $"{RewardType} {Category} {name}";
+                    item += $"{name} [{Category}]";
                 }
                 catch (Exception )
                 {

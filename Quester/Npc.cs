@@ -8,11 +8,12 @@ namespace Quester
         public FactionId Faction;
         public ushort FactionRaw;
         public ushort NpcTypeRaw;
-        public string Variable;
+        public uint NameRaw;
         public ushort TextRecordId1;
         public ushort TextRecordId2;
         public uint Null1;
         public short Index;
+        public string Variable;
 
         public override string ToString()
         {

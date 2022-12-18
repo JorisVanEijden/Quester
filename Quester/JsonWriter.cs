@@ -63,10 +63,6 @@ namespace Quester
             var escaped = subRecord.Replace("\"", "\\\"");
             return escaped;
         }
-        //"\r\n", " ")
-//        .Replace("\r", " ")
-//            .Replace("\n", " ")
-//            .Replace("\\", "\\\\")
 
         private static void WriteInfo(TextWriter writer, Info info)
         {
@@ -93,6 +89,7 @@ namespace Quester
                 State state = states[i];
                 writer.WriteLine($"\"{i,2}: {state}\": {{");
                 writer.WriteLine($"\"variable\": \"{state.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{state.NameRaw:x8}]\",");
                 writer.WriteLine($"\"isGlobal\": {state.IsGlobal.ToString().ToLower()},");
                 writer.WriteLine($"\"globalIndex\": {state.GlobalIndex},");
                 writer.WriteLine($"\"index\": {state.Index}");
@@ -110,6 +107,7 @@ namespace Quester
                 Mob mob = mobs[i];
                 writer.WriteLine($"\"{i,2}: {mob}\": {{");
                 writer.WriteLine($"\"variable\": \"{mob.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0X{mob.NameRaw:x8}]\",");
                 writer.WriteLine($"\"type\": \"{mob.Type}\",");
                 writer.WriteLine($"\"count\": {mob.Count},");
                 writer.WriteLine($"\"null1\": {mob.Null1},");
@@ -129,6 +127,7 @@ namespace Quester
                 Timer timer = timers[i];
                 writer.WriteLine($"\"{i,2}: {timer}\": {{");
                 writer.WriteLine($"\"variable\": \"{timer.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{timer.NameRaw:x8}]\",");
                 writer.WriteLine($"\"type\": \"{timer.Type}\",");
                 writer.WriteLine($"\"typeRaw\": \"{timer.TypeRaw} [0x{timer.TypeRaw:X2}]\",");
                 TimeSpan minimum = TimeSpan.FromMinutes(timer.Minimum);
@@ -156,6 +155,7 @@ namespace Quester
                 Location location = locations[i];
                 writer.WriteLine($"\"{i,2}: {location}\": {{");
                 writer.WriteLine($"\"variable\": \"{location.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{location.NameRaw:x8}]\",");
                 writer.WriteLine($"\"generalLocation\": \"{location.GeneralLocation}\",");
                 writer.WriteLine($"\"locationType\": {location.LocationTypeRaw},");
                 writer.WriteLine($"\"LocationType\": \"{location.LocationType}\",");
@@ -182,6 +182,7 @@ namespace Quester
                 Npc npc = npcs[i];
                 writer.WriteLine($"\"{i,2}: {npc}\": {{");
                 writer.WriteLine($"\"variable\": \"{npc.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{npc.NameRaw:x8}]\",");
                 // writer.WriteLine($"\"gender\": \"{npc.Gender}\",");
                 writer.WriteLine($"\"unknown1\": \"[0x{npc.Unknown1:X2}]\",");
                 writer.WriteLine($"\"facePictureIndex\": {npc.FacePictureIndex},");
@@ -207,6 +208,7 @@ namespace Quester
                 Item item = items[i];
                 writer.WriteLine($"\"{i,2}: {item}\": {{");
                 writer.WriteLine($"\"variable\": \"{item.Variable}\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{item.NameRaw:X8}]\",");
                 writer.WriteLine($"\"rewardType\": \"{item.RewardType}\",");
                 writer.WriteLine($"\"category\": \"{item.Category}\",");
                 writer.WriteLine($"\"itemId\": {item.ItemId},");

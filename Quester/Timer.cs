@@ -11,13 +11,14 @@ namespace Quester
         public uint Duration;
         public int Link1;
         public int Link2;
-        public string Variable;
+        public uint NameRaw;
         public short Index;
         public byte TypeRaw;
         public byte Flags1;
         public byte Flags2;
         public RecordType Link1Type;
         public RecordType Link2Type;
+        public string Variable;
 
         public override string ToString()
         {

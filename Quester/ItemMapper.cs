@@ -172,7 +172,7 @@ namespace Quester
                 "Large_skins",
                 "Small_skins"
             },
-            [ItemCategory.Flammable] = new List<string>
+            [ItemCategory.Usable] = new List<string>
             {
                 "Torch",
                 "Lantern",
@@ -239,14 +239,14 @@ namespace Quester
                 "Long_shirt_unchangeable",
                 "Vest"
             },
-            [ItemCategory.Paintings] = new List<string>
+            [ItemCategory.Painting] = new List<string>
             {
                 "Painting1",
                 "Painting2",
                 "Painting3",
                 "Portrait"
             },
-            [ItemCategory.Gems] = new List<string>
+            [ItemCategory.Gem] = new List<string>
             {
                 "Ruby",
                 "Emerald",
@@ -257,7 +257,7 @@ namespace Quester
                 "Malachite",
                 "Amber"
             },
-            [ItemCategory.SmallPlants] = new List<string>
+            [ItemCategory.SmallPlant] = new List<string>
             {
                 "Twigs",
                 "Green_leaves",
@@ -275,7 +275,7 @@ namespace Quester
                 "Red_poppy",
                 "Golden_poppy"
             },
-            [ItemCategory.LargePlants] = new List<string>
+            [ItemCategory.LargePlant] = new List<string>
             {
                 "Twigs",
                 "Green_leave",
@@ -320,7 +320,7 @@ namespace Quester
                 "Nectar",
                 "Ichor"
             },
-            [ItemCategory.QuestItems] = new List<string>
+            [ItemCategory.QuestItem] = new List<string>
             {
                 "Telescope",
                 "Scales",
@@ -331,7 +331,7 @@ namespace Quester
                 "Mantella",
                 "Finger"
             },
-            [ItemCategory.MiscItems] = new List<string>
+            [ItemCategory.MiscItem] = new List<string>
             {
                 "Spellbook",
                 "Soul_trap",

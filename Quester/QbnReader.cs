@@ -52,17 +52,19 @@ namespace Quester
             {
                 var index = reader.ReadInt16();
 
-                items[index] = new Item
+                var item = new Item
                 {
                     Index = index,
-                    RewardType = (RewardType) reader.ReadByte(),
-                    Category = (ItemCategory) reader.ReadUInt16(),
+                    RewardType = (RewardType)reader.ReadByte(),
+                    Category = (ItemCategory)reader.ReadUInt16(),
                     ItemId = reader.ReadUInt16(),
-                    Variable = "i_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    NameRaw = reader.ReadUInt32(),
                     Unknown1 = reader.ReadUInt32(),
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
                 };
+                item.Variable = "i_" + VariableNames.LookUp(item.NameRaw);
+                items[index] = item;
             }
 
             return items;
@@ -83,13 +85,14 @@ namespace Quester
                     FacePictureIndex = reader.ReadByte(),
                     NpcTypeRaw = reader.ReadUInt16(),
                     FactionRaw = reader.ReadUInt16(),
-                    Variable = "n_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    NameRaw = reader.ReadUInt32(),
                     Null1 = reader.ReadUInt32(),
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
                 };
-                npc.NpcType = (NpcType) npc.NpcTypeRaw;
-                npc.Faction = (FactionId) npc.FactionRaw;
+                npc.NpcType = (NpcType)npc.NpcTypeRaw;
+                npc.Faction = (FactionId)npc.FactionRaw;
+                npc.Variable = "n_" + VariableNames.LookUp(npc.NameRaw);
                 npcs[index] = npc;
             }
 
@@ -108,12 +111,12 @@ namespace Quester
                 {
                     Index = index,
                     Flags = reader.ReadByte(),
-                    GeneralLocation = (GeneralLocation) reader.ReadByte(),
+                    GeneralLocation = (GeneralLocation)reader.ReadByte(),
                     FineLocation = reader.ReadUInt16(),
                     LocationTypeRaw = reader.ReadInt16(),
                     DoorSelector = reader.ReadInt16(),
                     Unknown1 = reader.ReadUInt16(),
-                    Variable = "l_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    NameRaw = reader.ReadUInt32(),
                     ObjPtr = reader.ReadUInt32(),
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
@@ -122,16 +125,18 @@ namespace Quester
                 if (location.GeneralLocation == GeneralLocation.Specific)
                 {
                     location.LocationType = LocationType.SpecificLocation;
-                    location.KnownLocation = (NamedPlace) location.FineLocation;
+                    location.KnownLocation = (NamedPlace)location.FineLocation;
                 }
                 else
                 {
                     location.KnownLocation = NamedPlace.None;
                     if (location.FineLocation == 0)
-                        location.LocationType = (LocationType) location.LocationTypeRaw;
+                        location.LocationType = (LocationType)location.LocationTypeRaw;
                     else
-                        location.LocationType = (LocationType) location.LocationTypeRaw + 500;
+                        location.LocationType = (LocationType)location.LocationTypeRaw + 500;
                 }
+
+                location.Variable = "l_" + VariableNames.LookUp(location.NameRaw);
 
                 locations[index] = location;
             }
@@ -159,11 +164,12 @@ namespace Quester
                     Duration = reader.ReadUInt32(),
                     Link1 = reader.ReadInt32(),
                     Link2 = reader.ReadInt32(),
-                    Variable = "t_" + VariableNames.LookUp(reader.ReadUInt32())
+                    NameRaw = reader.ReadUInt32()
                 };
-                timer.Type = (TimerType) timer.TypeRaw;
+                timer.Type = (TimerType)timer.TypeRaw;
                 timer.Link1Type = ((timer.Flags2 & 0x1) == 0) ? RecordType.Location : RecordType.Npc;
                 timer.Link2Type = ((timer.Flags2 & 0x2) == 0) ? RecordType.Location : RecordType.Npc;
+                timer.Variable = "t_" + VariableNames.LookUp(timer.NameRaw);
 
                 timers[index] = timer;
 
@@ -185,15 +191,18 @@ namespace Quester
             {
                 short index = reader.ReadByte();
 
-                mobs[index] = new Mob
+                var mob = new Mob
                 {
                     Index = index,
                     Null1 = reader.ReadUInt16(),
-                    Type = (MobType) reader.ReadByte(),
+                    Type = (MobType)reader.ReadByte(),
                     Count = reader.ReadUInt16(),
-                    Variable = "m_" + VariableNames.LookUp(reader.ReadUInt32()),
+                    NameRaw = reader.ReadUInt32(),
                     Null2 = reader.ReadUInt32()
                 };
+                mob.Variable = "m_" + VariableNames.LookUp(mob.NameRaw);
+
+                mobs[index] = mob;
             }
 
             return mobs;
@@ -207,7 +216,7 @@ namespace Quester
             {
                 // ReSharper disable once UseObjectOrCollectionInitializer
                 OpCode opCode = new OpCode();
-                opCode.Code = (Instruction) reader.ReadInt16();
+                opCode.Code = (Instruction)reader.ReadInt16();
                 opCode.Flags = reader.ReadInt16();
                 opCode.ArgCount = reader.ReadInt16();
                 opCode.Arguments = ReadArguments(reader, opCode.ArgCount);
@@ -227,13 +236,25 @@ namespace Quester
             {
                 short index = reader.ReadInt16();
 
-                states[index] = new State
+                var state = new State
                 {
                     Index = index,
                     IsGlobal = reader.ReadBoolean(),
                     GlobalIndex = reader.ReadByte(),
-                    Variable = "s_" + VariableNames.LookUp(reader.ReadUInt32())
+                    NameRaw = reader.ReadUInt32()
                 };
+
+                if (state.IsGlobal)
+                {
+                    if (Enum.IsDefined(typeof(GlobalStates), (int)state.GlobalIndex))
+                        state.Variable = "gs_" + (GlobalStates)state.GlobalIndex;
+                    else
+                        state.Variable = $"gs_{state.GlobalIndex}";
+                }
+                else
+                    state.Variable = "s_" + VariableNames.LookUp(state.NameRaw);
+
+                states[index] = state;
             }
 
             return states;
@@ -248,7 +269,7 @@ namespace Quester
                 {
                     argument.Not = reader.ReadBoolean();
                     argument.Index = reader.ReadUInt32();
-                    argument.Type = (RecordType) reader.ReadInt16();
+                    argument.Type = (RecordType)reader.ReadInt16();
                     argument.Value = reader.ReadInt32();
                     argument.Unknown1 = reader.ReadInt32();
                 }
