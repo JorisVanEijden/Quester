@@ -63,7 +63,8 @@ namespace Quester
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
                 };
-                item.Variable = "i_" + VariableNames.LookUp(item.NameRaw);
+                var name = VariableNames.LookUp(item.NameRaw) ?? $"{index:D2}";
+                item.Variable = "i_" + name;
                 items[index] = item;
             }
 
@@ -92,7 +93,8 @@ namespace Quester
                 };
                 npc.NpcType = (NpcType)npc.NpcTypeRaw;
                 npc.Faction = (FactionId)npc.FactionRaw;
-                npc.Variable = "n_" + VariableNames.LookUp(npc.NameRaw);
+                var name = VariableNames.LookUp(npc.NameRaw) ?? $"{index:D2}";
+                npc.Variable = "n_" + name;
                 npcs[index] = npc;
             }
 
@@ -135,8 +137,8 @@ namespace Quester
                     else
                         location.LocationType = (LocationType)location.LocationTypeRaw + 500;
                 }
-
-                location.Variable = "l_" + VariableNames.LookUp(location.NameRaw);
+                var name = VariableNames.LookUp(location.NameRaw) ?? $"{index:D2}";
+                location.Variable = "l_" + name;
 
                 locations[index] = location;
             }
@@ -169,7 +171,8 @@ namespace Quester
                 timer.Type = (TimerType)timer.TypeRaw;
                 timer.Link1Type = ((timer.Flags2 & 0x1) == 0) ? RecordType.Location : RecordType.Npc;
                 timer.Link2Type = ((timer.Flags2 & 0x2) == 0) ? RecordType.Location : RecordType.Npc;
-                timer.Variable = "t_" + VariableNames.LookUp(timer.NameRaw);
+                var name = VariableNames.LookUp(timer.NameRaw) ?? $"{index:D2}";
+                timer.Variable = "t_" + name;
 
                 timers[index] = timer;
 
@@ -200,7 +203,8 @@ namespace Quester
                     NameRaw = reader.ReadUInt32(),
                     Null2 = reader.ReadUInt32()
                 };
-                mob.Variable = "m_" + VariableNames.LookUp(mob.NameRaw);
+                var name = VariableNames.LookUp(mob.NameRaw) ?? $"{index:D2}";
+                mob.Variable = "m_" + name;
 
                 mobs[index] = mob;
             }
@@ -249,10 +253,13 @@ namespace Quester
                     if (Enum.IsDefined(typeof(GlobalStates), (int)state.GlobalIndex))
                         state.Variable = "gs_" + (GlobalStates)state.GlobalIndex;
                     else
-                        state.Variable = $"gs_{state.GlobalIndex}";
+                        state.Variable = $"gs_{state.GlobalIndex:D2}";
                 }
                 else
-                    state.Variable = "s_" + VariableNames.LookUp(state.NameRaw);
+                {
+                    var name = VariableNames.LookUp(state.NameRaw) ?? $"{index:D2}";
+                    state.Variable = "s_" + name;
+                }
 
                 states[index] = state;
             }

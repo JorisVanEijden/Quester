@@ -96,6 +96,8 @@ namespace Quester
                     return $"{state} => CreateFoe({mobArgument}, {Arguments[2]}, {Arguments[3]}%, {Arguments[4]}){message}";
                 case Instruction.TeleportPlayer:
                     return $"{state} >> {Code} ({Arguments[1]}, {(Region)Arguments[2].Value}, 0x{Arguments[3].Value:X4}){message}";
+                case Instruction.StartQuest:
+                    return $"{state} >> {Code} (S000{Arguments[1].Value:D4})";
                 default:
                     StringBuilder sb = new StringBuilder(state);
                     sb.Append($" => {Code} (");

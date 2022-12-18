@@ -43,8 +43,6 @@ namespace Quester
                         break;
                     case RecordType.State:
                         variable = Program.Quest.States[(short) Value].Variable;
-                        if (variable.StartsWith("s_400000"))
-                            variable = "s_" + Program.Quest.States[(short) Value].Index;
                         break;
                     case RecordType.Timer:
                         variable = Program.Quest.Timers[(short) Value].Variable;
@@ -67,7 +65,7 @@ namespace Quester
                 throw;
             }
 
-            return (Not ? "not " : "") + variable;
+            return Not ? $"not {variable}" : variable;
         }
     }
 }

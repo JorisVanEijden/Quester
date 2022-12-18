@@ -62,7 +62,6 @@ namespace Quester
             [0x0000063B] = "home",
             [0x0000063D] = "necs",
             [0x0000064F] = "item",
-            [0x0000064F] = "sage",
             [0x0000065C] = "iron",
             [0x00000660] = "pawn",
             [0x00000664] = "lord",
@@ -385,6 +384,7 @@ namespace Quester
             [0x0000D02E] = "artifact2",
             [0x0000D02F] = "artifact3",
             [0x0000D030] = "artifact4",
+            [0X0000D031] = "artifact5",
             [0x0000D075] = "bookstore",
             [0x0000D0A4] = "competior",
             [0x0000D0D8] = "mageguild",
@@ -592,7 +592,10 @@ namespace Quester
             [0X00002D3E] = "Gothryd",
             [0X00005691] = "Akorithi",
             [0X00018FF8] = "daggerfall",
-            [0X00068FF8] = "indaggerfall"
+            [0X00068FF8] = "indaggerfall",
+            [0X0000D04D] = "brisienna",
+            [0X00000DBF] = "totem",
+            [0X000068FA] = "lichdead",
         };
 
         public static string LookUp(uint value)
@@ -602,7 +605,7 @@ namespace Quester
             {
                 return Names.TryGetValue(value, out var name) 
                     ? name 
-                    : $"{value:x6}";
+                    : null;
             }
 
             return $"{value & 0x00FFFFFF}";

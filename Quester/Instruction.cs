@@ -61,7 +61,7 @@ namespace Quester
         TakePlayerGold = 71,
         Unknown72_Value = 72,
         WhenPlayerCasts = 73,
-        PlaceItemOnPlayer = 76,
+        GiveToPlayer = 76,
         IfPlayerHasLevel = 77,
         IfPersonAvailable = 78,
         IfFactionReputation = 79,

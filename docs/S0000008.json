@@ -24,8 +24,8 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_000dbf: Totem [QuestItem]": {
-"variable": "i_000dbf",
+" 1: i_totem: Totem [QuestItem]": {
+"variable": "i_totem",
 "nameRaw": "[0x00000DBF]",
 "rewardType": "Item1",
 "category": "QuestItem",
@@ -35,8 +35,8 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_0034e4: Parchment [Usable] [1020]": {
-"variable": "i_0034e4",
+" 2: i_02: Parchment [Usable] [1020]": {
+"variable": "i_02",
 "nameRaw": "[0x000034E4]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -46,8 +46,8 @@
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_00352c: Parchment [Usable] [1022]": {
-"variable": "i_00352c",
+" 3: i_03: Parchment [Usable] [1022]": {
+"variable": "i_03",
 "nameRaw": "[0x0000352C]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -57,8 +57,8 @@
 "index": 3,
 "unknown1": "0 [0x00000000]"
 },
-" 4: i_006b4f: Parchment [Usable] [1024]": {
-"variable": "i_006b4f",
+" 4: i_04: Parchment [Usable] [1024]": {
+"variable": "i_04",
 "nameRaw": "[0x00006B4F]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -68,8 +68,8 @@
 "index": 4,
 "unknown1": "0 [0x00000000]"
 },
-" 5: i_0035a5: Parchment [Usable] [1023]": {
-"variable": "i_0035a5",
+" 5: i_05: Parchment [Usable] [1023]": {
+"variable": "i_05",
 "nameRaw": "[0x000035A5]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -79,8 +79,8 @@
 "index": 5,
 "unknown1": "0 [0x00000000]"
 },
-" 6: i_0034cb: Parchment [Usable] [1021]": {
-"variable": "i_0034cb",
+" 6: i_06: Parchment [Usable] [1021]": {
+"variable": "i_06",
 "nameRaw": "[0x000034CB]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -90,8 +90,8 @@
 "index": 6,
 "unknown1": "0 [0x00000000]"
 },
-" 7: i_00d239: 25000 - 25000 gold": {
-"variable": "i_00d239",
+" 7: i_07: 25000 - 25000 gold": {
+"variable": "i_07",
 "nameRaw": "[0x0000D239]",
 "rewardType": "Gold",
 "category": "25000",
@@ -123,8 +123,8 @@
 "index": 9,
 "unknown1": "0 [0x00000000]"
 },
-"10: i_01addd: Parchment [Usable] [1025]": {
-"variable": "i_01addd",
+"10: i_10: Parchment [Usable] [1025]": {
+"variable": "i_10",
 "nameRaw": "[0x0001ADDD]",
 "rewardType": "Item1",
 "category": "Usable",
@@ -145,8 +145,8 @@
 "index": 11,
 "unknown1": "0 [0x00000000]"
 },
-"12: i_00d031: Chrysamere [Artifact]": {
-"variable": "i_00d031",
+"12: i_artifact5: Chrysamere [Artifact]": {
+"variable": "i_artifact5",
 "nameRaw": "[0x0000D031]",
 "rewardType": "Item1",
 "category": "Artifact",
@@ -156,8 +156,8 @@
 "index": 12,
 "unknown1": "0 [0x00000000]"
 },
-"13: i_00d23a: 25000 - 25000 gold": {
-"variable": "i_00d23a",
+"13: i_13: 25000 - 25000 gold": {
+"variable": "i_13",
 "nameRaw": "[0x0000D23A]",
 "rewardType": "Gold",
 "category": "25000",
@@ -167,8 +167,8 @@
 "index": 13,
 "unknown1": "0 [0x00000000]"
 },
-"14: i_00d23b: 25000 - 25000 gold": {
-"variable": "i_00d23b",
+"14: i_14: 25000 - 25000 gold": {
+"variable": "i_14",
 "nameRaw": "[0x0000D23B]",
 "rewardType": "Gold",
 "category": "25000",
@@ -178,8 +178,8 @@
 "index": 14,
 "unknown1": "0 [0x00000000]"
 },
-"15: i_00d23c: 25000 - 25000 gold": {
-"variable": "i_00d23c",
+"15: i_15: 25000 - 25000 gold": {
+"variable": "i_15",
 "nameRaw": "[0x0000D23C]",
 "rewardType": "Gold",
 "category": "25000",
@@ -191,8 +191,8 @@
 }
 }
 ,"npcs: [7]": {
-" 0: n_00d04d:  (faction Lady_Brisienna)": {
-"variable": "n_00d04d",
+" 0: n_brisienna:  (faction Lady_Brisienna)": {
+"variable": "n_brisienna",
 "nameRaw": "[0x0000d04d]",
 "unknown1": "[0x01]",
 "facePictureIndex": 1,
@@ -519,7 +519,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_2letter => PlaceItemOnPlayer (i_letter) [Msg 1070]": {
+" 1: s_2letter => GiveToPlayer (i_letter) [Msg 1070]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -542,7 +542,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_2letter => PlaceNpcAt (n_00d04d, l_tavern)": {
+" 2: s_2letter => PlaceNpcAt (n_brisienna, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -553,7 +553,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00d04d": {
+"1: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -572,18 +572,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> IfNpcClicked (n_00d04d): set s_00cc6d": {
+" 3:  >> IfNpcClicked (n_brisienna): set s_01": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_00cc6d": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00d04d": {
+"1: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -595,11 +595,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_00cc6d => PromptYesNo (s_yes, s_no, 1000)": {
+" 4: s_01 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_00cc6d": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -632,7 +632,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_yes => PlaceItemAt (i_000dbf, l_daggerfall)": {
+" 5: s_yes => PlaceItemAt (i_totem, l_daggerfall)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -643,7 +643,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -678,7 +678,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_yes => SetQuestor (n_00d04d)": {
+" 7: s_yes => SetQuestor (n_brisienna)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -689,7 +689,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00d04d": {
+"1: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -763,7 +763,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfItemPickedUp (i_000dbf): set s_4": {
+"11:  >> IfItemPickedUp (i_totem): set s_4": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -774,7 +774,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -1204,7 +1204,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 >> WhenPlayerHasItems (i_000dbf): set s_27": {
+"25: s_7 >> WhenPlayerHasItems (i_totem): set s_27": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -1222,7 +1222,7 @@
 "index": "27",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_000dbf": {
+"2: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -1340,7 +1340,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_7 => PlaceNpcAt (n_00d04d, l_newplace)": {
+"30: s_7 => PlaceNpcAt (n_brisienna, l_newplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1351,7 +1351,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00d04d": {
+"1: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1370,7 +1370,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_8 => GiveItemToPlayer (i_000dbf)": {
+"31: s_8 => GiveItemToPlayer (i_totem)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
@@ -1381,7 +1381,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -1416,7 +1416,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_10 => PlaceItemOnPlayer (i_0034e4) [Msg 1030]": {
+"33: s_10 => GiveToPlayer (i_02) [Msg 1030]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1427,7 +1427,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0034e4": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -1483,7 +1483,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_11 => StartQuest (100, 100)": {
+"35: s_11 >> StartQuest (S0000100)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -1536,7 +1536,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: s_13 => PlaceItemOnPlayer (i_0034cb) [Msg 1031]": {
+"37: s_13 => GiveToPlayer (i_06) [Msg 1031]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1547,7 +1547,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0034cb": {
+"1: i_06": {
 "type": "Item",
 "value": "6",
 "not": "False",
@@ -1603,7 +1603,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39: s_14 => StartQuest (101, 101)": {
+"39: s_14 >> StartQuest (S0000101)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -1702,7 +1702,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_18 => PlaceItemOnPlayer (i_00352c) [Msg 1032]": {
+"43: s_18 => GiveToPlayer (i_03) [Msg 1032]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1713,7 +1713,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00352c": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -1725,7 +1725,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44: s_19 => PlaceItemOnPlayer (i_0035a5) [Msg 1033]": {
+"44: s_19 => GiveToPlayer (i_05) [Msg 1033]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1736,7 +1736,7 @@
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0035a5": {
+"1: i_05": {
 "type": "Item",
 "value": "5",
 "not": "False",
@@ -1748,7 +1748,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_20 => PlaceItemOnPlayer (i_006b4f) [Msg 1034]": {
+"45: s_20 => GiveToPlayer (i_04) [Msg 1034]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1759,7 +1759,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_006b4f": {
+"1: i_04": {
 "type": "Item",
 "value": "4",
 "not": "False",
@@ -1845,7 +1845,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"48: s_21 => StartQuest (102, 102)": {
+"48: s_21 >> StartQuest (S0000102)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -2023,7 +2023,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"53: s_23 => StartQuest (103, 103)": {
+"53: s_23 >> StartQuest (S0000103)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -2097,7 +2097,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"55: s_24 => StartQuest (104, 104)": {
+"55: s_24 >> StartQuest (S0000104)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -2275,7 +2275,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"60: s_28 => PlaceItemOnMob (i_000dbf, m_0)": {
+"60: s_28 => PlaceItemOnMob (i_totem, m_0)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -2286,7 +2286,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -2367,7 +2367,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"64:  >> IfGivingItemToNpc (i_000dbf, n_Akorithi): set gs_AkorithiGotTotem": {
+"64:  >> IfGivingItemToNpc (i_totem, n_Akorithi): set gs_AkorithiGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2378,7 +2378,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -2397,7 +2397,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"65: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_00d23c)": {
+"65: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_15)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -2408,7 +2408,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23c": {
+"1: i_15": {
 "type": "Item",
 "value": "15",
 "not": "False",
@@ -2427,7 +2427,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"66: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_00d23b)": {
+"66: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_14)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -2438,7 +2438,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23b": {
+"1: i_14": {
 "type": "Item",
 "value": "14",
 "not": "False",
@@ -2457,7 +2457,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"67: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_00d23a)": {
+"67: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_13)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -2468,7 +2468,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23a": {
+"1: i_13": {
 "type": "Item",
 "value": "13",
 "not": "False",
@@ -2487,7 +2487,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"68: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_00d239)": {
+"68: gs_AkorithiGotTotem => PlaceItemOnCharacter (i_07)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -2498,7 +2498,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d239": {
+"1: i_07": {
 "type": "Item",
 "value": "7",
 "not": "False",
@@ -2533,7 +2533,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"70: gs_AkorithiGotTotem => MakePermanent (i_00d23c)": {
+"70: gs_AkorithiGotTotem => MakePermanent (i_15)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -2544,7 +2544,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23c": {
+"1: i_15": {
 "type": "Item",
 "value": "15",
 "not": "False",
@@ -2556,7 +2556,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"71: gs_AkorithiGotTotem => MakePermanent (i_00d23a)": {
+"71: gs_AkorithiGotTotem => MakePermanent (i_13)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -2567,7 +2567,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23a": {
+"1: i_13": {
 "type": "Item",
 "value": "13",
 "not": "False",
@@ -2579,7 +2579,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"72: gs_AkorithiGotTotem => MakePermanent (i_00d23b)": {
+"72: gs_AkorithiGotTotem => MakePermanent (i_14)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -2590,7 +2590,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d23b": {
+"1: i_14": {
 "type": "Item",
 "value": "14",
 "not": "False",
@@ -2602,7 +2602,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"73: gs_AkorithiGotTotem => MakePermanent (i_00d239)": {
+"73: gs_AkorithiGotTotem => MakePermanent (i_07)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -2613,7 +2613,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d239": {
+"1: i_07": {
 "type": "Item",
 "value": "7",
 "not": "False",
@@ -2625,7 +2625,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"74:  >> IfGivingItemToNpc (i_000dbf, n_00d04d): set gs_BrisiennaGotTotem": {
+"74:  >> IfGivingItemToNpc (i_totem, n_brisienna): set gs_BrisiennaGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2636,14 +2636,14 @@
 "index": "32",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00d04d": {
+"2: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -2724,7 +2724,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"78:  >> IfGivingItemToNpc (i_000dbf, n_Kingoworms): set gs_KingOfWormsGotTotem": {
+"78:  >> IfGivingItemToNpc (i_totem, n_Kingoworms): set gs_KingOfWormsGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2735,7 +2735,7 @@
 "index": "33",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -2754,7 +2754,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"79: gs_KingOfWormsGotTotem => StartQuest (106, 106)": {
+"79: gs_KingOfWormsGotTotem >> StartQuest (S0000106)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -2800,7 +2800,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"81:  >> IfGivingItemToNpc (i_000dbf, n_Gortwog): set gs_GortwogGotTotem": {
+"81:  >> IfGivingItemToNpc (i_totem, n_Gortwog): set gs_GortwogGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2811,7 +2811,7 @@
 "index": "34",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -2846,7 +2846,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"83: gs_GortwogGotTotem => PlaceItemOnCharacter (i_00d031)": {
+"83: gs_GortwogGotTotem => PlaceItemOnCharacter (i_artifact5)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -2857,7 +2857,7 @@
 "index": "34",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d031": {
+"1: i_artifact5": {
 "type": "Item",
 "value": "12",
 "not": "False",
@@ -2876,7 +2876,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"84: gs_GortwogGotTotem => MakePermanent (i_00d031)": {
+"84: gs_GortwogGotTotem => MakePermanent (i_artifact5)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -2887,7 +2887,7 @@
 "index": "34",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00d031": {
+"1: i_artifact5": {
 "type": "Item",
 "value": "12",
 "not": "False",
@@ -2899,7 +2899,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"85:  >> IfGivingItemToNpc (i_000dbf, n_Underking): set gs_UnderkingGotTotem": {
+"85:  >> IfGivingItemToNpc (i_totem, n_Underking): set gs_UnderkingGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -2910,7 +2910,7 @@
 "index": "35",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -2998,7 +2998,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"89:  >> IfGivingItemToNpc (i_000dbf, n_eadwyre): set gs_EadwyreGotTotem": {
+"89:  >> IfGivingItemToNpc (i_totem, n_eadwyre): set gs_EadwyreGotTotem": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -3009,7 +3009,7 @@
 "index": "36",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -3201,7 +3201,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"96: s_38 => PlaceItemOnPlayer (i_01addd) [Msg 1070]": {
+"96: s_38 => GiveToPlayer (i_10) [Msg 1070]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -3212,7 +3212,7 @@
 "index": "38",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_01addd": {
+"1: i_10": {
 "type": "Item",
 "value": "10",
 "not": "False",
@@ -3335,7 +3335,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"100: s_41 => StartQuest (16, 16)": {
+"100: s_41 >> StartQuest (S0000016)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -3557,7 +3557,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"106: s_45 => UnsetQuestor (n_00d04d)": {
+"106: s_45 => UnsetQuestor (n_brisienna)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -3568,7 +3568,7 @@
 "index": "45",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00d04d": {
+"1: n_brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -3688,7 +3688,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"112:  >> IfGivingItemToNpc (i_000dbf, n_Gothryd): set s_46": {
+"112:  >> IfGivingItemToNpc (i_totem, n_Gothryd): set s_46": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -3699,7 +3699,7 @@
 "index": "46",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000dbf": {
+"1: i_totem": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -3771,8 +3771,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_00cc6d": {
-"variable": "s_00cc6d",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x0000cc6d]",
 "isGlobal": false,
 "globalIndex": 0,
