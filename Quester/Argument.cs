@@ -62,7 +62,7 @@ namespace Quester
             catch (Exception )
             {
                 Console.Error.WriteLine($"{Program.Quest.Name}: ERROR: {Type}={Value}");
-                throw;
+                variable = "BIGFATERROR";
             }
 
             return Not ? $"not {variable}" : variable;

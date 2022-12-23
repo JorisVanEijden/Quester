@@ -25,6 +25,12 @@ namespace Quester
                 "Backpack",
                 "Small_Chest",
                 "Wine_Rack",
+                "Large_Chest",
+                "Dummy11",
+                "Dummy12",
+                "Dummy13",
+                "Dummy14",
+                "Dummy15",
                 "Large_Chest"
             },
             [ItemCategory.Armor] = new List<string>

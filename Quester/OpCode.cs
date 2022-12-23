@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Quester
@@ -123,16 +124,10 @@ namespace Quester
             }
 
             Timer timer = Program.Quest.Timers[(short) argument.Index];
-            string variable = timer.Variable.Substring(2);
-            foreach (var state in Program.Quest.States)
-            {
-                if (state.Value.Variable.Substring(2) == variable)
-                {
-                    return state.Value;
-                }
-            }
 
-            throw new Exception("State not found");
+            return Program.Quest.States
+                .First(pair => pair.Value.NameRaw == timer.NameRaw)
+                .Value;
         }
     }
 }

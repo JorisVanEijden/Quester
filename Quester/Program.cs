@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using CommandLine;
 using CommandLine.Text;
 using static Quester.QbnReader;
@@ -18,6 +19,12 @@ namespace Quester
 
         private static void Run(Options options)
         {
+            if (options.FileNames.Count() == 1 && Directory.Exists(options.FileNames.First()))
+            {
+                options.FileNames =
+                    Directory.EnumerateFiles(options.FileNames.First(), "*.qbn", SearchOption.TopDirectoryOnly);
+            }
+
             foreach (string file in options.FileNames)
             {
                 if (!File.Exists(file))
@@ -35,13 +42,13 @@ namespace Quester
                 };
                 ParseQbnFile(path + name + ".qbn");
                 ParseQrcFile(path + name + ".qrc");
-                
-                name = Path.Join(Environment.CurrentDirectory, "docs",  name);
+
+                name = Path.Join(Environment.CurrentDirectory, "docs", name);
                 try
                 {
                     OutputJson(name);
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     Console.Error.WriteLine($"ERROR in quest {Quest.Name}");
                     throw;
@@ -84,7 +91,7 @@ namespace Quester
                 Quest.OpCodes = ReadOpCodeSection(reader, header);
                 Quest.States = ReadStateSection(reader, header);
                 Quest.Info.QuestId = header.QuestId;
-                Quest.Info.FactionId = (FactionId) header.FactionId;
+                Quest.Info.FactionId = (FactionId)header.FactionId;
                 Quest.Info.ResourceId = header.ResourceId;
                 Quest.Info.ResourceFileName = new string(header.ResourceFilename).Trim('\0');
                 Quest.Info.HasDebugInfo = header.HasDebugInfo != 0 ? true : false;
@@ -94,13 +101,14 @@ namespace Quester
         private class Options
         {
             [Value(0, MetaName = "fileName", Required = true, HelpText = "One or more paths to QBN files.")]
-            public IEnumerable<string> FileNames { get; private set; }
+            public IEnumerable<string> FileNames { get; set; }
 
             [Usage(ApplicationAlias = "Quester")]
             public static IEnumerable<Example> Examples =>
                 new List<Example>
                 {
-                    new Example("Decompile QBN files.", new Options { FileNames = new[] { @"Daggerfall\Arena2\S0000011.QBN" } })
+                    new("Decompile QBN files.",
+                        new Options { FileNames = new[] { @"Daggerfall\Arena2\S0000011.QBN", @"C:\Games\ARENA2\" } })
                 };
         }
     }

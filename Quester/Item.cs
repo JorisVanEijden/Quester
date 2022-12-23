@@ -30,8 +30,20 @@ namespace Quester
                 }
                 try
                 {
-                    var name = ItemId == 0xffff ? Category.ToString() : ItemMapper.ItemMap[Category][ItemId];
-                    item += $"{name} [{Category}]";
+                    if (ItemId == 0xffff)
+                    {
+                        item += $"[{Category}]";
+                    }
+                    else if (ItemMapper.ItemMap[Category].Count > ItemId)
+                    {
+                        var name = ItemMapper.ItemMap[Category][ItemId];
+                        item += $"{name} [{Category}]";
+                    }
+                    else
+                    {
+                        item += $"UNKNOWN ITEM {ItemId} IN CATEGORY {Category}";
+                        Console.Error.WriteLine($"{Program.Quest.Name}: no {ItemId} in {Category}");
+                    }
                 }
                 catch (Exception )
                 {
