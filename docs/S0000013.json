@@ -13,10 +13,11 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_treasure: Artifact Flammable Parchment [1010]": {
+" 0: i_treasure: Parchment [Usable] [1010]": {
 "variable": "i_treasure",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00006FE5]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1010,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -33,10 +35,11 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_00033a3c: Artifact Flammable Parchment [1020]": {
-"variable": "i_00033a3c",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 2: i_02: Parchment [Usable] [1020]": {
+"variable": "i_02",
+"nameRaw": "[0x00033A3C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1020,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_00000c7f: Female (type Permanent) (faction Queen_Aubki)": {
-"variable": "n_00000c7f",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction Queen_Aubki)": {
+"variable": "n_00",
+"nameRaw": "[0x00000c7f]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -58,11 +62,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_00006f81: Female (faction Mynisera) (face 184)": {
-"variable": "n_00006f81",
-"gender": "Female",
+" 1: n_01:  (faction Mynisera)": {
+"variable": "n_01",
+"nameRaw": "[0x00006f81]",
+"unknown1": "[0x01]",
 "facePictureIndex": 184,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Mynisera",
 "factionRaw": "366 [0x016E]",
@@ -75,6 +80,7 @@
 ,"locations: [1]": {
 " 0: l_myndung: OutOfTown HumanStronghold": {
 "variable": "l_myndung",
+"nameRaw": "[0x00003777]",
 "generalLocation": "OutOfTown",
 "locationType": 2,
 "LocationType": "HumanStronghold",
@@ -92,6 +98,7 @@
 ,"timers: [2]": {
 " 0: t_2myndung: 1.5 times travel time between here and 'l_myndung'": {
 "variable": "t_2myndung",
+"nameRaw": "[0x00005077]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -104,6 +111,7 @@
 },
 " 1: t_startquest: Random between 10.00:00:00 and 20.00:00:00": {
 "variable": "t_startquest",
+"nameRaw": "[0x0001c326]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "10.00:00:00",
@@ -118,7 +126,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [23]": {
-" 0:  => SetQuestor (n_00000c7f)": {
+" 0:  => SetQuestor (n_00)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -129,7 +137,7 @@
 "index": "255",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00000c7f": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -141,7 +149,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 1:  >> StartTimer (t_startquest); When it expires: set s_startquest": {
+" 1:  => StartTimer (t_startquest); When it expires: set s_startquest": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -164,7 +172,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 2: s_startquest => PlaceItemOnPlayer (i_00033a3c) [Msg 1015]": {
+" 2: s_startquest => GiveToPlayer (i_02) [Msg 1015]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -175,7 +183,7 @@
 "index": "4",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: i_00033a3c": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -187,18 +195,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 3:  >> IfNpcClicked (n_00000c7f): set s_00067242": {
+" 3:  >> IfNpcClicked (n_00): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_00067242": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00000c7f": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -210,7 +218,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 4: not s_startquest => Unset (s_00067242)": {
+" 4: not s_startquest => Unset (s_02)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -221,7 +229,7 @@
 "index": "4",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: s_00067242": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -254,11 +262,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 5: s_00067242 => PromptYesNo (s_yes, s_no, 1000)": {
+" 5: s_02 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_00067242": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -323,7 +331,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 8: s_no => UnsetQuestor (n_00000c7f)": {
+" 8: s_no => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -334,7 +342,7 @@
 "index": "6",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00000c7f": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -362,7 +370,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"10: s_yes >> StartTimer (t_2myndung); When it expires: set s_2myndung": {
+"10: s_yes => StartTimer (t_2myndung); When it expires: set s_2myndung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -415,7 +423,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"12: s_startquest => HideNpc (n_00006f81)": {
+"12: s_startquest => HideNpc (n_01)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
@@ -426,7 +434,7 @@
 "index": "4",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00006f81": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -514,7 +522,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"16: s_dummy >> WhenItemIsUsed (i_treasure): set s_00003582": {
+"16: s_dummy >> WhenItemIsUsed (i_treasure): set s_03": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -525,7 +533,7 @@
 "index": "7",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: s_00003582": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -544,7 +552,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"17:  >> IfGivingItemToNpc (i_treasure, n_00000c7f): set s_pcgetsgold": {
+"17:  >> IfGivingItemToNpc (i_treasure, n_00): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -562,7 +570,7 @@
 "index": "0",
 "unknown1": "-2101341516 [0x82C012B4]"
 },
-"2: n_00000c7f": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -618,7 +626,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"19: s_pcgetsgold => UnsetQuestor (n_00000c7f)": {
+"19: s_pcgetsgold => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -629,7 +637,7 @@
 "index": "1",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00000c7f": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -657,7 +665,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"21: s_2myndung => UnsetQuestor (n_00000c7f)": {
+"21: s_2myndung => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -668,7 +676,7 @@
 "index": "0",
 "unknown1": "-1887256913 [0x8F82BEAF]"
 },
-"1: n_00000c7f": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -700,48 +708,56 @@
 ,"states: [8]": {
 " 0: s_2myndung": {
 "variable": "s_2myndung",
+"nameRaw": "[0x00005077]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00067242": {
-"variable": "s_00067242",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00067242]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00003582": {
-"variable": "s_00003582",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00003582]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_startquest": {
 "variable": "s_startquest",
+"nameRaw": "[0x0001c326]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_dummy": {
 "variable": "s_dummy",
+"nameRaw": "[0x00000cef]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7

@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,11 +31,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_qgiven: OutOfTown 499": {
+" 0: l_qgiven: OutOfTown Dungeon": {
 "variable": "l_qgiven",
+"nameRaw": "[0x00001ae8]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -45,11 +47,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_qgenemy: OutOfTown 499": {
+" 1: l_qgenemy: OutOfTown Dungeon": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": -1,
@@ -64,6 +67,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_qgiven'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -78,6 +82,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Nightblade": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Nightblade",
 "count": 1,
 "null1": 0,
@@ -86,7 +91,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -465,11 +470,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11:  >> If (s_map and s_pcgetsgold): set s_0000374e": {
+"11:  >> If (s_map and s_pcgetsgold): set s_07": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -509,11 +514,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"12: s_0000374e => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"12: s_07 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -568,48 +573,56 @@
 ,"states: [8]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_map": {
 "variable": "s_map",
+"nameRaw": "[0x000002e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_0000374e": {
-"variable": "s_0000374e",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0000374e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7

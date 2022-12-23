@@ -13,30 +13,33 @@
 "hasDebugInfo": true
 }
 ,"items: [3]": {
-" 0: i_letter: Artifact Flammable Parchment [1010]": {
+" 0: i_letter: Parchment [Usable] [1010]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1010,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_letter2: Artifact Flammable Parchment [1013]": {
+" 1: i_letter2: Parchment [Usable] [1013]": {
 "variable": "i_letter2",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x0000352A]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1013,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_gem: Artifact Gems Gems": {
+" 2: i_gem: [Gem]": {
 "variable": "i_gem",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x000002D3]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 65535,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_vamp: Male (faction Peryite)": {
+" 0: n_vamp:  (type? Daedra) (faction Peryite)": {
 "variable": "n_vamp",
-"gender": "Male",
+"nameRaw": "[0x0000067e]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_daedra: Female (face 1)": {
+" 1: n_daedra:  (type? Daedra)": {
 "variable": "n_daedra",
-"gender": "Female",
+"nameRaw": "[0x0000188d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -75,6 +80,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown Coven": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 7,
 "LocationType": "Coven",
@@ -92,6 +98,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -106,6 +113,7 @@
 ,"mobs: [1]": {
 " 0: m_daedroth: 1 Daedroth": {
 "variable": "m_daedroth",
+"nameRaw": "[0X000063bc]",
 "type": "Daedroth",
 "count": 1,
 "null1": 0,
@@ -114,7 +122,7 @@
 }
 }
 ,"opCodes: [34]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -174,7 +182,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 2:  => PlaceItemOnPlayer (i_letter) [Msg 1021]": {
+" 2:  => GiveToPlayer (i_letter) [Msg 1021]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -1075,60 +1083,70 @@
 ,"states: [10]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_vampclicked": {
 "variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_failure": {
 "variable": "s_failure",
+"nameRaw": "[0x000032ad]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_success": {
 "variable": "s_success",
+"nameRaw": "[0x00003795]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_nononono": {
 "variable": "s_nononono",
+"nameRaw": "[0x00006de7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_daedclicked": {
 "variable": "s_daedclicked",
+"nameRaw": "[0x00031bc2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_challenge": {
 "variable": "s_challenge",
+"nameRaw": "[0x0000c993]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_badpcn": {
 "variable": "s_badpcn",
+"nameRaw": "[0x00001864]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9

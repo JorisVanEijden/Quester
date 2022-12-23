@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [8]": {
-" 0: i_000068a9: Artifact MetalIngredients Gold": {
-"variable": "i_000068a9",
-"rewardType": "Artifact",
+" 0: i_00: Gold [MetalIngredients]": {
+"variable": "i_00",
+"nameRaw": "[0x000068A9]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 9,
 "textRecordId1": 0,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_000068aa: Artifact MetalIngredients Gold": {
-"variable": "i_000068aa",
-"rewardType": "Artifact",
+" 1: i_01: Gold [MetalIngredients]": {
+"variable": "i_01",
+"nameRaw": "[0x000068AA]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 9,
 "textRecordId1": 0,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_000068ab: Artifact MetalIngredients Gold": {
-"variable": "i_000068ab",
-"rewardType": "Artifact",
+" 2: i_02: Gold [MetalIngredients]": {
+"variable": "i_02",
+"nameRaw": "[0x000068AB]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 9,
 "textRecordId1": 0,
@@ -43,9 +46,10 @@
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_000068ac: Artifact MetalIngredients Gold": {
-"variable": "i_000068ac",
-"rewardType": "Artifact",
+" 3: i_03: Gold [MetalIngredients]": {
+"variable": "i_03",
+"nameRaw": "[0x000068AC]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 9,
 "textRecordId1": 0,
@@ -55,6 +59,7 @@
 },
 " 4: i_reward1: Random gold": {
 "variable": "i_reward1",
+"nameRaw": "[0x00003659]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -65,6 +70,7 @@
 },
 " 5: i_reward2: Random gold": {
 "variable": "i_reward2",
+"nameRaw": "[0x0000365A]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -75,6 +81,7 @@
 },
 " 6: i_reward3: Random gold": {
 "variable": "i_reward3",
+"nameRaw": "[0x0000365B]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -83,8 +90,9 @@
 "index": 6,
 "unknown1": "0 [0x00000000]"
 },
-" 7: i_0000365c: Random gold": {
-"variable": "i_0000365c",
+" 7: i_07: Random gold": {
+"variable": "i_07",
+"nameRaw": "[0x0000365C]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -95,9 +103,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: 255 (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "255",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0xFF]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -112,6 +121,7 @@
 ,"locations: [4]": {
 " 0: l_depository: OutOfTown Bank": {
 "variable": "l_depository",
+"nameRaw": "[0x00019c69]",
 "generalLocation": "OutOfTown",
 "locationType": 3,
 "LocationType": "Bank",
@@ -127,6 +137,7 @@
 },
 " 1: l_mondung: OutOfTown HumanStronghold": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 2,
 "LocationType": "HumanStronghold",
@@ -142,6 +153,7 @@
 },
 " 2: l_palace: OutOfTown Palace": {
 "variable": "l_palace",
+"nameRaw": "[0x00001a1f]",
 "generalLocation": "OutOfTown",
 "locationType": 16,
 "LocationType": "Palace",
@@ -157,6 +169,7 @@
 },
 " 3: l_mansion: OutOfTown House1": {
 "variable": "l_mansion",
+"nameRaw": "[0x000034c8]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -172,8 +185,9 @@
 }
 }
 ,"timers: [1]": {
-" 0: t_00004f37: 1.5 times travel time between here and 'l_depository'": {
-"variable": "t_00004f37",
+" 0: t_00: 1.5 times travel time between here and 'l_depository'": {
+"variable": "t_00",
+"nameRaw": "[0x00004f37]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -186,24 +200,27 @@
 }
 }
 ,"mobs: [3]": {
-" 0: m_44000000: 2 Knight": {
-"variable": "m_44000000",
+" 0: m_0: 2 Knight": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Knight",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_44000001: 2 Battlemage": {
-"variable": "m_44000001",
+" 1: m_1: 2 Battlemage": {
+"variable": "m_1",
+"nameRaw": "[0X44000001]",
 "type": "Battlemage",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_44000002: 2 Spellsword": {
-"variable": "m_44000002",
+" 2: m_2: 2 Spellsword": {
+"variable": "m_2",
+"nameRaw": "[0X44000002]",
 "type": "Spellsword",
 "count": 2,
 "null1": 0,
@@ -212,7 +229,7 @@
 }
 }
 ,"opCodes: [47]": {
-" 0:  => PlaceItemAt (i_000068a9, l_depository)": {
+" 0:  => PlaceItemAt (i_00, l_depository)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -223,7 +240,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068a9": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -242,7 +259,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => PlaceItemAt (i_000068aa, l_mansion)": {
+" 1:  => PlaceItemAt (i_01, l_mansion)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -253,7 +270,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068aa": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -272,7 +289,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => PlaceItemAt (i_000068ab, l_mondung)": {
+" 2:  => PlaceItemAt (i_02, l_mondung)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -283,7 +300,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ab": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -302,7 +319,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PlaceItemAt (i_000068ac, l_palace)": {
+" 3:  => PlaceItemAt (i_03, l_palace)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -313,7 +330,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ac": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -332,7 +349,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> StartTimer (t_00004f37); When it expires: set s_00004f37": {
+" 4:  => StartTimer (t_00); When it expires: set s_02": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -343,7 +360,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_00004f37": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -498,7 +515,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfGivingItemToNpc (i_000068a9, n_qgiver): set s_4": {
+"10:  >> IfGivingItemToNpc (i_00, n_qgiver): set s_4": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -509,7 +526,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068a9": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -597,7 +614,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfGivingItemToNpc (i_000068aa, n_qgiver): set s_5": {
+"14:  >> IfGivingItemToNpc (i_01, n_qgiver): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -608,7 +625,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068aa": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -696,7 +713,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> IfGivingItemToNpc (i_000068ab, n_qgiver): set s_6": {
+"18:  >> IfGivingItemToNpc (i_02, n_qgiver): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -707,7 +724,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ab": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -795,7 +812,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfGivingItemToNpc (i_000068ac, n_qgiver): set s_7": {
+"22:  >> IfGivingItemToNpc (i_03, n_qgiver): set s_7": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -806,7 +823,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ac": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -841,7 +858,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 => PlaceItemOnCharacter (i_0000365c)": {
+"24: s_7 => PlaceItemOnCharacter (i_07)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -852,7 +869,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000365c": {
+"1: i_07": {
 "type": "Item",
 "value": "7",
 "not": "False",
@@ -871,7 +888,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 => MakePermanent (i_0000365c)": {
+"25: s_7 => MakePermanent (i_07)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -882,7 +899,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000365c": {
+"1: i_07": {
 "type": "Item",
 "value": "7",
 "not": "False",
@@ -894,7 +911,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_8 => CreateFoe(m_44000000, 10, 20%, 10)": {
+"26: s_8 => CreateFoe(m_0, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -905,7 +922,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -938,7 +955,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_letter2 => CreateFoe(m_44000001, 10, 20%, 10)": {
+"27: s_letter2 => CreateFoe(m_1, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -949,7 +966,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000001": {
+"1: m_1": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -982,7 +999,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_10 => CreateFoe(m_44000002, 10, 20%, 10)": {
+"28: s_10 => CreateFoe(m_2, 10, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -993,7 +1010,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000002": {
+"1: m_2": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -1218,7 +1235,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> If (s_00004f37 and s_mggold): set s_success": {
+"34:  >> If (s_02 and s_mggold): set s_success": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1229,7 +1246,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_00004f37": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1306,7 +1323,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_success => MakePermanent (i_000068a9)": {
+"36: s_success => MakePermanent (i_00)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -1317,7 +1334,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068a9": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -1329,7 +1346,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: s_success => MakePermanent (i_000068aa)": {
+"37: s_success => MakePermanent (i_01)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -1340,7 +1357,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068aa": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -1352,7 +1369,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38: s_success => MakePermanent (i_000068ab)": {
+"38: s_success => MakePermanent (i_02)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -1363,7 +1380,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ab": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -1375,7 +1392,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39: s_success => MakePermanent (i_000068ac)": {
+"39: s_success => MakePermanent (i_03)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -1386,7 +1403,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ac": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -1414,18 +1431,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41:  >> If (s_00004f37 and not s_mggold): set s_000005f2": {
+"41:  >> If (s_02 and not s_mggold): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_00004f37": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1458,18 +1475,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42: s_000005f2 => MakePermanent (i_000068a9)": {
+"42: s_16 => MakePermanent (i_00)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068a9": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -1481,18 +1498,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_000005f2 => MakePermanent (i_000068aa)": {
+"43: s_16 => MakePermanent (i_01)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068aa": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -1504,18 +1521,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44: s_000005f2 => MakePermanent (i_000068ab)": {
+"44: s_16 => MakePermanent (i_02)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ab": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -1527,18 +1544,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_000005f2 => MakePermanent (i_000068ac)": {
+"45: s_16 => MakePermanent (i_03)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000068ac": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -1550,11 +1567,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46: s_000005f2 => EndQuest ()": {
+"46: s_16 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_000005f2": {
+"0: s_16": {
 "type": "State",
 "value": "16",
 "not": "False",
@@ -1568,104 +1585,121 @@
 }
 }
 ,"states: [17]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00004f37": {
-"variable": "s_00004f37",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00004f37]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_2palace": {
 "variable": "s_2palace",
+"nameRaw": "[0x0000269f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_letter2": {
 "variable": "s_letter2",
+"nameRaw": "[0x0000352a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_mggold": {
 "variable": "s_mggold",
+"nameRaw": "[0x00001a40]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
 "13: s_lesser": {
 "variable": "s_lesser",
+"nameRaw": "[0x00001a70]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
-"14: s_4000000e": {
-"variable": "s_4000000e",
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x4000000e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14
 },
 "15: s_success": {
 "variable": "s_success",
+"nameRaw": "[0x00003795]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15
 },
-"16: s_000005f2": {
-"variable": "s_000005f2",
+"16: s_16": {
+"variable": "s_16",
+"nameRaw": "[0x000005f2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 16

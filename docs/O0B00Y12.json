@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_drugs: Artifact Drugs Drugs": {
+" 0: i_drugs: [Drugs]": {
 "variable": "i_drugs",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CE5]",
+"rewardType": "Item1",
 "category": "Drugs",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_note: Artifact Flammable Parchment [1030]": {
+" 1: i_note: Parchment [Usable] [1030]": {
 "variable": "i_note",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00000679]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1030,
@@ -35,6 +37,7 @@
 },
 " 2: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_contact1: Female (faction Clavicus_Vile)": {
+" 0: n_contact1:  (type? Unknown_5) (faction Clavicus_Vile)": {
 "variable": "n_contact1",
-"gender": "Female",
+"nameRaw": "[0x000067ed]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_5",
 "npcTypeRaw": "65531 [0xFFFB]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_questgiver: Male (type QuestGiver)": {
+" 1: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -71,9 +76,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_contact2: Female": {
+" 2: n_contact2:  (type? Unknown_3)": {
 "variable": "n_contact2",
-"gender": "Female",
+"nameRaw": "[0x000067ee]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -90,6 +96,7 @@
 ,"timers: [3]": {
 " 0: t_qtime: 1.5 times travel time from here to 'n_contact1' and then 'n_contact2'": {
 "variable": "t_qtime",
+"nameRaw": "[0x00000d93]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -100,8 +107,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_0000060a: Random between 1.00:00:00 and 2.18:40:00": {
-"variable": "t_0000060a",
+" 1: t_01: Random between 1.00:00:00 and 2.18:40:00": {
+"variable": "t_01",
+"nameRaw": "[0x0000060a]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "1.00:00:00",
@@ -114,6 +122,7 @@
 },
 " 2: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -128,6 +137,7 @@
 ,"mobs: [1]": {
 " 0: m_enemy: 1 Assassin": {
 "variable": "m_enemy",
+"nameRaw": "[0X00000ca7]",
 "type": "Assassin",
 "count": 1,
 "null1": 0,
@@ -136,7 +146,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> StartTimer (t_qtime); When it expires: set s_qtime": {
+" 0:  => StartTimer (t_qtime); When it expires: set s_qtime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -159,7 +169,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 1:  >> StartTimer (t_0000060a); When it expires: set s_0000060a": {
+" 1:  => StartTimer (t_01); When it expires: set s_01": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -170,7 +180,7 @@
 "index": "255",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: t_0000060a": {
+"1: t_01": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -272,11 +282,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5: s_0000060a => HideNpc (n_contact1)": {
+" 5: s_01 => HideNpc (n_contact1)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_0000060a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -295,11 +305,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 6: s_0000060a => PlaceItemOnPlayer (i_note) [Msg 1031]": {
+" 6: s_01 => GiveToPlayer (i_note) [Msg 1031]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0000060a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -318,11 +328,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_0000060a => EnsureNpcLocation (n_contact2)": {
+" 7: s_01 => EnsureNpcLocation (n_contact2)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -348,11 +358,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 8: s_0000060a => CreateFoe(m_enemy, 10, 10%, 10)": {
+" 8: s_01 => CreateFoe(m_enemy, 10, 10%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0000060a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -392,11 +402,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9:  >> IfMobHurtByPlayer (m_enemy): set s_00006967": {
+" 9:  >> IfMobHurtByPlayer (m_enemy): set s_06": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00006967": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -415,11 +425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10: s_00006967 => Say (1035)": {
+"10: s_06 => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006967": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -431,11 +441,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11: s_0000060a >> WhenItemIsUsed (i_note): set s_readnote": {
+"11: s_01 >> WhenItemIsUsed (i_note): set s_readnote": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -595,7 +605,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"16: s_success >> StartTimer (t_delay); When it expires: set s_delay": {
+"16: s_success => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -654,42 +664,49 @@
 ,"states: [7]": {
 " 0: s_qtime": {
 "variable": "s_qtime",
+"nameRaw": "[0x00000d93]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0000060a": {
-"variable": "s_0000060a",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0000060a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_readnote": {
 "variable": "s_readnote",
+"nameRaw": "[0x00006b19]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00003440": {
-"variable": "s_00003440",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00003440]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_success": {
 "variable": "s_success",
+"nameRaw": "[0x00003795]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00006967": {
-"variable": "s_00006967",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00006967]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

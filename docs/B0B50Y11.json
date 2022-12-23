@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_nobleman: Female (faction Malacath) (face 182)": {
+" 1: n_nobleman:  (type? Daedra) (faction Malacath)": {
 "variable": "n_nobleman",
-"gender": "Female",
+"nameRaw": "[0x00006bcc]",
+"unknown1": "[0x01]",
 "facePictureIndex": 182,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -51,9 +54,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_local: Male (type Resident2) (face 77)": {
+" 2: n_local:  (type? Resident2)": {
 "variable": "n_local",
-"gender": "Male",
+"nameRaw": "[0x00000cf2]",
+"unknown1": "[0x00]",
 "facePictureIndex": 77,
 "npcType": "Resident2",
 "npcTypeRaw": "18 [0x0012]",
@@ -68,6 +72,7 @@
 ,"locations: [1]": {
 " 0: l_dungeon: OutOfTown RuinedCastle": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": 11,
 "LocationType": "RuinedCastle",
@@ -85,6 +90,7 @@
 ,"timers: [1]": {
 " 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_2dung",
+"nameRaw": "[0x00000957]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -99,6 +105,7 @@
 ,"mobs: [2]": {
 " 0: m_ghost: 1 Ghost": {
 "variable": "m_ghost",
+"nameRaw": "[0X00000cc6]",
 "type": "Ghost",
 "count": 1,
 "null1": 0,
@@ -107,6 +114,7 @@
 },
 " 1: m_wraith: 1 Wraith": {
 "variable": "m_wraith",
+"nameRaw": "[0X00001bfc]",
 "type": "Wraith",
 "count": 1,
 "null1": 0,
@@ -115,7 +123,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
+" 0:  => StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -138,7 +146,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 1:  => PickOneOf (s_000036e5, s_000036e6)": {
+" 1:  => PickOneOf (s_04, s_05)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -149,14 +157,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000036e5": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_000036e6": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -235,11 +243,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4: s_000036e5 => PlaceMobAtLocation (m_wraith, l_dungeon)": {
+" 4: s_04 => PlaceMobAtLocation (m_wraith, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_000036e5": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -265,11 +273,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_000036e6 => PlaceMobAtLocation (m_ghost, l_dungeon)": {
+" 5: s_05 => PlaceMobAtLocation (m_ghost, l_dungeon)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_000036e6": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -295,11 +303,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6:  >> IfMobsKilled (m_wraith, 1): set s_0003701a [Msg 1011]": {
+" 6:  >> IfMobsKilled (m_wraith, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0003701a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -325,11 +333,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7:  >> IfMobsKilled (m_ghost, 1): set s_0003701a [Msg 1011]": {
+" 7:  >> IfMobsKilled (m_ghost, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0003701a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -355,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8:  >> IfNpcClicked (n_qgiver): set s_00006623": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -378,7 +386,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 9:  >> If (s_00006623 and not s_0003701a): set s_clearclick": {
+" 9:  >> If (s_02 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -389,14 +397,14 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006623": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0003701a": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -422,7 +430,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"10: s_clearclick => Unset (s_00006623, s_clearclick)": {
+"10: s_clearclick => Unset (s_02, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -433,7 +441,7 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006623": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -466,11 +474,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"11: s_00006623 => QuestSuccess ()": {
+"11: s_02 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -510,11 +518,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"12: s_00006623 => AdjustReputationWithNpc (n_local, 4)": {
+"12: s_02 => AdjustReputationWithNpc (n_local, 4)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -540,11 +548,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"13: s_00006623 => AdjustReputationWithNpc (n_nobleman, 10)": {
+"13: s_02 => AdjustReputationWithNpc (n_nobleman, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -586,11 +594,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"15: s_00006623 => EndQuest ()": {
+"15: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -606,36 +614,42 @@
 ,"states: [6]": {
 " 0: s_2dung": {
 "variable": "s_2dung",
+"nameRaw": "[0x00000957]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0003701a": {
-"variable": "s_0003701a",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0003701a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00006623": {
-"variable": "s_00006623",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006623]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_000036e5": {
-"variable": "s_000036e5",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x000036e5]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_000036e6": {
-"variable": "s_000036e6",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x000036e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

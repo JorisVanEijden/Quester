@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: 255 (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "255",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0xFF]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,11 +31,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -45,11 +47,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_00006e17: OutOfTown 499": {
-"variable": "l_00006e17",
+" 1: l_01: OutOfTown Dungeon": {
+"variable": "l_01",
+"nameRaw": "[0x00006e17]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -64,6 +67,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -78,6 +82,7 @@
 ,"mobs: [1]": {
 " 0: m_priest: 1 Monk": {
 "variable": "m_priest",
+"nameRaw": "[0X00001b56]",
 "type": "Monk",
 "count": 1,
 "null1": 0,
@@ -86,7 +91,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -192,11 +197,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4:  >> IfMobHurtByPlayer (m_priest): set s_00000613": {
+" 4:  >> IfMobHurtByPlayer (m_priest): set s_01": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00000613": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -215,11 +220,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_00000613 => PlaceMobAtLocation (m_priest, l_00006e17)": {
+" 5: s_01 => PlaceMobAtLocation (m_priest, l_01)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00000613": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -233,7 +238,7 @@
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_00006e17": {
+"2: l_01": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -245,11 +250,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6: s_00000613 => Say (1011)": {
+" 6: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00000613": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -261,11 +266,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7: s_00000613 => Unknown63_Mob (m_priest)": {
+" 7: s_01 => Unknown63_Mob (m_priest)": {
 "opCode": 63,
 "argCount": 2,
 "arguments:": {
-"0: s_00000613": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -284,18 +289,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 8:  >> If (s_00000613 and s_queston): set s_000005ed": {
+" 8:  >> If (s_01 and s_queston): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_000005ed": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00000613": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -328,11 +333,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 9: s_000005ed => Say (1012)": {
+" 9: s_03 => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000005ed": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -344,11 +349,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"10:  >> IfNpcClicked (n_qgiver): set s_000032dd": {
+"10:  >> IfNpcClicked (n_qgiver): set s_04": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_000032dd": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -367,25 +372,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"11:  >> If (s_000032dd and not s_00000613): set s_00000671": {
+"11:  >> If (s_04 and not s_01): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00000671": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000032dd": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_00000613": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -411,25 +416,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"12: s_00000671 => Unset (s_000032dd, s_00000671)": {
+"12: s_05 => Unset (s_04, s_05)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_00000671": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000032dd": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00000671": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -455,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"13: s_000032dd => QuestSuccess ()": {
+"13: s_04 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_000032dd": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -515,11 +520,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-"15: s_000032dd => EndQuest ()": {
+"15: s_04 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_000032dd": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -535,36 +540,42 @@
 ,"states: [6]": {
 " 0: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_00000613": {
-"variable": "s_00000613",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00000613]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_000005ed": {
-"variable": "s_000005ed",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x000005ed]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_000032dd": {
-"variable": "s_000032dd",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x000032dd]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_00000671": {
-"variable": "s_00000671",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x00000671]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

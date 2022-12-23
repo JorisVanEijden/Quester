@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_reward: Artifact MagicItem MagicItem": {
+" 0: i_reward: [MagicItem]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,20 +24,22 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_letter: Artifact Flammable Parchment [1013]": {
+" 1: i_letter: Parchment [Usable] [1013]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1013,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_000038a3: Artifact Flammable Parchment [1020]": {
-"variable": "i_000038a3",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 2: i_02: Parchment [Usable] [1020]": {
+"variable": "i_02",
+"nameRaw": "[0x000038A3]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1020,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_vampire: Male (faction Peryite)": {
+" 0: n_vampire:  (type? Daedra) (faction Peryite)": {
 "variable": "n_vampire",
-"gender": "Male",
+"nameRaw": "[0x000036dd]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_pawn: Female": {
+" 1: n_pawn:  (type? Unknown_3)": {
 "variable": "n_pawn",
-"gender": "Female",
+"nameRaw": "[0x00000660]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -77,6 +82,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'n_pawn'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -91,11 +97,11 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [24]": {
-" 0: s_000033b2 >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0: s_13 => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_000033b2": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -114,7 +120,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 1:  => PlaceItemOnPlayer (i_000038a3) [Msg 1021]": {
+" 1:  => GiveToPlayer (i_02) [Msg 1021]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -125,7 +131,7 @@
 "index": "255",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: i_000038a3": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -137,7 +143,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 2:  >> WhenPlayerHasItems (i_000038a3): set s_000033b2": {
+" 2:  >> WhenPlayerHasItems (i_02): set s_13": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -148,14 +154,14 @@
 "index": "255",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_000033b2": {
+"1: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "-2101402892 [0x82BF22F4]"
 },
-"2: i_000038a3": {
+"2: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -315,7 +321,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 7:  >> WhenItemIsUsed (i_000038a3): set s_00035da3": {
+" 7:  >> WhenItemIsUsed (i_02): set s_12": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -326,14 +332,14 @@
 "index": "255",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_00035da3": {
+"1: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
 "index": "12",
 "unknown1": "-2101402892 [0x82BF22F4]"
 },
-"2: i_000038a3": {
+"2: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -345,11 +351,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 8: s_00035da3 => AddTopics (n_vampire)": {
+" 8: s_12 => AddTopics (n_vampire)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_00035da3": {
+"0: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -382,11 +388,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 9: s_00035da3 => CreateLogEntry (1026, 0)": {
+" 9: s_12 => CreateLogEntry (1026, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_00035da3": {
+"0: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -412,7 +418,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"10:  >> IfGivingItemToNpc (i_000038a3, n_vampire): set s_vampclicked": {
+"10:  >> IfGivingItemToNpc (i_02, n_vampire): set s_vampclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -423,7 +429,7 @@
 "index": "5",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: i_000038a3": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -631,11 +637,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"18:  >> IfNpcClicked (n_vampire): set s_0006f16e": {
+"18:  >> IfNpcClicked (n_vampire): set s_11": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0006f16e": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -654,7 +660,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"19:  >> If (s_0006f16e and not s_npcclicked): set s_clearclick": {
+"19:  >> If (s_11 and not s_npcclicked): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -665,7 +671,7 @@
 "index": "8",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_0006f16e": {
+"1: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -698,7 +704,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"20: s_clearclick => Unset (s_0006f16e, s_clearclick)": {
+"20: s_clearclick => Unset (s_11, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -709,7 +715,7 @@
 "index": "8",
 "unknown1": "-1887257153 [0x8F82BDBF]"
 },
-"1: s_0006f16e": {
+"1: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -742,11 +748,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"21: s_0006f16e => QuestSuccess (i_reward)": {
+"21: s_11 => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0006f16e": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -786,11 +792,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"22: s_0006f16e => EndQuest ()": {
+"22: s_11 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0006f16e": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -822,84 +828,98 @@
 ,"states: [14]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_000355bc": {
-"variable": "s_000355bc",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x000355bc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0006c5bc": {
-"variable": "s_0006c5bc",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0006c5bc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_vampclicked": {
 "variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_0018b5fc": {
-"variable": "s_0018b5fc",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0018b5fc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0000d346": {
-"variable": "s_0000d346",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0000d346]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_0006f16e": {
-"variable": "s_0006f16e",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x0006f16e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_00035da3": {
-"variable": "s_00035da3",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x00035da3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_000033b2": {
-"variable": "s_000033b2",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x000033b2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13

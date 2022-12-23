@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_reward: Artifact Jewellery Ring": {
+" 0: i_reward: Ring [Jewellery]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 2,
 "textRecordId1": 0,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_letter: Artifact Flammable Parchment [1000]": {
+" 1: i_letter: Parchment [Usable] [1000]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1000,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_questgiver: Female (faction Peryite)": {
+" 0: n_questgiver:  (type? Daedra) (faction Peryite)": {
 "variable": "n_questgiver",
-"gender": "Female",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -52,6 +55,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown Crypt": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 0,
 "LocationType": "Crypt",
@@ -69,6 +73,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_questgiver'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -83,6 +88,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Vampire": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Vampire",
 "count": 1,
 "null1": 0,
@@ -91,11 +97,11 @@
 }
 }
 ,"opCodes: [17]": {
-" 0: s_000033b2 >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0: s_06 => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_000033b2": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -114,7 +120,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 1:  >> WhenPlayerHasItems (i_letter): set s_000033b2": {
+" 1:  >> WhenPlayerHasItems (i_letter): set s_06": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -125,7 +131,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000033b2": {
+"1: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -188,7 +194,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 3:  => PlaceItemOnPlayer (i_letter) [Msg 1020]": {
+" 3:  => GiveToPlayer (i_letter) [Msg 1020]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -605,42 +611,49 @@
 ,"states: [7]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_000033b2": {
-"variable": "s_000033b2",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x000033b2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

@@ -13,29 +13,32 @@
 "hasDebugInfo": true
 }
 ,"items: [4]": {
-" 0: i_0000db7c: Artifact Flammable Parchment [1010]": {
-"variable": "i_0000db7c",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 0: i_00: Parchment [Usable] [1010]": {
+"variable": "i_00",
+"nameRaw": "[0x0000DB7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1010,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_0000d3bc: Artifact Flammable Parchment [1011]": {
-"variable": "i_0000d3bc",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 1: i_01: Parchment [Usable] [1011]": {
+"variable": "i_01",
+"nameRaw": "[0x0000D3BC]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1011,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_reward: Artifact Jewellery Jewellery": {
+" 2: i_reward: [Jewellery]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -43,10 +46,11 @@
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_000679fc: Artifact Flammable Parchment [1014]": {
-"variable": "i_000679fc",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 3: i_03: Parchment [Usable] [1014]": {
+"variable": "i_03",
+"nameRaw": "[0x000679FC]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1014,
@@ -55,11 +59,12 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_00003646: Female (faction Princess_Morgiah)": {
-"variable": "n_00003646",
-"gender": "Female",
+" 0: n_00:  (faction Princess_Morgiah)": {
+"variable": "n_00",
+"nameRaw": "[0x00003646]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Princess_Morgiah",
 "factionRaw": "394 [0x018A]",
@@ -68,9 +73,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_necs: Female (type Permanent) (faction King_of_Worms)": {
+" 1: n_necs:  (type? Permanent) (faction King_of_Worms)": {
 "variable": "n_necs",
-"gender": "Female",
+"nameRaw": "[0x0000063d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -85,6 +91,7 @@
 ,"locations: [1]": {
 " 0: l_scourgbarrow: Specific ScourgBarrow": {
 "variable": "l_scourgbarrow",
+"nameRaw": "[0x0006e2bd]",
 "generalLocation": "Specific",
 "locationType": -1535,
 "LocationType": "SpecificLocation",
@@ -100,8 +107,9 @@
 }
 }
 ,"timers: [2]": {
-" 0: t_0000095d: Fixed 30.00:00:00": {
-"variable": "t_0000095d",
+" 0: t_00: Fixed 30.00:00:00": {
+"variable": "t_00",
+"nameRaw": "[0x0000095d]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "30.00:00:00",
@@ -112,8 +120,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_40000001: Random between 7.00:00:00 and 14.00:00:00": {
-"variable": "t_40000001",
+" 1: t_1: Random between 7.00:00:00 and 14.00:00:00": {
+"variable": "t_1",
+"nameRaw": "[0x40000001]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
@@ -165,18 +174,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0000095d => UnsetQuestor (n_00003646)": {
+" 1: s_00 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_0000095d": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003646": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -188,11 +197,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0000095d => EndQuest ()": {
+" 2: s_00 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000095d": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -227,7 +236,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfNpcReputation (s_2, n_00003646): set s_1": {
+" 4: s_1 => IfNpcReputation (n_00) > 10: set s_7": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -238,14 +247,14 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_7": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00003646": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -264,18 +273,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_2 => PlaceItemOnPlayer (i_000679fc) [Msg 1015]": {
+" 5: s_7 => GiveToPlayer (i_03) [Msg 1015]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_7": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000679fc": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -287,25 +296,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 >> WhenPlayerHasItems (i_000679fc): set s_00000c8e": {
+" 6: s_7 >> WhenPlayerHasItems (i_03): set s_10": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_7": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_00000c8e": {
+"1: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_000679fc": {
+"2: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -331,25 +340,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_0000d3bc, n_00003646): set s_3": {
+" 7:  >> IfGivingItemToNpc (i_01, n_00): set s_2": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000d3bc": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00003646": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -361,11 +370,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_3 => QuestSuccess (i_reward)": {
+" 8: s_2 => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -405,18 +414,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 >> StartTimer (t_40000001); When it expires: set s_40000001": {
+" 9: s_2 => StartTimer (t_1); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000001": {
+"1: t_1": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -428,18 +437,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => StopTimer (t_0000095d)": {
+"10: s_2 => StopTimer (t_00)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0000095d": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -451,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => RemoveLogFromSlot (0)": {
+"11: s_2 => RemoveLogFromSlot (0)": {
 "opCode": 24,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -474,18 +483,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => CycleNextState (s_8)": {
+"12: s_2 => Set (gs_MorgiahSatisfied)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_8": {
+"1: gs_MorgiahSatisfied": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -518,18 +527,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => AdjustReputationWithNpc (n_00003646, 10)": {
+"13: s_2 => AdjustReputationWithNpc (n_00, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003646": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -548,18 +557,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => UnsetQuestor (n_00003646)": {
+"14: s_2 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_2": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003646": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -571,18 +580,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> IfGivingItemToNpc (i_0000db7c, n_necs): set s_4 [Msg 1009]": {
+"15:  >> IfGivingItemToNpc (i_00, n_necs): set s_3 [Msg 1009]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_3": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000db7c": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -601,18 +610,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_4 => PlaceItemOnCharacter (i_0000d3bc)": {
+"16: s_3 => PlaceItemOnCharacter (i_01)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_3": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000d3bc": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -631,11 +640,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_4 => AdjustReputationWithNpc (n_necs, 10)": {
+"17: s_3 => AdjustReputationWithNpc (n_necs, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_3": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -661,7 +670,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_yes >> StartTimer (t_0000095d); When it expires: set s_0000095d": {
+"18: s_yes => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -672,7 +681,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0000095d": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -714,7 +723,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_yes => PlaceItemOnCharacter (i_0000db7c)": {
+"20: s_yes => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -725,7 +734,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000db7c": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -797,7 +806,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_yes => SetQuestor (n_00003646)": {
+"23: s_yes => SetQuestor (n_00)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -808,7 +817,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00003646": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -852,11 +861,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26:  >> If (s_1 and not s_2): set s_0000189e": {
+"26:  >> If (s_1 and not s_7): set s_09": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000189e": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -870,7 +879,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_2": {
+"2: not s_7": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -896,11 +905,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_0000189e => StartQuest (21, 21)": {
+"27: s_09 >> StartQuest (S0000021)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_0000189e": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -926,11 +935,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_0000189e => EndQuest ()": {
+"28: s_09 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000189e": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -942,18 +951,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_00000c8e => MakePermanent (i_000679fc)": {
+"29: s_10 => MakePermanent (i_03)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_00000c8e": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000679fc": {
+"1: i_03": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -965,11 +974,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_00000c8e => StartQuest (21, 21)": {
+"30: s_10 >> StartQuest (S0000021)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_00000c8e": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -995,11 +1004,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_00000c8e => EndQuest ()": {
+"31: s_10 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_00000c8e": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1013,68 +1022,79 @@
 }
 }
 ,"states: [11]": {
-" 0: s_0000095d": {
-"variable": "s_0000095d",
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x0000095d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000007": {
-"variable": "s_40000007",
+" 2: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000002": {
-"variable": "s_40000002",
+" 3: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000003": {
-"variable": "s_40000003",
+" 4: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000004": {
-"variable": "s_40000004",
+" 5: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: S_40000008": {
-"variable": "s_40000008",
+" 8: gs_MorgiahSatisfied": {
+"variable": "gs_MorgiahSatisfied",
+"nameRaw": "[0x40000008]",
 "isGlobal": true,
 "globalIndex": 23,
 "index": 8
 },
-" 9: s_0000189e": {
-"variable": "s_0000189e",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0000189e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_00000c8e": {
-"variable": "s_00000c8e",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x00000c8e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10

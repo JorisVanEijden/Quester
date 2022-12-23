@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_questgiver: Male (type QuestGiver) (face 112)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 112,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -42,6 +44,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown WeaponSmith": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 13,
 "LocationType": "WeaponSmith",
@@ -59,6 +62,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -71,32 +75,36 @@
 }
 }
 ,"mobs: [4]": {
-" 0: m_00003501: 1 VampireAncient": {
-"variable": "m_00003501",
+" 0: m_00: 1 VampireAncient": {
+"variable": "m_00",
+"nameRaw": "[0X00003501]",
 "type": "VampireAncient",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_00003502: 1 Ranger": {
-"variable": "m_00003502",
+" 1: m_01: 1 Ranger": {
+"variable": "m_01",
+"nameRaw": "[0X00003502]",
 "type": "Ranger",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_00003503: 1 Monk": {
-"variable": "m_00003503",
+" 2: m_02: 1 Monk": {
+"variable": "m_02",
+"nameRaw": "[0X00003503]",
 "type": "Monk",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 2
 },
-" 3: m_00003504: 1 Barbarian": {
-"variable": "m_00003504",
+" 3: m_03: 1 Barbarian": {
+"variable": "m_03",
+"nameRaw": "[0X00003504]",
 "type": "Barbarian",
 "count": 1,
 "null1": 0,
@@ -105,7 +113,7 @@
 }
 }
 ,"opCodes: [22]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -158,7 +166,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 2:  => PickOneOf (s_00003625, s_00003626, s_00003627, s_onehour)": {
+" 2:  => PickOneOf (s_06, s_07, s_08, s_onehour)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -169,21 +177,21 @@
 "index": "255",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: s_00003625": {
+"1: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00003626": {
+"2: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "-955054080 [0xC7130800]"
 },
-"3: s_00003627": {
+"3: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -202,18 +210,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 3: s_00003625 => PlaceMobAtLocation (m_00003501, l_mondung)": {
+" 3: s_06 => PlaceMobAtLocation (m_00, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00003625": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003501": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -232,18 +240,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 4: s_00003626 => PlaceMobAtLocation (m_00003502, l_mondung)": {
+" 4: s_07 => PlaceMobAtLocation (m_01, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00003626": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003502": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -262,18 +270,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 5: s_00003627 => PlaceMobAtLocation (m_00003503, l_mondung)": {
+" 5: s_08 => PlaceMobAtLocation (m_02, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00003627": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003503": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -292,7 +300,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 6: s_onehour => PlaceMobAtLocation (m_00003504, l_mondung)": {
+" 6: s_onehour => PlaceMobAtLocation (m_03, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -303,7 +311,7 @@
 "index": "9",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003504": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -322,18 +330,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 7:  >> IfMobHurtByPlayer (m_00003501): set s_00001a30 [Msg 1023]": {
+" 7:  >> IfMobHurtByPlayer (m_00): set s_11 [Msg 1023]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003501": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -345,18 +353,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 8:  >> IfMobHurtByPlayer (m_00003502): set s_00001a30 [Msg 1022]": {
+" 8:  >> IfMobHurtByPlayer (m_01): set s_11 [Msg 1022]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003502": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -368,18 +376,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-" 9:  >> IfMobHurtByPlayer (m_00003503): set s_00001a30 [Msg 1022]": {
+" 9:  >> IfMobHurtByPlayer (m_02): set s_11 [Msg 1022]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003503": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -391,18 +399,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"10:  >> IfMobHurtByPlayer (m_00003504): set s_00001a30 [Msg 1022]": {
+"10:  >> IfMobHurtByPlayer (m_03): set s_11 [Msg 1022]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003504": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -414,18 +422,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"11:  >> IfMobsKilled (m_00003504, 1): set s_00006f8a [Msg 1021]": {
+"11:  >> IfMobsKilled (m_03, 1): set s_02 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f8a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003504": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -444,18 +452,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"12:  >> IfMobsKilled (m_00003503, 1): set s_00006f8a [Msg 1021]": {
+"12:  >> IfMobsKilled (m_02, 1): set s_02 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f8a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003503": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -474,18 +482,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"13:  >> IfMobsKilled (m_00003502, 1): set s_00006f8a [Msg 1021]": {
+"13:  >> IfMobsKilled (m_01, 1): set s_02 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f8a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003502": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -504,18 +512,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"14:  >> IfMobsKilled (m_00003501, 1): set s_00006f8a [Msg 1021]": {
+"14:  >> IfMobsKilled (m_00, 1): set s_02 [Msg 1021]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f8a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "109233938 [0x0682C712]"
 },
-"1: m_00003501": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -557,7 +565,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"16:  >> If (s_qgclicked and not s_00006f8a): set s_clearclick": {
+"16:  >> If (s_qgclicked and not s_02): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -575,7 +583,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_00006f8a": {
+"2: not s_02": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -645,7 +653,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 53
 },
-"18:  >> If (s_qgclicked and s_00006f8a): set s_pcgetsgold": {
+"18:  >> If (s_qgclicked and s_02): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -663,7 +671,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00006f8a": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -769,72 +777,84 @@
 ,"states: [12]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00006f8a": {
-"variable": "s_00006f8a",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006f8a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00003625": {
-"variable": "s_00003625",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00003625]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00003626": {
-"variable": "s_00003626",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00003626]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_00003627": {
-"variable": "s_00003627",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x00003627]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_onehour": {
 "variable": "s_onehour",
+"nameRaw": "[0x00003628]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_00001a30": {
-"variable": "s_00001a30",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x00001a30]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11

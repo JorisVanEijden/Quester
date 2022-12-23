@@ -1,0 +1,1050 @@
+{
+"quest info: ": {
+"name": "P0B30L11",
+"questType": "Vampire",
+"membership": "Member",
+"reputation": 30,
+"delivery": "ByLetter",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_letter: Parchment [Usable] [1010]": {
+"variable": "i_letter",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1010,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [2]": {
+" 0: n_vamp:  (type? Daedra) (faction Peryite)": {
+"variable": "n_vamp",
+"nameRaw": "[0x0000067e]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "Daedra",
+"npcTypeRaw": "65534 [0xFFFE]",
+"faction": "Peryite",
+"factionRaw": "6 [0x0006]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_vamp2:  (type? Daedra) (faction Peryite)": {
+"variable": "n_vamp2",
+"nameRaw": "[0x00000d2e]",
+"unknown1": "[0x01]",
+"facePictureIndex": 0,
+"npcType": "Daedra",
+"npcTypeRaw": "65534 [0xFFFE]",
+"faction": "Peryite",
+"factionRaw": "6 [0x0006]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [1]": {
+" 0: t_queston: 1.5 times travel time between here and 'n_vamp2'": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [1]": {
+" 0: m_mage: 1 Mage": {
+"variable": "m_mage",
+"nameRaw": "[0X0000061f]",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+}
+}
+,"opCodes: [29]": {
+" 0: s_10 => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 1:  => RemoveTopics (n_vamp2)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_vamp2": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 2:  => RemoveTopics (n_vamp)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 3:  => GiveToPlayer (i_letter) [Msg 1017]": {
+"opCode": 76,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1017,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 4:  >> WhenPlayerHasItems (i_letter): set s_10": {
+"opCode": 70,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "14 [0x0000000E]"
+},
+"2: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "25165824 [0x01800000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 5:  >> WhenItemIsUsed (i_letter): set s_readletter": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_readletter": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "14 [0x0000000E]"
+},
+"2: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 6: s_readletter => CreateLogEntry (1011, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_readletter": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1011": {
+"type": "Value",
+"value": "1011",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 7: s_readletter => AddTopics (n_vamp)": {
+"opCode": 10,
+"argCount": 4,
+"arguments:": {
+"0: s_readletter": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 8: s_readletter => EnsureNpcLocation (n_vamp)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: s_readletter": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 9:  >> IfNpcClicked (n_vamp): set s_vampclicked": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"10: s_vampclicked => Say (1012)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1012,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"11: s_vampclicked => EnsureNpcLocation (n_vamp2)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_vamp2": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"12: s_vampclicked => CreateLogEntry (1014, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1014": {
+"type": "Value",
+"value": "1014",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"13: s_vampclicked => HideNpc (n_vamp)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"14: s_vampclicked => StartNpcEscort (n_vamp)": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"15:  >> If (s_vampclicked and not s_04): set s_03": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_vampclicked": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_04": {
+"type": "State",
+"value": "4",
+"not": "True",
+"index": "4",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824 [0x01800000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"16: s_03 => CreateFoe(m_mage, 15, 50%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_mage": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 50": {
+"type": "Value",
+"value": "50",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "25165824 [0x01800000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"17:  >> IfMobHurtByPlayer (m_mage): set s_04": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_mage": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"18: s_04 => Say (1013)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"19:  >> IfMobsKilled (m_mage, 1): set s_06": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_mage": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"20: s_06 => Say (1015)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1015,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"21:  >> IfNpcClicked (n_vamp2): set s_07": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp2": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"22: s_07 => QuestSuccess ()": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "25165824 [0x01800000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"23: s_07 => AdjustReputationWithNpc (n_vamp, 5)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"24:  >> If (s_queston and not s_07): set s_08": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_07": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "25165824 [0x01800000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"25: s_08 => AdjustReputationWithNpc (n_vamp, -10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_vamp": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -10": {
+"type": "Value",
+"value": "-10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"26: s_08 => Say (1016)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1016,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"27: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"28: s_07 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+}
+}
+,"states: [11]": {
+" 0: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_vampclicked": {
+"variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_daytime": {
+"variable": "s_daytime",
+"nameRaw": "[0x00003333]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0001a175]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00000d65]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_reward": {
+"variable": "s_reward",
+"nameRaw": "[0x00001b14]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x000067ca]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0006c9c2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x000019d7]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_readletter": {
+"variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+},
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x000033b2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10
+}
+}
+,"text records: [17]": {
+"1000": [
+"Error: Questtext 1000 Called."
+],
+"1001": [
+"Error: Questtext 1001 Called."
+],
+"1002": [
+"Error: Questtext 1002 Called."
+],
+"1004": [
+"You have proven yourself  to be quite powerful.  I will be  safe from all attacks here.  %vam will forever speak well of you."
+],
+"1005": [
+"=mage_ is the only decent vampire-hunter left in %reg, according to some.",
+"=mage_ could give most vampires a decent fight."
+],
+"1006": [
+"I hear that _vamp_ died.  Some think he was a vampire."
+],
+"1007": [
+"=mage_ and his band of vampire hunters are phonies.",
+"=mage_ had one of his hunts go bad, I hear."
+],
+"1008": [
+"Error: Questtext 1008 Called."
+],
+"1009": [
+"Error: Questtext 1009 Called."
+],
+"1010": [
+"__vamp_                     ___vamp_  Dear %pcn,       %vam need you. Come immediately.                      Yours in Death,                     _vamp_"
+],
+"1011": [
+"%qdt: I have received a letter from _vamp_, a vampire of %vam urgently requesting my presence in ___vamp_ at a place called __vamp_."
+],
+"1012": [
+"Thank you for coming so promptly. I  fear that a vampire slayer has  found out about me. %g has decided that  I would be better dead. I think that  %g may be even more powerful than  me. _vamp2_ had offered  me protection in ___vamp2_,  but I know that the vampire slayer  =mage_ will catch me. I need an escort,  and I only have =queston_ nights. You must  get me to my protector quickly, __vamp2_ in ___vamp2_,  and we must hurry before we are caught."
+],
+"1013": [
+"You! Vampire! Prepare to die!"
+],
+"1014": [
+"%dat: I am escorting _vamp_ to _vamp2_ in ___vamp2_. I must make it to __vamp2_ before a hunter who is stalking us has a chance to call reinforcements."
+],
+"1015": [
+"The vampire slayer  falls down, dead.  You have slain him!"
+],
+"1016": [
+"\"You are taking too  long,\" says _vamp_,  staggering off on %g3 own."
+],
+"1017": [
+"A small boy,  with pale skin, and a horrible  smell, hands you a letter."
+]
+}
+}

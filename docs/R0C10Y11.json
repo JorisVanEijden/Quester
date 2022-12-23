@@ -15,6 +15,7 @@
 ,"items: [2]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Artifact Jewellery Ring": {
-"variable": "i_sage",
-"rewardType": "Artifact",
+" 1: i_item: Ring [Jewellery]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 2,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_qgfriend: Female": {
+" 1: n_qgfriend:  (type? Unknown_3)": {
 "variable": "n_qgfriend",
-"gender": "Female",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -67,6 +71,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'n_qgfriend'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -81,7 +86,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [10]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -164,7 +169,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PlaceItemOnCharacter (i_sage)": {
+" 3:  => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -175,7 +180,7 @@
 "index": "255",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -194,7 +199,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfGivingItemToNpc (i_sage, n_qgfriend): set s_pcgetsgold": {
+" 4:  >> IfGivingItemToNpc (i_item, n_qgfriend): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -205,7 +210,7 @@
 "index": "0",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -298,7 +303,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_queston => MakePermanent (i_sage)": {
+" 7: s_queston => MakePermanent (i_item)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -309,7 +314,7 @@
 "index": "2",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -357,24 +362,28 @@
 ,"states: [4]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pchasitem": {
 "variable": "s_pchasitem",
+"nameRaw": "[0x0000d51f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_evilitem: Artifact Weapon Weapon": {
+" 0: i_evilitem: [Weapon]": {
 "variable": "i_evilitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x00006A2F]",
+"rewardType": "Item1",
 "category": "Weapon",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver) (face 1)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 1,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_0000d5a4: Female (face 1)": {
-"variable": "n_0000d5a4",
-"gender": "Female",
+" 1: n_01:  (type? Unknown_5)": {
+"variable": "n_01",
+"nameRaw": "[0x0000d5a4]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_5",
 "npcTypeRaw": "65531 [0xFFFB]",
@@ -63,11 +67,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -82,6 +87,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -96,6 +102,7 @@
 ,"mobs: [4]": {
 " 0: m_orc1: 1 OrcShaman": {
 "variable": "m_orc1",
+"nameRaw": "[0X00000637]",
 "type": "OrcShaman",
 "count": 1,
 "null1": 0,
@@ -104,6 +111,7 @@
 },
 " 1: m_orc2: 1 OrcWarlord": {
 "variable": "m_orc2",
+"nameRaw": "[0X00000638]",
 "type": "OrcWarlord",
 "count": 1,
 "null1": 0,
@@ -112,6 +120,7 @@
 },
 " 2: m_orc3: 2 OrcSergeant": {
 "variable": "m_orc3",
+"nameRaw": "[0X00000639]",
 "type": "OrcSergeant",
 "count": 2,
 "null1": 0,
@@ -120,6 +129,7 @@
 },
 " 3: m_orc4: 3 Orc": {
 "variable": "m_orc4",
+"nameRaw": "[0X0000063a]",
 "type": "Orc",
 "count": 3,
 "null1": 0,
@@ -128,7 +138,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -174,7 +184,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 2:  => PlaceNpcAt (n_0000d5a4, l_dungeon)": {
+" 2:  => PlaceNpcAt (n_01, l_dungeon)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -185,7 +195,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: n_0000d5a4": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -264,11 +274,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5: not s_0003719f => CreateFoe(m_orc1, 21, 5%, 20)": {
+" 5: not s_01 => CreateFoe(m_orc1, 21, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_0003719f": {
+"0: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -308,11 +318,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 6: not s_0003719f => CreateFoe(m_orc2, 21, 5%, 20)": {
+" 6: not s_01 => CreateFoe(m_orc2, 21, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_0003719f": {
+"0: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -352,11 +362,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7: not s_0003719f => CreateFoe(m_orc3, 31, 5%, 20)": {
+" 7: not s_01 => CreateFoe(m_orc3, 31, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_0003719f": {
+"0: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -396,11 +406,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 8: not s_0003719f => CreateFoe(m_orc4, 41, 5%, 20)": {
+" 8: not s_01 => CreateFoe(m_orc4, 41, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: not s_0003719f": {
+"0: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -440,11 +450,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 9:  >> IfMobHurtByPlayer (m_orc1): set s_00001a33 [Msg 1011]": {
+" 9:  >> IfMobHurtByPlayer (m_orc1): set s_06 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a33": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -463,11 +473,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"10:  >> IfMobHurtByPlayer (m_orc2): set s_00001a33 [Msg 1011]": {
+"10:  >> IfMobHurtByPlayer (m_orc2): set s_06 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a33": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -486,11 +496,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"11:  >> IfMobHurtByPlayer (m_orc3): set s_00001a33 [Msg 1011]": {
+"11:  >> IfMobHurtByPlayer (m_orc3): set s_06 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a33": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -509,11 +519,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"12:  >> IfMobHurtByPlayer (m_orc4): set s_00001a33 [Msg 1011]": {
+"12:  >> IfMobHurtByPlayer (m_orc4): set s_06 [Msg 1011]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a33": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -532,11 +542,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"13:  >> IfGivingItemToNpc (i_evilitem, n_0000d5a4): set s_0003719f": {
+"13:  >> IfGivingItemToNpc (i_evilitem, n_01): set s_01": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0003719f": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -550,7 +560,7 @@
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: n_0000d5a4": {
+"2: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -562,11 +572,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"14: s_0003719f => QuestSuccess (i_gold)": {
+"14: s_01 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0003719f": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -606,11 +616,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"15:  >> If (s_traveltime and not s_0003719f): set s_00069b3d": {
+"15:  >> If (s_traveltime and not s_01): set s_07": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00069b3d": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -624,7 +634,7 @@
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0003719f": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -650,11 +660,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"16: s_00069b3d => Unknown72_Value (3) [Msg 1012]": {
+"16: s_07 => Unknown72_Value (3) [Msg 1012]": {
 "opCode": 72,
 "argCount": 2,
 "arguments:": {
-"0: s_00069b3d": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -673,11 +683,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"17: s_0003719f => EndQuest ()": {
+"17: s_01 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0003719f": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -709,48 +719,56 @@
 ,"states: [8]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0003719f": {
-"variable": "s_0003719f",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0003719f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_gem1": {
 "variable": "s_gem1",
+"nameRaw": "[0x000005d7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_gem2": {
 "variable": "s_gem2",
+"nameRaw": "[0x000005d8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_gem3": {
 "variable": "s_gem3",
+"nameRaw": "[0x000005d9]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_gem4": {
 "variable": "s_gem4",
+"nameRaw": "[0x000005da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00001a33": {
-"variable": "s_00001a33",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00001a33]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00069b3d": {
-"variable": "s_00069b3d",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00069b3d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7

@@ -13,30 +13,33 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_letter1: Artifact Flammable Parchment [1020]": {
+" 0: i_letter1: Parchment [Usable] [1020]": {
 "variable": "i_letter1",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00003529]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1020,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_letter2: Artifact Flammable Parchment [1021]": {
+" 1: i_letter2: Parchment [Usable] [1021]": {
 "variable": "i_letter2",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x0000352A]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1021,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_0006a0fc: Artifact Flammable Parchment [1022]": {
-"variable": "i_0006a0fc",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 2: i_02: Parchment [Usable] [1022]": {
+"variable": "i_02",
+"nameRaw": "[0x0006A0FC]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1022,
@@ -45,11 +48,12 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_0000b04d: Female (faction Lady_Brisienna) (face 1)": {
-"variable": "n_0000b04d",
-"gender": "Female",
+" 0: n_Brisienna:  (faction Lady_Brisienna)": {
+"variable": "n_Brisienna",
+"nameRaw": "[0x0000b04d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Lady_Brisienna",
 "factionRaw": "352 [0x0160]",
@@ -60,8 +64,9 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_000384f7: Specific PrivateerHold": {
-"variable": "l_000384f7",
+" 0: l_00: Specific PrivateerHold": {
+"variable": "l_00",
+"nameRaw": "[0x000384f7]",
 "generalLocation": "Specific",
 "locationType": -1535,
 "LocationType": "SpecificLocation",
@@ -77,6 +82,7 @@
 },
 " 1: l_dirtypit: OutOfTown Tavern": {
 "variable": "l_dirtypit",
+"nameRaw": "[0x0000688e]",
 "generalLocation": "OutOfTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -92,8 +98,9 @@
 }
 }
 ,"timers: [4]": {
-" 0: t_0004dcfc: Random between 7.00:00:00 and 14.00:00:00": {
-"variable": "t_0004dcfc",
+" 0: t_00: Random between 7.00:00:00 and 14.00:00:00": {
+"variable": "t_00",
+"nameRaw": "[0x0004dcfc]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
@@ -104,8 +111,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_0009eb7c: Fixed 30.00:00:00": {
-"variable": "t_0009eb7c",
+" 1: t_01: Fixed 30.00:00:00": {
+"variable": "t_01",
+"nameRaw": "[0x0009eb7c]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "30.00:00:00",
@@ -116,8 +124,9 @@
 "started": 0,
 "index": 1
 },
-" 2: t_00009bae: Fixed 14.00:00:00": {
-"variable": "t_00009bae",
+" 2: t_02: Fixed 14.00:00:00": {
+"variable": "t_02",
+"nameRaw": "[0x00009bae]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "14.00:00:00",
@@ -130,6 +139,7 @@
 },
 " 3: t_oneday: Fixed 1.00:00:00": {
 "variable": "t_oneday",
+"nameRaw": "[0x00001ab3]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
@@ -174,7 +184,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> WhenAtLocation (l_000384f7): set s_0000d498": {
+" 1:  >> WhenAtLocation (l_00): set s_05": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -185,14 +195,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0000d498": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_000384f7": {
+"2: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -220,7 +230,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => RemoveTopics (n_0000b04d)": {
+" 3:  => RemoveTopics (n_Brisienna)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -238,7 +248,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_0000b04d": {
+"2: n_Brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -257,18 +267,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0004dcfc >> StartTimer (t_0009eb7c); When it expires: set s_0009eb7c": {
+" 4: s_00 => StartTimer (t_01); When it expires: set s_01": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0004dcfc": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0009eb7c": {
+"1: t_01": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -280,11 +290,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0004dcfc => PlaceItemOnPlayer (i_letter1) [Msg 1026]": {
+" 5: s_00 => GiveToPlayer (i_letter1) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0004dcfc": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -303,11 +313,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0004dcfc => EnsureNpcLocation (l_dirtypit)": {
+" 6: s_00 => EnsureNpcLocation (l_dirtypit)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_0004dcfc": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -333,18 +343,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_0004dcfc => PlaceNpcAt (n_0000b04d, l_dirtypit)": {
+" 7: s_00 => PlaceNpcAt (n_Brisienna, l_dirtypit)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0004dcfc": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_0000b04d": {
+"1: n_Brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -363,11 +373,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0004dcfc => AddTopics (n_0000b04d)": {
+" 8: s_00 => AddTopics (n_Brisienna)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_0004dcfc": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -381,7 +391,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_0000b04d": {
+"2: n_Brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -400,18 +410,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0009eb7c >> StartTimer (t_00009bae); When it expires: set s_00009bae": {
+" 9: s_01 => StartTimer (t_02); When it expires: set s_02": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0009eb7c": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_00009bae": {
+"1: t_02": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -423,11 +433,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0009eb7c => PlaceItemOnPlayer (i_letter2) [Msg 1026]": {
+"10: s_01 => GiveToPlayer (i_letter2) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0009eb7c": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -446,11 +456,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_00009bae >> StartTimer (t_oneday); When it expires: set s_oneday": {
+"11: s_02 => StartTimer (t_oneday); When it expires: set s_oneday": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_00009bae": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -469,18 +479,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_00009bae => AdjustReputationWithNpc (n_0000b04d, -15)": {
+"12: s_02 => AdjustReputationWithNpc (n_Brisienna, -15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_00009bae": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_0000b04d": {
+"1: n_Brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -499,18 +509,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_00009bae => PlaceItemOnPlayer (i_0006a0fc) [Msg 1026]": {
+"13: s_02 => GiveToPlayer (i_02) [Msg 1026]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_00009bae": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0006a0fc": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -522,18 +532,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfNpcClicked (n_0000b04d): set s_0000cc6d": {
+"14:  >> IfNpcClicked (n_Brisienna): set s_03": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_0000b04d": {
+"1: n_Brisienna": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -545,11 +555,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_0000cc6d >> StartTimer (t_oneday); When it expires: set s_oneday": {
+"15: s_03 => StartTimer (t_oneday); When it expires: set s_oneday": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -568,18 +578,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_0000cc6d => StopTimer (t_0004dcfc)": {
+"16: s_03 => StopTimer (t_00)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0004dcfc": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -591,18 +601,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_0000cc6d => StopTimer (t_00009bae)": {
+"17: s_03 => StopTimer (t_02)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_00009bae": {
+"1: t_02": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -614,18 +624,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_0000cc6d => StopTimer (t_0009eb7c)": {
+"18: s_03 => StopTimer (t_01)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0009eb7c": {
+"1: t_01": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -637,11 +647,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_0000cc6d => CreateLogEntry (1011, 1)": {
+"19: s_03 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -667,18 +677,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_0000cc6d => CycleNextState (s_6)": {
+"20: s_03 => Set (gs_MetLadyBrisienna)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_6": {
+"1: gs_MetLadyBrisienna": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -711,11 +721,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_0000cc6d => Say (1015)": {
+"21: s_03 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -727,11 +737,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_0000cc6d => Say (1016)": {
+"22: s_03 => Say (1016)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000cc6d": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -759,11 +769,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: not s_0000d498 => StartQuest (999, 999)": {
+"24: not s_05 >> StartQuest (S0000999)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: not s_0000d498": {
+"0: not s_05": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -789,18 +799,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: not s_0000d498 >> StartTimer (t_0004dcfc); When it expires: set s_0004dcfc": {
+"25: not s_05 => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: not s_0000d498": {
+"0: not s_05": {
 "type": "State",
 "value": "5",
 "not": "True",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0004dcfc": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -812,11 +822,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: not s_0000d498 => RemoveLogFromSlot (0)": {
+"26: not s_05 => RemoveLogFromSlot (0)": {
 "opCode": 24,
 "argCount": 2,
 "arguments:": {
-"0: not s_0000d498": {
+"0: not s_05": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -837,44 +847,51 @@
 }
 }
 ,"states: [7]": {
-" 0: s_0004dcfc": {
-"variable": "s_0004dcfc",
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x0004dcfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0009eb7c": {
-"variable": "s_0009eb7c",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0009eb7c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00009bae": {
-"variable": "s_00009bae",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00009bae]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0000cc6d": {
-"variable": "s_0000cc6d",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000cc6d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_oneday": {
 "variable": "s_oneday",
+"nameRaw": "[0x00001ab3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000d498": {
-"variable": "s_0000d498",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000d498]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: S_40000006": {
-"variable": "s_40000006",
+" 6: gs_MetLadyBrisienna": {
+"variable": "gs_MetLadyBrisienna",
+"nameRaw": "[0x40000006]",
 "isGlobal": true,
 "globalIndex": 31,
 "index": 6

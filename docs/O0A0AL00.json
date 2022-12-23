@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [4]": {
-" 0: i_clothing: Artifact WomensClothing WomensClothing": {
+" 0: i_clothing: [WomensClothing]": {
 "variable": "i_clothing",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067C7]",
+"rewardType": "Item1",
 "category": "WomensClothing",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,20 +24,22 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_letter: Artifact Flammable Parchment [1024]": {
+" 1: i_letter: Parchment [Usable] [1024]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1024,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_note: Artifact Flammable Parchment [1019]": {
+" 2: i_note: Parchment [Usable] [1019]": {
 "variable": "i_note",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00000679]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1019,
@@ -45,6 +48,7 @@
 },
 " 3: i_gold: 1 - Container gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Container",
 "itemId": 1,
@@ -55,11 +59,12 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_thiefmember: Female (faction The_Thieves_Guild) (face 88)": {
+" 0: n_thiefmember:  (faction The_Thieves_Guild)": {
 "variable": "n_thiefmember",
-"gender": "Female",
+"nameRaw": "[0x00036f1c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 88,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Thieves_Guild",
 "factionRaw": "42 [0x002A]",
@@ -68,9 +73,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_npc: Female (face 218)": {
+" 1: n_npc:  (type? Unknown_6)": {
 "variable": "n_npc",
-"gender": "Female",
+"nameRaw": "[0x000002fb]",
+"unknown1": "[0x01]",
 "facePictureIndex": 218,
 "npcType": "Unknown_6",
 "npcTypeRaw": "65530 [0xFFFA]",
@@ -85,6 +91,7 @@
 ,"locations: [2]": {
 " 0: l_mansion: OutOfTown House1": {
 "variable": "l_mansion",
+"nameRaw": "[0x000034c8]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -98,11 +105,12 @@
 "objPtr": 0,
 "unknown1": "12288 [0x3000]"
 },
-" 1: l_dungeon: OutOfTown 499": {
+" 1: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -117,6 +125,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: Fixed 90.00:01:00": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "90.00:01:00",
@@ -129,8 +138,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_0000388b: 1 Mage": {
-"variable": "m_0000388b",
+" 0: m_00: 1 Mage": {
+"variable": "m_00",
+"nameRaw": "[0X0000388b]",
 "type": "Mage",
 "count": 1,
 "null1": 0,
@@ -139,7 +149,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  => PlaceItemOnPlayer (i_letter) [Msg 1020]": {
+" 0:  => GiveToPlayer (i_letter) [Msg 1020]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -192,7 +202,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 2: s_readletter >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 2: s_readletter => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -275,7 +285,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 5: s_readletter >> WhenAtLocation (l_mansion): set s_0000d4c8": {
+" 5: s_readletter >> WhenAtLocation (l_mansion): set s_02": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -286,7 +296,7 @@
 "index": "4",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000d4c8": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -305,11 +315,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 6:  >> IfItemPickedUp (i_clothing): set s_000355c7 [Msg 1018]": {
+" 6:  >> IfItemPickedUp (i_clothing): set s_03 [Msg 1018]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_000355c7": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -328,11 +338,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 7: s_000355c7 => PlaceItemOnCharacter (i_note)": {
+" 7: s_03 => PlaceItemOnCharacter (i_note)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_000355c7": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -358,18 +368,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 8: s_0000d4c8 => CreateFoe(m_0000388b, 3, 25%, 3)": {
+" 8: s_02 => CreateFoe(m_00, 3, 25%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0000d4c8": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000388b": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -402,18 +412,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-" 9:  >> IfMobHurtByPlayer (m_0000388b): set s_0000d58c": {
+" 9:  >> IfMobHurtByPlayer (m_00): set s_05": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0000d58c": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000388b": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -425,11 +435,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 56
 },
-"10: s_0000d58c => Say (1030)": {
+"10: s_05 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000d58c": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -574,36 +584,42 @@
 ,"states: [6]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000d4c8": {
-"variable": "s_0000d4c8",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000d4c8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_000355c7": {
-"variable": "s_000355c7",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x000355c7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000d58c": {
-"variable": "s_0000d58c",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000d58c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_reward: Artifact MagicItem MagicItem": {
+" 0: i_reward: [MagicItem]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,11 +40,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_wizard: Female (faction The_Mages_Guild) (face 249)": {
+" 1: n_wizard:  (faction The_Mages_Guild)": {
 "variable": "n_wizard",
-"gender": "Female",
+"nameRaw": "[0x00001c0c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 249,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Mages_Guild",
 "factionRaw": "40 [0x0028]",
@@ -55,6 +58,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown Laboratory": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 9,
 "LocationType": "Laboratory",
@@ -72,6 +76,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -86,6 +91,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Mage": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Mage",
 "count": 1,
 "null1": 0,
@@ -94,7 +100,7 @@
 }
 }
 ,"opCodes: [12]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -437,42 +443,49 @@
 ,"states: [7]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

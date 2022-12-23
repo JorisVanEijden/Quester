@@ -13,19 +13,21 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_00000d04: Artifact Flammable Parchment [1012]": {
-"variable": "i_00000d04",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 0: i_00: Parchment [Usable] [1012]": {
+"variable": "i_00",
+"nameRaw": "[0x00000D04]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1012,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_mitem: Artifact MagicItem MagicItem": {
+" 1: i_mitem: [MagicItem]": {
 "variable": "i_mitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000D1F]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_daedra: Female (face 80)": {
+" 1: n_daedra:  (type? Daedra)": {
 "variable": "n_daedra",
-"gender": "Female",
+"nameRaw": "[0x0000188d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 80,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -65,6 +69,7 @@
 ,"locations: [1]": {
 " 0: l_temple: OutOfTown Temple": {
 "variable": "l_temple",
+"nameRaw": "[0x00001b35]",
 "generalLocation": "OutOfTown",
 "locationType": 14,
 "LocationType": "Temple",
@@ -82,6 +87,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_temple'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -96,6 +102,7 @@
 ,"mobs: [1]": {
 " 0: m_guardian: 1 Spellsword": {
 "variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
 "type": "Spellsword",
 "count": 1,
 "null1": 0,
@@ -104,7 +111,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -194,7 +201,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 3:  => PlaceItemAt (i_00000d04, l_temple)": {
+" 3:  => PlaceItemAt (i_00, l_temple)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -205,7 +212,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: i_00000d04": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -224,18 +231,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 4:  >> IfItemPickedUp (i_00000d04): set s_00006a39": {
+" 4:  >> IfItemPickedUp (i_00): set s_01": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_00006a39": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: i_00000d04": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -247,11 +254,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 5: s_00006a39 => Say (1011)": {
+" 5: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006a39": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -263,11 +270,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 6: s_00006a39 => CreateFoe(m_guardian, 1, 100%, 1)": {
+" 6: s_01 => CreateFoe(m_guardian, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_00006a39": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -307,11 +314,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 7:  >> IfMobHurtByPlayer (m_guardian): set s_00000d65": {
+" 7:  >> IfMobHurtByPlayer (m_guardian): set s_02": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00000d65": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -330,11 +337,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 8: s_00000d65 => Say (1013)": {
+" 8: s_02 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00000d65": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -346,7 +353,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 105
 },
-" 9:  >> IfGivingItemToNpc (i_00000d04, n_qgiver): set s_reward": {
+" 9:  >> IfGivingItemToNpc (i_00, n_qgiver): set s_reward": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -357,7 +364,7 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: i_00000d04": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -456,24 +463,28 @@
 ,"states: [4]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_00006a39": {
-"variable": "s_00006a39",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00006a39]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00000d65": {
-"variable": "s_00000d65",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00000d65]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

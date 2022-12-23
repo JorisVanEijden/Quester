@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_traitor: Female (face 1)": {
+" 0: n_traitor:  (type? Unknown_4)": {
 "variable": "n_traitor",
-"gender": "Female",
+"nameRaw": "[0x000037b8]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_4",
 "npcTypeRaw": "65532 [0xFFFC]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_qgiver: Male (type QuestGiver)": {
+" 1: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -53,11 +56,12 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -70,6 +74,7 @@
 },
 " 1: l_meetingplace: InCurrentTown None": {
 "variable": "l_meetingplace",
+"nameRaw": "[0x0006a3ef]",
 "generalLocation": "InCurrentTown",
 "locationType": -1,
 "LocationType": "None",
@@ -85,6 +90,7 @@
 },
 " 2: l_hidingplace: InCurrentTown None": {
 "variable": "l_hidingplace",
+"nameRaw": "[0x00033fef]",
 "generalLocation": "InCurrentTown",
 "locationType": -1,
 "LocationType": "None",
@@ -102,6 +108,7 @@
 ,"timers: [3]": {
 " 0: t_escapetime: 1.5 times travel time from here to 'l_dungeon' and then 'l_dungeon'": {
 "variable": "t_escapetime",
+"nameRaw": "[0x0001a193]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -114,6 +121,7 @@
 },
 " 1: t_shortdelay: Fixed 00:01:00": {
 "variable": "t_shortdelay",
+"nameRaw": "[0x0001bcd3]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "00:01:00",
@@ -126,6 +134,7 @@
 },
 " 2: t_delay: Random between 00:10:00 and 00:30:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:10:00",
@@ -140,6 +149,7 @@
 ,"mobs: [1]": {
 " 0: m_mtraitor: 1 Mage": {
 "variable": "m_mtraitor",
+"nameRaw": "[0X00006e38]",
 "type": "Mage",
 "count": 1,
 "null1": 0,
@@ -185,7 +195,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_escapetime); When it expires: set s_escapetime": {
+" 1:  => StartTimer (t_escapetime); When it expires: set s_escapetime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -307,7 +317,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_clickonenemy >> StartTimer (t_shortdelay); When it expires: set s_shortdelay": {
+" 6: s_clickonenemy => StartTimer (t_shortdelay); When it expires: set s_shortdelay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -413,7 +423,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_traitordead >> StartTimer (t_delay); When it expires: set s_delay": {
+"10: s_traitordead => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -934,78 +944,91 @@
 ,"states: [13]": {
 " 0: s_escapetime": {
 "variable": "s_escapetime",
+"nameRaw": "[0x0001a193]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_shortdelay": {
 "variable": "s_shortdelay",
+"nameRaw": "[0x0001bcd3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_clickonenemy": {
 "variable": "s_clickonenemy",
+"nameRaw": "[0x000668a7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_traitordead": {
 "variable": "s_traitordead",
+"nameRaw": "[0x0003815a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_teleportpc": {
 "variable": "s_teleportpc",
+"nameRaw": "[0x0001b7d3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_hittraitor": {
 "variable": "s_hittraitor",
+"nameRaw": "[0x0001aab8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_revenge": {
 "variable": "s_revenge",
+"nameRaw": "[0x00003693]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_foundme": {
 "variable": "s_foundme",
+"nameRaw": "[0x000034ef]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_clickqgiver": {
 "variable": "s_clickqgiver",
+"nameRaw": "[0x0003342c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_findtraitor": {
 "variable": "s_findtraitor",
+"nameRaw": "[0x000341b8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12

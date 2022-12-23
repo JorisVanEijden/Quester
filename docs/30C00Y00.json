@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_artifact: Artifact Artifact Ring_of_Namira [1013]": {
+" 0: i_artifact: Ring_of_Namira [Artifact] [1013]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 7,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver) (face 112)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 112,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_qgfriend: 255 (type Librarian)": {
+" 1: n_qgfriend:  (type? Librarian)": {
 "variable": "n_qgfriend",
-"gender": "255",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0xFF]",
 "facePictureIndex": 0,
 "npcType": "Librarian",
 "npcTypeRaw": "10 [0x000A]",
@@ -53,11 +56,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -72,6 +76,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_qgfriend'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -84,6 +89,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -98,6 +104,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 VampireAncient": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "VampireAncient",
 "count": 1,
 "null1": 0,
@@ -106,7 +113,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -413,7 +420,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"10: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"10: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -472,48 +479,55 @@
 ,"states: [7]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 }
 }
-,"text records: [15]": {
+,"text records: [13]": {
 "1000": [
 "The desire for power gnaws at the gut, does it not,  %pcf? I can see it does. Excuse my informality,  but I feel like I know you, I recognize your craving  as if it were my own. You want to control, and the  thought makes you slaver like a starving wolf. I can  fill your belly, but first, I need to know. Will you  kill in order to fill this void?"
 ],

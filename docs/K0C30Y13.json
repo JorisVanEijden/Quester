@@ -1,0 +1,664 @@
+{
+"quest info: ": {
+"name": "K0C30Y13",
+"questType": "Merchant",
+"membership": "NonMember",
+"reputation": 30,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_reward: Random gold": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_questgiver:  (type? QuestGiver)": {
+"variable": "n_questgiver",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_mondung: OutOfTown Dungeon": {
+"variable": "l_mondung",
+"nameRaw": "[0x00003637]",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "Dungeon",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "5375 [0x14FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
+"variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [2]": {
+" 0: m_00: 1 VampireAncient": {
+"variable": "m_00",
+"nameRaw": "[0X00000030]",
+"type": "VampireAncient",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_01: 1 Vampire": {
+"variable": "m_01",
+"nameRaw": "[0X00000030]",
+"type": "Vampire",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+}
+}
+,"opCodes: [15]": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_1stparton": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 2:  => AddLocationToMap (l_mondung)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 3:  => PickOneOf (s_wereboar, s_werewolf)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_wereboar": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_werewolf": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17694720 [0x010E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 4: s_wereboar => PlaceMobAtLocation (m_01, l_mondung)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_wereboar": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 5: s_werewolf => PlaceMobAtLocation (m_00, l_mondung)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_werewolf": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 6:  >> IfMobsKilled (m_01, 1): set s_mondead [Msg 1020]": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_mondead": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1020,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 7:  >> IfMobsKilled (m_00, 1): set s_mondead [Msg 1020]": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_mondead": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1020,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 8:  >> IfNpcClicked (n_questgiver): set s_qgclicked": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_qgclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+" 9:  >> If (s_qgclicked and not s_mondead): set s_clearclick": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_mondead": {
+"type": "State",
+"value": "1",
+"not": "True",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17694720 [0x010E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"10: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17694720 [0x010E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"11:  >> If (s_qgclicked and s_mondead): set s_pcgetsgold": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_mondead": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17694720 [0x010E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"12: s_pcgetsgold => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "17694720 [0x010E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"13: s_pcgetsgold => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+},
+"14: s_1stparton => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_1stparton": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 6
+}
+}
+,"states: [7]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_mondead": {
+"variable": "s_mondead",
+"nameRaw": "[0x000035da]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_1stparton": {
+"variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_werewolf": {
+"variable": "s_werewolf",
+"nameRaw": "[0x00007002]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_wereboar": {
+"variable": "s_wereboar",
+"nameRaw": "[0x00006f50]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+}
+}
+,"text records: [12]": {
+"1000": [
+"Wanna make some quick cash? I need help.  I'm a vampire hunter, and a certain  vampire is too elusive and strong for me.  Would you hunt it down and kill it? I'll  pay you lots."
+],
+"1001": [
+"Well, I must say I'm not suprised.  Only the brave or the stupid will fight  the vampires."
+],
+"1002": [
+"Excellent, %pcf. Now, this  vampire, it seems different. Stronger.  Elusive. But you might be able to take it.  Anyway, go to ___mondung_.  You'll find it there, probably feeding on an  innocent. You realize the risks you are taking,  I hope. Kill it in =1stparton_ days, and get  back to me. Otherwise, I will assume you are  no longer among the living. Go now, and  good luck."
+],
+"1003": [
+"Go now, %pcf.  Your time is running out."
+],
+"1004": [
+"You did it, eh? Great! Here's your  _reward_ gold, like I promised. We will  meet again, I am sure."
+],
+"1005": [
+"Something funny is going on, but I don't know what.",
+"_questgiver_ is in town. That can only mean one thing.",
+"Everyone worries about vampires these days."
+],
+"1006": [
+"Some poor %ra was slain by a vampire, I hear.",
+"Vampires are on a warpath. That's what everyone says."
+],
+"1007": [
+"_questgiver_ is happy. I don't like him. He scares me.",
+"Everyone is calm again, since that vampire died.",
+"Where did that vampire live?"
+],
+"1008": [
+"Ahh, we meet again. How are you on this fine day?"
+],
+"1009": [
+"You did not kill that vampire for me. I have no wish to speak to thee."
+],
+"1010": [
+"%qdt: _questgiver_ is a vampire hunter who will pay me _reward_ gold pieces to slay a vampire lurking in ___mondung_. I have =1stparton_ days to do it and be back to ___questgiver_."
+],
+"1020": [
+"The vampire falls to the  ground, dead."
+]
+}
+}

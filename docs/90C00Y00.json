@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_artifact: Artifact Artifact Skull_of_Corruption [1014]": {
+" 0: i_artifact: Skull_of_Corruption [Artifact] [1014]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 8,
 "textRecordId1": 1014,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgfriend: 255 (type Librarian)": {
+" 0: n_qgfriend:  (type? Librarian)": {
 "variable": "n_qgfriend",
-"gender": "255",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0xFF]",
 "facePictureIndex": 0,
 "npcType": "Librarian",
 "npcTypeRaw": "10 [0x000A]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -59,6 +62,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_qgfriend'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -71,6 +75,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -85,6 +90,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Lich": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Lich",
 "count": 1,
 "null1": 0,
@@ -93,7 +99,7 @@
 }
 }
 ,"opCodes: [14]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -444,7 +450,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"11: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -503,54 +509,62 @@
 ,"states: [8]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 }
 }
-,"text records: [16]": {
+,"text records: [14]": {
 "1000": [
 "A very wise %ra once said that  power corrupts, and absolute power  is absolutely fabulous. That's why  I am going to help you. Now, I'm  sure you have certain moral problems  with murdering an innocent who never  hurt you in any way. But you'll do  it to win my Skull of Corruption, yes?"
 ],

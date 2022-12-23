@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_000037de: Artifact CreatureIngredients3 Unicorn_horn [1020]": {
-"variable": "i_000037de",
-"rewardType": "Artifact",
+" 0: i_00: Unicorn_horn [CreatureIngredients3] [1020]": {
+"variable": "i_00",
+"nameRaw": "[0x000037DE]",
+"rewardType": "Item1",
 "category": "CreatureIngredients3",
 "itemId": 2,
 "textRecordId1": 0,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_magicitem: Artifact MagicItem MagicItem": {
+" 1: i_magicitem: [MagicItem]": {
 "variable": "i_magicitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x0000D0DF]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_00001a11: Female (type Permanent) (faction Medora)": {
-"variable": "n_00001a11",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction Medora)": {
+"variable": "n_00",
+"nameRaw": "[0x00001a11]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_000036c3: Female (type Permanent) (faction Nulfaga)": {
-"variable": "n_000036c3",
-"gender": "Female",
+" 1: n_01:  (type? Permanent) (faction Nulfaga)": {
+"variable": "n_01",
+"nameRaw": "[0x000036c3]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -65,6 +69,7 @@
 ,"locations: [1]": {
 " 0: l_huntstart: Specific Shedungent": {
 "variable": "l_huntstart",
+"nameRaw": "[0x0000da2c]",
 "generalLocation": "Specific",
 "locationType": -1532,
 "LocationType": "SpecificLocation",
@@ -82,6 +87,7 @@
 ,"timers: [1]": {
 " 0: t_2shedungent: 1.5 times travel time between here and 'l_huntstart'": {
 "variable": "t_2shedungent",
+"nameRaw": "[0x00027d1c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -149,7 +155,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_000036c3): set s_1": {
+" 2:  >> IfNpcClicked (n_01): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -160,7 +166,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000036c3": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -172,7 +178,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> If (s_1 and not s_9): set s_5": {
+" 3:  >> If (s_1 and not gs_LiftedCurse): set s_5": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -190,7 +196,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_9": {
+"2: not gs_LiftedCurse": {
 "type": "State",
 "value": "9",
 "not": "True",
@@ -276,7 +282,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_yes => PlaceItemAt (i_000037de, l_huntstart)": {
+" 6: s_yes => PlaceItemAt (i_00, l_huntstart)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -287,7 +293,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000037de": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -306,7 +312,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_yes >> StartTimer (t_2shedungent); When it expires: set s_2shedungent": {
+" 7: s_yes => StartTimer (t_2shedungent); When it expires: set s_2shedungent": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -444,25 +450,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> IfGivingItemToNpc (i_000037de, n_00001a11): set s_10": {
+"13:  >> IfGivingItemToNpc (i_00, n_00): set gs_MedoraGotHorn": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_000037de": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00001a11": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -474,11 +480,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_10 => QuestSuccess (i_magicitem)": {
+"14: gs_MedoraGotHorn => QuestSuccess (i_magicitem)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -518,11 +524,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_10 => StartQuest (18, 18)": {
+"15: gs_MedoraGotHorn >> StartQuest (S0000018)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -548,18 +554,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_10 => AdjustReputationWithNpc (n_00001a11, 10)": {
+"16: gs_MedoraGotHorn => AdjustReputationWithNpc (n_00, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001a11": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -578,18 +584,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_10 => StopNpcConversation (n_00001a11)": {
+"17: gs_MedoraGotHorn => StopNpcConversation (n_00)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001a11": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -601,11 +607,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_10 => EndQuest ()": {
+"18: gs_MedoraGotHorn => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_10": {
+"0: gs_MedoraGotHorn": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -621,66 +627,77 @@
 ,"states: [11]": {
 " 0: s_2shedungent": {
 "variable": "s_2shedungent",
+"nameRaw": "[0x00027d1c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: S_40000009": {
-"variable": "s_40000009",
+" 9: gs_LiftedCurse": {
+"variable": "gs_LiftedCurse",
+"nameRaw": "[0x40000009]",
 "isGlobal": true,
 "globalIndex": 0,
 "index": 9
 },
-"10: S_4000000A": {
-"variable": "s_4000000a",
+"10: gs_MedoraGotHorn": {
+"variable": "gs_MedoraGotHorn",
+"nameRaw": "[0x4000000a]",
 "isGlobal": true,
 "globalIndex": 9,
 "index": 10

@@ -1,0 +1,534 @@
+{
+"quest info: ": {
+"name": "G0B91Y01",
+"questType": "Kynara",
+"membership": "Member",
+"reputation": 90,
+"delivery": "InPerson",
+"childSafe": false,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_00: Parchment [Usable] [1012]": {
+"variable": "i_00",
+"nameRaw": "[0x00000D04]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1012,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_mitem: Lords_Mail [Artifact]": {
+"variable": "i_mitem",
+"nameRaw": "[0x00000D1F]",
+"rewardType": "Item1",
+"category": "Artifact",
+"itemId": 15,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [2]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_daedra:  (type? Daedra)": {
+"variable": "n_daedra",
+"nameRaw": "[0x0000188d]",
+"unknown1": "[0x01]",
+"facePictureIndex": 80,
+"npcType": "Daedra",
+"npcTypeRaw": "65534 [0xFFFE]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_temple: OutOfTown Temple": {
+"variable": "l_temple",
+"nameRaw": "[0x00001b35]",
+"generalLocation": "OutOfTown",
+"locationType": 14,
+"LocationType": "Temple",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "8191 [0x1FFF]"
+}
+}
+,"timers: [1]": {
+" 0: t_queston: 1.5 times travel time between here and 'l_temple'": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [1]": {
+" 0: m_guardian: 1 AncientLich": {
+"variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
+"type": "AncientLich",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+}
+}
+,"opCodes: [13]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 1:  => RemoveTopics (n_daedra)": {
+"opCode": 11,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_daedra": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 2:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 3:  => PlaceItemAt (i_00, l_temple)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 4:  >> IfItemPickedUp (i_00): set s_01": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 5: s_01 => Say (1011)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1011,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 6: s_01 => CreateFoe(m_guardian, 1, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_guardian": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "25231360 [0x01810000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 7:  >> IfMobHurtByPlayer (m_guardian): set s_02": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_guardian": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 8: s_02 => Say (1013)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+" 9:  >> IfGivingItemToNpc (i_00, n_qgiver): set s_reward": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_reward": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+"10: s_reward => QuestSuccess (i_mitem)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_reward": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "25231360 [0x01810000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+"11: s_reward => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_reward": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+},
+"12: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 105
+}
+}
+,"states: [4]": {
+" 0: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00006a39]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00000d65]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_reward": {
+"variable": "s_reward",
+"nameRaw": "[0x00001b14]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+}
+}
+,"text records: [13]": {
+"1000": [
+"You have served the temple for a  long time, %pct. Kynareth has watched  you for all of this time, and now wishes  to reward you for your unending services.  You may have heard of the great Lord's  Mail, an armor created by Kynareth.  She has chosen to give it to you, but  first you must prove yourself. The  test will not be easy, I warn you.  Do you wish to try?"
+],
+"1001": [
+"I understand. If it is  considered difficult by Kynareth,  you are better off not trying."
+],
+"1002": [
+"Your reward shall be worth every  minute of this mission. Now, one of  the temples in this region has been  perverted by daedric influence.  This creates a threat to the holy  people of this temple. Kynareth wishes  to stop the evil, and has found a way.  Go to _temple_ in __temple_.  Search it for a scroll of power. That  scroll contains the words of power that  were spoken not too long ago, and caused  the chaos. When you get the scroll, leave  and head back as fast as possible.  If we destroy the scroll, the curse will  slowly life. You have =queston_ days.  May Kynareth watch over you."
+],
+"1004": [
+"You have it? Good, good. We shall perform  the ceremony, and burn it as is written  in the holy books.  Take this artifact,  %pcn. You deserve it."
+],
+"1005": [
+"The temples are all in a mess now. I wonder what happened?"
+],
+"1006": [
+"I don't go to worship anymore. Not after what happened to that nearby temple."
+],
+"1007": [
+"A %ra saved this region, the priests say. I wonder how?"
+],
+"1008": [
+"I hope that the armor is helpful in your holy quests. How may I help?"
+],
+"1009": [
+"You failed us, and you  failed Kynareth. I forgive  you, but will you ever  forgive yourself?"
+],
+"1010": [
+"%qdt: I must go to _temple_ in __temple_ and find an unholy scroll. I have =queston_ days. I should expect a guard, I am guessing."
+],
+"1011": [
+"The scroll emits a red glow.  You feel weak, and strange.  The power of the scroll is  sucking the life from you!"
+],
+"1012": [
+"Hinarosho, su mako no. Gebique! Maramaha no skervook, ama da Mephala. Miro! Maro! Khagu, rhano, monoto. Tegnir no Maro. Scnifigagh, burona. Miro! Maro! Khagu, rhano, monoto. Verinsa, bu doba. Mephala, su no Nao'me. Shisheemo quu cackooni monoto. Miro! Maro! Khagu, rhano, monoto. Bubidonago.  Hapisho, Malicnao, Mephala."
+],
+"1013": [
+"An ancient lich! He must have  been summoned to protect the  scroll!"
+]
+}
+}

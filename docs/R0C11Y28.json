@@ -13,50 +13,55 @@
 "hasDebugInfo": false
 }
 ,"items: [9]": {
-" 0: i_41000000: Artifact Flammable Parchment [1011]": {
-"variable": "i_41000000",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 0: i_0: Parchment [Usable] [1011]": {
+"variable": "i_0",
+"nameRaw": "[0x41000000]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1011,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_41000001: Artifact Flammable Parchment [1012]": {
-"variable": "i_41000001",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 1: i_1: Parchment [Usable] [1012]": {
+"variable": "i_1",
+"nameRaw": "[0x41000001]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1012,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_0001b9fc: Artifact Flammable Parchment [1013]": {
-"variable": "i_0001b9fc",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 2: i_02: Parchment [Usable] [1013]": {
+"variable": "i_02",
+"nameRaw": "[0x0001B9FC]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1013,
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_41000003: Artifact Flammable Parchment [1014]": {
-"variable": "i_41000003",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 3: i_3: Parchment [Usable] [1014]": {
+"variable": "i_3",
+"nameRaw": "[0x41000003]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1014,
 "index": 3,
 "unknown1": "0 [0x00000000]"
 },
-" 4: i_41000004: Artifact QuestItems Dead_body": {
-"variable": "i_41000004",
-"rewardType": "Artifact",
-"category": "QuestItems",
+" 4: i_4: Dead_body [QuestItem]": {
+"variable": "i_4",
+"nameRaw": "[0x41000004]",
+"rewardType": "Item1",
+"category": "QuestItem",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -65,6 +70,7 @@
 },
 " 5: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -73,9 +79,10 @@
 "index": 5,
 "unknown1": "0 [0x00000000]"
 },
-" 6: i_reward2: Artifact Jewellery Jewellery": {
+" 6: i_reward2: [Jewellery]": {
 "variable": "i_reward2",
-"rewardType": "Artifact",
+"nameRaw": "[0x0000365A]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -83,20 +90,22 @@
 "index": 6,
 "unknown1": "0 [0x00000000]"
 },
-" 7: i_41000008: Artifact QuestItems Skeleton": {
-"variable": "i_41000008",
-"rewardType": "Artifact",
-"category": "QuestItems",
+" 7: i_8: Skeleton [QuestItem]": {
+"variable": "i_8",
+"nameRaw": "[0x41000008]",
+"rewardType": "Item1",
+"category": "QuestItem",
 "itemId": 3,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 7,
 "unknown1": "0 [0x00000000]"
 },
-" 8: i_41000009: Artifact SmallPlants Red_poppy": {
-"variable": "i_41000009",
-"rewardType": "Artifact",
-"category": "SmallPlants",
+" 8: i_9: Red_poppy [SmallPlant]": {
+"variable": "i_9",
+"nameRaw": "[0x41000009]",
+"rewardType": "Item1",
+"category": "SmallPlant",
 "itemId": 13,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -105,9 +114,10 @@
 }
 }
 ,"npcs: [5]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -118,9 +128,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (type Librarian) (face 1)": {
+" 1: n_contact:  (type? Librarian)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Librarian",
 "npcTypeRaw": "10 [0x000A]",
@@ -131,9 +142,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_vamp: Female (faction Peryite) (face 1)": {
+" 2: n_vamp:  (type? Daedra) (faction Peryite)": {
 "variable": "n_vamp",
-"gender": "Female",
+"nameRaw": "[0x0000067e]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -144,9 +156,10 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_widow: Female (type Resident2) (face 82)": {
+" 3: n_widow:  (type? Resident2)": {
 "variable": "n_widow",
-"gender": "Female",
+"nameRaw": "[0x00000d9d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 82,
 "npcType": "Resident2",
 "npcTypeRaw": "18 [0x0012]",
@@ -157,9 +170,10 @@
 "index": 3,
 "null1": 0
 },
-" 4: n_rippername: Female (face 5)": {
+" 4: n_rippername:  (type? Unknown_6)": {
 "variable": "n_rippername",
-"gender": "Female",
+"nameRaw": "[0x0001baf3]",
+"unknown1": "[0x01]",
 "facePictureIndex": 5,
 "npcType": "Unknown_6",
 "npcTypeRaw": "65530 [0xFFFA]",
@@ -174,6 +188,7 @@
 ,"locations: [4]": {
 " 0: l_bookstore: InCurrentTown House2": {
 "variable": "l_bookstore",
+"nameRaw": "[0x0000d075]",
 "generalLocation": "InCurrentTown",
 "locationType": 18,
 "LocationType": "House2",
@@ -189,6 +204,7 @@
 },
 " 1: l_hookerhouse: InCurrentTown Tavern": {
 "variable": "l_hookerhouse",
+"nameRaw": "[0x00035717]",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -204,6 +220,7 @@
 },
 " 2: l_ripperhouse: InCurrentTown House1": {
 "variable": "l_ripperhouse",
+"nameRaw": "[0x00037697]",
 "generalLocation": "InCurrentTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -217,8 +234,9 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 3: l_0001c0b7: InCurrentTown Temple": {
-"variable": "l_0001c0b7",
+" 3: l_03: InCurrentTown Temple": {
+"variable": "l_03",
+"nameRaw": "[0x0001c0b7]",
 "generalLocation": "InCurrentTown",
 "locationType": 14,
 "LocationType": "Temple",
@@ -236,6 +254,7 @@
 ,"timers: [3]": {
 " 0: t_1stparton: Random between 00:30:00 and 03:00:00": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:30:00",
@@ -248,6 +267,7 @@
 },
 " 1: t_2ndparton: Random between 00:30:00 and 06:00:00": {
 "variable": "t_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:30:00",
@@ -260,6 +280,7 @@
 },
 " 2: t_witch: Fixed 3.00:00:00": {
 "variable": "t_witch",
+"nameRaw": "[0x00000db6]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "3.00:00:00",
@@ -274,6 +295,7 @@
 ,"mobs: [1]": {
 " 0: m_murder: 1 Vampire": {
 "variable": "m_murder",
+"nameRaw": "[0X00001b4c]",
 "type": "Vampire",
 "count": 1,
 "null1": 0,
@@ -282,7 +304,7 @@
 }
 }
 ,"opCodes: [57]": {
-" 0:  => PlaceItemAt (i_41000008, l_bookstore)": {
+" 0:  => PlaceItemAt (i_8, l_bookstore)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -293,7 +315,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000008": {
+"1: i_8": {
 "type": "Item",
 "value": "7",
 "not": "False",
@@ -423,7 +445,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> StartTimer (t_witch); When it expires: set s_witch": {
+" 4:  => StartTimer (t_witch); When it expires: set s_witch": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -446,7 +468,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 5:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -589,7 +611,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  => PlaceNpcAt (n_widow, l_0001c0b7)": {
+"10:  => PlaceNpcAt (n_widow, l_03)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -607,7 +629,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_0001c0b7": {
+"2: l_03": {
 "type": "Location",
 "value": "3",
 "not": "False",
@@ -649,7 +671,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_1stparton >> StartTimer (t_2ndparton); When it expires: set s_2ndparton": {
+"12: s_1stparton => StartTimer (t_2ndparton); When it expires: set s_2ndparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -716,7 +738,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 >> WhenItemIsUsed (i_0001b9fc): set s_11": {
+"14: s_3 >> WhenItemIsUsed (i_02): set s_11": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -734,7 +756,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_0001b9fc": {
+"2: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -746,7 +768,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => PlaceItemAt (i_41000001, l_bookstore)": {
+"15: s_3 => PlaceItemAt (i_1, l_bookstore)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -757,7 +779,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000001": {
+"1: i_1": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -776,7 +798,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => PlaceItemAt (i_41000000, l_bookstore)": {
+"16: s_3 => PlaceItemAt (i_0, l_bookstore)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -787,7 +809,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000000": {
+"1: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -806,7 +828,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => PlaceItemAt (i_0001b9fc, l_bookstore)": {
+"17: s_3 => PlaceItemAt (i_02, l_bookstore)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -817,7 +839,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b9fc": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -836,7 +858,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => PlaceItemAt (i_41000004, l_bookstore)": {
+"18: s_3 => PlaceItemAt (i_4, l_bookstore)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -847,7 +869,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000004": {
+"1: i_4": {
 "type": "Item",
 "value": "4",
 "not": "False",
@@ -1284,7 +1306,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32:  >> IfGivingItemToNpc (i_41000003, n_vamp): set s_9": {
+"32:  >> IfGivingItemToNpc (i_3, n_vamp): set s_9": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1295,7 +1317,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000003": {
+"1: i_3": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -1381,7 +1403,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_9 => PlaceItemOnCharacter (i_41000009)": {
+"35: s_9 => PlaceItemOnCharacter (i_9)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -1392,7 +1414,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000009": {
+"1: i_9": {
 "type": "Item",
 "value": "8",
 "not": "False",
@@ -1517,7 +1539,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_10 => PlaceItemOnCharacter (i_41000003, n_vamp)": {
+"40: s_10 => PlaceItemOnCharacter (i_3, n_vamp)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -1528,7 +1550,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000003": {
+"1: i_3": {
 "type": "Item",
 "value": "3",
 "not": "False",
@@ -1748,7 +1770,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"47:  >> IfGivingItemToNpc (i_41000009, n_widow): set s_15": {
+"47:  >> IfGivingItemToNpc (i_9, n_widow): set s_15": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1759,7 +1781,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000009": {
+"1: i_9": {
 "type": "Item",
 "value": "8",
 "not": "False",
@@ -2064,116 +2086,135 @@
 }
 }
 ,"states: [19]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_vampclicked": {
 "variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_40000009": {
-"variable": "s_40000009",
+" 9: s_9": {
+"variable": "s_9",
+"nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_4000000d": {
-"variable": "s_4000000d",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x4000000d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
-"14: s_4000000e": {
-"variable": "s_4000000e",
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x4000000e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14
 },
-"15: s_4000000f": {
-"variable": "s_4000000f",
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x4000000f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15
 },
-"16: s_40000010": {
-"variable": "s_40000010",
+"16: s_16": {
+"variable": "s_16",
+"nameRaw": "[0x40000010]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 16
 },
-"17: s_40000011": {
-"variable": "s_40000011",
+"17: s_17": {
+"variable": "s_17",
+"nameRaw": "[0x40000011]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 17
 },
 "18: s_witch": {
 "variable": "s_witch",
+"nameRaw": "[0x00000db6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 18

@@ -13,19 +13,21 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_reward: Artifact Gems Ruby": {
+" 0: i_reward: Ruby [Gem]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 0,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Artifact Jewellery Jewellery": {
-"variable": "i_sage",
-"rewardType": "Artifact",
+" 1: i_item: [Jewellery]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female": {
+" 1: n_contact:  (type? Unknown_3)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -61,11 +65,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_orsinium: Female (faction Orsinium) (face 184)": {
+" 2: n_orsinium:  (faction Orsinium)": {
 "variable": "n_orsinium",
-"gender": "Female",
+"nameRaw": "[0x00006f5b]",
+"unknown1": "[0x01]",
 "facePictureIndex": 184,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Orsinium",
 "factionRaw": "358 [0x0166]",
@@ -76,8 +81,9 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_00006d6f: Specific OrsiniumCastle": {
-"variable": "l_00006d6f",
+" 0: l_00: Specific OrsiniumCastle": {
+"variable": "l_00",
+"nameRaw": "[0x00006d6f]",
 "generalLocation": "Specific",
 "locationType": -1533,
 "LocationType": "SpecificLocation",
@@ -95,6 +101,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time from here to 'n_orsinium' and then 'n_contact'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -109,14 +116,16 @@
 ,"mobs: [2]": {
 " 0: m_note: 3 Orc": {
 "variable": "m_note",
+"nameRaw": "[0X00000679]",
 "type": "Orc",
 "count": 3,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_0006e14b: 1 OrcSergeant": {
-"variable": "m_0006e14b",
+" 1: m_01: 1 OrcSergeant": {
+"variable": "m_01",
+"nameRaw": "[0X0006e14b]",
 "type": "OrcSergeant",
 "count": 1,
 "null1": 0,
@@ -125,7 +134,7 @@
 }
 }
 ,"opCodes: [26]": {
-" 0:  => RemoveTopics (l_00006d6f, n_orsinium)": {
+" 0:  => RemoveTopics (l_00, n_orsinium)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -136,7 +145,7 @@
 "index": "255",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: l_00006d6f": {
+"1: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -222,7 +231,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 3:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 3:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -275,7 +284,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 5:  => PlaceItemOnCharacter (i_sage)": {
+" 5:  => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -286,7 +295,7 @@
 "index": "255",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -305,7 +314,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 6: not s_rewards1 => CreateFoe(m_0006e14b, 10, 35%, 12)": {
+" 6: not s_rewards1 => CreateFoe(m_01, 10, 35%, 12)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -316,7 +325,7 @@
 "index": "5",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: m_0006e14b": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -393,18 +402,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 8:  >> IfMobsKilled (m_0006e14b, 1): set s_00003503": {
+" 8:  >> IfMobsKilled (m_01, 1): set s_07": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_00003503": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: m_0006e14b": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -423,11 +432,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-" 9: s_00003503 => AddTopics (n_orsinium)": {
+" 9: s_07 => AddTopics (n_orsinium)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_00003503": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -460,11 +469,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"10: s_00003503 => Say (1030)": {
+"10: s_07 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00003503": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -476,11 +485,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"11:  >> IfNpcClicked (n_orsinium): set s_0000dbc1": {
+"11:  >> IfNpcClicked (n_orsinium): set s_04": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0000dbc1": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -499,11 +508,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"12: s_0000dbc1 => Say (1020)": {
+"12: s_04 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000dbc1": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -515,18 +524,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"13:  >> IfGivingItemToNpc (i_sage, n_orsinium): set s_0000346b": {
+"13:  >> IfGivingItemToNpc (i_item, n_orsinium): set s_08": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0000346b": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -545,11 +554,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"14: s_0000346b => PromptYesNo (s_rewards1, s_bookstore, 1021)": {
+"14: s_08 => PromptYesNo (s_rewards1, s_bookstore, 1021)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_0000346b": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -614,7 +623,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"17: s_bookstore => PlaceItemOnCharacter (i_sage)": {
+"17: s_bookstore => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -625,7 +634,7 @@
 "index": "6",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -704,7 +713,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"20:  >> IfGivingItemToNpc (i_sage, n_contact): set s_npcclicked": {
+"20:  >> IfGivingItemToNpc (i_item, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -715,7 +724,7 @@
 "index": "3",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -808,7 +817,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1761
 },
-"23: s_queston => MakePermanent (i_sage)": {
+"23: s_queston => MakePermanent (i_item)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -819,7 +828,7 @@
 "index": "2",
 "unknown1": "109253858 [0x068314E2]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -867,54 +876,63 @@
 ,"states: [9]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pchasitem": {
 "variable": "s_pchasitem",
+"nameRaw": "[0x0000d51f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_0000dbc1": {
-"variable": "s_0000dbc1",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x0000dbc1]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_rewards1": {
 "variable": "s_rewards1",
+"nameRaw": "[0x00006d67]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_bookstore": {
 "variable": "s_bookstore",
+"nameRaw": "[0x0000d075]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00003503": {
-"variable": "s_00003503",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00003503]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_0000346b": {
-"variable": "s_0000346b",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x0000346b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8

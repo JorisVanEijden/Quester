@@ -19,8 +19,9 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_40000001: Fixed 01:15:00": {
-"variable": "t_40000001",
+" 0: t_1: Fixed 01:15:00": {
+"variable": "t_1",
+"nameRaw": "[0x40000001]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:15:00",
@@ -31,8 +32,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_40000002: Fixed 44.10:40:00": {
-"variable": "t_40000002",
+" 1: t_2: Fixed 44.10:40:00": {
+"variable": "t_2",
+"nameRaw": "[0x40000002]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "44.10:40:00",
@@ -45,16 +47,18 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_44000000: 3 Vampire": {
-"variable": "m_44000000",
+" 0: m_0: 3 Vampire": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Vampire",
 "count": 3,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_44000001: 2 VampireAncient": {
-"variable": "m_44000001",
+" 1: m_1: 2 VampireAncient": {
+"variable": "m_1",
+"nameRaw": "[0X44000001]",
 "type": "VampireAncient",
 "count": 2,
 "null1": 0,
@@ -63,7 +67,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_40000002); When it expires: set s_40000002": {
+" 0:  => StartTimer (t_2); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -74,7 +78,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000002": {
+"1: t_2": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -86,7 +90,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> IfMobHurtByPlayer (m_44000001): set s_0": {
+" 1:  >> IfMobHurtByPlayer (m_1): set s_0": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -97,7 +101,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000001": {
+"1: m_1": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -109,7 +113,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfMobHurtByPlayer (m_44000000): set s_0": {
+" 2:  >> IfMobHurtByPlayer (m_0): set s_0": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -120,7 +124,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -132,7 +136,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 >> StartTimer (t_40000001); When it expires: set s_40000001": {
+" 3: s_0 => StartTimer (t_1); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -143,7 +147,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000001": {
+"1: t_1": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -261,7 +265,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_4 => CreateFoe(m_44000000, 1440, 5%, 20)": {
+" 8: s_4 => CreateFoe(m_0, 1440, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -272,7 +276,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -305,7 +309,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_4 => CreateFoe(m_44000001, 1440, 3%, 10)": {
+" 9: s_4 => CreateFoe(m_1, 1440, 3%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -316,7 +320,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000001": {
+"1: m_1": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -349,7 +353,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> If (s_5 or s_6 or s_7 or s_8): set s_12": {
+"10:  >> If (gs_GothrydGotTotem or gs_KingOfWormsGotTotem or gs_GortwogGotTotem or gs_AkorithiGotTotem): set s_12": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -360,28 +364,28 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: gs_GothrydGotTotem": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: gs_KingOfWormsGotTotem": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_7": {
+"3: gs_GortwogGotTotem": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_8": {
+"4: gs_AkorithiGotTotem": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -393,7 +397,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_9 or s_10 or s_11): set s_13": {
+"11:  >> If (gs_UnderkingGotTotem or gs_EadwyreGotTotem or gs_BrisiennaGotTotem): set s_13": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -404,21 +408,21 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: gs_UnderkingGotTotem": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_10": {
+"2: gs_EadwyreGotTotem": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_11": {
+"3: gs_BrisiennaGotTotem": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -481,7 +485,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_14 => CycleNextState (s_2)": {
+"13: s_14 => Set (s_2)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -525,7 +529,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: not s_3 => CycleNextState (s_4)": {
+"14: not s_3 => Set (s_4)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -571,92 +575,107 @@
 }
 }
 ,"states: [15]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: S_40000005": {
-"variable": "s_40000005",
+" 5: gs_GothrydGotTotem": {
+"variable": "gs_GothrydGotTotem",
+"nameRaw": "[0x40000005]",
 "isGlobal": true,
 "globalIndex": 1,
 "index": 5
 },
-" 6: S_40000006": {
-"variable": "s_40000006",
+" 6: gs_KingOfWormsGotTotem": {
+"variable": "gs_KingOfWormsGotTotem",
+"nameRaw": "[0x40000006]",
 "isGlobal": true,
 "globalIndex": 2,
 "index": 6
 },
-" 7: S_40000007": {
-"variable": "s_40000007",
+" 7: gs_GortwogGotTotem": {
+"variable": "gs_GortwogGotTotem",
+"nameRaw": "[0x40000007]",
 "isGlobal": true,
 "globalIndex": 3,
 "index": 7
 },
-" 8: S_40000008": {
-"variable": "s_40000008",
+" 8: gs_AkorithiGotTotem": {
+"variable": "gs_AkorithiGotTotem",
+"nameRaw": "[0x40000008]",
 "isGlobal": true,
 "globalIndex": 4,
 "index": 8
 },
-" 9: S_40000009": {
-"variable": "s_40000009",
+" 9: gs_UnderkingGotTotem": {
+"variable": "gs_UnderkingGotTotem",
+"nameRaw": "[0x40000009]",
 "isGlobal": true,
 "globalIndex": 6,
 "index": 9
 },
-"10: S_4000000A": {
-"variable": "s_4000000a",
+"10: gs_EadwyreGotTotem": {
+"variable": "gs_EadwyreGotTotem",
+"nameRaw": "[0x4000000a]",
 "isGlobal": true,
 "globalIndex": 7,
 "index": 10
 },
-"11: S_4000000B": {
-"variable": "s_4000000b",
+"11: gs_BrisiennaGotTotem": {
+"variable": "gs_BrisiennaGotTotem",
+"nameRaw": "[0x4000000b]",
 "isGlobal": true,
 "globalIndex": 8,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_4000000d": {
-"variable": "s_4000000d",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x4000000d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
-"14: s_4000000e": {
-"variable": "s_4000000e",
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x4000000e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14

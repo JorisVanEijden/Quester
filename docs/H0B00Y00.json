@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -42,6 +44,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown DesecratedTemple": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 4,
 "LocationType": "DesecratedTemple",
@@ -59,6 +62,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -73,6 +77,7 @@
 ,"mobs: [4]": {
 " 0: m_wraith: 1 Wraith": {
 "variable": "m_wraith",
+"nameRaw": "[0X00001bfc]",
 "type": "Wraith",
 "count": 1,
 "null1": 0,
@@ -81,6 +86,7 @@
 },
 " 1: m_ghost: 1 Ghost": {
 "variable": "m_ghost",
+"nameRaw": "[0X00000cc6]",
 "type": "Ghost",
 "count": 1,
 "null1": 0,
@@ -89,6 +95,7 @@
 },
 " 2: m_zombie: 1 Zombie": {
 "variable": "m_zombie",
+"nameRaw": "[0X00001c57]",
 "type": "Zombie",
 "count": 1,
 "null1": 0,
@@ -97,6 +104,7 @@
 },
 " 3: m_mummy: 1 Mummy": {
 "variable": "m_mummy",
+"nameRaw": "[0X00000d7f]",
 "type": "Mummy",
 "count": 1,
 "null1": 0,
@@ -105,7 +113,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -151,7 +159,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 2:  => PickOneOf (s_0000379d, s_0000379e, s_0000379f, s_000037a0)": {
+" 2:  => PickOneOf (s_05, s_06, s_07, s_08)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -162,28 +170,28 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000379d": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0000379e": {
+"2: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "1156761600 [0x44F2C800]"
 },
-"3: s_0000379f": {
+"3: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "1997668352 [0x77120000]"
 },
-"4: s_000037a0": {
+"4: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -195,11 +203,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 3: s_0000379d => PlaceMobAtLocation (m_ghost, l_mondung)": {
+" 3: s_05 => PlaceMobAtLocation (m_ghost, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0000379d": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -225,11 +233,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 4: s_0000379e => PlaceMobAtLocation (m_mummy, l_mondung)": {
+" 4: s_06 => PlaceMobAtLocation (m_mummy, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0000379e": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -255,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5: s_0000379f => PlaceMobAtLocation (m_zombie, l_mondung)": {
+" 5: s_07 => PlaceMobAtLocation (m_zombie, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0000379f": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -285,11 +293,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 6: s_000037a0 => PlaceMobAtLocation (m_wraith, l_mondung)": {
+" 6: s_08 => PlaceMobAtLocation (m_wraith, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_000037a0": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -700,54 +708,63 @@
 ,"states: [9]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000379d": {
-"variable": "s_0000379d",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000379d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0000379e": {
-"variable": "s_0000379e",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000379e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_0000379f": {
-"variable": "s_0000379f",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0000379f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_000037a0": {
-"variable": "s_000037a0",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x000037a0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8

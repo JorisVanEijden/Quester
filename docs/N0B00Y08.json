@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_warrior: Female (face 219)": {
+" 1: n_warrior:  (type? Unknown_5)": {
 "variable": "n_warrior",
-"gender": "Female",
+"nameRaw": "[0x00003784]",
+"unknown1": "[0x01]",
 "facePictureIndex": 219,
 "npcType": "Unknown_5",
 "npcTypeRaw": "65531 [0xFFFB]",
@@ -51,9 +54,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_witch: Female (faction Hermaeus_Mora) (face 218)": {
+" 2: n_witch:  (type? Daedra) (faction Hermaeus_Mora)": {
 "variable": "n_witch",
-"gender": "Female",
+"nameRaw": "[0x00000db6]",
+"unknown1": "[0x01]",
 "facePictureIndex": 218,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -68,6 +72,7 @@
 ,"locations: [1]": {
 " 0: l_castle: OutOfTown House1": {
 "variable": "l_castle",
+"nameRaw": "[0x00001915]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -85,6 +90,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_castle'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -97,8 +103,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_44000000: 1 Warrior": {
-"variable": "m_44000000",
+" 0: m_0: 1 Warrior": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Warrior",
 "count": 1,
 "null1": 0,
@@ -107,7 +114,7 @@
 }
 }
 ,"opCodes: [16]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -220,7 +227,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => DoneWithMob (m_44000000, _)": {
+" 4:  => DoneWithMob (m_0, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -231,7 +238,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -250,7 +257,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PlaceMobAtLocation (m_44000000, l_castle)": {
+" 5:  => PlaceMobAtLocation (m_0, l_castle)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -261,7 +268,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -591,36 +598,42 @@
 ,"states: [6]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_out": {
 "variable": "s_out",
+"nameRaw": "[0x0000031a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

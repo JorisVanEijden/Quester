@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_0000d481: Artifact ReligiousItem ReligiousItem": {
-"variable": "i_0000d481",
-"rewardType": "Artifact",
+" 0: i_00: [ReligiousItem]": {
+"variable": "i_00",
+"nameRaw": "[0x0000D481]",
+"rewardType": "Item1",
 "category": "ReligiousItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_magicitem: Artifact MagicItem MagicItem": {
+" 2: i_magicitem: [MagicItem]": {
 "variable": "i_magicitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x0000D0DF]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -60,11 +64,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -79,6 +84,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -93,6 +99,7 @@
 ,"mobs: [5]": {
 " 0: m_guardian: 1 DaedraSeducer": {
 "variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
 "type": "DaedraSeducer",
 "count": 1,
 "null1": 0,
@@ -101,22 +108,25 @@
 },
 " 1: m_spiders: 6 Spider": {
 "variable": "m_spiders",
+"nameRaw": "[0X0000375b]",
 "type": "Spider",
 "count": 6,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_44000002: 1 Gargoyle": {
-"variable": "m_44000002",
+" 2: m_2: 1 Gargoyle": {
+"variable": "m_2",
+"nameRaw": "[0X44000002]",
 "type": "Gargoyle",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 2
 },
-" 3: m_44000003: 1 Harpy": {
-"variable": "m_44000003",
+" 3: m_3: 1 Harpy": {
+"variable": "m_3",
+"nameRaw": "[0X44000003]",
 "type": "Harpy",
 "count": 1,
 "null1": 0,
@@ -125,6 +135,7 @@
 },
 " 4: m_lesserdaedra: 1 Daedroth": {
 "variable": "m_lesserdaedra",
+"nameRaw": "[0X0006b48d]",
 "type": "Daedroth",
 "count": 1,
 "null1": 0,
@@ -133,7 +144,7 @@
 }
 }
 ,"opCodes: [27]": {
-" 0:  => PlaceItemAt (i_0000d481, l_dungeon)": {
+" 0:  => PlaceItemAt (i_00, l_dungeon)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -144,7 +155,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000d481": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -163,7 +174,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 1:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -255,7 +266,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfItemPickedUp (i_0000d481): set s_1": {
+" 5:  >> IfItemPickedUp (i_00): set s_1": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
@@ -266,7 +277,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000d481": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -315,7 +326,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => GiveItemToPlayer (i_0000d481)": {
+" 7: s_1 => GiveItemToPlayer (i_00)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
@@ -326,7 +337,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000d481": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -534,7 +545,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_no => CreateFoe(m_44000002, 5, 100%, 1)": {
+"15: s_no => CreateFoe(m_2, 5, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -545,7 +556,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000002": {
+"1: m_2": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -666,7 +677,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_no => CreateFoe(m_44000003, 3, 100%, 1)": {
+"18: s_no => CreateFoe(m_3, 3, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -677,7 +688,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000003": {
+"1: m_3": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -954,42 +965,49 @@
 ,"states: [7]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

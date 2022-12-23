@@ -1,0 +1,439 @@
+{
+"quest info: ": {
+"name": "N0B30Y19",
+"questType": "Mage Guild",
+"membership": "Member",
+"reputation": 30,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_ingredient: [CreatureIngredients1]": {
+"variable": "i_ingredient",
+"nameRaw": "[0x0001A90C]",
+"rewardType": "Item1",
+"category": "CreatureIngredients1",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_gold: Random gold": {
+"variable": "i_gold",
+"nameRaw": "[0x00000630]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_dungeon: OutOfTown Dungeon": {
+"variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "Dungeon",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "12543 [0x30FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
+"variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [0]": {
+}
+,"opCodes: [11]": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: t_traveltime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 1:  => AddLocationToMap (l_dungeon)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: l_dungeon": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 2:  => PlaceItemAt (i_ingredient, l_dungeon)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_ingredient": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: l_dungeon": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 3:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 4:  >> IfItemPickedUp (i_ingredient): set s_01": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_ingredient": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 5: s_01 => Say (1040)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "-1493154929 [0xA700438F]"
+}
+},
+"messageId": 1040,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 6:  >> IfGivingItemToNpc (i_ingredient, n_qgiver): set s_questdone": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_ingredient": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 7: s_questdone => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048 [0x00000800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-221773807 [0xF2C80011]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1375731712 [0x52000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 8: s_traveltime => MakePermanent (i_ingredient) [Msg 1045]": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_ingredient": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": 1045,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 9: s_traveltime => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929 [0xA700438F]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"10: s_questdone => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+}
+}
+,"states: [3]": {
+" 0: s_traveltime": {
+"variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x000d610c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_questdone": {
+"variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+}
+}
+,"text records: [12]": {
+"1000": [
+"I'll be brief, %pct. I have  a task that must be completed  discreetly and quickly. I can't  say any more unless you are  sworn to secrecy. Will you take  the oath for me?",
+"%pcf, %reg needs  you. If your sense of moral duty  isn't enough to secure your aid,  maybe _gold_ gold pieces is.  What say you?"
+],
+"1001": [
+"Humph. The %rt will not be  happy when he hears this,  I tell you now.",
+"And I thought I could count on  you, %pcf. Obviously not.  Just leave."
+],
+"1002": [
+"Where to begin? The infant nephew  of the %rt has contracted  a life-threatening disease. His  last hope lies in a blessed artefact,  The _ingredient_ of  %god. Its last known location  is ___dungeon_.  The boy will probably be lost  within =traveltime_ days, so if  you don't have it by then, don't  bother coming back. Best of luck.",
+"I won't waste time or words,  %pct. The %rt 's infant  nephew has been poisoned by  unknown forces, and his only  hope lies with a sacred artefact, The  _ingredient_ of %god. I  have reason to believe that it  is somewhere within  ___dungeon_. I don't  think he'll survive for more than =traveltime_  days, so be hasty.  Godspeed, %pcf."
+],
+"1004": [
+"Just in time, %pct. The boy's  condition has worsened. I shall  send someone immediately to  the household of the %rt.  Here's your reward: _gold_ gold  pieces, as promised. But I am  sure that the greatest reward is  knowledge of your doing a  good deed. Congratulations,  my dear friend.",
+"Ahem. While you were away,  I personally looked in on the  young boy, and it would seem  that he just had a nasty cold.  Looks like someone overreacted.  Nonetheless, thankyou for your  time. The _ingredient_  may prove useful another time.  As promised, here is your reward.  I shall inform the %rt of your  willingness to help."
+],
+"1005": [
+"The %rt cancelled a banquet recently. I wonder why?",
+"Lots of children have been getting sick in ___qgiver_ recently.",
+"An adventurer told me about some strange glow coming from ___dungeon_.",
+"The local herbalists seem agitated. Odd, no?"
+],
+"1006": [
+"The nephew of the %rt of %reg recently died. It is a terrible tragedy.",
+"The poor %rt of %reg ... such a sudden loss.",
+"My heart goes out to that infant boy, his life cut short. May he rest in the arms of %god."
+],
+"1007": [
+"The %rt held a magnificent banquet recently, for no known reason. I wonder why?",
+"The ___qgiver_ health system has been improving as of late.",
+"Apparently, ___dungeon_ was recently plundered.",
+"The local herbalists seem to be at ease again."
+],
+"1008": [
+"The %rt is very pleased with you, %pcf. As are we all."
+],
+"1009": [
+"Such a tragedy ... and it could have been avoided, had you done your job properly."
+],
+"1010": [
+"%qdt: I was asked to find an artefact, The _ingredient_ of %god, supposedly hidden away in ___dungeon_. _qgiver_ of the Mages Guild of ___qgiver_ needs it in his hands in =traveltime_ days. If I am late, the nephew of the %rt may die well before his time."
+],
+"1040": [
+"This looks like the artefact, The _ingredient_  of %god that _qgiver_ wanted for the  nephew of the %rt."
+],
+"1045": [
+"You receive a letter from _qgiver_ stating that  the little boy has passed on. %reg will no  doubt be grieving."
+]
+}
+}

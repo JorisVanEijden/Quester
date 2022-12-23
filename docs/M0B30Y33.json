@@ -1,0 +1,1547 @@
+{
+"quest info: ": {
+"name": "M0B30Y33",
+"questType": "Fighters Guild",
+"membership": "Member",
+"reputation": 30,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": true
+}
+,"items: [2]": {
+" 0: i_reward: Random gold": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_thiefplace: Holy_dagger [ReligiousItem]": {
+"variable": "i_thiefplace",
+"nameRaw": "[0x0001B78F]",
+"rewardType": "Item1",
+"category": "ReligiousItem",
+"itemId": 11,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [2]": {
+" 0: n_questgiver:  (type? QuestGiver)": {
+"variable": "n_questgiver",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_noble:  (type? Noble)": {
+"variable": "n_noble",
+"nameRaw": "[0x00000d1d]",
+"unknown1": "[0x01]",
+"facePictureIndex": 1,
+"npcType": "Noble",
+"npcTypeRaw": "16 [0x0010]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 1080,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_palace: OutOfTown Palace": {
+"variable": "l_palace",
+"nameRaw": "[0x00001a1f]",
+"generalLocation": "OutOfTown",
+"locationType": 16,
+"LocationType": "Palace",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 1081,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+}
+}
+,"timers: [4]": {
+" 0: t_queston: Fixed 14.00:00:00": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "14.00:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+},
+" 1: t_lover: Fixed 00:01:00": {
+"variable": "t_lover",
+"nameRaw": "[0x00000d4c]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "00:01:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 1
+},
+" 2: t_02: Fixed 00:01:00": {
+"variable": "t_02",
+"nameRaw": "[0x00000d4e]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "00:01:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 2
+},
+" 3: t_03: Fixed 00:02:00": {
+"variable": "t_03",
+"nameRaw": "[0x0000d194]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "00:02:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 3
+}
+}
+,"mobs: [4]": {
+" 0: m_00: 1 Giant": {
+"variable": "m_00",
+"nameRaw": "[0X00001949]",
+"type": "Giant",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_01: 1 Giant": {
+"variable": "m_01",
+"nameRaw": "[0X0000194a]",
+"type": "Giant",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+},
+" 2: m_02: 4 Giant": {
+"variable": "m_02",
+"nameRaw": "[0X0000194b]",
+"type": "Giant",
+"count": 4,
+"null1": 0,
+"null2": 0,
+"index": 2
+},
+" 3: m_rats: 4 SabertoothTiger": {
+"variable": "m_rats",
+"nameRaw": "[0X0000066f]",
+"type": "SabertoothTiger",
+"count": 4,
+"null1": 0,
+"null2": 0,
+"index": 3
+}
+}
+,"opCodes: [39]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 1:  => CreateLogEntry (1020, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: 1020": {
+"type": "Value",
+"value": "1020",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 2:  => PlaceNpcAt (n_noble, l_palace)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_noble": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_palace": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 3:  >> WhenAtLocation (l_palace): set s_01": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_palace": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 4:  >> If (s_10 and not s_09): set s_00": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "0 [0x00000000]"
+},
+"2: not s_09": {
+"type": "State",
+"value": "9",
+"not": "True",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 5: s_00 => Say (1041)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1041,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 6: s_00 => CreateLogEntry (1021, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: 1021": {
+"type": "Value",
+"value": "1021",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 7: s_00 => HideNpc (n_noble)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_noble": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 8: s_00 => PlaySound (10160, 2, 3)": {
+"opCode": 84,
+"argCount": 4,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: 10160": {
+"type": "Value",
+"value": "10160",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"3: 3": {
+"type": "Value",
+"value": "3",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 9:  >> If (s_00 and not s_01): set s_02": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: not s_01": {
+"type": "State",
+"value": "1",
+"not": "True",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"10: s_02 => CreateFoe(m_00, 1, 100%, 1) [Msg 1042]": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1042,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"11: s_02 => Unset (s_00)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"12:  >> IfMobsKilled (m_00, 1): set s_mages": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_mages": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"13: s_mages => StartTimer (t_lover); When it expires: set s_lover": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_mages": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"1: t_lover": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"14: s_lover => CreateFoe(m_01, 1, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_lover": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"15:  >> IfMobsKilled (m_01, 1): set s_05": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"16: s_05 => StartTimer (t_02); When it expires: set s_07": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"1: t_02": {
+"type": "Timer",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"17:  >> IfMobHurtByPlayer (m_01): set s_06": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"18: s_06 => Say (1043)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1043,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"19: s_06 => CreateFoe(m_rats, 1, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_rats": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"20: s_07 => CreateFoe(m_02, 1, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_02": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"21:  >> IfMobsKilled (m_02, 4): set s_08": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_02": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"2: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"22:  >> If (s_mages and s_05 and s_08): set s_09": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_mages": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"2: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"3: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"23: s_09 => StartTimer (t_03); When it expires: set s_12": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+},
+"1: t_03": {
+"type": "Timer",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"24: s_09 => Say (1044)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1044,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"25:  >> IfNpcClicked (n_noble): set s_10": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_noble": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"26:  >> IfNpcClicked (n_questgiver): set s_qgclicked": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_qgclicked": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"27: s_12 => PlaceItemOnCharacter (i_thiefplace) [Msg 1050]": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_thiefplace": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1050,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"28: s_12 => MakePermanent (i_thiefplace)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_thiefplace": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"29: s_12 => AdjustReputationWithNpc (n_noble, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_12": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_noble": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"30:  >> If (s_qgclicked and not s_09): set s_clearclick": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "0 [0x00000000]"
+},
+"2: not s_09": {
+"type": "State",
+"value": "9",
+"not": "True",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"31: s_clearclick => Say (1003)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1003,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"32: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "0 [0x00000000]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"33:  >> If (s_qgclicked and s_09): set s_questdone": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "0 [0x00000000]"
+},
+"2: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"34: s_questdone => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"35: s_questdone => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"36: s_queston => Say (1045)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1045,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"37: s_queston => AdjustReputationWithNpc (n_questgiver, -5)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: -5": {
+"type": "Value",
+"value": "-5",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"38: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+}
+}
+,"states: [16]": {
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x0000d45d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0000679f]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00000d4b]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_mages": {
+"variable": "s_mages",
+"nameRaw": "[0x00000cb1]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_lover": {
+"variable": "s_lover",
+"nameRaw": "[0x00000d4c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x00000cb2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00000d4d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00000d4e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x00000cb3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x00019e8a]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+},
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0006655d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10
+},
+"11: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11
+},
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x0000d194]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12
+},
+"13: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13
+},
+"14: s_questdone": {
+"variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14
+},
+"15: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15
+}
+}
+,"text records: [20]": {
+"1000": [
+"%pcf, seems we have a giant-alarm once again. This time we don't know where they are hiding. You will have to ambush them in __palace_. What do you say?",
+"The town of __palace_ is troubled by a family of giants that have taken to destroying houses, stealing livestock and causing general mayhem. Would you go there and take care of them?"
+],
+"1001": [
+"%oth, I had expected a little more dedication from you!"
+],
+"1002": [
+"Thought I could count on you, %pcf. you should meet with _noble_ in the _palace_ of __palace_, %g will tell you how to proceed. I promised %g2 we would have the problem resolved soon, so be back here in =queston_ days! Hey, you better get going!"
+],
+"1003": [
+"We have nothing more to discuss, %pcn. You should be off to __palace_ by now!"
+],
+"1004": [
+"So the Giants had some pets with them?. I never heard of them keeping pets before. Well you surely earned your _reward_ gold.",
+"I heard that _noble_ was impressed by your fight against those giants. Good job, %pcf."
+],
+"1005": [
+"Giants are destroying the fields of __palace_. Why is nobody doing anything?"
+],
+"1006": [
+"Giants are still destroying the fields and towns. Wasn't the fighters guild supposed to solve this?"
+],
+"1007": [
+"You did a great job finishing off those giants in __palace_ %pcf",
+"No more giants have been seen since the fighters guild chased them out of __palace_"
+],
+"1008": [
+"Good job with those giants, %pcf"
+],
+"1009": [
+"Can't handle giants! When I was your age, I tell you..."
+],
+"1020": [
+"%qdt: _questgiver_ of the fighters guild in ___questgiver_ asked me to go  to the _palace_ in __palace_ to chase off  some giants there.  First I should talk to _noble_, who called us to help him in this matter. %g will tell me how to find the giants. I have =queston_ days to do my job."
+],
+"1021": [
+"%qdt: I met with _noble_, and it looks like the six giants %g spoke of  are interrupting our little meeting! I can  hear them chasing townsfolk in the park outside."
+],
+"1041": [
+"\"Ah you are the %pct from the fighters guild, right? I am glad you are here. Now, a band of 6 giants Have been destroying fields and stealing cattle every day last week, usually coming from the east. So I suggest that is where you should start loo...\"   Heavy footsteps and screams of panic are heard from outside, and your host turns to flee up the stairs.   \"Well, seems they are right outside! Go and do your duty, %ra! \""
+],
+"1042": [
+"Hrrrrrm! Lunch!"
+],
+"1043": [
+"The giants puts his big fingers in his mouth and whistles two times."
+],
+"1044": [
+"The last giant dies. \"All dead\", he murmurs, tears in his eyes.",
+"The last Giant brakes down, muttering curses at you."
+],
+"1045": [
+"You remember that _questgiver_ of the fighters guild asked you to take care of some giants. He will not be pleased that you didn't return in time."
+],
+"1050": [
+"_noble_ approaches you, smiling.   \"I have watched you fighting from the windows. I am very impressed. Take this holy dagger as a token of my appreciation.\""
+],
+"1080": [
+"_noble_ can't get %g3 own people to slay the Giants. They are on strike since %g is not paying them enough.",
+"_noble_ is organizing the resistance against  those giants in __palace_.",
+"_noble_ hired a %ra to fight those giants. Is that you?"
+],
+"1081": [
+"That is _noble_'s Residence."
+]
+}
+}

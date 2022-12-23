@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_0001b857: Artifact Jewellery Ring [1019]": {
-"variable": "i_0001b857",
-"rewardType": "Artifact",
+" 0: i_00: Ring [Jewellery] [1019]": {
+"variable": "i_00",
+"nameRaw": "[0x0001B857]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 2,
 "textRecordId1": 1019,
@@ -23,19 +24,21 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_00001b0b: Artifact Flammable Parchment [1017]": {
-"variable": "i_00001b0b",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 1: i_01: Parchment [Usable] [1017]": {
+"variable": "i_01",
+"nameRaw": "[0x00001B0B]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1017,
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_jewelry: Artifact Jewellery Jewellery": {
+" 2: i_jewelry: [Jewellery]": {
 "variable": "i_jewelry",
-"rewardType": "Artifact",
+"nameRaw": "[0x000034C5]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [4]": {
-" 0: n_00005f81: Female (type Permanent) (faction Mynisera) (face 96)": {
-"variable": "n_00005f81",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction Mynisera)": {
+"variable": "n_00",
+"nameRaw": "[0x00005f81]",
+"unknown1": "[0x01]",
 "facePictureIndex": 96,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -58,11 +62,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_messenger: Female (faction The_Knights_of_the_Dragon) (face 1)": {
+" 1: n_messenger:  (faction The_Knights_of_the_Dragon)": {
 "variable": "n_messenger",
-"gender": "Female",
+"nameRaw": "[0x0000d738]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Knights_of_the_Dragon",
 "factionRaw": "368 [0x0170]",
@@ -71,11 +76,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_dispatcher: Female (faction The_Knights_of_the_Dragon)": {
+" 2: n_dispatcher:  (faction The_Knights_of_the_Dragon)": {
 "variable": "n_dispatcher",
-"gender": "Female",
+"nameRaw": "[0x00019fd4]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Knights_of_the_Dragon",
 "factionRaw": "368 [0x0170]",
@@ -84,9 +90,10 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_00000c7f: Female (type Permanent) (faction Queen_Aubki)": {
-"variable": "n_00000c7f",
-"gender": "Female",
+" 3: n_03:  (type? Permanent) (faction Queen_Aubki)": {
+"variable": "n_03",
+"nameRaw": "[0x00000c7f]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -99,8 +106,9 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_00006ac0: OutOfTown None": {
-"variable": "l_00006ac0",
+" 0: l_00: OutOfTown None": {
+"variable": "l_00",
+"nameRaw": "[0x00006ac0]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
 "LocationType": "None",
@@ -116,6 +124,7 @@
 },
 " 1: l_palace: OutOfTown Palace": {
 "variable": "l_palace",
+"nameRaw": "[0x00001a1f]",
 "generalLocation": "OutOfTown",
 "locationType": 16,
 "LocationType": "Palace",
@@ -131,8 +140,9 @@
 }
 }
 ,"timers: [2]": {
-" 0: t_2palace: 1.5 times travel time between here and 'l_00006ac0'": {
+" 0: t_2palace: 1.5 times travel time between here and 'l_00'": {
 "variable": "t_2palace",
+"nameRaw": "[0x0000269f]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -143,8 +153,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_40000007: Fixed 2.00:00:00": {
-"variable": "t_40000007",
+" 1: t_7: Fixed 2.00:00:00": {
+"variable": "t_7",
+"nameRaw": "[0x40000007]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "2.00:00:00",
@@ -157,8 +168,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_44000000: 1 Nightblade": {
-"variable": "m_44000000",
+" 0: m_0: 1 Nightblade": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Nightblade",
 "count": 1,
 "null1": 0,
@@ -167,7 +179,7 @@
 }
 }
 ,"opCodes: [44]": {
-" 0:  => SetQuestor (n_00005f81)": {
+" 0:  => SetQuestor (n_00)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -178,7 +190,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005f81": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -190,7 +202,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => RemoveTopics (i_0001b857)": {
+" 1:  => RemoveTopics (i_00)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -215,7 +227,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"3: i_0001b857": {
+"3: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -227,7 +239,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_00005f81): set s_0": {
+" 2:  >> IfNpcClicked (n_00): set s_0": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -238,7 +250,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005f81": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -287,7 +299,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => SetQuestor (n_00000c7f)": {
+" 4: s_0 => SetQuestor (n_03)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -298,7 +310,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -340,7 +352,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_yes => PlaceItemOnCharacter (i_0001b857)": {
+" 6: s_yes => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -351,7 +363,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b857": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -386,7 +398,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_yes => AddTopics (i_0001b857)": {
+" 8: s_yes => AddTopics (i_00)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
@@ -411,7 +423,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"3: i_0001b857": {
+"3: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -423,7 +435,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_yes => PlaceNpcAt (n_dispatcher, l_00006ac0)": {
+" 9: s_yes => PlaceNpcAt (n_dispatcher, l_00)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -441,7 +453,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_00006ac0": {
+"2: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -453,7 +465,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_yes => EnsureNpcLocation (l_00006ac0)": {
+"10: s_yes => EnsureNpcLocation (l_00)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
@@ -464,7 +476,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_00006ac0": {
+"1: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -538,7 +550,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 >> StartTimer (t_2palace); When it expires: set s_2palace": {
+"14: s_3 => StartTimer (t_2palace); When it expires: set s_2palace": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -607,7 +619,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_2palace >> StartTimer (t_40000007); When it expires: set s_40000007": {
+"17: s_2palace => StartTimer (t_7); When it expires: set s_7": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -618,7 +630,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000007": {
+"1: t_7": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -660,7 +672,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfGivingItemToNpc (i_0001b857, n_messenger): set s_5": {
+"19:  >> IfGivingItemToNpc (i_00, n_messenger): set s_5": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -671,7 +683,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b857": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -690,7 +702,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_5 => StopTimer (t_40000007)": {
+"20: s_5 => StopTimer (t_7)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
@@ -701,7 +713,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000007": {
+"1: t_7": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -713,7 +725,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_5 => PlaceItemOnCharacter (i_0001b857)": {
+"21: s_5 => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -724,7 +736,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b857": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -789,7 +801,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 => UnsetQuestor (n_00000c7f)": {
+"24: s_7 => UnsetQuestor (n_03)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -800,7 +812,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -812,7 +824,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 => UnsetQuestor (n_00005f81)": {
+"25: s_7 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -823,7 +835,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005f81": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -874,7 +886,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> IfNpcClicked (n_00000c7f): set s_8": {
+"28:  >> IfNpcClicked (n_03): set s_8": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -885,7 +897,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -913,7 +925,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_8 => AdjustReputationWithNpc (n_00000c7f, -10)": {
+"30: s_8 => AdjustReputationWithNpc (n_03, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -924,7 +936,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -943,7 +955,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31:  >> IfMobHurtByPlayer (m_44000000): set s_9 [Msg 1016]": {
+"31:  >> IfMobHurtByPlayer (m_0): set s_9 [Msg 1016]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -954,7 +966,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -966,7 +978,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 => PlaceItemOnMob (i_00001b0b, m_44000000)": {
+"32: s_9 => PlaceItemOnMob (i_01, m_0)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -977,14 +989,14 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00001b0b": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: m_44000000": {
+"2: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -996,7 +1008,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> IfGivingItemToNpc (i_jewelry, n_00005f81): set s_10": {
+"33:  >> IfGivingItemToNpc (i_jewelry, n_00): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -1014,7 +1026,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00005f81": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1070,7 +1082,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_10 => StartQuest (20, 20)": {
+"35: s_10 >> StartQuest (S0000020)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -1100,7 +1112,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_10 => GiveItemToPlayer (i_0001b857)": {
+"36: s_10 => GiveItemToPlayer (i_00)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
@@ -1111,7 +1123,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b857": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -1123,7 +1135,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: s_10 => AdjustReputationWithNpc (n_00000c7f, -10)": {
+"37: s_10 => AdjustReputationWithNpc (n_03, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -1134,7 +1146,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -1153,7 +1165,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38: s_10 => AdjustReputationWithNpc (n_00005f81, 20)": {
+"38: s_10 => AdjustReputationWithNpc (n_00, 20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -1164,7 +1176,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005f81": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1183,7 +1195,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39: s_10 => UnsetQuestor (n_00005f81)": {
+"39: s_10 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -1194,7 +1206,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005f81": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1206,7 +1218,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40: s_10 => UnsetQuestor (n_00000c7f)": {
+"40: s_10 => UnsetQuestor (n_03)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -1217,7 +1229,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000c7f": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -1289,7 +1301,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_11 => SendFoe (m_44000000, 500, 50, 10)": {
+"43: s_11 => SendFoe (m_0, 500, 50, 10)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
@@ -1300,7 +1312,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1335,74 +1347,86 @@
 }
 }
 ,"states: [12]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_2palace": {
 "variable": "s_2palace",
+"nameRaw": "[0x0000269f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_40000009": {
-"variable": "s_40000009",
+" 9: s_9": {
+"variable": "s_9",
+"nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11

@@ -48,8 +48,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_00db1c: Fixed 00:01:00": {
-"variable": "t_00db1c",
+" 1: t_01: Fixed 00:01:00": {
+"variable": "t_01",
 "nameRaw": "[0x0000db1c]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -63,8 +63,8 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_0019ff: 1 Ghost": {
-"variable": "m_0019ff",
+" 0: m_00: 1 Ghost": {
+"variable": "m_00",
 "nameRaw": "[0X000019ff]",
 "type": "Ghost",
 "count": 1,
@@ -143,11 +143,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 2:  >> If (not s_daytime and s_indaggerfall): set s_0694bb": {
+" 2:  >> If (not s_daytime and s_indaggerfall): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0694bb": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -187,11 +187,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 3:  >> If (s_daytime or not s_indaggerfall): set s_01b8bb": {
+" 3:  >> If (s_daytime or not s_indaggerfall): set s_06": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_01b8bb": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -231,18 +231,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 4: s_01b8bb => Unset (s_0694bb)": {
+" 4: s_06 => Unset (s_03)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_01b8bb": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0694bb": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -275,11 +275,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 5: s_0694bb => CreateFoe(m_wraith, 21, 50%, -1)": {
+" 5: s_03 => CreateFoe(m_wraith, 21, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0694bb": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -319,18 +319,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 6: s_0694bb => CreateFoe(m_0019ff, 31, 50%, -1)": {
+" 6: s_03 => CreateFoe(m_00, 31, 50%, -1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0694bb": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0019ff": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -363,11 +363,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 27
 },
-" 7: s_0694bb => PlaySound (386, 5, 25)": {
+" 7: s_03 => PlaySound (386, 5, 25)": {
 "opCode": 84,
 "argCount": 4,
 "arguments:": {
-"0: s_0694bb": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -439,8 +439,8 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0694bb": {
-"variable": "s_0694bb",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x000694bb]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -453,15 +453,15 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_00db1c": {
-"variable": "s_00db1c",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x0000db1c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_01b8bb": {
-"variable": "s_01b8bb",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x0001b8bb]",
 "isGlobal": false,
 "globalIndex": 0,

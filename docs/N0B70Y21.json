@@ -1,0 +1,1242 @@
+{
+"quest info: ": {
+"name": "N0B70Y21",
+"questType": "Mage Guild",
+"membership": "Member",
+"reputation": 70,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_treasure: [MagicItem]": {
+"variable": "i_treasure",
+"nameRaw": "[0x00006FE5]",
+"rewardType": "Item1",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_potion: [Gem]": {
+"variable": "i_potion",
+"nameRaw": "[0x00001B80]",
+"rewardType": "Item1",
+"category": "Gem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_magesguild: InCurrentTown GuildHall": {
+"variable": "l_magesguild",
+"nameRaw": "[0x0001a318]",
+"generalLocation": "InCurrentTown",
+"locationType": 11,
+"LocationType": "GuildHall",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "33023 [0x80FF]"
+}
+}
+,"timers: [2]": {
+" 0: t_oneday: Fixed 1.03:00:00": {
+"variable": "t_oneday",
+"nameRaw": "[0x00001ab3]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "1.03:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+},
+" 1: t_01: Fixed 3.00:00:00": {
+"variable": "t_01",
+"nameRaw": "[0x000da513]",
+"type": "Fixed",
+"typeRaw": "1 [0x01]",
+"minimum": "3.00:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 1
+}
+}
+,"mobs: [2]": {
+" 0: m_thieves: 1 Daedroth": {
+"variable": "m_thieves",
+"nameRaw": "[0X000036cd]",
+"type": "Daedroth",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_knights: 4 Battlemage": {
+"variable": "m_knights",
+"nameRaw": "[0X00003543]",
+"type": "Battlemage",
+"count": 4,
+"null1": 0,
+"null2": 0,
+"index": 1
+}
+}
+,"opCodes: [30]": {
+" 0:  => StartTimer (t_oneday); When it expires: set s_oneday": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_oneday": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 2:  => EnsureNpcLocation (l_magesguild)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_magesguild": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 3:  => PlaceItemAt (i_treasure, l_magesguild)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_treasure": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_magesguild": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 4:  >> IfTimeOfDayBetween (00:00:00, 03:00:00): set s_midnight3": {
+"opCode": 31,
+"argCount": 3,
+"arguments:": {
+"0: s_midnight3": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 180": {
+"type": "Value",
+"value": "180",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 5: s_midnight3 >> WhenAtLocation (l_magesguild): set s_03": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_midnight3": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_magesguild": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 6: s_03 => CreateFoe(m_thieves, 82, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 82": {
+"type": "Value",
+"value": "82",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 7: s_03 => CreateFoe(m_thieves, 85, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 85": {
+"type": "Value",
+"value": "85",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 8: s_03 => CreateFoe(m_thieves, 100, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 9: s_03 => CreateFoe(m_thieves, 83, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 83": {
+"type": "Value",
+"value": "83",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"10:  >> IfMobHurtByPlayer (m_thieves): set s_04 [Msg 1012]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1012,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"11:  >> IfMobsKilled (m_thieves, 2): set s_05": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_thieves": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"12:  >> IfItemPickedUp (i_treasure): set s_stoletreasure": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_stoletreasure": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_treasure": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"13:  >> IfItemDroppedAt (i_treasure, l_magesguild): set not s_stoletreasure": {
+"opCode": 5,
+"argCount": 3,
+"arguments:": {
+"0: not s_stoletreasure": {
+"type": "State",
+"value": "6",
+"not": "True",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_treasure": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_magesguild": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"14:  >> If (s_stoletreasure and not s_midnight3): set s_persecute": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_stoletreasure": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_midnight3": {
+"type": "State",
+"value": "2",
+"not": "True",
+"index": "2",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"15: s_persecute => StartTimer (t_01); When it expires: set s_10": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_01": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"16: s_persecute => CreateLogEntry (1011, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1011": {
+"type": "Value",
+"value": "1011",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"17: s_persecute => AdjustReputationWithNpc (n_qgiver, -30)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -30": {
+"type": "Value",
+"value": "-30",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"18: s_persecute => CreateFoe(m_knights, 60, 10%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_knights": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 60": {
+"type": "Value",
+"value": "60",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"19:  >> IfMobHurtByPlayer (m_knights): set s_08 [Msg 1013]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_08": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_knights": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"20:  >> IfNpcClicked (n_qgiver): set s_clickonqgiver": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_clickonqgiver": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"21:  >> If (s_clickonqgiver and s_05 and not s_persecute and not s_midnight3): set s_pcgetsgold": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_clickonqgiver": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: not s_persecute": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: not s_midnight3": {
+"type": "State",
+"value": "2",
+"not": "True",
+"index": "2",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"22:  => Unset (s_clickonqgiver)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_clickonqgiver": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"23: s_pcgetsgold => QuestSuccess (i_potion)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_potion": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"24:  >> If (s_10 and s_persecute): set s_questdone": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_10": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_persecute": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"25:  >> If (s_oneday and not s_persecute): set s_questdone": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_oneday": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_persecute": {
+"type": "State",
+"value": "7",
+"not": "True",
+"index": "7",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "76611584 [0x04910000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"26: s_questdone => MakePermanent (i_treasure)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_treasure": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"27: s_oneday => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_oneday": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"28: s_pcgetsgold => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"29: s_questdone => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+}
+}
+,"states: [14]": {
+" 0: s_oneday": {
+"variable": "s_oneday",
+"nameRaw": "[0x00001ab3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_clickonqgiver": {
+"variable": "s_clickonqgiver",
+"nameRaw": "[0x000cd2ec]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_midnight3": {
+"variable": "s_midnight3",
+"nameRaw": "[0x0000d4c3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000c8b5]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00006a14]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000325a]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_stoletreasure": {
+"variable": "s_stoletreasure",
+"nameRaw": "[0x000e38e5]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_persecute": {
+"variable": "s_persecute",
+"nameRaw": "[0x0000d9e9]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x001a98fb]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_questdone": {
+"variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+},
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x000da513]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10
+},
+"11: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11
+},
+"12: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12
+},
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x00001383]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13
+}
+}
+,"text records: [13]": {
+"1000": [
+"We're all going to burn to  crisps! Crisps, I tell you! Oh,  %pcf, I didn't see  you there. Actually ... maybe  YOU could help. You have  been useful in the past. Tell  me, would you be willing to fight  a Daedra or ten?",
+"Damn that %nrn!  All that'll be left of us in the  morning will be a few piles of  ash and cinders. We're doomed.  I suggest you get out of here  as soon as possible, %pct.  Things aren't going to be- wait.  Would you be willing to defend the  Mages Guild from an attack from  Oblivion?"
+],
+"1001": [
+"Well, if you couldn't be  bothered to save us, then  leave. Hopefully I'll survive  the night, and I assure you that  I'll get you ...",
+"Not a team player, are you,  %pct? Well, get out,  before it's too late. And  may %god curse you  and all your kin."
+],
+"1002": [
+"Well, it would seem that an  ex-%pct has decided to  wreak vengeance upon us.  I wouldn't be so terrified if he  hadn't told us that he planned  on summoning a legion of  Daedra to incinerate the  Guildhall. You heard me:  a LEGION. Since you've agreed  to help, you can turn up here  at midnight tonight. Have you  written out a will? I suggest you  settle your affairs before coming.  If you somehow survive, I'll empty  out the Guild's coffers as thanks.  How does a few hundred thousand  gold coins sound? Good. Now, I'll  be cowering in a corner if you need  me.",
+"Well, it would seem that an  ex-%pct has decided to  wreak vengeance upon us.  I wouldn't be so terrified if she  hadn't told us that she planned  on summoning a legion of  Daedra to incinerate the  Guildhall. You heard me:  a LEGION. Since you've agreed  to help, you can turn up here  at midnight tonight. Have you  written out a will? I suggest you  settle your affairs before coming.  If you somehow survive, I'll empty  out the Guild's coffers as thanks.  How does a few million  gold coins sound? Good. Now, I'll  be cowering in a corner if you need  me.",
+"Well, the Guild recently received  a letter from an anonymous sorcerer.  Apparently, we snubbed the fellow,  and he's decided to torch the Guildhall  by summoning a few billion Daedra.  So, we need a guardian. You. Be here  at midnight tonight. If you somehow  survive, there'll be a few hundred  thousand gold coins waiting for you.  Now, if you'll excuse me, I have a will  to write.",
+"Well, the Guild recently received  a letter from an anonymous sorceress.  Apparently, we snubbed the woman,  and she's decided to torch the Guildhall  by summoning a few billion Daedra.  So, we need a guardian. You. Be here  at midnight tonight. If you somehow  survive, there'll be a few millions  or so gold coins waiting for you.  Now, if you'll excuse me, I have a will  to write."
+],
+"1004": [
+"You ... you did it ... And I suppose  that you want your reward, don't  you? Well, %pcf, the funny  thing is ... you can't have all  that money. It'd be absurd.  But look, you can have ... umm ...  this _potion_! Now, off with  you - I have some cleaning  that needs to be done.",
+"Well ... nobody expected you  to survive, you know. Funny thing,  that, don't you agree? As for your  reward - well, I didn't really  intend on giving you all that ...  but you can have this pretty  _potion_! Look how ... er ... shiny  it is! Wow! You're lucky. Anyway,  have a ... er ... nice day.",
+"Congratulations! You did  extremely well! Oh, the reward?  Technically, I agreed to pay  you if you stopped a legion  of Daedra, and we can both agree  that wasn't much of a legion.  Still, if it'll shut you up, take this  _potion_. Nobody else wants  it, anyway. And thanks!"
+],
+"1005": [
+"I saw %n earlier today. The poor soul looked ready to pass out.",
+"The Mages Guild here in ___qgiver_ has been finding a lot of new enemies nowadays.",
+"I overheard some crackpot wizard muttering not an hour ago. Something about Daedra hordes. What is %reg coming to?",
+"Apparently some %ra nutjob is going to defend the Mages Guild against a legion of Daedra. What nonsense."
+],
+"1006": [
+"Seems that the Mages Guild hired a %ra adventurer to guard them overnight.. Apparently they were betrayed - that adventurer took their prized _treausre_!",
+"Hear the one about the Mages Guild of ___qgiver_ and the Daedra attack? Yes? Oh, forget it, then."
+],
+"1007": [
+"I ran into %n not long ago. The poor soul looked at ease again.",
+"The Mages Guild here in ___qgiver_ may have lots of enemies, but they have lots of allies too.",
+"There was some insane mage walking the streets of ___qgiver_ earlier. The fool was angrily cursing Daedric servants. I steered clear of that freak!",
+"I heard that the Mages Guild hired some %ra to guard them against an army of Daedra. I wonder if the poor fool survived."
+],
+"1008": [
+"Oh, you aren't still grumpy about your payment, are you? Really, I think it's a very precious _potion_!"
+],
+"1009": [
+"Betrayal ... so saddening. And I never expected it from you."
+],
+"1010": [
+"%qdt: I somewhat foolishly agreed to defend the Mages Guild of ___qgiver_ against an army of Daedra. I need to be there at midnight."
+],
+"1011": [
+"%qdt: I found a strange _treasure_ in a dusty corner in the Mages Guild of ___qgiver_. They must have been preparing to move all of their prized possessions. I don't think anybody would mind if I just took a little souvenir ..."
+],
+"1012": [
+"Death awaits you,  %pcf, blind servant  of the corrupt."
+],
+"1013": [
+"So, it was you, %pct? You  stole our _treasure_?  The Guild is deeply saddened by  your selfish act - you will have to  be punished. Prepare to die,  %pcf. This hurts me  as much as it hurts you.",
+"And we thought we could trust you!  But no, you went and stole one of  our most prized possessions. All  that is left to do, I suppose, is kill you.  I'm sorry, %pct, but  you brought this upon yourself."
+]
+}
+}

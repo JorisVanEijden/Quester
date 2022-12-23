@@ -13,20 +13,22 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_0000dabc: Artifact Flammable Parchment [1011]": {
-"variable": "i_0000dabc",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 0: i_00: Parchment [Usable] [1011]": {
+"variable": "i_00",
+"nameRaw": "[0x0000DABC]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1011,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_0001b37c: Artifact Flammable Parchment [1024]": {
-"variable": "i_0001b37c",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 1: i_01: Parchment [Usable] [1024]": {
+"variable": "i_01",
+"nameRaw": "[0x0001B37C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1024,
@@ -35,6 +37,7 @@
 },
 " 2: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -45,11 +48,12 @@
 }
 }
 ,"npcs: [6]": {
-" 0: n_00001ad1: Female (faction The_Oracle) (face 251)": {
-"variable": "n_00001ad1",
-"gender": "Female",
+" 0: n_00:  (faction The_Oracle)": {
+"variable": "n_00",
+"nameRaw": "[0x00001ad1]",
+"unknown1": "[0x01]",
 "facePictureIndex": 251,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Oracle",
 "factionRaw": "301 [0x012D]",
@@ -58,11 +62,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_acolyte: Female (faction The_Acolyte) (face 5)": {
+" 1: n_acolyte:  (faction The_Acolyte)": {
 "variable": "n_acolyte",
-"gender": "Female",
+"nameRaw": "[0x00003221]",
+"unknown1": "[0x01]",
 "facePictureIndex": 5,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Acolyte",
 "factionRaw": "302 [0x012E]",
@@ -71,9 +76,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_noble: Female (faction Malacath) (face 25)": {
+" 2: n_noble:  (type? Daedra) (faction Malacath)": {
 "variable": "n_noble",
-"gender": "Female",
+"nameRaw": "[0x00000d1d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 25,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -84,11 +90,12 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_00000304: Female (faction Queen_Akorithi)": {
-"variable": "n_00000304",
-"gender": "Female",
+" 3: n_03:  (faction Queen_Akorithi)": {
+"variable": "n_03",
+"nameRaw": "[0x00000304]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Queen_Akorithi",
 "factionRaw": "380 [0x017C]",
@@ -97,9 +104,10 @@
 "index": 3,
 "null1": 0
 },
-" 4: n_love: Female (face 1)": {
+" 4: n_love:  (type? Unknown_7)": {
 "variable": "n_love",
-"gender": "Female",
+"nameRaw": "[0x0000066d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_7",
 "npcTypeRaw": "65529 [0xFFF9]",
@@ -110,9 +118,10 @@
 "index": 4,
 "null1": 0
 },
-" 5: n_giver: Male (type QuestGiver)": {
+" 5: n_giver:  (type? QuestGiver)": {
 "variable": "n_giver",
-"gender": "Male",
+"nameRaw": "[0x00000ccc]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -125,11 +134,12 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -142,6 +152,7 @@
 },
 " 1: l_temple: InCurrentTown Temple": {
 "variable": "l_temple",
+"nameRaw": "[0x00001b35]",
 "generalLocation": "InCurrentTown",
 "locationType": 14,
 "LocationType": "Temple",
@@ -157,6 +168,7 @@
 },
 " 2: l_noblehouse: InCurrentTown House2": {
 "variable": "l_noblehouse",
+"nameRaw": "[0x0001b0b7]",
 "generalLocation": "InCurrentTown",
 "locationType": 18,
 "LocationType": "House2",
@@ -172,6 +184,7 @@
 },
 " 3: l_oracletemple: OutOfTown Temple": {
 "variable": "l_oracletemple",
+"nameRaw": "[0x0006cf75]",
 "generalLocation": "OutOfTown",
 "locationType": 14,
 "LocationType": "Temple",
@@ -189,6 +202,7 @@
 ,"timers: [2]": {
 " 0: t_queston1: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston1",
+"nameRaw": "[0x00006ff9]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -201,6 +215,7 @@
 },
 " 1: t_queston2: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston2",
+"nameRaw": "[0x00006ffa]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -252,7 +267,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => RemoveTopics (l_mondung, n_00000304)": {
+" 1:  => RemoveTopics (l_mondung, n_03)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -270,7 +285,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00000304": {
+"2: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -407,7 +422,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> WhenItemIsUsed (i_0001b37c): set s_readletter": {
+" 5:  >> WhenItemIsUsed (i_01): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -425,7 +440,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_0001b37c": {
+"2: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -437,7 +452,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> WhenItemIsUsed (i_0000dabc): set s_readletter": {
+" 6:  >> WhenItemIsUsed (i_00): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -455,7 +470,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_0000dabc": {
+"2: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -497,7 +512,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  => PlaceNpcAt (n_00001ad1, l_oracletemple)": {
+" 8:  => PlaceNpcAt (n_00, l_oracletemple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -508,7 +523,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001ad1": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -647,7 +662,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_0 => AddTopics (n_00001ad1)": {
+"13: s_0 => AddTopics (n_00)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
@@ -665,7 +680,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00001ad1": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -730,7 +745,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_1 >> StartTimer (t_queston1); When it expires: set s_queston1": {
+"16: s_1 => StartTimer (t_queston1); When it expires: set s_queston1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -753,7 +768,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_1 => PlaceItemOnCharacter (i_0000dabc)": {
+"17: s_1 => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -764,7 +779,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0000dabc": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -783,7 +798,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_2 >> StartTimer (t_queston2); When it expires: set s_queston2": {
+"18: s_2 => StartTimer (t_queston2); When it expires: set s_queston2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -806,7 +821,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_2 => PlaceItemOnCharacter (i_0001b37c)": {
+"19: s_2 => PlaceItemOnCharacter (i_01)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -817,7 +832,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0001b37c": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -836,7 +851,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfNpcClicked (n_00001ad1): set s_3": {
+"20:  >> IfNpcClicked (n_00): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -847,7 +862,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001ad1": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -859,7 +874,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_3 => HideNpc (n_00001ad1)": {
+"21: s_3 => HideNpc (n_00)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
@@ -870,7 +885,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001ad1": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -898,7 +913,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_3 => StartNpcEscort (n_00001ad1)": {
+"23: s_3 => StartNpcEscort (n_00)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
@@ -909,7 +924,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001ad1": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1048,7 +1063,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_5 => AdjustReputationWithNpc (n_00000304, 10)": {
+"28: s_5 => AdjustReputationWithNpc (n_03, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -1059,7 +1074,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00000304": {
+"1: n_03": {
 "type": "Npc",
 "value": "3",
 "not": "False",
@@ -1721,86 +1736,100 @@
 }
 }
 ,"states: [14]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_npc1": {
 "variable": "s_npc1",
+"nameRaw": "[0x00000627]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_queston1": {
 "variable": "s_queston1",
+"nameRaw": "[0x00006ff9]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
 "13: s_queston2": {
 "variable": "s_queston2",
+"nameRaw": "[0x00006ffa]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13

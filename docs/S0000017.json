@@ -13,20 +13,22 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_letter: Artifact Flammable Parchment [1011]": {
+" 0: i_letter: Parchment [Usable] [1011]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1011,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Artifact Paintings Portrait [1013]": {
-"variable": "i_sage",
-"rewardType": "Artifact",
-"category": "Paintings",
+" 1: i_item: Portrait [Painting] [1013]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item1",
+"category": "Painting",
 "itemId": 3,
 "textRecordId1": 0,
 "textRecordId2": 1013,
@@ -35,6 +37,7 @@
 },
 " 2: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_00005691: Female (type Permanent) (faction Queen_Akorithi)": {
-"variable": "n_00005691",
-"gender": "Female",
+" 0: n_Akorithi:  (type? Permanent) (faction Queen_Akorithi)": {
+"variable": "n_Akorithi",
+"nameRaw": "[0x00005691]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -60,8 +64,9 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_000037ee: Specific WayrestCastle": {
-"variable": "l_000037ee",
+" 0: l_00: Specific WayrestCastle": {
+"variable": "l_00",
+"nameRaw": "[0x000037ee]",
 "generalLocation": "Specific",
 "locationType": -1535,
 "LocationType": "SpecificLocation",
@@ -79,6 +84,7 @@
 ,"timers: [1]": {
 " 0: t_2letter: Random between 7.00:00:00 and 14.00:00:00": {
 "variable": "t_2letter",
+"nameRaw": "[0x000026fc]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "7.00:00:00",
@@ -93,7 +99,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [26]": {
-" 0:  >> StartTimer (t_2letter); When it expires: set s_2letter": {
+" 0:  => StartTimer (t_2letter); When it expires: set s_2letter": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -116,7 +122,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => SetQuestor (n_00005691)": {
+" 1:  => SetQuestor (n_Akorithi)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -127,7 +133,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -139,7 +145,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => RemoveTopics (i_sage)": {
+" 2:  => RemoveTopics (i_item)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -164,7 +170,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"3: i_sage": {
+"3: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -176,7 +182,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_2letter => PlaceItemOnPlayer (i_letter) [Msg 1012]": {
+" 3: s_2letter => GiveToPlayer (i_letter) [Msg 1012]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
@@ -199,7 +205,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_yes >> WhenItemIsUsed (i_sage): set s_5": {
+" 4: s_yes >> WhenItemIsUsed (i_item): set s_5": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -217,7 +223,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_sage": {
+"2: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -229,7 +235,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_yes => PlaceItemAt (i_sage, l_000037ee)": {
+" 5: s_yes => PlaceItemAt (i_item, l_00)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -240,14 +246,14 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_000037ee": {
+"2: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -305,7 +311,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_yes => AddTopics (i_sage)": {
+" 8: s_yes => AddTopics (i_item)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
@@ -330,7 +336,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"3: i_sage": {
+"3: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -358,7 +364,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_no => UnsetQuestor (n_00005691)": {
+"10: s_no => UnsetQuestor (n_Akorithi)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -369,7 +375,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -397,7 +403,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> IfNpcClicked (n_00005691): set s_3": {
+"12:  >> IfNpcClicked (n_Akorithi): set s_3": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -408,7 +414,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -517,7 +523,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> IfGivingItemToNpc (i_sage, n_00005691): set s_6": {
+"16:  >> IfGivingItemToNpc (i_item, n_Akorithi): set s_6": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -528,14 +534,14 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00005691": {
+"2: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -628,7 +634,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_6 => StartQuest (10, 10)": {
+"19: s_6 >> StartQuest (S0000010)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -658,7 +664,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_6 => UnsetQuestor (n_00005691)": {
+"20: s_6 => UnsetQuestor (n_Akorithi)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -669,7 +675,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -713,7 +719,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_7 => AdjustReputationWithNpc (n_00005691, 10)": {
+"23: s_7 => AdjustReputationWithNpc (n_Akorithi, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -724,7 +730,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -759,7 +765,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_8 => AdjustReputationWithNpc (n_00005691, 15)": {
+"25: s_8 => AdjustReputationWithNpc (n_Akorithi, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -770,7 +776,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00005691": {
+"1: n_Akorithi": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -793,54 +799,63 @@
 ,"states: [9]": {
 " 0: s_2letter": {
 "variable": "s_2letter",
+"nameRaw": "[0x000026fc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8

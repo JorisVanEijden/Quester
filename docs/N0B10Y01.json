@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -59,6 +62,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -71,32 +75,36 @@
 }
 }
 ,"mobs: [4]": {
-" 0: m_0000d844: 1 IronAtronach": {
-"variable": "m_0000d844",
+" 0: m_00: 1 IronAtronach": {
+"variable": "m_00",
+"nameRaw": "[0X0000d844]",
 "type": "IronAtronach",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_000066a4: 1 IceAtronach": {
-"variable": "m_000066a4",
+" 1: m_01: 1 IceAtronach": {
+"variable": "m_01",
+"nameRaw": "[0X000066a4]",
 "type": "IceAtronach",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_0000d064: 1 FireAtronach": {
-"variable": "m_0000d064",
+" 2: m_02: 1 FireAtronach": {
+"variable": "m_02",
+"nameRaw": "[0X0000d064]",
 "type": "FireAtronach",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 2
 },
-" 3: m_0001a104: 1 FleshAtronach": {
-"variable": "m_0001a104",
+" 3: m_03: 1 FleshAtronach": {
+"variable": "m_03",
+"nameRaw": "[0X0001a104]",
 "type": "FleshAtronach",
 "count": 1,
 "null1": 0,
@@ -105,7 +113,7 @@
 }
 }
 ,"opCodes: [19]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -225,7 +233,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 4: s_fire => PlaceMobAtLocation (m_0000d064, l_mondung)": {
+" 4: s_fire => PlaceMobAtLocation (m_02, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -236,7 +244,7 @@
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d064": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -255,7 +263,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 5: s_flesh => PlaceMobAtLocation (m_0001a104, l_mondung)": {
+" 5: s_flesh => PlaceMobAtLocation (m_03, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -266,7 +274,7 @@
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0001a104": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -285,7 +293,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 6: s_ice => PlaceMobAtLocation (m_000066a4, l_mondung)": {
+" 6: s_ice => PlaceMobAtLocation (m_01, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -296,7 +304,7 @@
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000066a4": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -315,7 +323,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 7: s_iron => PlaceMobAtLocation (m_0000d844, l_mondung)": {
+" 7: s_iron => PlaceMobAtLocation (m_00, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -326,7 +334,7 @@
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d844": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -345,7 +353,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 8:  >> IfMobsKilled (m_0000d064, 1): set s_mondead [Msg 1010]": {
+" 8:  >> IfMobsKilled (m_02, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -356,7 +364,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d064": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -375,7 +383,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-" 9:  >> IfMobsKilled (m_0001a104, 1): set s_mondead [Msg 1010]": {
+" 9:  >> IfMobsKilled (m_03, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -386,7 +394,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0001a104": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -405,7 +413,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"10:  >> IfMobsKilled (m_000066a4, 1): set s_mondead [Msg 1010]": {
+"10:  >> IfMobsKilled (m_01, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -416,7 +424,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_000066a4": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -435,7 +443,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 417
 },
-"11:  >> IfMobsKilled (m_0000d844, 1): set s_mondead [Msg 1010]": {
+"11:  >> IfMobsKilled (m_00, 1): set s_mondead [Msg 1010]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -446,7 +454,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d844": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -700,66 +708,77 @@
 ,"states: [11]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_fire": {
 "variable": "s_fire",
+"nameRaw": "[0x0000061d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_iron": {
 "variable": "s_iron",
+"nameRaw": "[0x0000065c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_flesh": {
 "variable": "s_flesh",
+"nameRaw": "[0x00000ca2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_ice": {
 "variable": "s_ice",
+"nameRaw": "[0x000002cf]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10

@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver) (face 112)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 112,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_qgfriend: Female": {
+" 1: n_qgfriend:  (type? Unknown_3)": {
 "variable": "n_qgfriend",
-"gender": "Female",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -53,11 +56,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -72,6 +76,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -86,6 +91,7 @@
 ,"mobs: [4]": {
 " 0: m_vampire: 1 Vampire": {
 "variable": "m_vampire",
+"nameRaw": "[0X000036dd]",
 "type": "Vampire",
 "count": 1,
 "null1": 0,
@@ -94,6 +100,7 @@
 },
 " 1: m_wereboar: 1 Wereboar": {
 "variable": "m_wereboar",
+"nameRaw": "[0X00006f50]",
 "type": "Wereboar",
 "count": 1,
 "null1": 0,
@@ -102,6 +109,7 @@
 },
 " 2: m_mage: 1 Battlemage": {
 "variable": "m_mage",
+"nameRaw": "[0X0000061f]",
 "type": "Battlemage",
 "count": 1,
 "null1": 0,
@@ -110,6 +118,7 @@
 },
 " 3: m_giant: 1 Giant": {
 "variable": "m_giant",
+"nameRaw": "[0X00000c8c]",
 "type": "Giant",
 "count": 1,
 "null1": 0,
@@ -118,7 +127,7 @@
 }
 }
 ,"opCodes: [27]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -171,7 +180,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 2:  => PickOneOf (s_00006f59, s_00006f5a, s_orsinium, s_00006f5c)": {
+" 2:  => PickOneOf (s_06, s_07, s_orsinium, s_09)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -182,14 +191,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006f59": {
+"1: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00006f5a": {
+"2: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -203,7 +212,7 @@
 "index": "8",
 "unknown1": "1997668352 [0x77120000]"
 },
-"4: s_00006f5c": {
+"4: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -238,11 +247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 4: s_00006f59 => PlaceMobAtLocation (m_giant, l_mondung)": {
+" 4: s_06 => PlaceMobAtLocation (m_giant, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f59": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -268,11 +277,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 5: s_00006f5a => PlaceMobAtLocation (m_mage, l_mondung)": {
+" 5: s_07 => PlaceMobAtLocation (m_mage, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f5a": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -328,11 +337,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 7: s_00006f5c => PlaceMobAtLocation (m_vampire, l_mondung)": {
+" 7: s_09 => PlaceMobAtLocation (m_vampire, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00006f5c": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -374,11 +383,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9:  >> IfMobHurtByPlayer (m_giant): set s_0001a9a4": {
+" 9:  >> IfMobHurtByPlayer (m_giant): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0001a9a4": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -397,11 +406,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"10:  >> IfMobHurtByPlayer (m_mage): set s_0001a9a4": {
+"10:  >> IfMobHurtByPlayer (m_mage): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0001a9a4": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -420,11 +429,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"11:  >> IfMobHurtByPlayer (m_vampire): set s_0001a9a4": {
+"11:  >> IfMobHurtByPlayer (m_vampire): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0001a9a4": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -443,11 +452,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"12:  >> IfMobHurtByPlayer (m_wereboar): set s_0001a9a4": {
+"12:  >> IfMobHurtByPlayer (m_wereboar): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0001a9a4": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -466,11 +475,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-"13: s_0001a9a4 => Say (1030)": {
+"13: s_10 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0001a9a4": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -883,66 +892,77 @@
 ,"states: [11]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00006f59": {
-"variable": "s_00006f59",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00006f59]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00006f5a": {
-"variable": "s_00006f5a",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00006f5a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_orsinium": {
 "variable": "s_orsinium",
+"nameRaw": "[0x00006f5b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_00006f5c": {
-"variable": "s_00006f5c",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x00006f5c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0001a9a4": {
-"variable": "s_0001a9a4",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0001a9a4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10

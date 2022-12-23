@@ -1,0 +1,506 @@
+{
+"quest info: ": {
+"name": "M0B70Y15",
+"questType": "Fighters Guild",
+"membership": "Member",
+"reputation": 70,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_reward: [MagicItem]": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_witch:  (type? QuestGiver)": {
+"variable": "n_witch",
+"nameRaw": "[0x00000db6]",
+"unknown1": "[0x00]",
+"facePictureIndex": 44,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 1011,
+"textRecordId2": 1012,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_mondung: OutOfTown VampireHaunt": {
+"variable": "l_mondung",
+"nameRaw": "[0x00003637]",
+"generalLocation": "OutOfTown",
+"locationType": 8,
+"LocationType": "VampireHaunt",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "5375 [0x14FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
+"variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [1]": {
+" 0: m_vamprival: 1 VampireAncient": {
+"variable": "m_vamprival",
+"nameRaw": "[0X0000dd2e]",
+"type": "VampireAncient",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+}
+}
+,"opCodes: [12]": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_1stparton": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 1:  => CreateLogEntry (1015, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1015": {
+"type": "Value",
+"value": "1015",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 2:  => AddLocationToMap (l_mondung)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 3:  => PlaceMobAtLocation (m_vamprival, l_mondung)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_vamprival": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 4:  >> IfMobsKilled (m_vamprival, 1): set s_01": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_vamprival": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 5: s_01 => Say (1020)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1020,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 6:  >> IfNpcClicked (n_witch): set s_vampclicked": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_vampclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_witch": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 7:  >> If (s_vampclicked and not s_01): set not s_vampclicked": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: not s_vampclicked": {
+"type": "State",
+"value": "2",
+"not": "True",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_vampclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_01": {
+"type": "State",
+"value": "1",
+"not": "True",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18743296 [0x011E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 8:  >> If (s_vampclicked and s_01): set s_00": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_vampclicked": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "18743296 [0x011E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+" 9: s_00 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "18743296 [0x011E0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+"10: s_1stparton => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_1stparton": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+},
+"11: s_00 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 221
+}
+}
+,"states: [4]": {
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x0000d500]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0000dcba]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_vampclicked": {
+"variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_1stparton": {
+"variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+}
+}
+,"text records: [14]": {
+"1000": [
+"Have I got a job for you!  Some guy came in this morning, raving  about vampires.  It seems his father  had a run-in with a vampire, and now  haunts the earth as a Vampire Ancient.  He wants his father put out of his misery.  Payment is not in gold as usual, instead  this man offered an item of some sort.  I can't remember what. Sounds like a  good quest. Will you do it?"
+],
+"1001": [
+"I can understand. I'd be  cautious about jobs like  that. Vampire Ancients. Bah!"
+],
+"1002": [
+"Great! I know you'll be able  to take this thing, but I'd  still recommend you get some  good protection for yourself.  This vamp, he's called  =vamprival_,  and his new sanctuary is called  ___mondung_,  in ____mondung_.  The man wants the job done in  =1stparton_ days. Watch your  back, %pcf. Vampires are  dangerous."
+],
+"1003": [
+"You haven't killed  =vamprival_ yet?  Hurry! Time is running out!"
+],
+"1004": [
+"You did it? Really?  Great!  I honestly thought you were dead,  %pcf. Well, take this, anyway."
+],
+"1005": [
+"There's been a lot of activity at ___mondung_, but it's been abandoned for years.",
+"That =vamprival_ is an aristocrat. Says %g's cleaning up ___mondung_ and %reg."
+],
+"1006": [
+"=vamprival_ finally moved out of ___mondung_, I hear. No place for an aristocrat.",
+"Now that =vamprival_ moved out of ___mondung_, %g's over at the palace a lot."
+],
+"1007": [
+"It turns out that nice =vamprival_ was a vampire! I had no idea!",
+"Thank %god that wonderful %ra mercenary killed the vampire in ___mondung_."
+],
+"1008": [
+"What can I do for you, Vampire Slayer?"
+],
+"1009": [
+"=vamprival_ still walks  the night, terrorizing people.  Go away.  You are a disgrace to  the guild."
+],
+"1011": [
+"I never heard of him.  Sorry."
+],
+"1012": [
+"No idea. Sorry."
+],
+"1015": [
+"%qdt: __witch_ of ___witch_ has sent me to slay a vampire ancient that some noble wants dead. I will find the vampire at ___mondung_ in ____mondung_. I have promised to have the undead creature permanently dead in =1stparton_ days and be back in ___witch_."
+],
+"1020": [
+"As =vamprival_ falls, you  can swear you hear a quiet  voice saying \"Thank you.\""
+]
+}
+}

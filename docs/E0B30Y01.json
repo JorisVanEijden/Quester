@@ -1,0 +1,788 @@
+{
+"quest info: ": {
+"name": "E0B30Y01",
+"questType": "Arkay",
+"membership": "Member",
+"reputation": 30,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_reward: Random gold": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_questgiver:  (type? QuestGiver)": {
+"variable": "n_questgiver",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [2]": {
+" 0: l_mondung: OutOfTown Dungeon": {
+"variable": "l_mondung",
+"nameRaw": "[0x00003637]",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "Dungeon",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "5375 [0x14FF]"
+},
+" 1: l_qgenemy: OutOfTown Dungeon": {
+"variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
+"generalLocation": "OutOfTown",
+"locationType": -1,
+"LocationType": "Dungeon",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": -1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "5375 [0x14FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
+"variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [1]": {
+" 0: m_monster: 1 Vampire": {
+"variable": "m_monster",
+"nameRaw": "[0X000036a4]",
+"type": "Vampire",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+}
+}
+,"opCodes: [18]": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_1stparton": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 1:  => CreateLogEntry (1030, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1030": {
+"type": "Value",
+"value": "1030",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 2:  => PickOneOf (s_map, s_nomap, s_nomap, s_nomap)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_map": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_nomap": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_nomap": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: s_nomap": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 3:  => AddLocationToMap (l_mondung)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 4:  >> WhenAtLocation (l_mondung): set s_01": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 5: s_01 => CreateFoe(m_monster, 30, 30%, 15)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 30": {
+"type": "Value",
+"value": "30",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 30": {
+"type": "Value",
+"value": "30",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 6:  >> IfMobHurtByPlayer (m_monster): set s_05 [Msg 1020]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1020,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 7:  >> IfMobsKilled (m_monster, 6): set s_mondead": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_mondead": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 8: s_mondead => Say (1010)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_mondead": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1010,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 9:  >> IfNpcClicked (n_questgiver): set s_qgclicked": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_qgclicked": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"10:  >> If (s_qgclicked and not s_mondead): set s_clearclick": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_mondead": {
+"type": "State",
+"value": "2",
+"not": "True",
+"index": "2",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"11: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"12:  >> If (s_qgclicked and s_mondead): set s_pcgetsgold": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_mondead": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"13: s_pcgetsgold => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"14:  >> If (s_map and s_pcgetsgold): set s_09": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_map": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17825792 [0x01100000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"15: s_09 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_qgenemy": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1080,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"16: s_pcgetsgold => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"17: s_1stparton => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_1stparton": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+}
+}
+,"states: [10]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00001a37]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_mondead": {
+"variable": "s_mondead",
+"nameRaw": "[0x000035da]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_1stparton": {
+"variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000694c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_map": {
+"variable": "s_map",
+"nameRaw": "[0x000002e6]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_nomap": {
+"variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0000374e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+}
+}
+,"text records: [14]": {
+"1000": [
+"We are truly pilgrims in an unholy  land, %pcn.  Arkay is the god  of the cycle of birth and death, as  you already know.  For long, the priests  have worked to keep the cycle in  balance.  It now seems that an evil force  has entered the lands near here, and  threatens the balance.  We need someone  to fight this force.  Will you the one?"
+],
+"1001": [
+"You are fortunate that Arkay  is a forgiving god, %pct.  Very fortunate indeed."
+],
+"1002": [
+"I Bless thee, %pcn.  Now,  the evil force seems to be a vampiric  cult of sorts.  As you probably know,  a vampire is an immortal creature, and  lives between death and life.  These  creatures are the esence of the devil,  and their unholy work aims at destruction  and war.  The particular cult we are sending  you after lives in ___mondung_,  where they perform their evil ceremonies.  Go there, and kill all of them.  Only then will  the balance be restored.  May Arkay walk  with you and guid you, %pcn."
+],
+"1003": [
+"The vampires still walk,  so your quest is incomplete."
+],
+"1004": [
+"You have done well.  I have  spoken with the high priest,  and he says I am to give you  these _reward_ gold pieces.  You have earned them."
+],
+"1005": [
+"It seems just about everyone has had to run from a vampire, these days.",
+"Why would anyone ever want to live in Morrowind?  That country is filled with criminals."
+],
+"1006": [
+"A tavern near here was burned down recently.  Nobody knows how the fire started.",
+"Kids these days are so rude.  Did you hear what %nrn said about King Gothryd?"
+],
+"1007": [
+"No more vampires!  The temple finally did something.",
+"I'm not sure which guild has more power, the fighter's guild or the mages guild.  What do you think?"
+],
+"1008": [
+"Arkay has visited me in  my dreams, and spoken  well of you.  It is good to  be in his favor.  You will  go far in this world."
+],
+"1009": [
+"You have failed the temple.  Leave my presence."
+],
+"1010": [
+"Blood sprays into your face,  as you cut the throat of the vampire.  As it dies, you hear an erie moaning,  and a painful scream.  The souls of  the damned have been freed from  their eternal torture.  You have fixed  the balance of life and death.  Your  quest is complete."
+],
+"1020": [
+"YOU! You shall die, human scum.",
+"The vampire merely looks at you with an expression of anger.",
+"The vampire attempts to bite you, narrowly missing."
+],
+"1030": [
+"%qdt: The Temple of Arkay of ___questgiver_ has requested that I fight several vampires. I must visit ___mondung_, and kill every vampire I see.  I should be done in =1stparton_ days or so."
+],
+"1080": [
+"Hey %pcf, allow me to show you  this place, ___newdung_.  It's quite an interesting  area, and great for exploring."
+]
+}
+}

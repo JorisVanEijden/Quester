@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_artifact: Artifact Artifact Ebony_Blade [1013]": {
+" 0: i_artifact: Ebony_Blade [Artifact] [1013]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 22,
 "textRecordId1": 1013,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgfriend: Female (type Librarian)": {
+" 0: n_qgfriend:  (type? Librarian)": {
 "variable": "n_qgfriend",
-"gender": "Female",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Librarian",
 "npcTypeRaw": "10 [0x000A]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_enemy: Female (faction Boethiah) (face 1)": {
+" 1: n_enemy:  (type? Daedra) (faction Boethiah)": {
 "variable": "n_enemy",
-"gender": "Female",
+"nameRaw": "[0x00000ca7]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -55,6 +58,7 @@
 ,"locations: [1]": {
 " 0: l_palace: OutOfTown Palace": {
 "variable": "l_palace",
+"nameRaw": "[0x00001a1f]",
 "generalLocation": "OutOfTown",
 "locationType": 16,
 "LocationType": "Palace",
@@ -72,6 +76,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_palace' and then 'n_qgfriend'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -84,6 +89,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -98,6 +104,7 @@
 ,"mobs: [3]": {
 " 0: m_monster: 1 Knight": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -106,6 +113,7 @@
 },
 " 1: m_guards: 1 Warrior": {
 "variable": "m_guards",
+"nameRaw": "[0X00001a3b]",
 "type": "Warrior",
 "count": 1,
 "null1": 0,
@@ -114,6 +122,7 @@
 },
 " 2: m_bodyguard: 1 Giant": {
 "variable": "m_bodyguard",
+"nameRaw": "[0X0000ce84]",
 "type": "Giant",
 "count": 1,
 "null1": 0,
@@ -122,7 +131,7 @@
 }
 }
 ,"opCodes: [21]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -205,7 +214,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 3:  >> WhenAtLocation (l_palace): set s_0000679f": {
+" 3:  >> WhenAtLocation (l_palace): set s_06": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -216,7 +225,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000679f": {
+"1: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -235,11 +244,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 4: s_0000679f => HideNpc (n_enemy)": {
+" 4: s_06 => HideNpc (n_enemy)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_0000679f": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -258,11 +267,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 5: s_0000679f => PlaceMobAtLocation (m_monster, l_palace)": {
+" 5: s_06 => PlaceMobAtLocation (m_monster, l_palace)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0000679f": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -288,11 +297,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 6: s_0000679f => CreateFoe(m_guards, 2, 25%, 10)": {
+" 6: s_06 => CreateFoe(m_guards, 2, 25%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0000679f": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -355,11 +364,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 8:  >> IfMobHurtByPlayer (m_monster): set s_00006967": {
+" 8:  >> IfMobHurtByPlayer (m_monster): set s_07": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00006967": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -378,11 +387,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-" 9: s_00006967 => Say (1041)": {
+" 9: s_07 => Say (1041)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006967": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -394,11 +403,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-"10: s_00006967 => CreateFoe(m_bodyguard, 1, 100%, 1)": {
+"10: s_07 => CreateFoe(m_bodyguard, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_00006967": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -683,7 +692,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 206
 },
-"18: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"18: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -742,60 +751,70 @@
 ,"states: [10]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0000679f": {
-"variable": "s_0000679f",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000679f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00006967": {
-"variable": "s_00006967",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00006967]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_hitguard": {
 "variable": "s_hitguard",
+"nameRaw": "[0x000069a4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9

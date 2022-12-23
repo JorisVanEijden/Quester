@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_ingredient: Artifact CreatureIngredients1 CreatureIngredients1": {
+" 0: i_ingredient: [CreatureIngredients1]": {
 "variable": "i_ingredient",
-"rewardType": "Artifact",
+"nameRaw": "[0x0001A90C]",
+"rewardType": "Item1",
 "category": "CreatureIngredients1",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -50,11 +53,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 1,
@@ -69,6 +73,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -83,7 +88,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [9]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -189,11 +194,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfItemPickedUp (i_ingredient): set s_0000352f [Msg 1011]": {
+" 4:  >> IfItemPickedUp (i_ingredient): set s_02 [Msg 1011]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_0000352f": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -322,18 +327,21 @@
 ,"states: [3]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000352f": {
-"variable": "s_0000352f",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000352f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2

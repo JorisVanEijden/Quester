@@ -1,0 +1,665 @@
+{
+"quest info: ": {
+"name": "L0B50Y15",
+"questType": "Dark Brotherhood",
+"membership": "Member",
+"reputation": 50,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_00: Parchment [Usable] [1011]": {
+"variable": "i_00",
+"nameRaw": "[0x00001B20]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1011,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_mondung: OutOfTown DesecratedTemple": {
+"variable": "l_mondung",
+"nameRaw": "[0x00003637]",
+"generalLocation": "OutOfTown",
+"locationType": 4,
+"LocationType": "DesecratedTemple",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "8192 [0x2000]"
+}
+}
+,"timers: [1]": {
+" 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [2]": {
+" 0: m_guardian: 1 Centaur": {
+"variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
+"type": "Centaur",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_01: 1 AncientLich": {
+"variable": "m_01",
+"nameRaw": "[0X00000030]",
+"type": "AncientLich",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+}
+}
+,"opCodes: [17]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 2:  => AddLocationToMap (l_mondung)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 3:  => PlaceItemAt (i_00, l_mondung)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 4:  => PlaceMobAtLocation (m_guardian, l_mondung)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_guardian": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_mondung": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 5:  >> IfItemPickedUp (i_00): set s_01": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 6: s_01 => Say (1012)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1012,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 7:  >> IfGivingItemToNpc (i_00, n_qgiver): set s_04": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 8: s_04 => QuestSuccess ()": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "19070976 [0x01230000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+" 9: s_01 >> WhenItemIsUsed (i_00): set s_02 [Msg 1015]": {
+"opCode": 57,
+"argCount": 3,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: i_00": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1015,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"10: s_02 => CreateFoe(m_01, 1, 100%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "19070976 [0x01230000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"11:  >> IfMobHurtByPlayer (m_01): set s_05": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"12: s_05 => Say (1014)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1014,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"13:  >> If (s_queston and s_01): set s_03": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "19070976 [0x01230000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"14: s_03 => Say (1013)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"15: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+},
+"16: s_04 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 113
+}
+}
+,"states: [6]": {
+" 0: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x001b8b62]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0001b8a2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0001b835]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x0001a660]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0003578e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+}
+}
+,"text records: [15]": {
+"1000": [
+"Ahh, %pcn.  You have served  the brotherhood well.  Mephala respects you  and your many successful killings have  earned you great honour within the brotherhood.  We must ask for your help once again, though.  There is a certain noble that has been quite an  annoyance lately.  He has found the identities  of several high ranking assasins, and threatens  to reveal them to the city guards.  We worry that  he may try it.  However, we cannot get one of  our assasins in to kill him.  Instead, we must  kill him in another way.  It is quite a challenge,  but may work.  Do you think you could help us?",
+"We need help, %pct.  A noble has  threatened to reveal information about us  to the king if we don't pay him well.  We cannot  simply kill him, he is too well guarded. But I have  found a way to dispose of him.  If successful, it  would greatly please the night mother.  Are you interested?"
+],
+"1001": [
+"You fear the unknown.  This  is a bad thing for an assasin.  Go now."
+],
+"1002": [
+"Good, good.  Now, are you familiar with  the death scrolls? I have located one.  The  power of the scroll could easily destroy  the noble that angers us.  All we need to  do is mail it to him.  However, first it needs  to be found.  That's were you come in.  Go to ___mondung_, were  the scroll is hidden.  Do not read it, for  reading it will no doubt destroy you.  You will know you have found it when you  find a scroll near a centaur.  The centaur has  been guarding the scroll for years, thinking  that someone may try to steal it.  When you have got it, come back to me.  You  have =queston_ days.  Go now."
+],
+"1004": [
+"Ahh, the death scroll.  Since you  still walk this day, I am assuming you  did not make the foolish mistake of  reading it.  That would have been the  end of you.  Mephala is pleased with  your work.  You will go much farther  in the guild, %pct. Much,  much farther."
+],
+"1005": [
+"The healers says that stomach rot is going around.",
+"I wonder how long this epidemic will last?"
+],
+"1006": [
+"I got a boil the other day ... but it healed.",
+"I just had a three hour conversation about the weather.",
+"The weather is pretty usual for this time of year.",
+"It seems a trifle coolish in %cn for this time of year.",
+"It sure is a lot warmer today than this time last year.",
+"My great aunt is going to a specialist across the Bay.",
+"It's always funny what time it gets dark around here.",
+"We should erect a war statue around here.",
+"The kids these days with their magic. %oth, I don't know.",
+"I had the weirdest dream last night.",
+"I heard a great joke. %jok",
+"%jok Actually, that's a joke.",
+"%jok Can you explain that to me?",
+"The legal system in %reg has it good points and bad ones."
+],
+"1007": [
+"I haven't been to the library lately.  Do you know if they have any good books anymore?",
+"Orcs turn up in the strangest places, don't you think?",
+"My uncle still has stomach rot.  But it's stopped spreading now.",
+"%jok.  Funny, don't you think?",
+"%nrn's father died in the stomach rot epidemic.",
+"%oth, this town is just too boring!",
+"Someone said that a nearby tavern burnt down.  I don't believe them."
+],
+"1008": [
+"You brought me the Death Scroll, %pcf. How could I forget you for that?"
+],
+"1009": [
+"I don't see why I should talk to  you at all, %pcf. You  didn't bring me the Death Scroll."
+],
+"1010": [
+"%qdt: _qgiver_ of __qgiver_, ___qgiver_, sent me to ___mondung_. I must look for a scroll guarded by a centaur.  This scroll contains words of power, that I must not read. _qgiver_ claims that if I do read them, I will be destroyed.  I have =queston_ days to get the scroll back to _qgiver_."
+],
+"1011": [
+"Hinarosho, su mako no. Gebique! Maramaha no skervook, ama da Mephala. Miro! Maro! Khagu, rhano, monoto. Tegnir no Maro. Scnifigagh, burona. Miro! Maro! Khagu, rhano, monoto. Verinsa, bu doba. Mephala, su no Nao'me. Shisheemo quu cackooni monoto. Miro! Maro! Khagu, rhano, monoto. Bubidonago.  Hapisho, Malicnao, Mephala."
+],
+"1012": [
+"You have found the scroll  _qgiver_ wants."
+],
+"1013": [
+"The scroll begins to glow, and then  starts on fire!  You drop it, and it  suddenly disappears!  This can't be good..."
+],
+"1014": [
+"You have summoned me, and  now you must die..."
+],
+"1015": [
+"You realize that you should not  have read the scroll as it begins  to glow.  You quickly drop it, and  suddenly a lich appears!  You have accidently triggered  the scroll's powers!"
+]
+}
+}

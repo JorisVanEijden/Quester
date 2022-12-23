@@ -21,6 +21,7 @@
 ,"timers: [1]": {
 " 0: t_delay: Fixed 00:05:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "00:05:00",
@@ -35,7 +36,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [4]": {
-" 0:  => StartQuest (16, 16)": {
+" 0:  >> StartQuest (S0000016)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -65,7 +66,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_delay); When it expires: set s_delay": {
+" 1:  => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -152,12 +153,13 @@
 ,"states: [1]": {
 " 0: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 }
 }
-,"text records: [8]": {
+,"text records: [4]": {
 "1000": [
 "Start the Final Quest?"
 ],
@@ -169,6 +171,6 @@
 ],
 "1004": [
 "Start-up completed. Once again, sorry for the problem."
-],
+]
 }
 }

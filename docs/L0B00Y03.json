@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,11 +31,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -49,6 +51,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -63,6 +66,7 @@
 ,"mobs: [1]": {
 " 0: m_mage: 1 Mage": {
 "variable": "m_mage",
+"nameRaw": "[0X0000061f]",
 "type": "Mage",
 "count": 1,
 "null1": 0,
@@ -71,7 +75,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -177,11 +181,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 4:  >> IfMobsKilled (m_mage, 1): set s_000067ca": {
+" 4:  >> IfMobsKilled (m_mage, 1): set s_01": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_000067ca": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -207,11 +211,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5: s_000067ca => Say (1011)": {
+" 5: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000067ca": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -223,11 +227,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 6:  >> IfNpcClicked (n_qgiver): set s_00006b82": {
+" 6:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_00006b82": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -246,25 +250,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7:  >> If (s_00006b82 and not s_000067ca): set s_00001b27": {
+" 7:  >> If (s_02 and not s_01): set s_04": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00001b27": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: s_00006b82": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_000067ca": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -290,25 +294,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 8: s_00001b27 => Unset (s_00006b82, s_00001b27)": {
+" 8: s_04 => Unset (s_02, s_04)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_00001b27": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: s_00006b82": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00001b27": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -334,7 +338,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 9:  >> If (s_00006b82 and s_000067ca): set s_reward": {
+" 9:  >> If (s_02 and s_01): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -345,14 +349,14 @@
 "index": "5",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: s_00006b82": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_000067ca": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -458,36 +462,42 @@
 ,"states: [6]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_000067ca": {
-"variable": "s_000067ca",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x000067ca]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00006b82": {
-"variable": "s_00006b82",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006b82]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_000002a7": {
-"variable": "s_000002a7",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x000002a7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_00001b27": {
-"variable": "s_00001b27",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00001b27]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

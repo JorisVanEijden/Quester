@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -28,9 +29,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_snitch: Male (faction Sheogorath)": {
+" 1: n_snitch:  (type? Daedra) (faction Sheogorath)": {
 "variable": "n_snitch",
-"gender": "Male",
+"nameRaw": "[0x00001b86]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -43,11 +45,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -62,6 +65,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -76,6 +80,7 @@
 ,"mobs: [1]": {
 " 0: m_target: 1 Assassin": {
 "variable": "m_target",
+"nameRaw": "[0X00001afa]",
 "type": "Assassin",
 "count": 1,
 "null1": 0,
@@ -84,7 +89,7 @@
 }
 }
 ,"opCodes: [18]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -204,11 +209,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 4:  >> IfNpcClicked (n_snitch): set s_0000dcc2": {
+" 4:  >> IfNpcClicked (n_snitch): set s_03": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0000dcc2": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -227,11 +232,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 5: s_0000dcc2 => AddTopics (l_mondung)": {
+" 5: s_03 => AddTopics (l_mondung)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_0000dcc2": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -264,11 +269,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 6: s_0000dcc2 => AddLocationToMap (l_mondung)": {
+" 6: s_03 => AddLocationToMap (l_mondung)": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_0000dcc2": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -287,11 +292,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 7: s_0000dcc2 => CreateLogEntry (1012, 1)": {
+" 7: s_03 => CreateLogEntry (1012, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_0000dcc2": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -317,11 +322,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 8: s_0000dcc2 => Say (1011)": {
+" 8: s_03 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000dcc2": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -333,11 +338,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 9:  >> IfMobsKilled (m_target, 1): set s_0000361a": {
+" 9:  >> IfMobsKilled (m_target, 1): set s_02": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0000361a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -363,11 +368,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"10: s_0000361a => Say (1013)": {
+"10: s_02 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000361a": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -402,11 +407,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"12:  >> If (s_qgclicked and not s_0000361a): set s_00000d51": {
+"12:  >> If (s_qgclicked and not s_02): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00000d51": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -420,7 +425,7 @@
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0000361a": {
+"2: not s_02": {
 "type": "State",
 "value": "2",
 "not": "True",
@@ -446,11 +451,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"13: s_00000d51 => Unset (s_qgclicked, s_00000d51)": {
+"13: s_05 => Unset (s_qgclicked, s_05)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_00000d51": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -464,7 +469,7 @@
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00000d51": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -490,7 +495,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"14:  >> If (s_qgclicked and s_0000361a): set s_reward": {
+"14:  >> If (s_qgclicked and s_02): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -508,7 +513,7 @@
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0000361a": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -614,36 +619,42 @@
 ,"states: [6]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000361a": {
-"variable": "s_0000361a",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000361a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0000dcc2": {
-"variable": "s_0000dcc2",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000dcc2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_00000d51": {
-"variable": "s_00000d51",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x00000d51]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

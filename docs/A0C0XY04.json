@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_artifact: Artifact Artifact Chrysamere [1025]": {
+" 0: i_artifact: Chrysamere [Artifact] [1025]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 14,
 "textRecordId1": 1025,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_ingredient: Artifact MetalIngredients Lodestone": {
+" 1: i_ingredient: Lodestone [MetalIngredients]": {
 "variable": "i_ingredient",
-"rewardType": "Artifact",
+"nameRaw": "[0x0001A90C]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 3,
 "textRecordId1": 0,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_token: Artifact MiscellaneousIngredients2 Pearl": {
+" 2: i_token: Pearl [MiscellaneousIngredients2]": {
 "variable": "i_token",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000D9C]",
+"rewardType": "Item1",
 "category": "MiscellaneousIngredients2",
 "itemId": 1,
 "textRecordId1": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [5]": {
-" 0: n_qgiver: Female (type Chemist) (face 1)": {
+" 0: n_qgiver:  (type? Chemist)": {
 "variable": "n_qgiver",
-"gender": "Female",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Chemist",
 "npcTypeRaw": "0 [0x0000]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_agent: Male (type QuestGiver)": {
+" 1: n_agent:  (type? QuestGiver)": {
 "variable": "n_agent",
-"gender": "Male",
+"nameRaw": "[0x00000c2c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -71,11 +76,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_dummymage: Female (faction The_Mages_Guild) (face 1)": {
+" 2: n_dummymage:  (faction The_Mages_Guild)": {
 "variable": "n_dummymage",
-"gender": "Female",
+"nameRaw": "[0x0000d50f]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Mages_Guild",
 "factionRaw": "40 [0x0028]",
@@ -84,11 +90,12 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_dummyorc: Female (faction Gortwog) (face 1)": {
+" 3: n_dummyorc:  (faction Gortwog)": {
 "variable": "n_dummyorc",
-"gender": "Female",
+"nameRaw": "[0x00006a7b]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Gortwog",
 "factionRaw": "357 [0x0165]",
@@ -97,11 +104,12 @@
 "index": 3,
 "null1": 0
 },
-" 4: n_dummydarkb: Female (faction The_Dark_Brotherhood) (face 49)": {
+" 4: n_dummydarkb:  (faction The_Dark_Brotherhood)": {
 "variable": "n_dummydarkb",
-"gender": "Female",
+"nameRaw": "[0x0001aa28]",
+"unknown1": "[0x01]",
 "facePictureIndex": 49,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Dark_Brotherhood",
 "factionRaw": "108 [0x006C]",
@@ -112,11 +120,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -129,6 +138,7 @@
 },
 " 1: l_meetingplace: InCurrentTown Alchemist": {
 "variable": "l_meetingplace",
+"nameRaw": "[0x0006a3ef]",
 "generalLocation": "InCurrentTown",
 "locationType": 0,
 "LocationType": "Alchemist",
@@ -146,6 +156,7 @@
 ,"timers: [2]": {
 " 0: t_extratime: Fixed 00:30:00": {
 "variable": "t_extratime",
+"nameRaw": "[0x0000d8d3]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "00:30:00",
@@ -158,6 +169,7 @@
 },
 " 1: t_totaltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_totaltime",
+"nameRaw": "[0x0000e1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "90.00:00:00",
@@ -172,6 +184,7 @@
 ,"mobs: [4]": {
 " 0: m_guardian: 1 DaedraSeducer": {
 "variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
 "type": "DaedraSeducer",
 "count": 1,
 "null1": 0,
@@ -180,6 +193,7 @@
 },
 " 1: m_monster: 1 OrcShaman": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "OrcShaman",
 "count": 1,
 "null1": 0,
@@ -188,6 +202,7 @@
 },
 " 2: m_orc: 1 OrcWarlord": {
 "variable": "m_orc",
+"nameRaw": "[0X00000303]",
 "type": "OrcWarlord",
 "count": 1,
 "null1": 0,
@@ -196,6 +211,7 @@
 },
 " 3: m_daedras: 1 Daedroth": {
 "variable": "m_daedras",
+"nameRaw": "[0X0000318d]",
 "type": "Daedroth",
 "count": 1,
 "null1": 0,
@@ -204,7 +220,7 @@
 }
 }
 ,"opCodes: [37]": {
-" 0:  >> StartTimer (t_totaltime); When it expires: set s_totaltime": {
+" 0:  => StartTimer (t_totaltime); When it expires: set s_totaltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -762,7 +778,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_shamandead >> StartTimer (t_extratime); When it expires: set s_extratime": {
+"20: s_shamandead => StartTimer (t_extratime); When it expires: set s_extratime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1108,11 +1124,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32:  >> IfMobsKilled (m_guardian, 1): set s_001a97f4": {
+"32:  >> IfMobsKilled (m_guardian, 1): set s_11": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_001a97f4": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1138,7 +1154,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (s_yes and s_001a97f4): set s_betrayguardian": {
+"33:  >> If (s_yes and s_11): set s_betrayguardian": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1156,7 +1172,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_001a97f4": {
+"2: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1283,78 +1299,91 @@
 ,"states: [13]": {
 " 0: s_giveingredient": {
 "variable": "s_giveingredient",
+"nameRaw": "[0x001a5d0c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_hitguardian": {
 "variable": "s_hitguardian",
+"nameRaw": "[0x00034ff4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_clickonqgiver": {
 "variable": "s_clickonqgiver",
+"nameRaw": "[0x000cd2ec]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_givetoken": {
 "variable": "s_givetoken",
+"nameRaw": "[0x0000d33c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_shamandead": {
 "variable": "s_shamandead",
+"nameRaw": "[0x0001b29a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_givereward": {
 "variable": "s_givereward",
+"nameRaw": "[0x0001a654]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_extratime": {
 "variable": "s_extratime",
+"nameRaw": "[0x0000d8d3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_totaltime": {
 "variable": "s_totaltime",
+"nameRaw": "[0x0000e1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_revealmonsters": {
 "variable": "s_revealmonsters",
+"nameRaw": "[0x001b6fbb]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_001a97f4": {
-"variable": "s_001a97f4",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x001a97f4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_betrayguardian": {
 "variable": "s_betrayguardian",
+"nameRaw": "[0x00199cf4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12

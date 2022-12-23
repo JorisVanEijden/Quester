@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_mitem: Artifact MagicItem MagicItem": {
+" 0: i_mitem: [MagicItem]": {
 "variable": "i_mitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000D1F]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_book: Artifact Book Book2": {
+" 1: i_book: Book2 [Book]": {
 "variable": "i_book",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000615]",
+"rewardType": "Item1",
 "category": "Book",
 "itemId": 2,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_daedra: Female (face 1)": {
+" 1: n_daedra:  (type? Daedra)": {
 "variable": "n_daedra",
-"gender": "Female",
+"nameRaw": "[0x0000188d]",
+"unknown1": "[0x00]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -61,9 +65,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_contact: Female (type Innkeeper) (face 68)": {
+" 2: n_contact:  (type? Innkeeper)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 68,
 "npcType": "Innkeeper",
 "npcTypeRaw": "15 [0x000F]",
@@ -78,8 +83,9 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_queston: 1.5 times travel time between here and 'n_qgiver'": {
+" 0: t_queston: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -94,6 +100,7 @@
 ,"mobs: [1]": {
 " 0: m_guard: 1 Knight": {
 "variable": "m_guard",
+"nameRaw": "[0X00000ce4]",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -101,8 +108,8 @@
 "index": 0
 }
 }
-,"opCodes: [17]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+,"opCodes: [15]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -111,19 +118,19 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: t_queston": {
 "type": "Timer",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
 " 1:  => CreateLogEntry (1010, 0)": {
 "opCode": 23,
@@ -134,185 +141,206 @@
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: 1010": {
 "type": "Value",
 "value": "1010",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 },
 "2: 0": {
 "type": "Value",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-" 2:  >> If (s_queston and s_5): set s_1": {
-"opCode": 52,
-"argCount": 5,
+" 2:  >> IfNpcClicked (n_contact): set s_05": {
+"opCode": 28,
+"argCount": 2,
 "arguments:": {
-"0: s_1": {
-"type": "State",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0 [0x00000000]"
-},
-"1: s_queston": {
-"type": "State",
-"value": "0",
-"not": "False",
-"index": "0",
-"unknown1": "0 [0x00000000]"
-},
-"2: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
 },
-"3: ": {
-"type": "State",
-"value": "-2",
+"1: n_contact": {
+"type": "Npc",
+"value": "2",
 "not": "False",
-"index": "254",
-"unknown1": "0 [0x00000000]"
-},
-"4: ": {
-"type": "State",
-"value": "-2",
-"not": "False",
-"index": "254",
-"unknown1": "0 [0x00000000]"
+"index": "2",
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-" 3: s_1 => Say (1013)": {
+" 3: s_05 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_05": {
 "type": "State",
-"value": "1",
+"value": "5",
 "not": "False",
-"index": "1",
-"unknown1": "0 [0x00000000]"
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
 }
 },
-"messageId": 1013,
+"messageId": 1011,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-" 4: s_1 => MakePermanent (i_book)": {
-"opCode": 54,
-"argCount": 2,
+" 4: s_05 => PlaceItemOnCharacter (i_book)": {
+"opCode": 26,
+"argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_05": {
 "type": "State",
-"value": "1",
+"value": "5",
 "not": "False",
-"index": "1",
-"unknown1": "0 [0x00000000]"
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-" 5: s_1 => EndQuest ()": {
-"opCode": 6,
-"argCount": 1,
+" 5: s_05 >> WhenPlayerHasItems (i_book): set s_06": {
+"opCode": 70,
+"argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_05": {
 "type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "14 [0x0000000E]"
+},
+"2: i_book": {
+"type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0 [0x00000000]"
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "26279936 [0x01910000]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-" 6:  >> If (s_queston and not s_5): set s_2": {
-"opCode": 52,
+" 6: s_06 => AdjustLegalReputation (-30)": {
+"opCode": 65,
+"argCount": 2,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: -30": {
+"type": "Value",
+"value": "-30",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 12
+},
+" 7: s_06 => CreateFoe(m_guard, 20, 50%, 20) [Msg 1012]": {
+"opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_06": {
 "type": "State",
-"value": "2",
+"value": "6",
 "not": "False",
-"index": "2",
-"unknown1": "0 [0x00000000]"
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
 },
-"1: s_queston": {
-"type": "State",
+"1: m_guard": {
+"type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 },
-"2: not s_5": {
-"type": "State",
-"value": "5",
-"not": "True",
-"index": "5",
-"unknown1": "0 [0x00000000]"
-},
-"3: ": {
-"type": "State",
-"value": "-2",
+"2: 20": {
+"type": "Value",
+"value": "20",
 "not": "False",
-"index": "254",
-"unknown1": "0 [0x00000000]"
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
 },
-"4: ": {
-"type": "State",
-"value": "-2",
+"3: 50": {
+"type": "Value",
+"value": "50",
 "not": "False",
-"index": "254",
-"unknown1": "0 [0x00000000]"
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 20": {
+"type": "Value",
+"value": "20",
+"not": "False",
+"index": "0",
+"unknown1": "26279936 [0x01910000]"
 }
 },
-"messageId": -1,
+"messageId": 1012,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
-},
-" 7: s_2 => EndQuest ()": {
-"opCode": 6,
-"argCount": 1,
-"arguments:": {
-"0: s_2": {
-"type": "State",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0 [0x00000000]"
-}
-},
-"messageId": -1,
-"flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
 " 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_qgclicked": {
 "opCode": 1,
@@ -320,29 +348,29 @@
 "arguments:": {
 "0: s_qgclicked": {
 "type": "State",
-"value": "3",
+"value": "4",
 "not": "False",
-"index": "3",
-"unknown1": "0 [0x00000000]"
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 },
 "2: n_qgiver": {
 "type": "Npc",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "1156761600 [0x44F2C800]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
 " 9: s_qgclicked => QuestSuccess (i_mitem)": {
 "opCode": 4,
@@ -350,291 +378,223 @@
 "arguments:": {
 "0: s_qgclicked": {
 "type": "State",
-"value": "3",
+"value": "4",
 "not": "False",
-"index": "3",
-"unknown1": "0 [0x00000000]"
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_mitem": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 },
 "2: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "1156761600 [0x44F2C800]"
 },
 "3: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "1997668352 [0x77120000]"
 },
 "4: ": {
 "type": "Item",
 "value": "-1",
 "not": "False",
 "index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "26279936 [0x01910000]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-"10: s_qgclicked => EndQuest ()": {
-"opCode": 6,
-"argCount": 1,
+"10:  >> If (s_queston and s_06): set s_03": {
+"opCode": 52,
+"argCount": 5,
 "arguments:": {
-"0: s_qgclicked": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_queston": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "26279936 [0x01910000]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-"11:  >> IfNpcClicked (n_contact): set s_4": {
-"opCode": 28,
+"11: s_03 => MakePermanent (i_book)": {
+"opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_03": {
 "type": "State",
-"value": "4",
+"value": "3",
 "not": "False",
-"index": "4",
-"unknown1": "0 [0x00000000]"
-},
-"1: n_contact": {
-"type": "Npc",
-"value": "2",
-"not": "False",
-"index": "2",
-"unknown1": "0 [0x00000000]"
-}
-},
-"messageId": -1,
-"flags": "0 [0x0000]",
-"lastUpdate": 0
-},
-"12: s_4 => PlaceItemOnCharacter (i_book)": {
-"opCode": 26,
-"argCount": 3,
-"arguments:": {
-"0: s_4": {
-"type": "State",
-"value": "4",
-"not": "False",
-"index": "4",
-"unknown1": "0 [0x00000000]"
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
 },
 "1: i_book": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
-"unknown1": "0 [0x00000000]"
-},
-"2: ": {
-"type": "Npc",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "14 [0x0000000E]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-"13: s_4 => Say (1011)": {
+"12: s_03 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_03": {
 "type": "State",
-"value": "4",
+"value": "3",
 "not": "False",
-"index": "4",
-"unknown1": "0 [0x00000000]"
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
 }
 },
-"messageId": 1011,
+"messageId": 1013,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-"14: s_4 >> WhenPlayerHasItems (i_book): set s_5": {
-"opCode": 70,
-"argCount": 5,
+"13: s_qgclicked => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_qgclicked": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
-"unknown1": "0 [0x00000000]"
-},
-"1: s_5": {
-"type": "State",
-"value": "5",
-"not": "False",
-"index": "5",
-"unknown1": "0 [0x00000000]"
-},
-"2: i_book": {
-"type": "Item",
-"value": "1",
-"not": "False",
-"index": "1",
-"unknown1": "0 [0x00000000]"
-},
-"3: ": {
-"type": "Item",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0 [0x00000000]"
-},
-"4: ": {
-"type": "Item",
-"value": "-1",
-"not": "False",
-"index": "255",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 },
-"15: s_5 => CreateFoe(m_guard, 20, 50%, 20) [Msg 1012]": {
-"opCode": 9,
-"argCount": 5,
+"14: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_queston": {
 "type": "State",
-"value": "5",
-"not": "False",
-"index": "5",
-"unknown1": "0 [0x00000000]"
-},
-"1: m_guard": {
-"type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
-"unknown1": "0 [0x00000000]"
-},
-"2: 20": {
-"type": "Value",
-"value": "20",
-"not": "False",
-"index": "0",
-"unknown1": "0 [0x00000000]"
-},
-"3: 50": {
-"type": "Value",
-"value": "50",
-"not": "False",
-"index": "0",
-"unknown1": "0 [0x00000000]"
-},
-"4: 20": {
-"type": "Value",
-"value": "20",
-"not": "False",
-"index": "0",
-"unknown1": "0 [0x00000000]"
-}
-},
-"messageId": 1012,
-"flags": "0 [0x0000]",
-"lastUpdate": 0
-},
-"16: s_5 => AdjustLegalReputation (-30)": {
-"opCode": 65,
-"argCount": 2,
-"arguments:": {
-"0: s_5": {
-"type": "State",
-"value": "5",
-"not": "False",
-"index": "5",
-"unknown1": "0 [0x00000000]"
-},
-"1: -30": {
-"type": "Value",
-"value": "-30",
-"not": "False",
-"index": "0",
-"unknown1": "0 [0x00000000]"
+"unknown1": "100680946 [0x060044F2]"
 }
 },
 "messageId": -1,
 "flags": "0 [0x0000]",
-"lastUpdate": 0
+"lastUpdate": 12
 }
 }
-,"states: [6]": {
+,"states: [7]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_reward": {
+"variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_nononono": {
+"variable": "s_nononono",
+"nameRaw": "[0x00006de7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_qgclicked": {
-"variable": "s_qgclicked",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00006ec5]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000cf42]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
+},
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000d4e5]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
 }
 }
 ,"text records: [13]": {
 "1000": [
-"Yes, as a matter of fact, thou could help us, %pcf. We are an isolated coven, viewed with fear and hostility in the outside world. If thou would procure for us a certain rare tome being held for us in ___contact_, we would be happy to give you, say, a special _mitem_ personally created for you."
+"Yes, as a matter of fact, thou could  help us, %pcf. We are an  isolated coven, viewed with fear and  hostility in the outside world. If  thou would procure for us a certain  rare tome being held for us in  ___contact_, we would  be happy to give you, say, a special  _mitem_ personally created for you."
 ],
 "1001": [
-"Well, then we shall wait for the next wandering traveler. Our need is not that desperate."
+"Well, then we shall wait for the  next wandering traveler. Our need  is not that desperate."
 ],
 "1002": [
-"Wouldst thou? The name of the tome is _book_ -- a very rare book indeed. Even if one were to find a copy, the price would be quite prohibitive. We are lucky, therefore, to have a friend in ___contact_, a =contact_ named _contact_ who has stolen a copy. If thou wouldst meet %g2 at __contact_, %g will give thee the book. We will expect thee back in =queston_ days. After that time, the book will be of no use to us. May ==daedra_ watch thy journey."
+"Wouldst thou? The name of the tome is  _book_ -- a very  rare book indeed. Even if one were to  find a copy, the price would be quite  prohibitive. We are lucky, therefore,  to have a friend in ___contact_,  a =contact_ named _contact_  who has stolen a copy. If thou wouldst  meet %g2 at __contact_,  %g will give thee the book. We will  expect thee back in =queston_ days.  After that time, the book will  be of no use to us. May  ==daedra_ watch thy journey."
 ],
 "1004": [
-"Ah, there it is. I hoped you had an opportunity to peruse the page, good %pcf. You are not likely to find its like again very soon. Well, here is your _mitem_."
+"Ah, there it is. I hoped you had an  opportunity to peruse the page, good  %pcf. You are not likely  to find its like again very soon.  Well, here is your _mitem_."
 ],
 "1005": [
 "_contact_ is under some suspicion. They say %g consorts with witches.",
@@ -652,19 +612,19 @@
 "Oh, hello, %pcf. I was just reading _book_ -- the copy thou got for us."
 ],
 "1009": [
-"_book_ is lost, probably forever. Now is not the time to speak. Go, leave ==qgiver_. Thou art not wanted now."
+"_book_ is lost,  probably forever. Now is not  the time to speak. Go, leave  ==qgiver_. Thou art  not wanted now."
 ],
 "1010": [
 "%qdt: ==qgiver_ have sent me to ___contact_ to meet a =contact_ named _contact_ at __contact_ about a very rare book. I am to return the book to ==qgiver_ in =queston_ days or less."
 ],
 "1011": [
-"Awright, %pcf, here's the book. Just watch yourself. The guards are combing ___contact_ for that thing."
+"Awright, %pcf, here's the  book. Just watch yourself. The guards  are combing ___contact_  for that thing."
 ],
 "1012": [
 "Stop! Thief!"
 ],
 "1013": [
-"It suddenly occurs to you that the witches expected the book at this very moment."
+"It suddenly occurs to  you that the witches expected  the book at this very moment."
 ]
 }
 }

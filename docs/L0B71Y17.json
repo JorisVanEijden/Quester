@@ -1,0 +1,1037 @@
+{
+"quest info: ": {
+"name": "L0B71Y17",
+"questType": "Dark Brotherhood",
+"membership": "Member",
+"reputation": 70,
+"delivery": "InPerson",
+"childSafe": false,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_map: Parchment [Usable] [1016]": {
+"variable": "i_map",
+"nameRaw": "[0x000002E6]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1016,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_reward: [MagicItem]": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [3]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0xFF]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_db:  (faction The_Night_Mother)": {
+"variable": "n_db",
+"nameRaw": "[0x0000012a]",
+"unknown1": "[0x01]",
+"facePictureIndex": 0,
+"npcType": "Normal",
+"npcTypeRaw": "65535 [0xFFFF]",
+"faction": "The_Night_Mother",
+"factionRaw": "356 [0x0164]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+},
+" 2: n_mage:  (type? Spellcaster)": {
+"variable": "n_mage",
+"nameRaw": "[0x0000061f]",
+"unknown1": "[0xFF]",
+"facePictureIndex": 0,
+"npcType": "Spellcaster",
+"npcTypeRaw": "11 [0x000B]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"null1": 0
+}
+}
+,"locations: [4]": {
+" 0: l_house: OutOfTown House2": {
+"variable": "l_house",
+"nameRaw": "[0x00000d17]",
+"generalLocation": "OutOfTown",
+"locationType": 18,
+"LocationType": "House2",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+},
+" 1: l_tavern: OutOfTown Tavern": {
+"variable": "l_tavern",
+"nameRaw": "[0x00001b26]",
+"generalLocation": "OutOfTown",
+"locationType": 15,
+"LocationType": "Tavern",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+},
+" 2: l_house2: OutOfTown House1": {
+"variable": "l_house2",
+"nameRaw": "[0x00001a60]",
+"generalLocation": "OutOfTown",
+"locationType": 17,
+"LocationType": "House1",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+},
+" 3: l_dungeon: OutOfTown Crypt": {
+"variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
+"generalLocation": "OutOfTown",
+"locationType": 0,
+"LocationType": "Crypt",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+}
+}
+,"timers: [0]": {
+}
+,"mobs: [3]": {
+" 0: m_monster: 1 Lich": {
+"variable": "m_monster",
+"nameRaw": "[0X000036a4]",
+"type": "Lich",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_guardian: 1 Rogue": {
+"variable": "m_guardian",
+"nameRaw": "[0X000069f4]",
+"type": "Rogue",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+},
+" 2: m_wizard: 1 Mage": {
+"variable": "m_wizard",
+"nameRaw": "[0X00001c0c]",
+"type": "Mage",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2
+}
+}
+,"opCodes: [28]": {
+" 0:  => PlaceNpcAt (n_db, l_house)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_house": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 1:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 2:  >> IfNpcClicked (n_db): set s_00": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 3: s_00 => StartNpcEscort (n_db) [Msg 1011]": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1011,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 4: s_00 => HideNpc (n_db)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 5: s_00 => PlaceNpcAt (n_mage, l_tavern)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_mage": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_tavern": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 6: s_00 => CreateLogEntry (1050, 1)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_00": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"1: 1050": {
+"type": "Value",
+"value": "1050",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 7:  >> IfNpcClicked (n_mage): set s_01": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_mage": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 8: s_01 => Say (1012)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1012,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 9: s_01 => HideNpc (n_mage)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_mage": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"10: s_01 => PlaceMobAtLocation (m_monster, l_tavern)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_tavern": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"11:  >> IfMobHurtByPlayer (m_monster): set s_02": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"12: s_02 => DoneWithMob (m_monster, _)": {
+"opCode": 68,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"13: s_02 => Say (1013)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"14: s_02 => CreateLogEntry (1051, 2)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: 1051": {
+"type": "Value",
+"value": "1051",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"15: s_02 >> WhenAtLocation (l_house2): set s_03 [Msg 1014]": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"1: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_house2": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1014,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"16: s_03 => PlaceMobAtLocation (m_guardian, l_house2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_guardian": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_house2": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"17:  >> IfMobHurtByPlayer (m_guardian): set s_04 [Msg 1015]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_guardian": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1015,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"18: s_04 => PlaceItemOnMob (i_map, m_guardian)": {
+"opCode": 39,
+"argCount": 3,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_map": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+},
+"2: m_guardian": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"19:  >> IfItemPickedUp (i_map): set s_05": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_map": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"20: s_05 => AddLocationToMap (l_dungeon)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"1: l_dungeon": {
+"type": "Location",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"21: s_05 => PlaceMobAtLocation (m_wizard, l_dungeon)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_wizard": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"2: l_dungeon": {
+"type": "Location",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"22:  >> IfMobHurtByPlayer (m_wizard): set s_06 [Msg 1017]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_06": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_wizard": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1017,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"23:  >> IfMobsKilled (m_wizard, 1): set s_07 [Msg 1018]": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+},
+"1: m_wizard": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "0 [0x00000000]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": 1018,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"24: s_07 => StopNpcEscort (n_db)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"25: s_07 => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"26: s_07 => AdjustReputationWithNpc (n_db, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+},
+"1: n_db": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "0 [0x00000000]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+"27: s_07 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "0 [0x00000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+}
+}
+,"states: [8]": {
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00000030]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+}
+}
+,"text records: [19]": {
+"1000": [
+"%pcn, the time has come for you to  prove yourself to the highest powers of the  brotherhood.  I have a very special, important  job for you, and you alone.  I cannot tell you any  more, as I myself know little else.  Will you  accept this mysterious quest?"
+],
+"1001": [
+"You fear the unknown.  I do not see how you can still  be alive if this is so."
+],
+"1002": [
+"Go to _house_ in __house_.  You will meet a person there,  who will guide you on this task."
+],
+"1004": [
+"The Night Mother walks over to you,  with a look of sadness on her face.    \"Your job is done, %pcn.  As  a reward, take this.  I'm sure it will  be worth something.\"    She hands you a _reward_,  and turns to leave.  You watch her  take another vial from her pack,  and drink it.  Without a word, she  disappears.    Your quest is complete."
+],
+"1005": [
+"_mage_ is acting pretty jumpy lately.",
+"I wonder what's with _mage_?"
+],
+"1006": [
+"It's been pretty cold lately.",
+"The Dark Brotherhood is getting sloppy."
+],
+"1007": [
+"_mage_ is dead!",
+"Someone killed _mage_, but I don't know why."
+],
+"1008": [
+"I hope that secret mission  went well?"
+],
+"1009": [
+"The Night Mother is displeased  with you."
+],
+"1010": [
+"%qdt: I have a special job, that has much importance to the Dark Brotherhood. A special person will be waiting for me at _house_ in __house_, and will tell me more."
+],
+"1011": [
+"Welcome, %pcn.  I am The Night Mother,  leader of the Dark Brotherhood.  You have  been given the honor of meeting me.  This  is something that few achieve.    I need your help in killing a powerful mage,  that has been causing us some trouble  for quite a long time.  He is staying at  _tavern_ in __tavern_, but I know  not for how long.  I will accompany you on  the journey.  We will kill him together.  Now, we must be leaving.  There is  work to be done."
+],
+"1012": [
+"The Night Mother takes a small blade  from her side, and holds it in front of her.    \"So, _mage_, we meet again?\"    She stabs the blade outward, but the  mage disappears.  He reappears behind  her.    \"The Dark Brotherhood shall never kill me!\"    The mage suddenly waves his hands, and says  something in another language.  He disappears,  and a lich appears where he was standing!"
+],
+"1013": [
+"You hit the lich, and he stops moving!  The Night Mother holds up a small, empty  vial and smiles.    \"I froze him.  That lich won't be able to move  for a while.\"    She looks around, and the people seem more  frightened than angry at the commotion.  She  simply nods at them, as though everything is alright  again.    \"He's escaped me again, but next time he won't.  Probably he teleported back to his house.  We'll  try there, next.  It's _house2_ in __house2_.  Come, let's get moving.\""
+],
+"1050": [
+"%qdt: I met The Night Mother.  She has joined me on a mission to kill _mage_.  He is at _tavern_ in __tavern_."
+],
+"1051": [
+"%qdt: _mage_ managed to get away, alive. A lich attacked us, but The Night Mother took care of it.  She now thinks the mage is probably at his home, _house2_ in __house2_."
+],
+"1014": [
+"This is the place.  You can feel  a strange power in the house.  The Night Mother must feel it  also, for she is looking around  nervously."
+],
+"1015": [
+"\"It's a trap!\" The Night Mother  raises her sword at the rogue.    \"_mage_ told me to kill you  at all costs.  I can't wait to collect  my pay.\""
+],
+"1016": [
+"Kill the Night Mother and the %ra. You'll be payed very well, I promise you.  I'll be hiding out in a nearby dungeon, ___dungeon_. Once they're dead, come and see me.  _mage_"
+],
+"1017": [
+"You!  That rogue should have stopped you!  Very well, I'll end your life myself if I need to.  You'll never survive my magic!"
+]
+}
+}

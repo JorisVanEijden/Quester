@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,11 +31,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -49,6 +51,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -61,8 +64,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_imp: 1 Imp": {
-"variable": "m_imp",
+" 0: m_inn: 1 Imp": {
+"variable": "m_inn",
+"nameRaw": "[0X000002ee]",
 "type": "Imp",
 "count": 1,
 "null1": 0,
@@ -71,7 +75,7 @@
 }
 }
 ,"opCodes: [12]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -147,7 +151,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 3:  => PlaceMobAtLocation (m_imp, l_mondung)": {
+" 3:  => PlaceMobAtLocation (m_inn, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -158,7 +162,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_imp": {
+"1: m_inn": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -177,18 +181,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 4:  >> IfMobHurtByPlayer (m_imp): set s_00001a30 [Msg 1010]": {
+" 4:  >> IfMobHurtByPlayer (m_inn): set s_06 [Msg 1010]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_imp": {
+"1: m_inn": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -200,7 +204,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 2
 },
-" 5:  >> IfMobsKilled (m_imp, 1): set s_mondead": {
+" 5:  >> IfMobsKilled (m_inn, 1): set s_mondead": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -211,7 +215,7 @@
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_imp": {
+"1: m_inn": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -421,42 +425,49 @@
 ,"states: [7]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00001a30": {
-"variable": "s_00001a30",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00001a30]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

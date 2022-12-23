@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_artifact: Artifact Artifact Wabbajack [1013]": {
+" 0: i_artifact: Wabbajack [Artifact] [1013]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 6,
 "textRecordId1": 1013,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgfriend: Female (type Innkeeper) (face 1)": {
+" 0: n_qgfriend:  (type? Innkeeper)": {
 "variable": "n_qgfriend",
-"gender": "Female",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Innkeeper",
 "npcTypeRaw": "15 [0x000F]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -55,11 +58,12 @@
 "objPtr": 0,
 "unknown1": "65024 [0xFE00]"
 },
-" 1: l_contactdung: OutOfTown 499": {
+" 1: l_contactdung: OutOfTown Dungeon": {
 "variable": "l_contactdung",
+"nameRaw": "[0x00034417]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -74,6 +78,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_qgfriend'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -86,6 +91,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -100,6 +106,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Battlemage": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Battlemage",
 "count": 1,
 "null1": 0,
@@ -108,7 +115,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -468,7 +475,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"12: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"12: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -527,48 +534,55 @@
 ,"states: [7]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 }
 }
-,"text records: [16]": {
+,"text records: [14]": {
 "1000": [
 "Oh, my. I bet ye weren't expecting me!  My unbrothers and nonsisters are sometimes  a bit slow, so I step in for them. Too  bad for thou. You'll just have to cut  thy deal with me. Be quick about it!  Before the hour of the pale be passed,  have I plenty to do elsewhere. So!  Power the %ra craves to rub on  the body and ease the four hundred  sores of mortal life? Yes, Sheogorath  has power, power enough to pull the  branches across the eyes of the moon  and rain blood over Tamriel. For this  power, wilt thou send someone an  invitation to tea for me?"
 ],

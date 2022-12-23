@@ -1,0 +1,559 @@
+{
+"quest info: ": {
+"name": "D0B40Y01",
+"questType": "Akatosh",
+"membership": "Member",
+"reputation": 40,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [0]": {
+}
+,"npcs: [2]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_local:  (type? Resident2)": {
+"variable": "n_local",
+"nameRaw": "[0x00000cf2]",
+"unknown1": "[0x00]",
+"facePictureIndex": 93,
+"npcType": "Resident2",
+"npcTypeRaw": "18 [0x0012]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_dungeon: OutOfTown DragonsDen": {
+"variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
+"generalLocation": "OutOfTown",
+"locationType": 14,
+"LocationType": "DragonsDen",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "0 [0x0000]"
+}
+}
+,"timers: [1]": {
+" 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
+"variable": "t_2dung",
+"nameRaw": "[0x00000957]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [1]": {
+" 0: m_monster: 1 Dragonling_Alternate": {
+"variable": "m_monster",
+"nameRaw": "[0X000036a4]",
+"type": "Dragonling_Alternate",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+}
+}
+,"opCodes: [13]": {
+" 0:  => StartTimer (t_2dung); When it expires: set s_2dung": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_2dung": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 1:  => AddLocationToMap (l_dungeon)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_dungeon": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 2:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 3:  => PlaceMobAtLocation (m_monster, l_dungeon)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 4:  >> IfMobsKilled (m_monster, 1): set s_01 [Msg 1011]": {
+"opCode": 2,
+"argCount": 3,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_monster": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1011,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 5:  >> IfNpcClicked (n_qgiver): set s_02": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 6:  >> If (s_02 and not s_01): set s_clearclick": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_01": {
+"type": "State",
+"value": "1",
+"not": "True",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "19398656 [0x01280000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 7: s_clearclick => Unset (s_02, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "19398656 [0x01280000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 8: s_02 => QuestSuccess ()": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "19398656 [0x01280000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+" 9: s_02 => AdjustReputationWithNpc (n_local, 6)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_local": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 6": {
+"type": "Value",
+"value": "6",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"10: s_02 => AdjustReputationWithNpc (n_qgiver, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"11: s_2dung => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_2dung": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+},
+"12: s_02 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 54
+}
+}
+,"states: [4]": {
+" 0: s_2dung": {
+"variable": "s_2dung",
+"nameRaw": "[0x00000957]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0003701a]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006623]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+}
+}
+,"text records: [11]": {
+"1000": [
+"Look, I need your help. Something big  is happening, involving a dragon.",
+"You loyalty to the temple is quite  high, %pct.  But will you slay  a dragon for us?"
+],
+"1001": [
+"Glad I didn't tell you  anything else, then."
+],
+"1002": [
+"Although Akatosh is a dragon  god, he has shown us that  an evil dragon has just been  born in ___dungeon_.  This dragonling, if it grows  to adulthood, will endanger  the temple, so the prophets  say.  We need you to kill it,  and in =2dung_ days.  Go now!"
+],
+"1004": [
+"You are successful?  Thank Akatosh! Unfortunatly,  I have been instructed that  I am not to pay you, for  you have already been payed  by your position you will  get in heaven."
+],
+"1005": [
+"Nothing much of any interest going on.",
+"My uncle has stomach rot. Sad.",
+"I got a boil the other day ... but it healed.",
+"I just had a three hour conversation about the weather.",
+"The weather is pretty usual for this time of year.",
+"It seems a trifle coolish in %cn for this time of year.",
+"It sure is a lot warmer today than this time last year.",
+"My great aunt is going to a specialist across the Bay.",
+"It's always funny what time it gets dark around here.",
+"We should erect a war statue around here.",
+"The kids these days with their magic. %oth, I don't know.",
+"I had the weirdest dream last night.",
+"I heard a great joke. %jok",
+"%jok Actually, that's a joke.",
+"%jok Can you explain that to me?",
+"The legal system in %reg has it good points and bad ones."
+],
+"1006": [
+"The temples all seem very worried, especially the prophets."
+],
+"1007": [
+"You! You killed the dragon! Hail the dragon slayer!",
+"Wow! You're the dragon slayer!",
+"Say, I know you! Everyone in town is mentioning you!"
+],
+"1008": [
+"You destroyed a great evil. How can I assist you?"
+],
+"1009": [
+"I worry that the temple will pay for your mistakes."
+],
+"1010": [
+"%qdt: _qgiver_ of ==qgiver_ in ___qgiver_ sent me to kill a dragon in ___dungeon_. I have =2dung_ days to slay it, or the temple will be hurt greatly."
+],
+"1011": [
+"The dragonling dies, and  you hear a scream. A daedra  spirit floats from the dead  body. It was a demon!"
+]
+}
+}

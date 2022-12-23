@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_clothes: Artifact WomensClothing Plain_robes": {
+" 0: i_clothes: Plain_robes [WomensClothing]": {
 "variable": "i_clothes",
-"rewardType": "Artifact",
+"nameRaw": "[0x000033AD]",
+"rewardType": "Item1",
 "category": "WomensClothing",
 "itemId": 18,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,11 +40,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_witch: Female (faction The_Prostitutes) (face 1)": {
+" 1: n_witch:  (faction The_Prostitutes)": {
 "variable": "n_witch",
-"gender": "Female",
+"nameRaw": "[0x00000db6]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Prostitutes",
 "factionRaw": "512 [0x0200]",
@@ -51,9 +54,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_daedra: Female (face 105)": {
+" 2: n_daedra:  (type? Daedra)": {
 "variable": "n_daedra",
-"gender": "Female",
+"nameRaw": "[0x0000188d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 105,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -68,6 +72,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: OutOfTown Prison": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 3,
 "LocationType": "Prison",
@@ -85,6 +90,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -99,6 +105,7 @@
 ,"mobs: [1]": {
 " 0: m_guard: 1 Warrior": {
 "variable": "m_guard",
+"nameRaw": "[0X00000ce4]",
 "type": "Warrior",
 "count": 1,
 "null1": 0,
@@ -144,7 +151,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 1:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -711,36 +718,42 @@
 ,"states: [6]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

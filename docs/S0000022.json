@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_spider: Artifact CreatureIngredients1 Lich_dust": {
+" 0: i_spider: Lich_dust [CreatureIngredients1]": {
 "variable": "i_spider",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B74]",
+"rewardType": "Item1",
 "category": "CreatureIngredients1",
 "itemId": 9,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_00001a11: Female (type Permanent) (faction Medora)": {
-"variable": "n_00001a11",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction Medora)": {
+"variable": "n_00",
+"nameRaw": "[0x00001a11]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -42,8 +44,9 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_40000000: Fixed 30.00:00:00": {
-"variable": "t_40000000",
+" 0: t_0: Fixed 30.00:00:00": {
+"variable": "t_0",
+"nameRaw": "[0x40000000]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "30.00:00:00",
@@ -58,7 +61,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [17]": {
-" 0:  >> StartTimer (t_40000000); When it expires: set s_40000000": {
+" 0:  => StartTimer (t_0); When it expires: set s_0": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -69,7 +72,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000000": {
+"1: t_0": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -111,7 +114,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_00001a11): set s_1": {
+" 2:  >> IfNpcClicked (n_00): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -122,7 +125,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00001a11": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -358,11 +361,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_4 >> WhenPlayerHasItems (i_spider): set s_5": {
+"10: gs_LysandusSatisfied >> WhenPlayerHasItems (i_spider): set s_5": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: gs_LysandusSatisfied": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -402,7 +405,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_5 => StartQuest (15, 15)": {
+"11: s_5 >> StartQuest (S0000015)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
@@ -494,7 +497,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (s_4 and not s_5): set s_6": {
+"15:  >> If (gs_LysandusSatisfied and not s_5): set s_6": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -505,7 +508,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: gs_LysandusSatisfied": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -538,7 +541,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_6 => Unset (s_4, s_6)": {
+"16: s_6 => Unset (gs_LysandusSatisfied, s_6)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -549,7 +552,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: gs_LysandusSatisfied": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -584,50 +587,57 @@
 }
 }
 ,"states: [7]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: S_40000004": {
-"variable": "s_40000004",
+" 4: gs_LysandusSatisfied": {
+"variable": "gs_LysandusSatisfied",
+"nameRaw": "[0x40000004]",
 "isGlobal": true,
 "globalIndex": 43,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 }
 }
-,"text records: [4]": {
+,"text records: [3]": {
 "1001": [
 "I thought I told you it would take a month. The powder is not ready yet. Come back later."
 ],
@@ -635,9 +645,6 @@
 "The powder is ready. All you need to do is spinkle it on his true corpse. I must warn you. It will not put his shade to rest, but will soothe it sufficiently to allow you a chance to speak with him. The final exorcism is for Lysandus to choose.   I do not know where he was buried. I do know that it is not on the field of Cryngaine where they erected that monument to him. If you do speak to him...could you tell him I still love him. Death will not be a barrier to us for long."
 ],
 "1010": [
-"%qdt: Medora has told me, it would take her a month to prepare the Dust. When this time has passed, I should visit her again at her home in the Direnni Tower."
-],
-"1011": [
 "%qdt: Medora has given me a powder that will soothe the spirit of Lysandus. However, it will not lay his shade to rest, but only calm it. Now I need only to find his tomb and use it."
 ]
 }

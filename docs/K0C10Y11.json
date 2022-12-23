@@ -1,0 +1,1160 @@
+{
+"quest info: ": {
+"name": "K0C10Y11",
+"questType": "Merchant",
+"membership": "NonMember",
+"reputation": 10,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [1]": {
+" 0: i_gold: Random gold": {
+"variable": "i_gold",
+"nameRaw": "[0x00000630]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [4]": {
+" 0: n_betrothed:  (type? Unknown_7) (faction Clavicus_Vile)": {
+"variable": "n_betrothed",
+"nameRaw": "[0x0000cd1e]",
+"unknown1": "[0xFF]",
+"facePictureIndex": 1,
+"npcType": "Unknown_7",
+"npcTypeRaw": "65529 [0xFFF9]",
+"faction": "Clavicus_Vile",
+"factionRaw": "1 [0x0001]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0xFF]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+},
+" 2: n_priest:  (type? Daedra) (faction Sheogorath)": {
+"variable": "n_priest",
+"nameRaw": "[0x00001b56]",
+"unknown1": "[0x00]",
+"facePictureIndex": 201,
+"npcType": "Daedra",
+"npcTypeRaw": "65534 [0xFFFE]",
+"faction": "Sheogorath",
+"factionRaw": "9 [0x0009]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"null1": 0
+},
+" 3: n_ruler:  (type? Daedra) (faction Malacath)": {
+"variable": "n_ruler",
+"nameRaw": "[0x00000db4]",
+"unknown1": "[0x01]",
+"facePictureIndex": 0,
+"npcType": "Daedra",
+"npcTypeRaw": "65534 [0xFFFE]",
+"faction": "Malacath",
+"factionRaw": "7 [0x0007]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"null1": 0
+}
+}
+,"locations: [2]": {
+" 0: l_betrothedhome: OutOfTown House2": {
+"variable": "l_betrothedhome",
+"nameRaw": "[0x000cd81b]",
+"generalLocation": "OutOfTown",
+"locationType": 18,
+"LocationType": "House2",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "12543 [0x30FF]"
+},
+" 1: l_temple: OutOfTown Temple": {
+"variable": "l_temple",
+"nameRaw": "[0x00001b35]",
+"generalLocation": "OutOfTown",
+"locationType": 14,
+"LocationType": "Temple",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "12543 [0x30FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_traveltime: 1.5 times travel time from here to 'l_betrothedhome' and then 'l_temple'": {
+"variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [2]": {
+" 0: m_00: 3 DaedraLord": {
+"variable": "m_00",
+"nameRaw": "[0X00000030]",
+"type": "DaedraLord",
+"count": 3,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_01: 2 DaedraLord": {
+"variable": "m_01",
+"nameRaw": "[0X00000030]",
+"type": "DaedraLord",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 1
+}
+}
+,"opCodes: [31]": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_traveltime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 1:  => PlaceNpcAt (n_priest, l_temple)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_priest": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 2:  => PlaceNpcAt (n_betrothed, l_betrothedhome)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_betrothedhome": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 3:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 4:  => Unknown17_LocationValueValue (l_betrothedhome, 100, 27000)": {
+"opCode": 17,
+"argCount": 4,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_betrothedhome": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 100": {
+"type": "Value",
+"value": "100",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 27000": {
+"type": "Value",
+"value": "27000",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 5:  => HideNpc (n_qgiver)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 6:  => StartNpcEscort (n_qgiver)": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 7:  >> IfNpcClicked (n_betrothed): set s_01 [Msg 1011]": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1011,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 8: s_01 => StartNpcEscort (n_betrothed)": {
+"opCode": 55,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+" 9: s_01 => HideNpc (n_betrothed)": {
+"opCode": 46,
+"argCount": 2,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"10:  >> WhenAtLocation (l_betrothedhome): set s_02 [Msg 1014]": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_betrothedhome": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1014,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"11: s_02 => CreateFoe(m_00, 1, 15%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"12:  >> IfMobHurtByPlayer (m_00): set s_dummy [Msg 1013]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_dummy": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"13:  >> WhenAtLocation (l_temple): set s_03 [Msg 1015]": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": 1015,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"14: s_03 => CreateFoe(m_01, 2, 50%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_03": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 50": {
+"type": "Value",
+"value": "50",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"15:  >> IfMobHurtByPlayer (m_01): set s_dummy [Msg 1012]": {
+"opCode": 21,
+"argCount": 2,
+"arguments:": {
+"0: s_dummy": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1012,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"16:  >> IfNpcClicked (n_priest): set s_05": {
+"opCode": 28,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_priest": {
+"type": "Npc",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"17:  >> If (not s_01 and s_05): set s_clearclick": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: not s_01": {
+"type": "State",
+"value": "1",
+"not": "True",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"18: s_clearclick => Unset (s_05, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"19: s_05 => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"20: s_05 => AdjustReputationWithNpc (n_ruler, -20)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_ruler": {
+"type": "Npc",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -20": {
+"type": "Value",
+"value": "-20",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"21: s_05 => StopNpcEscort (n_qgiver)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"22: s_05 => StopNpcEscort (n_betrothed)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"23: s_05 => PlaceNpcAt (n_betrothed, l_temple)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"24: s_05 => PlaceNpcAt (n_qgiver, l_temple)": {
+"opCode": 30,
+"argCount": 3,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"25:  >> If (s_05 and not s_03): set s_questdone": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14 [0x0000000E]"
+},
+"2: not s_03": {
+"type": "State",
+"value": "3",
+"not": "True",
+"index": "3",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "42991616 [0x02900000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"26: s_traveltime => Say (1020)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1020,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"27: s_traveltime => StopNpcEscort (n_qgiver)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"28: s_traveltime => StopNpcEscort (n_betrothed)": {
+"opCode": 56,
+"argCount": 2,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_betrothed": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"29: s_traveltime => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+},
+"30: s_questdone => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 53
+}
+}
+,"states: [9]": {
+" 0: s_traveltime": {
+"variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0006a91e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000339b]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000339c]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_dummy": {
+"variable": "s_dummy",
+"nameRaw": "[0x00000cef]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x00033496]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_delay": {
+"variable": "s_delay",
+"nameRaw": "[0x00000c53]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_questdone": {
+"variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+}
+}
+,"text records: [16]": {
+"1000": [
+"Quiet! They will kill you to if they  see us speaking with eachother!  I have run into a lot of  trouble. I now get no rest, for I  am hunted by them day and night!  They will drive me mad! You must protect  me, or they will surely find me and kill  me. I will give you _gold_ gold pieces,  if you protect me."
+],
+"1001": [
+"You may have been wise in saying  that. Flee quickly, though, for  they are probably on their way!"
+],
+"1002": [
+"We must hurry then. Take  me to _betrothedhome_, in  __betrothedhome_. I will  pay you there."
+],
+"1004": [
+"%pcf, you are truly great.  the Daedra have hunted us for  desecrating one of their monuments,  but the temple can help us to stay  alive. Here, take your _gold_ gold,  for you definately deserve it."
+],
+"1005": [
+"The witches claim that the  Daedra have become angered.  Those luny women are never right!"
+],
+"1006": [
+"_betrothed_ was found mutilated  on the streets of a village. What  could have caused that?"
+],
+"1007": [
+"_qgiver_ and _betrothed_ are  both acting better now. Hmmm..."
+],
+"1008": [
+"_betrothed_'s sanity is returning,  and the temple has kept the Daedra from us.  Thank you!"
+],
+"1009": [
+"_betrothed_ died, and it was your  fault! I will die too! The daedra  will find me! Damn you! Damn you to hell!!!"
+],
+"1010": [
+"%qdt: _qgiver_ of ___qgiver_ asked me to escort %g2 to __betrothedhome_ to find _betrothed_. _qgiver_ then must reach _temple_ in __temple_.  I don't know what is happening, but it worries me."
+],
+"1011": [
+"They found me! They almost  killed me! The daedra,  their minions, they, they,  No! No! We are not safe here,  not safe. No. We must go to  _temple_, now. Go now.  Going to __temple_.  Must go. Go now."
+],
+"1012": [
+"You! You are helping those  who angered the Daedra!  You shall die if you do not  hand them over!"
+],
+"1013": [
+"What? You defy me?  Foolish mortal! You shall pay!"
+],
+"1014": [
+"Blood stains the walls,  and growls come from  another room.  What happened  here? What's going on?"
+],
+"1015": [
+"You enter the temple  and _qgiver_ rejoices.  \"Quickly, get _betrothed_  to _priest_! He may help  stop the madness caused  by the Daedra.\""
+],
+"1020": [
+"_qgiver_ screams, and watches  as _betrothed_ is torn apart.  He stands and runs, and you  realize that you have failed him."
+]
+}
+}

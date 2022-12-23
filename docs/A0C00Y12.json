@@ -13,9 +13,10 @@
 "hasDebugInfo": true
 }
 ,"items: [2]": {
-" 0: i_book: Artifact Book Book2 [1014] [1015]": {
+" 0: i_book: Book2 [Book] [1014] [1015]": {
 "variable": "i_book",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000615]",
+"rewardType": "Item1",
 "category": "Book",
 "itemId": 2,
 "textRecordId1": 1014,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_informant: Female (type Cleric) (face 241)": {
+" 0: n_informant:  (type? Cleric)": {
 "variable": "n_informant",
-"gender": "Female",
+"nameRaw": "[0x0000d4bc]",
+"unknown1": "[0x01]",
 "facePictureIndex": 241,
 "npcType": "Cleric",
 "npcTypeRaw": "14 [0x000E]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_giver: Male (type QuestGiver)": {
+" 1: n_giver:  (type? QuestGiver)": {
 "variable": "n_giver",
-"gender": "Male",
+"nameRaw": "[0x00000ccc]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -61,11 +65,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_thief: Female (faction The_Thieves_Guild) (face 97)": {
+" 2: n_thief:  (faction The_Thieves_Guild)": {
 "variable": "n_thief",
-"gender": "Female",
+"nameRaw": "[0x00000d54]",
+"unknown1": "[0x01]",
 "facePictureIndex": 97,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Thieves_Guild",
 "factionRaw": "42 [0x002A]",
@@ -76,8 +81,9 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_imp: InCurrentTown Tavern": {
-"variable": "l_imp",
+" 0: l_inn: InCurrentTown Tavern": {
+"variable": "l_inn",
+"nameRaw": "[0x000002ee]",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -93,6 +99,7 @@
 },
 " 1: l_store: InCurrentTown GeneralStore": {
 "variable": "l_store",
+"nameRaw": "[0x00000dd5]",
 "generalLocation": "InCurrentTown",
 "locationType": 9,
 "LocationType": "GeneralStore",
@@ -108,6 +115,7 @@
 },
 " 2: l_house: InCurrentTown House2": {
 "variable": "l_house",
+"nameRaw": "[0x00000d17]",
 "generalLocation": "InCurrentTown",
 "locationType": 18,
 "LocationType": "House2",
@@ -123,6 +131,7 @@
 },
 " 3: l_informant1: InCurrentTown Tavern": {
 "variable": "l_informant1",
+"nameRaw": "[0x0001a9a9]",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -138,8 +147,9 @@
 }
 }
 ,"timers: [1]": {
-" 0: t_40000001: Fixed 10.00:00:00": {
-"variable": "t_40000001",
+" 0: t_1: Fixed 10.00:00:00": {
+"variable": "t_1",
+"nameRaw": "[0x40000001]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "10.00:00:00",
@@ -154,6 +164,7 @@
 ,"mobs: [1]": {
 " 0: m_thiefhome1: 1 Thief": {
 "variable": "m_thiefhome1",
+"nameRaw": "[0X0001b727]",
 "type": "Thief",
 "count": 1,
 "null1": 0,
@@ -199,7 +210,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => RemoveTopics (l_imp)": {
+" 1:  => RemoveTopics (l_inn)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -210,7 +221,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_imp": {
+"1: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -273,7 +284,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> StartTimer (t_40000001); When it expires: set s_40000001": {
+" 3:  => StartTimer (t_1); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -284,7 +295,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000001": {
+"1: t_1": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -492,7 +503,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 >> WhenAtLocation (l_imp): set s_10": {
+"11: s_3 >> WhenAtLocation (l_inn): set s_10": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -510,7 +521,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_imp": {
+"2: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -522,7 +533,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => PlaceNpcAt (n_thief, l_imp)": {
+"12: s_3 => PlaceNpcAt (n_thief, l_inn)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -540,7 +551,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_imp": {
+"2: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -930,7 +941,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_10 => PlaceMobAtLocation (m_thiefhome1, l_imp)": {
+"27: s_10 => PlaceMobAtLocation (m_thiefhome1, l_inn)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -948,7 +959,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_imp": {
+"2: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -1015,74 +1026,86 @@
 }
 }
 ,"states: [12]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_40000009": {
-"variable": "s_40000009",
+" 9: s_9": {
+"variable": "s_9",
+"nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11

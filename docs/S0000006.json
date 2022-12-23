@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_41000000: Artifact MensClothing Formal_cloak [1008] [1009]": {
-"variable": "i_41000000",
-"rewardType": "Artifact",
+" 0: i_0: Formal_cloak [MensClothing] [1008] [1009]": {
+"variable": "i_0",
+"nameRaw": "[0x41000000]",
+"rewardType": "Item1",
 "category": "MensClothing",
 "itemId": 14,
 "textRecordId1": 1008,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_jewelry: Artifact Jewellery Jewellery": {
+" 1: i_jewelry: [Jewellery]": {
 "variable": "i_jewelry",
-"rewardType": "Artifact",
+"nameRaw": "[0x000034C5]",
+"rewardType": "Item1",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -33,10 +35,11 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_41000004: Artifact QuestItems Dead_body": {
-"variable": "i_41000004",
-"rewardType": "Artifact",
-"category": "QuestItems",
+" 2: i_4: Dead_body [QuestItem]": {
+"variable": "i_4",
+"nameRaw": "[0x41000004]",
+"rewardType": "Item1",
+"category": "QuestItem",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_000034a9: Female (type Permanent) (faction Princess_Elysana)": {
-"variable": "n_000034a9",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction Princess_Elysana)": {
+"variable": "n_00",
+"nameRaw": "[0x000034a9]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -58,11 +62,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_00019714: Female (faction Lord_Castellian) (face 1)": {
-"variable": "n_00019714",
-"gender": "Female",
+" 1: n_01:  (faction Lord_Castellian)": {
+"variable": "n_01",
+"nameRaw": "[0x00019714]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Lord_Castellian",
 "factionRaw": "395 [0x018B]",
@@ -75,6 +80,7 @@
 ,"locations: [1]": {
 " 0: l_casfort: OutOfTown House1": {
 "variable": "l_casfort",
+"nameRaw": "[0x00003254]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -90,8 +96,9 @@
 }
 }
 ,"timers: [3]": {
-" 0: t_40000004: Random between 04:00:00 and 01:40:00": {
-"variable": "t_40000004",
+" 0: t_4: Random between 04:00:00 and 01:40:00": {
+"variable": "t_4",
+"nameRaw": "[0x40000004]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "04:00:00",
@@ -104,6 +111,7 @@
 },
 " 1: t_queston: 1.5 times travel time between here and 'l_casfort'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -114,8 +122,9 @@
 "started": 0,
 "index": 1
 },
-" 2: t_40000010: Fixed 1.00:00:00": {
-"variable": "t_40000010",
+" 2: t_16: Fixed 1.00:00:00": {
+"variable": "t_16",
+"nameRaw": "[0x40000010]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
@@ -128,48 +137,54 @@
 }
 }
 ,"mobs: [6]": {
-" 0: m_44000000: 1 DaedraSeducer": {
-"variable": "m_44000000",
+" 0: m_0: 1 DaedraSeducer": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "DaedraSeducer",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_44000001: 2 Knight": {
-"variable": "m_44000001",
+" 1: m_1: 2 Knight": {
+"variable": "m_1",
+"nameRaw": "[0X44000001]",
 "type": "Knight",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_44000002: 2 Spellsword": {
-"variable": "m_44000002",
+" 2: m_2: 2 Spellsword": {
+"variable": "m_2",
+"nameRaw": "[0X44000002]",
 "type": "Spellsword",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 2
 },
-" 3: m_44000003: 1 DaedraSeducer": {
-"variable": "m_44000003",
+" 3: m_3: 1 DaedraSeducer": {
+"variable": "m_3",
+"nameRaw": "[0X44000003]",
 "type": "DaedraSeducer",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 3
 },
-" 4: m_44000004: 1 Daedroth": {
-"variable": "m_44000004",
+" 4: m_4: 1 Daedroth": {
+"variable": "m_4",
+"nameRaw": "[0X44000004]",
 "type": "Daedroth",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 4
 },
-" 5: m_44000005: 1 Daedroth": {
-"variable": "m_44000005",
+" 5: m_5: 1 Daedroth": {
+"variable": "m_5",
+"nameRaw": "[0X44000005]",
 "type": "Daedroth",
 "count": 1,
 "null1": 0,
@@ -303,7 +318,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_pcgetsgold => CycleNextState (s_7)": {
+" 3: s_pcgetsgold => Set (gs_ElysannaSatisfied)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -314,7 +329,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: gs_ElysannaSatisfied": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -347,7 +362,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_pcgetsgold => AdjustReputationWithNpc (n_000034a9, 10)": {
+" 4: s_pcgetsgold => AdjustReputationWithNpc (n_00, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -358,7 +373,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000034a9": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -377,7 +392,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_pcgetsgold => UnsetQuestor (n_000034a9)": {
+" 5: s_pcgetsgold => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -388,7 +403,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000034a9": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -400,7 +415,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfNpcClicked (n_000034a9): set s_1": {
+" 6:  >> IfNpcClicked (n_00): set s_1": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
@@ -411,7 +426,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000034a9": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -423,7 +438,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_41000000, n_00019714): set s_3 [Msg 1022]": {
+" 7:  >> IfGivingItemToNpc (i_0, n_01): set s_3 [Msg 1022]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -434,14 +449,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000000": {
+"1: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00019714": {
+"2: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -483,7 +498,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 >> StartTimer (t_40000004); When it expires: set s_40000004": {
+" 9: s_3 => StartTimer (t_4); When it expires: set s_4": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -494,7 +509,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000004": {
+"1: t_4": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -506,7 +521,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => PlaceItemAt (i_41000004, l_casfort)": {
+"10: s_3 => PlaceItemAt (i_4, l_casfort)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -517,7 +532,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000004": {
+"1: i_4": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -536,7 +551,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => HideNpc (n_00019714)": {
+"11: s_3 => HideNpc (n_01)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
@@ -547,7 +562,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00019714": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -559,7 +574,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 => CreateFoe(m_44000002, 53, 15%, 20)": {
+"12: s_4 => CreateFoe(m_2, 53, 15%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -570,7 +585,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000002": {
+"1: m_2": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -647,7 +662,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_queston => UnsetQuestor (n_000034a9)": {
+"14: s_queston => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
@@ -658,7 +673,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000034a9": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -686,11 +701,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_7 => EndQuest ()": {
+"16: gs_ElysannaSatisfied => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: gs_ElysannaSatisfied": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -702,7 +717,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_yes >> WhenItemIsUsed (i_41000000): set s_2": {
+"17: s_yes >> WhenItemIsUsed (i_0): set s_2": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -720,7 +735,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_41000000": {
+"2: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -732,7 +747,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_yes >> StartTimer (t_queston); When it expires: set s_queston": {
+"18: s_yes => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -785,7 +800,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_yes => PlaceItemOnCharacter (i_41000000)": {
+"20: s_yes => PlaceItemOnCharacter (i_0)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -796,7 +811,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000000": {
+"1: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -831,7 +846,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_yes => SetQuestor (n_000034a9)": {
+"22: s_yes => SetQuestor (n_00)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
@@ -842,7 +857,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_000034a9": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -854,7 +869,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_yes => PlaceNpcAt (n_00019714, l_casfort)": {
+"23: s_yes => PlaceNpcAt (n_01, l_casfort)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -865,7 +880,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00019714": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -946,7 +961,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> IfMobHurtByPlayer (m_44000003): set s_10 [Msg 1020]": {
+"27:  >> IfMobHurtByPlayer (m_3): set s_10 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -957,7 +972,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000003": {
+"1: m_3": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -969,7 +984,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> IfMobHurtByPlayer (m_44000004): set s_10": {
+"28:  >> IfMobHurtByPlayer (m_4): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -980,7 +995,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000004": {
+"1: m_4": {
 "type": "Mob",
 "value": "4",
 "not": "False",
@@ -1096,7 +1111,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_12 => CreateFoe(m_44000001, 2, 50%, 4)": {
+"32: s_12 => CreateFoe(m_1, 2, 50%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1107,7 +1122,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000001": {
+"1: m_1": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1140,7 +1155,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> IfMobHurtByPlayer (m_44000000): set s_13": {
+"33:  >> IfMobHurtByPlayer (m_0): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1151,7 +1166,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1163,7 +1178,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> IfMobHurtByPlayer (m_44000005): set s_13": {
+"34:  >> IfMobHurtByPlayer (m_5): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1174,7 +1189,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000005": {
+"1: m_5": {
 "type": "Mob",
 "value": "5",
 "not": "False",
@@ -1202,7 +1217,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_13 => DoneWithMob (m_44000000, _)": {
+"36: s_13 => DoneWithMob (m_0, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -1213,7 +1228,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1232,7 +1247,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> IfMobHurtByPlayer (m_44000001): set s_hitguard [Msg 1021]": {
+"37:  >> IfMobHurtByPlayer (m_1): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1243,7 +1258,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000001": {
+"1: m_1": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1255,7 +1270,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38:  >> IfMobHurtByPlayer (m_44000002): set s_hitguard [Msg 1021]": {
+"38:  >> IfMobHurtByPlayer (m_2): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1266,7 +1281,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000002": {
+"1: m_2": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -1278,7 +1293,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39:  >> IfMobsKilled (m_44000003, 3): set s_15": {
+"39:  >> IfMobsKilled (m_3, 3): set s_15": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -1289,7 +1304,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000003": {
+"1: m_3": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -1308,7 +1323,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40:  >> If (not s_17 and s_2): set s_18": {
+"40:  >> If (not gs_UnknownHelseth and s_2): set s_18": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1319,7 +1334,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_17": {
+"1: not gs_UnknownHelseth": {
 "type": "State",
 "value": "17",
 "not": "True",
@@ -1352,7 +1367,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_18 => CreateFoe(m_44000003, 1, 20%, 3)": {
+"41: s_18 => CreateFoe(m_3, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1363,7 +1378,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000003": {
+"1: m_3": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -1396,7 +1411,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (s_17 and s_2): set s_19": {
+"42:  >> If (gs_UnknownHelseth and s_2): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1407,7 +1422,7 @@
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_17": {
+"1: gs_UnknownHelseth": {
 "type": "State",
 "value": "17",
 "not": "False",
@@ -1440,7 +1455,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_19 => CreateFoe(m_44000004, 1, 20%, 3)": {
+"43: s_19 => CreateFoe(m_4, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1451,7 +1466,7 @@
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000004": {
+"1: m_4": {
 "type": "Mob",
 "value": "4",
 "not": "False",
@@ -1484,7 +1499,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"44:  >> If (not s_17 and s_12): set s_20": {
+"44:  >> If (not gs_UnknownHelseth and s_12): set s_20": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1495,7 +1510,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_17": {
+"1: not gs_UnknownHelseth": {
 "type": "State",
 "value": "17",
 "not": "True",
@@ -1528,7 +1543,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_20 => CreateFoe(m_44000000, 1, 50%, 3)": {
+"45: s_20 => CreateFoe(m_0, 1, 50%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1539,7 +1554,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1572,7 +1587,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"46:  >> If (s_17 and s_12): set s_21": {
+"46:  >> If (gs_UnknownHelseth and s_12): set s_21": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1583,7 +1598,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_17": {
+"1: gs_UnknownHelseth": {
 "type": "State",
 "value": "17",
 "not": "False",
@@ -1616,7 +1631,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"47: s_21 => CreateFoe(m_44000005, 1, 100%, 32768)": {
+"47: s_21 => CreateFoe(m_5, 1, 100%, 32768)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1627,7 +1642,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000005": {
+"1: m_5": {
 "type": "Mob",
 "value": "5",
 "not": "False",
@@ -1664,132 +1679,154 @@
 ,"states: [22]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: S_40000006": {
-"variable": "s_40000006",
+" 6: gs_UnknownElysanna": {
+"variable": "gs_UnknownElysanna",
+"nameRaw": "[0x40000006]",
 "isGlobal": true,
 "globalIndex": 21,
 "index": 6
 },
-" 7: S_40000007": {
-"variable": "s_40000007",
+" 7: gs_ElysannaSatisfied": {
+"variable": "gs_ElysannaSatisfied",
+"nameRaw": "[0x40000007]",
 "isGlobal": true,
 "globalIndex": 25,
 "index": 7
 },
 " 8: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_4000000d": {
-"variable": "s_4000000d",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x4000000d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
 "14: s_hitguard": {
 "variable": "s_hitguard",
+"nameRaw": "[0x000069a4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14
 },
-"15: s_4000000f": {
-"variable": "s_4000000f",
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x4000000f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15
 },
-"16: s_40000010": {
-"variable": "s_40000010",
+"16: s_16": {
+"variable": "s_16",
+"nameRaw": "[0x40000010]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 16
 },
-"17: S_40000011": {
-"variable": "s_40000011",
+"17: gs_UnknownHelseth": {
+"variable": "gs_UnknownHelseth",
+"nameRaw": "[0x40000011]",
 "isGlobal": true,
 "globalIndex": 42,
 "index": 17
 },
-"18: s_40000012": {
-"variable": "s_40000012",
+"18: s_18": {
+"variable": "s_18",
+"nameRaw": "[0x40000012]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 18
 },
-"19: s_40000013": {
-"variable": "s_40000013",
+"19: s_19": {
+"variable": "s_19",
+"nameRaw": "[0x40000013]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 19
 },
-"20: s_40000014": {
-"variable": "s_40000014",
+"20: s_20": {
+"variable": "s_20",
+"nameRaw": "[0x40000014]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 20
 },
-"21: s_40000015": {
-"variable": "s_40000015",
+"21: s_21": {
+"variable": "s_21",
+"nameRaw": "[0x40000015]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 21

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_scarab: Artifact ReligiousItem Scarab [1012]": {
+" 0: i_scarab: Scarab [ReligiousItem] [1012]": {
 "variable": "i_scarab",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001A84]",
+"rewardType": "Item1",
 "category": "ReligiousItem",
 "itemId": 9,
 "textRecordId1": 0,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_magicitem: Artifact MagicItem MagicItem": {
+" 1: i_magicitem: [MagicItem]": {
 "variable": "i_magicitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x0000D0DF]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_0001ab9d: Female (type Permanent) (faction King_of_Worms)": {
-"variable": "n_0001ab9d",
-"gender": "Female",
+" 0: n_00:  (type? Permanent) (faction King_of_Worms)": {
+"variable": "n_00",
+"nameRaw": "[0x0001ab9d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Permanent",
 "npcTypeRaw": "65528 [0xFFF8]",
@@ -48,11 +51,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_000068ff: Female (faction Lord_Darkworth) (face 169)": {
-"variable": "n_000068ff",
-"gender": "Female",
+" 1: n_01:  (faction Lord_Darkworth)": {
+"variable": "n_01",
+"nameRaw": "[0x000068ff]",
+"unknown1": "[0x01]",
 "facePictureIndex": 169,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "Lord_Darkworth",
 "factionRaw": "397 [0x018D]",
@@ -61,11 +65,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_00003279: Female (faction King_of_Worms) (face 1)": {
-"variable": "n_00003279",
-"gender": "Female",
+" 2: n_02:  (faction King_of_Worms)": {
+"variable": "n_02",
+"nameRaw": "[0x00003279]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "King_of_Worms",
 "factionRaw": "305 [0x0131]",
@@ -76,8 +81,9 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_00006df6: Specific SentinelCastle": {
-"variable": "l_00006df6",
+" 0: l_00: Specific SentinelCastle": {
+"variable": "l_00",
+"nameRaw": "[0x00006df6]",
 "generalLocation": "Specific",
 "locationType": -1535,
 "LocationType": "SpecificLocation",
@@ -97,6 +103,7 @@
 ,"mobs: [2]": {
 " 0: m_zombie: 1 Zombie": {
 "variable": "m_zombie",
+"nameRaw": "[0X00001c57]",
 "type": "Zombie",
 "count": 1,
 "null1": 0,
@@ -105,6 +112,7 @@
 },
 " 1: m_lich: 1 Lich": {
 "variable": "m_lich",
+"nameRaw": "[0X00000632]",
 "type": "Lich",
 "count": 1,
 "null1": 0,
@@ -187,11 +195,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 2:  >> IfPlayerHasLevel (7): set s_00038a82": {
+" 2:  >> IfPlayerHasLevel (7): set s_00": {
 "opCode": 77,
 "argCount": 2,
 "arguments:": {
-"0: s_00038a82": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -210,7 +218,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 3:  >> IfNpcReputation (s_0001cb7f, n_0001ab9d): set ": {
+" 3:  => IfNpcReputation (n_00) > 0: set s_01": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -221,14 +229,14 @@
 "index": "255",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0001cb7f": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: n_0001ab9d": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -247,25 +255,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 4:  >> If (s_00038a82 and s_0001cb7f): set s_0001b757": {
+" 4:  >> If (s_00 and s_01): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b757": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_00038a82": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0001cb7f": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -291,18 +299,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 5: not s_0001b757 => StopNpcConversation (n_0001ab9d)": {
+" 5: not s_06 => StopNpcConversation (n_00)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: not s_0001b757": {
+"0: not s_06": {
 "type": "State",
 "value": "6",
 "not": "True",
 "index": "6",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_0001ab9d": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -314,18 +322,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 6: s_000192d7 => Unset (s_0001b757)": {
+" 6: s_15 => Unset (s_06)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_000192d7": {
+"0: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0001b757": {
+"1: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -358,11 +366,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 7: s_0001b757 => SendFoe (m_zombie, 1410, 100, -1)": {
+" 7: s_06 => SendFoe (m_zombie, 1410, 100, -1)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b757": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -402,11 +410,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 8:  >> IfMobHurtByPlayer (m_zombie): set s_0000d5d7": {
+" 8:  >> IfMobHurtByPlayer (m_zombie): set s_07": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0000d5d7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -425,11 +433,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-" 9:  >> IfMobsKilled (m_zombie, 1): set s_000192d7": {
+" 9:  >> IfMobsKilled (m_zombie, 1): set s_15": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_000192d7": {
+"0: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -455,11 +463,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"10: s_000192d7 => Say (1011)": {
+"10: s_15 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000192d7": {
+"0: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -471,18 +479,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"11:  >> IfNpcClicked (n_0001ab9d): set s_0000cd15": {
+"11:  >> IfNpcClicked (n_00): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cd15": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_0001ab9d": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -494,25 +502,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"12:  >> If (s_0000cd15 and s_000192d7): set s_00006a87": {
+"12:  >> If (s_02 and s_15): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00006a87": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000cd15": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_000192d7": {
+"2: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -538,18 +546,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"13: not s_00006a87 => Unset (s_0000cd15)": {
+"13: not s_03 => Unset (s_02)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: not s_00006a87": {
+"0: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
 "index": "3",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000cd15": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -582,11 +590,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"14: s_00006a87 => PromptYesNo (s_yes, s_no, 1000)": {
+"14: s_03 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_00006a87": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -711,7 +719,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"19: s_yes => PlaceMobAtLocation (m_lich, l_00006df6)": {
+"19: s_yes => PlaceMobAtLocation (m_lich, l_00)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -729,7 +737,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_00006df6": {
+"2: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -741,11 +749,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"20:  >> IfMobsKilled (m_lich, 1): set s_000063d2": {
+"20:  >> IfMobsKilled (m_lich, 1): set s_08": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_000063d2": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -771,18 +779,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"21: s_000063d2 => StartNpcEscort (n_000068ff)": {
+"21: s_08 => StartNpcEscort (n_01)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_000063d2": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_000068ff": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -794,11 +802,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"22:  >> IfGivingItemToNpc (i_scarab, n_0001ab9d): set s_0001a6f6": {
+"22:  >> IfGivingItemToNpc (i_scarab, n_00): set s_10": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0001a6f6": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -812,7 +820,7 @@
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: n_0001ab9d": {
+"2: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -824,7 +832,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"23:  >> If (s_0001a6f6 and s_000063d2): set s_givereward": {
+"23:  >> If (s_10 and s_08): set s_givereward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -835,14 +843,14 @@
 "index": "12",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0001a6f6": {
+"1: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_000063d2": {
+"2: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -868,7 +876,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"24:  >> If (not s_000063d2 and s_0001a6f6): set s_giveback": {
+"24:  >> If (not s_08 and s_10): set s_giveback": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -879,14 +887,14 @@
 "index": "11",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: not s_000063d2": {
+"1: not s_08": {
 "type": "State",
 "value": "8",
 "not": "True",
 "index": "8",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0001a6f6": {
+"2: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -942,7 +950,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"26: s_givereward => PlaceNpcAt (n_00003279, l_00006df6)": {
+"26: s_givereward => PlaceNpcAt (n_02, l_00)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -953,14 +961,14 @@
 "index": "12",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_00003279": {
+"1: n_02": {
 "type": "Npc",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_00006df6": {
+"2: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -1016,7 +1024,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"28: s_givereward => CycleNextState (s_0000007e)": {
+"28: s_givereward => Set (gs_KingOfWormsSatisfied)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -1027,7 +1035,7 @@
 "index": "12",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000007e": {
+"1: gs_KingOfWormsSatisfied": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1060,7 +1068,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"29: s_givereward => AdjustReputationWithNpc (n_0001ab9d, 15)": {
+"29: s_givereward => AdjustReputationWithNpc (n_00, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -1071,7 +1079,7 @@
 "index": "12",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_0001ab9d": {
+"1: n_00": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -1090,7 +1098,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"30: s_givereward => StopNpcEscort (n_000068ff)": {
+"30: s_givereward => StopNpcEscort (n_01)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
@@ -1101,7 +1109,7 @@
 "index": "12",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: n_000068ff": {
+"1: n_01": {
 "type": "Npc",
 "value": "1",
 "not": "False",
@@ -1147,110 +1155,128 @@
 }
 }
 ,"states: [18]": {
-" 0: s_00038a82": {
-"variable": "s_00038a82",
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x00038a82]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0001cb7f": {
-"variable": "s_0001cb7f",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0001cb7f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000cd15": {
-"variable": "s_0000cd15",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000cd15]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00006a87": {
-"variable": "s_00006a87",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00006a87]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0001b757": {
-"variable": "s_0001b757",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0001b757]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_0000d5d7": {
-"variable": "s_0000d5d7",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0000d5d7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_000063d2": {
-"variable": "s_000063d2",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x000063d2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_killmon": {
 "variable": "s_killmon",
+"nameRaw": "[0x00003500]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0001a6f6": {
-"variable": "s_0001a6f6",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0001a6f6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_giveback": {
 "variable": "s_giveback",
+"nameRaw": "[0x00006895]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_givereward": {
 "variable": "s_givereward",
+"nameRaw": "[0x0001a654]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: S_0000007E": {
-"variable": "s_0000007e",
+"13: gs_KingOfWormsGotTotem": {
+"variable": "gs_KingOfWormsGotTotem",
+"nameRaw": "[0x0000007e]",
 "isGlobal": true,
 "globalIndex": 2,
 "index": 13
 },
-"14: S_0000007E": {
-"variable": "s_0000007e",
+"14: gs_KingOfWormsSatisfied": {
+"variable": "gs_KingOfWormsSatisfied",
+"nameRaw": "[0x0000007e]",
 "isGlobal": true,
 "globalIndex": 33,
 "index": 14
 },
-"15: s_000192d7": {
-"variable": "s_000192d7",
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x000192d7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15
 },
-"16: s_001af3dd": {
-"variable": "s_001af3dd",
+"16: s_16": {
+"variable": "s_16",
+"nameRaw": "[0x001af3dd]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 16
 },
 "17: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 17

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [5]": {
-" 0: i_41000000: Artifact ReligiousItem Bell": {
-"variable": "i_41000000",
-"rewardType": "Artifact",
+" 0: i_0: Bell [ReligiousItem]": {
+"variable": "i_0",
+"nameRaw": "[0x41000000]",
+"rewardType": "Item1",
 "category": "ReligiousItem",
 "itemId": 3,
 "textRecordId1": 0,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_41000001: Artifact QuestItems Dead_body": {
-"variable": "i_41000001",
-"rewardType": "Artifact",
-"category": "QuestItems",
+" 1: i_1: Dead_body [QuestItem]": {
+"variable": "i_1",
+"nameRaw": "[0x41000001]",
+"rewardType": "Item1",
+"category": "QuestItem",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -35,6 +37,7 @@
 },
 " 2: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -43,19 +46,21 @@
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_letter: Artifact Flammable Parchment [1060]": {
+" 3: i_letter: Parchment [Usable] [1060]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1060,
 "index": 3,
 "unknown1": "0 [0x00000000]"
 },
-" 4: i_magic: Artifact MagicItem MagicItem": {
+" 4: i_magic: [MagicItem]": {
 "variable": "i_magic",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CA9]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -65,9 +70,10 @@
 }
 }
 ,"npcs: [4]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -78,9 +84,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_victim: Female (face 1)": {
+" 1: n_victim:  (type? Unknown_6)": {
 "variable": "n_victim",
-"gender": "Female",
+"nameRaw": "[0x00001b77]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_6",
 "npcTypeRaw": "65530 [0xFFFA]",
@@ -91,9 +98,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_love: Female (face 1)": {
+" 2: n_love:  (type? Unknown_7)": {
 "variable": "n_love",
-"gender": "Female",
+"nameRaw": "[0x0000066d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_7",
 "npcTypeRaw": "65529 [0xFFF9]",
@@ -104,9 +112,10 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_dummy: Male (type Noble)": {
+" 3: n_dummy:  (type? Noble)": {
 "variable": "n_dummy",
-"gender": "Male",
+"nameRaw": "[0x00000cef]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "Noble",
 "npcTypeRaw": "16 [0x0010]",
@@ -121,6 +130,7 @@
 ,"locations: [3]": {
 " 0: l_mondung: OutOfTown NaturalCave": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 6,
 "LocationType": "NaturalCave",
@@ -134,11 +144,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_qgenemy: OutOfTown 499": {
+" 1: l_qgenemy: OutOfTown Dungeon": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -151,6 +162,7 @@
 },
 " 2: l_lovehouse: InCurrentTown House2": {
 "variable": "l_lovehouse",
+"nameRaw": "[0x0000dab7]",
 "generalLocation": "InCurrentTown",
 "locationType": 18,
 "LocationType": "House2",
@@ -168,6 +180,7 @@
 ,"timers: [2]": {
 " 0: t_qtime: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_qtime",
+"nameRaw": "[0x00000d93]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -180,6 +193,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -194,6 +208,7 @@
 ,"mobs: [1]": {
 " 0: m_tiger: 1 SabertoothTiger": {
 "variable": "m_tiger",
+"nameRaw": "[0X00000d60]",
 "type": "SabertoothTiger",
 "count": 1,
 "null1": 0,
@@ -239,7 +254,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => PlaceItemAt (i_41000001, l_mondung)": {
+" 1:  => PlaceItemAt (i_1, l_mondung)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -250,7 +265,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000001": {
+"1: i_1": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -269,7 +284,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> StartTimer (t_qtime); When it expires: set s_qtime": {
+" 2:  => StartTimer (t_qtime); When it expires: set s_qtime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -345,7 +360,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PlaceItemOnCharacter (i_41000000)": {
+" 5:  => PlaceItemOnCharacter (i_0)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -356,7 +371,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_41000000": {
+"1: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -375,7 +390,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  => PickOneOf (s_0000060d, s_0000060d, s_11, s_11)": {
+" 6:  => PickOneOf (s_10, s_10, s_11, s_11)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -386,14 +401,14 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0000060d": {
+"1: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0000060d": {
+"2: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -534,7 +549,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 >> WhenItemIsUsed (i_41000000): set s_4": {
+"12: s_2 >> WhenItemIsUsed (i_0): set s_4": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -552,7 +567,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_41000000": {
+"2: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -885,7 +900,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"23: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1012,11 +1027,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_0000060d >> WhenItemIsUsed (i_letter): set s_readletter": {
+"27: s_10 >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060d": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1042,11 +1057,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_0000060d => PlaceItemAt (i_letter, l_mondung)": {
+"28: s_10 => PlaceItemAt (i_letter, l_mondung)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060d": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1072,11 +1087,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_0000060d => EnsureNpcLocation (l_lovehouse)": {
+"29: s_10 => EnsureNpcLocation (l_lovehouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060d": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1102,11 +1117,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_0000060d => PlaceNpcAt (n_love, l_lovehouse)": {
+"30: s_10 => PlaceNpcAt (n_love, l_lovehouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0000060d": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1284,7 +1299,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37: not s_2 >> WhenItemIsUsed (i_41000000): set s_1": {
+"37: not s_2 >> WhenItemIsUsed (i_0): set s_1": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -1302,7 +1317,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_41000000": {
+"2: i_0": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -1318,90 +1333,105 @@
 ,"states: [15]": {
 " 0: s_qtime": {
 "variable": "s_qtime",
+"nameRaw": "[0x00000d93]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_duelist": {
 "variable": "s_duelist",
+"nameRaw": "[0x0000344e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0000060d": {
-"variable": "s_0000060d",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0000060d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
 "13: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
 "14: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_book: Artifact Book Book": {
+" 0: i_book: [Book]": {
 "variable": "i_book",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000615]",
+"rewardType": "Item1",
 "category": "Book",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_00000d88: Artifact Flammable Parchment [1030]": {
-"variable": "i_00000d88",
-"rewardType": "Artifact",
-"category": "Flammable",
+" 1: i_01: Parchment [Usable] [1030]": {
+"variable": "i_01",
+"nameRaw": "[0x00000D88]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1030,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_dummydaedra: Female (face 249)": {
+" 1: n_dummydaedra:  (type? Daedra)": {
 "variable": "n_dummydaedra",
-"gender": "Female",
+"nameRaw": "[0x0003544d]",
+"unknown1": "[0x01]",
 "facePictureIndex": 249,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -65,6 +69,7 @@
 ,"locations: [2]": {
 " 0: l_mondung: OutOfTown Laboratory": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 9,
 "LocationType": "Laboratory",
@@ -78,11 +83,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_0000d527: OutOfTown 499": {
-"variable": "l_0000d527",
+" 1: l_01: OutOfTown Dungeon": {
+"variable": "l_01",
+"nameRaw": "[0x0000d527]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -97,6 +103,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -111,6 +118,7 @@
 ,"mobs: [2]": {
 " 0: m_daedra: 1 FrostDaedra": {
 "variable": "m_daedra",
+"nameRaw": "[0X0000188d]",
 "type": "FrostDaedra",
 "count": 1,
 "null1": 0,
@@ -119,6 +127,7 @@
 },
 " 1: m_firedaedra: 1 FireDaedra": {
 "variable": "m_firedaedra",
+"nameRaw": "[0X00019fcd]",
 "type": "FireDaedra",
 "count": 1,
 "null1": 0,
@@ -127,7 +136,7 @@
 }
 }
 ,"opCodes: [25]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -203,7 +212,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PlaceItemOnCharacter (i_00000d88)": {
+" 3:  => PlaceItemOnCharacter (i_01)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -214,7 +223,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00000d88": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -427,7 +436,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_out => PlaceMobAtLocation (m_daedra, l_0000d527)": {
+"10: s_out => PlaceMobAtLocation (m_daedra, l_01)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -445,7 +454,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_0000d527": {
+"2: l_01": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -480,7 +489,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_5 => PlaceItemAt (i_00000d88, l_0000d527)": {
+"12: s_5 => PlaceItemAt (i_01, l_01)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -491,14 +500,14 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_00000d88": {
+"1: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_0000d527": {
+"2: l_01": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -607,7 +616,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_7 >> WhenItemIsUsed (i_00000d88): set s_8": {
+"16: s_7 >> WhenItemIsUsed (i_01): set s_8": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -625,7 +634,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_00000d88": {
+"2: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -833,7 +842,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: not s_7 >> WhenItemIsUsed (i_00000d88): set s_5 [Msg 1050]": {
+"24: not s_7 >> WhenItemIsUsed (i_01): set s_5 [Msg 1050]": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -851,7 +860,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_00000d88": {
+"2: i_01": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -867,66 +876,77 @@
 ,"states: [11]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_out": {
 "variable": "s_out",
+"nameRaw": "[0x0000031a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_40000003": {
-"variable": "s_40000003",
+" 3: s_3": {
+"variable": "s_3",
+"nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000005": {
-"variable": "s_40000005",
+" 5: s_5": {
+"variable": "s_5",
+"nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_40000009": {
-"variable": "s_40000009",
+" 9: s_9": {
+"variable": "s_9",
+"nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10

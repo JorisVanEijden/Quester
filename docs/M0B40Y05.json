@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -38,9 +40,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_woodsman: Female (type Resident2) (face 168)": {
+" 1: n_woodsman:  (type? Resident2)": {
 "variable": "n_woodsman",
-"gender": "Female",
+"nameRaw": "[0x000071dc]",
+"unknown1": "[0x01]",
 "facePictureIndex": 168,
 "npcType": "Resident2",
 "npcTypeRaw": "18 [0x0012]",
@@ -53,11 +56,12 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -68,11 +72,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_qgenemy: OutOfTown 499": {
+" 1: l_qgenemy: OutOfTown Dungeon": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -85,6 +90,7 @@
 },
 " 2: l_house: OutOfTown House1": {
 "variable": "l_house",
+"nameRaw": "[0x00000d17]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -102,6 +108,7 @@
 ,"timers: [1]": {
 " 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_2dung",
+"nameRaw": "[0x00000957]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -116,6 +123,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Spriggan": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Spriggan",
 "count": 1,
 "null1": 0,
@@ -161,7 +169,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
+" 1:  => StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -1021,72 +1029,84 @@
 ,"states: [12]": {
 " 0: s_2dung": {
 "variable": "s_2dung",
+"nameRaw": "[0x00000957]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_40000004": {
-"variable": "s_40000004",
+" 4: s_4": {
+"variable": "s_4",
+"nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_40000007": {
-"variable": "s_40000007",
+" 7: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_40000008": {
-"variable": "s_40000008",
+" 8: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_map": {
 "variable": "s_map",
+"nameRaw": "[0x000002e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11

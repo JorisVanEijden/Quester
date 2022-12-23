@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [6]": {
-" 0: i_item1: Artifact CreatureIngredients3 CreatureIngredients3": {
+" 0: i_item1: [CreatureIngredients3]": {
 "variable": "i_item1",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CCF]",
+"rewardType": "Item1",
 "category": "CreatureIngredients3",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_item2: Artifact MiscellaneousIngredients2 MiscellaneousIngredients2": {
+" 1: i_item2: [MiscellaneousIngredients2]": {
 "variable": "i_item2",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CD0]",
+"rewardType": "Item1",
 "category": "MiscellaneousIngredients2",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_item3: Artifact CreatureIngredients1 CreatureIngredients1": {
+" 2: i_item3: [CreatureIngredients1]": {
 "variable": "i_item3",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CD1]",
+"rewardType": "Item1",
 "category": "CreatureIngredients1",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -43,30 +46,33 @@
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_reward1: Artifact Gems Malachite": {
+" 3: i_reward1: Malachite [Gem]": {
 "variable": "i_reward1",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x00003659]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 6,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 3,
 "unknown1": "0 [0x00000000]"
 },
-" 4: i_reward2: Artifact Gems Turquoise": {
+" 4: i_reward2: Turquoise [Gem]": {
 "variable": "i_reward2",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x0000365A]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 4,
 "unknown1": "0 [0x00000000]"
 },
-" 5: i_reward3: Artifact Gems Jade": {
+" 5: i_reward3: Jade [Gem]": {
 "variable": "i_reward3",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x0000365B]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 4,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -75,9 +81,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -92,6 +99,7 @@
 ,"locations: [3]": {
 " 0: l_dungeon1: OutOfTown NaturalCave": {
 "variable": "l_dungeon1",
+"nameRaw": "[0x00006961]",
 "generalLocation": "OutOfTown",
 "locationType": 6,
 "LocationType": "NaturalCave",
@@ -107,6 +115,7 @@
 },
 " 1: l_dungeon2: OutOfTown SpiderNest": {
 "variable": "l_dungeon2",
+"nameRaw": "[0x00006962]",
 "generalLocation": "OutOfTown",
 "locationType": 12,
 "LocationType": "SpiderNest",
@@ -122,6 +131,7 @@
 },
 " 2: l_dungeon3: OutOfTown HarpyNest": {
 "variable": "l_dungeon3",
+"nameRaw": "[0x00006963]",
 "generalLocation": "OutOfTown",
 "locationType": 10,
 "LocationType": "HarpyNest",
@@ -139,6 +149,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time from here to 'l_dungeon1' and then 'l_dungeon1'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "6.22:40:00",
@@ -151,8 +162,9 @@
 }
 }
 ,"mobs: [6]": {
-" 0: m_44000000: 1 Gargoyle": {
-"variable": "m_44000000",
+" 0: m_0: 1 Gargoyle": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Gargoyle",
 "count": 1,
 "null1": 0,
@@ -161,6 +173,7 @@
 },
 " 1: m_wereboar: 1 Wereboar": {
 "variable": "m_wereboar",
+"nameRaw": "[0X00006f50]",
 "type": "Wereboar",
 "count": 1,
 "null1": 0,
@@ -169,6 +182,7 @@
 },
 " 2: m_spriggan: 1 Spriggan": {
 "variable": "m_spriggan",
+"nameRaw": "[0X00007054]",
 "type": "Spriggan",
 "count": 1,
 "null1": 0,
@@ -177,6 +191,7 @@
 },
 " 3: m_mummy: 1 Mummy": {
 "variable": "m_mummy",
+"nameRaw": "[0X00000d7f]",
 "type": "Mummy",
 "count": 1,
 "null1": 0,
@@ -185,6 +200,7 @@
 },
 " 4: m_zombie: 1 Zombie": {
 "variable": "m_zombie",
+"nameRaw": "[0X00001c57]",
 "type": "Zombie",
 "count": 1,
 "null1": 0,
@@ -193,6 +209,7 @@
 },
 " 5: m_skeleton: 1 SkeletalWarrior": {
 "variable": "m_skeleton",
+"nameRaw": "[0X00006de4]",
 "type": "SkeletalWarrior",
 "count": 1,
 "null1": 0,
@@ -291,7 +308,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 3:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -801,7 +818,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_a4 => CreateFoe(m_44000000, 10, 5%, 5)": {
+"20: s_a4 => CreateFoe(m_0, 10, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -812,7 +829,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -845,7 +862,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_a4 => PlaceMobAtLocation (m_44000000, l_dungeon2)": {
+"21: s_a4 => PlaceMobAtLocation (m_0, l_dungeon2)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -856,7 +873,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1067,11 +1084,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> IfItemPickedUp (i_item1): set s_00000c59 [Msg 1021]": {
+"27:  >> IfItemPickedUp (i_item1): set s_11 [Msg 1021]": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_00000c59": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1288,96 +1305,112 @@
 ,"states: [16]": {
 " 0: s_pchasitem1": {
 "variable": "s_pchasitem1",
+"nameRaw": "[0x0001aa6f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pchasitem2": {
 "variable": "s_pchasitem2",
+"nameRaw": "[0x0001aa70]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pchasitem3": {
 "variable": "s_pchasitem3",
+"nameRaw": "[0x0001aa71]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_a1": {
 "variable": "s_a1",
+"nameRaw": "[0x000000f3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_a2": {
 "variable": "s_a2",
+"nameRaw": "[0x000000f4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_a3": {
 "variable": "s_a3",
+"nameRaw": "[0x000000f5]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_a4": {
 "variable": "s_a4",
+"nameRaw": "[0x000000f6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_a5": {
 "variable": "s_a5",
+"nameRaw": "[0x000000f7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_a6": {
 "variable": "s_a6",
+"nameRaw": "[0x000000f8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_00000c59": {
-"variable": "s_00000c59",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x00000c59]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_4000000d": {
-"variable": "s_4000000d",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x4000000d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
-"14: s_4000000e": {
-"variable": "s_4000000e",
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x4000000e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14
 },
-"15: s_4000000f": {
-"variable": "s_4000000f",
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x4000000f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15

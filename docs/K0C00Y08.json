@@ -15,6 +15,7 @@
 ,"items: [3]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,6 +26,7 @@
 },
 " 1: i_upfront: 5 - 50 gold": {
 "variable": "i_upfront",
+"nameRaw": "[0x0000383C]",
 "rewardType": "Gold",
 "category": "50",
 "itemId": 5,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_book: Artifact Book Book2": {
+" 2: i_book: Book2 [Book]": {
 "variable": "i_book",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000615]",
+"rewardType": "Item1",
 "category": "Book",
 "itemId": 2,
 "textRecordId1": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -60,11 +64,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 1,
@@ -79,6 +84,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -93,7 +99,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -252,11 +258,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfItemPickedUp (i_book): set s_00006b65": {
+" 6:  >> IfItemPickedUp (i_book): set s_01": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_00006b65": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -275,11 +281,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_00006b65 => Say (1011)": {
+" 7: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006b65": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -291,11 +297,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_000068e5": {
+" 8:  >> IfGivingItemToNpc (i_book, n_qgiver): set s_02": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_000068e5": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -321,11 +327,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_000068e5 => QuestSuccess (i_gold)": {
+" 9: s_02 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_000068e5": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -365,11 +371,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_000068e5 => EndQuest ()": {
+"10: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_000068e5": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -381,7 +387,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_queston >> WhenPlayerHasItems (i_book): set s_00006875": {
+"11: s_queston >> WhenPlayerHasItems (i_book): set s_03": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -392,7 +398,7 @@
 "index": "0",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: s_00006875": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -425,11 +431,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_00006875 => Say (1012)": {
+"12: s_03 => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006875": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -441,11 +447,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_00006875 => MakePermanent (i_book)": {
+"13: s_03 => MakePermanent (i_book)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_00006875": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -484,24 +490,28 @@
 ,"states: [4]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_00006b65": {
-"variable": "s_00006b65",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x00006b65]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_000068e5": {
-"variable": "s_000068e5",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x000068e5]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00006875": {
-"variable": "s_00006875",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00006875]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

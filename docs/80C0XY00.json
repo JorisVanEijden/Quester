@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_artifact: Artifact Artifact Volendrung [1013]": {
+" 0: i_artifact: Volendrung [Artifact] [1013]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 10,
 "textRecordId1": 1013,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_note: Artifact Flammable Parchment [1030]": {
+" 1: i_note: Parchment [Usable] [1030]": {
 "variable": "i_note",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00000679]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1030,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_qgfriend: Female (type Noble)": {
+" 0: n_qgfriend:  (type? Noble)": {
 "variable": "n_qgfriend",
-"gender": "Female",
+"nameRaw": "[0x00006c3c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Noble",
 "npcTypeRaw": "16 [0x0010]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_murder: Female (faction Malacath) (face 1)": {
+" 1: n_murder:  (type? Daedra) (faction Malacath)": {
 "variable": "n_murder",
-"gender": "Female",
+"nameRaw": "[0x00001b4c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -61,9 +65,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_ruler: Female (type Noble)": {
+" 2: n_ruler:  (type? Noble)": {
 "variable": "n_ruler",
-"gender": "Female",
+"nameRaw": "[0x00000db4]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Noble",
 "npcTypeRaw": "16 [0x0010]",
@@ -76,11 +81,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -95,6 +101,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'n_qgfriend'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -107,6 +114,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -121,6 +129,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 DaedraSeducer": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "DaedraSeducer",
 "count": 1,
 "null1": 0,
@@ -129,7 +138,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -512,7 +521,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"13: s_rulerclicked => PromptYesNo (s_0000383d, s_school, 1041)": {
+"13: s_rulerclicked => PromptYesNo (s_09, s_school, 1041)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -523,7 +532,7 @@
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000383d": {
+"1: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -579,11 +588,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"15: s_0000383d => Say (1040)": {
+"15: s_09 => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000383d": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -595,11 +604,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"16: s_0000383d => AdjustReputationWithNpc (n_murder, 15)": {
+"16: s_09 => AdjustReputationWithNpc (n_murder, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0000383d": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -780,7 +789,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"21: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"21: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -839,72 +848,83 @@
 ,"states: [11]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_readnote": {
 "variable": "s_readnote",
+"nameRaw": "[0x00006b19]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_rulerclicked": {
 "variable": "s_rulerclicked",
+"nameRaw": "[0x00070cc2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_0000383d": {
-"variable": "s_0000383d",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0000383d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_school": {
 "variable": "s_school",
+"nameRaw": "[0x00001ad6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 }
 }
-,"text records: [22]": {
+,"text records: [20]": {
 "1000": [
 "Yes, I know someone else who was interested  in power. A little panikosa in Oblivion who  dreamed of power, who asked me to supply it  with the beauty and grace it had always  desired. And when I made it beautiful, it  fought against me, resisting my will as if  I had not made it. Perhaps you are the  same. If I made you strong and beautiful,  you would respect the gift I gave, would  you not?"
 ],

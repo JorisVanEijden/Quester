@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_giver: 255 (type QuestGiver) (face 4)": {
+" 0: n_giver:  (type? QuestGiver)": {
 "variable": "n_giver",
-"gender": "255",
+"nameRaw": "[0x00000ccc]",
+"unknown1": "[0xFF]",
 "facePictureIndex": 4,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,8 +31,9 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_imp: InCurrentTown Tavern": {
-"variable": "l_imp",
+" 0: l_inn: InCurrentTown Tavern": {
+"variable": "l_inn",
+"nameRaw": "[0x000002ee]",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -47,8 +49,9 @@
 }
 }
 ,"timers: [3]": {
-" 0: t_00019983: Fixed 06:00:00": {
-"variable": "t_00019983",
+" 0: t_00: Fixed 06:00:00": {
+"variable": "t_00",
+"nameRaw": "[0x00019983]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "06:00:00",
@@ -59,8 +62,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_0001bd43: Fixed 12:00:00": {
-"variable": "t_0001bd43",
+" 1: t_01: Fixed 12:00:00": {
+"variable": "t_01",
+"nameRaw": "[0x0001bd43]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "12:00:00",
@@ -71,8 +75,9 @@
 "started": 0,
 "index": 1
 },
-" 2: t_0001a1b4: Fixed 01:00:00": {
-"variable": "t_0001a1b4",
+" 2: t_02: Fixed 01:00:00": {
+"variable": "t_02",
+"nameRaw": "[0x0001a1b4]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -85,8 +90,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_0001a627: 1 Spellsword": {
-"variable": "m_0001a627",
+" 0: m_00: 1 Spellsword": {
+"variable": "m_00",
+"nameRaw": "[0X0001a627]",
 "type": "Spellsword",
 "count": 1,
 "null1": 0,
@@ -95,7 +101,7 @@
 }
 }
 ,"opCodes: [17]": {
-" 0:  => PromptYesNo (s_00019b43, s_0000667f, 1025)": {
+" 0:  => PromptYesNo (s_03, s_05, 1025)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -106,14 +112,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00019b43": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0000667f": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -132,25 +138,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 1: s_00019b43 => PromptYesNo (s_00019b44, s_0000667f, 1016)": {
+" 1: s_03 => PromptYesNo (s_04, s_05, 1016)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_00019b43": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00019b44": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0000667f": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -169,11 +175,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 2: s_00019b44 => Say (1018)": {
+" 2: s_04 => Say (1018)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00019b44": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -185,7 +191,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 3:  >> StartTimer (t_0001bd43); When it expires: set s_0001bd43": {
+" 3:  => StartTimer (t_01); When it expires: set s_01": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -196,7 +202,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: t_0001bd43": {
+"1: t_01": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -208,7 +214,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 4:  >> StartTimer (t_0001a1b4); When it expires: set s_0001a1b4": {
+" 4:  => StartTimer (t_02); When it expires: set s_02": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -219,7 +225,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: t_0001a1b4": {
+"1: t_02": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -231,7 +237,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 5:  >> StartTimer (t_00019983); When it expires: set s_00019983": {
+" 5:  => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -242,7 +248,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: t_00019983": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -254,7 +260,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 6:  >> WhenAtLocation (l_imp): set s_0000174e": {
+" 6:  >> WhenAtLocation (l_inn): set s_08": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -265,14 +271,14 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000174e": {
+"1: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_imp": {
+"2: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -284,25 +290,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 7: s_00019983 => PlaceMobAtLocation (m_0001a627, l_imp)": {
+" 7: s_00 => PlaceMobAtLocation (m_00, l_inn)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00019983": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0001a627": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_imp": {
+"2: l_inn": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -314,11 +320,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 8: s_00019b44 => CreateLogEntry (1003, 0)": {
+" 8: s_04 => CreateLogEntry (1003, 0)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_00019b44": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -344,11 +350,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-" 9: s_0001a1b4 => HideNpc (n_giver)": {
+" 9: s_02 => HideNpc (n_giver)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_0001a1b4": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -367,18 +373,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"10:  >> IfMobHurtByPlayer (m_0001a627): set s_0000ca27 [Msg 1019]": {
+"10:  >> IfMobHurtByPlayer (m_00): set s_06 [Msg 1019]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0000ca27": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0001a627": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -390,18 +396,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"11:  >> IfMobsKilled (m_0001a627, 1): set s_0001a0a7": {
+"11:  >> IfMobsKilled (m_00, 1): set s_07": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0001a0a7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0001a627": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -420,11 +426,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"12: s_0001a0a7 => QuestSuccess ()": {
+"12: s_07 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0001a0a7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -464,25 +470,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"13:  >> If (not s_0000174e and s_0001a0a7): set s_0000d8a6": {
+"13:  >> If (not s_08 and s_07): set s_09": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000d8a6": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: not s_0000174e": {
+"1: not s_08": {
 "type": "State",
 "value": "8",
 "not": "True",
 "index": "8",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0001a0a7": {
+"2: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -508,11 +514,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"14: s_0000d8a6 => EndQuest ()": {
+"14: s_09 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000d8a6": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -524,11 +530,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"15: s_0000667f => EndQuest () [Msg 1027]": {
+"15: s_05 => EndQuest () [Msg 1027]": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000667f": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -540,11 +546,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 422
 },
-"16: s_0001bd43 => EndQuest ()": {
+"16: s_01 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0001bd43": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -558,62 +564,72 @@
 }
 }
 ,"states: [10]": {
-" 0: s_00019983": {
-"variable": "s_00019983",
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x00019983]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0001bd43": {
-"variable": "s_0001bd43",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0001bd43]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0001a1b4": {
-"variable": "s_0001a1b4",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0001a1b4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00019b43": {
-"variable": "s_00019b43",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00019b43]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_00019b44": {
-"variable": "s_00019b44",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00019b44]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000667f": {
-"variable": "s_0000667f",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000667f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0000ca27": {
-"variable": "s_0000ca27",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000ca27]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_0001a0a7": {
-"variable": "s_0001a0a7",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0001a0a7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_0000174e": {
-"variable": "s_0000174e",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x0000174e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_0000d8a6": {
-"variable": "s_0000d8a6",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0000d8a6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9

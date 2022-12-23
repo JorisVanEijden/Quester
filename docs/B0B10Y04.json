@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -30,11 +31,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown 499": {
+" 0: l_mondung: OutOfTown Dungeon": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -45,8 +47,9 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_00000308: InCurrentTown Tavern": {
-"variable": "l_00000308",
+" 1: l_01: InCurrentTown Tavern": {
+"variable": "l_01",
+"nameRaw": "[0x00000308]",
 "generalLocation": "InCurrentTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -62,8 +65,9 @@
 }
 }
 ,"timers: [2]": {
-" 0: t_00004f37: 1.5 times travel time between here and 'l_mondung'": {
-"variable": "t_00004f37",
+" 0: t_00: 1.5 times travel time between here and 'l_mondung'": {
+"variable": "t_00",
+"nameRaw": "[0x00004f37]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -76,6 +80,7 @@
 },
 " 1: t_2letter: Random between 00:50:00 and 2.18:40:00": {
 "variable": "t_2letter",
+"nameRaw": "[0x000026fc]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:50:00",
@@ -90,6 +95,7 @@
 ,"mobs: [4]": {
 " 0: m_soldier: 1 OrcWarlord": {
 "variable": "m_soldier",
+"nameRaw": "[0X00003760]",
 "type": "OrcWarlord",
 "count": 1,
 "null1": 0,
@@ -98,14 +104,16 @@
 },
 " 1: m_note: 2 Orc": {
 "variable": "m_note",
+"nameRaw": "[0X00000679]",
 "type": "Orc",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_0000db4b: 1 OrcSergeant": {
-"variable": "m_0000db4b",
+" 2: m_02: 1 OrcSergeant": {
+"variable": "m_02",
+"nameRaw": "[0X0000db4b]",
 "type": "OrcSergeant",
 "count": 1,
 "null1": 0,
@@ -114,6 +122,7 @@
 },
 " 3: m_shaman: 1 OrcShaman": {
 "variable": "m_shaman",
+"nameRaw": "[0X00001acc]",
 "type": "OrcShaman",
 "count": 1,
 "null1": 0,
@@ -152,7 +161,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 1:  >> StartTimer (t_00004f37); When it expires: set s_00004f37": {
+" 1:  => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -163,7 +172,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: t_00004f37": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -198,18 +207,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 3: not s_00006d28 >> WhenAtLocation (l_mondung): set s_00006af7": {
+" 3: not s_04 >> WhenAtLocation (l_mondung): set s_07": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: not s_00006d28": {
+"0: not s_04": {
 "type": "State",
 "value": "4",
 "not": "True",
 "index": "4",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006af7": {
+"1: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -228,11 +237,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 4: s_00006af7 => PlaceMobAtLocation (m_soldier, l_mondung)": {
+" 4: s_07 => PlaceMobAtLocation (m_soldier, l_mondung)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_00006af7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -258,11 +267,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 5: s_00006af7 => CreateFoe(m_shaman, 113, 8%, 20)": {
+" 5: s_07 => CreateFoe(m_shaman, 113, 8%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_00006af7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -302,18 +311,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 6: s_00006af7 => CreateFoe(m_0000db4b, 107, 10%, 50)": {
+" 6: s_07 => CreateFoe(m_02, 107, 10%, 50)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_00006af7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000db4b": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -346,11 +355,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 7: s_00006af7 => CreateFoe(m_note, 100, 12%, 100)": {
+" 7: s_07 => CreateFoe(m_note, 100, 12%, 100)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_00006af7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -390,11 +399,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 8:  >> IfMobsKilled (m_soldier, 1): set s_0000daee": {
+" 8:  >> IfMobsKilled (m_soldier, 1): set s_05": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0000daee": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -420,11 +429,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-" 9: s_0000daee => Say (1014)": {
+" 9: s_05 => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000daee": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -459,7 +468,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"11:  >> If (s_0000daee or s_00006d28): set s_questdone": {
+"11:  >> If (s_05 or s_04): set s_questdone": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -470,14 +479,14 @@
 "index": "8",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000daee": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00006d28": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -591,11 +600,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"14:  >> If (s_qgclicked and s_questdone): set s_0001b247": {
+"14:  >> If (s_qgclicked and s_questdone): set s_02": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b247": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -635,11 +644,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"15: s_0001b247 => QuestSuccess ()": {
+"15: s_02 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b247": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -679,11 +688,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"16: s_0001b247 => AdjustReputationWithNpc (n_qgiver, 10)": {
+"16: s_02 => AdjustReputationWithNpc (n_qgiver, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0001b247": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -709,18 +718,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"17:  >> If (s_00004f37 and not s_questdone): set s_0001991d": {
+"17:  >> If (s_00 and not s_questdone): set s_09": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0001991d": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00004f37": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -753,11 +762,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"18: s_0001b247 => EndQuest ()": {
+"18: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0001b247": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -769,11 +778,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 26
 },
-"19: s_00004f37 => EndQuest ()": {
+"19: s_00 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_00004f37": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -787,74 +796,86 @@
 }
 }
 ,"states: [12]": {
-" 0: s_00004f37": {
-"variable": "s_00004f37",
+" 0: s_00": {
+"variable": "s_00",
+"nameRaw": "[0x00004f37]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_2letter": {
 "variable": "s_2letter",
+"nameRaw": "[0x000026fc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0001b247": {
-"variable": "s_0001b247",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0001b247]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00031fc8": {
-"variable": "s_00031fc8",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00031fc8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_00006d28": {
-"variable": "s_00006d28",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00006d28]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000daee": {
-"variable": "s_0000daee",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000daee]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_00006af7": {
-"variable": "s_00006af7",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x00006af7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_0001991d": {
-"variable": "s_0001991d",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0001991d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_00190608": {
-"variable": "s_00190608",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x00190608]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11

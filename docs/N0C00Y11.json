@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_ingredient: Artifact CreatureIngredients1 CreatureIngredients1": {
+" 0: i_ingredient: [CreatureIngredients1]": {
 "variable": "i_ingredient",
-"rewardType": "Artifact",
+"nameRaw": "[0x0001A90C]",
+"rewardType": "Item1",
 "category": "CreatureIngredients1",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 1,
@@ -55,11 +58,12 @@
 "objPtr": 0,
 "unknown1": "3327 [0x0CFF]"
 },
-" 1: l_qgenemy: OutOfTown 499": {
+" 1: l_qgenemy: OutOfTown Dungeon": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": -1,
@@ -74,6 +78,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -88,7 +93,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [13]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -351,11 +356,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9:  >> If (s_map and s_giveingredient): set s_0000374e": {
+" 9:  >> If (s_map and s_giveingredient): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -395,11 +400,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0000374e => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"10: s_05 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -454,36 +459,42 @@
 ,"states: [6]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_giveingredient": {
 "variable": "s_giveingredient",
+"nameRaw": "[0x001a5d0c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_dummymage": {
 "variable": "s_dummymage",
+"nameRaw": "[0x0000d50f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_map": {
 "variable": "s_map",
+"nameRaw": "[0x000002e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000374e": {
-"variable": "s_0000374e",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000374e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

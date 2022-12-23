@@ -15,6 +15,7 @@
 ,"items: [3]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_item1: Artifact MetalIngredients Gold": {
+" 1: i_item1: Gold [MetalIngredients]": {
 "variable": "i_item1",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CCF]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 9,
 "textRecordId1": 0,
@@ -33,9 +35,10 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_item2: Artifact MagicItem MagicItem": {
+" 2: i_item2: [MagicItem]": {
 "variable": "i_item2",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CD0]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver) (face 76)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 76,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (face 80)": {
+" 1: n_contact:  (type? Unknown_3)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 80,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -77,6 +82,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -89,6 +95,7 @@
 },
 " 1: t_2ndparton: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -103,6 +110,7 @@
 ,"mobs: [1]": {
 " 0: m_thief: 1 Spellsword": {
 "variable": "m_thief",
+"nameRaw": "[0X00000d54]",
 "type": "Spellsword",
 "count": 1,
 "null1": 0,
@@ -111,7 +119,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -268,11 +276,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5:  >> IfMobHurtByPlayer (m_thief): set s_00001a30": {
+" 5:  >> IfMobHurtByPlayer (m_thief): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -291,11 +299,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 6: s_00001a30 => PromptYesNo (s_yes, s_no, 1020)": {
+" 6: s_10 => PromptYesNo (s_yes, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_00001a30": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -328,7 +336,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 7: s_yes >> WhenPlayerHasItems (i_item1): set s_00006900": {
+" 7: s_yes >> WhenPlayerHasItems (i_item1): set s_09": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -339,7 +347,7 @@
 "index": "7",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006900": {
+"1: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -372,11 +380,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 8: s_00006900 => DoneWithMob (m_thief, _)": {
+" 8: s_09 => DoneWithMob (m_thief, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_00006900": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -402,11 +410,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 9: s_00006900 => PlaceItemOnMob (i_item1, m_thief) [Msg 1021]": {
+" 9: s_09 => PlaceItemOnMob (i_item1, m_thief) [Msg 1021]": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_00006900": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -462,7 +470,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"11: s_npcclicked >> StartTimer (t_2ndparton); When it expires: set s_2ndparton": {
+"11: s_npcclicked => StartTimer (t_2ndparton); When it expires: set s_2ndparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -737,11 +745,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"19:  >> If (s_queston or s_pcgetsgold): set s_000035d7": {
+"19:  >> If (s_queston or s_pcgetsgold): set s_12": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_000035d7": {
+"0: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -781,11 +789,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"20: s_000035d7 => MakePermanent (i_item2)": {
+"20: s_12 => MakePermanent (i_item2)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000035d7": {
+"0: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -804,11 +812,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"21: s_000035d7 => MakePermanent (i_item1)": {
+"21: s_12 => MakePermanent (i_item1)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_000035d7": {
+"0: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -863,78 +871,91 @@
 ,"states: [13]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_pchasitem1": {
 "variable": "s_pchasitem1",
+"nameRaw": "[0x0001aa6f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_pchasitem2": {
 "variable": "s_pchasitem2",
+"nameRaw": "[0x0001aa70]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_yes": {
 "variable": "s_yes",
+"nameRaw": "[0x00000321]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_no": {
 "variable": "s_no",
+"nameRaw": "[0x0000014b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_00006900": {
-"variable": "s_00006900",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x00006900]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_00001a30": {
-"variable": "s_00001a30",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x00001a30]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_000035d7": {
-"variable": "s_000035d7",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x000035d7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12

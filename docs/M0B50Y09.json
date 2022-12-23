@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -57,6 +60,7 @@
 },
 " 1: l_qgenemy: OutOfTown VampireHaunt": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": 8,
 "LocationType": "VampireHaunt",
@@ -74,6 +78,7 @@
 ,"timers: [1]": {
 " 0: t_2dung: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_2dung",
+"nameRaw": "[0x00000957]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -88,6 +93,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Gargoyle": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Gargoyle",
 "count": 1,
 "null1": 0,
@@ -96,7 +102,7 @@
 }
 }
 ,"opCodes: [14]": {
-" 0:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
+" 0:  => StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -246,11 +252,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 5:  >> IfMobsKilled (m_monster, 1): set s_0003701a [Msg 1011]": {
+" 5:  >> IfMobsKilled (m_monster, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0003701a": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -276,11 +282,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 6:  >> IfNpcClicked (n_qgiver): set s_00006623": {
+" 6:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -299,7 +305,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 7:  >> If (s_00006623 and not s_0003701a): set s_clearclick": {
+" 7:  >> If (s_02 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -310,14 +316,14 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006623": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0003701a": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -343,7 +349,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 8: s_clearclick => Unset (s_00006623, s_clearclick)": {
+" 8: s_clearclick => Unset (s_02, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -354,7 +360,7 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_00006623": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -387,11 +393,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 9: s_00006623 => QuestSuccess (i_gold)": {
+" 9: s_02 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -431,11 +437,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"10:  >> If (s_map and s_00006623): set s_0000374e": {
+"10:  >> If (s_map and s_02): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -449,7 +455,7 @@
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_00006623": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -475,11 +481,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"11: s_0000374e => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"11: s_06 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_0000374e": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -514,11 +520,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"13: s_00006623 => EndQuest ()": {
+"13: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_00006623": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -534,42 +540,49 @@
 ,"states: [7]": {
 " 0: s_2dung": {
 "variable": "s_2dung",
+"nameRaw": "[0x00000957]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0003701a": {
-"variable": "s_0003701a",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0003701a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00006623": {
-"variable": "s_00006623",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006623]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_map": {
 "variable": "s_map",
+"nameRaw": "[0x000002e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0000374e": {
-"variable": "s_0000374e",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000374e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

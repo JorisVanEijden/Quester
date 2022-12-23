@@ -15,6 +15,7 @@
 ,"items: [2]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Item ReligiousItem Scarab [1013]": {
-"variable": "i_sage",
-"rewardType": "Item",
+" 1: i_item: Scarab [ReligiousItem] [1013]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item2",
 "category": "ReligiousItem",
 "itemId": 9,
 "textRecordId1": 1013,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver) (face 112)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 112,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (type Innkeeper)": {
+" 1: n_contact:  (type? Innkeeper)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Innkeeper",
 "npcTypeRaw": "15 [0x000F]",
@@ -67,6 +71,7 @@
 ,"timers: [1]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'n_contact'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -81,7 +86,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [11]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -157,7 +162,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_npcclicked => PlaceItemOnCharacter (i_sage)": {
+" 3: s_npcclicked => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -168,7 +173,7 @@
 "index": "2",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -203,7 +208,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfGivingItemToNpc (i_sage, n_questgiver): set s_qgclicked": {
+" 5:  >> IfGivingItemToNpc (i_item, n_questgiver): set s_qgclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -214,7 +219,7 @@
 "index": "3",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -277,11 +282,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> If (s_npcclicked and s_1stparton): set s_0000cd0f": {
+" 7:  >> If (s_npcclicked and s_1stparton): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000cd0f": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -321,18 +326,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0000cd0f => MakePermanent (i_sage)": {
+" 8: s_06 => MakePermanent (i_item)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_0000cd0f": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -380,42 +385,49 @@
 ,"states: [7]": {
 " 0: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_0001b11f": {
-"variable": "s_0001b11f",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x0001b11f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000660f": {
-"variable": "s_0000660f",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000660f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_0000cd0f": {
-"variable": "s_0000cd0f",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x0000cd0f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

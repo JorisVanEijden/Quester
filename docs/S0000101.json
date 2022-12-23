@@ -19,8 +19,9 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_40000001: Fixed 01:15:00": {
-"variable": "t_40000001",
+" 0: t_1: Fixed 01:15:00": {
+"variable": "t_1",
+"nameRaw": "[0x40000001]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:15:00",
@@ -31,8 +32,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_40000002: Fixed 444.10:40:00": {
-"variable": "t_40000002",
+" 1: t_2: Fixed 444.10:40:00": {
+"variable": "t_2",
+"nameRaw": "[0x40000002]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "444.10:40:00",
@@ -45,8 +47,9 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_44000000: 3 Assassin": {
-"variable": "m_44000000",
+" 0: m_0: 3 Assassin": {
+"variable": "m_0",
+"nameRaw": "[0X44000000]",
 "type": "Assassin",
 "count": 3,
 "null1": 0,
@@ -55,7 +58,7 @@
 }
 }
 ,"opCodes: [11]": {
-" 0:  => CreateFoe(m_44000000, 100, 5%, 30)": {
+" 0:  => CreateFoe(m_0, 100, 5%, 30)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -66,7 +69,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -99,7 +102,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_40000002); When it expires: set s_40000002": {
+" 1:  => StartTimer (t_2); When it expires: set s_2": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -110,7 +113,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000002": {
+"1: t_2": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -122,7 +125,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfMobHurtByPlayer (m_44000000): set s_0": {
+" 2:  >> IfMobHurtByPlayer (m_0): set s_0": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -133,7 +136,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_44000000": {
+"1: m_0": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -145,7 +148,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 >> StartTimer (t_40000001); When it expires: set s_40000001": {
+" 3: s_0 => StartTimer (t_1); When it expires: set s_1": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -156,7 +159,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_40000001": {
+"1: t_1": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -244,7 +247,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> If (s_3 or s_4 or s_5 or s_6): set s_10": {
+" 7:  >> If (gs_GothrydGotTotem or gs_KingOfWormsGotTotem or gs_GortwogGotTotem or gs_AkorithiGotTotem): set s_10": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -255,28 +258,28 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: gs_GothrydGotTotem": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: gs_KingOfWormsGotTotem": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_5": {
+"3: gs_GortwogGotTotem": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_6": {
+"4: gs_AkorithiGotTotem": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -288,7 +291,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> If (s_7 or s_8 or s_9): set s_11": {
+" 8:  >> If (gs_UnderkingGotTotem or gs_EadwyreGotTotem or gs_BrisiennaGotTotem): set s_11": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
@@ -299,21 +302,21 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: gs_UnderkingGotTotem": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: gs_EadwyreGotTotem": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_9": {
+"3: gs_BrisiennaGotTotem": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -376,7 +379,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_12 => CycleNextState (s_2)": {
+"10: s_12 => Set (s_2)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -422,80 +425,93 @@
 }
 }
 ,"states: [13]": {
-" 0: s_40000000": {
-"variable": "s_40000000",
+" 0: s_0": {
+"variable": "s_0",
+"nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: S_40000003": {
-"variable": "s_40000003",
+" 3: gs_GothrydGotTotem": {
+"variable": "gs_GothrydGotTotem",
+"nameRaw": "[0x40000003]",
 "isGlobal": true,
 "globalIndex": 1,
 "index": 3
 },
-" 4: S_40000004": {
-"variable": "s_40000004",
+" 4: gs_KingOfWormsGotTotem": {
+"variable": "gs_KingOfWormsGotTotem",
+"nameRaw": "[0x40000004]",
 "isGlobal": true,
 "globalIndex": 2,
 "index": 4
 },
-" 5: S_40000005": {
-"variable": "s_40000005",
+" 5: gs_GortwogGotTotem": {
+"variable": "gs_GortwogGotTotem",
+"nameRaw": "[0x40000005]",
 "isGlobal": true,
 "globalIndex": 3,
 "index": 5
 },
-" 6: S_40000006": {
-"variable": "s_40000006",
+" 6: gs_AkorithiGotTotem": {
+"variable": "gs_AkorithiGotTotem",
+"nameRaw": "[0x40000006]",
 "isGlobal": true,
 "globalIndex": 4,
 "index": 6
 },
-" 7: S_40000007": {
-"variable": "s_40000007",
+" 7: gs_UnderkingGotTotem": {
+"variable": "gs_UnderkingGotTotem",
+"nameRaw": "[0x40000007]",
 "isGlobal": true,
 "globalIndex": 6,
 "index": 7
 },
-" 8: S_40000008": {
-"variable": "s_40000008",
+" 8: gs_EadwyreGotTotem": {
+"variable": "gs_EadwyreGotTotem",
+"nameRaw": "[0x40000008]",
 "isGlobal": true,
 "globalIndex": 7,
 "index": 8
 },
-" 9: S_40000009": {
-"variable": "s_40000009",
+" 9: gs_BrisiennaGotTotem": {
+"variable": "gs_BrisiennaGotTotem",
+"nameRaw": "[0x40000009]",
 "isGlobal": true,
 "globalIndex": 8,
 "index": 9
 },
-"10: s_4000000a": {
-"variable": "s_4000000a",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x4000000a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000b": {
-"variable": "s_4000000b",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x4000000b]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_4000000c": {
-"variable": "s_4000000c",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x4000000c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12

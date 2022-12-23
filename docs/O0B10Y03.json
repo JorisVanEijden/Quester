@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_religiousitem: Artifact ReligiousItem ReligiousItem": {
+" 0: i_religiousitem: [ReligiousItem]": {
 "variable": "i_religiousitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x000D9D5F]",
+"rewardType": "Item1",
 "category": "ReligiousItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -52,6 +55,7 @@
 ,"locations: [1]": {
 " 0: l_temple: OutOfTown Temple": {
 "variable": "l_temple",
+"nameRaw": "[0x00001b35]",
 "generalLocation": "OutOfTown",
 "locationType": 14,
 "LocationType": "Temple",
@@ -69,6 +73,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_temple'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -81,32 +86,36 @@
 }
 }
 ,"mobs: [4]": {
-" 0: m_0000d419: 2 Knight": {
-"variable": "m_0000d419",
+" 0: m_00: 2 Knight": {
+"variable": "m_00",
+"nameRaw": "[0X0000d419]",
 "type": "Knight",
 "count": 2,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_0000d41a: 1 GiantScorpion": {
-"variable": "m_0000d41a",
+" 1: m_01: 1 GiantScorpion": {
+"variable": "m_01",
+"nameRaw": "[0X0000d41a]",
 "type": "GiantScorpion",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_0000d41b: 1 Monk": {
-"variable": "m_0000d41b",
+" 2: m_02: 1 Monk": {
+"variable": "m_02",
+"nameRaw": "[0X0000d41b]",
 "type": "Monk",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 2
 },
-" 3: m_0000d41c: 1 Zombie": {
-"variable": "m_0000d41c",
+" 3: m_03: 1 Zombie": {
+"variable": "m_03",
+"nameRaw": "[0X0000d41c]",
 "type": "Zombie",
 "count": 1,
 "null1": 0,
@@ -115,7 +124,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -198,7 +207,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 3:  >> WhenAtLocation (l_temple): set s_000033d7": {
+" 3:  >> WhenAtLocation (l_temple): set s_01": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -209,7 +218,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_000033d7": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -228,11 +237,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 4: s_000033d7 => PickOneOf (s_guard1, s_guard2, s_guard3, s_guard4)": {
+" 4: s_01 => PickOneOf (s_guard1, s_guard2, s_guard3, s_guard4)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
-"0: s_000033d7": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -272,7 +281,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 5: s_guard4 => CreateFoe(m_0000d41c, 4, 10%, 1)": {
+" 5: s_guard4 => CreateFoe(m_03, 4, 10%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -283,7 +292,7 @@
 "index": "6",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d41c": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -316,7 +325,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 6: s_guard3 => CreateFoe(m_0000d41b, 4, 10%, 1)": {
+" 6: s_guard3 => CreateFoe(m_02, 4, 10%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -327,7 +336,7 @@
 "index": "5",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d41b": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -360,7 +369,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 7: s_guard2 => CreateFoe(m_0000d41a, 4, 10%, 1)": {
+" 7: s_guard2 => CreateFoe(m_01, 4, 10%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -371,7 +380,7 @@
 "index": "4",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d41a": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -404,7 +413,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 212
 },
-" 8: s_guard1 => CreateFoe(m_0000d419, 4, 10%, 1)": {
+" 8: s_guard1 => CreateFoe(m_00, 4, 10%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -415,7 +424,7 @@
 "index": "3",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: m_0000d419": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -611,42 +620,49 @@
 ,"states: [7]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_000033d7": {
-"variable": "s_000033d7",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x000033d7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_questdone": {
 "variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_guard1": {
 "variable": "s_guard1",
+"nameRaw": "[0x000019f9]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_guard2": {
 "variable": "s_guard2",
+"nameRaw": "[0x000019fa]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_guard3": {
 "variable": "s_guard3",
+"nameRaw": "[0x000019fb]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_guard4": {
 "variable": "s_guard4",
+"nameRaw": "[0x000019fc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6

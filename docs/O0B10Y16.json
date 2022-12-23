@@ -1,0 +1,442 @@
+{
+"quest info: ": {
+"name": "O0B10Y16",
+"questType": "Thieves Guild",
+"membership": "Member",
+"reputation": 10,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_reward: Random gold": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_item: [Drugs]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item1",
+"category": "Drugs",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [2]": {
+" 0: n_questgiver:  (type? QuestGiver)": {
+"variable": "n_questgiver",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 1011,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_contact:  (type? Unknown_3)": {
+"variable": "n_contact",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
+"facePictureIndex": 0,
+"npcType": "Unknown_3",
+"npcTypeRaw": "65533 [0xFFFD]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 1012,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [0]": {
+}
+,"timers: [1]": {
+" 0: t_queston: 1.5 times travel time between here and 'n_contact'": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Relative3",
+"typeRaw": "4 [0x04]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "1 [00000001]",
+"flags2": "1 [01]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [0]": {
+}
+,"opCodes: [10]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 1:  => EnsureNpcLocation (n_contact)": {
+"opCode": 81,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: ": {
+"type": "Location",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: n_contact": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 2:  => CreateLogEntry (1015, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: 1015": {
+"type": "Value",
+"value": "1015",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 3:  => PlaceItemOnCharacter (i_item)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_item": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 4:  >> IfGivingItemToNpc (i_item, n_contact): set s_pcgetsgold": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_item": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: n_contact": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 5: s_pcgetsgold => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "2048 [0x00000800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "-221773567 [0xF2C80101]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1375731712 [0x52000000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 6: s_queston => AdjustReputationWithNpc (n_questgiver, -20)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: n_questgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "4518580 [0x0044F2B4]"
+},
+"2: -20": {
+"type": "Value",
+"value": "-20",
+"not": "False",
+"index": "0",
+"unknown1": "2048 [0x00000800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 7: s_queston => MakePermanent (i_item)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+},
+"1: i_item": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "4518580 [0x0044F2B4]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 8: s_pcgetsgold => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "-1493154929 [0xA700438F]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+},
+" 9: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "-1493154929 [0xA700438F]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 0
+}
+}
+,"states: [4]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_pchasitem": {
+"variable": "s_pchasitem",
+"nameRaw": "[0x0000d51f]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_npcclicked": {
+"variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+}
+}
+,"text records: [14]": {
+"1000": [
+"Okay, I'll be blunt for you. I have  this stolen item, see? A _item_.  It's pretty valuable, but not near  as valuable as the drug hidden on it.  I need to get the drugs to ___contact_,  where I have a merchant that sells it.  If you could run it there, I'd be more  than happy.  You'd even make some money  for yourself. Sounds good?"
+],
+"1001": [
+"Damn you, %ra! You  people are so lazy!"
+],
+"1002": [
+"Good. Now, don't go near  any law abiding citizens  on the way to __contact_  in ___contact_. Look  for a =contact_  named _contact_.  That's the merchant wanting the  _item_. You have =queston_  days, or _contact_ will  leave. If that happens, I  won't be happy."
+],
+"1003": [
+"Get Going, %ra!"
+],
+"1004": [
+"Hello, %pcn! I am  _contact_. Thank you  for your discretion in this matter.  I trust that the _item_ is, er,  not tampered with? Good, good.  Here's your money. Have a good day."
+],
+"1005": [
+"Someone is smuggling drugs, but I don't know who.",
+"_item_s are hot in demand in ___contact_. But only special ones."
+],
+"1006": [
+"_contact_ sure was mad at some %ra.",
+"A merchant in ___contact_ is ready to kill a %ra."
+],
+"1007": [
+"Kids these days have easy access to drugs. Not a good thing.",
+"Drugs are being passed all over. I wonder who runs the smuggling ring?"
+],
+"1008": [
+"Hi, %pcf. How ya doing?",
+"You're a good smuggler, %pcf."
+],
+"1009": [
+"That merchant is mad at me.  Looks like you failed.  I ought ta tell the guildmaster!"
+],
+"1011": [
+"_questgiver_ is a shady fellow. I don't like him.",
+"_questgiver_'s got some lovely _item_s."
+],
+"1012": [
+"_contact_ is a respected merchant.",
+"_contact_, eh? A notable merchant working out of __contact_, %di of here."
+],
+"1015": [
+"%qdt: I have accepted a mission from _questgiver_ of ___questgiver_ to bring a stolen _item_ to _contact_, at __contact_ in ___contact_. I have =queston_ days to get the _item_ to ___contact_."
+],
+"1023": [
+"Who is calling 1023?"
+]
+}
+}

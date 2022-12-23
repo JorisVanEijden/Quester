@@ -13,9 +13,10 @@
 "hasDebugInfo": true
 }
 ,"items: [1]": {
-" 0: i_book: Artifact Book Book": {
+" 0: i_book: [Book]": {
 "variable": "i_book",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000615]",
+"rewardType": "Item1",
 "category": "Book",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -42,6 +44,7 @@
 ,"locations: [1]": {
 " 0: l_mondung: InCurrentTown None": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "InCurrentTown",
 "locationType": -1,
 "LocationType": "None",
@@ -59,6 +62,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_mondung'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -73,6 +77,7 @@
 ,"mobs: [1]": {
 " 0: m_daedra: 1 FrostDaedra": {
 "variable": "m_daedra",
+"nameRaw": "[0X0000188d]",
 "type": "FrostDaedra",
 "count": 1,
 "null1": 0,
@@ -81,7 +86,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -256,11 +261,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 7:  >> If (s_qgclicked and not s_out): set s_00001b27": {
+" 7:  >> If (s_qgclicked and not s_out): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00001b27": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -300,11 +305,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 24
 },
-" 8: s_00001b27 => Unset (s_qgclicked)": {
+" 8: s_03 => Unset (s_qgclicked)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_00001b27": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -468,30 +473,35 @@
 ,"states: [5]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_out": {
 "variable": "s_out",
+"nameRaw": "[0x0000031a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00001b27": {
-"variable": "s_00001b27",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00001b27]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4

@@ -13,19 +13,21 @@
 "hasDebugInfo": false
 }
 ,"items: [4]": {
-" 0: i_note: Artifact Flammable Parchment [1030]": {
+" 0: i_note: Parchment [Usable] [1030]": {
 "variable": "i_note",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00000679]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1030,
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_reward: Artifact MagicItem MagicItem": {
+" 1: i_reward: [MagicItem]": {
 "variable": "i_reward",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -33,20 +35,22 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_0000060d: Artifact QuestItems Dead_body": {
-"variable": "i_0000060d",
-"rewardType": "Artifact",
-"category": "QuestItems",
+" 2: i_02: Dead_body [QuestItem]": {
+"variable": "i_02",
+"nameRaw": "[0x0000060D]",
+"rewardType": "Item1",
+"category": "QuestItem",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 0,
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_letter: Artifact Flammable Parchment [1031]": {
+" 3: i_letter: Parchment [Usable] [1031]": {
 "variable": "i_letter",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1031,
@@ -55,9 +59,10 @@
 }
 }
 ,"npcs: [4]": {
-" 0: n_victim: Female (faction Mehrunes_Dagon) (face 5)": {
+" 0: n_victim:  (type? Unknown_5) (faction Mehrunes_Dagon)": {
 "variable": "n_victim",
-"gender": "Female",
+"nameRaw": "[0x00001b77]",
+"unknown1": "[0x01]",
 "facePictureIndex": 5,
 "npcType": "Unknown_5",
 "npcTypeRaw": "65531 [0xFFFB]",
@@ -68,9 +73,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_questgiver: Male (type QuestGiver)": {
+" 1: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -81,11 +87,12 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_daughter: Female (faction People_of_Sentinel) (face 3)": {
+" 2: n_daughter:  (faction People_of_Sentinel)": {
 "variable": "n_daughter",
-"gender": "Female",
+"nameRaw": "[0x0000659c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 3,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "People_of_Sentinel",
 "factionRaw": "523 [0x020B]",
@@ -94,11 +101,12 @@
 "index": 2,
 "null1": 0
 },
-" 3: n_darkb: Female (faction The_Dark_Brotherhood)": {
+" 3: n_darkb:  (faction The_Dark_Brotherhood)": {
 "variable": "n_darkb",
-"gender": "Female",
+"nameRaw": "[0x00000c48]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Dark_Brotherhood",
 "factionRaw": "108 [0x006C]",
@@ -111,6 +119,7 @@
 ,"locations: [4]": {
 " 0: l_victimhouse: InCurrentTown House4": {
 "variable": "l_victimhouse",
+"nameRaw": "[0x00037bf7]",
 "generalLocation": "InCurrentTown",
 "locationType": 20,
 "LocationType": "House4",
@@ -126,6 +135,7 @@
 },
 " 1: l_daughterhouse: OutOfTown House4": {
 "variable": "l_daughterhouse",
+"nameRaw": "[0x000cc097]",
 "generalLocation": "OutOfTown",
 "locationType": 20,
 "LocationType": "House4",
@@ -141,6 +151,7 @@
 },
 " 2: l_safehouse: OutOfTown House3": {
 "variable": "l_safehouse",
+"nameRaw": "[0x0000d6b7]",
 "generalLocation": "OutOfTown",
 "locationType": 19,
 "LocationType": "House3",
@@ -154,11 +165,12 @@
 "objPtr": 0,
 "unknown1": "31744 [0x7C00]"
 },
-" 3: l_0000d527: OutOfTown 499": {
-"variable": "l_0000d527",
+" 3: l_03: OutOfTown Dungeon": {
+"variable": "l_03",
+"nameRaw": "[0x0000d527]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -173,6 +185,7 @@
 ,"timers: [3]": {
 " 0: t_qtime: 1.5 times travel time from here to 'l_victimhouse' and then 'n_darkb'": {
 "variable": "t_qtime",
+"nameRaw": "[0x00000d93]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -183,8 +196,9 @@
 "started": 0,
 "index": 0
 },
-" 1: t_00035bd3: Random between 10.00:00:00 and 20.20:00:00": {
-"variable": "t_00035bd3",
+" 1: t_01: Random between 10.00:00:00 and 20.20:00:00": {
+"variable": "t_01",
+"nameRaw": "[0x00035bd3]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "10.00:00:00",
@@ -195,8 +209,9 @@
 "started": 0,
 "index": 1
 },
-" 2: t_00006ea3: 1.5 times travel time from here to 'l_daughterhouse' and then 'l_safehouse'": {
-"variable": "t_00006ea3",
+" 2: t_02: 1.5 times travel time from here to 'l_daughterhouse' and then 'l_safehouse'": {
+"variable": "t_02",
+"nameRaw": "[0x00006ea3]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -211,22 +226,25 @@
 ,"mobs: [3]": {
 " 0: m_enemy: 1 Assassin": {
 "variable": "m_enemy",
+"nameRaw": "[0X00000ca7]",
 "type": "Assassin",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 0
 },
-" 1: m_000019e8: 1 Nightblade": {
-"variable": "m_000019e8",
+" 1: m_01: 1 Nightblade": {
+"variable": "m_01",
+"nameRaw": "[0X000019e8]",
 "type": "Nightblade",
 "count": 1,
 "null1": 0,
 "null2": 0,
 "index": 1
 },
-" 2: m_00001922: 4 Assassin": {
-"variable": "m_00001922",
+" 2: m_02: 4 Assassin": {
+"variable": "m_02",
+"nameRaw": "[0X00001922]",
 "type": "Assassin",
 "count": 4,
 "null1": 0,
@@ -235,7 +253,7 @@
 }
 }
 ,"opCodes: [53]": {
-" 0:  >> StartTimer (t_qtime); When it expires: set s_qtime": {
+" 0:  => StartTimer (t_qtime); When it expires: set s_qtime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -422,7 +440,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-" 6:  >> WhenAtLocation (l_victimhouse): set s_000d2bf7": {
+" 6:  >> WhenAtLocation (l_victimhouse): set s_05": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -433,7 +451,7 @@
 "index": "255",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_000d2bf7": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -452,11 +470,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-" 7: s_000d2bf7 => HideNpc (n_victim)": {
+" 7: s_05 => HideNpc (n_victim)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -475,18 +493,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-" 8: s_000d2bf7 => PlaceItemAt (i_0000060d, l_victimhouse)": {
+" 8: s_05 => PlaceItemAt (i_02, l_victimhouse)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: i_0000060d": {
+"1: i_02": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -505,11 +523,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-" 9: s_000d2bf7 => PlaceItemAt (i_note, l_victimhouse)": {
+" 9: s_05 => PlaceItemAt (i_note, l_victimhouse)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -535,11 +553,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"10: s_000d2bf7 => CreateLogEntry (1021, 1)": {
+"10: s_05 => CreateLogEntry (1021, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -565,11 +583,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"11: s_000d2bf7 => CreateFoe(m_enemy, 2, 100%, 4)": {
+"11: s_05 => CreateFoe(m_enemy, 2, 100%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -609,11 +627,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"12:  >> IfMobHurtByPlayer (m_enemy): set s_00006967": {
+"12:  >> IfMobHurtByPlayer (m_enemy): set s_02": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_00006967": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -632,11 +650,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"13: s_00006967 => Say (1035)": {
+"13: s_02 => Say (1035)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00006967": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -648,11 +666,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"14: s_000d2bf7 => AddRumor (1040)": {
+"14: s_05 => AddRumor (1040)": {
 "opCode": 38,
 "argCount": 2,
 "arguments:": {
-"0: s_000d2bf7": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -738,11 +756,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"17:  >> IfNpcClicked (n_darkb): set s_000198e8": {
+"17:  >> IfNpcClicked (n_darkb): set s_06": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_000198e8": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -761,11 +779,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"18: s_000198e8 => Say (1050)": {
+"18: s_06 => Say (1050)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000198e8": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -777,11 +795,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"19: s_000198e8 => HideNpc (n_darkb)": {
+"19: s_06 => HideNpc (n_darkb)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_000198e8": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -800,18 +818,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"20: s_000198e8 => CreateFoe(m_000019e8, 1, 100%, 1)": {
+"20: s_06 => CreateFoe(m_01, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000198e8": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: m_000019e8": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -844,11 +862,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"21: s_000198e8 => CreateFoe(m_enemy, 3, 100%, 5)": {
+"21: s_06 => CreateFoe(m_enemy, 3, 100%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000198e8": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -888,18 +906,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"22:  >> IfMobsKilled (m_000019e8, 1): set s_0000d448": {
+"22:  >> IfMobsKilled (m_01, 1): set s_07": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_0000d448": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: m_000019e8": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -918,11 +936,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"23: s_0000d448 => AddRumor (1041)": {
+"23: s_07 => AddRumor (1041)": {
 "opCode": 38,
 "argCount": 2,
 "arguments:": {
-"0: s_0000d448": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -941,11 +959,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"24: s_0000d448 => AdjustReputationWithNpc (n_darkb, -15)": {
+"24: s_07 => AdjustReputationWithNpc (n_darkb, -15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0000d448": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -971,11 +989,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"25: s_0000d448 => AdjustReputationWithNpc (n_daughter, 10)": {
+"25: s_07 => AdjustReputationWithNpc (n_daughter, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0000d448": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1001,18 +1019,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"26: s_0000d448 >> StartTimer (t_00035bd3); When it expires: set s_00035bd3": {
+"26: s_07 => StartTimer (t_01); When it expires: set s_03": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0000d448": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: t_00035bd3": {
+"1: t_01": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -1024,18 +1042,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"27: s_00035bd3 >> StartTimer (t_00006ea3); When it expires: set s_00006ea3": {
+"27: s_03 => StartTimer (t_02); When it expires: set s_04": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_00035bd3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: t_00006ea3": {
+"1: t_02": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -1047,11 +1065,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"28: s_00035bd3 => PlaceItemOnPlayer (i_letter) [Msg 1070]": {
+"28: s_03 => GiveToPlayer (i_letter) [Msg 1070]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_00035bd3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1070,11 +1088,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"29: s_00035bd3 >> WhenItemIsUsed (i_letter): set s_readletter": {
+"29: s_03 >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_00035bd3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1130,11 +1148,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"31: s_00035bd3 => EnsureNpcLocation (l_daughterhouse)": {
+"31: s_03 => EnsureNpcLocation (l_daughterhouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_00035bd3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1160,11 +1178,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"32: s_00035bd3 => PlaceNpcAt (n_daughter, l_daughterhouse)": {
+"32: s_03 => PlaceNpcAt (n_daughter, l_daughterhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_00035bd3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -1190,11 +1208,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"33:  >> IfNpcClicked (n_daughter): set s_000cca9c": {
+"33:  >> IfNpcClicked (n_daughter): set s_08": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1213,11 +1231,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"34: s_000cca9c => Say (1051)": {
+"34: s_08 => Say (1051)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1229,11 +1247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"35: s_000cca9c => PlaceNpcAt (n_daughter, l_0000d527)": {
+"35: s_08 => PlaceNpcAt (n_daughter, l_03)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1247,7 +1265,7 @@
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_0000d527": {
+"2: l_03": {
 "type": "Location",
 "value": "3",
 "not": "False",
@@ -1259,11 +1277,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"36: s_000cca9c => StartNpcEscort (n_daughter)": {
+"36: s_08 => StartNpcEscort (n_daughter)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1282,18 +1300,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"37: s_000cca9c => CreateFoe(m_00001922, 1, 100%, 1)": {
+"37: s_08 => CreateFoe(m_02, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: m_00001922": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -1326,18 +1344,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"38:  >> IfMobHurtByPlayer (m_00001922): set s_0000d2a2": {
+"38:  >> IfMobHurtByPlayer (m_02): set s_11": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0000d2a2": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
 "index": "11",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: m_00001922": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -1349,11 +1367,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"39: s_0000d2a2 => Say (1036)": {
+"39: s_11 => Say (1036)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000d2a2": {
+"0: s_11": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1365,18 +1383,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"40: s_000cca9c >> WhenAtLocation (l_daughterhouse): set s_00006717": {
+"40: s_08 >> WhenAtLocation (l_daughterhouse): set s_12": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_000cca9c": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_00006717": {
+"1: s_12": {
 "type": "State",
 "value": "12",
 "not": "False",
@@ -1395,25 +1413,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"41:  >> If (s_000cca9c and not s_00006717): set s_000033c6": {
+"41:  >> If (s_08 and not s_12): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_000033c6": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_000cca9c": {
+"1: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_00006717": {
+"2: not s_12": {
 "type": "State",
 "value": "12",
 "not": "True",
@@ -1439,11 +1457,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"42: s_000033c6 => Say (1052)": {
+"42: s_13 => Say (1052)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_000033c6": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1455,11 +1473,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"43: s_000033c6 => CreateLogEntry (1023, 3)": {
+"43: s_13 => CreateLogEntry (1023, 3)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_000033c6": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1485,11 +1503,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"44: s_000033c6 => EnsureNpcLocation (l_safehouse)": {
+"44: s_13 => EnsureNpcLocation (l_safehouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_000033c6": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
@@ -1515,18 +1533,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"45: s_000033c6 >> WhenAtLocation (l_safehouse): set s_000342b7": {
+"45: s_13 >> WhenAtLocation (l_safehouse): set s_14": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_000033c6": {
+"0: s_13": {
 "type": "State",
 "value": "13",
 "not": "False",
 "index": "13",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_000342b7": {
+"1: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1545,11 +1563,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"46: s_000342b7 => QuestSuccess (i_reward)": {
+"46: s_14 => QuestSuccess (i_reward)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_000342b7": {
+"0: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1589,25 +1607,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"47:  >> If (s_00006ea3 and not s_000342b7): set s_00003237": {
+"47:  >> If (s_04 and not s_14): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00003237": {
+"0: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
 "index": "15",
 "unknown1": "109228594 [0x0682B232]"
 },
-"1: s_00006ea3": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_000342b7": {
+"2: not s_14": {
 "type": "State",
 "value": "14",
 "not": "True",
@@ -1633,11 +1651,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"48:  >> If (s_qtime and not s_0000d448): set s_0000e0ec": {
+"48:  >> If (s_qtime and not s_07): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0000e0ec": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1651,7 +1669,7 @@
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0000d448": {
+"2: not s_07": {
 "type": "State",
 "value": "7",
 "not": "True",
@@ -1677,11 +1695,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"49: s_00003237 => Say (1071)": {
+"49: s_15 => Say (1071)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00003237": {
+"0: s_15": {
 "type": "State",
 "value": "15",
 "not": "False",
@@ -1693,11 +1711,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"50: s_000342b7 => EndQuest ()": {
+"50: s_14 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_000342b7": {
+"0: s_14": {
 "type": "State",
 "value": "14",
 "not": "False",
@@ -1709,11 +1727,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"51: s_0000e0ec => EndQuest ()": {
+"51: s_10 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000e0ec": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -1725,11 +1743,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"52: s_00006ea3 => EndQuest ()": {
+"52: s_04 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_00006ea3": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1745,96 +1763,112 @@
 ,"states: [16]": {
 " 0: s_qtime": {
 "variable": "s_qtime",
+"nameRaw": "[0x00000d93]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_readnote": {
 "variable": "s_readnote",
+"nameRaw": "[0x00006b19]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00006967": {
-"variable": "s_00006967",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00006967]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_00035bd3": {
-"variable": "s_00035bd3",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x00035bd3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_00006ea3": {
-"variable": "s_00006ea3",
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00006ea3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_000d2bf7": {
-"variable": "s_000d2bf7",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x000d2bf7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_000198e8": {
-"variable": "s_000198e8",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x000198e8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_0000d448": {
-"variable": "s_0000d448",
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x0000d448]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_000cca9c": {
-"variable": "s_000cca9c",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x000cca9c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_readletter": {
 "variable": "s_readletter",
+"nameRaw": "[0x0001acfc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0000e0ec": {
-"variable": "s_0000e0ec",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0000e0ec]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_0000d2a2": {
-"variable": "s_0000d2a2",
+"11: s_11": {
+"variable": "s_11",
+"nameRaw": "[0x0000d2a2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
-"12: s_00006717": {
-"variable": "s_00006717",
+"12: s_12": {
+"variable": "s_12",
+"nameRaw": "[0x00006717]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
-"13: s_000033c6": {
-"variable": "s_000033c6",
+"13: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x000033c6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
 },
-"14: s_000342b7": {
-"variable": "s_000342b7",
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x000342b7]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 14
 },
-"15: s_00003237": {
-"variable": "s_00003237",
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x00003237]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 15

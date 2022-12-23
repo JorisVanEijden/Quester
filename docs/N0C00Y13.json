@@ -13,10 +13,11 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_ingredient: Artifact Flammable Parchment [1020]": {
+" 0: i_ingredient: Parchment [Usable] [1020]": {
 "variable": "i_ingredient",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x0001A90C]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1020,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -40,11 +42,12 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dungeon: OutOfTown 499": {
+" 0: l_dungeon: OutOfTown Dungeon": {
 "variable": "l_dungeon",
+"nameRaw": "[0x00003498]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 1,
@@ -59,6 +62,7 @@
 ,"timers: [1]": {
 " 0: t_traveltime: 1.5 times travel time between here and 'l_dungeon'": {
 "variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -73,6 +77,7 @@
 ,"mobs: [1]": {
 " 0: m_atronach: 1 IceAtronach": {
 "variable": "m_atronach",
+"nameRaw": "[0X000068d2]",
 "type": "IceAtronach",
 "count": 1,
 "null1": 0,
@@ -81,7 +86,7 @@
 }
 }
 ,"opCodes: [12]": {
-" 0:  >> StartTimer (t_traveltime); When it expires: set s_traveltime": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -187,11 +192,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 4:  >> IfItemPickedUp (i_ingredient): set s_00000cec": {
+" 4:  >> IfItemPickedUp (i_ingredient): set s_02": {
 "opCode": 3,
 "argCount": 2,
 "arguments:": {
-"0: s_00000cec": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -210,11 +215,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 5: s_00000cec => Say (1040)": {
+" 5: s_02 => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_00000cec": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -226,18 +231,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 6: s_00000cec >> WhenItemIsUsed (i_ingredient): set s_0000d6c8 [Msg 1045]": {
+" 6: s_02 >> WhenItemIsUsed (i_ingredient): set s_03 [Msg 1045]": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_00000cec": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0000d6c8": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -256,11 +261,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 7: s_0000d6c8 => CreateFoe(m_atronach, 1, 100%, 1)": {
+" 7: s_03 => CreateFoe(m_atronach, 1, 100%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_0000d6c8": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -300,11 +305,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 8:  >> IfGivingItemToNpc (i_ingredient, n_questgiver): set s_0000d328": {
+" 8:  >> IfGivingItemToNpc (i_ingredient, n_questgiver): set s_01": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0000d328": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -330,11 +335,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-" 9: s_0000d328 => QuestSuccess ()": {
+" 9: s_01 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0000d328": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -374,11 +379,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 104
 },
-"10: s_0000d328 => EndQuest ()": {
+"10: s_01 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_0000d328": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -410,24 +415,28 @@
 ,"states: [4]": {
 " 0: s_traveltime": {
 "variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_0000d328": {
-"variable": "s_0000d328",
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x0000d328]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_00000cec": {
-"variable": "s_00000cec",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x00000cec]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0000d6c8": {
-"variable": "s_0000d6c8",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000d6c8]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

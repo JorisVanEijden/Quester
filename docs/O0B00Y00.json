@@ -15,6 +15,7 @@
 ,"items: [3]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_metal: Artifact MetalIngredients MetalIngredients": {
+" 1: i_metal: [MetalIngredients]": {
 "variable": "i_metal",
-"rewardType": "Artifact",
+"nameRaw": "[0x00000CF6]",
+"rewardType": "Item1",
 "category": "MetalIngredients",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -33,10 +35,11 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_gems: Artifact Gems Gems": {
+" 2: i_gems: [Gem]": {
 "variable": "i_gems",
-"rewardType": "Artifact",
-"category": "Gems",
+"nameRaw": "[0x00000619]",
+"rewardType": "Item1",
+"category": "Gem",
 "itemId": 65535,
 "textRecordId1": 0,
 "textRecordId2": 0,
@@ -45,9 +48,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Female (type QuestGiver) (face 72)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Female",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x01]",
 "facePictureIndex": 72,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -58,9 +62,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (type Innkeeper) (face 80)": {
+" 1: n_contact:  (type? Innkeeper)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 80,
 "npcType": "Innkeeper",
 "npcTypeRaw": "15 [0x000F]",
@@ -77,6 +82,7 @@
 ,"timers: [2]": {
 " 0: t_1stparton: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -89,6 +95,7 @@
 },
 " 1: t_delay: Random between 00:05:00 and 00:05:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:05:00",
@@ -103,6 +110,7 @@
 ,"mobs: [1]": {
 " 0: m_guards: 1 Knight": {
 "variable": "m_guards",
+"nameRaw": "[0X00001a3b]",
 "type": "Knight",
 "count": 1,
 "null1": 0,
@@ -111,7 +119,7 @@
 }
 }
 ,"opCodes: [24]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -492,7 +500,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_1stparton >> StartTimer (t_delay); When it expires: set s_delay": {
+"12: s_1stparton => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -554,7 +562,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_hitguard => PromptYesNo (s_0000ddb1, s_00001a05, 1020)": {
+"15: s_hitguard => PromptYesNo (s_05, s_06, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
@@ -565,14 +573,14 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0000ddb1": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_00001a05": {
+"2: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -591,11 +599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_0000ddb1 => GiveItemToPlayer (i_gems)": {
+"16: s_05 => GiveItemToPlayer (i_gems)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_0000ddb1": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -614,11 +622,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_0000ddb1 => AdjustReputationWithNpc (n_questgiver, -40)": {
+"17: s_05 => AdjustReputationWithNpc (n_questgiver, -40)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0000ddb1": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -644,11 +652,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_0000ddb1 => DoneWithMob (m_guards, _)": {
+"18: s_05 => DoneWithMob (m_guards, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
-"0: s_0000ddb1": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -674,11 +682,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_0000ddb1 >> StartTimer (t_delay); When it expires: set s_delay": {
+"19: s_05 => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0000ddb1": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -743,11 +751,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_npcclicked and s_1stparton): set s_00019a71": {
+"22:  >> If (s_npcclicked and s_1stparton): set s_09": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_00019a71": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -787,11 +795,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_00019a71 => AdjustReputationWithNpc (n_questgiver, -20)": {
+"23: s_09 => AdjustReputationWithNpc (n_questgiver, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_00019a71": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -821,60 +829,70 @@
 ,"states: [10]": {
 " 0: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_hitguard": {
 "variable": "s_hitguard",
+"nameRaw": "[0x000069a4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_0000ddb1": {
-"variable": "s_0000ddb1",
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x0000ddb1]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_00001a05": {
-"variable": "s_00001a05",
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00001a05]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_keptmetal": {
 "variable": "s_keptmetal",
+"nameRaw": "[0x0000d4f6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_keptgems": {
 "variable": "s_keptgems",
+"nameRaw": "[0x00006a19]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_00019a71": {
-"variable": "s_00019a71",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x00019a71]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9

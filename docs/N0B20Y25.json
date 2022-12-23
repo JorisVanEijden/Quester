@@ -1,0 +1,719 @@
+{
+"quest info: ": {
+"name": "N0B20Y25",
+"questType": "Mage Guild",
+"membership": "Member",
+"reputation": 20,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [2]": {
+" 0: i_religiousitem: [ReligiousItem]": {
+"variable": "i_religiousitem",
+"nameRaw": "[0x000D9D5F]",
+"rewardType": "Item1",
+"category": "ReligiousItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_gold: Random gold": {
+"variable": "i_gold",
+"nameRaw": "[0x00000630]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_temple: OutOfTown Temple": {
+"variable": "l_temple",
+"nameRaw": "[0x00001b35]",
+"generalLocation": "OutOfTown",
+"locationType": 14,
+"LocationType": "Temple",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "12543 [0x30FF]"
+}
+}
+,"timers: [1]": {
+" 0: t_traveltime: 1.5 times travel time between here and 'l_temple'": {
+"variable": "t_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [4]": {
+" 0: m_00: 2 Knight": {
+"variable": "m_00",
+"nameRaw": "[0X0000d419]",
+"type": "Knight",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_01: 1 GiantScorpion": {
+"variable": "m_01",
+"nameRaw": "[0X0000d41a]",
+"type": "GiantScorpion",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+},
+" 2: m_02: 1 Monk": {
+"variable": "m_02",
+"nameRaw": "[0X0000d41b]",
+"type": "Monk",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2
+},
+" 3: m_03: 1 Zombie": {
+"variable": "m_03",
+"nameRaw": "[0X0000d41c]",
+"type": "Zombie",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 3
+}
+}
+,"opCodes: [15]": {
+" 0:  => StartTimer (t_traveltime); When it expires: set s_traveltime": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_traveltime": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 1:  => PlaceItemAt (i_religiousitem, l_temple)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_religiousitem": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 2:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 3:  >> WhenAtLocation (l_temple): set s_01": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_temple": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 4: s_01 => PickOneOf (s_guard1, s_guard2, s_guard3, s_guard4)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_01": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_guard1": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_guard2": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_guard3": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: s_guard4": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 5: s_guard4 => CreateFoe(m_03, 4, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_guard4": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_03": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 6: s_guard3 => CreateFoe(m_02, 4, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_guard3": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_02": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 7: s_guard2 => CreateFoe(m_01, 4, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_guard2": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_01": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 8: s_guard1 => CreateFoe(m_00, 4, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_guard1": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 4": {
+"type": "Value",
+"value": "4",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+" 9:  >> IfGivingItemToNpc (i_religiousitem, n_qgiver): set s_questdone": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_religiousitem": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+"10: s_questdone => QuestSuccess (i_gold)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_gold": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "17891328 [0x01110000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+"11: s_questdone => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_questdone": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+"12: s_traveltime => AdjustReputationWithNpc (n_qgiver, -5)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -5": {
+"type": "Value",
+"value": "-5",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+"13: s_traveltime => MakePermanent (i_religiousitem)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_religiousitem": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+},
+"14: s_traveltime => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_traveltime": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 212
+}
+}
+,"states: [7]": {
+" 0: s_traveltime": {
+"variable": "s_traveltime",
+"nameRaw": "[0x0001c1e3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_01": {
+"variable": "s_01",
+"nameRaw": "[0x000033d7]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_questdone": {
+"variable": "s_questdone",
+"nameRaw": "[0x0000e07d]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_guard1": {
+"variable": "s_guard1",
+"nameRaw": "[0x000019f9]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_guard2": {
+"variable": "s_guard2",
+"nameRaw": "[0x000019fa]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_guard3": {
+"variable": "s_guard3",
+"nameRaw": "[0x000019fb]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_guard4": {
+"variable": "s_guard4",
+"nameRaw": "[0x000019fc]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+}
+}
+,"text records: [10]": {
+"1000": [
+"Well, I'm in a bit of a fluster right  now, %pct. Why must deities be so  unreasonable? Say, you wouldn't  mind getting on the darker side of  a God or two, would you? For me?",
+"Are you a worshipper at _temple_?  For your sake, I hope not. The Guild isn't  very happy with them right now. But say,  maybe you could help fix our little bother?"
+],
+"1001": [
+"Oh, a religious one, are you?  Shame. That's one black mark  in your book, %ra.",
+"Afraid of being turned to a crisp?  Only logical. But I'm still more than  a bit disappointed, %pcf."
+],
+"1002": [
+"Well, here's what's happened. Those  priests over in __temple_, you  know, at _temple_,  decided that their God person thing wanted  an artefact WE'VE been hunting for the last  few months. So they go and get it. We tried  to be kind by offering them _gold_ gold pieces,  but they refused it, saying the object was \"sacred\".  Pfft. You go ... \"collect\" it without their knowing,  and the money's yours. But make it quick: we  need the _religiousitem_ within =traveltime_ days.",
+"Well, here's what's happened. Those  priests over in __temple_, you  know, at _temple_,  happen to have a _religiousitem_ that  we need for a spell. We tried  to be kind by offering them _gold_ gold pieces for it,  but they refused, saying the object was \"sacred\".  Pfft. You go ... \"collect\" it without their knowing,  and the money's yours. But make it quick: we  need the _religiousitem_ within =traveltime_ days."
+],
+"1004": [
+"Good work, %pct! Here are  your _gold_ gold pieces, as promised.  Now, hurry along, as I need to go tend to  my garden. Bit of a locust plague, I fear."
+],
+"1005": [
+"I got a boil the other day ... but it healed.",
+"I just had a three hour conversation about the weather.",
+"The weather is pretty usual for this time of year.",
+"It seems a trifle coolish in %cn for this time of year.",
+"It sure is a lot warmer today than this time last year.",
+"My great aunt is going to a specialist across the Bay.",
+"It's always funny what time it gets dark around here.",
+"We should erect a war statue around here.",
+"The kids these days with their magic. %oth, I don't know.",
+"I had the weirdest dream last night.",
+"I heard a great joke. %jok",
+"%jok Actually, that's a joke.",
+"%jok Can you explain that to me?",
+"The legal system in %reg has its good points and bad ones."
+],
+"1006": [
+"_temple_ is pretty pious, they say. Doesn't let money control it."
+],
+"1007": [
+"Some people just can't let others keep their own things. A shame. Why, a _religiousitem_ was stolen just recently."
+],
+"1008": [
+"Turns out that _religiousitem_ was a dud.  Too bad. And I've seen four strange horsemen  galloping around my house lately shouting about  the apocalypse. Damned zealots."
+],
+"1009": [
+"Thankfully, another %pct  was able to collect the item you  were unable to get."
+],
+"1010": [
+"%qdt: _qgiver_ of ___qgiver_ of the Mages Guild gave me a job to \"collect\" a _religiousitem_ from the _temple_ in __temple_. I have =traveltime_ days to get it back to %g2 for my fee."
+]
+}
+}

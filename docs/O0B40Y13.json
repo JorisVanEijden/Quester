@@ -1,0 +1,1607 @@
+{
+"quest info: ": {
+"name": "O0B40Y13",
+"questType": "Thieves Guild",
+"membership": "Member",
+"reputation": 40,
+"delivery": "InPerson",
+"childSafe": true,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [6]": {
+" 0: i_item1: [CreatureIngredients3]": {
+"variable": "i_item1",
+"nameRaw": "[0x00000CCF]",
+"rewardType": "Item2",
+"category": "CreatureIngredients3",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_item2: [MiscellaneousIngredients2]": {
+"variable": "i_item2",
+"nameRaw": "[0x00000CD0]",
+"rewardType": "Item2",
+"category": "MiscellaneousIngredients2",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+},
+" 2: i_item3: [CreatureIngredients1]": {
+"variable": "i_item3",
+"nameRaw": "[0x00000CD1]",
+"rewardType": "Item2",
+"category": "CreatureIngredients1",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": "0 [0x00000000]"
+},
+" 3: i_reward1: Malachite [Gem]": {
+"variable": "i_reward1",
+"nameRaw": "[0x00003659]",
+"rewardType": "Item1",
+"category": "Gem",
+"itemId": 6,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 3,
+"unknown1": "0 [0x00000000]"
+},
+" 4: i_reward2: Turquoise [Gem]": {
+"variable": "i_reward2",
+"nameRaw": "[0x0000365A]",
+"rewardType": "Item1",
+"category": "Gem",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 4,
+"unknown1": "0 [0x00000000]"
+},
+" 5: i_reward3: Jade [Gem]": {
+"variable": "i_reward3",
+"nameRaw": "[0x0000365B]",
+"rewardType": "Item1",
+"category": "Gem",
+"itemId": 4,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 5,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [1]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 1011,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+}
+}
+,"locations: [3]": {
+" 0: l_dungeon1: OutOfTown NaturalCave": {
+"variable": "l_dungeon1",
+"nameRaw": "[0x00006961]",
+"generalLocation": "OutOfTown",
+"locationType": 6,
+"LocationType": "NaturalCave",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "23296 [0x5B00]"
+},
+" 1: l_dungeon2: OutOfTown SpiderNest": {
+"variable": "l_dungeon2",
+"nameRaw": "[0x00006962]",
+"generalLocation": "OutOfTown",
+"locationType": 12,
+"LocationType": "SpiderNest",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "23296 [0x5B00]"
+},
+" 2: l_dungeon3: OutOfTown HarpyNest": {
+"variable": "l_dungeon3",
+"nameRaw": "[0x00006963]",
+"generalLocation": "OutOfTown",
+"locationType": 10,
+"LocationType": "HarpyNest",
+"fineLocation": 1,
+"knownLocation": "None",
+"doorSelector": 0,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "23296 [0x5B00]"
+}
+}
+,"timers: [1]": {
+" 0: t_queston: 1.5 times travel time from here to 'l_dungeon1' and then 'l_dungeon2'": {
+"variable": "t_queston",
+"nameRaw": "[0x000037e4]",
+"type": "Relative4",
+"typeRaw": "5 [0x05]",
+"minimum": "6.22:40:00",
+"maximum": "10.10:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+}
+}
+,"mobs: [6]": {
+" 0: m_00: 1 Gargoyle": {
+"variable": "m_00",
+"nameRaw": "[0X00006709]",
+"type": "Gargoyle",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_wereboar: 1 Wereboar": {
+"variable": "m_wereboar",
+"nameRaw": "[0X00006f50]",
+"type": "Wereboar",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+},
+" 2: m_spriggan: 1 Spriggan": {
+"variable": "m_spriggan",
+"nameRaw": "[0X00007054]",
+"type": "Spriggan",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2
+},
+" 3: m_mummy: 1 Mummy": {
+"variable": "m_mummy",
+"nameRaw": "[0X00000d7f]",
+"type": "Mummy",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 3
+},
+" 4: m_zombie: 1 Zombie": {
+"variable": "m_zombie",
+"nameRaw": "[0X00001c57]",
+"type": "Zombie",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 4
+},
+" 5: m_skeleton: 1 SkeletalWarrior": {
+"variable": "m_skeleton",
+"nameRaw": "[0X00006de4]",
+"type": "SkeletalWarrior",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 5
+}
+}
+,"opCodes: [36]": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_queston": {
+"type": "Timer",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 1:  => CreateLogEntry (1015, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1015": {
+"type": "Value",
+"value": "1015",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 2:  => AddLocationToMap (l_dungeon1)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 3:  => AddLocationToMap (l_dungeon2)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 4:  => AddLocationToMap (l_dungeon3)": {
+"opCode": 19,
+"argCount": 2,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: l_dungeon3": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 5: s_a1 => PlaceMobAtLocation (m_zombie, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a1": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_zombie": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 6: s_a2 => PlaceMobAtLocation (m_mummy, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a2": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_mummy": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 7: s_a3 => PlaceMobAtLocation (m_skeleton, l_dungeon1)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a3": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_skeleton": {
+"type": "Mob",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 8: s_a3 => PlaceMobAtLocation (m_00, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a3": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+" 9: s_a4 => PlaceMobAtLocation (m_spriggan, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a4": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_spriggan": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"10: s_a5 => PlaceMobAtLocation (m_wereboar, l_dungeon2)": {
+"opCode": 22,
+"argCount": 3,
+"arguments:": {
+"0: s_a5": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_wereboar": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"11:  => PlaceItemAt (i_item1, l_dungeon1)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"12:  => PlaceItemAt (i_item2, l_dungeon2)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"13:  => PlaceItemAt (i_item3, l_dungeon3)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon3": {
+"type": "Location",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"14:  >> WhenAtLocation (l_dungeon1): set s_14": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon1": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"15:  >> WhenAtLocation (l_dungeon2): set s_18": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_18": {
+"type": "State",
+"value": "18",
+"not": "False",
+"index": "18",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_dungeon2": {
+"type": "Location",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"16: s_18 => PickOneOf (s_a3, s_a4, s_a5, s_a3)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_18": {
+"type": "State",
+"value": "18",
+"not": "False",
+"index": "18",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_a3": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_a4": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_a5": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: s_a3": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"17: s_14 => PickOneOf (s_a1, s_a2, s_a3, s_a1)": {
+"opCode": 34,
+"argCount": 5,
+"arguments:": {
+"0: s_14": {
+"type": "State",
+"value": "14",
+"not": "False",
+"index": "14",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_a1": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_a2": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_a3": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: s_a1": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"18: s_a1 => CreateFoe(m_zombie, 15, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a1": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_zombie": {
+"type": "Mob",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"19: s_a2 => CreateFoe(m_mummy, 10, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a2": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_mummy": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"20: s_a3 => CreateFoe(m_skeleton, 12, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a3": {
+"type": "State",
+"value": "10",
+"not": "False",
+"index": "10",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_skeleton": {
+"type": "Mob",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 12": {
+"type": "Value",
+"value": "12",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"21: s_a3 => CreateFoe(m_00, 10, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a3": {
+"type": "State",
+"value": "11",
+"not": "False",
+"index": "11",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"22: s_a4 => CreateFoe(m_spriggan, 15, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a4": {
+"type": "State",
+"value": "12",
+"not": "False",
+"index": "12",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_spriggan": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 15": {
+"type": "Value",
+"value": "15",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"23: s_a5 => CreateFoe(m_wereboar, 12, 5%, 5)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_a5": {
+"type": "State",
+"value": "13",
+"not": "False",
+"index": "13",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_wereboar": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 12": {
+"type": "Value",
+"value": "12",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"24:  >> IfItemPickedUp (i_item1): set s_15 [Msg 1021]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1021,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"25:  >> IfItemPickedUp (i_item2): set s_16 [Msg 1022]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1022,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"26:  >> IfItemPickedUp (i_item3): set s_17 [Msg 1023]": {
+"opCode": 3,
+"argCount": 2,
+"arguments:": {
+"0: s_17": {
+"type": "State",
+"value": "17",
+"not": "False",
+"index": "17",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1023,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"27:  >> If (s_15 and s_16 and s_17): set s_04": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_15": {
+"type": "State",
+"value": "15",
+"not": "False",
+"index": "15",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_16": {
+"type": "State",
+"value": "16",
+"not": "False",
+"index": "16",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_17": {
+"type": "State",
+"value": "17",
+"not": "False",
+"index": "17",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"28:  >> IfGivingItemToNpc (i_item1, n_qgiver): set s_pchasitem1": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_pchasitem1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item1": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"29:  >> IfGivingItemToNpc (i_item2, n_qgiver): set s_pchasitem2": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_pchasitem2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item2": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"30:  >> IfGivingItemToNpc (i_item3, n_qgiver): set s_pchasitem3": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_pchasitem3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_item3": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"31:  >> If (s_pchasitem1 and s_pchasitem2 and s_pchasitem3): set s_21": {
+"opCode": 52,
+"argCount": 5,
+"arguments:": {
+"0: s_21": {
+"type": "State",
+"value": "21",
+"not": "False",
+"index": "21",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_pchasitem1": {
+"type": "State",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_pchasitem2": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: s_pchasitem3": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"32: s_clearclick => Unset (s_qgclicked, s_clearclick)": {
+"opCode": 7,
+"argCount": 5,
+"arguments:": {
+"0: s_clearclick": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_qgclicked": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_clearclick": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "State",
+"value": "-2",
+"not": "False",
+"index": "254",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"33: s_21 => QuestSuccess (i_reward1, i_reward2, i_reward3)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_21": {
+"type": "State",
+"value": "21",
+"not": "False",
+"index": "21",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_reward1": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: i_reward2": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: i_reward3": {
+"type": "Item",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "17760256 [0x010F0000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"34: s_21 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_21": {
+"type": "State",
+"value": "21",
+"not": "False",
+"index": "21",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+},
+"35: s_queston => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_queston": {
+"type": "State",
+"value": "6",
+"not": "False",
+"index": "6",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 109
+}
+}
+,"states: [23]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_pchasitem1": {
+"variable": "s_pchasitem1",
+"nameRaw": "[0x0001aa6f]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_pchasitem2": {
+"variable": "s_pchasitem2",
+"nameRaw": "[0x0001aa70]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_pchasitem3": {
+"variable": "s_pchasitem3",
+"nameRaw": "[0x0001aa71]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x000d5311]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_queston": {
+"variable": "s_queston",
+"nameRaw": "[0x000037e4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_clearclick": {
+"variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_a1": {
+"variable": "s_a1",
+"nameRaw": "[0x000000f3]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_a2": {
+"variable": "s_a2",
+"nameRaw": "[0x000000f4]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+},
+"10: s_a3": {
+"variable": "s_a3",
+"nameRaw": "[0x000000f5]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 10
+},
+"11: s_a3": {
+"variable": "s_a3",
+"nameRaw": "[0x000000f5]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 11
+},
+"12: s_a4": {
+"variable": "s_a4",
+"nameRaw": "[0x000000f6]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 12
+},
+"13: s_a5": {
+"variable": "s_a5",
+"nameRaw": "[0x000000f7]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 13
+},
+"14: s_14": {
+"variable": "s_14",
+"nameRaw": "[0x0001a961]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 14
+},
+"15: s_15": {
+"variable": "s_15",
+"nameRaw": "[0x00000c59]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 15
+},
+"16: s_16": {
+"variable": "s_16",
+"nameRaw": "[0x00000c5a]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 16
+},
+"17: s_17": {
+"variable": "s_17",
+"nameRaw": "[0x00000c5b]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 17
+},
+"18: s_18": {
+"variable": "s_18",
+"nameRaw": "[0x000034a0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 18
+},
+"19: s_19": {
+"variable": "s_19",
+"nameRaw": "[0x000034a1]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 19
+},
+"20: s_20": {
+"variable": "s_20",
+"nameRaw": "[0x00003370]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 20
+},
+"21: s_21": {
+"variable": "s_21",
+"nameRaw": "[0x00003430]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 21
+},
+"22: s_22": {
+"variable": "s_22",
+"nameRaw": "[0x00001b66]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 22
+}
+}
+,"text records: [15]": {
+"1000": [
+"Ya, I got a job for ya. I dunno  'bout it, though. Sounds more  like work for the fighter's  guild.  You got ta track down  3 ingredients, for a mage.  You want it?"
+],
+"1001": [
+"I don't blame you. Dungeon  exploring isn't work for a  thief."
+],
+"1002": [
+"Well, all I know is this.  3 ingredients the mage wants.  They are _item1_,  _item2_, and _item3_.  The mage said that they couldn't be  store bought, and would probably be  stolen from some crypt.  I dunno.  Not my type of work.  Good luck  finding the stuff, %pcf.  You got =queston_ days."
+],
+"1003": [
+"Got _item1_, _item2_,  and _item3_, %pcn?  I didn't think so."
+],
+"1004": [
+"The %ra thief returns.  And you have the items, too!  That mage was getting worried.  Here, I have something he told  me to give you.  Good job."
+],
+"1005": [
+"Some mage is going to hunt through ___dungeon1_ for _item1_.",
+"Have you ever heard of _item3_?  I hear someone stashed some in ___dungeon3_."
+],
+"1006": [
+"The mages guild in town is in a big mess with the law.",
+"I hear the mages guild is pissed off at a thief.  Not suprsising."
+],
+"1007": [
+"%nrn is really mad.  Someone broke into his property and robbed him blind.",
+"The thieves guild is really active in this area. They scare me."
+],
+"1008": [
+"Well, you must be that dungeon crawler I met before. What do ya want?"
+],
+"1009": [
+"Do I know you?  You look like a  %ra that screwed up a heist.  What a similarity!"
+],
+"1011": [
+"I don't know. But I do know that you can get some _item2_ at ___dungeon2_.",
+"A thief.  Nothing but a bloody thief."
+],
+"1015": [
+"%qdt: The thieves guild needs me to find _item1_, _item2_, and _item3_.  I have =queston_ days. Then I must be back talking to _qgiver_ in ___qgiver_."
+],
+"1021": [
+"You have found the _item1_  that _qgiver_ asked for."
+],
+"1022": [
+"This must be the _item2_  that _qgiver_ wanted."
+],
+"1023": [
+"This looks like the _item3_  that _qgiver_ needed."
+]
+}
+}

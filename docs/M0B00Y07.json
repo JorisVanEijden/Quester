@@ -15,6 +15,7 @@
 ,"items: [1]": {
 " 0: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -25,9 +26,10 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -42,6 +44,7 @@
 ,"locations: [2]": {
 " 0: l_house: OutOfTown None": {
 "variable": "l_house",
+"nameRaw": "[0x00000d17]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
 "LocationType": "None",
@@ -55,11 +58,12 @@
 "objPtr": 0,
 "unknown1": "0 [0x0000]"
 },
-" 1: l_qgenemy: OutOfTown 499": {
+" 1: l_qgenemy: OutOfTown Dungeon": {
 "variable": "l_qgenemy",
+"nameRaw": "[0x000035c7]",
 "generalLocation": "OutOfTown",
 "locationType": -1,
-"LocationType": "499",
+"LocationType": "Dungeon",
 "fineLocation": 1,
 "knownLocation": "None",
 "doorSelector": 0,
@@ -74,6 +78,7 @@
 ,"timers: [1]": {
 " 0: t_2dung: 1.5 times travel time between here and 'l_house'": {
 "variable": "t_2dung",
+"nameRaw": "[0x00000957]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "1.00:00:00",
@@ -88,6 +93,7 @@
 ,"mobs: [2]": {
 " 0: m_monster: 1 SabertoothTiger": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "SabertoothTiger",
 "count": 1,
 "null1": 0,
@@ -96,6 +102,7 @@
 },
 " 1: m_gem2: 1 GrizzlyBear": {
 "variable": "m_gem2",
+"nameRaw": "[0X000005d8]",
 "type": "GrizzlyBear",
 "count": 1,
 "null1": 0,
@@ -104,7 +111,7 @@
 }
 }
 ,"opCodes: [17]": {
-" 0:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
+" 0:  => StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -653,54 +660,63 @@
 ,"states: [9]": {
 " 0: s_2dung": {
 "variable": "s_2dung",
+"nameRaw": "[0x00000957]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_map": {
 "variable": "s_map",
+"nameRaw": "[0x000002e6]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000006": {
-"variable": "s_40000006",
+" 6: s_6": {
+"variable": "s_6",
+"nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_monster1": {
 "variable": "s_monster1",
+"nameRaw": "[0x00006d79]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_monster2": {
 "variable": "s_monster2",
+"nameRaw": "[0x00006d7a]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8

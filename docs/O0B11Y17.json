@@ -1,0 +1,1150 @@
+{
+"quest info: ": {
+"name": "O0B11Y17",
+"questType": "Thieves Guild",
+"membership": "Member",
+"reputation": 10,
+"delivery": "InPerson",
+"childSafe": false,
+"questId": 0,
+"faction": "None",
+"resourceId": 0,
+"resourceFileName": "",
+"hasDebugInfo": false
+}
+,"items: [5]": {
+" 0: i_letter: Parchment [Usable] [1011]": {
+"variable": "i_letter",
+"nameRaw": "[0x00001A7C]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1011,
+"index": 0,
+"unknown1": "0 [0x00000000]"
+},
+" 1: i_mitem: [MagicItem]": {
+"variable": "i_mitem",
+"nameRaw": "[0x00000D1F]",
+"rewardType": "Item1",
+"category": "MagicItem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"unknown1": "0 [0x00000000]"
+},
+" 2: i_reward: Random gold": {
+"variable": "i_reward",
+"nameRaw": "[0x00001B14]",
+"rewardType": "Gold",
+"category": "Random",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 2,
+"unknown1": "0 [0x00000000]"
+},
+" 3: i_03: Parchment [Usable] [1012]": {
+"variable": "i_03",
+"nameRaw": "[0x0001A1FC]",
+"rewardType": "Item1",
+"category": "Usable",
+"itemId": 5,
+"textRecordId1": 0,
+"textRecordId2": 1012,
+"index": 3,
+"unknown1": "0 [0x00000000]"
+},
+" 4: i_gem: [Gem]": {
+"variable": "i_gem",
+"nameRaw": "[0x000002D3]",
+"rewardType": "Item1",
+"category": "Gem",
+"itemId": 65535,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 4,
+"unknown1": "0 [0x00000000]"
+}
+}
+,"npcs: [2]": {
+" 0: n_qgiver:  (type? QuestGiver)": {
+"variable": "n_qgiver",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "QuestGiver",
+"npcTypeRaw": "21 [0x0015]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"null1": 0
+},
+" 1: n_competitor:  (type? Unknown_5)": {
+"variable": "n_competitor",
+"nameRaw": "[0x0001a1c8]",
+"unknown1": "[0x00]",
+"facePictureIndex": 0,
+"npcType": "Unknown_5",
+"npcTypeRaw": "65531 [0xFFFB]",
+"faction": "None",
+"factionRaw": "0 [0x0000]",
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 1,
+"null1": 0
+}
+}
+,"locations: [1]": {
+" 0: l_storehouse: OutOfTown House1": {
+"variable": "l_storehouse",
+"nameRaw": "[0x0001c7b7]",
+"generalLocation": "OutOfTown",
+"locationType": 17,
+"LocationType": "House1",
+"fineLocation": 0,
+"knownLocation": "None",
+"doorSelector": 1,
+"textRecordId1": 0,
+"textRecordId2": 0,
+"index": 0,
+"flags": "0 [0x00]",
+"objPtr": 0,
+"unknown1": "54271 [0xD3FF]"
+}
+}
+,"timers: [2]": {
+" 0: t_2storehouse: 1.5 times travel time between here and 'l_storehouse'": {
+"variable": "t_2storehouse",
+"nameRaw": "[0x00028fb7]",
+"type": "Relative1",
+"typeRaw": "2 [0x02]",
+"minimum": "00:00:00",
+"maximum": "00:00:00",
+"flags1": "17 [00010001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 0
+},
+" 1: t_01: Random between 16:40:00 and 1.09:20:00": {
+"variable": "t_01",
+"nameRaw": "[0x000269fc]",
+"type": "Random",
+"typeRaw": "0 [0x00]",
+"minimum": "16:40:00",
+"maximum": "1.09:20:00",
+"flags1": "1 [00000001]",
+"flags2": "0 [00]",
+"duration": 0,
+"started": 0,
+"index": 1
+}
+}
+,"mobs: [4]": {
+" 0: m_00: 2 Thief": {
+"variable": "m_00",
+"nameRaw": "[0X00006f7b]",
+"type": "Thief",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 0
+},
+" 1: m_knight: 1 Thief": {
+"variable": "m_knight",
+"nameRaw": "[0X00001a68]",
+"type": "Thief",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 1
+},
+" 2: m_battlemage: 1 Thief": {
+"variable": "m_battlemage",
+"nameRaw": "[0X000195ef]",
+"type": "Thief",
+"count": 1,
+"null1": 0,
+"null2": 0,
+"index": 2
+},
+" 3: m_03: 2 Thief": {
+"variable": "m_03",
+"nameRaw": "[0X00001b79]",
+"type": "Thief",
+"count": 2,
+"null1": 0,
+"null2": 0,
+"index": 3
+}
+}
+,"opCodes: [29]": {
+" 0:  => PlaceItemAt (i_mitem, l_storehouse)": {
+"opCode": 0,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_storehouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 1:  => PlaceItemOnCharacter (i_letter)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 2:  => CreateLogEntry (1010, 0)": {
+"opCode": 23,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: 1010": {
+"type": "Value",
+"value": "1010",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 0": {
+"type": "Value",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 3:  >> WhenAtLocation (l_storehouse): set s_04": {
+"opCode": 43,
+"argCount": 3,
+"arguments:": {
+"0: _": {
+"type": "State",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_storehouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 4: s_04 => CreateFoe(m_battlemage, 7, 10%, 2)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_battlemage": {
+"type": "Mob",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 7": {
+"type": "Value",
+"value": "7",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "42467328 [0x02880000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 5: s_04 => CreateFoe(m_knight, 8, 10%, 2)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_knight": {
+"type": "Mob",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 8": {
+"type": "Value",
+"value": "8",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 2": {
+"type": "Value",
+"value": "2",
+"not": "False",
+"index": "0",
+"unknown1": "42467328 [0x02880000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 6: s_04 => CreateFoe(m_03, 9, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_03": {
+"type": "Mob",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 9": {
+"type": "Value",
+"value": "9",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42467328 [0x02880000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 7: s_04 => CreateFoe(m_00, 10, 10%, 1)": {
+"opCode": 9,
+"argCount": 5,
+"arguments:": {
+"0: s_04": {
+"type": "State",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: m_00": {
+"type": "Mob",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: 1": {
+"type": "Value",
+"value": "1",
+"not": "False",
+"index": "0",
+"unknown1": "42467328 [0x02880000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 8:  >> IfItemDroppedAt (i_letter, l_storehouse): set s_02": {
+"opCode": 5,
+"argCount": 3,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_letter": {
+"type": "Item",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: l_storehouse": {
+"type": "Location",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+" 9: s_02 => StartTimer (t_01); When it expires: set s_05": {
+"opCode": 12,
+"argCount": 2,
+"arguments:": {
+"0: s_02": {
+"type": "State",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: t_01": {
+"type": "Timer",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"10: s_05 => Say (-1)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"11: s_05 => GiveToPlayer (i_03) [Msg 1013]": {
+"opCode": 76,
+"argCount": 2,
+"arguments:": {
+"0: s_05": {
+"type": "State",
+"value": "5",
+"not": "False",
+"index": "5",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_03": {
+"type": "Item",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": 1013,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"12:  >> IfGivingItemToNpc (i_mitem, n_competitor): set s_07": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_competitor": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"13: s_07 => PromptYesNo (s_09, s_gimme, 1014)": {
+"opCode": 29,
+"argCount": 4,
+"arguments:": {
+"0: s_07": {
+"type": "State",
+"value": "7",
+"not": "False",
+"index": "7",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "14 [0x0000000E]"
+},
+"2: s_gimme": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: 1014": {
+"type": "Value",
+"value": "1014",
+"not": "False",
+"index": "0",
+"unknown1": "1997668352 [0x77120000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"14: s_gimme => PlaceItemOnCharacter (i_mitem)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_gimme": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"15: s_09 => PlaceItemOnCharacter (i_gem)": {
+"opCode": 26,
+"argCount": 3,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_gem": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Npc",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"16: s_09 => MakePermanent (i_gem)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_gem": {
+"type": "Item",
+"value": "4",
+"not": "False",
+"index": "4",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"17: s_gimme => Say (1016)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_gimme": {
+"type": "State",
+"value": "8",
+"not": "False",
+"index": "8",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1016,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"18: s_09 => Say (1015)": {
+"opCode": 51,
+"argCount": 1,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": 1015,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"19: s_09 => AdjustReputationWithNpc (n_qgiver, -5)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -5": {
+"type": "Value",
+"value": "-5",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"20: s_09 => AdjustReputationWithNpc (n_competitor, 5)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_competitor": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 5": {
+"type": "Value",
+"value": "5",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"21: s_09 => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_09": {
+"type": "State",
+"value": "9",
+"not": "False",
+"index": "9",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"22:  >> IfGivingItemToNpc (i_mitem, n_qgiver): set s_pcgetsgold": {
+"opCode": 1,
+"argCount": 3,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"23: s_pcgetsgold => AdjustReputationWithNpc (n_competitor, -10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_competitor": {
+"type": "Npc",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+},
+"2: -10": {
+"type": "Value",
+"value": "-10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"24: s_pcgetsgold => AdjustReputationWithNpc (n_qgiver, 10)": {
+"opCode": 61,
+"argCount": 3,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: n_qgiver": {
+"type": "Npc",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "14 [0x0000000E]"
+},
+"2: 10": {
+"type": "Value",
+"value": "10",
+"not": "False",
+"index": "0",
+"unknown1": "1156761600 [0x44F2C800]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"25: s_2storehouse => MakePermanent (i_mitem)": {
+"opCode": 54,
+"argCount": 2,
+"arguments:": {
+"0: s_2storehouse": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_mitem": {
+"type": "Item",
+"value": "1",
+"not": "False",
+"index": "1",
+"unknown1": "14 [0x0000000E]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"26: s_pcgetsgold => QuestSuccess (i_reward)": {
+"opCode": 4,
+"argCount": 5,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+},
+"1: i_reward": {
+"type": "Item",
+"value": "2",
+"not": "False",
+"index": "2",
+"unknown1": "14 [0x0000000E]"
+},
+"2: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1156761600 [0x44F2C800]"
+},
+"3: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "1997668352 [0x77120000]"
+},
+"4: ": {
+"type": "Item",
+"value": "-1",
+"not": "False",
+"index": "255",
+"unknown1": "42467328 [0x02880000]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"27: s_2storehouse => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_2storehouse": {
+"type": "State",
+"value": "3",
+"not": "False",
+"index": "3",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+},
+"28: s_pcgetsgold => EndQuest ()": {
+"opCode": 6,
+"argCount": 1,
+"arguments:": {
+"0: s_pcgetsgold": {
+"type": "State",
+"value": "0",
+"not": "False",
+"index": "0",
+"unknown1": "100680946 [0x060044F2]"
+}
+},
+"messageId": -1,
+"flags": "0 [0x0000]",
+"lastUpdate": 27
+}
+}
+,"states: [10]": {
+" 0: s_pcgetsgold": {
+"variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 0
+},
+" 1: s_qgclicked": {
+"variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 1
+},
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0001ab9e]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 2
+},
+" 3: s_2storehouse": {
+"variable": "s_2storehouse",
+"nameRaw": "[0x00028fb7]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 3
+},
+" 4: s_04": {
+"variable": "s_04",
+"nameRaw": "[0x00006b46]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 4
+},
+" 5: s_05": {
+"variable": "s_05",
+"nameRaw": "[0x000269fc]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 5
+},
+" 6: s_06": {
+"variable": "s_06",
+"nameRaw": "[0x00034407]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 6
+},
+" 7: s_07": {
+"variable": "s_07",
+"nameRaw": "[0x000341c2]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 7
+},
+" 8: s_gimme": {
+"variable": "s_gimme",
+"nameRaw": "[0x00000cab]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 8
+},
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x00001b09]",
+"isGlobal": false,
+"globalIndex": 0,
+"index": 9
+}
+}
+,"text records: [17]": {
+"1000": [
+"Look.  The guild's been having some problems with  this one thief.  He's been doing some major robberies,  which would normally please us.  Only problem is,  this guy is robbing us!  Don't ask why or how, but he  steals right from the guild.  He also owns a store where  he sells this merchandise.  We plan to teach him a little  lesson.  No, not killing him.  Just a little show of power.  Sound interesting?"
+],
+"1001": [
+"%oth, you're quite a gutless thief."
+],
+"1002": [
+"Great. _competitor_ is his name, and  _storehouse_ in __storehouse_  is his house.  Go there.  Inside it   you will find a _mitem_.  This was stolen  from us recently.  Take it, and bring it to  me here.  You will be rewarded well.  A warning, though.  _competitor_ may  not even be in the store when you go to it,  but his lackeys will be.  They'll no doubt  fight you to the death.  Good luck, %pct.  You got =2storehouse_ days to do it.  Oh yah, you also have to drop this  little note off, so he knows who did it.  Now get going!"
+],
+"1003": [
+"What are you doin standing around here?  Hurry up and get that _mitem_!"
+],
+"1004": [
+"Got it?  Good.  _competitor_  won't be happy.  Maybe now he'll  stop messing with the guild like this.  Take yer gold, %pcf.  And  have fun with it.  You earned it."
+],
+"1005": [
+"These are the days when business competition becomes particularly bloodthirsty.",
+"Everyone says it's going to be a cold winter, but I sort of wonder."
+],
+"1006": [
+"_competitor_ had an accident at his house, but everything was fixed."
+],
+"1007": [
+"Some hero fought a dragon a few days ago.  And he killed it!",
+"Harpy populations doubled this year."
+],
+"1008": [
+"What do ya want, %pcf?  Eh?"
+],
+"1009": [
+"You are nothing but a traitor.  Get out of my site!"
+],
+"1010": [
+"%qdt: _qgiver_ of ___qgiver_ has sent me to _storehouse_ in __storehouse_ to steal a _mitem_ stored there and drop off a note. If I can do this and get back to __qgiver_ in =2storehouse_ days, I will earn _reward_ gold pieces. The store belongs to a rebelling thief. It may be guarded."
+],
+"1011": [
+"_competitor_,   You have robbed the guild one too many times.  This is our way of telling you not to do it ever again.  This time your servants died, next time it will be you who is left laying dead on the floor.  We hope you take this seriously, for we certainly do.  The guild doesn't joke around.    The Thieves Guild"
+],
+"1012": [
+"__competitor_                                  ___competitor_   Dear %pcn,       I know you are the one that stole the _mitem_ from me.  You sound loyal to the thieves guild, as most thieves are.  But what would you say if I offered you a _gem_?  The guild is not as good as you think.  I know you would like to have the _gem_, and I'm sure you know that I want the _mitem_ back.  A trade, then. Come and see me soon.   _competitor_"
+],
+"1013": [
+"A man with a slight beard, and a dagger at his  side approaches you.  He hands you a letter, and  walks off."
+],
+"1014": [
+"Do you give _competitor_ the _mitem_  in exchange for the _gem_?"
+],
+"1015": [
+"You are %pcn, are you not? I am  glad you decided to bring me the _mitem_.  The thieves guild is a group of worthless  bastards.  You are better off with me and  my band of rebels.  I am sure we will meet  again.  When we do, I hope that you support  me.  Now, take your _gem_ and go."
+],
+"1016": [
+"What?  Give me the _mitem_!  You scum!  Why did you even  come here?  Get out!"
+]
+}
+}

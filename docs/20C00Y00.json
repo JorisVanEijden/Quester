@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_artifact: Artifact Artifact Mace_of_Molag_Bal [1013]": {
+" 0: i_artifact: Mace_of_Molag_Bal [Artifact] [1013]": {
 "variable": "i_artifact",
-"rewardType": "Artifact",
+"nameRaw": "[0x000067FE]",
+"rewardType": "Item1",
 "category": "Artifact",
 "itemId": 2,
 "textRecordId1": 0,
@@ -23,10 +24,11 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_map: Artifact Flammable Parchment [1060]": {
+" 1: i_map: Parchment [Usable] [1060]": {
 "variable": "i_map",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x000002E6]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1060,
@@ -35,11 +37,12 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_contact: Female (faction The_Cabal) (face 233)": {
+" 0: n_contact:  (faction The_Cabal)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 233,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Cabal",
 "factionRaw": "66 [0x0042]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_dummy: Female (type Spellcaster) (face 1)": {
+" 1: n_dummy:  (type? Spellcaster)": {
 "variable": "n_dummy",
-"gender": "Female",
+"nameRaw": "[0x00000cef]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Spellcaster",
 "npcTypeRaw": "11 [0x000B]",
@@ -65,6 +69,7 @@
 ,"locations: [3]": {
 " 0: l_mondung: OutOfTown Laboratory": {
 "variable": "l_mondung",
+"nameRaw": "[0x00003637]",
 "generalLocation": "OutOfTown",
 "locationType": 9,
 "LocationType": "Laboratory",
@@ -80,6 +85,7 @@
 },
 " 1: l_tavern: OutOfTown Tavern": {
 "variable": "l_tavern",
+"nameRaw": "[0x00001b26]",
 "generalLocation": "OutOfTown",
 "locationType": 15,
 "LocationType": "Tavern",
@@ -95,6 +101,7 @@
 },
 " 2: l_hideout: OutOfTown RuinedCastle": {
 "variable": "l_hideout",
+"nameRaw": "[0x000033a2]",
 "generalLocation": "OutOfTown",
 "locationType": 11,
 "LocationType": "RuinedCastle",
@@ -112,6 +119,7 @@
 ,"timers: [3]": {
 " 0: t_1stparton: 1.5 times travel time from here to 'l_mondung' and then 'l_tavern'": {
 "variable": "t_1stparton",
+"nameRaw": "[0x0000a23c]",
 "type": "Relative4",
 "typeRaw": "5 [0x05]",
 "minimum": "00:00:00",
@@ -124,6 +132,7 @@
 },
 " 1: t_delay: Fixed 01:00:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "01:00:00",
@@ -134,8 +143,9 @@
 "started": 0,
 "index": 1
 },
-" 2: t_0006e0c3: Random between 00:01:00 and 00:04:00": {
-"variable": "t_0006e0c3",
+" 2: t_02: Random between 00:01:00 and 00:04:00": {
+"variable": "t_02",
+"nameRaw": "[0x0006e0c3]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
 "minimum": "00:01:00",
@@ -150,6 +160,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Mage": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Mage",
 "count": 1,
 "null1": 0,
@@ -158,7 +169,7 @@
 }
 }
 ,"opCodes: [22]": {
-" 0:  >> StartTimer (t_1stparton); When it expires: set s_1stparton": {
+" 0:  => StartTimer (t_1stparton); When it expires: set s_1stparton": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -324,11 +335,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 6:  >> IfMobHurtByPlayer (m_monster): set s_0000347f": {
+" 6:  >> IfMobHurtByPlayer (m_monster): set s_09": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0000347f": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -347,18 +358,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 7: s_0000347f >> StartTimer (t_0006e0c3); When it expires: set s_0006e0c3": {
+" 7: s_09 => StartTimer (t_02); When it expires: set s_08": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0000347f": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: t_0006e0c3": {
+"1: t_02": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -370,18 +381,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 8:  >> If (s_0006e0c3 and not s_mondead): set s_0001b7be": {
+" 8:  >> If (s_08 and not s_mondead): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_0001b7be": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: s_0006e0c3": {
+"1: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -414,11 +425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 9: s_0001b7be => PlaceMobAtLocation (m_monster, l_hideout) [Msg 1040]": {
+" 9: s_10 => PlaceMobAtLocation (m_monster, l_hideout) [Msg 1040]": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0001b7be": {
+"0: s_10": {
 "type": "State",
 "value": "10",
 "not": "False",
@@ -742,7 +753,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-"19: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"19: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -801,78 +812,90 @@
 ,"states: [12]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_mondead": {
 "variable": "s_mondead",
+"nameRaw": "[0x000035da]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_qgclicked": {
 "variable": "s_qgclicked",
+"nameRaw": "[0x0000d742]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_1stparton": {
 "variable": "s_1stparton",
+"nameRaw": "[0x0000a23c]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_2ndparton": {
 "variable": "s_2ndparton",
+"nameRaw": "[0x00009cbc]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
 " 6: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_0006e0c3": {
-"variable": "s_0006e0c3",
+" 8: s_08": {
+"variable": "s_08",
+"nameRaw": "[0x0006e0c3]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_0000347f": {
-"variable": "s_0000347f",
+" 9: s_09": {
+"variable": "s_09",
+"nameRaw": "[0x0000347f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
-"10: s_0001b7be": {
-"variable": "s_0001b7be",
+"10: s_10": {
+"variable": "s_10",
+"nameRaw": "[0x0001b7be]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
 "11: s_readmap": {
 "variable": "s_readmap",
+"nameRaw": "[0x00003536]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 }
 }
-,"text records: [17]": {
+,"text records: [15]": {
 "1000": [
 "So you want power, %pcn. Power is a far more  tangible quantity than wisdom, don't you agree? Now  then, in order for us to judge your worth, we have a  bit of toil for you to undertake. Nothing unpleasant,  of course. You may rather enjoy it. A simple  assassination, for which you will be rewarded with  _artifact_. Then we can see if you're ready  for real power. Does this sound agreeable?"
 ],

@@ -15,9 +15,10 @@
 ,"items: [0]": {
 }
 ,"npcs: [1]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -32,6 +33,7 @@
 ,"locations: [1]": {
 " 0: l_house: InCurrentTown None": {
 "variable": "l_house",
+"nameRaw": "[0x00000d17]",
 "generalLocation": "InCurrentTown",
 "locationType": -1,
 "LocationType": "None",
@@ -49,6 +51,7 @@
 ,"timers: [1]": {
 " 0: t_2dung: Fixed 1.00:00:00": {
 "variable": "t_2dung",
+"nameRaw": "[0x00000957]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "1.00:00:00",
@@ -63,6 +66,7 @@
 ,"mobs: [1]": {
 " 0: m_monster: 1 Barbarian": {
 "variable": "m_monster",
+"nameRaw": "[0X000036a4]",
 "type": "Barbarian",
 "count": 1,
 "null1": 0,
@@ -71,7 +75,7 @@
 }
 }
 ,"opCodes: [12]": {
-" 0:  >> StartTimer (t_2dung); When it expires: set s_2dung": {
+" 0:  => StartTimer (t_2dung); When it expires: set s_2dung": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -428,24 +432,28 @@
 ,"states: [4]": {
 " 0: s_2dung": {
 "variable": "s_2dung",
+"nameRaw": "[0x00000957]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_40000001": {
-"variable": "s_40000001",
+" 1: s_1": {
+"variable": "s_1",
+"nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_40000002": {
-"variable": "s_40000002",
+" 2: s_2": {
+"variable": "s_2",
+"nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_clearclick": {
 "variable": "s_clearclick",
+"nameRaw": "[0x00019765]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

@@ -13,9 +13,10 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_potion: Artifact MiscellaneousIngredients1 Pure_water": {
+" 0: i_potion: Pure_water [MiscellaneousIngredients1]": {
 "variable": "i_potion",
-"rewardType": "Artifact",
+"nameRaw": "[0x00001B80]",
+"rewardType": "Item1",
 "category": "MiscellaneousIngredients1",
 "itemId": 4,
 "textRecordId1": 0,
@@ -25,6 +26,7 @@
 },
 " 1: i_gold: Random gold": {
 "variable": "i_gold",
+"nameRaw": "[0x00000630]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_qgiver: Male (type QuestGiver)": {
+" 0: n_qgiver:  (type? QuestGiver)": {
 "variable": "n_qgiver",
-"gender": "Male",
+"nameRaw": "[0x00001aec]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,11 +51,12 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_mage: Female (faction The_Mages_Guild) (face 105)": {
+" 1: n_mage:  (faction The_Mages_Guild)": {
 "variable": "n_mage",
-"gender": "Female",
+"nameRaw": "[0x0000061f]",
+"unknown1": "[0x01]",
 "facePictureIndex": 105,
-"npcType": "Unknown_1",
+"npcType": "Normal",
 "npcTypeRaw": "65535 [0xFFFF]",
 "faction": "The_Mages_Guild",
 "factionRaw": "40 [0x0028]",
@@ -65,6 +69,7 @@
 ,"locations: [1]": {
 " 0: l_ranger: OutOfTown GuildHall": {
 "variable": "l_ranger",
+"nameRaw": "[0x00001a98]",
 "generalLocation": "OutOfTown",
 "locationType": 11,
 "LocationType": "GuildHall",
@@ -82,6 +87,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_ranger'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -96,6 +102,7 @@
 ,"mobs: [3]": {
 " 0: m_vampire: 1 Vampire": {
 "variable": "m_vampire",
+"nameRaw": "[0X000036dd]",
 "type": "Vampire",
 "count": 1,
 "null1": 0,
@@ -104,6 +111,7 @@
 },
 " 1: m_werewolf: 1 Werewolf": {
 "variable": "m_werewolf",
+"nameRaw": "[0X00007002]",
 "type": "Werewolf",
 "count": 1,
 "null1": 0,
@@ -112,6 +120,7 @@
 },
 " 2: m_wereboar: 1 Wereboar": {
 "variable": "m_wereboar",
+"nameRaw": "[0X00006f50]",
 "type": "Wereboar",
 "count": 1,
 "null1": 0,
@@ -120,7 +129,7 @@
 }
 }
 ,"opCodes: [21]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -395,7 +404,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 8:  >> WhenItemIsUsed (i_potion): set s_0000e340": {
+" 8:  >> WhenItemIsUsed (i_potion): set s_03": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -406,7 +415,7 @@
 "index": "255",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000e340": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -425,11 +434,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 9: s_0000e340 => CureLycanthropy ()": {
+" 9: s_03 => CureLycanthropy ()": {
 "opCode": 59,
 "argCount": 1,
 "arguments:": {
-"0: s_0000e340": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -441,11 +450,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"10: s_0000e340 => CureVampirism ()": {
+"10: s_03 => CureVampirism ()": {
 "opCode": 58,
 "argCount": 1,
 "arguments:": {
-"0: s_0000e340": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -457,11 +466,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"11: s_0000e340 => Say (1015)": {
+"11: s_03 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0000e340": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -473,11 +482,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_0000d342": {
+"12:  >> IfGivingItemToNpc (i_potion, n_mage): set s_02": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0000d342": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -503,7 +512,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"13:  >> If (s_0000d342 and s_0000e340): set s_incurability": {
+"13:  >> If (s_02 and s_03): set s_incurability": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -514,14 +523,14 @@
 "index": "4",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000d342": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: s_0000e340": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -579,7 +588,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"16:  >> If (s_0000d342 and not s_0000e340): set s_reward": {
+"16:  >> If (s_02 and not s_03): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -590,14 +599,14 @@
 "index": "5",
 "unknown1": "92454131 [0x0582BCF3]"
 },
-"1: s_0000d342": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: not s_0000e340": {
+"2: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -726,36 +735,42 @@
 ,"states: [6]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_daytime": {
 "variable": "s_daytime",
+"nameRaw": "[0x00003333]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_0000d342": {
-"variable": "s_0000d342",
+" 2: s_02": {
+"variable": "s_02",
+"nameRaw": "[0x0000d342]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_0000e340": {
-"variable": "s_0000e340",
+" 3: s_03": {
+"variable": "s_03",
+"nameRaw": "[0x0000e340]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_incurability": {
 "variable": "s_incurability",
+"nameRaw": "[0x0006a575]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
 " 5: s_reward": {
 "variable": "s_reward",
+"nameRaw": "[0x00001b14]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5

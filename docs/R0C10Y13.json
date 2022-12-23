@@ -15,6 +15,7 @@
 ,"items: [2]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Item Jewellery Jewellery": {
-"variable": "i_sage",
-"rewardType": "Item",
+" 1: i_item: [Jewellery]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item2",
 "category": "Jewellery",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -35,9 +37,10 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -48,9 +51,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (face 1)": {
+" 1: n_contact:  (type? Unknown_3)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Unknown_3",
 "npcTypeRaw": "65533 [0xFFFD]",
@@ -65,6 +69,7 @@
 ,"locations: [1]": {
 " 0: l_palace: OutOfTown Palace": {
 "variable": "l_palace",
+"nameRaw": "[0x00001a1f]",
 "generalLocation": "OutOfTown",
 "locationType": 16,
 "LocationType": "Palace",
@@ -82,6 +87,7 @@
 ,"timers: [2]": {
 " 0: t_queston: 1.5 times travel time between here and 'l_palace'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative1",
 "typeRaw": "2 [0x02]",
 "minimum": "00:00:00",
@@ -94,6 +100,7 @@
 },
 " 1: t_delay: Fixed 00:20:00": {
 "variable": "t_delay",
+"nameRaw": "[0x00000c53]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
 "minimum": "00:20:00",
@@ -108,7 +115,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [14]": {
-" 0:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 0:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -221,7 +228,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PlaceItemOnCharacter (i_sage)": {
+" 4:  => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -232,7 +239,7 @@
 "index": "255",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -274,7 +281,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfGivingItemToNpc (i_sage, n_contact): set s_pcgetsgold": {
+" 6:  >> IfGivingItemToNpc (i_item, n_contact): set s_pcgetsgold": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -285,7 +292,7 @@
 "index": "0",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -408,7 +415,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_queston => MakePermanent (i_sage)": {
+"10: s_queston => MakePermanent (i_item)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
@@ -419,7 +426,7 @@
 "index": "1",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -431,7 +438,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_pcgetsgold >> StartTimer (t_delay); When it expires: set s_delay": {
+"11: s_pcgetsgold => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -490,24 +497,28 @@
 ,"states: [4]": {
 " 0: s_pcgetsgold": {
 "variable": "s_pcgetsgold",
+"nameRaw": "[0x0001aba0]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_delay": {
 "variable": "s_delay",
+"nameRaw": "[0x00000c53]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3

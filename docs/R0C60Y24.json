@@ -15,6 +15,7 @@
 ,"items: [6]": {
 " 0: i_reward: Random gold": {
 "variable": "i_reward",
+"nameRaw": "[0x00001B14]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -23,9 +24,10 @@
 "index": 0,
 "unknown1": "0 [0x00000000]"
 },
-" 1: i_sage: Artifact MiscellaneousIngredients1 Holy_relic": {
-"variable": "i_sage",
-"rewardType": "Artifact",
+" 1: i_item: Holy_relic [MiscellaneousIngredients1]": {
+"variable": "i_item",
+"nameRaw": "[0x0000064F]",
+"rewardType": "Item1",
 "category": "MiscellaneousIngredients1",
 "itemId": 0,
 "textRecordId1": 0,
@@ -33,20 +35,22 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_map: Artifact Flammable Parchment [1030]": {
+" 2: i_map: Parchment [Usable] [1030]": {
 "variable": "i_map",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x000002E6]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1030,
 "index": 2,
 "unknown1": "0 [0x00000000]"
 },
-" 3: i_note: Artifact Flammable Parchment [1040]": {
+" 3: i_note: Parchment [Usable] [1040]": {
 "variable": "i_note",
-"rewardType": "Artifact",
-"category": "Flammable",
+"nameRaw": "[0x00000679]",
+"rewardType": "Item1",
+"category": "Usable",
 "itemId": 5,
 "textRecordId1": 0,
 "textRecordId2": 1040,
@@ -55,6 +59,7 @@
 },
 " 4: i_vampreward: Random gold": {
 "variable": "i_vampreward",
+"nameRaw": "[0x0001BA94]",
 "rewardType": "Gold",
 "category": "Random",
 "itemId": 65535,
@@ -63,9 +68,10 @@
 "index": 4,
 "unknown1": "0 [0x00000000]"
 },
-" 5: i_vampitem: Artifact MagicItem MagicItem": {
+" 5: i_vampitem: [MagicItem]": {
 "variable": "i_vampitem",
-"rewardType": "Artifact",
+"nameRaw": "[0x00006E2F]",
+"rewardType": "Item1",
 "category": "MagicItem",
 "itemId": 65535,
 "textRecordId1": 0,
@@ -75,9 +81,10 @@
 }
 }
 ,"npcs: [3]": {
-" 0: n_questgiver: Male (type QuestGiver)": {
+" 0: n_questgiver:  (type? QuestGiver)": {
 "variable": "n_questgiver",
-"gender": "Male",
+"nameRaw": "[0x0001c18c]",
+"unknown1": "[0x00]",
 "facePictureIndex": 0,
 "npcType": "QuestGiver",
 "npcTypeRaw": "21 [0x0015]",
@@ -88,9 +95,10 @@
 "index": 0,
 "null1": 0
 },
-" 1: n_contact: Female (type Cleric)": {
+" 1: n_contact:  (type? Cleric)": {
 "variable": "n_contact",
-"gender": "Female",
+"nameRaw": "[0x000033de]",
+"unknown1": "[0x01]",
 "facePictureIndex": 0,
 "npcType": "Cleric",
 "npcTypeRaw": "14 [0x000E]",
@@ -101,9 +109,10 @@
 "index": 1,
 "null1": 0
 },
-" 2: n_vampire: Female (faction Peryite) (face 1)": {
+" 2: n_vampire:  (type? Daedra) (faction Peryite)": {
 "variable": "n_vampire",
-"gender": "Female",
+"nameRaw": "[0x000036dd]",
+"unknown1": "[0x01]",
 "facePictureIndex": 1,
 "npcType": "Daedra",
 "npcTypeRaw": "65534 [0xFFFE]",
@@ -116,8 +125,9 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_0001bb58: Specific KykosCoven": {
-"variable": "l_0001bb58",
+" 0: l_00: Specific KykosCoven": {
+"variable": "l_00",
+"nameRaw": "[0x0001bb58]",
 "generalLocation": "Specific",
 "locationType": 1,
 "LocationType": "SpecificLocation",
@@ -133,6 +143,7 @@
 },
 " 1: l_vamphouse: OutOfTown House1": {
 "variable": "l_vamphouse",
+"nameRaw": "[0x0000dcd7]",
 "generalLocation": "OutOfTown",
 "locationType": 17,
 "LocationType": "House1",
@@ -150,6 +161,7 @@
 ,"timers: [1]": {
 " 0: t_queston: 1.5 times travel time between here and 'n_questgiver'": {
 "variable": "t_queston",
+"nameRaw": "[0x000037e4]",
 "type": "Relative3",
 "typeRaw": "4 [0x04]",
 "minimum": "00:00:00",
@@ -164,6 +176,7 @@
 ,"mobs: [2]": {
 " 0: m_vampires: 1 Vampire": {
 "variable": "m_vampires",
+"nameRaw": "[0X00006e2d]",
 "type": "Vampire",
 "count": 1,
 "null1": 0,
@@ -172,6 +185,7 @@
 },
 " 1: m_vampleader: 1 VampireAncient": {
 "variable": "m_vampleader",
+"nameRaw": "[0X0001b924]",
 "type": "VampireAncient",
 "count": 1,
 "null1": 0,
@@ -217,7 +231,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> StartTimer (t_queston); When it expires: set s_queston": {
+" 1:  => StartTimer (t_queston); When it expires: set s_queston": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -270,7 +284,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PlaceItemOnCharacter (i_sage)": {
+" 3:  => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -281,7 +295,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -390,7 +404,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_sage, n_contact): set s_npcclicked": {
+" 7:  >> IfGivingItemToNpc (i_item, n_contact): set s_npcclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -401,7 +415,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -480,7 +494,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfGivingItemToNpc (i_sage, n_vampire): set s_vampclicked": {
+"10:  >> IfGivingItemToNpc (i_item, n_vampire): set s_vampclicked": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -491,7 +505,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -699,7 +713,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_gimme => PlaceItemOnCharacter (i_sage)": {
+"18: s_gimme => PlaceItemOnCharacter (i_item)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -710,7 +724,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_sage": {
+"1: i_item": {
 "type": "Item",
 "value": "1",
 "not": "False",
@@ -775,11 +789,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_5": {
+"21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_7": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_7": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -805,11 +819,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfMobHurtByPlayer (m_vampires): set s_6": {
+"22:  >> IfMobHurtByPlayer (m_vampires): set s_8": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -828,7 +842,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_readmap => ShowLocationOnMap (l_0001bb58, 11, 484567)": {
+"23: s_readmap => ShowLocationOnMap (l_00, 11, 484567)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -839,7 +853,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_0001bb58": {
+"1: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -865,7 +879,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_yesmap and s_6): set s_placemap": {
+"24:  >> If (s_yesmap and s_8): set s_placemap": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -883,7 +897,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_8": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -969,11 +983,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> IfMobHurtByPlayer (m_vampleader): set s_11": {
+"27:  >> IfMobHurtByPlayer (m_vampleader): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_11": {
+"0: s_13": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -992,11 +1006,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_11 >> WhenItemIsUsed (i_note): set s_readnote": {
+"28: s_13 >> WhenItemIsUsed (i_note): set s_readnote": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_13": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1022,11 +1036,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_11 => PlaceItemOnMob (i_note, m_vampleader)": {
+"29: s_13 => PlaceItemOnMob (i_note, m_vampleader)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_11": {
+"0: s_13": {
 "type": "State",
 "value": "11",
 "not": "False",
@@ -1149,7 +1163,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (not s_5 and not s_thankyou): set s_conhouse": {
+"33:  >> If (not s_7 and not s_thankyou): set s_conhouse": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1160,7 +1174,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_5": {
+"1: not s_7": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -1285,84 +1299,98 @@
 ,"states: [14]": {
 " 0: s_queston": {
 "variable": "s_queston",
+"nameRaw": "[0x000037e4]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
 " 1: s_npcclicked": {
 "variable": "s_npcclicked",
+"nameRaw": "[0x0001b042]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
 " 2: s_vampclicked": {
 "variable": "s_vampclicked",
+"nameRaw": "[0x000371c2]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
 " 3: s_thankyou": {
 "variable": "s_thankyou",
+"nameRaw": "[0x00006d8f]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
 " 4: s_gimme": {
 "variable": "s_gimme",
+"nameRaw": "[0x00000cab]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_40000007": {
-"variable": "s_40000007",
+" 5: s_7": {
+"variable": "s_7",
+"nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_40000008": {
-"variable": "s_40000008",
+" 6: s_8": {
+"variable": "s_8",
+"nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
 " 7: s_readmap": {
 "variable": "s_readmap",
+"nameRaw": "[0x00003536]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
 " 8: s_yesmap": {
 "variable": "s_yesmap",
+"nameRaw": "[0x00001bee]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
 " 9: s_nomap": {
 "variable": "s_nomap",
+"nameRaw": "[0x00000d3e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 9
 },
 "10: s_placemap": {
 "variable": "s_placemap",
+"nameRaw": "[0x00006b5e]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 10
 },
-"11: s_4000000d": {
-"variable": "s_4000000d",
+"11: s_13": {
+"variable": "s_13",
+"nameRaw": "[0x4000000d]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 11
 },
 "12: s_readnote": {
 "variable": "s_readnote",
+"nameRaw": "[0x00006b19]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 12
 },
 "13: s_conhouse": {
 "variable": "s_conhouse",
+"nameRaw": "[0x00006817]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 13
