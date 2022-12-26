@@ -42,37 +42,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_house: OutOfTown None": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_house: Remote None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_qgenemy: OutOfTown Dungeon": {
-"variable": "l_qgenemy",
-"nameRaw": "[0x000035c7]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_qgenemy: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000035c7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -298,11 +294,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfMobsKilled (m_monster, 1): set s_1 [Msg 1011]": {
+" 6:  >> IfMobsKilled (m_monster, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -328,11 +324,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfMobsKilled (m_gem2, 1): set s_1 [Msg 1012]": {
+" 7:  >> IfMobsKilled (m_gem2, 1): set s_01 [Msg 1012]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -358,11 +354,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -381,11 +377,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => QuestSuccess (i_gold)": {
+" 9: s_02 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -425,11 +421,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => EndQuest ()": {
+"10: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -441,7 +437,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_2 and not s_1): set s_clearclick": {
+"11:  >> If (s_02 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -452,14 +448,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -485,7 +481,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_clearclick => Unset (s_2, s_clearclick)": {
+"12: s_clearclick => Unset (s_02, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -496,7 +492,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -529,11 +525,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_map and s_2): set s_6": {
+"13:  >> If (s_map and s_02): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -547,7 +543,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -573,11 +569,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_6 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"14: s_06 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -665,15 +661,15 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -700,8 +696,8 @@
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,

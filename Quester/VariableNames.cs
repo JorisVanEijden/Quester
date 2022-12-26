@@ -209,7 +209,8 @@ namespace Quester
             [0x00001B4C] = "murder",
             [0x00001B50] = "poison",
             [0x00001B56] = "priest",
-            [0x00001B74] = "spider",
+            [0x00001B74] = "powder",
+            // [0x00001B74] = "spider",
             [0x00001B77] = "victim",
             [0x00001B80] = "potion",
             [0x00001B86] = "snitch",
@@ -596,6 +597,17 @@ namespace Quester
             [0X0000D04D] = "brisienna",
             [0X00000DBF] = "totem",
             [0X000068FA] = "lichdead",
+            [0X00014FF8] = "Daggerfall",
+            [0X0006F768] = "lysandustomb",
+            [0X00006CDA] = "llugwych",
+            [0X00000CB8] = "coven",
+            [0X00005F5B] = "Orsinium",
+            [0X00006F5B] = "orsinium",
+            [0X00067A70] = "dirennitower",
+            [0X000037EE] = "wayrest",
+            [0X00006DF6] = "sentinel",
+            [0X0001BB58] = "kykoscoven",
+            [0X00001A11] = "medora",
         };
 
         public static string LookUp(uint value)
@@ -608,7 +620,8 @@ namespace Quester
                     : null;
             }
 
-            return $"{value & 0x00FFFFFF}";
+            var number = value & 0x00FFFFFF;
+            return $"{number:D2}";
         }
     }
 }

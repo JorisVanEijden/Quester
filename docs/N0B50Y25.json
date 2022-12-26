@@ -67,37 +67,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_magesguild: OutOfTown GuildHall": {
-"variable": "l_magesguild",
-"nameRaw": "[0x0001a318]",
-"generalLocation": "OutOfTown",
-"locationType": 11,
-"LocationType": "GuildHall",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_magesguild: Remote GuildHall": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "11 [0x000B]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001a318]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_house: OutOfTown House4": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "OutOfTown",
-"locationType": 20,
-"LocationType": "House4",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_house: Remote House4": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "20 [0x0014]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -177,7 +173,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => PlaceNpcAt (n_scholar, l_magesguild)": {
+" 1:  => MoveToLocation (n_scholar, l_magesguild)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

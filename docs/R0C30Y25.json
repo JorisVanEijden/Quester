@@ -125,37 +125,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_thievesguild: OutOfTown House1": {
-"variable": "l_thievesguild",
-"nameRaw": "[0x0006e698]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_thievesguild: Remote House1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0006e698]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 },
 " 1: l_01: Specific MyrkwasaCoven": {
-"variable": "l_01",
-"nameRaw": "[0x000348b1]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 50034,
-"knownLocation": "MyrkwasaCoven",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50034 [0xC372]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000348b1]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -196,8 +192,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 1 Thief": {
-"variable": "m_1",
+" 1: m_01: 1 Thief": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "Thief",
 "count": 1,
@@ -913,11 +909,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23:  >> IfMobHurtByPlayer (m_thief): set s_8": {
+"23:  >> IfMobHurtByPlayer (m_thief): set s_08": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -936,11 +932,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_8 => PlaceItemOnMob (i_letter, m_thief)": {
+"24: s_08 => PlaceItemOnMob (i_letter, m_thief)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -966,11 +962,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_8 => Say (1020)": {
+"25: s_08 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -982,11 +978,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_8 >> WhenPlayerHasItems (i_item2): set s_pchasitem2": {
+"26: s_08 >> WhenPlayerHasItems (i_item2): set s_pchasitem2": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1026,7 +1022,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_10 => PlaceItemOnMob (i_item2, m_1)": {
+"27: s_10 => PlaceItemOnMob (i_item2, m_01)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -1044,7 +1040,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: m_1": {
+"2: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1056,7 +1052,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_10 => DoneWithMob (m_1, _)": {
+"28: s_10 => DoneWithMob (m_01, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -1067,7 +1063,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1086,7 +1082,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_10 => PlaceMobAtLocation (m_1, l_thievesguild)": {
+"29: s_10 => PlaceMobAtLocation (m_01, l_thievesguild)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -1097,7 +1093,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1116,7 +1112,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> IfMobHurtByPlayer (m_1): set s_11": {
+"30:  >> IfMobHurtByPlayer (m_01): set s_11": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1127,7 +1123,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1229,7 +1225,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34: s_yesmap => PlaceItemOnMob (i_map, m_1)": {
+"34: s_yesmap => PlaceItemOnMob (i_map, m_01)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -1247,7 +1243,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: m_1": {
+"2: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1259,7 +1255,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35: s_readmap => ShowLocationOnMap (l_01, 46, 423290)": {
+"35: s_readmap >> ShowLocationOnMap (l_01, Myrkwasa, 0x6757A)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -1354,8 +1350,8 @@
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,

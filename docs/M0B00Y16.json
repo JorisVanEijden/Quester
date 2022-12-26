@@ -81,53 +81,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_mondung: OutOfTown Dungeon": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_qgenemy: OutOfTown Dungeon": {
-"variable": "l_qgenemy",
-"nameRaw": "[0x000035c7]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_qgenemy: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000035c7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_store: OutOfTown GeneralStore": {
-"variable": "l_store",
-"nameRaw": "[0x00000dd5]",
-"generalLocation": "OutOfTown",
-"locationType": 9,
-"LocationType": "GeneralStore",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_store: Remote GeneralStore": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "9 [0x0009]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000dd5]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -155,8 +149,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 1 Giant": {
-"variable": "m_1",
+" 1: m_01: 1 Giant": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "Giant",
 "count": 1,
@@ -242,7 +236,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PickOneOf (s_victim, s_9, s_9)": {
+" 3:  => PickOneOf (s_victim, s_09, s_09)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -260,14 +254,14 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_9": {
+"3: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -390,11 +384,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfMobHurtByPlayer (m_giant): set s_2": {
+" 7:  >> IfMobHurtByPlayer (m_giant): set s_02": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -413,18 +407,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => CreateFoe(m_1, 2, 100%, 6)": {
+" 8: s_02 => CreateFoe(m_01, 2, 100%, 6)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -457,11 +451,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => Say (1030)": {
+" 9: s_02 => Say (1030)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -473,11 +467,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfMobsKilled (m_giant, 1): set s_3": {
+"10:  >> IfMobsKilled (m_giant, 1): set s_03": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -503,11 +497,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => MakePermanent (i_magic)": {
+"11: s_03 => MakePermanent (i_magic)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -549,7 +543,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_clickqgiver and s_3): set s_success": {
+"13:  >> If (s_clickqgiver and s_03): set s_success": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -567,7 +561,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -764,7 +758,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_victim => PlaceNpcAt (n_villager, l_mondung)": {
+"19: s_victim => MoveToLocation (n_villager, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -794,11 +788,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_9 => HideNpc (n_villager)": {
+"20: s_09 => HideNpc (n_villager)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1114,7 +1108,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33: s_13 => PlaceNpcAt (n_villager, l_store)": {
+"33: s_13 => MoveToLocation (n_villager, l_store)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1248,7 +1242,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> If (s_success and s_9): set s_16": {
+"37:  >> If (s_success and s_09): set s_16": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1266,7 +1260,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1412,15 +1406,15 @@
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1461,8 +1455,8 @@
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

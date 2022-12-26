@@ -125,37 +125,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_00: Specific KykosCoven": {
-"variable": "l_00",
-"nameRaw": "[0x0001bb58]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 50046,
-"knownLocation": "KykosCoven",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_kykoscoven: Specific KykosCoven": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50046 [0xC37E]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001bb58]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_vamphouse: OutOfTown House1": {
-"variable": "l_vamphouse",
-"nameRaw": "[0x0000dcd7]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_vamphouse: Remote House1": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000dcd7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -789,11 +785,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_7": {
+"21:  >> IfTimeOfDayBetween (05:50:00, 17:30:00): set s_07": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -819,11 +815,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfMobHurtByPlayer (m_vampires): set s_8": {
+"22:  >> IfMobHurtByPlayer (m_vampires): set s_08": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -842,7 +838,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_readmap => ShowLocationOnMap (l_00, 11, 484567)": {
+"23: s_readmap >> ShowLocationOnMap (l_kykoscoven, Dakfron, 0x764D7)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -853,7 +849,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_00": {
+"1: l_kykoscoven": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -879,7 +875,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_yesmap and s_8): set s_placemap": {
+"24:  >> If (s_yesmap and s_08): set s_placemap": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -897,7 +893,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: s_08": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1103,7 +1099,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_readnote => PlaceNpcAt (n_vampire, l_vamphouse)": {
+"31: s_readnote => MoveToLocation (n_vampire, l_vamphouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1163,7 +1159,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> If (not s_7 and not s_thankyou): set s_conhouse": {
+"33:  >> If (not s_07 and not s_thankyou): set s_conhouse": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1174,7 +1170,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_7": {
+"1: not s_07": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -1332,15 +1328,15 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_7": {
-"variable": "s_7",
+" 5: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_8": {
-"variable": "s_8",
+" 6: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,

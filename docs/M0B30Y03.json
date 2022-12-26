@@ -42,37 +42,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown Dungeon": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_qgenemy: OutOfTown Dungeon": {
-"variable": "l_qgenemy",
-"nameRaw": "[0x000035c7]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_qgenemy: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000035c7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -497,11 +493,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12:  >> If (s_map and s_pcgetsgold): set s_7": {
+"12:  >> If (s_map and s_pcgetsgold): set s_07": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -541,11 +537,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_7 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"13: s_07 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -564,11 +560,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> If (s_nomap and s_pcgetsgold): set s_8": {
+"14:  >> If (s_nomap and s_pcgetsgold): set s_08": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -608,25 +604,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (s_7 or s_8): set s_9": {
+"15:  >> If (s_07 or s_08): set s_09": {
 "opCode": 53,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_7": {
+"1: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -652,11 +648,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_9 => EndQuest ()": {
+"16: s_09 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -719,22 +715,22 @@
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

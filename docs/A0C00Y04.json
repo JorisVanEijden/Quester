@@ -120,37 +120,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_dungeon: OutOfTown Dungeon": {
-"variable": "l_dungeon",
-"nameRaw": "[0x00003498]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dungeon: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "156 [0x9C]",
+"nameRaw": "[0x00003498]",
 "objPtr": 0,
-"unknown1": "39936 [0x9C00]"
-},
-" 1: l_meetingplace: InCurrentTown Alchemist": {
-"variable": "l_meetingplace",
-"nameRaw": "[0x0006a3ef]",
-"generalLocation": "InCurrentTown",
-"locationType": 0,
-"LocationType": "Alchemist",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_meetingplace: Local Alchemist": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "0 [0x0000]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "156 [0x9C]",
+"nameRaw": "[0x0006a3ef]",
 "objPtr": 0,
-"unknown1": "39936 [0x9C00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -266,7 +262,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 49
 },
-" 2:  => PlaceNpcAt (n_qgiver, l_meetingplace)": {
+" 2:  => MoveToLocation (n_qgiver, l_meetingplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

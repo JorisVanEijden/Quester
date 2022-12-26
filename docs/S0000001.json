@@ -134,53 +134,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_ukcrypt: OutOfTown Crypt": {
-"variable": "l_ukcrypt",
-"nameRaw": "[0x00003798]",
-"generalLocation": "OutOfTown",
-"locationType": 0,
-"LocationType": "Crypt",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 1015,
-"textRecordId2": 1016,
+" 0: l_ukcrypt: Remote Crypt": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "0 [0x0000]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003798]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 1015,
+"textRecordId2": 1016
 },
-" 1: l_01: Specific DirenniTowerEntry": {
-"variable": "l_01",
-"nameRaw": "[0x00067a70]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50020,
-"knownLocation": "DirenniTowerEntry",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 1: l_dirennitower: Specific DirenniTowerEntry marker 1": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50020 [0xC364]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00067a70]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_agentplace: OutOfTown Tavern": {
-"variable": "l_agentplace",
-"nameRaw": "[0x0001928f]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_agentplace: Remote Tavern": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001928f]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -238,7 +232,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => RemoveTopics (l_01)": {
+" 1:  => RemoveTopics (l_dirennitower)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -249,7 +243,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_01": {
+"1: l_dirennitower": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -312,7 +306,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  => PlaceNpcAt (n_agentuk, l_agentplace)": {
+" 3:  => MoveToLocation (n_agentuk, l_agentplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -342,11 +336,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfGivingItemToNpc (i_00, n_00): set s_0": {
+" 4:  >> IfGivingItemToNpc (i_00, n_00): set s_00": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -372,11 +366,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => QuestSuccess (i_magicitem)": {
+" 5: s_00 => QuestSuccess (i_magicitem)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -416,18 +410,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => AddTopics (l_01)": {
+" 6: s_00 => AddTopics (l_dirennitower)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_01": {
+"1: l_dirennitower": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -453,11 +447,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_0 => RemoveLogFromSlot (0)": {
+" 7: s_00 => RemoveLogFromSlot (0)": {
 "opCode": 24,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -476,18 +470,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_0 => ShowLocationOnMap (l_01, 9, 204718)": {
+" 8: s_00 >> ShowLocationOnMap (l_dirennitower, Isle_of_Balfiera, 0x31FAE)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_01": {
+"1: l_dirennitower": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -513,11 +507,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_0 => IfNpcReputation (n_01) > 5: set s_16": {
+" 9: s_00 => IfNpcReputation (n_01) > 5: set s_16": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -550,11 +544,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_0 => AdjustReputationWithNpc (n_00, 15)": {
+"10: s_00 => AdjustReputationWithNpc (n_00, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -580,11 +574,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_0 => AdjustReputationWithNpc (n_agentuk, 25)": {
+"11: s_00 => AdjustReputationWithNpc (n_agentuk, 25)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -610,11 +604,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_0 => StopNpcConversation (n_00)": {
+"12: s_00 => StopNpcConversation (n_00)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -633,11 +627,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_0 => StopNpcConversation (n_hitguard)": {
+"13: s_00 => StopNpcConversation (n_hitguard)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -656,11 +650,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_0 => StopNpcConversation (n_01)": {
+"14: s_00 => StopNpcConversation (n_01)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -679,11 +673,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_0 => StopNpcConversation (n_03)": {
+"15: s_00 => StopNpcConversation (n_03)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -702,11 +696,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_0 => UnsetQuestor (n_00)": {
+"16: s_00 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -725,11 +719,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> IfGivingItemToNpc (i_00, n_01): set s_5": {
+"17:  >> IfGivingItemToNpc (i_00, n_01): set s_05": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -755,11 +749,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> IfGivingItemToNpc (i_00, n_03): set s_5": {
+"18:  >> IfGivingItemToNpc (i_00, n_03): set s_05": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -785,11 +779,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfGivingItemToNpc (i_00, n_hitguard): set s_5": {
+"19:  >> IfGivingItemToNpc (i_00, n_hitguard): set s_05": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -815,11 +809,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_5 => Say (1018)": {
+"20: s_05 => Say (1018)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -831,11 +825,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_5 => AdjustReputationWithNpc (n_01, -20)": {
+"21: s_05 => AdjustReputationWithNpc (n_01, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -861,11 +855,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_5 => AdjustLegalReputation (-20)": {
+"22: s_05 => AdjustLegalReputation (-20)": {
 "opCode": 65,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -884,11 +878,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_5 => EndQuest ()": {
+"23: s_05 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1367,22 +1361,22 @@
 }
 }
 ,"states: [20]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1395,43 +1389,43 @@
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

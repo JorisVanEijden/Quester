@@ -81,69 +81,61 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_house: OutOfTown House2": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "OutOfTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_house: Remote House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_tavern: OutOfTown Tavern": {
-"variable": "l_tavern",
-"nameRaw": "[0x00001b26]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_tavern: Remote Tavern": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b26]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_house2: OutOfTown House1": {
-"variable": "l_house2",
-"nameRaw": "[0x00001a60]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_house2: Remote House1": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001a60]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 3: l_dungeon: OutOfTown Crypt": {
-"variable": "l_dungeon",
-"nameRaw": "[0x00003498]",
-"generalLocation": "OutOfTown",
-"locationType": 0,
-"LocationType": "Crypt",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_dungeon: Remote Crypt": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "0 [0x0000]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003498]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [0]": {
@@ -178,7 +170,7 @@
 }
 }
 ,"opCodes: [28]": {
-" 0:  => PlaceNpcAt (n_db, l_house)": {
+" 0:  => MoveToLocation (n_db, l_house)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -307,7 +299,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_00 => PlaceNpcAt (n_mage, l_tavern)": {
+" 5: s_00 => MoveToLocation (n_mage, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

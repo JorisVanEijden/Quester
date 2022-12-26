@@ -81,21 +81,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_shop: InCurrentTown PawnShop": {
-"variable": "l_shop",
-"nameRaw": "[0x00000686]",
-"generalLocation": "InCurrentTown",
-"locationType": 12,
-"LocationType": "PawnShop",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_shop: Local PawnShop": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "12 [0x000C]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x00000686]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -232,7 +230,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 109
 },
-" 2:  => PlaceNpcAt (n_merchant, l_shop)": {
+" 2:  => MoveToLocation (n_merchant, l_shop)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

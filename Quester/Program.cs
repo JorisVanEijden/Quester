@@ -83,6 +83,7 @@ namespace Quester
             using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
             {
                 QbnHeader header = ReadHeader(reader);
+                header.Quest = Quest;
                 Quest.Items = ReadItemSection(reader, header);
                 Quest.Npcs = ReadNpcSection(reader, header);
                 Quest.Locations = ReadLocationSection(reader, header);

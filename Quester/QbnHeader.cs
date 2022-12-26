@@ -29,5 +29,6 @@ namespace Quester
         public ushort Section5Offset;
         public ushort TextVariableOffset;
         public ushort Null2;
+        public Quest Quest { get; set; }
     }
 }

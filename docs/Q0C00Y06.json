@@ -42,21 +42,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown VampireHaunt": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": 8,
-"LocationType": "VampireHaunt",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote VampireHaunt": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "8 [0x0008]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -192,7 +190,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> If (s_vampclicked and s_1): set s_00": {
+" 4:  >> If (s_vampclicked and s_01): set s_00": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -210,7 +208,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -296,11 +294,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfMobsKilled (m_vamprival, 1): set s_1": {
+" 7:  >> IfMobsKilled (m_vamprival, 1): set s_01": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -326,11 +324,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => Say (1020)": {
+" 8: s_01 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -381,7 +379,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_vampclicked and not s_1): set not s_vampclicked": {
+"11:  >> If (s_vampclicked and not s_01): set not s_vampclicked": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -399,7 +397,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -434,8 +432,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,

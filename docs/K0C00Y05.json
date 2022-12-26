@@ -81,37 +81,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown OrcStronghold": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": 1,
-"LocationType": "OrcStronghold",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote OrcStronghold": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_childlocale: InCurrentTown House2": {
-"variable": "l_childlocale",
-"nameRaw": "[0x00032e49]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_childlocale: Local House2": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00032e49]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -128,8 +124,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_4: Random between 01:40:00 and 06:40:00": {
-"variable": "t_4",
+" 1: t_04: Random between 01:40:00 and 06:40:00": {
+"variable": "t_04",
 "nameRaw": "[0x40000004]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
@@ -303,7 +299,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PickOneOf (s_metal, s_1)": {
+" 5:  => PickOneOf (s_metal, s_01)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -321,7 +317,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -370,11 +366,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => PlaceNpcAt (n_child, l_mondung)": {
+" 7: s_01 => MoveToLocation (n_child, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -400,7 +396,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_metal => IfNpcReputation (n_knight) > 10: set s_3": {
+" 8: s_metal => IfNpcReputation (n_knight) > 10: set s_03": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -411,7 +407,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -437,7 +433,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_metal => PlaceNpcAt (n_child, l_childlocale)": {
+" 9: s_metal => MoveToLocation (n_child, l_childlocale)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -467,18 +463,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => StartTimer (t_4); When it expires: set s_4": {
+"10: s_03 => StartTimer (t_04); When it expires: set s_04": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_4": {
+"1: t_04": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -490,18 +486,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_4 >> WhenItemIsUsed (i_00): set s_5": {
+"11: s_04 >> WhenItemIsUsed (i_00): set s_05": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -520,11 +516,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 => Say (-1)": {
+"12: s_04 => Say (-1)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -536,11 +532,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_4 => GiveToPlayer (i_00) [Msg 1012]": {
+"13: s_04 => GiveToPlayer (i_00) [Msg 1012]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -559,11 +555,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_5 => CreateLogEntry (1013, 1)": {
+"14: s_05 => CreateLogEntry (1013, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -589,11 +585,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> IfNpcClicked (n_knight): set s_6": {
+"15:  >> IfNpcClicked (n_knight): set s_06": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -612,11 +608,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_6 => CreateLogEntry (1019, 2)": {
+"16: s_06 => CreateLogEntry (1019, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -642,11 +638,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_6 => Say (1014)": {
+"17: s_06 => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -658,11 +654,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_6 => AddTopics (l_childlocale)": {
+"18: s_06 => AddTopics (l_childlocale)": {
 "opCode": 10,
 "argCount": 4,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -695,11 +691,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfNpcClicked (n_child): set s_7": {
+"19:  >> IfNpcClicked (n_child): set s_07": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -718,18 +714,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_7 => PromptYesNo (s_9, s_no, 1017)": {
+"20: s_07 => PromptYesNo (s_09, s_no, 1017)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -755,18 +751,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> If (s_9 and s_metal): set s_8": {
+"21:  >> If (s_09 and s_metal): set s_08": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -799,11 +795,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_8 => CreateFoe(m_warrior, 21, 20%, 10)": {
+"22: s_08 => CreateFoe(m_warrior, 21, 20%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -843,11 +839,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_8 => AdjustReputationWithNpc (n_knight, -15)": {
+"23: s_08 => AdjustReputationWithNpc (n_knight, -15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -873,11 +869,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_9 => HideNpc (n_child)": {
+"24: s_09 => HideNpc (n_child)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -896,11 +892,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_9 => Say (1015)": {
+"25: s_09 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -912,11 +908,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_9 => StartNpcEscort (n_child)": {
+"26: s_09 => StartNpcEscort (n_child)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -958,7 +954,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (s_qgclicked and s_9): set s_reward": {
+"28:  >> If (s_qgclicked and s_09): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -976,7 +972,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1085,7 +1081,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32:  >> If (s_1 and s_reward): set s_13": {
+"32:  >> If (s_01 and s_reward): set s_13": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1096,7 +1092,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -1189,7 +1185,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"35:  >> If (s_queston and s_6 and not s_8): set s_14": {
+"35:  >> If (s_queston and s_06 and not s_08): set s_14": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1207,14 +1203,14 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"3: not s_8": {
+"3: not s_08": {
 "type": "State",
 "value": "8",
 "not": "True",
@@ -1263,7 +1259,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> If (s_queston and s_9): set s_15": {
+"37:  >> If (s_queston and s_09): set s_15": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1281,7 +1277,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_9": {
+"2: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -1323,7 +1319,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39:  >> If (s_qgclicked and not s_9): set s_clearclick": {
+"39:  >> If (s_qgclicked and not s_09): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1341,7 +1337,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_9": {
+"2: not s_09": {
 "type": "State",
 "value": "9",
 "not": "True",
@@ -1420,8 +1416,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1434,50 +1430,50 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

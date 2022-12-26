@@ -81,37 +81,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_itemplace: OutOfTown Temple": {
-"variable": "l_itemplace",
-"nameRaw": "[0x0000d6ef]",
-"generalLocation": "OutOfTown",
-"locationType": 14,
-"LocationType": "Temple",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_itemplace: Remote Temple": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 1,
+"unknown1": "255 [0xFF]",
+"unknown2": "79 [0x4F]",
+"nameRaw": "[0x0000d6ef]",
 "objPtr": 0,
-"unknown1": "20479 [0x4FFF]"
-},
-" 1: l_inn: OutOfTown Tavern": {
-"variable": "l_inn",
-"nameRaw": "[0x000002ee]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_inn: Remote Tavern": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "79 [0x4F]",
+"nameRaw": "[0x000002ee]",
 "objPtr": 0,
-"unknown1": "20479 [0x4FFF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -230,7 +226,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 3:  => PlaceNpcAt (n_01, l_inn)": {
+" 3:  => MoveToLocation (n_01, l_inn)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

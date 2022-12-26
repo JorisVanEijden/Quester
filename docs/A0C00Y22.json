@@ -42,21 +42,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_qgiverhome: InCurrentTown House2": {
-"variable": "l_qgiverhome",
-"nameRaw": "[0x0001b4fb]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_qgiverhome: Local House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x0001b4fb]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -317,7 +315,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 7: s_01 => PlaceNpcAt (n_qgiver, l_qgiverhome)": {
+" 7: s_01 => MoveToLocation (n_qgiver, l_qgiverhome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

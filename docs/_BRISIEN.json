@@ -64,37 +64,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_00: Specific PrivateerHold": {
-"variable": "l_00",
-"nameRaw": "[0x000384f7]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50050,
-"knownLocation": "PrivateerHold",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Specific PrivateerHold marker 1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50050 [0xC382]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000384f7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_dirtypit: OutOfTown Tavern": {
-"variable": "l_dirtypit",
-"nameRaw": "[0x0000688e]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_dirtypit: Remote Tavern": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000688e]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [4]": {
@@ -343,7 +339,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_00 => PlaceNpcAt (n_Brisienna, l_dirtypit)": {
+" 7: s_00 => MoveToLocation (n_Brisienna, l_dirtypit)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

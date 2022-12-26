@@ -31,21 +31,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_house: InCurrentTown None": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_house: Local None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -227,11 +225,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfMobsKilled (m_monster, 1): set s_1 [Msg 1011]": {
+" 6:  >> IfMobsKilled (m_monster, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -257,11 +255,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfNpcClicked (n_qgiver): set s_2": {
+" 7:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -280,11 +278,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => QuestSuccess ()": {
+" 8: s_02 => QuestSuccess ()": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -324,11 +322,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => EndQuest ()": {
+" 9: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -340,7 +338,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> If (s_2 and not s_1): set s_clearclick": {
+"10:  >> If (s_02 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -351,14 +349,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -384,7 +382,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_clearclick => Unset (s_2, s_clearclick)": {
+"11: s_clearclick => Unset (s_02, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -395,7 +393,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -437,15 +435,15 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,

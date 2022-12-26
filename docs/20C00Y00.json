@@ -67,53 +67,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_mondung: OutOfTown Laboratory": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": 9,
-"LocationType": "Laboratory",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Laboratory": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "9 [0x0009]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "230 [0xE6]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "58880 [0xE600]"
-},
-" 1: l_tavern: OutOfTown Tavern": {
-"variable": "l_tavern",
-"nameRaw": "[0x00001b26]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_tavern: Remote Tavern": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "230 [0xE6]",
+"nameRaw": "[0x00001b26]",
 "objPtr": 0,
-"unknown1": "58880 [0xE600]"
-},
-" 2: l_hideout: OutOfTown RuinedCastle": {
-"variable": "l_hideout",
-"nameRaw": "[0x000033a2]",
-"generalLocation": "OutOfTown",
-"locationType": 11,
-"LocationType": "RuinedCastle",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_hideout: Remote RuinedCastle": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "11 [0x000B]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "230 [0xE6]",
+"nameRaw": "[0x000033a2]",
 "objPtr": 0,
-"unknown1": "58880 [0xE600]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -245,7 +239,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 54
 },
-" 3:  => PlaceNpcAt (n_contact, l_tavern)": {
+" 3:  => MoveToLocation (n_contact, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

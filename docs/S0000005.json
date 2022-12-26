@@ -57,20 +57,18 @@
 }
 ,"locations: [1]": {
 " 0: l_huntstart: Specific Shedungent": {
-"variable": "l_huntstart",
-"nameRaw": "[0x0000da2c]",
-"generalLocation": "Specific",
-"locationType": 2,
-"LocationType": "SpecificLocation",
-"fineLocation": 50005,
-"knownLocation": "Shedungent",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50005 [0xC355]",
+"extraInfo1": "2 [0x0002]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000da2c]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -220,11 +218,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> IfNpcClicked (n_00): set s_1": {
+" 5:  >> IfNpcClicked (n_00): set s_01": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -243,11 +241,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_1 => Say (1011)": {
+" 6: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -259,7 +257,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> If (s_3 and s_1): set s_pcgetsgold": {
+" 7:  >> If (s_03 and s_01): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -270,14 +268,14 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -513,11 +511,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> IfNpcClicked (n_01): set s_3": {
+"15:  >> IfNpcClicked (n_01): set s_03": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -575,7 +573,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_yes => ShowLocationOnMap (l_huntstart, 16, 50966)": {
+"18: s_yes >> ShowLocationOnMap (l_huntstart, Wrothgarian_Mountains, 0xC716)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -667,7 +665,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> If (s_3 and not s_1): set s_clearclick": {
+"22:  >> If (s_03 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -678,14 +676,14 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -711,7 +709,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_clearclick => Unset (s_3, s_clearclick)": {
+"23: s_clearclick => Unset (s_03, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -722,7 +720,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -854,8 +852,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -868,8 +866,8 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -882,22 +880,22 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,

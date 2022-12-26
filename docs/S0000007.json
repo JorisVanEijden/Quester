@@ -134,101 +134,89 @@
 }
 }
 ,"locations: [6]": {
-" 0: l_mondung: Specific Tristore_Laboratory": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "Specific",
-"locationType": -1532,
-"LocationType": "SpecificLocation",
-"fineLocation": 22565,
-"knownLocation": "Tristore_Laboratory",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Specific Tristore_Laboratory marker 4": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "22565 [0x5825]",
+"extraInfo1": "-1532 [0xFA04]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_01: Specific Tristore_Laboratory": {
-"variable": "l_01",
-"nameRaw": "[0x0000cbc7]",
-"generalLocation": "Specific",
-"locationType": -1534,
-"LocationType": "SpecificLocation",
-"fineLocation": 22565,
-"knownLocation": "Tristore_Laboratory",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_01: Specific Tristore_Laboratory marker 2": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "22565 [0x5825]",
+"extraInfo1": "-1534 [0xFA02]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000cbc7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_02: Specific Tristore_Laboratory": {
-"variable": "l_02",
-"nameRaw": "[0x00019577]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 22565,
-"knownLocation": "Tristore_Laboratory",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_02: Specific Tristore_Laboratory marker 1": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "22565 [0x5825]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00019577]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 3: l_tavern: OutOfTown Tavern": {
-"variable": "l_tavern",
-"nameRaw": "[0x00001b26]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_tavern: Remote Tavern": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b26]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 4: l_npc2: InCurrentTown Dungeon": {
-"variable": "l_npc2",
-"nameRaw": "[0x00000628]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 4: l_npc2: Local Dungeon": {
 "index": 4,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000628]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 5: l_05: Specific BluffCoven": {
-"variable": "l_05",
-"nameRaw": "[0x00000cb8]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 50016,
-"knownLocation": "BluffCoven",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 5: l_coven: Specific BluffCoven": {
 "index": 5,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50016 [0xC360]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000cb8]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [5]": {
@@ -596,7 +584,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> WhenAtLocation (l_05): set s_30": {
+" 8:  >> WhenAtLocation (l_coven): set s_30": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -614,7 +602,7 @@
 "index": "30",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_05": {
+"2: l_coven": {
 "type": "Location",
 "value": "5",
 "not": "False",
@@ -1281,7 +1269,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_yes => ShowLocationOnMap (l_mondung, 19, 255132)": {
+"32: s_yes >> ShowLocationOnMap (l_mondung, Betony, 0x3E49C)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -2036,7 +2024,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"56: s_22 => PlaceNpcAt (n_02, l_mondung)": {
+"56: s_22 => MoveToLocation (n_02, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -2768,7 +2756,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"79: s_29 => PlaceNpcAt (n_02, l_tavern)": {
+"79: s_29 => MoveToLocation (n_02, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -2867,7 +2855,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"83: s_29 => ShowLocationOnMap (l_05, 17, 191097)": {
+"83: s_29 >> ShowLocationOnMap (l_coven, Daggerfall, 0x2EA79)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -2878,7 +2866,7 @@
 "index": "29",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_05": {
+"1: l_coven": {
 "type": "Location",
 "value": "5",
 "not": "False",
@@ -3296,7 +3284,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"98: s_34 => PlaceNpcAt (n_02, l_tavern)": {
+"98: s_34 => MoveToLocation (n_02, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

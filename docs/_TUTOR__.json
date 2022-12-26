@@ -17,42 +17,38 @@
 ,"npcs: [0]": {
 }
 ,"locations: [2]": {
-" 0: l_00: Specific PrivateerHold": {
-"variable": "l_00",
-"nameRaw": "[0x001c2a98]",
-"generalLocation": "Specific",
-"locationType": -1534,
-"LocationType": "SpecificLocation",
-"fineLocation": 50050,
-"knownLocation": "PrivateerHold",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Specific PrivateerHold marker 2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50050 [0xC382]",
+"extraInfo1": "-1534 [0xFA02]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x001c2a98]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_01: Specific DaggerfallCity": {
-"variable": "l_01",
-"nameRaw": "[0x00014ff8]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 50026,
-"knownLocation": "DaggerfallCity",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_Daggerfall: Specific DaggerfallCity": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50026 [0xC36A]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00014ff8]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [10]": {
-" 0: t_3: Fixed 00:06:00": {
-"variable": "t_3",
+" 0: t_03: Fixed 00:06:00": {
+"variable": "t_03",
 "nameRaw": "[0x40000003]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -64,8 +60,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_4: Fixed 00:08:00": {
-"variable": "t_4",
+" 1: t_04: Fixed 00:08:00": {
+"variable": "t_04",
 "nameRaw": "[0x40000004]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -77,8 +73,8 @@
 "started": 0,
 "index": 1
 },
-" 2: t_5: Fixed 00:24:00": {
-"variable": "t_5",
+" 2: t_05: Fixed 00:24:00": {
+"variable": "t_05",
 "nameRaw": "[0x40000005]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -90,8 +86,8 @@
 "started": 0,
 "index": 2
 },
-" 3: t_6: Fixed 00:12:00": {
-"variable": "t_6",
+" 3: t_06: Fixed 00:12:00": {
+"variable": "t_06",
 "nameRaw": "[0x40000006]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -103,8 +99,8 @@
 "started": 0,
 "index": 3
 },
-" 4: t_7: Fixed 00:06:00": {
-"variable": "t_7",
+" 4: t_07: Fixed 00:06:00": {
+"variable": "t_07",
 "nameRaw": "[0x40000007]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -116,8 +112,8 @@
 "started": 0,
 "index": 4
 },
-" 5: t_8: Fixed 00:08:00": {
-"variable": "t_8",
+" 5: t_08: Fixed 00:08:00": {
+"variable": "t_08",
 "nameRaw": "[0x40000008]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -252,7 +248,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_yes => StartTimer (t_3); When it expires: set s_3": {
+" 2: s_yes => StartTimer (t_03); When it expires: set s_03": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -263,7 +259,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_3": {
+"1: t_03": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -337,11 +333,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_3 => PromptYesNo (s_yes1, s_no, 1013)": {
+" 6: s_03 => PromptYesNo (s_yes1, s_no, 1013)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -374,11 +370,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_4 => PromptYesNo (s_yes2, s_no, 1015)": {
+" 7: s_04 => PromptYesNo (s_yes2, s_no, 1015)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -411,11 +407,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_5 => PromptYesNo (s_yes4, s_no, 1025)": {
+" 8: s_05 => PromptYesNo (s_yes4, s_no, 1025)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -448,11 +444,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_6 => PromptYesNo (s_yes3, s_no, 1020)": {
+" 9: s_06 => PromptYesNo (s_yes3, s_no, 1020)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -485,11 +481,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_7 => PromptYesNo (s_yes5, s_no, 1030)": {
+"10: s_07 => PromptYesNo (s_yes5, s_no, 1030)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -522,18 +518,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_8 => PromptYesNo (s_9, s_no, 1035)": {
+"11: s_08 => PromptYesNo (s_09, s_no, 1035)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_9": {
+"1: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -720,7 +716,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_15 >> WhenAtLocation (l_01): set s_25": {
+"19: s_15 >> WhenAtLocation (l_Daggerfall): set s_25": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -738,7 +734,7 @@
 "index": "25",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_01": {
+"2: l_Daggerfall": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -847,7 +843,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_yes1 => StartTimer (t_4); When it expires: set s_4": {
+"23: s_yes1 => StartTimer (t_04); When it expires: set s_04": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -858,7 +854,7 @@
 "index": "16",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_4": {
+"1: t_04": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -870,7 +866,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_yes2 => StartTimer (t_6); When it expires: set s_6": {
+"24: s_yes2 => StartTimer (t_06); When it expires: set s_06": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -881,7 +877,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_6": {
+"1: t_06": {
 "type": "Timer",
 "value": "3",
 "not": "False",
@@ -893,7 +889,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_yes3 => StartTimer (t_5); When it expires: set s_5": {
+"25: s_yes3 => StartTimer (t_05); When it expires: set s_05": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -904,7 +900,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_5": {
+"1: t_05": {
 "type": "Timer",
 "value": "2",
 "not": "False",
@@ -916,7 +912,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_yes4 => StartTimer (t_7); When it expires: set s_7": {
+"26: s_yes4 => StartTimer (t_07); When it expires: set s_07": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -927,7 +923,7 @@
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_7": {
+"1: t_07": {
 "type": "Timer",
 "value": "4",
 "not": "False",
@@ -939,7 +935,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_yes5 => StartTimer (t_8); When it expires: set s_8": {
+"27: s_yes5 => StartTimer (t_08); When it expires: set s_08": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -950,7 +946,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_8": {
+"1: t_08": {
 "type": "Timer",
 "value": "5",
 "not": "False",
@@ -1107,50 +1103,50 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

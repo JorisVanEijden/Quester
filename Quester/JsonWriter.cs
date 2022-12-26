@@ -154,20 +154,18 @@ namespace Quester
             {
                 Location location = locations[i];
                 writer.WriteLine($"\"{i,2}: {location}\": {{");
-                writer.WriteLine($"\"variable\": \"{location.Variable}\",");
-                writer.WriteLine($"\"nameRaw\": \"[0x{location.NameRaw:x8}]\",");
-                writer.WriteLine($"\"generalLocation\": \"{location.GeneralLocation}\",");
-                writer.WriteLine($"\"locationType\": {location.LocationTypeRaw},");
-                writer.WriteLine($"\"LocationType\": \"{location.LocationType}\",");
-                writer.WriteLine($"\"fineLocation\": {location.FineLocation},");
-                writer.WriteLine($"\"knownLocation\": \"{location.KnownLocation}\",");
-                writer.WriteLine($"\"doorSelector\": {location.DoorSelector},");
-                writer.WriteLine($"\"textRecordId1\": {location.TextRecordId1},");
-                writer.WriteLine($"\"textRecordId2\": {location.TextRecordId2},");
                 writer.WriteLine($"\"index\": {location.Index},");
                 writer.WriteLine($"\"flags\": \"{location.Flags} [0x{location.Flags:X2}]\",");
+                writer.WriteLine($"\"locality\": \"{location.Locality}\",");
+                writer.WriteLine($"\"locationId\": \"{location.LocationId} [0x{location.LocationId:X4}]\",");
+                writer.WriteLine($"\"extraInfo1\": \"{location.ExtraInfo1} [0x{location.ExtraInfo1:X4}]\",");
+                writer.WriteLine($"\"extraInfo2\": {location.ExtraInfo2},");
+                writer.WriteLine($"\"unknown1\": \"{location.Unknown1} [0x{location.Unknown1:X2}]\",");
+                writer.WriteLine($"\"unknown2\": \"{location.Unknown2} [0x{location.Unknown2:X2}]\",");
+                writer.WriteLine($"\"nameRaw\": \"[0x{location.NameRaw:x8}]\",");
                 writer.WriteLine($"\"objPtr\": {location.ObjPtr},");
-                writer.WriteLine($"\"unknown1\": \"{location.Unknown1} [0x{location.Unknown1:X4}]\"");
+                writer.WriteLine($"\"textRecordId1\": {location.TextRecordId1},");
+                writer.WriteLine($"\"textRecordId2\": {location.TextRecordId2}");
                 writer.WriteLine(i + 1 == locations.Count ? "}" : "},");
             }
 

@@ -13,8 +13,8 @@
 "hasDebugInfo": false
 }
 ,"items: [1]": {
-" 0: i_spider: Lich_dust [CreatureIngredients1]": {
-"variable": "i_spider",
+" 0: i_powder: Lich_dust [CreatureIngredients1]": {
+"variable": "i_powder",
 "nameRaw": "[0x00001B74]",
 "rewardType": "Item1",
 "category": "CreatureIngredients1",
@@ -26,8 +26,8 @@
 }
 }
 ,"npcs: [1]": {
-" 0: n_00:  (type? Permanent) (faction Medora)": {
-"variable": "n_00",
+" 0: n_medora:  (type? Permanent) (faction Medora)": {
+"variable": "n_medora",
 "nameRaw": "[0x00001a11]",
 "unknown1": "[0x01]",
 "facePictureIndex": 0,
@@ -44,8 +44,8 @@
 ,"locations: [0]": {
 }
 ,"timers: [1]": {
-" 0: t_0: Fixed 30.00:00:00": {
-"variable": "t_0",
+" 0: t_00: Fixed 30.00:00:00": {
+"variable": "t_00",
 "nameRaw": "[0x40000000]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -61,7 +61,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [17]": {
-" 0:  => StartTimer (t_0); When it expires: set s_0": {
+" 0:  => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -72,7 +72,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -114,18 +114,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_00): set s_1": {
+" 2:  >> IfNpcClicked (n_medora): set s_01": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -137,25 +137,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> If (s_1 and s_0): set s_2": {
+" 3:  >> If (s_01 and s_00): set s_02": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -181,11 +181,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_2 => CreateLogEntry (1011, 1)": {
+" 4: s_02 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -211,18 +211,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_2 => PlaceItemOnCharacter (i_spider)": {
+" 5: s_02 => PlaceItemOnCharacter (i_powder)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_spider": {
+"1: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -241,11 +241,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 => Say (1002)": {
+" 6: s_02 => Say (1002)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -257,25 +257,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> If (not s_0 and s_1): set s_3": {
+" 7:  >> If (not s_00 and s_01): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_0": {
+"1: not s_00": {
 "type": "State",
 "value": "0",
 "not": "True",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -301,11 +301,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_3 => Say (1001)": {
+" 8: s_03 => Say (1001)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -317,25 +317,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 => Unset (s_1, s_3)": {
+" 9: s_03 => Unset (s_01, s_03)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -361,7 +361,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: gs_LysandusSatisfied >> WhenPlayerHasItems (i_spider): set s_5": {
+"10: gs_LysandusSatisfied >> WhenPlayerHasItems (i_powder): set s_05": {
 "opCode": 70,
 "argCount": 5,
 "arguments:": {
@@ -372,14 +372,14 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_spider": {
+"2: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -405,11 +405,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_5 >> StartQuest (S0000015)": {
+"11: s_05 >> StartQuest (S0000015)": {
 "opCode": 8,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -435,18 +435,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_5 => GiveItemToPlayer (i_spider)": {
+"12: s_05 => GiveItemToPlayer (i_powder)": {
 "opCode": 36,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_spider": {
+"1: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -458,11 +458,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_5 => PlayMovie (5)": {
+"13: s_05 => PlayMovie (5)": {
 "opCode": 50,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -481,11 +481,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_5 => EndQuest ()": {
+"14: s_05 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -497,11 +497,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (gs_LysandusSatisfied and not s_5): set s_6": {
+"15:  >> If (gs_LysandusSatisfied and not s_05): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -515,7 +515,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_5": {
+"2: not s_05": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -541,11 +541,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_6 => Unset (gs_LysandusSatisfied, s_6)": {
+"16: s_06 => Unset (gs_LysandusSatisfied, s_06)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -559,7 +559,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -587,29 +587,29 @@
 }
 }
 ,"states: [7]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -622,15 +622,15 @@
 "globalIndex": 43,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,

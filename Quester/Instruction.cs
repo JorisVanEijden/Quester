@@ -26,7 +26,7 @@ namespace Quester
         ShowLocationOnMap = 27,
         IfNpcClicked = 28,
         PromptYesNo = 29,
-        PlaceNpcAt = 30,
+        MoveToLocation = 30,
         IfTimeOfDayBetween = 31,
         PickOneOf = 34,
         Set = 35,

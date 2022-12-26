@@ -81,37 +81,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_target: InCurrentTown House1": {
-"variable": "l_target",
-"nameRaw": "[0x00001afa]",
-"generalLocation": "InCurrentTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 1,
-"textRecordId1": 1011,
-"textRecordId2": 1011,
+" 0: l_target: Local House1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 1,
+"unknown1": "255 [0xFF]",
+"unknown2": "20 [0x14]",
+"nameRaw": "[0x00001afa]",
 "objPtr": 0,
-"unknown1": "5375 [0x14FF]"
+"textRecordId1": 1011,
+"textRecordId2": 1011
 },
-" 1: l_safehouse: OutOfTown House3": {
-"variable": "l_safehouse",
-"nameRaw": "[0x0000d6b7]",
-"generalLocation": "OutOfTown",
-"locationType": 19,
-"LocationType": "House3",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 1: l_safehouse: Remote House3": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "19 [0x0013]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "20 [0x14]",
+"nameRaw": "[0x0000d6b7]",
 "objPtr": 0,
-"unknown1": "5375 [0x14FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -319,7 +315,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5:  => PlaceNpcAt (n_contact, l_safehouse)": {
+" 5:  => MoveToLocation (n_contact, l_safehouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

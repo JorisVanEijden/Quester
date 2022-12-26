@@ -17,37 +17,33 @@
 ,"npcs: [0]": {
 }
 ,"locations: [2]": {
-" 0: l_0: Specific Llugwych": {
-"variable": "l_0",
-"nameRaw": "[0x43000000]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50002,
-"knownLocation": "Llugwych",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Specific Llugwych marker 1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50002 [0xC352]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x43000000]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_shedungent: Specific Shedungent": {
-"variable": "l_shedungent",
-"nameRaw": "[0x0001b51c]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50005,
-"knownLocation": "Shedungent",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_shedungent: Specific Shedungent marker 1": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50005 [0xC355]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001b51c]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -68,7 +64,7 @@
 ,"mobs: [0]": {
 }
 ,"opCodes: [30]": {
-" 0:  => RemoveTopics (l_0)": {
+" 0:  => RemoveTopics (l_00)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -79,7 +75,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_0": {
+"1: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -151,7 +147,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> TeleportPlayer (l_0, High_Rock_sea_coast, 0x03E9)": {
+" 3:  >> TeleportPlayer (l_00, High_Rock_sea_coast, 0x03E9)": {
 "opCode": 83,
 "argCount": 4,
 "arguments:": {
@@ -162,7 +158,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: l_0": {
+"1: l_00": {
 "type": "Location",
 "value": "0",
 "not": "False",

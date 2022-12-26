@@ -42,37 +42,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_house: OutOfTown None": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_house: Remote None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_qgenemy: OutOfTown Dungeon": {
-"variable": "l_qgenemy",
-"nameRaw": "[0x000035c7]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_qgenemy: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000035c7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -252,7 +248,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  >> WhenAtLocation (l_house): set s_4": {
+" 5:  >> WhenAtLocation (l_house): set s_04": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -263,7 +259,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -298,11 +294,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfMobsKilled (m_monster, 1): set s_1 [Msg 1011]": {
+" 7:  >> IfMobsKilled (m_monster, 1): set s_01 [Msg 1011]": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -328,11 +324,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  >> IfNpcClicked (n_qgiver): set s_2": {
+" 8:  >> IfNpcClicked (n_qgiver): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -351,11 +347,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => QuestSuccess (i_gold)": {
+" 9: s_02 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -395,11 +391,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => EndQuest ()": {
+"10: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -411,7 +407,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_2 and not s_1): set s_clearclick": {
+"11:  >> If (s_02 and not s_01): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -422,14 +418,14 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -455,7 +451,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_clearclick => Unset (s_2, s_clearclick)": {
+"12: s_clearclick => Unset (s_02, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -466,7 +462,7 @@
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -499,11 +495,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_5": {
+"13:  >> IfTimeOfDayBetween (05:00:00, 19:00:00): set s_05": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -529,25 +525,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> If (s_4 and not s_5): set s_6": {
+"14:  >> If (s_04 and not s_05): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_5": {
+"2: not s_05": {
 "type": "State",
 "value": "5",
 "not": "True",
@@ -573,11 +569,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_6 => PlaceMobAtLocation (m_monster, l_house)": {
+"15: s_06 => PlaceMobAtLocation (m_monster, l_house)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -603,11 +599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> If (s_map and s_2): set s_9": {
+"16:  >> If (s_map and s_02): set s_09": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -621,7 +617,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -647,11 +643,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_9 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"17: s_09 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -679,15 +675,15 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -700,22 +696,22 @@
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -735,8 +731,8 @@
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

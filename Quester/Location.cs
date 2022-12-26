@@ -3,24 +3,31 @@ namespace Quester
     internal struct Location
     {
         public byte Flags;
-        public GeneralLocation GeneralLocation;
-        public ushort FineLocation;
+        public Locality Locality;
+        public ushort LocationId;
         public LocationType LocationType;
-        public short DoorSelector;
-        public ushort Unknown1;
+        public short ExtraInfo2;
+        public byte Unknown1;
+        public byte Unknown2;
         public uint NameRaw;
         public uint ObjPtr;
         public ushort TextRecordId1;
         public ushort TextRecordId2;
         public short Index;
-        public short LocationTypeRaw;
-        public NamedPlace KnownLocation;
+        public short ExtraInfo1;
         public string Variable;
 
         public override string ToString()
         {
-            var name = LocationType == LocationType.SpecificLocation ? KnownLocation.ToString() : LocationType.ToString();
-            return $"{Variable}: {GeneralLocation} {name}";
+            var display = $"{Variable}: {Locality} {LocationType}";
+            
+            if (ExtraInfo1 != -1 && (ExtraInfo1 & 0xfa00) == 0xfa00)
+            {
+                var marker = ExtraInfo1 & 0x00ff;
+                display = $"{display} marker {marker}";
+            }
+
+            return display;
         }
     }
 }

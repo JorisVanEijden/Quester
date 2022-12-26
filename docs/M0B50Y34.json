@@ -103,53 +103,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_temple: OutOfTown Temple": {
-"variable": "l_temple",
-"nameRaw": "[0x00001b35]",
-"generalLocation": "OutOfTown",
-"locationType": 14,
-"LocationType": "Temple",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_temple: Remote Temple": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b35]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_mondung: OutOfTown Dungeon": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_mondung: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_02: InCurrentTown Dungeon": {
-"variable": "l_02",
-"nameRaw": "[0x000036ed]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_02: Local Dungeon": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000036ed]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -433,7 +427,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  => PlaceNpcAt (n_priest, l_temple)": {
+" 6:  => MoveToLocation (n_priest, l_temple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -493,7 +487,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  => PlaceNpcAt (n_01, l_02)": {
+" 8:  => MoveToLocation (n_01, l_02)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

@@ -67,21 +67,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_00: Specific OrsiniumCastle": {
-"variable": "l_00",
-"nameRaw": "[0x00005f5b]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50015,
-"knownLocation": "OrsiniumCastle",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_Orsinium: Specific OrsiniumCastle marker 1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50015 [0xC35F]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "188 [0xBC]",
+"nameRaw": "[0x00005f5b]",
 "objPtr": 0,
-"unknown1": "48128 [0xBC00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [0]": {
@@ -419,7 +417,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_yes => ShowLocationOnMap (l_00, 26, 146892)": {
+"11: s_yes >> ShowLocationOnMap (l_Orsinium, Orsinium_Area, 0x23DCC)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -430,7 +428,7 @@
 "index": "3",
 "unknown1": "-1493154929 [0xA700438F]"
 },
-"1: l_00": {
+"1: l_Orsinium": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -486,7 +484,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_05 => PlaceItemAt (i_00, l_00)": {
+"13: s_05 => PlaceItemAt (i_00, l_Orsinium)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
@@ -504,7 +502,7 @@
 "index": "0",
 "unknown1": "4518580 [0x0044F2B4]"
 },
-"2: l_00": {
+"2: l_Orsinium": {
 "type": "Location",
 "value": "0",
 "not": "False",

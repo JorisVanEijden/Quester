@@ -67,37 +67,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_00: OutOfTown Dungeon": {
-"variable": "l_00",
-"nameRaw": "[0x0000d527]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "20 [0x14]",
+"nameRaw": "[0x0000d527]",
 "objPtr": 0,
-"unknown1": "5375 [0x14FF]"
-},
-" 1: l_rebelhouse: OutOfTown House4": {
-"variable": "l_rebelhouse",
-"nameRaw": "[0x0001add7]",
-"generalLocation": "OutOfTown",
-"locationType": 20,
-"LocationType": "House4",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_rebelhouse: Remote House4": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "20 [0x0014]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "20 [0x14]",
+"nameRaw": "[0x0001add7]",
 "objPtr": 0,
-"unknown1": "5375 [0x14FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [5]": {
@@ -238,7 +234,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 1:  => PlaceNpcAt (n_rebel, l_rebelhouse)": {
+" 1:  => MoveToLocation (n_rebel, l_rebelhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -450,7 +446,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 9: s_01 => PlaceNpcAt (n_rebel, l_00)": {
+" 9: s_01 => MoveToLocation (n_rebel, l_00)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

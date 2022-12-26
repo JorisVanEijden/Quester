@@ -67,21 +67,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_palace: OutOfTown Palace": {
-"variable": "l_palace",
-"nameRaw": "[0x00001a1f]",
-"generalLocation": "OutOfTown",
-"locationType": 16,
-"LocationType": "Palace",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 1081,
-"textRecordId2": 0,
+" 0: l_palace: Remote Palace": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "16 [0x0010]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001a1f]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 1081,
+"textRecordId2": 0
 }
 }
 ,"timers: [4]": {
@@ -230,7 +228,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => PlaceNpcAt (n_noble, l_palace)": {
+" 2:  => MoveToLocation (n_noble, l_palace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

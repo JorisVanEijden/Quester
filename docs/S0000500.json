@@ -95,58 +95,52 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_tavern: OutOfTown Tavern": {
-"variable": "l_tavern",
-"nameRaw": "[0x00001b26]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_tavern: Remote Tavern": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b26]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_01: Specific SentinelCastle": {
-"variable": "l_01",
-"nameRaw": "[0x00006df6]",
-"generalLocation": "Specific",
-"locationType": -1532,
-"LocationType": "SpecificLocation",
-"fineLocation": 50033,
-"knownLocation": "SentinelCastle",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_sentinel: Specific SentinelCastle marker 4": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50033 [0xC371]",
+"extraInfo1": "-1532 [0xFA04]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006df6]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_safehouse: OutOfTown House4": {
-"variable": "l_safehouse",
-"nameRaw": "[0x0000d6b7]",
-"generalLocation": "OutOfTown",
-"locationType": 20,
-"LocationType": "House4",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_safehouse: Remote House4": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "20 [0x0014]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000d6b7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [4]": {
-" 0: t_0: Random between 31.06:00:00 and 93.18:00:00": {
-"variable": "t_0",
+" 0: t_00: Random between 31.06:00:00 and 93.18:00:00": {
+"variable": "t_00",
 "nameRaw": "[0x40000000]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
@@ -208,8 +202,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 1 Spellsword": {
-"variable": "m_1",
+" 1: m_01: 1 Spellsword": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "Spellsword",
 "count": 1,
@@ -219,7 +213,7 @@
 }
 }
 ,"opCodes: [36]": {
-" 0:  => StartTimer (t_0); When it expires: set s_0": {
+" 0:  => StartTimer (t_00); When it expires: set s_00": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -230,7 +224,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_0": {
+"1: t_00": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -242,11 +236,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1: s_0 >> WhenItemIsUsed (i_letter): set s_readletter": {
+" 1: s_00 >> WhenItemIsUsed (i_letter): set s_readletter": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -272,11 +266,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2: s_0 => StartTimer (t_executiondelay); When it expires: set s_executiondelay": {
+" 2: s_00 => StartTimer (t_executiondelay); When it expires: set s_executiondelay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -295,11 +289,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => GiveToPlayer (i_letter) [Msg 1070]": {
+" 3: s_00 => GiveToPlayer (i_letter) [Msg 1070]": {
 "opCode": 76,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -318,11 +312,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => PlaceNpcAt (n_contact1, l_tavern)": {
+" 4: s_00 => MoveToLocation (n_contact1, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -348,11 +342,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => PlaceMobAtLocation (m_guards, l_01)": {
+" 5: s_00 => PlaceMobAtLocation (m_guards, l_sentinel)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -366,7 +360,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_01": {
+"2: l_sentinel": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -378,11 +372,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => PlaceNpcAt (n_traitor, l_01)": {
+" 6: s_00 => MoveToLocation (n_traitor, l_sentinel)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -396,7 +390,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: l_01": {
+"2: l_sentinel": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -408,11 +402,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfNpcClicked (n_contact1): set s_2": {
+" 7:  >> IfNpcClicked (n_contact1): set s_02": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -431,11 +425,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => CreateLogEntry (1021, 1)": {
+" 8: s_02 => CreateLogEntry (1021, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -461,11 +455,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => Say (1040)": {
+" 9: s_02 => Say (1040)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -477,11 +471,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10:  >> IfNpcClicked (n_traitor): set s_3": {
+"10:  >> IfNpcClicked (n_traitor): set s_03": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -500,11 +494,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => StartTimer (t_escapetime); When it expires: set s_escapetime": {
+"11: s_03 => StartTimer (t_escapetime); When it expires: set s_escapetime": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -523,11 +517,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => CreateLogEntry (1022, 2)": {
+"12: s_03 => CreateLogEntry (1022, 2)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -553,11 +547,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => HideNpc (n_traitor)": {
+"13: s_03 => HideNpc (n_traitor)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -576,11 +570,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => HideNpc (n_contact1)": {
+"14: s_03 => HideNpc (n_contact1)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -599,11 +593,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => Say (1041)": {
+"15: s_03 => Say (1041)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -615,11 +609,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => StartNpcEscort (n_traitor)": {
+"16: s_03 => StartNpcEscort (n_traitor)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -638,11 +632,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_3 => AdjustReputationWithNpc (n_queen, -20)": {
+"17: s_03 => AdjustReputationWithNpc (n_queen, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -668,11 +662,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => EnsureNpcLocation (l_safehouse)": {
+"18: s_03 => EnsureNpcLocation (l_safehouse)": {
 "opCode": 81,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -698,11 +692,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_3 => PlaceNpcAt (n_contact2, l_safehouse)": {
+"19: s_03 => MoveToLocation (n_contact2, l_safehouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -751,7 +745,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_hitguard => CreateFoe(m_1, 2, 50%, 20)": {
+"21: s_hitguard => CreateFoe(m_01, 2, 50%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -762,7 +756,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -811,11 +805,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23:  >> IfNpcClicked (n_contact2): set s_5": {
+"23:  >> IfNpcClicked (n_contact2): set s_05": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -834,25 +828,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_3 and s_5): set s_6": {
+"24:  >> If (s_03 and s_05): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -878,11 +872,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_6 => QuestSuccess (i_gold)": {
+"25: s_06 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -922,11 +916,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_6 => StartTimer (t_delay); When it expires: set s_delay": {
+"26: s_06 => StartTimer (t_delay); When it expires: set s_delay": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -945,11 +939,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_6 => StopNpcEscort (n_traitor)": {
+"27: s_06 => StopNpcEscort (n_traitor)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -968,7 +962,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  => Unset (s_5)": {
+"28:  => Unset (s_05)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -979,7 +973,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1028,11 +1022,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_executiondelay and not s_3): set s_8": {
+"30:  >> If (s_executiondelay and not s_03): set s_08": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1046,7 +1040,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_3": {
+"2: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -1072,11 +1066,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_8 => AddRumor (1060)": {
+"31: s_08 => AddRumor (1060)": {
 "opCode": 38,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1095,11 +1089,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_8 => EndQuest ()": {
+"32: s_08 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1175,8 +1169,8 @@
 }
 }
 ,"states: [11]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1189,15 +1183,15 @@
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1210,15 +1204,15 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1231,8 +1225,8 @@
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,

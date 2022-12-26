@@ -97,53 +97,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_dungeon1: OutOfTown NaturalCave": {
-"variable": "l_dungeon1",
-"nameRaw": "[0x00006961]",
-"generalLocation": "OutOfTown",
-"locationType": 6,
-"LocationType": "NaturalCave",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dungeon1: Remote NaturalCave": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "6 [0x0006]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006961]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_dungeon2: OutOfTown SpiderNest": {
-"variable": "l_dungeon2",
-"nameRaw": "[0x00006962]",
-"generalLocation": "OutOfTown",
-"locationType": 12,
-"LocationType": "SpiderNest",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_dungeon2: Remote SpiderNest": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "12 [0x000C]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006962]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_dungeon3: OutOfTown HarpyNest": {
-"variable": "l_dungeon3",
-"nameRaw": "[0x00006963]",
-"generalLocation": "OutOfTown",
-"locationType": 10,
-"LocationType": "HarpyNest",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_dungeon3: Remote HarpyNest": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "10 [0x000A]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006963]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -162,8 +156,8 @@
 }
 }
 ,"mobs: [6]": {
-" 0: m_0: 1 Gargoyle": {
-"variable": "m_0",
+" 0: m_00: 1 Gargoyle": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "Gargoyle",
 "count": 1,
@@ -818,7 +812,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_a4 => CreateFoe(m_0, 10, 5%, 5)": {
+"20: s_a4 => CreateFoe(m_00, 10, 5%, 5)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -829,7 +823,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -862,7 +856,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_a4 => PlaceMobAtLocation (m_0, l_dungeon2)": {
+"21: s_a4 => PlaceMobAtLocation (m_00, l_dungeon2)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -873,7 +867,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",

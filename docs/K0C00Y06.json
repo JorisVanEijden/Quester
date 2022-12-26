@@ -297,133 +297,117 @@
 }
 }
 ,"locations: [8]": {
-" 0: l_mondung: OutOfTown Dungeon": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_thiefhouse: InCurrentTown House2": {
-"variable": "l_thiefhouse",
-"nameRaw": "[0x0001b797]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_thiefhouse: Local House2": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001b797]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_withouse: InCurrentTown GeneralStore": {
-"variable": "l_withouse",
-"nameRaw": "[0x00007157]",
-"generalLocation": "InCurrentTown",
-"locationType": 9,
-"LocationType": "GeneralStore",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_withouse: Local GeneralStore": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "9 [0x0009]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00007157]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 3: l_inn: InCurrentTown Tavern": {
-"variable": "l_inn",
-"nameRaw": "[0x000002ee]",
-"generalLocation": "InCurrentTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_inn: Local Tavern": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000002ee]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 4: l_merchanthome: OutOfTown GeneralStore": {
-"variable": "l_merchanthome",
-"nameRaw": "[0x0006aa7b]",
-"generalLocation": "OutOfTown",
-"locationType": 9,
-"LocationType": "GeneralStore",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 4: l_merchanthome: Remote GeneralStore": {
 "index": 4,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "9 [0x0009]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0006aa7b]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 5: l_noblehome: OutOfTown House1": {
-"variable": "l_noblehome",
-"nameRaw": "[0x0000d80b]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 5: l_noblehome: Remote House1": {
 "index": 5,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000d80b]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 6: l_priesthome: OutOfTown Temple": {
-"variable": "l_priesthome",
-"nameRaw": "[0x0001bb9b]",
-"generalLocation": "OutOfTown",
-"locationType": 14,
-"LocationType": "Temple",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 6: l_priesthome: Remote Temple": {
 "index": 6,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001bb9b]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 7: l_thiefhome: OutOfTown Tavern": {
-"variable": "l_thiefhome",
-"nameRaw": "[0x0000db7b]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 7: l_thiefhome: Remote Tavern": {
 "index": 7,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000db7b]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -975,7 +959,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  => PickOneOf (s_3, s_1, s_0, s_2)": {
+"14:  => PickOneOf (s_03, s_01, s_00, s_02)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
@@ -986,28 +970,28 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"3: s_0": {
+"3: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"4: s_2": {
+"4: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1072,7 +1056,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  => PlaceNpcAt (n_witness, l_inn)": {
+"17:  => MoveToLocation (n_witness, l_inn)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1102,7 +1086,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  => PlaceNpcAt (n_merchant, l_merchanthome)": {
+"18:  => MoveToLocation (n_merchant, l_merchanthome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1132,7 +1116,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  => PlaceNpcAt (n_noble, l_noblehome)": {
+"19:  => MoveToLocation (n_noble, l_noblehome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1162,7 +1146,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  => PlaceNpcAt (n_priest, l_priesthome)": {
+"20:  => MoveToLocation (n_priest, l_priesthome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1192,7 +1176,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  => PlaceNpcAt (n_thief, l_thiefhome)": {
+"21:  => MoveToLocation (n_thief, l_thiefhome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1222,11 +1206,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22:  >> IfTimeOfDayBetween (00:00:00, 02:00:00): set s_4": {
+"22:  >> IfTimeOfDayBetween (00:00:00, 02:00:00): set s_04": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1252,25 +1236,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23:  >> If (s_0 and s_4): set s_5": {
+"23:  >> If (s_00 and s_04): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1296,11 +1280,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_5 => PlaceNpcAt (n_priest, l_thiefhouse)": {
+"24: s_05 => MoveToLocation (n_priest, l_thiefhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1326,25 +1310,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25:  >> If (s_3 and s_4): set s_6": {
+"25:  >> If (s_03 and s_04): set s_06": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1370,11 +1354,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_6 => PlaceNpcAt (n_merchant, l_thiefhouse)": {
+"26: s_06 => MoveToLocation (n_merchant, l_thiefhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -1400,25 +1384,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> If (s_1 and s_4): set s_7": {
+"27:  >> If (s_01 and s_04): set s_07": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1444,11 +1428,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28: s_7 => PlaceNpcAt (n_noble, l_thiefhouse)": {
+"28: s_07 => MoveToLocation (n_noble, l_thiefhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -1474,25 +1458,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29:  >> If (s_2 and s_4): set s_8": {
+"29:  >> If (s_02 and s_04): set s_08": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_4": {
+"2: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -1518,11 +1502,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_8 => PlaceNpcAt (n_thief, l_thiefhouse)": {
+"30: s_08 => MoveToLocation (n_thief, l_thiefhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -2361,7 +2345,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"56: s_20 => PlaceNpcAt (n_witness, l_withouse)": {
+"56: s_20 => MoveToLocation (n_witness, l_withouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -2479,7 +2463,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"59:  >> If (s_0 and s_60): set s_22": {
+"59:  >> If (s_00 and s_60): set s_22": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2490,7 +2474,7 @@
 "index": "22",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -2576,7 +2560,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"62:  >> If (s_3 and s_60): set s_23": {
+"62:  >> If (s_03 and s_60): set s_23": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2587,7 +2571,7 @@
 "index": "23",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -2673,7 +2657,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"65:  >> If (s_1 and s_60): set s_24": {
+"65:  >> If (s_01 and s_60): set s_24": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2684,7 +2668,7 @@
 "index": "24",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -2770,7 +2754,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"68:  >> If (s_2 and s_60): set s_25": {
+"68:  >> If (s_02 and s_60): set s_25": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2781,7 +2765,7 @@
 "index": "25",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -2897,7 +2881,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"72:  >> If (s_28 and s_2): set s_29": {
+"72:  >> If (s_28 and s_02): set s_29": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -2915,7 +2899,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -2987,7 +2971,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"75:  >> If (s_28 and s_1): set s_30": {
+"75:  >> If (s_28 and s_01): set s_30": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3005,7 +2989,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -3077,7 +3061,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"78:  >> If (s_28 and s_3): set s_31": {
+"78:  >> If (s_28 and s_03): set s_31": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3095,7 +3079,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -3167,7 +3151,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"81:  >> If (s_28 and s_0): set s_32": {
+"81:  >> If (s_28 and s_00): set s_32": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3185,7 +3169,7 @@
 "index": "28",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -3257,7 +3241,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"84:  >> If (s_2 and s_27): set s_33": {
+"84:  >> If (s_02 and s_27): set s_33": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3268,7 +3252,7 @@
 "index": "33",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -3347,7 +3331,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"87:  >> If (s_0 and s_27): set s_34": {
+"87:  >> If (s_00 and s_27): set s_34": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3358,7 +3342,7 @@
 "index": "34",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -3437,7 +3421,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"90:  >> If (s_3 and s_27): set s_35": {
+"90:  >> If (s_03 and s_27): set s_35": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3448,7 +3432,7 @@
 "index": "35",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -3527,7 +3511,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"93:  >> If (s_1 and s_27): set s_36": {
+"93:  >> If (s_01 and s_27): set s_36": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3538,7 +3522,7 @@
 "index": "36",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -3686,7 +3670,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"99:  >> If (s_3 and not s_4): set s_39": {
+"99:  >> If (s_03 and not s_04): set s_39": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3697,14 +3681,14 @@
 "index": "39",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_4": {
+"2: not s_04": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -3783,7 +3767,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"102:  >> If (s_1 and not s_4): set s_40": {
+"102:  >> If (s_01 and not s_04): set s_40": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3794,14 +3778,14 @@
 "index": "40",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_4": {
+"2: not s_04": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -3880,7 +3864,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"105:  >> If (s_0 and not s_4): set s_41": {
+"105:  >> If (s_00 and not s_04): set s_41": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3891,14 +3875,14 @@
 "index": "41",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_0": {
+"1: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_4": {
+"2: not s_04": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -3977,7 +3961,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"108:  >> If (s_2 and not s_4): set s_42": {
+"108:  >> If (s_02 and not s_04): set s_42": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -3988,14 +3972,14 @@
 "index": "42",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_4": {
+"2: not s_04": {
 "type": "State",
 "value": "4",
 "not": "True",
@@ -5437,64 +5421,64 @@
 }
 }
 ,"states: [64]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,

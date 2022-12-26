@@ -92,53 +92,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_00: InCurrentTown Tavern": {
-"variable": "l_00",
-"nameRaw": "[0x0001b337]",
-"generalLocation": "InCurrentTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Local Tavern": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0001b337]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_01: InCurrentTown Dungeon": {
-"variable": "l_01",
-"nameRaw": "[0x000036ed]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_01: Local Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000036ed]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 2: l_02: InCurrentTown Temple": {
-"variable": "l_02",
-"nameRaw": "[0x00006b66]",
-"generalLocation": "InCurrentTown",
-"locationType": 14,
-"LocationType": "Temple",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_02: Local Temple": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006b66]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [10]": {
@@ -517,7 +511,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_02 => PlaceNpcAt (n_01, l_00)": {
+" 8: s_02 => MoveToLocation (n_01, l_00)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -796,11 +790,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> If (s_qgclicked and not s_out): set s_2": {
+"18:  >> If (s_qgclicked and not s_out): set s_02": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -840,11 +834,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_2 => Unset (s_qgclicked, s_2)": {
+"19: s_02 => Unset (s_qgclicked, s_02)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -858,7 +852,7 @@
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -3035,8 +3029,8 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_2": {
-"variable": "s_2",
+" 5: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,

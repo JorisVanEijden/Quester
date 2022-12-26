@@ -70,21 +70,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_castle: OutOfTown House1": {
-"variable": "l_castle",
-"nameRaw": "[0x00001915]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_castle: Remote House1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001915]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -103,8 +101,8 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_0: 1 Warrior": {
-"variable": "m_0",
+" 0: m_00: 1 Warrior": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "Warrior",
 "count": 1,
@@ -197,7 +195,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> WhenAtLocation (l_castle): set s_5": {
+" 3:  >> WhenAtLocation (l_castle): set s_05": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -208,7 +206,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -227,7 +225,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => DoneWithMob (m_0, _)": {
+" 4:  => DoneWithMob (m_00, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -238,7 +236,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -257,7 +255,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PlaceMobAtLocation (m_0, l_castle)": {
+" 5:  => PlaceMobAtLocation (m_00, l_castle)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -268,7 +266,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -437,11 +435,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> If (s_qgclicked and not s_out): set s_2": {
+"11:  >> If (s_qgclicked and not s_out): set s_02": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -481,11 +479,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_2 => Unset (s_qgclicked, s_2)": {
+"12: s_02 => Unset (s_qgclicked, s_02)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -499,7 +497,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -564,11 +562,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_5 >> WhenPlayerCasts (51): set s_out": {
+"15: s_05 >> WhenPlayerCasts (51): set s_out": {
 "opCode": 73,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -610,8 +608,8 @@
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -631,8 +629,8 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,

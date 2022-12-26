@@ -81,85 +81,75 @@
 }
 }
 ,"locations: [5]": {
-" 0: l_house: InCurrentTown House2": {
-"variable": "l_house",
-"nameRaw": "[0x00000d17]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_house: Local House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "138 [0x8A]",
+"nameRaw": "[0x00000d17]",
 "objPtr": 0,
-"unknown1": "35328 [0x8A00]"
-},
-" 1: l_inn: InCurrentTown Tavern": {
-"variable": "l_inn",
-"nameRaw": "[0x000002ee]",
-"generalLocation": "InCurrentTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_inn: Local Tavern": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "138 [0x8A]",
+"nameRaw": "[0x000002ee]",
 "objPtr": 0,
-"unknown1": "35328 [0x8A00]"
-},
-" 2: l_guildhall: InCurrentTown None": {
-"variable": "l_guildhall",
-"nameRaw": "[0x0000d588]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_guildhall: Local None": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "138 [0x8A]",
+"nameRaw": "[0x0000d588]",
 "objPtr": 0,
-"unknown1": "35328 [0x8A00]"
-},
-" 3: l_mistresshome: InCurrentTown House2": {
-"variable": "l_mistresshome",
-"nameRaw": "[0x0006d40b]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_mistresshome: Local House2": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "138 [0x8A]",
+"nameRaw": "[0x0006d40b]",
 "objPtr": 0,
-"unknown1": "35328 [0x8A00]"
-},
-" 4: l_fakeplace: InCurrentTown None": {
-"variable": "l_fakeplace",
-"nameRaw": "[0x0000caef]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 4: l_fakeplace: Local None": {
 "index": 4,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "138 [0x8A]",
+"nameRaw": "[0x0000caef]",
 "objPtr": 0,
-"unknown1": "35328 [0x8A00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -306,7 +296,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 425
 },
-" 3:  => PlaceNpcAt (n_marknpc, l_fakeplace)": {
+" 3:  => MoveToLocation (n_marknpc, l_fakeplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -412,7 +402,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 425
 },
-" 7:  => PlaceNpcAt (n_00, l_mistresshome)": {
+" 7:  => MoveToLocation (n_00, l_mistresshome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

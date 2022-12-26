@@ -81,21 +81,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_00: Specific SentinelCastle": {
-"variable": "l_00",
-"nameRaw": "[0x00006df6]",
-"generalLocation": "Specific",
-"locationType": -1535,
-"LocationType": "SpecificLocation",
-"fineLocation": 50033,
-"knownLocation": "SentinelCastle",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_sentinel: Specific SentinelCastle marker 1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50033 [0xC371]",
+"extraInfo1": "-1535 [0xFA01]",
+"extraInfo2": -1,
+"unknown1": "255 [0xFF]",
+"unknown2": "223 [0xDF]",
+"nameRaw": "[0x00006df6]",
 "objPtr": 0,
-"unknown1": "57343 [0xDFFF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [0]": {
@@ -719,7 +717,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"19: s_yes => PlaceMobAtLocation (m_lich, l_00)": {
+"19: s_yes => PlaceMobAtLocation (m_lich, l_sentinel)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
@@ -737,7 +735,7 @@
 "index": "1",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_00": {
+"2: l_sentinel": {
 "type": "Location",
 "value": "0",
 "not": "False",
@@ -950,7 +948,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 6
 },
-"26: s_givereward => PlaceNpcAt (n_02, l_00)": {
+"26: s_givereward => MoveToLocation (n_02, l_sentinel)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -968,7 +966,7 @@
 "index": "2",
 "unknown1": "14 [0x0000000E]"
 },
-"2: l_00": {
+"2: l_sentinel": {
 "type": "Location",
 "value": "0",
 "not": "False",

@@ -106,37 +106,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_00: OutOfTown None": {
-"variable": "l_00",
-"nameRaw": "[0x00006ac0]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_00: Remote None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00006ac0]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_palace: OutOfTown Palace": {
-"variable": "l_palace",
-"nameRaw": "[0x00001a1f]",
-"generalLocation": "OutOfTown",
-"locationType": 16,
-"LocationType": "Palace",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_palace: Remote Palace": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "16 [0x0010]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001a1f]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -153,8 +149,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_7: Fixed 2.00:00:00": {
-"variable": "t_7",
+" 1: t_07: Fixed 2.00:00:00": {
+"variable": "t_07",
 "nameRaw": "[0x40000007]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -168,8 +164,8 @@
 }
 }
 ,"mobs: [1]": {
-" 0: m_0: 1 Nightblade": {
-"variable": "m_0",
+" 0: m_00: 1 Nightblade": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "Nightblade",
 "count": 1,
@@ -239,11 +235,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_00): set s_0": {
+" 2:  >> IfNpcClicked (n_00): set s_00": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -262,11 +258,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => PromptYesNo (s_yes, s_no, 1000)": {
+" 3: s_00 => PromptYesNo (s_yes, s_no, 1000)": {
 "opCode": 29,
 "argCount": 4,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -299,11 +295,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => SetQuestor (n_03)": {
+" 4: s_00 => SetQuestor (n_03)": {
 "opCode": 85,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -435,7 +431,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_yes => PlaceNpcAt (n_dispatcher, l_00)": {
+" 9: s_yes => MoveToLocation (n_dispatcher, l_00)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -527,11 +523,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> IfNpcClicked (n_dispatcher): set s_3": {
+"13:  >> IfNpcClicked (n_dispatcher): set s_03": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -550,11 +546,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => StartTimer (t_2palace); When it expires: set s_2palace": {
+"14: s_03 => StartTimer (t_2palace); When it expires: set s_2palace": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -573,11 +569,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => CreateLogEntry (1011, 1)": {
+"15: s_03 => CreateLogEntry (1011, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -603,11 +599,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_3 => Say (1020)": {
+"16: s_03 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -619,7 +615,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_2palace => StartTimer (t_7); When it expires: set s_7": {
+"17: s_2palace => StartTimer (t_07); When it expires: set s_07": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -630,7 +626,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_7": {
+"1: t_07": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -642,7 +638,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_2palace => PlaceNpcAt (n_messenger, l_palace)": {
+"18: s_2palace => MoveToLocation (n_messenger, l_palace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -672,11 +668,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfGivingItemToNpc (i_00, n_messenger): set s_5": {
+"19:  >> IfGivingItemToNpc (i_00, n_messenger): set s_05": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -702,18 +698,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_5 => StopTimer (t_7)": {
+"20: s_05 => StopTimer (t_07)": {
 "opCode": 13,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_7": {
+"1: t_07": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -725,11 +721,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_5 => PlaceItemOnCharacter (i_00)": {
+"21: s_05 => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -755,11 +751,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_5 => PlaceItemOnCharacter (i_jewelry)": {
+"22: s_05 => PlaceItemOnCharacter (i_jewelry)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -785,11 +781,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_5 => Say (1021)": {
+"23: s_05 => Say (1021)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -801,11 +797,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_7 => UnsetQuestor (n_03)": {
+"24: s_07 => UnsetQuestor (n_03)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -824,11 +820,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_7 => UnsetQuestor (n_00)": {
+"25: s_07 => UnsetQuestor (n_00)": {
 "opCode": 86,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -847,11 +843,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_7 => EndQuest ()": {
+"26: s_07 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -863,11 +859,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_7 => DeleteNpc (n_messenger)": {
+"27: s_07 => DeleteNpc (n_messenger)": {
 "opCode": 44,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "7",
 "not": "False",
@@ -886,11 +882,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> IfNpcClicked (n_03): set s_8": {
+"28:  >> IfNpcClicked (n_03): set s_08": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -909,11 +905,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_8 => Say (1015)": {
+"29: s_08 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -925,11 +921,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30: s_8 => AdjustReputationWithNpc (n_03, -10)": {
+"30: s_08 => AdjustReputationWithNpc (n_03, -10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -955,18 +951,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31:  >> IfMobHurtByPlayer (m_0): set s_9 [Msg 1016]": {
+"31:  >> IfMobHurtByPlayer (m_00): set s_09 [Msg 1016]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
 "index": "9",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -978,11 +974,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_9 => PlaceItemOnMob (i_01, m_0)": {
+"32: s_09 => PlaceItemOnMob (i_01, m_00)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
-"0: s_9": {
+"0: s_09": {
 "type": "State",
 "value": "9",
 "not": "False",
@@ -996,7 +992,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: m_0": {
+"2: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1257,7 +1253,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (s_yes and s_8): set s_11": {
+"42:  >> If (s_yes and s_08): set s_11": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1275,7 +1271,7 @@
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_8": {
+"2: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -1301,7 +1297,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_11 => SendFoe (m_0, 500, 50, 10)": {
+"43: s_11 => SendFoe (m_00, 500, 50, 10)": {
 "opCode": 87,
 "argCount": 5,
 "arguments:": {
@@ -1312,7 +1308,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1347,8 +1343,8 @@
 }
 }
 ,"states: [12]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1368,8 +1364,8 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1382,36 +1378,36 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 6
 },
-" 7: s_7": {
-"variable": "s_7",
+" 7: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 8
 },
-" 9: s_9": {
-"variable": "s_9",
+" 9: s_09": {
+"variable": "s_09",
 "nameRaw": "[0x40000009]",
 "isGlobal": false,
 "globalIndex": 0,

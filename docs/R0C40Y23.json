@@ -93,20 +93,18 @@
 }
 ,"locations: [1]": {
 " 0: l_skeffingcoven: Specific SkeffingtonCoven": {
-"variable": "l_skeffingcoven",
-"nameRaw": "[0x000db798]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 51000,
-"knownLocation": "SkeffingtonCoven",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "51000 [0xC738]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "230 [0xE6]",
+"nameRaw": "[0x000db798]",
 "objPtr": 0,
-"unknown1": "58880 [0xE600]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -690,7 +688,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 1716
 },
-"15: s_readmap => ShowLocationOnMap (l_skeffingcoven, 40, 5531)": {
+"15: s_readmap >> ShowLocationOnMap (l_skeffingcoven, Ykalon, 0x159B)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {

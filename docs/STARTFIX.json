@@ -64,21 +64,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dirtypit: OutOfTown Tavern": {
-"variable": "l_dirtypit",
-"nameRaw": "[0x0000688e]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dirtypit: Remote Tavern": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000688e]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [5]": {
@@ -310,7 +308,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_00 => PlaceNpcAt (n_Brisienna, l_dirtypit)": {
+" 6: s_00 => MoveToLocation (n_Brisienna, l_dirtypit)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

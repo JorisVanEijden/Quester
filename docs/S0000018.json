@@ -13,8 +13,8 @@
 "hasDebugInfo": false
 }
 ,"items: [2]": {
-" 0: i_spider: Lich_dust [CreatureIngredients1] [1016]": {
-"variable": "i_spider",
+" 0: i_powder: Lich_dust [CreatureIngredients1] [1016]": {
+"variable": "i_powder",
 "nameRaw": "[0x00001B74]",
 "rewardType": "Item1",
 "category": "CreatureIngredients1",
@@ -37,8 +37,8 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_00:  (type? Permanent) (faction Medora)": {
-"variable": "n_00",
+" 0: n_medora:  (type? Permanent) (faction Medora)": {
+"variable": "n_medora",
 "nameRaw": "[0x00001a11]",
 "unknown1": "[0x01]",
 "facePictureIndex": 0,
@@ -68,36 +68,32 @@
 }
 ,"locations: [2]": {
 " 0: l_orsinium: Specific OrsiniumCastle": {
-"variable": "l_orsinium",
-"nameRaw": "[0x00006f5b]",
-"generalLocation": "Specific",
-"locationType": 2,
-"LocationType": "SpecificLocation",
-"fineLocation": 50015,
-"knownLocation": "OrsiniumCastle",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50015 [0xC35F]",
+"extraInfo1": "2 [0x0002]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x00006f5b]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
-},
-" 1: l_crypt: OutOfTown Crypt": {
-"variable": "l_crypt",
-"nameRaw": "[0x00000cf8]",
-"generalLocation": "OutOfTown",
-"locationType": 0,
-"LocationType": "Crypt",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_crypt: Remote Crypt": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "0 [0x0000]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x00000cf8]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -190,7 +186,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 1:  => RemoveTopics (i_spider)": {
+" 1:  => RemoveTopics (i_powder)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -215,7 +211,7 @@
 "index": "255",
 "unknown1": "2040727552 [0x79A30800]"
 },
-"3: i_spider": {
+"3: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -296,7 +292,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 5: s_05 => IfNpcReputation (n_00) > 0: set s_04": {
+" 5: s_05 => IfNpcReputation (n_medora) > 0: set s_04": {
 "opCode": 37,
 "argCount": 4,
 "arguments:": {
@@ -314,7 +310,7 @@
 "index": "4",
 "unknown1": "14 [0x0000000E]"
 },
-"2: n_00": {
+"2: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -400,7 +396,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 8: not s_startquest => StopNpcConversation (n_00)": {
+" 8: not s_startquest => StopNpcConversation (n_medora)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
@@ -411,7 +407,7 @@
 "index": "7",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -423,7 +419,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 9: s_startquest => StartNpcEscort (n_00)": {
+" 9: s_startquest => StartNpcEscort (n_medora)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
@@ -434,7 +430,7 @@
 "index": "7",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -508,7 +504,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"13: s_01 => StopNpcEscort (n_00)": {
+"13: s_01 => StopNpcEscort (n_medora)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
@@ -519,7 +515,7 @@
 "index": "1",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -561,7 +557,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"15: s_delay => ShowLocationOnMap (l_orsinium, 26, 146892)": {
+"15: s_delay >> ShowLocationOnMap (l_orsinium, Orsinium_Area, 0x23DCC)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -727,7 +723,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"21: s_02 => PlaceItemOnMob (i_spider, m_mummy)": {
+"21: s_02 => PlaceItemOnMob (i_powder, m_mummy)": {
 "opCode": 39,
 "argCount": 3,
 "arguments:": {
@@ -738,7 +734,7 @@
 "index": "2",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: i_spider": {
+"1: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -757,7 +753,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"22:  >> IfGivingItemToNpc (i_spider, n_00): set s_03": {
+"22:  >> IfGivingItemToNpc (i_powder, n_medora): set s_03": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -768,14 +764,14 @@
 "index": "3",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: i_spider": {
+"1: i_powder": {
 "type": "Item",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "14 [0x0000000E]"
 },
-"2: n_00": {
+"2: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -863,7 +859,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-"26: s_03 => AdjustReputationWithNpc (n_00, 15)": {
+"26: s_03 => AdjustReputationWithNpc (n_medora, 15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -874,7 +870,7 @@
 "index": "3",
 "unknown1": "92502434 [0x058379A2]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",

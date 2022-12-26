@@ -106,69 +106,61 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_givershouse: InCurrentTown House2": {
-"variable": "l_givershouse",
-"nameRaw": "[0x00034e77]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_givershouse: Local House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 1,
+"unknown1": "255 [0xFF]",
+"unknown2": "12 [0x0C]",
+"nameRaw": "[0x00034e77]",
 "objPtr": 0,
-"unknown1": "3327 [0x0CFF]"
-},
-" 1: l_sistershouse: InCurrentTown House2": {
-"variable": "l_sistershouse",
-"nameRaw": "[0x00070077]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_sistershouse: Local House2": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "12 [0x0C]",
+"nameRaw": "[0x00070077]",
 "objPtr": 0,
-"unknown1": "3327 [0x0CFF]"
-},
-" 2: l_dungeon: OutOfTown Dungeon": {
-"variable": "l_dungeon",
-"nameRaw": "[0x00003498]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_dungeon: Remote Dungeon": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "12 [0x0C]",
+"nameRaw": "[0x00003498]",
 "objPtr": 0,
-"unknown1": "3327 [0x0CFF]"
-},
-" 3: l_inn: InCurrentTown Tavern": {
-"variable": "l_inn",
-"nameRaw": "[0x000002ee]",
-"generalLocation": "InCurrentTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_inn: Local Tavern": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "12 [0x0C]",
+"nameRaw": "[0x000002ee]",
 "objPtr": 0,
-"unknown1": "3327 [0x0CFF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -429,7 +421,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  => PlaceNpcAt (n_tatler, l_inn)": {
+" 8:  => MoveToLocation (n_tatler, l_inn)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -459,7 +451,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9:  => PlaceNpcAt (n_lover, l_dungeon)": {
+" 9:  => MoveToLocation (n_lover, l_dungeon)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

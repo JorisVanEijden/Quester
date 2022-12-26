@@ -42,37 +42,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_mondung: OutOfTown Dungeon": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_qgenemy: OutOfTown DragonsDen": {
-"variable": "l_qgenemy",
-"nameRaw": "[0x000035c7]",
-"generalLocation": "OutOfTown",
-"locationType": 14,
-"LocationType": "DragonsDen",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_qgenemy: Remote DragonsDen": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000035c7]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -552,11 +548,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (s_map and s_pcgetsgold): set s_7": {
+"15:  >> If (s_map and s_pcgetsgold): set s_07": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -596,11 +592,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_7 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
+"16: s_07 => AddLocationToMap (l_qgenemy) [Msg 1080]": {
 "opCode": 19,
 "argCount": 2,
 "arguments:": {
-"0: s_7": {
+"0: s_07": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -677,8 +673,8 @@
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_7": {
-"variable": "s_7",
+" 8: s_07": {
+"variable": "s_07",
 "nameRaw": "[0x40000007]",
 "isGlobal": false,
 "globalIndex": 0,

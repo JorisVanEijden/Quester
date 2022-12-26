@@ -122,69 +122,61 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_dungeon: OutOfTown Dungeon": {
-"variable": "l_dungeon",
-"nameRaw": "[0x00003498]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dungeon: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "8 [0x08]",
+"nameRaw": "[0x00003498]",
 "objPtr": 0,
-"unknown1": "2048 [0x0800]"
-},
-" 1: l_dungeon2: OutOfTown Dungeon": {
-"variable": "l_dungeon2",
-"nameRaw": "[0x00006962]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_dungeon2: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "8 [0x08]",
+"nameRaw": "[0x00006962]",
 "objPtr": 0,
-"unknown1": "2048 [0x0800]"
-},
-" 2: l_mageguild: OutOfTown GuildHall": {
-"variable": "l_mageguild",
-"nameRaw": "[0x0000d0d8]",
-"generalLocation": "OutOfTown",
-"locationType": 11,
-"LocationType": "GuildHall",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_mageguild: Remote GuildHall": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "11 [0x000B]",
+"extraInfo2": 1,
+"unknown1": "0 [0x00]",
+"unknown2": "8 [0x08]",
+"nameRaw": "[0x0000d0d8]",
 "objPtr": 0,
-"unknown1": "2048 [0x0800]"
-},
-" 3: l_dungeon3: OutOfTown Crypt": {
-"variable": "l_dungeon3",
-"nameRaw": "[0x00006963]",
-"generalLocation": "OutOfTown",
-"locationType": 0,
-"LocationType": "Crypt",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_dungeon3: Remote Crypt": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "0 [0x0000]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "8 [0x08]",
+"nameRaw": "[0x00006963]",
 "objPtr": 0,
-"unknown1": "2048 [0x0800]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -845,7 +837,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 405
 },
-"19: s_readmap => PlaceNpcAt (n_wizard, l_dungeon2)": {
+"19: s_readmap => MoveToLocation (n_wizard, l_dungeon2)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

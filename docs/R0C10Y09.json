@@ -67,21 +67,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_hidingplace: OutOfTown None": {
-"variable": "l_hidingplace",
-"nameRaw": "[0x00033fef]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_hidingplace: Remote None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "79 [0x4F]",
+"nameRaw": "[0x00033fef]",
 "objPtr": 0,
-"unknown1": "20479 [0x4FFF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -164,7 +162,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-" 2:  => PlaceNpcAt (n_spy, l_hidingplace)": {
+" 2:  => MoveToLocation (n_spy, l_hidingplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

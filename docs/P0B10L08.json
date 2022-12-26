@@ -78,21 +78,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown Coven": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": 7,
-"LocationType": "Coven",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Coven": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "7 [0x0007]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "211 [0xD3]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "54271 [0xD3FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -341,7 +339,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 99
 },
-" 8: s_vampclicked => PlaceNpcAt (n_daedra, l_mondung)": {
+" 8: s_vampclicked => MoveToLocation (n_daedra, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

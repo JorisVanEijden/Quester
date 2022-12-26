@@ -150,53 +150,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_scholardung: OutOfTown Dungeon": {
-"variable": "l_scholardung",
-"nameRaw": "[0x000365f7]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_scholardung: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x000365f7]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
-},
-" 1: l_hintdung: OutOfTown Dungeon": {
-"variable": "l_hintdung",
-"nameRaw": "[0x00006977]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_hintdung: Remote Dungeon": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x00006977]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
-},
-" 2: l_itemdung: OutOfTown Dungeon": {
-"variable": "l_itemdung",
-"nameRaw": "[0x00006b27]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_itemdung: Remote Dungeon": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 1,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x00006b27]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -373,7 +367,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-" 5:  => PlaceNpcAt (n_scholar, l_scholardung)": {
+" 5:  => MoveToLocation (n_scholar, l_scholardung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1141,7 +1135,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 130
 },
-"32: s_08 => PlaceNpcAt (l_hintdung)": {
+"32: s_08 => MoveToLocation (Player, l_hintdung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

@@ -92,21 +92,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mage3: InCurrentTown House2": {
-"variable": "l_mage3",
-"nameRaw": "[0x00000c71]",
-"generalLocation": "InCurrentTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mage3: Local House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00000c71]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -235,11 +233,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfMobsKilled (m_duelist, 1): set s_1": {
+" 4:  >> IfMobsKilled (m_duelist, 1): set s_01": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -265,11 +263,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_1 => Say (1014)": {
+" 5: s_01 => Say (1014)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -281,11 +279,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfGivingItemToNpc (i_01, n_competitor): set s_2": {
+" 6:  >> IfGivingItemToNpc (i_01, n_competitor): set s_02": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -311,18 +309,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_2 >> WhenAtLocation (l_mage3): set s_4": {
+" 7: s_02 >> WhenAtLocation (l_mage3): set s_04": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -341,11 +339,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => CreateLogEntry (1016, 1)": {
+" 8: s_02 => CreateLogEntry (1016, 1)": {
 "opCode": 23,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -371,11 +369,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_2 => Say (1012)": {
+" 9: s_02 => Say (1012)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -387,11 +385,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_2 => PlaceMobAtLocation (m_duelist, l_mage3)": {
+"10: s_02 => PlaceMobAtLocation (m_duelist, l_mage3)": {
 "opCode": 22,
 "argCount": 3,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -417,11 +415,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11:  >> IfGivingItemToNpc (i_01, n_lover): set s_3": {
+"11:  >> IfGivingItemToNpc (i_01, n_lover): set s_03": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -447,11 +445,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_3 => PlaceItemOnCharacter (i_lovgold)": {
+"12: s_03 => PlaceItemOnCharacter (i_lovgold)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -477,11 +475,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_3 => Say (1015)": {
+"13: s_03 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -493,11 +491,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => MakePermanent (i_lovgold)": {
+"14: s_03 => MakePermanent (i_lovgold)": {
 "opCode": 54,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -516,11 +514,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_3 => EndQuest ()": {
+"15: s_03 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -532,11 +530,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_4 => Say (1013)": {
+"16: s_04 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -571,7 +569,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> If (s_qgclicked and s_1): set s_reward": {
+"18:  >> If (s_qgclicked and s_01): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -589,7 +587,7 @@
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -728,29 +726,29 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,

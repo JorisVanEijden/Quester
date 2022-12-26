@@ -19,8 +19,8 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_1: Fixed 01:15:00": {
-"variable": "t_1",
+" 0: t_01: Fixed 01:15:00": {
+"variable": "t_01",
 "nameRaw": "[0x40000001]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -32,8 +32,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_2: Fixed 44.10:40:00": {
-"variable": "t_2",
+" 1: t_02: Fixed 44.10:40:00": {
+"variable": "t_02",
 "nameRaw": "[0x40000002]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -47,8 +47,8 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_0: 3 Vampire": {
-"variable": "m_0",
+" 0: m_00: 3 Vampire": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "Vampire",
 "count": 3,
@@ -56,8 +56,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 2 VampireAncient": {
-"variable": "m_1",
+" 1: m_01: 2 VampireAncient": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "VampireAncient",
 "count": 2,
@@ -67,7 +67,7 @@
 }
 }
 ,"opCodes: [15]": {
-" 0:  => StartTimer (t_2); When it expires: set s_2": {
+" 0:  => StartTimer (t_02); When it expires: set s_02": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -78,7 +78,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_2": {
+"1: t_02": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -90,18 +90,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> IfMobHurtByPlayer (m_1): set s_0": {
+" 1:  >> IfMobHurtByPlayer (m_01): set s_00": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -113,18 +113,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfMobHurtByPlayer (m_0): set s_0": {
+" 2:  >> IfMobHurtByPlayer (m_00): set s_00": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -136,18 +136,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3: s_0 => StartTimer (t_1); When it expires: set s_1": {
+" 3: s_00 => StartTimer (t_01); When it expires: set s_01": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_1": {
+"1: t_01": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -159,11 +159,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_0 => Say (1015)": {
+" 4: s_00 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -175,25 +175,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_1 => Unset (s_1, s_0)": {
+" 5: s_01 => Unset (s_01, s_00)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -219,11 +219,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_2 => EndQuest ()": {
+" 6: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -235,11 +235,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfTimeOfDayBetween (04:10:00, 20:50:00): set s_3": {
+" 7:  >> IfTimeOfDayBetween (04:10:00, 20:50:00): set s_03": {
 "opCode": 31,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -265,18 +265,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_4 => CreateFoe(m_0, 1440, 5%, 20)": {
+" 8: s_04 => CreateFoe(m_00, 1440, 5%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -309,18 +309,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_4 => CreateFoe(m_1, 1440, 3%, 10)": {
+" 9: s_04 => CreateFoe(m_01, 1440, 3%, 10)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -485,7 +485,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13: s_14 => Set (s_2)": {
+"13: s_14 => Set (s_02)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -496,7 +496,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -529,18 +529,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: not s_3 => Set (s_4)": {
+"14: not s_03 => Set (s_04)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
-"0: not s_3": {
+"0: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_4": {
+"1: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
@@ -575,36 +575,36 @@
 }
 }
 ,"states: [15]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,

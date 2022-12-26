@@ -70,21 +70,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_mondung: OutOfTown Prison": {
-"variable": "l_mondung",
-"nameRaw": "[0x00003637]",
-"generalLocation": "OutOfTown",
-"locationType": 3,
-"LocationType": "Prison",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mondung: Remote Prison": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "3 [0x0003]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003637]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -257,7 +255,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5:  => PlaceNpcAt (n_witch, l_mondung)": {
+" 5:  => MoveToLocation (n_witch, l_mondung)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -303,11 +301,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_clothes, n_witch): set s_1": {
+" 7:  >> IfGivingItemToNpc (i_clothes, n_witch): set s_01": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -333,11 +331,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => CreateFoe(m_guard, 2, 50%, 30) [Msg 1012]": {
+" 8: s_01 => CreateFoe(m_guard, 2, 50%, 30) [Msg 1012]": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -377,11 +375,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => HideNpc (n_witch)": {
+" 9: s_01 => HideNpc (n_witch)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -400,11 +398,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_1 => Say (1011)": {
+"10: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -416,11 +414,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_1 => StartNpcEscort (n_witch)": {
+"11: s_01 => StartNpcEscort (n_witch)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -462,11 +460,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_qgclicked and not s_1): set s_3": {
+"13:  >> If (s_qgclicked and not s_01): set s_03": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -480,7 +478,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -506,11 +504,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14: s_3 => Unset (s_qgclicked, s_3)": {
+"14: s_03 => Unset (s_qgclicked, s_03)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -524,7 +522,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -550,7 +548,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> If (s_qgclicked and s_1): set s_reward": {
+"15:  >> If (s_qgclicked and s_01): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -568,7 +566,7 @@
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -654,11 +652,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18:  >> If (s_queston and s_1): set s_5": {
+"18:  >> If (s_queston and s_01): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -672,7 +670,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -698,11 +696,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19: s_5 => Say (1013)": {
+"19: s_05 => Say (1013)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -723,8 +721,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -737,8 +735,8 @@
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -751,8 +749,8 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,

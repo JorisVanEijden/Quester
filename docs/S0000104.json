@@ -19,8 +19,8 @@
 ,"locations: [0]": {
 }
 ,"timers: [2]": {
-" 0: t_1: Fixed 01:15:00": {
-"variable": "t_1",
+" 0: t_01: Fixed 01:15:00": {
+"variable": "t_01",
 "nameRaw": "[0x40000001]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -32,8 +32,8 @@
 "started": 0,
 "index": 0
 },
-" 1: t_2: Fixed 444.10:40:00": {
-"variable": "t_2",
+" 1: t_02: Fixed 444.10:40:00": {
+"variable": "t_02",
 "nameRaw": "[0x40000002]",
 "type": "Fixed",
 "typeRaw": "1 [0x01]",
@@ -47,8 +47,8 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_0: 3 FrostDaedra": {
-"variable": "m_0",
+" 0: m_00: 3 FrostDaedra": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "FrostDaedra",
 "count": 3,
@@ -56,8 +56,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 3 FireDaedra": {
-"variable": "m_1",
+" 1: m_01: 3 FireDaedra": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "FireDaedra",
 "count": 3,
@@ -67,7 +67,7 @@
 }
 }
 ,"opCodes: [13]": {
-" 0:  => CreateFoe(m_1, 101, 3%, 15)": {
+" 0:  => CreateFoe(m_01, 101, 3%, 15)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -78,7 +78,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -111,7 +111,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  => CreateFoe(m_0, 97, 3%, 15)": {
+" 1:  => CreateFoe(m_00, 97, 3%, 15)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -122,7 +122,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -155,7 +155,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  => StartTimer (t_2); When it expires: set s_2": {
+" 2:  => StartTimer (t_02); When it expires: set s_02": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
@@ -166,7 +166,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_2": {
+"1: t_02": {
 "type": "Timer",
 "value": "1",
 "not": "False",
@@ -178,18 +178,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> IfMobHurtByPlayer (m_1): set s_0": {
+" 3:  >> IfMobHurtByPlayer (m_01): set s_00": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -201,18 +201,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> IfMobHurtByPlayer (m_0): set s_0": {
+" 4:  >> IfMobHurtByPlayer (m_00): set s_00": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -224,18 +224,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_0 => StartTimer (t_1); When it expires: set s_1": {
+" 5: s_00 => StartTimer (t_01); When it expires: set s_01": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_1": {
+"1: t_01": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -247,11 +247,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6: s_0 => Say (1015)": {
+" 6: s_00 => Say (1015)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_0": {
+"0: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -263,25 +263,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => Unset (s_1, s_0)": {
+" 7: s_01 => Unset (s_01, s_00)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_0": {
+"2: s_00": {
 "type": "State",
 "value": "0",
 "not": "False",
@@ -307,11 +307,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_2 => EndQuest ()": {
+" 8: s_02 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -455,7 +455,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_12 => Set (s_2)": {
+"12: s_12 => Set (s_02)": {
 "opCode": 35,
 "argCount": 5,
 "arguments:": {
@@ -466,7 +466,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -501,22 +501,22 @@
 }
 }
 ,"states: [13]": {
-" 0: s_0": {
-"variable": "s_0",
+" 0: s_00": {
+"variable": "s_00",
 "nameRaw": "[0x40000000]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,

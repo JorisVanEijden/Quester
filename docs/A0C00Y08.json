@@ -56,21 +56,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_place: InCurrentTown None": {
-"variable": "l_place",
-"nameRaw": "[0x00000d0f]",
-"generalLocation": "InCurrentTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_place: Local None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x00000d0f]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -150,7 +148,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 446
 },
-" 1:  => PlaceNpcAt (n_darkb, l_place)": {
+" 1:  => MoveToLocation (n_darkb, l_place)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

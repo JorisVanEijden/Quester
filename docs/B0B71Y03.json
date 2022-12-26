@@ -120,53 +120,47 @@
 }
 }
 ,"locations: [3]": {
-" 0: l_dungeon1: OutOfTown Dungeon": {
-"variable": "l_dungeon1",
-"nameRaw": "[0x00006961]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dungeon1: Remote Dungeon": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "218 [0xDA]",
+"nameRaw": "[0x00006961]",
 "objPtr": 0,
-"unknown1": "55808 [0xDA00]"
-},
-" 1: l_palace: OutOfTown Palace": {
-"variable": "l_palace",
-"nameRaw": "[0x00001a1f]",
-"generalLocation": "OutOfTown",
-"locationType": 16,
-"LocationType": "Palace",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_palace: Remote Palace": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "16 [0x0010]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "218 [0xDA]",
+"nameRaw": "[0x00001a1f]",
 "objPtr": 0,
-"unknown1": "55808 [0xDA00]"
-},
-" 2: l_dungeon2: OutOfTown Dungeon": {
-"variable": "l_dungeon2",
-"nameRaw": "[0x00006962]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_dungeon2: Remote Dungeon": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 1,
+"unknown1": "0 [0x00]",
+"unknown2": "218 [0xDA]",
+"nameRaw": "[0x00006962]",
 "objPtr": 0,
-"unknown1": "55808 [0xDA00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -304,7 +298,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-" 3:  => PlaceNpcAt (n_witch, l_dungeon1)": {
+" 3:  => MoveToLocation (n_witch, l_dungeon1)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -567,7 +561,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 55
 },
-"12:  => PlaceNpcAt (n_child, l_palace)": {
+"12:  => MoveToLocation (n_child, l_palace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

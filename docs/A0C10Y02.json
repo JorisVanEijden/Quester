@@ -70,21 +70,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_dbguild: OutOfTown House1": {
-"variable": "l_dbguild",
-"nameRaw": "[0x00003238]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_dbguild: Remote House1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "67 [0x43]",
+"nameRaw": "[0x00003238]",
 "objPtr": 0,
-"unknown1": "17407 [0x43FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -174,7 +172,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 2:  => PlaceNpcAt (n_child, l_dbguild)": {
+" 2:  => MoveToLocation (n_child, l_dbguild)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

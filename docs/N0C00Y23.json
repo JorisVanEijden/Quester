@@ -84,21 +84,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_destination: OutOfTown None": {
-"variable": "l_destination",
-"nameRaw": "[0x00033ba0]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "None",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_destination: Remote None": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x00033ba0]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -1452,7 +1450,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 209
 },
-"40: s_06 => PlaceNpcAt (n_questgiver, l_destination)": {
+"40: s_06 => MoveToLocation (n_questgiver, l_destination)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

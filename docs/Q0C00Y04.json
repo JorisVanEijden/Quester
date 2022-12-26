@@ -67,21 +67,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_ranger: OutOfTown GuildHall": {
-"variable": "l_ranger",
-"nameRaw": "[0x00001a98]",
-"generalLocation": "OutOfTown",
-"locationType": 11,
-"LocationType": "GuildHall",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_ranger: Remote GuildHall": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "11 [0x000B]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "48 [0x30]",
+"nameRaw": "[0x00001a98]",
 "objPtr": 0,
-"unknown1": "12543 [0x30FF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -182,7 +180,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 2:  => PlaceNpcAt (n_mage, l_ranger)": {
+" 2:  => MoveToLocation (n_mage, l_ranger)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

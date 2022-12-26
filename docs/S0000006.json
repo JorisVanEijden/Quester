@@ -13,8 +13,8 @@
 "hasDebugInfo": false
 }
 ,"items: [3]": {
-" 0: i_0: Formal_cloak [MensClothing] [1008] [1009]": {
-"variable": "i_0",
+" 0: i_00: Formal_cloak [MensClothing] [1008] [1009]": {
+"variable": "i_00",
 "nameRaw": "[0x41000000]",
 "rewardType": "Item1",
 "category": "MensClothing",
@@ -35,8 +35,8 @@
 "index": 1,
 "unknown1": "0 [0x00000000]"
 },
-" 2: i_4: Dead_body [QuestItem]": {
-"variable": "i_4",
+" 2: i_04: Dead_body [QuestItem]": {
+"variable": "i_04",
 "nameRaw": "[0x41000004]",
 "rewardType": "Item1",
 "category": "QuestItem",
@@ -78,26 +78,24 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_casfort: OutOfTown House1": {
-"variable": "l_casfort",
-"nameRaw": "[0x00003254]",
-"generalLocation": "OutOfTown",
-"locationType": 17,
-"LocationType": "House1",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_casfort: Remote House1": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "17 [0x0011]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00003254]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
-" 0: t_4: Random between 04:00:00 and 01:40:00": {
-"variable": "t_4",
+" 0: t_04: Random between 04:00:00 and 01:40:00": {
+"variable": "t_04",
 "nameRaw": "[0x40000004]",
 "type": "Random",
 "typeRaw": "0 [0x00]",
@@ -137,8 +135,8 @@
 }
 }
 ,"mobs: [6]": {
-" 0: m_0: 1 DaedraSeducer": {
-"variable": "m_0",
+" 0: m_00: 1 DaedraSeducer": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "DaedraSeducer",
 "count": 1,
@@ -146,8 +144,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 2 Knight": {
-"variable": "m_1",
+" 1: m_01: 2 Knight": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "Knight",
 "count": 2,
@@ -155,8 +153,8 @@
 "null2": 0,
 "index": 1
 },
-" 2: m_2: 2 Spellsword": {
-"variable": "m_2",
+" 2: m_02: 2 Spellsword": {
+"variable": "m_02",
 "nameRaw": "[0X44000002]",
 "type": "Spellsword",
 "count": 2,
@@ -164,8 +162,8 @@
 "null2": 0,
 "index": 2
 },
-" 3: m_3: 1 DaedraSeducer": {
-"variable": "m_3",
+" 3: m_03: 1 DaedraSeducer": {
+"variable": "m_03",
 "nameRaw": "[0X44000003]",
 "type": "DaedraSeducer",
 "count": 1,
@@ -173,8 +171,8 @@
 "null2": 0,
 "index": 3
 },
-" 4: m_4: 1 Daedroth": {
-"variable": "m_4",
+" 4: m_04: 1 Daedroth": {
+"variable": "m_04",
 "nameRaw": "[0X44000004]",
 "type": "Daedroth",
 "count": 1,
@@ -182,8 +180,8 @@
 "null2": 0,
 "index": 4
 },
-" 5: m_5: 1 Daedroth": {
-"variable": "m_5",
+" 5: m_05: 1 Daedroth": {
+"variable": "m_05",
 "nameRaw": "[0X44000005]",
 "type": "Daedroth",
 "count": 1,
@@ -230,7 +228,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 1:  >> If (s_1 and s_3): set s_pcgetsgold": {
+" 1:  >> If (s_01 and s_03): set s_pcgetsgold": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -241,14 +239,14 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_3": {
+"2: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -415,11 +413,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfNpcClicked (n_00): set s_1": {
+" 6:  >> IfNpcClicked (n_00): set s_01": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -438,18 +436,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  >> IfGivingItemToNpc (i_0, n_01): set s_3 [Msg 1022]": {
+" 7:  >> IfGivingItemToNpc (i_00, n_01): set s_03 [Msg 1022]": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -468,11 +466,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_3 >> WhenAtLocation (l_casfort): set s_12": {
+" 8: s_03 >> WhenAtLocation (l_casfort): set s_12": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -498,18 +496,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_3 => StartTimer (t_4); When it expires: set s_4": {
+" 9: s_03 => StartTimer (t_04); When it expires: set s_04": {
 "opCode": 12,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: t_4": {
+"1: t_04": {
 "type": "Timer",
 "value": "0",
 "not": "False",
@@ -521,18 +519,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"10: s_3 => PlaceItemAt (i_4, l_casfort)": {
+"10: s_03 => PlaceItemAt (i_04, l_casfort)": {
 "opCode": 0,
 "argCount": 3,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_4": {
+"1: i_04": {
 "type": "Item",
 "value": "2",
 "not": "False",
@@ -551,11 +549,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"11: s_3 => HideNpc (n_01)": {
+"11: s_03 => HideNpc (n_01)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -574,18 +572,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"12: s_4 => CreateFoe(m_2, 53, 15%, 20)": {
+"12: s_04 => CreateFoe(m_02, 53, 15%, 20)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_4": {
+"0: s_04": {
 "type": "State",
 "value": "4",
 "not": "False",
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_2": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -618,7 +616,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> If (s_15 and s_2): set s_queston": {
+"13:  >> If (s_15 and s_02): set s_queston": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -636,7 +634,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -717,7 +715,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_yes >> WhenItemIsUsed (i_0): set s_2": {
+"17: s_yes >> WhenItemIsUsed (i_00): set s_02": {
 "opCode": 57,
 "argCount": 3,
 "arguments:": {
@@ -728,14 +726,14 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"2: i_0": {
+"2: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -800,7 +798,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_yes => PlaceItemOnCharacter (i_0)": {
+"20: s_yes => PlaceItemOnCharacter (i_00)": {
 "opCode": 26,
 "argCount": 3,
 "arguments:": {
@@ -811,7 +809,7 @@
 "index": "8",
 "unknown1": "0 [0x00000000]"
 },
-"1: i_0": {
+"1: i_00": {
 "type": "Item",
 "value": "0",
 "not": "False",
@@ -869,7 +867,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_yes => PlaceNpcAt (n_01, l_casfort)": {
+"23: s_yes => MoveToLocation (n_01, l_casfort)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -961,7 +959,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> IfMobHurtByPlayer (m_3): set s_10 [Msg 1020]": {
+"27:  >> IfMobHurtByPlayer (m_03): set s_10 [Msg 1020]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -972,7 +970,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_3": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -984,7 +982,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> IfMobHurtByPlayer (m_4): set s_10": {
+"28:  >> IfMobHurtByPlayer (m_04): set s_10": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -995,7 +993,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_4": {
+"1: m_04": {
 "type": "Mob",
 "value": "4",
 "not": "False",
@@ -1023,7 +1021,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_1 and not s_3): set s_clearclick": {
+"30:  >> If (s_01 and not s_03): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1034,14 +1032,14 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_3": {
+"2: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -1067,7 +1065,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"31: s_clearclick => Unset (s_1, s_clearclick)": {
+"31: s_clearclick => Unset (s_01, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -1078,7 +1076,7 @@
 "index": "11",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -1111,7 +1109,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"32: s_12 => CreateFoe(m_1, 2, 50%, 4)": {
+"32: s_12 => CreateFoe(m_01, 2, 50%, 4)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1122,7 +1120,7 @@
 "index": "12",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1155,7 +1153,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"33:  >> IfMobHurtByPlayer (m_0): set s_13": {
+"33:  >> IfMobHurtByPlayer (m_00): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1166,7 +1164,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1178,7 +1176,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"34:  >> IfMobHurtByPlayer (m_5): set s_13": {
+"34:  >> IfMobHurtByPlayer (m_05): set s_13": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1189,7 +1187,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_5": {
+"1: m_05": {
 "type": "Mob",
 "value": "5",
 "not": "False",
@@ -1217,7 +1215,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"36: s_13 => DoneWithMob (m_0, _)": {
+"36: s_13 => DoneWithMob (m_00, _)": {
 "opCode": 68,
 "argCount": 3,
 "arguments:": {
@@ -1228,7 +1226,7 @@
 "index": "13",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1247,7 +1245,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"37:  >> IfMobHurtByPlayer (m_1): set s_hitguard [Msg 1021]": {
+"37:  >> IfMobHurtByPlayer (m_01): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1258,7 +1256,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -1270,7 +1268,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"38:  >> IfMobHurtByPlayer (m_2): set s_hitguard [Msg 1021]": {
+"38:  >> IfMobHurtByPlayer (m_02): set s_hitguard [Msg 1021]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -1281,7 +1279,7 @@
 "index": "14",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_2": {
+"1: m_02": {
 "type": "Mob",
 "value": "2",
 "not": "False",
@@ -1293,7 +1291,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"39:  >> IfMobsKilled (m_3, 3): set s_15": {
+"39:  >> IfMobsKilled (m_03, 3): set s_15": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
@@ -1304,7 +1302,7 @@
 "index": "15",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_3": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -1323,7 +1321,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"40:  >> If (not gs_UnknownHelseth and s_2): set s_18": {
+"40:  >> If (not gs_UnknownHelseth and s_02): set s_18": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1341,7 +1339,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1367,7 +1365,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"41: s_18 => CreateFoe(m_3, 1, 20%, 3)": {
+"41: s_18 => CreateFoe(m_03, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1378,7 +1376,7 @@
 "index": "18",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_3": {
+"1: m_03": {
 "type": "Mob",
 "value": "3",
 "not": "False",
@@ -1411,7 +1409,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"42:  >> If (gs_UnknownHelseth and s_2): set s_19": {
+"42:  >> If (gs_UnknownHelseth and s_02): set s_19": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1429,7 +1427,7 @@
 "index": "17",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_2": {
+"2: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -1455,7 +1453,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"43: s_19 => CreateFoe(m_4, 1, 20%, 3)": {
+"43: s_19 => CreateFoe(m_04, 1, 20%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1466,7 +1464,7 @@
 "index": "19",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_4": {
+"1: m_04": {
 "type": "Mob",
 "value": "4",
 "not": "False",
@@ -1543,7 +1541,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"45: s_20 => CreateFoe(m_0, 1, 50%, 3)": {
+"45: s_20 => CreateFoe(m_00, 1, 50%, 3)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1554,7 +1552,7 @@
 "index": "20",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -1631,7 +1629,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"47: s_21 => CreateFoe(m_5, 1, 100%, 32768)": {
+"47: s_21 => CreateFoe(m_05, 1, 100%, 32768)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
@@ -1642,7 +1640,7 @@
 "index": "21",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_5": {
+"1: m_05": {
 "type": "Mob",
 "value": "5",
 "not": "False",
@@ -1684,29 +1682,29 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,

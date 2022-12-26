@@ -113,34 +113,53 @@ namespace Quester
                 {
                     Index = index,
                     Flags = reader.ReadByte(),
-                    GeneralLocation = (GeneralLocation)reader.ReadByte(),
-                    FineLocation = reader.ReadUInt16(),
-                    LocationTypeRaw = reader.ReadInt16(),
-                    DoorSelector = reader.ReadInt16(),
-                    Unknown1 = reader.ReadUInt16(),
+                    Locality = (Locality)reader.ReadByte(),
+                    LocationId = reader.ReadUInt16(),
+                    ExtraInfo1 = reader.ReadInt16(),
+                    ExtraInfo2 = reader.ReadInt16(),
+                    Unknown1 = reader.ReadByte(),
+                    Unknown2 = reader.ReadByte(),
                     NameRaw = reader.ReadUInt32(),
                     ObjPtr = reader.ReadUInt32(),
                     TextRecordId1 = reader.ReadUInt16(),
                     TextRecordId2 = reader.ReadUInt16()
                 };
 
-                if (location.GeneralLocation == GeneralLocation.Specific)
+                location.LocationType = location.LocationId switch
                 {
-                    location.LocationType = LocationType.SpecificLocation;
-                    location.KnownLocation = (NamedPlace)location.FineLocation;
-                }
-                else
-                {
-                    location.KnownLocation = NamedPlace.None;
-                    if (location.FineLocation == 0)
-                        location.LocationType = (LocationType)location.LocationTypeRaw;
-                    else
-                        location.LocationType = (LocationType)location.LocationTypeRaw + 500;
-                }
+                    0 => // Building or town
+                        (LocationType)location.ExtraInfo1,
+                    1 => // Dungeon
+                        (LocationType)location.ExtraInfo1 + 500,
+                    _ => // Specific location
+                        (LocationType)location.LocationId
+                };
+
                 var name = VariableNames.LookUp(location.NameRaw) ?? $"{index:D2}";
                 location.Variable = "l_" + name;
 
                 locations[index] = location;
+
+                var formatHex = "{0:X4} {1:X2} {2:X2} {3:X4} {4:X4} {5:X4} {6:X4} {7:X8} {8:X8} {9:X4} {10:X4} {11} {12} {13} {14} {15}";
+                Console.WriteLine("0x{0:X4},0x{1:X2},0x{2:X2},{3},0x{4:X2},{5},0x{6:X2},0x{7:X2},0x{8:X8},0x{9:X8},{10},{11},{12},{13},{14},{15}",
+                    (short)index,
+                    (byte)location.Flags,
+                    (byte)location.Locality,
+                    (ushort)location.LocationId,
+                    (short)location.ExtraInfo1,
+                    (short)location.ExtraInfo2,
+                    (byte)location.Unknown1,
+                    (byte)location.Unknown2,
+                    (uint)location.NameRaw,
+                    (uint)location.ObjPtr,
+                    (ushort)location.TextRecordId1,
+                    (ushort)location.TextRecordId2,
+                    location.Variable,
+                    location.Locality,
+                    location.LocationType,
+                    header.Quest.Name
+                );
+                
             }
 
             return locations;

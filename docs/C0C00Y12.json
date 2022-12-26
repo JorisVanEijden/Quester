@@ -70,21 +70,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_thiefplace: OutOfTown House2": {
-"variable": "l_thiefplace",
-"nameRaw": "[0x0001b78f]",
-"generalLocation": "OutOfTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_thiefplace: Remote House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "255 [0xFF]",
+"unknown2": "95 [0x5F]",
+"nameRaw": "[0x0001b78f]",
 "objPtr": 0,
-"unknown1": "24575 [0x5FFF]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -213,7 +211,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 13
 },
-" 3:  => PlaceNpcAt (n_thief, l_thiefplace)": {
+" 3:  => MoveToLocation (n_thief, l_thiefplace)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

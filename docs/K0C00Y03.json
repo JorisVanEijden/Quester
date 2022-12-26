@@ -92,21 +92,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_conhouse: OutOfTown House2": {
-"variable": "l_conhouse",
-"nameRaw": "[0x00006817]",
-"generalLocation": "OutOfTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_conhouse: Remote House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x00006817]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -262,7 +260,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 12
 },
-" 4:  => PlaceNpcAt (n_contact, l_conhouse)": {
+" 4:  => MoveToLocation (n_contact, l_conhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

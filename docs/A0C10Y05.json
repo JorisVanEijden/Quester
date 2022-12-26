@@ -84,37 +84,33 @@
 }
 }
 ,"locations: [2]": {
-" 0: l_betrothedhome: OutOfTown House2": {
-"variable": "l_betrothedhome",
-"nameRaw": "[0x000cd81b]",
-"generalLocation": "OutOfTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_betrothedhome: Remote House2": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x000cd81b]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
-},
-" 1: l_temple: OutOfTown Temple": {
-"variable": "l_temple",
-"nameRaw": "[0x00001b35]",
-"generalLocation": "OutOfTown",
-"locationType": 14,
-"LocationType": "Temple",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_temple: Remote Temple": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "14 [0x000E]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b35]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -133,8 +129,8 @@
 }
 }
 ,"mobs: [2]": {
-" 0: m_0: 3 Burglar": {
-"variable": "m_0",
+" 0: m_00: 3 Burglar": {
+"variable": "m_00",
 "nameRaw": "[0X44000000]",
 "type": "Burglar",
 "count": 3,
@@ -142,8 +138,8 @@
 "null2": 0,
 "index": 0
 },
-" 1: m_1: 2 Warrior": {
-"variable": "m_1",
+" 1: m_01: 2 Warrior": {
+"variable": "m_01",
 "nameRaw": "[0X44000001]",
 "type": "Warrior",
 "count": 2,
@@ -243,7 +239,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> WhenAtLocation (l_temple): set s_3 [Msg 1015]": {
+" 3:  >> WhenAtLocation (l_temple): set s_03 [Msg 1015]": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -254,7 +250,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_3": {
+"1: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
@@ -273,7 +269,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  >> WhenAtLocation (l_betrothedhome): set s_2 [Msg 1014]": {
+" 4:  >> WhenAtLocation (l_betrothedhome): set s_02 [Msg 1014]": {
 "opCode": 43,
 "argCount": 3,
 "arguments:": {
@@ -284,7 +280,7 @@
 "index": "255",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_2": {
+"1: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
@@ -349,7 +345,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7:  => PlaceNpcAt (n_priest, l_temple)": {
+" 7:  => MoveToLocation (n_priest, l_temple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -379,7 +375,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8:  => PlaceNpcAt (n_betrothed, l_betrothedhome)": {
+" 8:  => MoveToLocation (n_betrothed, l_betrothedhome)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -510,11 +506,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfNpcClicked (n_betrothed): set s_1 [Msg 1011]": {
+"14:  >> IfNpcClicked (n_betrothed): set s_01 [Msg 1011]": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -533,11 +529,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15: s_1 => HideNpc (n_betrothed)": {
+"15: s_01 => HideNpc (n_betrothed)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -556,11 +552,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: s_1 => StartNpcEscort (n_betrothed)": {
+"16: s_01 => StartNpcEscort (n_betrothed)": {
 "opCode": 55,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -579,18 +575,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: s_2 => CreateFoe(m_0, 1, 15%, 1)": {
+"17: s_02 => CreateFoe(m_00, 1, 15%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_2": {
+"0: s_02": {
 "type": "State",
 "value": "2",
 "not": "False",
 "index": "2",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -623,18 +619,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"18: s_3 => CreateFoe(m_1, 2, 50%, 1)": {
+"18: s_03 => CreateFoe(m_01, 2, 50%, 1)": {
 "opCode": 9,
 "argCount": 5,
 "arguments:": {
-"0: s_3": {
+"0: s_03": {
 "type": "State",
 "value": "3",
 "not": "False",
 "index": "3",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -667,7 +663,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> IfMobHurtByPlayer (m_1): set s_dummy [Msg 1012]": {
+"19:  >> IfMobHurtByPlayer (m_01): set s_dummy [Msg 1012]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -678,7 +674,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_1": {
+"1: m_01": {
 "type": "Mob",
 "value": "1",
 "not": "False",
@@ -690,7 +686,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20:  >> IfMobHurtByPlayer (m_0): set s_dummy [Msg 1013]": {
+"20:  >> IfMobHurtByPlayer (m_00): set s_dummy [Msg 1013]": {
 "opCode": 21,
 "argCount": 2,
 "arguments:": {
@@ -701,7 +697,7 @@
 "index": "4",
 "unknown1": "0 [0x00000000]"
 },
-"1: m_0": {
+"1: m_00": {
 "type": "Mob",
 "value": "0",
 "not": "False",
@@ -713,11 +709,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21:  >> IfNpcClicked (n_priest): set s_5": {
+"21:  >> IfNpcClicked (n_priest): set s_05": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -736,11 +732,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_5 => QuestSuccess (i_gold)": {
+"22: s_05 => QuestSuccess (i_gold)": {
 "opCode": 4,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -780,11 +776,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_5 => StopNpcEscort (n_qgiver)": {
+"23: s_05 => StopNpcEscort (n_qgiver)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -803,11 +799,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24: s_5 => StopNpcEscort (n_betrothed)": {
+"24: s_05 => StopNpcEscort (n_betrothed)": {
 "opCode": 56,
 "argCount": 2,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -826,11 +822,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"25: s_5 => AdjustReputationWithNpc (n_ruler, -20)": {
+"25: s_05 => AdjustReputationWithNpc (n_ruler, -20)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -856,11 +852,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"26: s_5 => PlaceNpcAt (n_qgiver, l_temple)": {
+"26: s_05 => MoveToLocation (n_qgiver, l_temple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -886,11 +882,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27: s_5 => PlaceNpcAt (n_betrothed, l_temple)": {
+"27: s_05 => MoveToLocation (n_betrothed, l_temple)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -916,7 +912,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"28:  >> If (not s_1 and s_5): set s_clearclick": {
+"28:  >> If (not s_01 and s_05): set s_clearclick": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -927,14 +923,14 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: not s_1": {
+"1: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -960,7 +956,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"29: s_clearclick => Unset (s_5, s_clearclick)": {
+"29: s_clearclick => Unset (s_05, s_clearclick)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
@@ -971,7 +967,7 @@
 "index": "6",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -1004,7 +1000,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"30:  >> If (s_5 and not s_3): set s_questdone": {
+"30:  >> If (s_05 and not s_03): set s_questdone": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -1015,14 +1011,14 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_5": {
+"1: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_3": {
+"2: not s_03": {
 "type": "State",
 "value": "3",
 "not": "True",
@@ -1096,22 +1092,22 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1124,8 +1120,8 @@
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,

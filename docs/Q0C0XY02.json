@@ -81,21 +81,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_tavern: OutOfTown Tavern": {
-"variable": "l_tavern",
-"nameRaw": "[0x00001b26]",
-"generalLocation": "OutOfTown",
-"locationType": 15,
-"LocationType": "Tavern",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_tavern: Remote Tavern": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "15 [0x000F]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x00001b26]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -272,7 +270,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4:  => PlaceNpcAt (n_man, l_tavern)": {
+" 4:  => MoveToLocation (n_man, l_tavern)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -318,11 +316,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 6:  >> IfGivingItemToNpc (i_jewelry, n_man): set s_1": {
+" 6:  >> IfGivingItemToNpc (i_jewelry, n_man): set s_01": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -348,11 +346,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 7: s_1 => PickOneOf (s_04, s_02, s_03, s_05)": {
+" 7: s_01 => PickOneOf (s_04, s_02, s_03, s_05)": {
 "opCode": 34,
 "argCount": 5,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -392,11 +390,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 8: s_1 => HideNpc (n_man)": {
+" 8: s_01 => HideNpc (n_man)": {
 "opCode": 46,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -415,11 +413,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_1 => Say (1011)": {
+" 9: s_01 => Say (1011)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -551,11 +549,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"14:  >> IfMobsKilled (m_giant, 1): set s_6": {
+"14:  >> IfMobsKilled (m_giant, 1): set s_06": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -581,11 +579,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"15:  >> IfMobsKilled (m_magic, 1): set s_6": {
+"15:  >> IfMobsKilled (m_magic, 1): set s_06": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -611,11 +609,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16:  >> IfMobsKilled (m_zombie, 1): set s_6": {
+"16:  >> IfMobsKilled (m_zombie, 1): set s_06": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -641,11 +639,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17:  >> IfMobsKilled (m_daedroth, 1): set s_6": {
+"17:  >> IfMobsKilled (m_daedroth, 1): set s_06": {
 "opCode": 2,
 "argCount": 3,
 "arguments:": {
-"0: s_6": {
+"0: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -694,11 +692,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"19:  >> If (s_qgclicked and s_6): set s_8": {
+"19:  >> If (s_qgclicked and s_06): set s_08": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -712,7 +710,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_6": {
+"2: s_06": {
 "type": "State",
 "value": "6",
 "not": "False",
@@ -738,11 +736,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"20: s_8 => Say (1020)": {
+"20: s_08 => Say (1020)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -754,11 +752,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"21: s_8 => AdjustReputationWithNpc (n_man, -15)": {
+"21: s_08 => AdjustReputationWithNpc (n_man, -15)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -784,11 +782,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"22: s_8 => Unknown72_Value (3)": {
+"22: s_08 => Unknown72_Value (3)": {
 "opCode": 72,
 "argCount": 2,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -807,11 +805,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"23: s_8 => EndQuest ()": {
+"23: s_08 => EndQuest ()": {
 "opCode": 6,
 "argCount": 1,
 "arguments:": {
-"0: s_8": {
+"0: s_08": {
 "type": "State",
 "value": "8",
 "not": "False",
@@ -823,7 +821,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"24:  >> If (s_qgclicked and s_1 and not s_6): set s_reward": {
+"24:  >> If (s_qgclicked and s_01 and not s_06): set s_reward": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -841,14 +839,14 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_1": {
+"2: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"3: not s_6": {
+"3: not s_06": {
 "type": "State",
 "value": "6",
 "not": "True",
@@ -927,7 +925,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"27:  >> If (s_qgclicked and not s_1): set s_10": {
+"27:  >> If (s_qgclicked and not s_01): set s_10": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
@@ -945,7 +943,7 @@
 "index": "7",
 "unknown1": "0 [0x00000000]"
 },
-"2: not s_1": {
+"2: not s_01": {
 "type": "State",
 "value": "1",
 "not": "True",
@@ -1024,8 +1022,8 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1059,8 +1057,8 @@
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
@@ -1073,8 +1071,8 @@
 "globalIndex": 0,
 "index": 7
 },
-" 8: s_8": {
-"variable": "s_8",
+" 8: s_08": {
+"variable": "s_08",
 "nameRaw": "[0x40000008]",
 "isGlobal": false,
 "globalIndex": 0,

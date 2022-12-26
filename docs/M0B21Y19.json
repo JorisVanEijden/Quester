@@ -117,69 +117,61 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_victimhouse: InCurrentTown House4": {
-"variable": "l_victimhouse",
-"nameRaw": "[0x00037bf7]",
-"generalLocation": "InCurrentTown",
-"locationType": 20,
-"LocationType": "House4",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_victimhouse: Local House4": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Local",
+"locationId": "0 [0x0000]",
+"extraInfo1": "20 [0x0014]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x00037bf7]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
-},
-" 1: l_daughterhouse: OutOfTown House4": {
-"variable": "l_daughterhouse",
-"nameRaw": "[0x000cc097]",
-"generalLocation": "OutOfTown",
-"locationType": 20,
-"LocationType": "House4",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_daughterhouse: Remote House4": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "20 [0x0014]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x000cc097]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
-},
-" 2: l_safehouse: OutOfTown House3": {
-"variable": "l_safehouse",
-"nameRaw": "[0x0000d6b7]",
-"generalLocation": "OutOfTown",
-"locationType": 19,
-"LocationType": "House3",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_safehouse: Remote House3": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "19 [0x0013]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x0000d6b7]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
-},
-" 3: l_03: OutOfTown Dungeon": {
-"variable": "l_03",
-"nameRaw": "[0x0000d527]",
-"generalLocation": "OutOfTown",
-"locationType": -1,
-"LocationType": "Dungeon",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_03: Remote Dungeon": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "-1 [0xFFFF]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "124 [0x7C]",
+"nameRaw": "[0x0000d527]",
 "objPtr": 0,
-"unknown1": "31744 [0x7C00]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [3]": {
@@ -410,7 +402,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-" 5:  => PlaceNpcAt (n_victim, l_victimhouse)": {
+" 5:  => MoveToLocation (n_victim, l_victimhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1178,7 +1170,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"32: s_03 => PlaceNpcAt (n_daughter, l_daughterhouse)": {
+"32: s_03 => MoveToLocation (n_daughter, l_daughterhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {
@@ -1247,7 +1239,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 25
 },
-"35: s_08 => PlaceNpcAt (n_daughter, l_03)": {
+"35: s_08 => MoveToLocation (n_daughter, l_03)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

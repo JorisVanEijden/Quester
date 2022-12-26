@@ -145,69 +145,61 @@
 }
 }
 ,"locations: [4]": {
-" 0: l_mapdung: OutOfTown DesecratedTemple": {
-"variable": "l_mapdung",
-"nameRaw": "[0x00003497]",
-"generalLocation": "OutOfTown",
-"locationType": 4,
-"LocationType": "DesecratedTemple",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_mapdung: Remote DesecratedTemple": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "4 [0x0004]",
+"extraInfo2": 1,
+"unknown1": "0 [0x00]",
+"unknown2": "52 [0x34]",
+"nameRaw": "[0x00003497]",
 "objPtr": 0,
-"unknown1": "13312 [0x3400]"
-},
-" 1: l_01: Specific GlenmorilCoven": {
-"variable": "l_01",
-"nameRaw": "[0x00000cb8]",
-"generalLocation": "Specific",
-"locationType": 1,
-"LocationType": "SpecificLocation",
-"fineLocation": 50008,
-"knownLocation": "GlenmorilCoven",
-"doorSelector": -1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 1: l_coven: Specific GlenmorilCoven": {
 "index": 1,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50008 [0xC358]",
+"extraInfo1": "1 [0x0001]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "52 [0x34]",
+"nameRaw": "[0x00000cb8]",
 "objPtr": 0,
-"unknown1": "13312 [0x3400]"
-},
-" 2: l_childhouse: OutOfTown House2": {
-"variable": "l_childhouse",
-"nameRaw": "[0x00019717]",
-"generalLocation": "OutOfTown",
-"locationType": 18,
-"LocationType": "House2",
-"fineLocation": 0,
-"knownLocation": "None",
-"doorSelector": 0,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 2: l_childhouse: Remote House2": {
 "index": 2,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "0 [0x0000]",
+"extraInfo1": "18 [0x0012]",
+"extraInfo2": 0,
+"unknown1": "0 [0x00]",
+"unknown2": "52 [0x34]",
+"nameRaw": "[0x00019717]",
 "objPtr": 0,
-"unknown1": "13312 [0x3400]"
-},
-" 3: l_hintdung: OutOfTown RuinedCastle": {
-"variable": "l_hintdung",
-"nameRaw": "[0x00006977]",
-"generalLocation": "OutOfTown",
-"locationType": 11,
-"LocationType": "RuinedCastle",
-"fineLocation": 1,
-"knownLocation": "None",
-"doorSelector": 1,
 "textRecordId1": 0,
-"textRecordId2": 0,
+"textRecordId2": 0
+},
+" 3: l_hintdung: Remote RuinedCastle": {
 "index": 3,
 "flags": "0 [0x00]",
+"locality": "Remote",
+"locationId": "1 [0x0001]",
+"extraInfo1": "11 [0x000B]",
+"extraInfo2": 1,
+"unknown1": "0 [0x00]",
+"unknown2": "52 [0x34]",
+"nameRaw": "[0x00006977]",
 "objPtr": 0,
-"unknown1": "13312 [0x3400]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [2]": {
@@ -365,7 +357,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 4: s_10 => ShowLocationOnMap (l_01, 60, 81312)": {
+" 4: s_10 >> ShowLocationOnMap (l_coven, Ilessan_Hills, 0x13DA0)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -376,7 +368,7 @@
 "index": "10",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: l_01": {
+"1: l_coven": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -506,7 +498,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-" 8:  => RemoveTopics (l_01, n_shaman)": {
+" 8:  => RemoveTopics (l_coven, n_shaman)": {
 "opCode": 11,
 "argCount": 4,
 "arguments:": {
@@ -517,7 +509,7 @@
 "index": "255",
 "unknown1": "100680946 [0x060044F2]"
 },
-"1: l_01": {
+"1: l_coven": {
 "type": "Location",
 "value": "1",
 "not": "False",
@@ -714,7 +706,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 111
 },
-"14:  => PlaceNpcAt (n_child, l_childhouse)": {
+"14:  => MoveToLocation (n_child, l_childhouse)": {
 "opCode": 30,
 "argCount": 3,
 "arguments:": {

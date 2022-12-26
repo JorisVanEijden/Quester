@@ -37,8 +37,8 @@
 }
 }
 ,"npcs: [2]": {
-" 0: n_00:  (type? Permanent) (faction Medora)": {
-"variable": "n_00",
+" 0: n_medora:  (type? Permanent) (faction Medora)": {
+"variable": "n_medora",
 "nameRaw": "[0x00001a11]",
 "unknown1": "[0x01]",
 "facePictureIndex": 0,
@@ -67,21 +67,19 @@
 }
 }
 ,"locations: [1]": {
-" 0: l_huntstart: Specific Shedungent": {
-"variable": "l_huntstart",
-"nameRaw": "[0x0000da2c]",
-"generalLocation": "Specific",
-"locationType": -1532,
-"LocationType": "SpecificLocation",
-"fineLocation": 50005,
-"knownLocation": "Shedungent",
-"doorSelector": -1,
-"textRecordId1": 0,
-"textRecordId2": 0,
+" 0: l_huntstart: Specific Shedungent marker 4": {
 "index": 0,
 "flags": "0 [0x00]",
+"locality": "Specific",
+"locationId": "50005 [0xC355]",
+"extraInfo1": "-1532 [0xFA04]",
+"extraInfo2": -1,
+"unknown1": "0 [0x00]",
+"unknown2": "0 [0x00]",
+"nameRaw": "[0x0000da2c]",
 "objPtr": 0,
-"unknown1": "0 [0x0000]"
+"textRecordId1": 0,
+"textRecordId2": 0
 }
 }
 ,"timers: [1]": {
@@ -155,11 +153,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 2:  >> IfNpcClicked (n_01): set s_1": {
+" 2:  >> IfNpcClicked (n_01): set s_01": {
 "opCode": 28,
 "argCount": 2,
 "arguments:": {
-"0: s_1": {
+"0: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -178,18 +176,18 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 3:  >> If (s_1 and not gs_LiftedCurse): set s_5": {
+" 3:  >> If (s_01 and not gs_LiftedCurse): set s_05": {
 "opCode": 52,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
@@ -222,11 +220,11 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 4: s_5 => Say (1008)": {
+" 4: s_05 => Say (1008)": {
 "opCode": 51,
 "argCount": 1,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -238,25 +236,25 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 5: s_5 => Unset (s_1, s_5)": {
+" 5: s_05 => Unset (s_01, s_05)": {
 "opCode": 7,
 "argCount": 5,
 "arguments:": {
-"0: s_5": {
+"0: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
 "index": "5",
 "unknown1": "0 [0x00000000]"
 },
-"1: s_1": {
+"1: s_01": {
 "type": "State",
 "value": "1",
 "not": "False",
 "index": "1",
 "unknown1": "0 [0x00000000]"
 },
-"2: s_5": {
+"2: s_05": {
 "type": "State",
 "value": "5",
 "not": "False",
@@ -365,7 +363,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-" 9: s_yes => ShowLocationOnMap (l_huntstart, 16, 50966)": {
+" 9: s_yes >> ShowLocationOnMap (l_huntstart, Wrothgarian_Mountains, 0xC716)": {
 "opCode": 27,
 "argCount": 4,
 "arguments:": {
@@ -450,7 +448,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"13:  >> IfGivingItemToNpc (i_00, n_00): set gs_MedoraGotHorn": {
+"13:  >> IfGivingItemToNpc (i_00, n_medora): set gs_MedoraGotHorn": {
 "opCode": 1,
 "argCount": 3,
 "arguments:": {
@@ -468,7 +466,7 @@
 "index": "0",
 "unknown1": "0 [0x00000000]"
 },
-"2: n_00": {
+"2: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -554,7 +552,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"16: gs_MedoraGotHorn => AdjustReputationWithNpc (n_00, 10)": {
+"16: gs_MedoraGotHorn => AdjustReputationWithNpc (n_medora, 10)": {
 "opCode": 61,
 "argCount": 3,
 "arguments:": {
@@ -565,7 +563,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -584,7 +582,7 @@
 "flags": "0 [0x0000]",
 "lastUpdate": 0
 },
-"17: gs_MedoraGotHorn => StopNpcConversation (n_00)": {
+"17: gs_MedoraGotHorn => StopNpcConversation (n_medora)": {
 "opCode": 82,
 "argCount": 2,
 "arguments:": {
@@ -595,7 +593,7 @@
 "index": "10",
 "unknown1": "0 [0x00000000]"
 },
-"1: n_00": {
+"1: n_medora": {
 "type": "Npc",
 "value": "0",
 "not": "False",
@@ -632,43 +630,43 @@
 "globalIndex": 0,
 "index": 0
 },
-" 1: s_1": {
-"variable": "s_1",
+" 1: s_01": {
+"variable": "s_01",
 "nameRaw": "[0x40000001]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 1
 },
-" 2: s_2": {
-"variable": "s_2",
+" 2: s_02": {
+"variable": "s_02",
 "nameRaw": "[0x40000002]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 2
 },
-" 3: s_3": {
-"variable": "s_3",
+" 3: s_03": {
+"variable": "s_03",
 "nameRaw": "[0x40000003]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 3
 },
-" 4: s_4": {
-"variable": "s_4",
+" 4: s_04": {
+"variable": "s_04",
 "nameRaw": "[0x40000004]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 4
 },
-" 5: s_5": {
-"variable": "s_5",
+" 5: s_05": {
+"variable": "s_05",
 "nameRaw": "[0x40000005]",
 "isGlobal": false,
 "globalIndex": 0,
 "index": 5
 },
-" 6: s_6": {
-"variable": "s_6",
+" 6: s_06": {
+"variable": "s_06",
 "nameRaw": "[0x40000006]",
 "isGlobal": false,
 "globalIndex": 0,
